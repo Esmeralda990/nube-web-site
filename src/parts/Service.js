@@ -1,39 +1,67 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
+import React from "react";
 
-import React from 'react';
+import { Fade } from "react-awesome-reveal";
 
-import { Fade } from 'react-awesome-reveal';
+import Button from "../elements/Button"; // Importa tu componente Button
 
 export default function Service({ data }) {
   return (
     <div className="bg-gray-50">
-      <div className="container mx-auto pt-20 pb-28">
+      <div className="container mx-auto pt-32 pb-32">
         <Fade direction="right" triggerOnce>
-          <h1 className="text-5xl text-theme-blue text-center font-bold">Our Service</h1>
+          <h1 className="text-5xl text-theme-blue text-center font-bold leading-tight mb-5">
+            Building Smarter, Thinking Forward
+          </h1>
         </Fade>
         <Fade direction="left" triggerOnce>
-          <p className="font-light text-lg text-gray-400 text-center mb-12">
-            We are ready to scale up your business with our great service.
+          <p className="font-light text-lg text-gray-400 text-center mb-10">
+            Explore our tech for sustainable solutions to current and future
+            challenges.
           </p>
         </Fade>
 
-        <div className="grid grid-rows-3 px-10 gap-8 sm:grid-cols-3 sm:grid-rows-1 sm:gap-6 xl:gap-16">
-          {
-            data.map((item, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Fade direction={item.animation} delay={500 * index} key={index} triggerOnce>
-                <div>
-                  <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
-                    <img src={item.imageUrl} alt="Service" className="w-full rounded-t-2xl" />
-                    <h2 className="text-theme-blue text-center text-xl py-7 rounded-b-2xl">{item.title}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-4 px-10 gap-8 sm:gap-6 xl:gap-16">
+          {data.map((item, index) => (
+            <Fade
+              direction={item.animation}
+              delay={500 * index}
+              triggerOnce
+              key={item.id}
+            >
+              {" "}
+              {/* key prop  */}
+              <div className="group rounded-2xl shadow-xl border border-light-theme-blue transform transition duration-500 hover:scale-105">
+                <Button
+                  type="link"
+                  href={`/service/${item.id}`}
+                  className="block w-full"
+                >
+                  {" "}
+                  {/*  Button */}
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="w-full rounded-t-2xl p"
+                  />
+                  <div className="py-4">
+                    {" "}
+                    {/* títle y descrip */}
+                    <h2 className="text-theme-blue-500 text-center text-xl py-2">
+                      {item.title}
+                    </h2>
+                    <p className="font-light text-gray-400 text-center">
+                      {item.description || item.type} {/* type */}
+                    </p>
                   </div>
-                </div>
-              </Fade>
-            ))
-          }
+                </Button>
+              </div>
+            </Fade>
+          ))}
         </div>
       </div>
     </div>

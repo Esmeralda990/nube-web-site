@@ -2,65 +2,103 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 
-import React from 'react';
+import React from "react";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "../assets/images/LogoNube.png";
 
-import BrandIcon from './BrandIcon';
-import Button from '../elements/Button';
+const sections = [
+  {
+    title: "Useful links",
+    links: [
+      { name: "Hardware", href: "/hardware" },
+      { name: "Software", href: "/software" },
+      { name: "Connectivity", href: "/connectivity" },
+      { name: "Blog", href: "/blog" },
+      { name: "About", href: "/about" },
+      { name: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    title: "Contact us",
+    links: [{ name: "info@nube-io.com", href: "mailto:info@nube-io.com" }],
+  },
+];
 
-export default function Footer() {
+const Footer7 = () => {
   return (
-    <div className="bg-gray-50 border-t border-gray-200 pb-6">
-      <div className="container flex-col mx-auto ">
-        <div className="flex flex-col sm:flex-row mt-8 justify-center">
-          <div className="w-1/3 flex-col ml-16 mr-8">
-            <BrandIcon />
-            <p className="w-full text-lg text-gray-400 font-light">
-              Growing Your Business
-              {' '}
-              <br />
-              Is Our Calling
-            </p>
+    <section className="py-32 bg-gray-200">
+      <div className="container mx-auto px-6">
+        <footer>
+          <div className="flex flex-col items-center justify-center gap-10 text-center lg:flex-row lg:text-left">
+            {/* Logo y descripción */}
+            <div className="flex w-full max-w-96 flex-col items-center justify-between gap-6 lg:items-start">
+              <div>
+                <span className="flex items-center text-theme-teal-500 justify-center gap-4 lg:justify-start">
+                  <img src={logo} alt="Nube Logo" className="h-11" />
+                </span>
+                <p className="mt-6 text-sm text-gray-500">
+                  Nube iO is a manufacturer of IoT devices used to create smart
+                  buildings. This solution was developed in response to key
+                  industry issues such as shortage of low-cost solutions for
+                  small buildings, outdated technology and limited wireless
+                  hardware that can integrate with legacy systems. Nube iO now
+                  provides a technology bridge that is both IoT ready and
+                  building automation ready
+                </p>
+              </div>
+              <ul className="flex items-center space-x-6 text-theme-blue">
+                <li className="hover:text-teal-500 transition-colors duration-300">
+                  <a href="https://x.com/nube_iot?lang=en&mx=2">
+                    <FaTwitter className="size-6" />
+                  </a>
+                </li>
+                <li className="hover:text-teal-500 transition-colors duration-300">
+                  <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
+                    <FaLinkedin className="size-6" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* Secciones de enlaces */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-20">
+              {sections.map((section) => (
+                <div key={section.title}>
+                  <h3 className="mb-6 font-bold text-gray-800">
+                    {section.title}
+                  </h3>
+                  <ul className="space-y-4 text-sm text-gray-600">
+                    {section.links.map((link) => (
+                      <li key={link.name} className="hover:text-primary">
+                        <a href={link.href}>{link.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="w-1/3 mt-0 ml-16 mr-0 sm:ml-0 sm:mr-5">
-            <h1 className="text-lg text-theme-blue pt-4 pb-2">
-              Office
-            </h1>
-            <p className="text-lg text-gray-400 font-light">
-              rac.hafidz@gmail.com
-            </p>
-            <p className="text-lg text-gray-400 font-light">
-              Klaten, Central Java, Indonesia
-            </p>
+          {/* Pie de página */}
+          <div className="mt-20 flex flex-col justify-center gap-4 border-t pt-8 text-center text-sm font-medium text-gray-600 lg:flex-row lg:items-center lg:text-left">
+            <p>© 2025 Nube IO. All rights reserved.</p>
+            <ul className="flex justify-center gap-4 lg:justify-start">
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/terms">Privacy Policy</a>
+              </li>
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/privacy">App Policy</a>
+              </li>
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/privacy">T&C s</a>
+              </li>
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/privacy">Warranty Policy</a>
+              </li>
+            </ul>
           </div>
-          <div className="w-1/3 ml-16 sm:ml-0 mt-0">
-            <h1 className="text-lg text-theme-blue pt-4 pb-2">
-              Social
-            </h1>
-            <Button href="https://www.instagram.com/racmathafidz/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-              Instagram
-            </Button>
-            <Button href="https://www.linkedin.com/in/racmat-hafidz-89982a156/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-              LinkedIn
-            </Button>
-            <Button href="https://github.com/racmathafidz" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
-              Github
-            </Button>
-          </div>
-        </div>
-        <div className="flex-col text-center mt-7">
-          <p className="text-lg text-gray-400 font-light">
-            Copyright 2021 - All rights reserved - Racxstudio
-          </p>
-          <div className="flex-row">
-            <p className="inline-block text-lg text-gray-400 font-light">
-              Made with &#x2764; by&nbsp;
-            </p>
-            <Button href="https://github.com/racmathafidz" type="link" target="_blank" className="text-lg text-theme-purple font-light" isExternal>
-              Racmat Hafidz Fadli
-            </Button>
-          </div>
-        </div>
+        </footer>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Footer7;

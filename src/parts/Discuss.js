@@ -2,32 +2,50 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 
-import React from 'react';
-
-import { Fade } from 'react-awesome-reveal';
-
-import Button from '../elements/Button';
+import React from "react";
+import { Fade } from "react-awesome-reveal";
+import Button from "../elements/Button";
 
 export default function Discuss() {
   return (
-    <Fade direction="up" triggerOnce>
-      <section className="flex container mx-auto justify-center">
-        <div className="flex flex-col w-10/12 sm:w-11/12 xl:w-10/12 rounded-2xl bg-theme-purple text-gray-100 py-14 sm:px-12 sm:py-20 xl:px-16 shadow-2xl discuss">
-          <div className="flex flex-col sm:flex-row mb-3 sm:mb-9 p-5 sm:p-0 sm:items-center">
-            <h1 className="w-2/3 text-5xl sm:text-6xl leading-tight font-semibold">
-              Have an awesome project in mind?
+    <section className="w-full">
+      <div className="w-full">
+        <div className="flex items-center justify-center rounded-2xl border bg-[url('https://shadcnblocks.com/images/block/circles.svg')] bg-cover bg-center px-4 py-20 text-center text-theme-blue md:p-20">
+          <div className="mx-auto max-w-screen-md">
+            <h1 className="text-3xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
+              Start building your websites faster
             </h1>
-            <Fade direction="up" triggerOnce delay={500}>
-              <Button href="/discuss-project" type="link" className="flex bg-white bg-yellow-300 text-blue-800 text-xl lg:text-2xl xl:text-xl tracking-wider items-center justify-center w-56 lg:w-96 lg:h-24 xl:w-56 h-20 p-5 border-2 border-dark-theme-purple shadow-xl rounded-full mt-6 sm:mt-0 sm:ml-4 lg:ml-0 xl:ml-12 transform transition duration-600 hover:scale-105">
-                Lets Discuss!
-              </Button>
-            </Fade>
+            <p className="font-light text-xl text-gray-400 leading-relaxed mb-16">
+              Try our tools and services to build your website faster. Start
+              with a 14-day free trial. No credit card required. No setup fees.
+              Cancel anytime.
+            </p>
+            <div className="mt-8 flex justify-center space-x-4">
+              {" "}
+              <Fade direction="up" triggerOnce>
+                {" "}
+                <Button
+                  href="/discuss-project"
+                  type="link"
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100" // Adjusted styles
+                >
+                  Learn More
+                </Button>
+              </Fade>
+              <Fade direction="up" triggerOnce delay={300}>
+                {" "}
+                <Button
+                  href="/contact"
+                  type="link"
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800" // Adjusted styles
+                >
+                  Get Started
+                </Button>
+              </Fade>
+            </div>{" "}
           </div>
-          <Fade delay={300} triggerOnce>
-            <p className="font-light p-5 sm:p-0 text-lg sm:text-xl lg:text-2xl xl:text-xl mb-1">Lets discuss it and make your dream software come true!</p>
-          </Fade>
         </div>
-      </section>
-    </Fade>
+      </div>
+    </section>
   );
 }

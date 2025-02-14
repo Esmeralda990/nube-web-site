@@ -1,60 +1,57 @@
-/* eslint-disable linebreak-style */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-
-import React from 'react';
-
-import Fade from 'react-awesome-reveal';
+import React from "react";
+import Fade from "react-awesome-reveal";
 
 export default function Advantage({ data }) {
+  const allCards = data.flat();
+
   return (
-    <div className="bg-gray-50 py-20 mb-24 sm:mb-18 xl:mb-16">
+    <div className="bg-gray-50 py-28 mb-24 sm:mb-18 xl:mb-16">
       <div className="container mx-auto">
         <Fade bottom triggerOnce>
-          <h1 className="text-5xl text-theme-blue text-center font-bold">Why Choose Us</h1>
-
-          <p className="font-light text-lg text-gray-400 text-center mb-12 sm:mb-5 xl:mb-0">
-            Why you should choose us to handle your project.
-          </p>
+          <div className="text-center mb-12">
+            <h1 className="text-5xl text-theme-blue font-bold mb-5">
+              Why Nube iO?
+            </h1>
+            <p className="font-light text-lg text-gray-400 text-center mb-5">
+              Innovative, Scalable, and Sustainable Solutions for Smarter
+              Building Management
+            </p>
+          </div>
         </Fade>
 
-        <div className="flex flex-col sm:flex-row">
-          <div className="flex-col">
-            {
-              data[0].map((item, index) => (
-                <Fade bottom triggerOnce delay={500 * index} key={index}>
-                  <div>
-                    <div className="bg-white flex flex-row items-center p-3 my-6 mx-3 sm:my-7 sm:mx-3 xl:my-14 xl:mx-7 rounded-2xl shadow-xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
-                      <img src={item.imageUrl} alt="" className="w-1/3" />
-                      <div className="flex-col pl-5">
-                        <h2 className="text-theme-blue text-2xl">{item.title}</h2>
-                        <p className="font-light text-gray-400">{item.description}</p>
-                      </div>
-                    </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {allCards.map((item, index) => (
+            <Fade key={index} bottom triggerOnce delay={200 * index}>
+              <div className="w-88 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-[470px] flex flex-col">
+                <img
+                  className="max-w-sm rounded overflow-hidden shadow-lg w-full h-56 object-cover"
+                  src={item.imageUrl}
+                  alt={item.title}
+                />
+                <div className="px-6 py-5 flex-1 flex flex-col">
+                  <div className="font-bold text-xl mb-2 text-theme-gray">
+                    {item.title}
                   </div>
-                </Fade>
-              ))
-            }
-          </div>
-          <div className="flex-col -mt-4 sm:mt-14">
-            {
-              data[1].map((item, index) => (
-                <Fade bottom triggerOnce delay={500 * index} key={index}>
-                  <div>
-                    <div className="bg-white flex flex-row items-center p-3 my-6 mx-3 sm:my-7 sm:mx-3 xl:my-14 xl:mx-7 rounded-2xl shadow-xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
-                      <img src={item.imageUrl} alt="" className="w-1/3" />
-                      <div className="flex-col pl-5">
-                        <h2 className="text-theme-blue text-2xl">{item.title}</h2>
-                        <p className="font-light text-gray-400">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </Fade>
-              ))
-            }
-          </div>
+                  <p className="text-gray-700 text-base">{item.description}</p>
+                </div>
+
+                <div className="px-6 pb-5">
+                  {item.tags?.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Fade>
+          ))}
         </div>
       </div>
     </div>
