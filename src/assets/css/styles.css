@@ -35,20 +35,18 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -30%
-    ); /* Mover a la mitad para hacer el scroll continuo */
+    transform: translateX(-50%);
   }
 }
 .logo-image {
-  height: 50px; /* Ajusta la altura de los logos según sea necesario */
+  height: 50px;
   width: auto;
 }
 
 .logos-carousel {
   display: flex;
   gap: 10px; /* Espaciado entre los logos */
-  animation: scroll 50seg linear infinite; /* Animación de desplazamiento */
+  animation: scroll 20seg linear infinite; /* Animación de desplazamiento */
 }
 .relative {
   width: 100%;
@@ -57,7 +55,7 @@
 
 .flex {
   display: flex;
-  transition: transform 10s ease; /* Añadir un tiempo de transición para el efecto */
+  transition: transform 20s ease; /* Añadir un tiempo de transición para el efecto */
 }
 
 @media (min-width: 1024px) {
@@ -190,7 +188,7 @@ h6 {
   gap: 50px;
   white-space: nowrap;
   width: max-content;
-  animation: scroll-left 100s linear infinite;
+  animation: scroll-left 80s linear infinite;
 }
 
 /* Carrusel de badges - derecha a izquierda */
@@ -199,7 +197,7 @@ h6 {
   gap: 50px;
   white-space: nowrap;
   width: max-content;
-  animation: scroll-right 100s linear infinite;
+  animation: scroll-right 80s linear infinite;
 }
 
 /* Contenedor de los iconos */

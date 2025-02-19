@@ -8,7 +8,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Badges, IconElem } from "../json/landingPageData.js";
 
-const Feature154 = () => {
+const Connect = () => {
   return (
     <section className="relative py-32 pt-8 before:absolute before:inset-0 before:bg-primary/10">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent to-background" />
@@ -22,6 +22,7 @@ const Feature154 = () => {
           </p>
         </div>
 
+        {/* Fila 1: Íconos 0-6 como badges */}
         <div className="relative mx-auto mt-20 w-full overflow-hidden max-w-full">
           <div className="flex animate-scroll-left w-full">
             {[
@@ -39,7 +40,7 @@ const Feature154 = () => {
           </div>
         </div>
 
-        {/* Segunda fila de elementos animados (solo imágenes, sin texto) */}
+        {/* Fila 2: Íconos 7-13 solo como imágenes */}
         <div className="relative mx-auto mt-20 w-full overflow-hidden max-w-full">
           <div className="flex animate-scroll-right w-full">
             {[
@@ -54,14 +55,14 @@ const Feature154 = () => {
                 <img
                   src={item.icon}
                   alt={item.title}
-                  className={`h-12 w-28 ${item.className}`}
+                  className={`object-contain ${item.className}`}
                 />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Nuevo contenedor dinámico con IconElem */}
+        {/* Fila 3: IconElem */}
         <div className="iconos-circulares relative mx-auto flex justify-around max-w-full flex-col gap-12 overflow-hidden pb-0 pt-64">
           <div className="grid grid-cols-auto md:grid-cols-3 gap-4 justify-items-center">
             {IconElem.map((item, index) => (
@@ -103,4 +104,4 @@ const Feature154 = () => {
   );
 };
 
-export default Feature154;
+export default Connect;

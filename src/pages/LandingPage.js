@@ -13,6 +13,7 @@ import PorfolioCarousel from "parts/PortfolioCarousel";
 import Advantage from "parts/Advantage";
 import Connects from "parts/Connect";
 import Portfolio from "parts/Portfolio";
+import GifSection from "parts/GifSectionhero";
 import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 
@@ -31,6 +32,7 @@ export default class LandingPage extends Component {
         <Advantage data={Advantages} />
         <Connects data={Badges} />
         <Portfolio data={Portfolios} />
+        <GifSection />
         <Discuss />
         <Footer />
       </>

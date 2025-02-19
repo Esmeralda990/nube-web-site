@@ -10,7 +10,7 @@ export default function Discuss() {
   return (
     <section className="w-full">
       <div className="w-full">
-        <div className="flex items-center justify-center rounded-2xl border bg-[url('https://shadcnblocks.com/images/block/circles.svg')] bg-cover bg-center px-4 py-20 text-center text-theme-blue md:p-20">
+        <div className="flex items-center justify-center rounded-2xl border bg-[url('https://shadcnblocks.com/images/block/circles.svg')] bg-cover bg-center px-4 py-20 text-center text-theme-blue md:p-40">
           <div className="mx-auto max-w-screen-md">
             <h1 className="text-3xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
               Start building your websites faster

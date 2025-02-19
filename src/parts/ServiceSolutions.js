@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
@@ -9,10 +7,10 @@ import { Fade } from "react-awesome-reveal";
 
 import Button from "../elements/Button";
 
-export default function Service({ data }) {
+export default function ServiceSolutions({ data }) {
   return (
     <div className="bg-gray-50">
-      <div className="container mx-auto pt-32 pb-32">
+      <div className="container mx-auto pt-12 pb-32">
         <Fade direction="right" triggerOnce>
           <h1 className="text-5xl text-theme-blue text-center font-bold mb-5">
             Building Smarter, Thinking Forward
@@ -25,7 +23,7 @@ export default function Service({ data }) {
           </p>
         </Fade>
 
-        <div className="grid grid-cols-1 sm:grid-cols-4 px-10 gap-8 sm:gap-6 xl:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 px-10 gap-8 sm:gap-6 xl:gap-16">
           {data.map((item, index) => (
             <Fade
               direction={item.animation}

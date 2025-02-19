@@ -1,0 +1,52 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
+
+import React from "react";
+
+import { Fade } from "react-awesome-reveal";
+
+import Button from "../elements/Button";
+
+export default function DiscussCta() {
+  return (
+    <Fade direction="" triggerOnce>
+      <div className="bg-gray-50 w-full py-12 pt-0">
+        <section className="flex container mx-auto justify-center">
+          <div className="flex w-full flex-col gap-16 overflow-hidden rounded-lg bg-gray-100 p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-26">
+            <div className="flex-1">
+              <h1 className="mb-3 text-2xl text-theme-blue font-bold md:mb-4 md:text-4xl lg:mb-6">
+                Professional Service
+              </h1>
+              <Fade delay={300} triggerOnce>
+                <p className="font-light text-gray-500 p-5 sm:p-0 text-lg sm:text-xl lg:text-2xl xl:text-xl mb-1">
+                  Learn More About Professional Services
+                </p>
+              </Fade>
+            </div>
+            <div className="flex gap-4 mt-6 sm:mt-0 sm:ml-4 lg:ml-0 xl:ml-12">
+              <Fade direction="up" triggerOnce delay={500}>
+                <Button
+                  href="/discuss-project"
+                  type="link"
+                  className="flex bg-white text-black text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
+                >
+                  Learn More
+                </Button>
+              </Fade>
+              <Fade direction="up" triggerOnce delay={600}>
+                <Button
+                  href="/contact"
+                  type="link"
+                  className="flex bg-teal-500 text-white text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
+                >
+                  Get a Demo
+                </Button>
+              </Fade>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Fade>
+  );
+}

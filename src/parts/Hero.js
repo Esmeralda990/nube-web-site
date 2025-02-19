@@ -30,7 +30,7 @@ export default function Hero() {
             <Button
               href=""
               type="link"
-              className="flex w-71 h-18 items-center px-14 py-5 text-white text-xl bg-theme-purple rounded-lg shadow-2xl hover:bg-dark-theme-purple transition duration-200"
+              className="flex w-71 h-18 items-center font-bold text-lg px-14 py-5 text-white text-xl bg-teal-600 rounded-lg shadow-2xl hover:bg-dark-theme-blue transition duration-200 "
             >
               Get a Demo
               <svg
@@ -51,7 +51,7 @@ export default function Hero() {
           </Fade>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-3/4 pb-32">
+        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-3/4 pb-24">
           <Fade direction="" triggerOnce>
             <img
               className="max-w-full h-auto ml-32"
@@ -62,7 +62,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className="w-full flex flex-col items-center space-y-6">
+      <div className="w-full flex flex-col items-center space-y-6 mb-24">
         {/* Título */}
         <h1 className="mx-auto max-w-screen-lg text-balance text-center text-theme-blue text-2xl font-bold md:text-5xl leading-tight mb-5">
           Harness the Potential

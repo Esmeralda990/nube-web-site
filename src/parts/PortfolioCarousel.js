@@ -16,7 +16,10 @@ export default function PorfolioCarousel() {
   return (
     <>
       <div className="w-full mb-0">
-        <Logos3 />
+        <Logos3
+          heading="Customer Suceess Stories"
+          description="All of our 500+ Clients are happy"
+        />
       </div>
 
       <Swiper

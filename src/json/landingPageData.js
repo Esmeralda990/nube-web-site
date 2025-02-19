@@ -74,6 +74,24 @@ import Mobile2 from "../assets/images/TeamMembers/Mobile2.jpg";
 import UIUX1 from "../assets/images/TeamMembers/UIUX1.jpg";
 import UIUX2 from "../assets/images/TeamMembers/UIUX2.jpg";
 
+// AdvangeAbout
+import Company from "../assets/images/AdvangesAbout/Company.png";
+import Growth from "../assets/images/AdvangesAbout/Growth.png";
+import Excellence from "../assets/images/AdvangesAbout/Excellence.png";
+import Solutions from "../assets/images/AdvangesAbout/Solutions.png";
+
+// Service Solutions
+import Client from "../assets/images/ServiceSolutions/Client.png";
+import Establish from "../assets/images/ServiceSolutions/Establish.png";
+import Management from "../assets/images/ServiceSolutions/Management.png";
+
+// Managers
+import CEOT from "../assets/images/Team/Tom.png";
+import CTO from "../assets/images/Team/AidanPickard.png";
+import COO from "../assets/images/Team/MatthewCady.png";
+import IOT from "../assets/images/Team/JonathanHill.png";
+import BMS from "../assets/images/Team/MarcDallen.png";
+
 export const Services = [
   {
     id: "Sofware",
@@ -233,32 +251,32 @@ export const Badges = [
   {
     title: "Logo1",
     icon: Icons8,
-    className: "size-1",
+    className: "size-32",
   },
   {
     title: "Logo2",
     icon: Icons9,
-    className: "size-1",
+    className: "size-24",
   },
   {
     title: "logo3",
     icon: Icons10,
-    className: "size-1",
+    className: "size-16",
   },
   {
     title: "Logo4",
     icon: Icons11,
-    className: "size-1",
+    className: "size-32",
   },
   {
     title: "Logo5",
     icon: Icons12,
-    className: "size-1",
+    className: "size-32",
   },
   {
     title: "Logo6",
     icon: Icons13,
-    className: "size-1",
+    className: "size-32",
   },
 ];
 
@@ -349,7 +367,7 @@ export const Testimonials = [
   },
 ];
 
-export const TeamMembers = [
+export const TeaMembers = [
   {
     name: "Tom Fyfe",
     position: "CEO",
@@ -410,4 +428,225 @@ export const TeamMembers = [
     position: "UI/UX Designer",
     imageUrl: UIUX1,
   },
+];
+
+export const AdvantageAbout = [
+  [
+    {
+      title: "Company Overview",
+      description:
+        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. Combining IoT, cloud computing, and AI insights, we go beyond traditional Building Management Systems (BMS) to streamline operations, optimize energy use, and enable smarter decisions. Our solutions connect outdated systems to the future of automation with seamless connectivity and interoperability.",
+      imageUrl: Company,
+    },
+    {
+      title: "Growth and Sustainability ",
+      description:
+        "Nube iO started in Australia and has grown into a global leader in smart technology. We help businesses cut energy use, lower costs, and reduce environmental impact with advanced automation and data-driven insights. Using cloud-based controls and real-time analytics, we turn spaces into smarter, more efficient environments.",
+      imageUrl: Growth,
+    },
+  ],
+  [
+    {
+      title: "Commitment to Excellence",
+      description:
+        "At Nube iO, we provide innovative technology and expert services to drive success. By refining our strategies and improving our software and hardware, we help businesses adapt, integrate, and scale their automation. Through OEM solutions, white-label partnerships, and customised software, we empower organisations to stay ahead in innovation and growth",
+      imageUrl: Excellence,
+    },
+    {
+      title: "Expertise in Smart Technology Solutions",
+      description:
+        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions that boost efficiency and innovation. From optimising HVAC and energy systems to streamlining site management and using predictive analytics, we help businesses perform at their best. With seamless integration and data-driven insights, Nube iO is redefining smart spaces and automation.",
+      imageUrl: Solutions,
+    },
+  ],
+];
+
+export const ServiceSolutions = [
+  {
+    id: "Client",
+    title: "Client Solutions",
+    imageUrl: Client,
+    type: "",
+    animation: "left",
+  },
+  {
+    id: "Establish",
+    title: "Establish Long-Term Compliance",
+    imageUrl: Establish,
+    animation: "right",
+  },
+  {
+    id: "Management",
+    title: "Asset Management",
+    imageUrl: Management,
+    type: "",
+    animation: "right",
+  },
+];
+
+export const Managers = [
+  {
+    id: "person-1",
+    name: "Tom Fyfe",
+    role: "CEO",
+    description:
+      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    imageUrl: CEOT,
+  },
+  {
+    id: "person-2",
+    name: "Aidan Pickard",
+    role: "CTO & Co-Founder",
+    description:
+      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    imageUrl: CTO,
+  },
+  {
+    id: "person-3",
+    name: "Matthew Cady",
+    role: "COO & Co-Founder",
+    description:
+      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    imageUrl: COO,
+  },
+  {
+    id: "person-4",
+    name: "Jonathan Hill",
+    role: "IoT Deployment Manager",
+    description:
+      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    imageUrl: IOT,
+  },
+  {
+    id: "person-5",
+    name: "Marc Dallen",
+    role: "BMS Engineer",
+    description:
+      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    imageUrl: BMS,
+  },
+];
+
+export const floatingIcons = [
+  // Left Floating Icons
+  {
+    position: "left",
+    offset: "240px",
+    top: "10%",
+    src: "https://shadcnblocks.com/images/block/block-2.svg",
+  },
+  {
+    position: "left",
+    offset: "70px",
+    top: "25%",
+    src: "https://shadcnblocks.com/images/block/block-3.svg",
+  },
+  {
+    position: "left",
+    offset: "320px",
+    top: "40%",
+    src: "https://shadcnblocks.com/images/block/block-4.svg",
+  },
+  {
+    position: "left",
+    offset: "160px",
+    top: "55%",
+    src: "https://shadcnblocks.com/images/block/block-5.svg",
+  },
+  {
+    position: "left",
+    offset: "50px",
+    top: "80%",
+    src: "https://shadcnblocks.com/images/block/block-6.svg",
+  },
+
+  // Right Floating Icons
+  {
+    position: "right",
+    offset: "240px",
+    top: "10%",
+    src: "https://shadcnblocks.com/images/block/block-2.svg",
+  },
+  {
+    position: "right",
+    offset: "70px",
+    top: "25%",
+    src: "https://shadcnblocks.com/images/block/block-3.svg",
+  },
+  {
+    position: "right",
+    offset: "320px",
+    top: "40%",
+    src: "https://shadcnblocks.com/images/block/block-4.svg",
+  },
+  {
+    position: "right",
+    offset: "160px",
+    top: "55%",
+    src: "https://shadcnblocks.com/images/block/block-5.svg",
+  },
+  {
+    position: "right",
+    offset: "50px",
+    top: "80%",
+    src: "https://shadcnblocks.com/images/block/block-6.svg",
+  },
+];
+
+export const Solutionsfeature = [
+  {
+    id: "feature-1",
+    title: "Controllers",
+    description:
+      "Sensors from Nube iO are designed to accurately monitor various environmental parameters, including temperature, humidity, and air quality. Engineered for precision and reliability, these sensors provide critical data that empower facility managers to make informed decisions, ensuring optimal conditions and energy efficiency. Discover how our sensors can revolutionise your facility management today!",
+    icon: Icons1,
+    image: Hardware,
+  },
+  {
+    id: "feature-2",
+    title: "LoRa® Sensors",
+    description:
+      "Our gateways facilitate seamless data communication across complex building infrastructures. By bridging different protocols and systems, they enable smooth integration and centralised management. This capability allows businesses to streamline operations and harness the full potential of interconnected IoT networks. Upgrade your infrastructure with our gateways and experience seamless connectivity!",
+    icon: Icons2,
+    image: OEM,
+  },
+  {
+    id: "feature-3",
+    title: "Expansion Modules",
+    description:
+      "Nube iO controllers offer robust solutions for managing building systems effectively. These devices deliver precise control over HVAC, lighting, and other essential systems, optimising performance while reducing energy consumption. With intuitive interfaces and advanced programming options, our controllers empower businesses to enhance operational efficiency and sustainability. Take control of your building systems with our state-of-the-art controllers today!",
+    icon: Icons3,
+    image: Sofware,
+  },
+];
+
+export const AdvantageSolutions = [
+  [
+    {
+      title: "White Labelling",
+      description:
+        "Offer Nube iO products under a client’s brand, providing a cohesive brand experience.",
+      imageUrl: OEM,
+    },
+    {
+      title: "Custom Hardware and Software",
+      description:
+        "Develop tailored hardware and software solutions to meet specific client needs, offering flexibility and bespoke innovation.",
+      imageUrl: OEM,
+    },
+  ],
+  [
+    {
+      title: "Leveraging Our Technology Stack",
+      description:
+        "Utilize Nube iO's existing technology stack to create unique products or solutions for partners, enhancing market differentiation and competitiveness.",
+      imageUrl: OEM,
+    },
+    {
+      title: "Support Services",
+      description:
+        "Provide ongoing support, training, and maintenance to ensure optimal system performance, empowering our partners to achieve operational excellence.",
+      imageUrl: OEM,
+    },
+  ],
 ];

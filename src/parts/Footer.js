@@ -82,16 +82,22 @@ const Footer7 = () => {
             <p>© 2025 Nube IO. All rights reserved.</p>
             <ul className="flex justify-center gap-4 lg:justify-start">
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/terms">Privacy Policy</a>
+                <a href="/terms">Terms Of Use</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/privacy">App Policy</a>
+                <a href="/terms">Privacy Policy</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
                 <a href="/privacy">T&C s</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
                 <a href="/privacy">Warranty Policy</a>
+              </li>
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/privacy">Business Account application</a>
+              </li>
+              <li className="hover:text-gray-400 transition-colors duration-300">
+                <a href="/privacy">App Policy</a>
               </li>
             </ul>
           </div>

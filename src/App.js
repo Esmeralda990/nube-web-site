@@ -3,24 +3,26 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable-next-line no-unused-vars */
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
-import LandingPage from 'pages/LandingPage';
-import SolutionsPage from 'pages/SolutionsPage';
-import ProjectPage from 'pages/ProjectPage';
-import NotFoundPage from 'pages/NotFoundPage';
-import TeamPage from 'pages/TeamPage';
+import LandingPage from "pages/LandingPage";
+import SolutionsPage from "pages/SolutionsPage";
+import AboutPage from "pages/AboutPage";
+import ProjectPage from "pages/ProjectPage";
+import NotFoundPage from "pages/NotFoundPage";
+import TeamPage from "pages/TeamPage";
 
-import { ProjectDetailPage } from 'pages/ProjectDetailPage';
-import { DiscussProjectPage } from 'pages/DiscussProjectPage';
+import { ProjectDetailPage } from "pages/ProjectDetailPage";
+import { DiscussProjectPage } from "pages/DiscussProjectPage";
 
-import './assets/css/styles.css';
+import "./assets/css/styles.css";
 
 function App() {
   return (
     <>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/about" element={<AboutPage />} />
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/project" element={<ProjectPage />} />
         <Route exact path="/project/:id" element={<ProjectDetailPage />} />

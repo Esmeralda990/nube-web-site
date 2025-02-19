@@ -56,10 +56,10 @@ export default function Header() {
         <li>
           <Button
             className={`${
-              path === "/" ? "active-link" : ""
+              path === "/Solutions" ? "active-link" : ""
             } font-medium text-lg px-5 no-underline hover:underline`}
             type="link"
-            href="/"
+            href="/Solutions"
           >
             Solutions
           </Button>
@@ -67,10 +67,10 @@ export default function Header() {
         <li className="py-2 lg:py-0">
           <Button
             className={`${
-              path === "/team" ? "active-link" : ""
+              path === "/about" ? "active-link" : ""
             } font-medium text-lg px-5 no-underline hover:underline`}
             type="link"
-            href="/team"
+            href="/about"
           >
             About us
           </Button>
@@ -126,7 +126,7 @@ export default function Header() {
                   path === "/" ? "active-link" : ""
                 } font-medium px-10 no-underline hover:underline`}
                 type="link"
-                href="/"
+                href="/Solutions"
               >
                 Solutions
               </Button>
@@ -134,10 +134,10 @@ export default function Header() {
             <li className="py-2 bg-white">
               <Button
                 className={`${
-                  path === "/team" ? "active-link" : ""
+                  path === "/about" ? "active-link" : ""
                 } font-medium px-10 no-underline hover:underline`}
                 type="link"
-                href="/team"
+                href="/about"
               >
                 About us
               </Button>
@@ -159,7 +159,7 @@ export default function Header() {
                   path === "/project" ? "active-link" : ""
                 } font-medium px-10 no-underline hover:underline`}
                 type="link"
-                href="/project"
+                href="/team"
               >
                 Contact us
               </Button>
