@@ -9,7 +9,7 @@ export default function TeamSection() {
   return (
     <section className="mt-24 mb-0 pl-24">
       <div className=" container flex flex-col items-center text-center mb-10">
-        <p className="font-lig">Nube io</p>
+        <p className="font-light">Nube io</p>
         <h2 className="text-5xl sm:text-5xl text-theme-blue font-bold leading-tight mb-10">
           Meet our team
         </h2>

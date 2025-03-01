@@ -10,7 +10,7 @@ import {
   Solutionsfeature,
 } from "json/landingPageData";
 
-import Header from "parts/Header";
+import Header1 from "parts/Header1";
 import HeroSolution from "parts/HeroSolution";
 import DetailsProfessionalService from "parts/DetailsProfessionalService";
 import Servicesolutions from "parts/ServiceSolutions";
@@ -32,7 +32,7 @@ export default class SolutionsPage extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header1 />
         <HeroSolution />
         <DetailsProfessionalService />
         <Servicesolutions data={ServiceSolutions} />

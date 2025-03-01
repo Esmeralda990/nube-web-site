@@ -5,7 +5,7 @@
 import React, { Component } from "react";
 
 import { AdvantageAbout, Managers, floatingIcons } from "json/landingPageData";
-import Header from "parts/Header";
+import Header1 from "parts/Header1";
 import HeroAbout from "parts/HeroAbout";
 import DetailsAbout from "parts/DetailsAbout";
 import AdvangeAbout from "parts/AdvangeAbout";
@@ -25,7 +25,7 @@ export default class ProjectPage extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header1 />
         <HeroAbout />
         <DetailsAbout />
         <AdvangeAbout data={AdvantageAbout} />

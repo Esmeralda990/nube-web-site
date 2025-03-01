@@ -7,11 +7,7 @@
 }
 
 .active-link {
-  @apply text-theme-purple;
-}
-
-.header {
-  @apply flex flex-col py-4 mb-4 justify-between;
+  @apply text-theme-blue;
 }
 
 .hero {
@@ -19,11 +15,11 @@
 }
 
 .hero-content {
-  @apply mb-3; /* Space contend and video */
+  @apply mb-3;
 }
 
 .hero-video {
-  @apply w-full h-auto; /* Ancho video */
+  @apply w-full h-auto;
 }
 
 .portofolio-card:hover .img-hover {
@@ -45,8 +41,8 @@
 
 .logos-carousel {
   display: flex;
-  gap: 10px; /* Espaciado entre los logos */
-  animation: scroll 20seg linear infinite; /* Animación de desplazamiento */
+  gap: 10px;
+  animation: scroll 20seg linear infinite;
 }
 .relative {
   width: 100%;
@@ -55,7 +51,7 @@
 
 .flex {
   display: flex;
-  transition: transform 20s ease; /* Añadir un tiempo de transición para el efecto */
+  transition: transform 20s ease;
 }
 
 @media (min-width: 1024px) {
@@ -79,7 +75,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #22a48a !important; /* Color de los puntos */
+  background-color: #22a48a !important;
   opacity: 0.6;
   width: 20px !important;
   height: 20px !important;
@@ -88,15 +84,15 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #080808; /* Color del punto activo */
+  background-color: #080808;
   opacity: 1;
 }
 
 .swiper {
   position: relative;
-  height: 700px; /* Ajusta la altura según tus necesidades */
+  height: 700px;
 }
-/* Custom styles for Swiper navigation buttons */
+
 .swiper-button-next,
 .swiper-button-prev {
   background-color: rgba(28, 203, 121, 0.635);
@@ -160,19 +156,15 @@ h6 {
   font-weight: bold !important;
 }
 
-/* Animación para el desplazamiento de izquierda a derecha */
 @keyframes scroll-left {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(
-      -50%
-    ); /* Se mueve a la mitad para un scroll continuo */
+    transform: translateX(-50%);
   }
 }
 
-/* Animación para el desplazamiento de derecha a izquierda */
 @keyframes scroll-right {
   from {
     transform: translateX(-50%);
@@ -182,7 +174,6 @@ h6 {
   }
 }
 
-/* Carrusel de badges - izquierda a derecha */
 .animate-scroll-left {
   display: flex;
   gap: 50px;
@@ -191,7 +182,6 @@ h6 {
   animation: scroll-left 80s linear infinite;
 }
 
-/* Carrusel de badges - derecha a izquierda */
 .animate-scroll-right {
   display: flex;
   gap: 50px;
@@ -199,26 +189,23 @@ h6 {
   width: max-content;
   animation: scroll-right 80s linear infinite;
 }
-
-/* Contenedor de los iconos */
 .iconos-circulares {
   position: relative;
-  width: 1000px; /* El ancho del contenedor, ajustable */
-  height: 200px; /* La mitad de la altura para crear un semi-círculo */
+  width: 1000px;
+  height: 200px;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 700px; /* Para evitar que los iconos se salgan del contenedor */
+  padding-top: 700px;
 }
 
 .icono {
   position: absolute;
-  bottom: 0; /* Alinearlos en la parte inferior del contenedor */
-  transform-origin: center center; /* El punto de rotación está en el centro */
+  bottom: 0;
+  transform-origin: center center;
   transition: transform 0.3s ease;
-  opacity: 0.9; /* Ajusta la opacidad si es necesario */
+  opacity: 0.9;
 }
 
-/* Distribuye los iconos de forma circular */
 .icono:nth-child(1) {
   transform: rotate(-60deg) translateY(-400px) rotate(60deg);
 }
@@ -245,6 +232,264 @@ h6 {
 
 .icono:nth-child(7) {
   transform: rotate(-0deg) translateY(-200px) rotate(0deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
+  color: #000;
+  padding-top: 40px;
+  height: 150px;
+}
+
+.nav-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: inherit;
+  margin-right: auto;
+  flex: 1;
+}
+.main-nav .menus {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.main-nav .menu-items {
+  position: relative;
+  font-size: 16px;
+}
+.main-nav {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-nav .menu-items a {
+  display: block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease;
+}
+.main-nav .menu-items a:hover {
+  color: #339999;
+  font-weight: bold;
+}
+
+.main-nav .menu-items button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.7rem 1rem;
+}
+.main-nav .menu-items button:hover {
+  color: #339999;
+  font-weight: bold;
+}
+
+.main-nav .dropdown {
+  position: absolute;
+  right: 0;
+  left: auto;
+  box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
+  min-width: 15rem;
+  padding: 1 rem;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+  z-index: 9999;
+}
+.main-nav .dropdown.show {
+  display: block;
+}
+
+.nav-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown {
+  width: 1100px;
+  left: 0%;
+  transform: translateX(70%);
+  padding: 20px;
+}
+
+.dropdown.knowledge-base {
+  width: 500px;
+  transform: translateX(0);
+  padding: 10px;
+}
+.dropdown.knowledge-base .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown.knowledge-base a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown.knowledge-base .left-section {
+  text-align: center;
+}
+.dropdown.knowledge-base .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown.knowledge-base a:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font: " Bold ";
+  font-size: 24px;
+  color: #184171;
+}
+
+.dropdown-content {
+  display: flex;
+}
+
+.left-section {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.left-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.right-section a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+  color: #c6c2c2;
+}
+
+.right-section a:hover {
+  background-color: #e0e0e0;
+}
+
+.right-section div h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #339999;
+}
+
+.custom-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-products {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 50px) {
+  .swiper-products {
+    position: relative;
+    height: auto;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.swiper-slide-products {
+  opacity: 0;
+  animation: fadeInProducts 1s forwards;
+}
+
+@keyframes fadeInProducts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-products {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-products .swiper-pagination-bullet {
+  background-color: #31c2bd !important;
+  opacity: 0.6;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+.swiper-products .swiper-pagination-bullet-active {
+  background-color: #797979;
+  opacity: 1;
+}
+
+.swiper-slide-products img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  object-position: left;
+}
+@media (max-width: 768px) {
+  .swiper-slide-products img {
+    transform: translateX(-130px);
+  }
 }
 
 .discuss {

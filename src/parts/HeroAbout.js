@@ -11,9 +11,9 @@ import Button from "../elements/Button";
 export default function HeroAbout() {
   return (
     <section className="hero sm:items-center lg:items-start sm:flex-row">
-      <div className="w-full sm:w-1/2 flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-20">
+      <div className="w-full px-5 flex flex-col mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:w-1/2 lg:mt-6 xl:pl-12 xl:mt-20">
         <Fade direction="up" triggerOnce>
-          <h1 className="text-6xl text-theme-blue font-bold leading-tight mb-5">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
             Innovating the Future of Smart Automation
           </h1>
         </Fade>
@@ -30,7 +30,7 @@ export default function HeroAbout() {
             <Button
               href="/project"
               type="link"
-              className="flex w-72 h-16 justify-center px-18 py-4 text-white text-xl bg-teal-600 rounded-lg shadow-xl hover:bg-teal-700 transition duration-200"
+              className="text-sm sm:text-sm lg:text-xl flex w-72 h-16 justify-center px-18 py-4 text-white  bg-teal-600 rounded-lg shadow-xl hover:bg-teal-700 transition duration-200"
             >
               Explore our solutions
               <svg
@@ -72,7 +72,7 @@ export default function HeroAbout() {
           </div>
         </Fade>
       </div>
-      <div className="w-full sm:w-1/2 sm:pr-12 mt-12 ml-32">
+      <div className="w-full sm:w-1/2 sm:pr-12 mt-12 lg:ml-32">
         <Fade direction="up" triggerOnce>
           <img src={heroAbout} alt="Hero" />
         </Fade>

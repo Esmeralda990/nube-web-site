@@ -16,7 +16,7 @@ export default function Hero() {
     <>
       <section className="hero">
         <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 mt-24 text-left ">
-          <h1 className="text-5xl sm:text-6xl text-theme-blue font-bold leading-tight mb-5">
+          <h1 className="text-5xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
             Nube iO <br />
           </h1>
           <h2 className="text-3xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
@@ -51,10 +51,10 @@ export default function Hero() {
           </Fade>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-3/4 pb-24">
+        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-3/4 pb-24 ">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-full h-auto ml-32"
+              className="max-w-full h-auto lg:ml-32"
               src={BuildWebsite}
               alt="Build Website"
             />

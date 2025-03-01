@@ -1,0 +1,168 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import { CheckCircle2 } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Microedge } from "../json/ProductsPageData.js";
+import Button from "../elements/Button/index.js";
+
+const MicroEdge = () => {
+  return (
+    <section className="py-32 pb-12 md:ml-24 ml-0">
+      <div className="container mx-auto">
+        <p className="text-sm sm:text-sm lg:text-lg text-center font-bold text-teal-500 mb-2">
+          LoRa® Asset Monitoring Sensor.
+        </p>
+        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+          MicroEdge
+        </h1>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-2">
+          <article className="prose order-2 mx-auto md:order-1">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 2000, disableOnInteraction: false }}
+              speed={400}
+              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+            >
+              {Microedge.map((item) => (
+                <SwiperSlide key={item.id} className="swiper-slide-products">
+                  <img
+                    src={item.image}
+                    alt={`Droplet ${item.id}`}
+                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              More about More MicroEdge
+            </h1>
+            <p className="text-sm sm:text-sm lg:text-lg font-bold text-teal-500 mb-2">
+              Why Lora®
+            </p>
+            <p className="font-light text-base text-gray-400 mb-10">
+              LoRa® is a low-power, long-range wireless technology designed for
+              the Internet of Things. It is less affected by buildings and other
+              obstructions than regular WiFi, with one gateway generally being
+              LoRa® is expected to hold 75% of the IoT device market share soon.
+              The LoRa® community is expanding rapidly, with many new
+              contributions and developments occurring every day.
+              <br />
+              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
+              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
+              4G <br />
+              ✔︎AES128 encryption <br />
+              ✔︎Excellent penetration through obstacles <br />
+              ✔︎Highly versatile application, which translates into easier
+              integration
+            </p>
+            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              Capabilities
+            </h1>
+            <div>
+              <table className="w-full table-auto">
+                <thead>
+                  <tr>
+                    <th className="border px-4 py-2 bg-gray-200 font-bolt ">
+                      FEATURE/SPECIFICATION
+                    </th>
+                    <th className="border px-4 py-2 bg-gray-300 font-bolt ">
+                      DETAILS
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border px-4 py-2 ">
+                      MicorEdge® capabilities
+                    </td>
+                    <td className="border px-4 py-2 font-light">
+                      The MicroEdge supports 3x UI (universal inputs) and 1x
+                      pulse input (normally used for a gas or water meter
+                      reading)
+                    </td>
+                  </tr>
+                  <tr className="m-0 border-t p-0 even:bg-muted">
+                    <td className="border px-4 py-2 ">
+                      Pulse Specifications 1x off{" "}
+                    </td>
+                    <td className="border px-4 py-2 font-light">Dry Contact</td>
+                  </tr>
+                  <tr className="m-0 border-t p-0 even:bg-muted">
+                    <td className="border px-4 py-2 ">
+                      UI Specifications (3x off)
+                    </td>
+                    <td className="border px-4 py-2 font-light">
+                      10K temp sensors, 0-10dc input, On/Off input
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
+            <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
+              MicroEdge is a LoRa® technology-based IoT sensor. It seamlessly
+              captures data from your equipment and other assets, enabling you
+              to make smart, data-driven decisions.
+            </p>
+            <div className="flex gap-4 mt-6">
+              <a
+                href="/Docs/MicroEdge-Datasheet.pdf"
+                type="link"
+                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                download
+              >
+                DATASHEET
+              </a>
+              <Button
+                href="https://nubeio.github.io/rubix-ce-docs/docs/category/microedge-v2/"
+                type="link"
+                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                download
+              >
+                USER MANUAL
+              </Button>
+            </div>
+            <div className="my-6 w-full border-t border-gray-300" />
+            <p className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+              Just a few of the benefits
+            </p>
+            <ul className="flex flex-col gap-3 sm:gap-2">
+              {[
+                "3 UNIVERSAL INPUTS Use it for CT or sensor monitoring ",
+                "ONE PULSE INPUT Monitor the pulse count for a water or electrical meter",
+                "UP TO 2KM TRANSMISSION A small device with powerful capabilities",
+                "LORA® WIRELESS COMMUNICATION Built based on LoRa® wireless protocol ",
+                "EASY TO INSTALL Instal this battery-powered sensor anywhere ",
+                "100 PLUS DEVICES PER GATEWAY Easily scale up or down",
+                "WATERPROOF Suitable for outdoors or hard-to-access meters",
+              ].map((benefit, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-teal-500 sm:h-5 sm:w-5" />
+                  <p className="text-sm sm:text-base font-light text-gray-600">
+                    {benefit}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <div className="my-6 w-full border-t border-gray-300" />
+            <div className="flex items-center justify-between" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MicroEdge;

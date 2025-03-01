@@ -4,13 +4,13 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useRef, useEffect, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
-import PropTypes from "prop-types"; // <-- IMPORTANTE: Agregamos prop-types
+import PropTypes from "prop-types";
 
 export const ContainerScroll = ({ titleComponent, children }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end start"], // 🔹 Mejora en el cálculo del scroll
+    offset: ["start start", "end start"],
   });
 
   const [isMobile, setIsMobile] = useState(false);
@@ -47,7 +47,6 @@ export const ContainerScroll = ({ titleComponent, children }) => {
   );
 };
 
-// Definir PropTypes para validación
 ContainerScroll.propTypes = {
   titleComponent: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired,
@@ -56,7 +55,7 @@ ContainerScroll.propTypes = {
 export const Header = ({ translate, titleComponent }) => {
   return (
     <motion.div
-      style={{ translateY: translate || 0 }} // 🔹 Validación de `translate`
+      style={{ translateY: translate || 0 }}
       className="max-w-5xl mx-auto text-center"
     >
       {titleComponent}

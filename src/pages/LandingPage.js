@@ -6,7 +6,7 @@
 import React, { Component } from "react";
 
 import { Services, Portfolios, Advantages, Badges } from "json/landingPageData";
-import Header from "parts/Header";
+import Header1 from "parts/Header1";
 import Hero from "parts/Hero";
 import Service from "parts/Service";
 import PorfolioCarousel from "parts/PortfolioCarousel";
@@ -25,7 +25,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header1 />
         <Hero />
         <Service data={Services} />
         <PorfolioCarousel />
