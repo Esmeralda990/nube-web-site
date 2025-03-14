@@ -3,7 +3,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
-
 import {
   ServiceSolutions,
   AdvantageSolutions,
@@ -22,11 +21,20 @@ import SolutionHardware from "parts/SolutionHardware";
 import DetailsSoftware from "parts/DetailsSoftware";
 import SoftwareSolutions from "parts/SoftwareSolutions";
 import Discuss from "parts/Discuss";
+import GifSectionSolution from "parts/GifSeccionSolutions";
 import Footer from "parts/Footer";
 
 export default class SolutionsPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
+    // eslint-disable-next-line prefer-destructuring
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }
 
   render() {
@@ -34,16 +42,30 @@ export default class SolutionsPage extends Component {
       <>
         <Header1 />
         <HeroSolution />
-        <DetailsProfessionalService />
-        <Servicesolutions data={ServiceSolutions} />
-        <Ctasolutions />
-        <Detailoem />
-        <AdvantagesOEM data={AdvantageSolutions} />
-        <DetailsHardware />
-        <SolutionHardware data={Solutionsfeature} />
-        <DetailsSoftware />
-        <SoftwareSolutions />
+
+        <section id="Professional">
+          <DetailsProfessionalService />
+          <Servicesolutions data={ServiceSolutions} />
+          <Ctasolutions />
+        </section>
+
+        <section id="OEM">
+          <Detailoem />
+          <AdvantagesOEM data={AdvantageSolutions} />
+        </section>
+
+        <section id="Hardware">
+          <DetailsHardware />
+          <SolutionHardware data={Solutionsfeature} />
+        </section>
+
+        <section id="Software">
+          <DetailsSoftware />
+          <SoftwareSolutions />
+        </section>
+
         <Discuss />
+        <GifSectionSolution />
         <Footer />
       </>
     );

@@ -17,20 +17,15 @@ const Header1 = () => {
   return (
     <header style={{ position: "relative", zIndex: 1000 }}>
       <div className="nav-area flex justify-between items-center px-6 py-4">
-        {/* Logo */}
         <div className="logo flex-shrink-0">
           <BrandIcon />
         </div>
-
-        {/* Navbar en pantallas grandes */}
         <div className="nav-wrapper flex-1 hidden lg:block">
           <Navbar />
         </div>
-
-        {/* Botones visibles solo en escritorio (lg) */}
         <div className="hidden lg:flex space-x-4 ml-auto">
           <Button
-            href="/discuss-project"
+            href="/get-demo/"
             type="link"
             className="flex items-center justify-center px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
           >
@@ -38,15 +33,13 @@ const Header1 = () => {
           </Button>
 
           <Button
-            href="/contact"
+            href="/contact-us/"
             type="link"
             className="flex items-center justify-center px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
           >
-            Get in Touch
+            Contact
           </Button>
         </div>
-
-        {/* Botón de menú hamburguesa en móvil */}
         <div className="lg:hidden flex items-center">
           <button
             className="text-theme-blue focus:outline-none"
@@ -69,18 +62,14 @@ const Header1 = () => {
           </button>
         </div>
       </div>
-
-      {/* Menú hamburguesa en móvil */}
       {isMenuOpen && (
         <div className="lg:hidden">
           <div className="transition-opacity duration-400 ease-in-out opacity-100">
             <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300">
               <Navbar />
-
-              {/* Botones visibles solo en móvil dentro del menú */}
               <div className="flex flex-col space-y-4 p-4">
                 <Button
-                  href="/discuss-project"
+                  href="/get-demo/"
                   type="link"
                   className="w-full px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
                 >
@@ -88,11 +77,11 @@ const Header1 = () => {
                 </Button>
 
                 <Button
-                  href="/contact"
+                  href="/contact-us/"
                   type="link"
                   className="w-full px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
                 >
-                  Get in Touch
+                  Contact
                 </Button>
               </div>
             </ul>

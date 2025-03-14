@@ -3,11 +3,11 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
 
-import Header from "parts/Header";
-import HeroTeam from "parts/HeroTeam";
+import Header1 from "parts/Header1";
+import Terms from "partsterm/termsofuse";
 import Footer from "parts/Footer";
 
-export default class TeamPage extends Component {
+export default class TermsOfUsePage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -15,8 +15,8 @@ export default class TeamPage extends Component {
   render() {
     return (
       <>
-        <Header />
-        <HeroTeam />
+        <Header1 />
+        <Terms />
         <Footer />
       </>
     );

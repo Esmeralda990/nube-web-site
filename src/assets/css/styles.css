@@ -42,7 +42,7 @@
 .logos-carousel {
   display: flex;
   gap: 10px;
-  animation: scroll 20seg linear infinite;
+  animation: scroll 30seg linear infinite;
 }
 .relative {
   width: 100%;
@@ -51,7 +51,21 @@
 
 .flex {
   display: flex;
-  transition: transform 20s ease;
+  transition: transform 30s ease;
+}
+@media (max-width: 640px) {
+  .logo-image {
+    height: 30px;
+  }
+
+  .logos-carousel {
+    animation: scroll 10s linear infinite;
+    gap: 5px;
+  }
+  .relative {
+    width: 100%;
+    overflow: hidden; /* Asegura que no se desborde horizontalmente */
+  }
 }
 
 @media (min-width: 1024px) {
@@ -64,7 +78,6 @@
   }
 }
 
-/* Estilo para los puntos de paginación */
 .swiper-pagination {
   position: absolute;
   bottom: 10px;
@@ -75,7 +88,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #22a48a !important;
+  background-color: #339999 !important;
   opacity: 0.6;
   width: 20px !important;
   height: 20px !important;
@@ -95,7 +108,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgba(28, 203, 121, 0.635);
+  background-color: rgba#339999;
   /* Semi-transparent background */
   border-radius: 50%;
   font-size: 30px;
@@ -330,21 +343,21 @@ header {
 .dropdown {
   width: 1100px;
   left: 0%;
-  transform: translateX(70%);
+  transform: translateX(60%);
   padding: 20px;
 }
 
-.dropdown.knowledge-base {
+.dropdown.resources {
   width: 500px;
   transform: translateX(0);
   padding: 10px;
 }
-.dropdown.knowledge-base .dropdown-content {
+.dropdown.resources .dropdown-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.dropdown.knowledge-base a {
+.dropdown.resources a {
   display: inline-block;
   padding: 10px 15px;
   text-align: center;
@@ -354,16 +367,16 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.dropdown.knowledge-base .left-section {
+.dropdown.resources .left-section {
   text-align: center;
 }
-.dropdown.knowledge-base .right-section {
+.dropdown.resources .right-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.dropdown.knowledge-base a:hover {
+.dropdown.resources a:hover {
   background-color: #e0e0e0;
 }
 
@@ -414,6 +427,57 @@ header {
   margin-bottom: 10px;
   color: #339999;
 }
+@media (max-width: 768px) {
+  .main-nav .menus {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav .dropdown {
+    position: static;
+    width: 0%;
+    padding: 20px;
+    display: none;
+  }
+
+  .main-nav .dropdown.show {
+    display: block;
+    background-color: transparent;
+  }
+
+  .main-nav .menu-items > button {
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .main-nav .menu-items > a {
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .dropdown .submenu-item {
+    display: block;
+    padding-left: 20px;
+    background-color: transparent;
+  }
+
+  .dropdown .submenu-item a {
+    font-size: 16px;
+    padding: 12px 15px;
+    background-color: transparent;
+  }
+
+  .dropdown.resources .right-section {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .dropdown.resources .right-section a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 
 .custom-swiper .swiper-pagination {
   position: absolute;
@@ -422,26 +486,47 @@ header {
   width: 100%;
   text-align: center;
   z-index: 10;
+  overflow: hidden;
 }
 
 .swiper-products {
   position: relative;
   height: 400px;
+  max-height: 60vh;
   overflow: hidden;
-  max-width: 80%;
+  width: 500px;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
-@media (max-width: 50px) {
+@media (max-width: 300px) {
   .swiper-products {
     position: relative;
     height: auto;
-    max-width: 50%;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+.swiper-products img {
+  display: block;
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+}
+@media (max-width: 300px) {
+  .swiper-products img {
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    object-fit: contain;
     margin: 0 auto;
   }
 }
-
-.swiper-slide-products {
+.swiper-products {
   opacity: 0;
   animation: fadeInProducts 1s forwards;
 }
@@ -459,13 +544,13 @@ header {
   position: absolute;
   bottom: 5px;
   left: 0;
-  width: 50%;
+  width: 100%;
   text-align: center;
   z-index: 10;
 }
 
 .swiper-products .swiper-pagination-bullet {
-  background-color: #31c2bd !important;
+  background-color: #339999 !important;
   opacity: 0.6;
   width: 12px !important;
   height: 12px !important;
@@ -474,22 +559,43 @@ header {
 }
 
 .swiper-products .swiper-pagination-bullet-active {
-  background-color: #797979;
+  background-color: #339999;
   opacity: 1;
 }
 
-.swiper-slide-products img {
+.mi-tabla {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.mi-tabla th,
+.mi-tabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 200px;
+}
+
+.swiper-slide-gif img {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   height: auto;
   object-fit: contain;
   object-position: left;
 }
 @media (max-width: 768px) {
-  .swiper-slide-products img {
+  .swiper-slide-gif img {
     transform: translateX(-130px);
   }
+}
+
+.floating-icons {
+  position: absolute;
+  width: clamp(30px, 8vw, 100px);
+  height: clamp(30px, 8vw, 100px);
 }
 
 .discuss {

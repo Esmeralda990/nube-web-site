@@ -17,7 +17,7 @@ export default function DetailsHardware() {
             </h3>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
-            <p className="font-light text-xl text-gray-400 leading-relaxed ">
+            <p className="font-light text-xl text-gray-400 leading-relaxed text-center ">
               Nube iO provides advanced hardware solutions to help businesses
               manage and optimise building environments. Our sensors, gateways,
               and controllers offer exceptional accuracy and reliability,

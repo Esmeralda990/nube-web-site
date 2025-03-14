@@ -9,20 +9,20 @@ import { floatingIcons } from "json/landingPageData";
 
 const TeamGroup = () => {
   return (
-    <section className="mt-12 sm:mt-32 py-32 relative min-h-[500]">
+    <section className="mt-8 sm:mt-32 py-32 relative min-h-[500]">
       {/* Floating Icons */}
       {floatingIcons.map((icon, index) => (
         <div
           key={icon.src}
-          className={`absolute ${
+          className={`floating-icons absolute ${
             icon.position === "left" ? "left-0" : "right-0"
           } h-24 w-24 rounded-2xl bg-accent ring-1 ring-inset ring-accent-foreground/10 md:block`}
           style={{
-            top: icon.top, // Establece el valor top específico
+            top: icon.top,
             left: icon.position === "left" ? icon.offset : undefined,
             right: icon.position === "right" ? icon.offset : undefined,
-            bottom: icon.position === "bottom" ? icon.offset : undefined, // Puedes agregar un ajuste de bottom
-            zIndex: 10 + index, // Se puede variar para evitar solapamiento con más énfasis en los íconos de mayor zIndex
+            bottom: icon.position === "bottom" ? icon.offset : undefined,
+            zIndex: 10 + index,
           }}
         >
           <img
@@ -33,15 +33,16 @@ const TeamGroup = () => {
         </div>
       ))}
 
-      {/* Center Content */}
-      <div className="container mx-auto flex flex-col items-center text-center relative z-10">
+      <div className="container mx-auto max-w-[50%] flex flex-col items-center text-center relative z-10">
         {/* Headline */}
-        <h1 className="text-4xl font-bold text-theme-blue text-primary sm:text-5xl md:text-6xl">
-          Welcome to Our Team
+        <h1 className="text-xl sm:text-xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
+          Who Makes Nube iO Possible? Our Team,Our Strength At Nube iO.
         </h1>
-        {/* Subheading */}
-        <p className="mt-4 max-w-2xl text-lg font-light text-gray-400 text-muted-foreground sm:text-xl">
-          Meet our amazing team, dedicated to bringing you the best experience.
+        <p className="text-sm sm:text-base lg:text-xl font-light text-gray-400 leading-relaxed">
+          Our people drive our innovation and success.From engineers and sales
+          specialists to customer support and marketing teams, every department
+          plays a vital role. Together, we create technology that transforms
+          industries.s
         </p>
       </div>
     </section>

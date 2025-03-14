@@ -3,7 +3,8 @@
 /* eslint-disable import/extensions */
 
 import React from "react";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/images/LogoNube.png";
 
 const sections = [
@@ -20,7 +21,23 @@ const sections = [
   },
   {
     title: "Contact us",
-    links: [{ name: "info@nube-io.com", href: "mailto:info@nube-io.com" }],
+    links: [
+      { name: "info@nube-io.com", href: "mailto:info@nube-io.com" },
+      { name: "+61 2 7906 8414", href: "tel:+61 2 7906 8414" },
+      {
+        name: (
+          <div className="flex gap-4 text-center">
+            <a href="https://x.com/nube_iot?lang=en&mx=2">
+              <FaXTwitter className="size-6 text-2xl" /> {/* Ícono X */}
+            </a>
+            <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
+              <FaLinkedin className="size-6 text-2xl" /> {/* Ícono LinkedIn */}
+            </a>
+          </div>
+        ),
+        href: "#",
+      },
+    ],
   },
 ];
 
@@ -30,7 +47,6 @@ const Footer7 = () => {
       <div className="container mx-auto px-6">
         <footer>
           <div className="flex flex-col items-center justify-center gap-10 text-center lg:flex-row lg:text-left">
-            {/* Logo y descripción */}
             <div className="flex w-full max-w-96 flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center text-theme-teal-500 justify-center gap-4 lg:justify-start">
@@ -46,20 +62,8 @@ const Footer7 = () => {
                   building automation ready
                 </p>
               </div>
-              <ul className="flex items-center space-x-6 text-theme-blue">
-                <li className="hover:text-teal-500 transition-colors duration-300">
-                  <a href="https://x.com/nube_iot?lang=en&mx=2">
-                    <FaTwitter className="size-6" />
-                  </a>
-                </li>
-                <li className="hover:text-teal-500 transition-colors duration-300">
-                  <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
-                    <FaLinkedin className="size-6" />
-                  </a>
-                </li>
-              </ul>
             </div>
-            {/* Secciones de enlaces */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-20">
               {sections.map((section) => (
                 <div key={section.title}>
@@ -77,27 +81,28 @@ const Footer7 = () => {
               ))}
             </div>
           </div>
-          {/* Pie de página */}
-          <div className="mt-20 flex flex-col justify-center gap-4 border-t pt-8 text-center text-sm font-medium text-gray-600 lg:flex-row lg:items-center lg:text-left">
+          <div className="mt-20 flex flex-col justify-center gap-4 border-t pt-8 text-center text-sm font-medium text-gray-600 lg:flex-row lg:items-center lg:text-left lg:text-base">
             <p>© 2025 Nube IO. All rights reserved.</p>
-            <ul className="flex justify-center gap-4 lg:justify-start">
+            <ul className="flex flex-col gap-4 lg:flex-row lg:justify-start lg:gap-6">
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/terms">Terms Of Use</a>
+                <a href="/terms-of-use">Terms Of Use</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/terms">Privacy Policy</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/privacy">T&C s</a>
+                <a href="/terms-and-conditions/">T&C s</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/privacy">Warranty Policy</a>
+                <a href="/warranty-policy/">Warranty Policy</a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/privacy">Business Account application</a>
+                <a href="/business-account-application-form/">
+                  Business Account application
+                </a>
               </li>
               <li className="hover:text-gray-400 transition-colors duration-300">
-                <a href="/privacy">App Policy</a>
+                <a href="/app-policy/">App Policy</a>
               </li>
             </ul>
           </div>

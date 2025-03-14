@@ -39,6 +39,7 @@
     "react/jsx-props-no-multi-spaces": "off",
     "react/jsx-closing-tag-location": "off",
     "quotes": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   }
 }

@@ -27,18 +27,18 @@ export default function DiscussCta() {
             <div className="flex gap-4 mt-6 sm:mt-0 sm:ml-4 lg:ml-0 xl:ml-12">
               <Fade direction="up" triggerOnce delay={500}>
                 <Button
-                  href="/discuss-project"
+                  href="/contact-us/"
                   type="link"
                   className="flex bg-white text-black text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
                 >
-                  Learn More
+                  Contact
                 </Button>
               </Fade>
               <Fade direction="up" triggerOnce delay={600}>
                 <Button
-                  href="/contact"
+                  href="/get-demo/"
                   type="link"
-                  className="flex bg-teal-500 text-white text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
+                  className="flex bg-theme-teal text-white text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
                 >
                   Get a Demo
                 </Button>

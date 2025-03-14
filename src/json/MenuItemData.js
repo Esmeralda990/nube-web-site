@@ -10,12 +10,24 @@ export const menuItemsData = [
     link: "/",
   },
   {
-    name: "Products",
+    name: "About",
+    link: "/about/",
+  },
+  {
+    name: "Solutions",
     subMenu: [
       {
-        title: "Products",
         image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
         links: [
+          {
+            title: "Solutions",
+            items: [
+              { name: "Professional Services", link: "/solutions/" },
+              { name: "OEM", link: "/solutions/" },
+              { name: "Hardware", link: "/solutions/" },
+              { name: "Software", link: "/solutions/" },
+            ],
+          },
           {
             title: "Controllers",
             items: [
@@ -40,14 +52,14 @@ export const menuItemsData = [
           },
           {
             title: "Software",
-            items: [{ name: "Rubix CE", link: "/products/software/rubix-ce" }],
+            items: [{ name: "Rubix CE", link: "/software-rubix-platform/" }],
           },
           {
             title: "Connectivity",
             items: [
               {
                 name: "Nube iO Cloud",
-                link: "/products/connectivity/nube-io-cloud",
+                link: "/connectivity/",
               },
             ],
           },
@@ -56,7 +68,7 @@ export const menuItemsData = [
             items: [
               {
                 name: "Rubix Conect",
-                link: "/products/expansion-modules/rubix-conect",
+                link: "/rubix-connect-lw/",
               },
             ],
           },
@@ -66,59 +78,18 @@ export const menuItemsData = [
     gridCols: 2,
   },
   {
-    name: "Knowledge Base",
+    name: "Resources",
     subMenu: [
       {
-        title: "Knowledge Base",
+        title: "Resources",
         image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
         description:
-          "Find manuals and support articles to help you solve your questions.",
-        name: "Manuals And Support Articles",
-        link: "/knowledge-base/manuals-support",
-        linkText: "Manuals And Support Articles",
+          "Real results and valuable insights for your building management journey.",
+        name: "Case Study",
+        link: "/case-study/",
+        linkText: "Case Study",
       },
     ],
     gridCols: 1,
-  },
-  {
-    name: "Solutions",
-    subMenu: [
-      {
-        title: "Solutions",
-        image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
-        description: "Discover our innovative solutions for various needs.",
-        links: [
-          {
-            name: "BMS Data Integration",
-            link: "/solutions/bms-data-integration",
-          },
-          {
-            name: "Building HVAC Controls",
-            link: "/solutions/building-hvac-controls",
-          },
-          {
-            name: "IoT Utility Monitoring",
-            link: "/solutions/iot-utility-monitoring",
-          },
-          {
-            name: "IoT Environmental Monitoring",
-            link: "/solutions/iot-environmental-monitoring",
-          },
-        ],
-      },
-    ],
-    gridCols: 2,
-  },
-  {
-    name: "Our Customer",
-    link: "/our-customer",
-  },
-  {
-    name: "About",
-    link: "/about/",
-  },
-  {
-    name: "Contact",
-    link: "/contact",
   },
 ];

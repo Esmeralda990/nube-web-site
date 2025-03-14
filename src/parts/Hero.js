@@ -30,7 +30,7 @@ export default function Hero() {
             <Button
               href=""
               type="link"
-              className="flex w-71 h-18 items-center font-bold text-lg px-14 py-5 text-white text-xl bg-teal-600 rounded-lg shadow-2xl hover:bg-dark-theme-blue transition duration-200 "
+              className="flex w-71 h-18 items-center font-bold text-lg px-14 py-5 text-white text-xl bg-theme-teal rounded-lg shadow-2xl hover:bg-dark-theme-blue transition duration-200 "
             >
               Get a Demo
               <svg

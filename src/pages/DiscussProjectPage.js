@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { DiscussForm } from "parts/DiscussForm";
 
-import Header from "parts/Header";
+import Header from "parts/Header1";
 import Footer from "parts/Footer";
 
 export const DiscussProjectPage = () => {

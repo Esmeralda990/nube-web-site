@@ -7,27 +7,27 @@ import { Fade } from "react-awesome-reveal";
 
 import Button from "../elements/Button";
 
-import Herosolutions from "../assets/images/hero/portfolioHero.png";
+import Herosolutions from "../assets/images/hero/SolutionsHero.png";
 
 export default function HeroSolutions() {
   return (
     <section className="hero flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-20">
       <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 text-center lg:text-left">
-        <h1 className="text-5xl sm:text-6xl text-theme-blue font-bold leading-tight mb-6">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
           Empowering Comprehensive Automation Solutions.
         </h1>
-        <p className="text-2xl sm:text-2xl text-gray-300 font-light mb-8">
+        <p className="font-light text-xl text-gray-400 leading-relaxed">
           Tailored services and advanced technology to meet your space
           management needs.
         </p>
-        <div className="flex justify-start lg:justify-start">
+        <div className="flex justify-start lg:justify-start space-x-4 mt-8">
           <Fade direction="up" delay={500} triggerOnce>
             <Button
-              href="/project"
+              href="/contact-us/"
               type="link"
-              className="flex w-30 h-20 items-center justify-center px-6 py-3 text-white text-xl bg-teal-600 rounded-lg shadow-2xl hover:bg-black transition duration-200"
+              className="flex w-30 h-15 items-center justify-center px-6 py-3 text-white text-xl bg-theme-teal rounded-lg shadow-2xl hover:bg-black transition duration-200"
             >
-              Get your tailored solution today—contact us now!
+              Contact us now!
               <svg
                 className="ml-2 w-6 h-6 text-white animate-bounce-x"
                 xmlns="http://www.w3.org/2000/svg"

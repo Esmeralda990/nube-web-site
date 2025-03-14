@@ -7,9 +7,8 @@ import { Managers } from "json/landingPageData";
 
 export default function TeamSection() {
   return (
-    <section className="mt-24 mb-0 pl-24">
+    <section className="mt-24 mb-0 lg:pl-32">
       <div className=" container flex flex-col items-center text-center mb-10">
-        <p className="font-light">Nube io</p>
         <h2 className="text-5xl sm:text-5xl text-theme-blue font-bold leading-tight mb-10">
           Meet our team
         </h2>
@@ -28,7 +27,7 @@ export default function TeamSection() {
             <img
               src={person.imageUrl}
               alt={person.name}
-              className="mb-4 size-40 md:mb-5 lg:size-40 rounded-full"
+              className="mb-4 w-32 h-32 sm:w-40 sm:h-40 md:w-40 md:h-40 lg:w-24 lg:h-24 rounded-full object-cover"
             />
             <p className="text-center font-bold">{person.name}</p>
             <p className="text-center text-muted-foreground">{person.role}</p>

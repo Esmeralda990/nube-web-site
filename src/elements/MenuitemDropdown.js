@@ -12,8 +12,8 @@ const Dropdown = ({ submenus, dropdown }) => {
   return (
     <ul
       className={`dropdown ${dropdown ? "show" : ""} ${
-        submenus.length > 0 && submenus[0].title === "Knowledge Base"
-          ? "knowledge-base"
+        submenus.length > 0 && submenus[0].title === "Resources"
+          ? "resources"
           : ""
       }`}
     >

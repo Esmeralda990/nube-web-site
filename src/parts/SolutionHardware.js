@@ -24,10 +24,6 @@ const FeatureSwiper = () => {
 
   return (
     <section className="py-32 pt-12 pl-24 pb-12">
-      <h2 className="text-5xl font-bold text-theme-blue text-center leading-tight mb-10">
-        Hardware Options
-      </h2>
-
       <div className="container flex flex-col-reverse md:flex-row gap-8 relative">
         <ul className="md:w-1/2 flex flex-col gap-4">
           {Solutionsfeature.map((feature, index) => (

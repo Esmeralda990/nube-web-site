@@ -16,13 +16,10 @@ const LoraDroplet = () => {
   return (
     <section className="py-32 pb-12 md:ml-24 ml-0">
       <div className="container mx-auto">
-        <p className="text-sm sm:text-sm lg:text-lg text-center font-bold text-teal-500 mb-2">
-          LoRa® Environmental Sensor.
-        </p>
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Droplet
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-2">
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
           <article className="prose order-2 mx-auto md:order-1">
             <Swiper
               modules={[Pagination, Autoplay]}
@@ -43,29 +40,6 @@ const LoraDroplet = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              More about the Droplet
-            </h1>
-            <p className="text-sm sm:text-sm lg:text-lg font-bold text-teal-500 mb-2">
-              Why Lora®
-            </p>
-            <p className="font-light text-base text-gray-400 mb-10">
-              LoRa® is a low-power, long-range wireless technology designed for
-              the Internet of Things. It is less affected by buildings and other
-              obstructions than regular WiFi, with one gateway generally being
-              able to provide coverage for a 70x70m 3-story building. <br />
-              LoRa® is expected to hold 75% of the IoT device market share soon.
-              The LoRa® community is expanding rapidly, with many new
-              contributions and developments occurring every day.
-              <br />
-              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
-              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
-              4G <br />
-              ✔︎AES128 encryption <br />
-              ✔︎Excellent penetration through obstacles <br />
-              ✔︎Highly versatile application, which translates into easier
-              integration
-            </p>
             <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
               Capabilities
             </h1>
@@ -198,6 +172,29 @@ const LoraDroplet = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
+            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+              More about the Droplet
+            </h2>
+            <h3 className="text-sm sm:text-sm lg:text-base font-bold text-teal-600 mb-2">
+              Why Lora®
+            </h3>
+            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+              LoRa® is a low-power, long-range wireless technology designed for
+              the Internet of Things. It is less affected by buildings and other
+              obstructions than regular WiFi, with one gateway generally being
+              able to provide coverage for a 70x70m 3-story building. <br />
+              LoRa® is expected to hold 75% of the IoT device market share soon.
+              The LoRa® community is expanding rapidly, with many new
+              contributions and developments occurring every day.
+              <br />
+              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
+              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
+              4G <br />
+              ✔︎AES128 encryption <br />
+              ✔︎Excellent penetration through obstacles <br />
+              ✔︎Highly versatile application, which translates into easier
+              integration
+            </p>
             <div className="flex items-center justify-between" />
           </div>
         </div>

@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
-import VideoGif from "../Video/Home_Webp_02.webm";
+import VideoGif from "../Video/HOME_webm.webm";
 
 const GifSection = () => {
   return (

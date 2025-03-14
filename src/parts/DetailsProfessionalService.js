@@ -17,7 +17,7 @@ export default function DetailsPS() {
             </h3>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
-            <p className="font-light text-xl text-gray-400 leading-relaxed ">
+            <p className="font-light text-xl text-gray-400 leading-relaxed text-center">
               Our services deliver tailored solutions using Nube iO s product
               and engineering expertise. We focus on sustainability compliance
               through innovative technologies, comprehensive asset management,

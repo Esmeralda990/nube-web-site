@@ -17,7 +17,7 @@ export default function Detailsoftware() {
             </h3>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
-            <p className="font-light text-xl text-gray-400 leading-relaxed ">
+            <p className="font-light text-xl text-gray-400 leading-relaxed text-center ">
               Our world-class software suite is the cornerstone of Nube iOs
               comprehensive approach to building management. The intuitive
               platforms are meticulously designed to enhance user experience

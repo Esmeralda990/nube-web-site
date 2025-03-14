@@ -92,9 +92,26 @@ import COO from "../assets/images/Team/MatthewCady.png";
 import IOT from "../assets/images/Team/JonathanHill.png";
 import BMS from "../assets/images/Team/MarcDallen.png";
 
+// solution Feature
+import Controller from "../assets/images/RubixCompute/RubixC1.png";
+import Lora from "../assets/images/MicroEdge/MICRO4.png";
+import Expansion from "../assets/images/RubixLW/RC-LW.png";
+
+// Floatings Icons
+import Floatings1 from "../assets/images/IconsTeam/01.svg";
+import Floatings2 from "../assets/images/IconsTeam/02.svg";
+import Floatings3 from "../assets/images/IconsTeam/03.svg";
+import Floatings4 from "../assets/images/IconsTeam/04.svg";
+import Floatings5 from "../assets/images/IconsTeam/05.svg";
+import Floatings6 from "../assets/images/IconsTeam/06.svg";
+import Floatings7 from "../assets/images/IconsTeam/07.svg";
+import Floatings8 from "../assets/images/IconsTeam/08.svg";
+import Floatings9 from "../assets/images/IconsTeam/09.svg";
+import Floatings10 from "../assets/images/IconsTeam/10.svg";
+
 export const Services = [
   {
-    id: "Sofware",
+    id: "Software",
     title: "Software",
     imageUrl: Sofware,
     type: "",
@@ -531,65 +548,65 @@ export const floatingIcons = [
   // Left Floating Icons
   {
     position: "left",
-    offset: "240px",
-    top: "10%",
-    src: "https://shadcnblocks.com/images/block/block-2.svg",
+    offset: "15vw",
+    top: "0vh",
+    src: Floatings1,
   },
   {
     position: "left",
-    offset: "70px",
-    top: "25%",
-    src: "https://shadcnblocks.com/images/block/block-3.svg",
+    offset: "5vw",
+    top: "10vh",
+    src: Floatings2,
   },
   {
     position: "left",
-    offset: "320px",
-    top: "40%",
-    src: "https://shadcnblocks.com/images/block/block-4.svg",
+    offset: "18vw",
+    top: "20vh",
+    src: Floatings3,
   },
   {
     position: "left",
-    offset: "160px",
-    top: "55%",
-    src: "https://shadcnblocks.com/images/block/block-5.svg",
+    offset: "10vw",
+    top: "30vh",
+    src: Floatings4,
   },
   {
     position: "left",
-    offset: "50px",
-    top: "80%",
-    src: "https://shadcnblocks.com/images/block/block-6.svg",
+    offset: "2vw",
+    top: "40vh",
+    src: Floatings5,
   },
 
   // Right Floating Icons
   {
     position: "right",
-    offset: "240px",
-    top: "10%",
-    src: "https://shadcnblocks.com/images/block/block-2.svg",
+    offset: "15vw",
+    top: "0vh",
+    src: Floatings6,
   },
   {
     position: "right",
-    offset: "70px",
-    top: "25%",
-    src: "https://shadcnblocks.com/images/block/block-3.svg",
+    offset: "5vw",
+    top: "10vh",
+    src: Floatings7,
   },
   {
     position: "right",
-    offset: "320px",
-    top: "40%",
-    src: "https://shadcnblocks.com/images/block/block-4.svg",
+    offset: "18vw",
+    top: "20vh",
+    src: Floatings8,
   },
   {
     position: "right",
-    offset: "160px",
-    top: "55%",
-    src: "https://shadcnblocks.com/images/block/block-5.svg",
+    offset: "10vw",
+    top: "30vh",
+    src: Floatings9,
   },
   {
     position: "right",
-    offset: "50px",
-    top: "80%",
-    src: "https://shadcnblocks.com/images/block/block-6.svg",
+    offset: "2vw",
+    top: "40vh",
+    src: Floatings10,
   },
 ];
 
@@ -600,7 +617,7 @@ export const Solutionsfeature = [
     description:
       "Sensors from Nube iO are designed to accurately monitor various environmental parameters, including temperature, humidity, and air quality. Engineered for precision and reliability, these sensors provide critical data that empower facility managers to make informed decisions, ensuring optimal conditions and energy efficiency. Discover how our sensors can revolutionise your facility management today!",
     icon: Icons1,
-    image: Hardware,
+    image: Controller,
   },
   {
     id: "feature-2",
@@ -608,7 +625,7 @@ export const Solutionsfeature = [
     description:
       "Our gateways facilitate seamless data communication across complex building infrastructures. By bridging different protocols and systems, they enable smooth integration and centralised management. This capability allows businesses to streamline operations and harness the full potential of interconnected IoT networks. Upgrade your infrastructure with our gateways and experience seamless connectivity!",
     icon: Icons2,
-    image: OEM,
+    image: Lora,
   },
   {
     id: "feature-3",
@@ -616,7 +633,7 @@ export const Solutionsfeature = [
     description:
       "Nube iO controllers offer robust solutions for managing building systems effectively. These devices deliver precise control over HVAC, lighting, and other essential systems, optimising performance while reducing energy consumption. With intuitive interfaces and advanced programming options, our controllers empower businesses to enhance operational efficiency and sustainability. Take control of your building systems with our state-of-the-art controllers today!",
     icon: Icons3,
-    image: Sofware,
+    image: Expansion,
   },
 ];
 

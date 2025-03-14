@@ -11,14 +11,6 @@ export default function AdvantageSolutions({ data }) {
   return (
     <div className="bg-white py-24 mb-24 sm:mb-18 xl:mb-16 pt-12">
       <div className="container mx-auto">
-        <Fade bottom triggerOnce>
-          <div className="text-center mb-12">
-            <h1 className="text-5xl text-theme-blue font-bold mb-5">
-              OEM Options - Nube iO
-            </h1>
-          </div>
-        </Fade>
-
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
             <Fade key={index} bottom triggerOnce delay={200 * index}>

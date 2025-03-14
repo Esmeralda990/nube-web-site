@@ -15,19 +15,17 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
         </p>
       </div>
 
-      {/* Carrusel de Logos */}
       <div
         className="relative mx-auto overflow-hidden"
         style={{ paddingTop: "2 rem" }}
       >
         {" "}
-        {/* padding-top aquí */}
         <div
           className="logos-carousel"
           style={{
             display: "flex",
             width: "max-content",
-            animation: "scroll 20s linear infinite", // Desplazamiento continuo
+            animation: "scroll 20s linear infinite",
           }}
         >
           {[...logos, ...logos].map((logo) => (
@@ -42,7 +40,8 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
               <img
                 src={logo.image}
                 alt={logo.description}
-                className="logo-image"
+                className="logo-image w-20 h-auto object-contain sm:w-32 md:w-40 lg:w-40"
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           ))}

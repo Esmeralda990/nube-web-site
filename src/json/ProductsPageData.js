@@ -34,6 +34,33 @@ import Micro2 from "../assets/images/MicroEdge/MICRO2.png";
 import Micro3 from "../assets/images/MicroEdge/MICRO3.png";
 import Micro4 from "../assets/images/MicroEdge/MICRO4.png";
 
+// Icons Software Benefits
+import Desktop from "../assets/images/Icons/BuildingCompliace.png";
+import License from "../assets/images/Icons/API.png";
+import Friendly from "../assets/images/Icons/DataAlerts.png";
+import Data from "../assets/images/Icons/PeopleCouting.png";
+
+// Gif Benefits
+import Anywhere from "../assets/images/SoftwareProducts/Send-your-data-anywhere1.gif";
+import Merge from "../assets/images/SoftwareProducts/Merge-BMS-and-IoT2.gif";
+import Manage1 from "../assets/images/SoftwareProducts/ce-install-apps-1024x626-31.png";
+import Manage2 from "../assets/images/SoftwareProducts/ce-wires-1024x626-32.png";
+import Manage3 from "../assets/images/SoftwareProducts/ce-select-version-1024x626-33.png";
+
+// Rubix Wire
+import RubixWire1 from "../assets/images/SoftwareProducts/rubixWirex.gif";
+
+// NubeConnectivity
+import Connectivity1 from "../assets/images/Connectivity/Connectivity1.png";
+import Connectivity2 from "../assets/images/Connectivity/Connectivity2.png";
+import Connectivity3 from "../assets/images/Connectivity/Connectivity3.png";
+import Connectivity4 from "../assets/images/Connectivity/Connectivity4.png";
+import Connectivity5 from "../assets/images/Connectivity/Connectivity5.png";
+
+// Rubix Lw
+import RubixConnect from "../assets/images/RubixLW/RC-LW.png";
+import RubixConnect2 from "../assets/images/RubixLW/Lw2.png";
+
 export const RubixCompute = [
   {
     id: "1",
@@ -133,5 +160,96 @@ export const Microedge = [
   {
     id: "4",
     image: Micro4,
+  },
+];
+
+export const IconsBenefits = [
+  {
+    id: "1",
+    title: "Desktop software",
+    description: "Securely program multiple device at once",
+    icon: Desktop,
+  },
+  {
+    id: "2",
+    title: "License-free",
+    description: "Free to get started And no licenseing",
+    icon: License,
+  },
+  {
+    id: "3",
+    title: "User-friendly",
+    description: "Highly intuitive design with drag-and-drop features",
+    icon: Friendly,
+  },
+  {
+    id: "4",
+    title: "Send your data ",
+    description: "Transfer it to the cloud or your existing BMS",
+    icon: Data,
+  },
+];
+
+export const GifBenefits = [
+  {
+    id: "1",
+    image: Anywhere,
+  },
+  {
+    id: "2",
+    image: Merge,
+  },
+  {
+    id: "3",
+    image: Manage1,
+  },
+  {
+    id: "4",
+    image: Manage2,
+  },
+  {
+    id: "5",
+    image: Manage3,
+  },
+];
+
+export const RubixWire = [
+  {
+    id: "1",
+    image: RubixWire1,
+  },
+];
+
+export const Connectivity = [
+  {
+    id: "1",
+    image: Connectivity1,
+  },
+  {
+    id: "2",
+    image: Connectivity2,
+  },
+  {
+    id: "3",
+    image: Connectivity3,
+  },
+  {
+    id: "4",
+    image: Connectivity4,
+  },
+  {
+    id: "5",
+    image: Connectivity5,
+  },
+];
+
+export const RubixConnectLW = [
+  {
+    id: "1",
+    image: RubixConnect,
+  },
+  {
+    id: "2",
+    image: RubixConnect2,
   },
 ];

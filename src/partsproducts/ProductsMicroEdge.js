@@ -16,9 +16,6 @@ const MicroEdge = () => {
   return (
     <section className="py-32 pb-12 md:ml-24 ml-0">
       <div className="container mx-auto">
-        <p className="text-sm sm:text-sm lg:text-lg text-center font-bold text-teal-500 mb-2">
-          LoRa® Asset Monitoring Sensor.
-        </p>
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           MicroEdge
         </h1>
@@ -43,28 +40,6 @@ const MicroEdge = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              More about More MicroEdge
-            </h1>
-            <p className="text-sm sm:text-sm lg:text-lg font-bold text-teal-500 mb-2">
-              Why Lora®
-            </p>
-            <p className="font-light text-base text-gray-400 mb-10">
-              LoRa® is a low-power, long-range wireless technology designed for
-              the Internet of Things. It is less affected by buildings and other
-              obstructions than regular WiFi, with one gateway generally being
-              LoRa® is expected to hold 75% of the IoT device market share soon.
-              The LoRa® community is expanding rapidly, with many new
-              contributions and developments occurring every day.
-              <br />
-              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
-              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
-              4G <br />
-              ✔︎AES128 encryption <br />
-              ✔︎Excellent penetration through obstacles <br />
-              ✔︎Highly versatile application, which translates into easier
-              integration
-            </p>
             <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
               Capabilities
             </h1>
@@ -149,14 +124,36 @@ const MicroEdge = () => {
                 "WATERPROOF Suitable for outdoors or hard-to-access meters",
               ].map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-teal-500 sm:h-5 sm:w-5" />
-                  <p className="text-sm sm:text-base font-light text-gray-600">
+                  <CheckCircle2 className="h-6 w-6 text-theme-teal sm:h-5 sm:w-5" />
+                  <p className="text-sm sm:text-base font-light text-gray-400">
                     {benefit}
                   </p>
                 </li>
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
+            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+              More about More MicroEdge
+            </h2>
+            <h3 className="text-sm sm:text-sm lg:text-base font-bold text-theme-teal mb-2">
+              Why Lora®
+            </h3>
+            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+              LoRa® is a low-power, long-range wireless technology designed for
+              the Internet of Things. It is less affected by buildings and other
+              obstructions than regular WiFi, with one gateway generally being
+              LoRa® is expected to hold 75% of the IoT device market share soon.
+              The LoRa® community is expanding rapidly, with many new
+              contributions and developments occurring every day.
+              <br />
+              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
+              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
+              4G <br />
+              ✔︎AES128 encryption <br />
+              ✔︎Excellent penetration through obstacles <br />
+              ✔︎Highly versatile application, which translates into easier
+              integration
+            </p>
             <div className="flex items-center justify-between" />
           </div>
         </div>
