@@ -4,11 +4,11 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import heroContact from "assets/images/hero/portfolioHero.png";
+import heroContact from "assets/images/hero/Contact.png";
 
 export default function HeroContact() {
   return (
-    <section className="hero sm:items-center lg:items-start sm:flex-row">
+    <section className="hero sm:items-center lg:items-start sm:flex-row mt-8">
       <div className="w-full px-5 flex flex-col mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:w-1/2 lg:mt-6 xl:pl-12 xl:mt-20">
         <Fade direction="up" triggerOnce>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl text-theme-blue font-bold leading-tight mb-5">

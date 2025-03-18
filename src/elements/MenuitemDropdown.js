@@ -8,31 +8,35 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState, useRef, useEffect } from "react";
 
-const Dropdown = ({ submenus, dropdown }) => {
+const Dropdown = ({ submenus, dropdown, gridCols = 2 }) => {
   return (
     <ul
-      className={`dropdown ${dropdown ? "show" : ""} ${
-        submenus.length > 0 && submenus[0].title === "Resources"
-          ? "resources"
-          : ""
-      }`}
+      className={`dropdown ${
+        dropdown ? "show" : ""
+      } grid grid-cols-${gridCols} gap-4 p-4`}
     >
       {submenus.map((submenu, index) => (
-        <li key={index}>
-          <h3>{submenu.title}</h3>
-          <div className="dropdown-content">
+        <li key={index} className="mb-4">
+          <h3 className="font-bold text-xl mb-2">{submenu.title}</h3>
+          <div className="dropdown-content grid grid-cols-2 gap-4">
             <div className="left-section">
               {submenu.image && <img src={submenu.image} alt={submenu.title} />}
               <p>{submenu.description}</p>
             </div>
-            <div className="right-section">
+            <div className="right-section space-y-2">
               {submenu.links ? (
                 submenu.links.map((group, groupIndex) => (
                   <div key={groupIndex}>
-                    {group.title && <h4>{group.title}</h4>}
+                    {group.title && (
+                      <h4 className="font-bold">{group.title}</h4>
+                    )}
                     {group.items ? (
                       group.items.map((link, linkIndex) => (
-                        <a key={linkIndex} href={link.link}>
+                        <a
+                          key={linkIndex}
+                          href={link.link}
+                          className="block text-blue-500 hover:text-blue-700"
+                        >
                           {link.name}
                         </a>
                       ))
@@ -42,7 +46,10 @@ const Dropdown = ({ submenus, dropdown }) => {
                   </div>
                 ))
               ) : (
-                <a href={submenu.link}>
+                <a
+                  href={submenu.link}
+                  className="text-blue-500 hover:text-blue-700"
+                >
                   {submenu.linkText || "Manuals And Support Articles"}
                 </a>
               )}

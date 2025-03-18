@@ -9,14 +9,14 @@ import { floatingIcons } from "json/landingPageData";
 
 const TeamGroup = () => {
   return (
-    <section className="mt-8 sm:mt-32 py-32 relative min-h-[500]">
+    <section className="mt-8 mb-8 pt-4 pb-4 md:pt-32 mb:pb:32 sm:mt-4 relative min-h-[500]">
       {/* Floating Icons */}
       {floatingIcons.map((icon, index) => (
         <div
           key={icon.src}
           className={`floating-icons absolute ${
             icon.position === "left" ? "left-0" : "right-0"
-          } h-24 w-24 rounded-2xl bg-accent ring-1 ring-inset ring-accent-foreground/10 md:block`}
+          } h-24 w-24 rounded-2xl bg-accent ring-inset ring-accent-foreground/10 md:block`}
           style={{
             top: icon.top,
             left: icon.position === "left" ? icon.offset : undefined,
@@ -28,7 +28,7 @@ const TeamGroup = () => {
           <img
             src={icon.src}
             alt="floating icon"
-            className="h-full w-full rounded-md border-bg-gray-600 object-cover object-center p-3"
+            className="h-full w-full rounded-md object-cover object-center p-3"
           />
         </div>
       ))}

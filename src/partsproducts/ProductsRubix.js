@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const ProductRubix = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-32 pb-12 md:ml-24 ml-0 px-8">
       <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Compute
@@ -35,15 +35,15 @@ const ProductRubix = () => {
                   <img
                     src={item.image}
                     alt={`Rubix ${item.id}`}
-                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
+                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg  "
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue w-64 h-32 ">
               One Device. Multiple Protocols
             </h2>
-            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg">
+            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg  ">
               The Rubix-Compute can be used in the modern web via a REST-API.
               But the device is also a native BACnet/IP device.
             </p>

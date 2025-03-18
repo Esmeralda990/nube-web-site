@@ -5,8 +5,6 @@ import React from "react";
 
 import { Fade } from "react-awesome-reveal";
 
-import Button from "../elements/Button";
-
 export default function ServiceSolutions({ data }) {
   return (
     <div className="bg-gray-50">
@@ -17,7 +15,7 @@ export default function ServiceSolutions({ data }) {
           </h1>
         </Fade>
         <Fade direction="left" triggerOnce>
-          <p className="font-light text-lg text-gray-400 text-center mb-10">
+          <p className="font-light text-xl text-gray-400 text-center mb-10">
             Explore our tech for sustainable solutions to current and future
             challenges.
           </p>
@@ -34,29 +32,21 @@ export default function ServiceSolutions({ data }) {
               {" "}
               {/* key prop  */}
               <div className="group rounded-2xl shadow-xl border border-light-theme-blue transform transition duration-500 hover:scale-105">
-                <Button
-                  type="link"
-                  href={`/service/${item.id}`}
-                  className="block w-full"
-                >
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  className="w-full rounded-t-2xl p"
+                />
+                <div className="py-4">
                   {" "}
-                  {/*  Button */}
-                  <img
-                    src={item.imageUrl}
-                    alt={item.title}
-                    className="w-full rounded-t-2xl p"
-                  />
-                  <div className="py-4">
-                    {" "}
-                    {/* títle y descrip */}
-                    <h2 className="text-theme-blue text-center text-xl py-2">
-                      {item.title}
-                    </h2>
-                    <p className="font-light text-gray-400 text-center">
-                      {item.description || item.type} {/* type */}
-                    </p>
-                  </div>
-                </Button>
+                  {/* títle y descrip */}
+                  <h2 className="text-theme-blue text-center text-xl py-2">
+                    {item.title}
+                  </h2>
+                  <p className="font-light text-gray-400 text-center">
+                    {item.description || item.type} {/* type */}
+                  </p>
+                </div>
               </div>
             </Fade>
           ))}

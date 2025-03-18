@@ -6,7 +6,7 @@
 
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { Badges, IconElem } from "../json/landingPageData.js";
+import { Badges } from "../json/landingPageData.js";
 
 const Connect = () => {
   return (
@@ -60,44 +60,6 @@ const Connect = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Fila 3: IconElem */}
-        <div className="iconos-circulares relative mx-auto flex justify-around max-w-full flex-col gap-12 overflow-hidden pb-0 pt-64">
-          <div className="grid grid-cols-auto md:grid-cols-3 gap-4 justify-items-center">
-            {IconElem.map((item, index) => (
-              <div key={index} className="icono flex flex-col items-center">
-                <div className="flex justify-center items-center bg-white rounded-lg p-6 shadow-lg">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="h-9 w-9 object-contain"
-                  />
-                </div>
-                <p className="mt-4 text-sm font-medium text-center bg-gray-200 rounded-lg gap-2">
-                  {item.title}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Círculos decorativos */}
-          {[...Array(10)].map((_, index) => (
-            <div
-              key={index}
-              className="absolute -bottom-4 left-1/2 z-[-2] aspect-square rounded-full border border-indigo-200"
-              style={{
-                width: `${120 + 100 * index}px`,
-                opacity: 0.5,
-                filter: "saturate(20%)",
-                transform: "translateX(-50%) translateY(50%)",
-              }}
-            />
-          ))}
-          <div className="absolute inset-0 z-[-1] bg-gradient-to-b from-background via-transparent to-transparent" />
-          <div className="absolute inset-0 z-[-1] bg-gradient-to-l from-background via-transparent to-transparent" />
-          <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-background via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 z-[-2] h-[1px] w-full bg-indigo-200 opacity-50" />
         </div>
       </div>
     </section>

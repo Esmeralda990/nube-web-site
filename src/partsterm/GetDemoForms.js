@@ -8,7 +8,7 @@ import Button from "../elements/Button/index";
 
 const GetD = () => {
   return (
-    <section className="relative py-32 mt-0 pl-32">
+    <section className="relative py-32 md:pl-32">
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.1)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_0%,transparent_80%)]" />
@@ -33,7 +33,6 @@ const GetD = () => {
               <div className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2.5">
-                    ✔️{" "}
                     <p className="text-base font-light">
                       Tailored Insights: Gain a deep understanding of our
                       products and services customised for your unique
@@ -41,7 +40,6 @@ const GetD = () => {
                     </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    ✔️{" "}
                     <p className="text-base font-light">
                       Expert Interaction: Engage live with our specialists for
                       real-time answers, ensuring clarity and confidence in our
@@ -49,7 +47,6 @@ const GetD = () => {
                     </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    ✔️{" "}
                     <p className="text-base font-light">
                       Hands-On Experience: Explore the user interface and
                       functionality of our products firsthand to see how they
@@ -57,7 +54,6 @@ const GetD = () => {
                     </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    ✔️{" "}
                     <p className="text-base font-light">
                       Custom Solutions: Discuss options for customisation and
                       integration to fit our solutions seamlessly into your
@@ -65,7 +61,6 @@ const GetD = () => {
                     </p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    ✔️{" "}
                     <p className="text-base font-light">
                       Optimised Advice: Receive personalised advice on
                       optimising our tools for your business, leveraging
@@ -317,7 +312,7 @@ const GetD = () => {
                 <div className="flex w-full flex-col justify-end space-y-3 pt-2">
                   <Button
                     type="submit"
-                    className="w-full bg-teal-500 text-white py-2 rounded"
+                    className="w-full bg-theme-teal text-white py-2 rounded"
                   >
                     Submit
                   </Button>

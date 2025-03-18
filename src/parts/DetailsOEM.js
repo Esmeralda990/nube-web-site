@@ -17,7 +17,7 @@ export default function Detailoem() {
             </h3>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
-            <p className="font-light text-xl text-gray-400 leading-relaxed text-center ">
+            <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed text-center ">
               Nube iO provides flexible OEM solutions like white labelling,
               custom hardware, and software development. We help businesses
               integrate advanced building automation technology, expanding their

@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import NubeConnectivity from "partsproducts/NubeConnectivity";
 import PhoneNube from "partsproducts/NubPhone.js";
+import GifSectionConnectivity from "parts/GifSectionConnectivity.js";
 import Footer from "parts/Footer";
 
 import { Connectivity } from "../json/ProductsPageData.js";
@@ -21,6 +22,7 @@ export default class NubConnectivity extends Component {
         <Header1 />
         <NubeConnectivity data={Connectivity} />
         <PhoneNube />
+        <GifSectionConnectivity />
         <Footer />
       </>
     );

@@ -10,6 +10,7 @@ import SoftwareBenefits from "partsproducts/BenefitsSoftware";
 import VideoSoftware from "partsproducts/VideoSoftware";
 import GifSoftware from "partsproducts/GifSoftware";
 import RubixWireSoftware from "partsproducts/RubixWireSoftware";
+import GifSectionSoftware from "parts/GifSectionSoftware";
 import Footer from "parts/Footer";
 
 export default class SoftwarePage extends Component {
@@ -26,6 +27,7 @@ export default class SoftwarePage extends Component {
         <VideoSoftware />
         <GifSoftware data={GifBenefits} />
         <RubixWireSoftware data={RubixWire} />
+        <GifSectionSoftware />
         <Footer />
       </>
     );

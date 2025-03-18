@@ -20,7 +20,7 @@ export const menuItemsData = [
         image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
         links: [
           {
-            title: "Solutions",
+            title: "Our services",
             items: [
               { name: "Professional Services", link: "/solutions/" },
               { name: "OEM", link: "/solutions/" },

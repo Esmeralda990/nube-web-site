@@ -8,36 +8,45 @@ import Button from "../elements/Button/index";
 
 const ContactForm = () => {
   return (
-    <section className="py-32 pl-32">
+    <section className="mt-12 pb-12 md:mt-32 md:pl-32 px-6">
       <div className="container">
         <div className="mx-auto flex max-w-full flex-col justify-between gap-10 lg:flex-row lg:gap-20">
           <div className="mx-auto flex max-w-full flex-col justify-between gap-10">
             <div className="text-center lg:text-left">
-              <h1 className="mb-2 text-4xl font-bold text-theme-blue lg:mb-1 lg:text-6xl mt-40">
+              <h1 className="mb-2 text-4xl font-bold text-theme-blue lg:mb-1 lg:text-5xl mt-40 max-w-2xl">
                 Unlock Your Buildings Potential
               </h1>
-              <p className="text-muted-foreground font-light text-lg">
+              <p className="text-muted-foreground font-light text-gray-400 text-lg max-w-2xl">
                 To craft a bespoke experience and maximise the value of your
                 personalized demo, please provide us with a few details
               </p>
               <div className="mx-auto w-fit lg:mx-0">
-                <h3 className="mb-6 mt-6 text-teal-600 text-center text-2xl font-semibold lg:text-left">
+                <h3 className="mb-6 mt-6 text-theme-teal font-bold  text-center text-2xl  lg:text-left">
                   Contact Details
                 </h3>
                 <ul className="ml-4 list-disc">
                   <li>
-                    <span className="font-bold">Phone: </span>
-                    +123-456-7890
+                    <span className=" font-bold text-lg ">Phone: </span>
+                    <span className=" font-light text-gray-400 text-lg  ">
+                      {" "}
+                      +123-456-7890
+                    </span>
                   </li>
                   <li>
-                    <span className="font-bold">Email: </span>
-                    <a href="email" className="underline">
+                    <span className="font-bold text-lg">Email: </span>
+                    <a
+                      href="email"
+                      className=" text-theme-teal underline text-lg"
+                    >
                       info@nubeio.com
                     </a>
                   </li>
                   <li>
-                    <span className="font-bold">Address: </span>
-                    123 Building Tech Way, Suite 456, Metropolis, AU
+                    <span className="font-bold text-lg">Address: </span>
+                    <span className=" font-light text-gray-400 text-lg  ">
+                      {" "}
+                      123 Building Tech Way, Suite 456, Metropolis, AU
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -47,12 +56,22 @@ const ContactForm = () => {
                 </h3>
                 <ul className="ml-4 list-disc">
                   <li>
-                    <span className="font-bold">Monday to Friday: </span>
-                    9:00 AM - 5:00 PM
+                    <span className="font-bold text-lg ">
+                      Monday to Friday:{" "}
+                    </span>
+                    <span className="font-light text-gray-400 text-lg ">
+                      {" "}
+                      9:00 AM - 5:00 PM:{" "}
+                    </span>
                   </li>
                   <li>
-                    <span className="font-bold">Saturday and Sunday </span>
-                    Closed
+                    <span className="font-bold text-lg">
+                      Saturday and Sunday{" "}
+                    </span>
+                    <span className="font-light text-gray-400 text-lg ">
+                      {" "}
+                      Closed
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -60,29 +79,19 @@ const ContactForm = () => {
                 <h3 className="mb-6 mt-6 text-teal-600 text-center text-2xl font-semibold lg:text-left">
                   Stay Connected
                 </h3>
-                <span className="font-bold font-light">
+                <span className=" font-light text-gray-400 text-lg ">
                   Follow us on our social media platforms to stay updated and
-                  part of our community: :{" "}
+                  part of our community :{" "}
                 </span>
                 <ul className="ml-4 list-disc">
                   <li>
-                    <span className="font-bold">LinkedIn </span>
+                    <span className="font-bold text-lg ">LinkedIn </span>
                     <a
                       href="https://linkedin.com/company/nubeio"
-                      className="underline"
+                      className="underline text-theme-teal text-lg"
                     >
                       Nube iO LinkedIn
                     </a>
-                  </li>
-                  <li>
-                    <p className="font-bold">
-                      For immediate assistance, contact our dedicated support
-                      team at support@nubeio.com or log into your account for
-                      more personalised support options. Your transformation
-                      towards cutting-edge building management begins today.
-                      Contact us to explore how Nube iO can revolutionise your
-                      operations.
-                    </p>
                   </li>
                 </ul>
               </div>
@@ -292,7 +301,7 @@ const ContactForm = () => {
                 <option value="">Yes</option>
               </select>
             </div>
-            <Button className="w-full bg-teal-500 text-white py-2 rounded">
+            <Button className="w-full bg-theme-teal text-white py-2 rounded">
               Submit
             </Button>
           </div>

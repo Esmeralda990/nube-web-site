@@ -16,7 +16,7 @@ export default function DetailsAbout() {
           </h3>
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
-          <p className="font-light text-xl text-gray-400  text-center leading-relaxed">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed">
             At Nube iO, we create intelligent technology that transforms the way
             spaces are managed. Our cutting-edge software, IoT solutions, and
             data-driven automation empower businesses to optimise energy,
@@ -25,7 +25,7 @@ export default function DetailsAbout() {
             predictivemaintenance, we deliver scalable, seamless solutions that
             bridge the gap between legacy systems and the future of automation.
           </p>
-          <p className="font-light text-xl text-gray-400 text-center leading-relaxed mt-6">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 text-center leading-relaxed mt-6">
             With cloud-based connectivity, real-time insights, and AI-driven
             control, we provide the tools to predict, adapt, and prevent—giving
             organisations complete visibility and command over their operations.

@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-import { Dribbble, Github, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import React from "react";
 import { Managers } from "json/landingPageData";
 
@@ -18,7 +18,7 @@ export default function TeamSection() {
           Explicabo.
         </p>
       </div>
-      <div className="container mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5 lg:px-32 ">
+      <div className="container mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:px-32 ">
         {Managers.map((person) => (
           <div
             key={person.id}
@@ -27,7 +27,7 @@ export default function TeamSection() {
             <img
               src={person.imageUrl}
               alt={person.name}
-              className="mb-4 w-32 h-32 sm:w-40 sm:h-40 md:w-40 md:h-40 lg:w-24 lg:h-24 rounded-full object-cover"
+              className="mb-4 w-32 h-3 sm:w-40 sm:h-40 md:w-40 md:h-40 lg:w-24 lg:h-24 rounded-full object-cover"
             />
             <p className="text-center font-bold">{person.name}</p>
             <p className="text-center text-muted-foreground">{person.role}</p>
@@ -36,25 +36,11 @@ export default function TeamSection() {
             </p>
             <div className="mt-2 flex gap-4">
               <a
-                href="https://github.com"
+                href={person.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github className="size-4 text-muted-foreground" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="size-4 text-muted-foreground" />
-              </a>
-              <a
-                href="https://dribbble.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Dribbble className="size-4 text-muted-foreground" />
+                <Linkedin className="size-5 text-muted-foreground" />
               </a>
             </div>
           </div>

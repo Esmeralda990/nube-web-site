@@ -44,11 +44,6 @@ import IconElem5 from "../assets/images/IconElem/Security.png";
 import IconElem8 from "../assets/images/IconElem/co2.png";
 import IconElem9 from "../assets/images/IconElem/nub.png";
 
-// Portfolio Img Imports
-import Recruiting from "../assets/images/Portfolio/Recruiting.png";
-import Stream from "../assets/images/Portfolio/Stream.png";
-import Freelance from "../assets/images/Portfolio/Freelance.png";
-
 // Advantages
 import Technology from "../assets/images/Advantages/Tecnology.png";
 import Integration from "../assets/images/Advantages/Integration.png";
@@ -90,7 +85,6 @@ import CEOT from "../assets/images/Team/Tom.png";
 import CTO from "../assets/images/Team/AidanPickard.png";
 import COO from "../assets/images/Team/MatthewCady.png";
 import IOT from "../assets/images/Team/JonathanHill.png";
-import BMS from "../assets/images/Team/MarcDallen.png";
 
 // solution Feature
 import Controller from "../assets/images/RubixCompute/RubixC1.png";
@@ -114,27 +108,28 @@ export const Services = [
     id: "Software",
     title: "Software",
     imageUrl: Sofware,
-    type: "",
+    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
     animation: "left",
   },
   {
     id: "OEM",
     title: "OEM ",
     imageUrl: OEM,
+    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
     animation: "right",
   },
   {
     id: "Professional",
     title: "Professional",
     imageUrl: Professional,
-    type: "",
+    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
     animation: "right",
   },
   {
     id: "Hardware",
     title: "Hardware",
     imageUrl: Hardware,
-    type: "",
+    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
     animation: "right",
   },
 ];
@@ -206,26 +201,23 @@ export const Portfolios = [
   {
     id: "asd1293uasdads1",
     title: "Customise OEM solution",
-    imageUrl: Recruiting,
-    type: "Custom Hardware and Software for OEM Partners",
-    responsibility: ["Mobile Development", "UI/UX Design"],
-    credit: "https://dribbble.com/shots/15164950-Recruiting-app",
+    imageUrl: Hardware,
+    description: "Custom Hardware and Software for OEM Partners",
+    link: "https://dribbble.com/shots/15164950-Recruiting-app",
   },
   {
     id: "asd1293uhjkhkjh2",
     title: "IoT integrations",
-    imageUrl: Stream,
-    type: "Custom Hardware and Software for OEM Partners",
-    responsibility: ["Mobile Development", "UI/UX Design"],
-    credit: "https://dribbble.com/shots/15276430-Stream",
+    imageUrl: OEM,
+    description: "Custom Hardware and Software for OEM Partners",
+    link: "https://dribbble.com/shots/15276430-Stream",
   },
   {
     id: "asd1293uvbvcbbd3",
     title: "Building Rating Systems",
-    imageUrl: Freelance,
-    type: "Custom Hardware and Software for OEM Partners",
-    responsibility: ["Mobile Development", "UI/UX Design"],
-    credit: "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
+    imageUrl: Professional,
+    description: "Custom Hardware and Software for OEM Partners",
+    link: "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
   },
 ];
 
@@ -333,13 +325,13 @@ export const Advantages = [
     {
       title: "Smart, Scalable Technology",
       description:
-        "Our solutions grow with your needs, from single sites to multi-building portfolios,providing the flexibility to adapt to any challenge",
+        "Our solutions grow with your needs, from single sites to multi-building portfolios,providing the flexibility to adapt to any",
       imageUrl: Technology,
     },
     {
       title: "End-to-End Integration",
       description:
-        "Nube iO seamlessly connects legacy systems with modern technology, offering advanced IoT capabilities while ensuring effortless integration with existing infrastructure.",
+        "Nube iO seamlessly connects legacy systems with modern technology, offering advanced IoT capabilities while ensuring.",
       imageUrl: Integration,
     },
   ],
@@ -347,12 +339,13 @@ export const Advantages = [
     {
       title: "Sustainability at the Core",
       description:
-        "We’re committed to creating energy-efficient and environmentally responsible systems that help reduce carbon footprints and meet sustainability goals.",
+        "We’re committed to creating energy-efficient and environmentally responsible systems that help reduce carbon footprints and meet.",
       imageUrl: Sustainability,
     },
     {
       title: "Real-Time Insights",
-      description: "Our advanced analytics and monitoring",
+      description:
+        "Our advanced analytics and monitoring advanced analytics and monitoring advanced analytics and monitoring advanced ",
       imageUrl: Insights,
     },
   ],
@@ -507,40 +500,36 @@ export const Managers = [
     name: "Tom Fyfe",
     role: "CEO",
     description:
-      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+      "Experienced leader driving strategic growth and innovation in industrial manufacturing and PropTech.",
     imageUrl: CEOT,
+    linkedinUrl: "https://au.linkedin.com/in/tom-fyfe-8352aa51",
   },
   {
     id: "person-2",
     name: "Aidan Pickard",
     role: "CTO & Co-Founder",
     description:
-      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+      "Expert developer shaping smart-building technology with over 15 years in HVAC and automation.",
     imageUrl: CTO,
+    linkedinUrl: "https://www.linkedin.com/in/aidan-pickard-b4689643/",
   },
   {
     id: "person-3",
     name: "Matthew Cady",
     role: "COO & Co-Founder",
     description:
-      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+      "Entrepreneurial finance specialist managing operations, budgets, and strategic partnerships",
     imageUrl: COO,
+    linkedinUrl: "https://www.linkedin.com/in/matt-cady-75596410b/",
   },
   {
     id: "person-4",
     name: "Jonathan Hill",
     role: "IoT Deployment Manager",
     description:
-      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+      "Experienced manager leading operations, strategy, and successful project delivery.",
     imageUrl: IOT,
-  },
-  {
-    id: "person-5",
-    name: "Marc Dallen",
-    role: "BMS Engineer",
-    description:
-      "Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-    imageUrl: BMS,
+    linkedinUrl: "https://www.linkedin.com/in/jonathan-hill-6775b187/",
   },
 ];
 
@@ -615,7 +604,7 @@ export const Solutionsfeature = [
     id: "feature-1",
     title: "Controllers",
     description:
-      "Sensors from Nube iO are designed to accurately monitor various environmental parameters, including temperature, humidity, and air quality. Engineered for precision and reliability, these sensors provide critical data that empower facility managers to make informed decisions, ensuring optimal conditions and energy efficiency. Discover how our sensors can revolutionise your facility management today!",
+      "Our state-of-the-art controllers, including Rubix Compute, Rubix IO-16, Rubix Compute Mini, and Rubix IO-24, put advanced automation at your fingertips. Designed for simplicity and scalability, these controllers seamlessly integrate diverse systems and protocols, offering real-time insights and control. With ultimate flexibility and robust performance, our controllers enable smarter decisions, proactive management, and substantial energy savings.",
     icon: Icons1,
     image: Controller,
   },
@@ -623,7 +612,7 @@ export const Solutionsfeature = [
     id: "feature-2",
     title: "LoRa® Sensors",
     description:
-      "Our gateways facilitate seamless data communication across complex building infrastructures. By bridging different protocols and systems, they enable smooth integration and centralised management. This capability allows businesses to streamline operations and harness the full potential of interconnected IoT networks. Upgrade your infrastructure with our gateways and experience seamless connectivity!",
+      "Our LoRa® wireless sensors, including the Droplet Indoor Sensor and MicroEdge Asset Monitoring Sensor, deliver exceptional range, reliability, and accuracy for all your automation needs. From precise environmental monitoring and real-time occupancy detection to predictive asset management, our sensors provide critical insights instantly, helping you keep spaces optimised, comfortable, and cost-efficient.",
     icon: Icons2,
     image: Lora,
   },
@@ -631,7 +620,7 @@ export const Solutionsfeature = [
     id: "feature-3",
     title: "Expansion Modules",
     description:
-      "Nube iO controllers offer robust solutions for managing building systems effectively. These devices deliver precise control over HVAC, lighting, and other essential systems, optimising performance while reducing energy consumption. With intuitive interfaces and advanced programming options, our controllers empower businesses to enhance operational efficiency and sustainability. Take control of your building systems with our state-of-the-art controllers today!",
+      "Our Rubix Connect LW expansion modules provide effortless scalability and extended functionality for your automation ecosystem. Quickly integrate additional sensors and devices, strengthen your monitoring capabilities, and unlock enhanced control—all without compromising ease of use or efficiency. Nube iO ensures that as your business grows, your technology adapts seamlessly.!",
     icon: Icons3,
     image: Expansion,
   },

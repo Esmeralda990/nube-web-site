@@ -26,21 +26,21 @@ export default function Discuss() {
               <Fade direction="up" triggerOnce>
                 {" "}
                 <Button
-                  href="/discuss-project"
+                  href="/contact-us/"
                   type="link"
-                  className="flex items-center justify-center w-auto px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100" // Adjusted styles
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
                 >
-                  Get a Demo
+                  Contact
                 </Button>
               </Fade>
               <Fade direction="up" triggerOnce delay={300}>
                 {" "}
                 <Button
-                  href="/contact"
+                  href="/get-demo/"
                   type="link"
-                  className="flex items-center justify-center w-auto px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800" // Adjusted styles
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black text-base rounded-xl transition duration-300 ease-in-out border border-theme-teal  hover:scale-105 hover:bg-theme-teal hover:text-white"
                 >
-                  Get in Touch
+                  Get Demo
                 </Button>
               </Fade>
             </div>{" "}

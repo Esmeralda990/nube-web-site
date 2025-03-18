@@ -5,9 +5,9 @@ import { Logos } from "../json/landingPageData.js";
 
 const Logos3 = ({ heading, description, logos = Logos }) => {
   return (
-    <section className="py-12 mb-0">
-      <div className="container flex flex-col items-center justify-center text-center text-theme-blue mb-14 px-4 lg:px-12 ml-14 ">
-        <h1 className="text-5xl text-theme-blue text-justify-center font-bold leading-tight mb-5">
+    <section className="py-12 mb-8">
+      <div className="container flex flex-col items-center justify-center text-center text-theme-blue mb-14 px-4 lg:px-8 md:ml-24 lg:ml-24">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue text-justify-center font-bold leading-tight mb-5">
           {heading}
         </h1>
         <p className="font-light text-lg text-gray-400 text-center mb-10">
@@ -17,18 +17,18 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
 
       <div
         className="relative mx-auto overflow-hidden"
-        style={{ paddingTop: "2 rem" }}
+        style={{ paddingTop: "2 rem", maxWidth: "80%" }}
       >
         {" "}
         <div
-          className="logos-carousel"
+          className="logos-carousel "
           style={{
             display: "flex",
             width: "max-content",
-            animation: "scroll 20s linear infinite",
+            animation: "scroll 80s linear infinite",
           }}
         >
-          {[...logos, ...logos].map((logo) => (
+          {[...logos, ...logos, ...logos, ...logos].map((logo) => (
             <div
               key={logo.id}
               className="flex justify-center items-center"
@@ -40,7 +40,7 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
               <img
                 src={logo.image}
                 alt={logo.description}
-                className="logo-image w-20 h-auto object-contain sm:w-32 md:w-40 lg:w-40"
+                className="logo-image w-20 h-auto object-contain sm:w-32 md:w-40 lg:w-40 "
                 style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>

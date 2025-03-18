@@ -3,40 +3,53 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
+import { ArrowRight } from "lucide-react";
 import Fade from "react-awesome-reveal";
 
 export default function Advantage({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-gray-50 py-28 mb-24 sm:mb-18 xl:mb-16">
-      <div className="container mx-auto">
+    <div className="py-28 mb-24 sm:mb-18 xl:mb-16 md:pl-24 ">
+      <div className="container flex flex-col gap-16 lg:px-16">
         <Fade bottom triggerOnce>
-          <div className="text-center mb-12">
-            <h1 className="text-5xl text-theme-blue font-bold mb-5">
+          <div className="lg:max-w-sm">
+            <h2 className="text-4xl md:text-5xl text-theme-blue font-bold mb-5  px-6">
               Why Nube iO?
-            </h1>
-            <p className="font-light text-lg text-gray-400 text-center mb-5">
+            </h2>
+            <p className="font-light text-lg text-muted-foreground text-gray-400 mb-3 md:mb-4 md:text-xl lg:mb-6 px-6 ">
               Innovative, Scalable, and Sustainable Solutions for Smarter
               Building Management
             </p>
+            <a
+              href="/about/"
+              className="group flex items-center text-xs font-ligth text-theme-teal md:text-base lg:text-lg px-6"
+            >
+              About us
+              <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </Fade>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 bg-white px-6">
           {allCards.map((item, index) => (
             <Fade key={index} bottom triggerOnce delay={200 * index}>
-              <div className="w-88 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-[470px] flex flex-col">
-                <img
-                  className="max-w-sm rounded overflow-hidden shadow-lg w-full h-56 object-cover"
-                  src={item.imageUrl}
-                  alt={item.title}
-                />
-                <div className="px-6 py-5 flex-1 flex flex-col">
-                  <div className="font-bold text-xl mb-2 text-theme-gray">
+              <div className="flex flex-col overflow-clip rounded-xl border border-gray-200 ">
+                <div className="relative h-56 w-full">
+                  <img
+                    className="aspect-[16/9] h-full w-full object-cover object-center"
+                    src={item.imageUrl}
+                    alt={item.title}
+                  />
+                </div>
+
+                <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12 flex-1 flex flex-col">
+                  <h3 className="mb-3 text-lg font-bold md:mb-4 md:text-2xl lg:mb-6 text-theme-blue">
                     {item.title}
-                  </div>
-                  <p className="text-gray-700 text-base">{item.description}</p>
+                  </h3>
+                  <p className="text-muted-foreground lg:text-base text-gray-400">
+                    {item.description}
+                  </p>
                 </div>
 
                 <div className="px-6 pb-5">

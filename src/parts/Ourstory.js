@@ -16,23 +16,23 @@ export default function OurStory() {
           </h3>
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
-          <p className="font-light text-xl text-gray-400 leading-relaxed">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed">
             At Nube iO, we’re revolutionising automation, remote monitoring, and
             intelligent infrastructure. With over 14 years of experience, our
             team leads the way in developing advanced software and hardware to
             meet the challenges of a rapidly changing world.
           </p>
-          <p className="font-light text-xl text-gray-400 leading-relaxed mt-6">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed mt-6 ">
             Founded in Australia by system integrators, Nube iO was created out
             of frustration with rigid, outdated BMS hardware and software. We
             set out to build scalable, adaptable solutions ready for the future.
           </p>
-          <p className="font-light text-xl text-gray-400 leading-relaxed mt-6">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed mt-6">
             Our focus is on seamless data access. Whether integrating with
             legacy systems or using advanced hardware and sensors, we provide
             real-time insights quickly and affordably.
           </p>
-          <p className="font-light text-xl text-gray-400 leading-relaxed mt-6">
+          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed mt-6">
             OToday, Nube iO empowers system integrators, facility managers, and
             OEM partners with IoT connectivity and actionable data. Flexible and
             scalable, our solutions help clients improve performance,

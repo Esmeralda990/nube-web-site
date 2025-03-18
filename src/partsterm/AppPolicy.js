@@ -45,7 +45,9 @@ export default function AppPolicy() {
                 If you still have any questions or concerns, please contact us
                 at <a href="mailto:info@nube-io.com">info@nube-io.com</a>.
               </p>
-              <h2 className="text-xl font-semibold ">SUMMARY OF KEY POINTS</h2>
+              <h2 className="text-xl font-semibold text-theme-teal">
+                SUMMARY OF KEY POINTS
+              </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
                 This summary provides key points from our privacy notice, but
                 you can find out more details about any of these topics by
@@ -125,7 +127,9 @@ export default function AppPolicy() {
                   Click here to review the notice in full.
                 </li>
               </ul>
-              <h2 className="text-xl font-semibold ">TABLE OF CONTENTS</h2>
+              <h2 className="text-xl font-semibold text-theme-teal ">
+                TABLE OF CONTENTS
+              </h2>
               <ol className="list-decimal list-inside pl-6 text-base font-light text-gray-700 mb-6">
                 <li>What information do we collect?</li>
                 <li>How do we process your information?</li>
@@ -147,10 +151,10 @@ export default function AppPolicy() {
                   you?
                 </li>
               </ol>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 1. WHAT INFORMATION DO WE COLLECT?
               </h2>
-              <h3 className="text-lg font-semibold ">
+              <h3 className="text-lg font-semibold text-theme-teal">
                 Personal information you disclose to us.
               </h3>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -253,7 +257,7 @@ export default function AppPolicy() {
                   configuration information.
                 </li>
               </ul>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 2. HOW DO WE PROCESS YOUR INFORMATION?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -279,13 +283,13 @@ export default function AppPolicy() {
                   individual’s vital interest, such as to prevent harm.
                 </li>
               </ul>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
                 In Short: We only process your personal information when we
-                believe it is necessary and we have a valid legal reason (i.e. ,
-                legal basis) to do so under applicable law, like with your
+                believe it is necessary and we hasve a valid legal reason (i.e.
+                , legal basis) to do so under applicable law, like with your
                 consent, to comply with laws, to provide you with services to
                 enter into or fulfill our contractual obligations, to protect
                 your rights, or to fulfill our legitimate business interests.
@@ -384,7 +388,7 @@ export default function AppPolicy() {
                   the regulations.
                 </li>
               </ul>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -404,7 +408,7 @@ export default function AppPolicy() {
                   portion of our business to another company.
                 </li>
               </ul>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 5. HOW LONG DO WE KEEP YOUR INFORMATION?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -430,7 +434,7 @@ export default function AppPolicy() {
                 isolate it from any further processing until deletion is
                 possible.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 6. HOW DO WE KEEP YOUR INFORMATION SAFE?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -487,7 +491,7 @@ export default function AppPolicy() {
                 a complaint about how we handle your data, we would like to hear
                 from you.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 7. DO WE COLLECT INFORMATION FROM MINORS?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -506,7 +510,7 @@ export default function AppPolicy() {
                 have collected from children under age 18, please contact us at{" "}
                 <a href="mailto:info@nube-io.com">info@nube-io.com</a>.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 8. WHAT ARE YOUR PRIVACY RIGHTS?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -567,7 +571,9 @@ export default function AppPolicy() {
                 information conducted in reliance on lawful processing grounds
                 other than consent.
               </p>
-              <h3 className="text-lg font-semibold ">Account Information</h3>
+              <h2 className="text-lg font-semibold text-theme-teal ">
+                Account Information
+              </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
                 If you would at any time like to review or change the
                 information in your account or terminate your account, you can:
@@ -591,7 +597,7 @@ export default function AppPolicy() {
                 may email us at{" "}
                 <a href="mailto:info@nube-io.com">info@nube-io.com</a>.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 9. CONTROLS FOR DO-NOT-TRACK FEATURES
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -607,7 +613,7 @@ export default function AppPolicy() {
                 adopted that we must follow in the future, we will inform you
                 about that practice in a revised version of this privacy notice.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -950,7 +956,7 @@ export default function AppPolicy() {
                 a complaint about how we handle your data, we would like to hear
                 from you.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 11. DO WE MAKE UPDATES TO THIS NOTICE?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -967,7 +973,7 @@ export default function AppPolicy() {
                 you to review this privacy notice frequently to be informed of
                 how we are protecting your information.
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal">
                 12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
               </h2>
               <p className="text-base font-light text-gray-700 leading-relaxed mb-6">
@@ -985,7 +991,7 @@ export default function AppPolicy() {
                 <br />
                 Australia
               </p>
-              <h2 className="text-xl font-semibold ">
+              <h2 className="text-xl font-semibold text-theme-teal ">
                 13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT
                 FROM YOU?
               </h2>

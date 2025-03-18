@@ -5,15 +5,15 @@
 /* eslint-disable object-curly-newline */
 import React, { Component } from "react";
 
-import { Services, Portfolios, Advantages, Badges } from "json/landingPageData";
+import { Services, Portfolios, Advantages } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Hero from "parts/Hero";
 import Service from "parts/Service";
 import PorfolioCarousel from "parts/PortfolioCarousel";
 import Advantage from "parts/Advantage";
-import Connects from "parts/Connect";
-import Portfolio from "parts/Portfolio";
+import SolutionHero from "parts/SolutionHero";
 import GifSection from "parts/GifSectionhero";
+import SoftwareSolutions from "parts/SoftwareSolutions";
 import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 
@@ -27,11 +27,11 @@ export default class LandingPage extends Component {
       <>
         <Header1 />
         <Hero />
+        <SoftwareSolutions />
         <Service data={Services} />
         <PorfolioCarousel />
         <Advantage data={Advantages} />
-        <Connects data={Badges} />
-        <Portfolio data={Portfolios} />
+        <SolutionHero data={Portfolios} />
         <GifSection />
         <Discuss />
         <Footer />

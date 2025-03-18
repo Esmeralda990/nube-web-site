@@ -64,7 +64,7 @@
   }
   .relative {
     width: 100%;
-    overflow: hidden; /* Asegura que no se desborde horizontalmente */
+    overflow: hidden;
   }
 }
 
@@ -74,7 +74,7 @@
   }
 
   .hero {
-    @apply container flex-row mx-auto mt-8;
+    @apply container flex-row mx-auto mt-6 justify-center;
   }
 }
 
@@ -296,6 +296,17 @@ header {
   padding: 0.7rem 1rem;
   transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease;
 }
+@media (min-width: 1024px) {
+  .main-nav .menu-items a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav .menu-items a {
+    font-size: 1.1rem;
+  }
+}
 .main-nav .menu-items a:hover {
   color: #339999;
   font-weight: bold;
@@ -312,6 +323,19 @@ header {
   width: 100%;
   padding: 0.7rem 1rem;
 }
+
+@media (min-width: 1024px) {
+  .main-nav .menu-items button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav .menu-items button {
+    font-size: 1.1rem;
+  }
+}
+
 .main-nav .menu-items button:hover {
   color: #339999;
   font-weight: bold;
@@ -330,6 +354,7 @@ header {
   display: none;
   z-index: 9999;
 }
+
 .main-nav .dropdown.show {
   display: block;
 }
@@ -385,11 +410,7 @@ header {
   text-align: center;
   font: " Bold ";
   font-size: 24px;
-  color: #184171;
-}
-
-.dropdown-content {
-  display: flex;
+  color: #071435;
 }
 
 .left-section {
@@ -403,6 +424,10 @@ header {
   margin-bottom: 10px;
 }
 
+.dropdown-content {
+  display: flex;
+  color: #718096;
+}
 .right-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -427,6 +452,7 @@ header {
   margin-bottom: 10px;
   color: #339999;
 }
+
 @media (max-width: 768px) {
   .main-nav .menus {
     flex-direction: column;
@@ -434,14 +460,16 @@ header {
   }
   .main-nav .dropdown {
     position: static;
-    width: 0%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     display: none;
+    transform: translateX(0);
   }
 
   .main-nav .dropdown.show {
     display: block;
-    background-color: transparent;
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
   }
 
   .main-nav .menu-items > button {
@@ -476,6 +504,19 @@ header {
   .dropdown.resources .right-section a {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .dropdown-content {
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-section {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -594,8 +635,12 @@ header {
 
 .floating-icons {
   position: absolute;
-  width: clamp(30px, 8vw, 100px);
-  height: clamp(30px, 8vw, 100px);
+  width: clamp(50px, 8vw, 120px);
+  height: clamp(40px, 8vw, 120px);
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .discuss {

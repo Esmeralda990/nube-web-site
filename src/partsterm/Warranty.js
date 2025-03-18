@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Warrantypolicy() {
   return (
-    <div className="bg-white mb-12">
+    <div className="mb-0">
       <section className="hero sm:items-center lg:items-start sm:flex-row">
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-16">
           <Fade direction="up" triggerOnce>

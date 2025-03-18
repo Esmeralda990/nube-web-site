@@ -7,6 +7,7 @@
 /* eslint react/prop-types: "off" */
 /* eslint-disable max-len */
 import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import Navbar from "./Navbar.js";
 import BrandIcon from "./BrandIcon.js";
 import Button from "../elements/Button/index.js";
@@ -25,19 +26,20 @@ const Header1 = () => {
         </div>
         <div className="hidden lg:flex space-x-4 ml-auto">
           <Button
-            href="/get-demo/"
+            href="/contact-us/"
             type="link"
-            className="flex items-center justify-center px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+            className="flex items-center justify-center px-6 py-3 text-black text-base font-bold rounded-xl transition duration-300 ease-in-out hover:text-theme-teal "
           >
-            Get a Demo
+            Contact
           </Button>
 
           <Button
-            href="/contact-us/"
+            href="/get-demo/"
             type="link"
-            className="flex items-center justify-center px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+            className="flex items-center justify-center px-6 py-3 bg-white text-black text-base rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
           >
-            Contact
+            Get Demo
+            <ArrowRight className="ml-2 w-4" />
           </Button>
         </div>
         <div className="lg:hidden flex items-center">
@@ -79,7 +81,7 @@ const Header1 = () => {
                 <Button
                   href="/contact-us/"
                   type="link"
-                  className="w-full px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                  className="w-full px-6 py-3 bg-teal-600 text-white text-base text-black font-bold rounded-xl transition duration-300 ease-in-out hover:text-theme-teal"
                 >
                   Contact
                 </Button>

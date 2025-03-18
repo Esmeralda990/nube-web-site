@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import { Fade } from "react-awesome-reveal";
+import { ArrowRight } from "lucide-react";
 import { Slides } from "../json/landingPageData";
 import { Logos3 } from "./Logos3";
 import Button from "../elements/Button";
@@ -15,7 +16,7 @@ import Button from "../elements/Button";
 export default function PorfolioCarousel() {
   return (
     <>
-      <div className="w-full mb-0">
+      <div className="w-full mb-20 mt-24">
         <Logos3
           heading="Customer Suceess Stories"
           description="All of our 500+ Clients are happy"
@@ -32,39 +33,26 @@ export default function PorfolioCarousel() {
         speed={200}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        className="w-full mb-40"
+        className="w-full mb-20 md:mb-40"
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <section className="hero flex flex-col lg:flex-row items-center mt-0 h-[700px]">
-              <div className="w-full  lg:w-1/2 xl:pl-0 sm:pr-2 mt-2">
-                <h1 className="text-5xl sm:text-5xl text-theme-blue font-bold leading-tight mb-5">
+            <section className="hero flex flex-col lg:flex-row items-center mt-0 h-auto md:h-[700px] pb-12 md:pb-0">
+              <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2">
+                <h1 className="text-3xl md:text-6xl text-theme-blue text-left font-bold leading-tight mb-5">
                   {slide.title}
                 </h1>
-                <p className="font-light text-lg text-gray-400 leading-relaxed mb-16">
+                <p className="font-light text-lg text-gray-400 leading-relaxed mb-8 md:mb-16">
                   {slide.description}
                 </p>
                 <Fade direction="up" delay={200} triggerOnce>
                   <Button
-                    href="/project"
+                    href="/get-demo/"
                     type="link"
-                    className="flex w-71 h-18 items-center px-14 py-5 text-white text-xl bg-theme-purple rounded-lg shadow-2xl hover:bg-dark-theme-purple transition duration-200"
+                    className="flex w-72 md:w-72 h-12 md:h-18 items-center px-14 py-5 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white "
                   >
                     Get a demo
-                    <svg
-                      className="ml-2 w-7 h-7 text-white animate-bounce-x"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                    <ArrowRight className="ml-2 w-4" />
                   </Button>
                 </Fade>
               </div>
@@ -73,7 +61,7 @@ export default function PorfolioCarousel() {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="max-w-full h-full object-fill ml-40"
+                    className="ml-0 max-w-full h-full  object-contain md:object-fill sm:ml-0 md:ml-32"
                   />
                 </Fade>
               </div>

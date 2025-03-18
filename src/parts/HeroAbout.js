@@ -51,7 +51,7 @@ export default function HeroAbout() {
           </div>
         </Fade>
       </div>
-      <div className="w-full sm:w-1/2 sm:pr-12 mt-12 lg:ml-32">
+      <div className="w-full sm:w-1/2 sm:pr-12 mt-12 lg:ml-38">
         <Fade direction="up" triggerOnce>
           <img src={heroAbout} alt="Hero" />
         </Fade>

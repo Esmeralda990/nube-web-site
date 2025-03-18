@@ -23,8 +23,8 @@ const FeatureSwiper = () => {
   }, [activeIndex]);
 
   return (
-    <section className="py-32 pt-12 pl-24 pb-12">
-      <div className="container flex flex-col-reverse md:flex-row gap-8 relative">
+    <section className="py-32 pt-12 md:pl-24 pb-12">
+      <div className="container flex flex-col-reverse md:flex-row gap-8 relative px-12 ">
         <ul className="md:w-1/2 flex flex-col gap-4">
           {Solutionsfeature.map((feature, index) => (
             <li key={feature.id} className="p-4 rounded-lg transition-all">
@@ -63,7 +63,7 @@ const FeatureSwiper = () => {
             navigation={false}
             pagination={false}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            className="rounded-lg border border-border"
+            className="rounded-lg border border-border h-420 sm:h-60 md:h-72 lg:h-[1000px] max-h-[300px] min-h-[500px] md:max-h-[900px]"
             slideToClickedSlide
           >
             {Solutionsfeature.map((feature, index) => (
@@ -71,7 +71,7 @@ const FeatureSwiper = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className={`w-full h-full object-cover rounded-lg ${
+                  className={`w-full h-100 sm:h-240 lg:h-full md:h-full object-contain rounded-lg ${
                     activeIndex === index ? "opacity-100" : "opacity-50"
                   }`}
                 />
