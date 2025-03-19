@@ -18,7 +18,7 @@ const Connect = () => {
             Bring it all together
           </h1>
           <p className="font-light text-lg text-gray-400 text-center mb-5">
-            Our expanding library lets you connect with any equipment
+            Our expanding library lets you connect with any equipament
           </p>
         </div>
 
