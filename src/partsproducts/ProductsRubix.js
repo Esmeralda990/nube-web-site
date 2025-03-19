@@ -40,7 +40,7 @@ const ProductRubix = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue w-64 h-32 ">
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue ">
               One Device. Multiple Protocols
             </h2>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg  ">
@@ -159,7 +159,7 @@ const ProductRubix = () => {
               <a
                 href="/Docs/RC-06 - Datasheet.pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download="RC-06 - Datasheet.pdf"
               >
                 DATASHEET
@@ -167,7 +167,7 @@ const ProductRubix = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-compute"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
               >
                 USER MANUAL
               </Button>

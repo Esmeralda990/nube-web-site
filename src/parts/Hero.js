@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <div className="w-full lg:w-1/2 sm:pr-2 mt-24 text-left">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32">
           <a
             href="/solutions/"
             className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"

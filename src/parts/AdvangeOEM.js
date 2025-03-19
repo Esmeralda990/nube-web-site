@@ -9,7 +9,7 @@ export default function AdvantageSolutions({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-white py-24 mb-24 sm:mb-18 xl:mb-16 pt-12">
+    <div className="bg-white py-24 mb-24 sm:mb-18 xl:mb-16 pt-12 md:pt-32">
       <div className="container mx-auto">
         <div className=" px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (

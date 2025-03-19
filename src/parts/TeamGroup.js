@@ -9,7 +9,7 @@ import { floatingIcons } from "json/landingPageData";
 
 const TeamGroup = () => {
   return (
-    <section className="mt-8 mb-8 pt-4 pb-4 md:pt-32 mb:pb:32 sm:mt-4 relative min-h-[500]">
+    <section className="mt-8 mb-8 pt-4 pb-4 md:pt-28 mb:pb:32 sm:mt-4 relative min-h-[500]">
       {/* Floating Icons */}
       {floatingIcons.map((icon, index) => (
         <div

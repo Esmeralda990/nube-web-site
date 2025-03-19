@@ -29,7 +29,7 @@ export default function DiscussCta() {
                 <Button
                   href="/contact-us/"
                   type="link"
-                  className="flex bg-white text-black text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
                 >
                   Contact
                 </Button>
@@ -38,7 +38,7 @@ export default function DiscussCta() {
                 <Button
                   href="/get-demo/"
                   type="link"
-                  className="flex bg-theme-teal text-white text-base lg:text-base xl:text-base tracking-wider items-center justify-center w-32 lg:w-10 lg:h-12 xl:w-32 h-15 p-3 border-1 border-gray-300 shadow-l rounded-xl transform transition duration-600 hover:scale-105"
+                  className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 >
                   Get a Demo
                 </Button>

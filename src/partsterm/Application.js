@@ -4,7 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import heroapplication from "assets/images/hero/Home_principal.gif";
+import heroapplication from "assets/images/hero/Business.png";
 
 export default function Application() {
   return (

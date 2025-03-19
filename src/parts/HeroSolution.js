@@ -4,7 +4,7 @@
 import React from "react";
 
 import { Fade } from "react-awesome-reveal";
-
+import { ArrowRight } from "lucide-react";
 import Button from "../elements/Button";
 
 import Herosolutions from "../assets/images/hero/SolutionsHero.png";
@@ -25,23 +25,10 @@ export default function HeroSolutions() {
             <Button
               href="/contact-us/"
               type="link"
-              className="flex w-30 h-15 items-center justify-center px-6 py-3 text-white text-xl bg-theme-teal rounded-lg shadow-2xl hover:bg-black transition duration-200"
+              className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-16 justify-center px-8 py-4 text-black border border-theme-teal bg-white rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal  hover:text-white"
             >
               Contact us
-              <svg
-                className="ml-2 w-6 h-6 text-white animate-bounce-x"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <ArrowRight className="ml-2 w-4" />
             </Button>
           </Fade>
         </div>

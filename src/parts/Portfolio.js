@@ -34,7 +34,7 @@ export default function Portfolio({ data }) {
             key={index}
           >
             <Button type="link" href={`/project/${item.id}`}>
-              <div className="group rounded-2xl shadow-xl w-auto m-3 transform transition duration-500 hover:scale-110 portofolio-card">
+              <div className="group rounded-2xl  w-auto m-3 transform transition duration-500 hover:scale-110 portofolio-card">
                 <div className="relative">
                   <img
                     src={item.imageUrl}

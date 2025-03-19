@@ -6,9 +6,11 @@
 /* eslint-disable comma-dangle */
 /* eslint react/prop-types: "off" */
 /* eslint-disable react/no-array-index-key */
+/* eslint-disable operator-linebreak */
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const Dropdown = ({ submenus, dropdown, gridCols = 2 }) => {
+const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
   return (
     <ul
       className={`dropdown ${
@@ -18,41 +20,63 @@ const Dropdown = ({ submenus, dropdown, gridCols = 2 }) => {
       {submenus.map((submenu, index) => (
         <li key={index} className="mb-4">
           <h3 className="font-bold text-xl mb-2">{submenu.title}</h3>
-          <div className="dropdown-content grid grid-cols-2 gap-4">
-            <div className="left-section">
-              {submenu.image && <img src={submenu.image} alt={submenu.title} />}
-              <p>{submenu.description}</p>
-            </div>
-            <div className="right-section space-y-2">
-              {submenu.links ? (
+          <div className="dropdown-content grid grid-cols-1 md:grid-cols-3 gap-4">
+            {submenu.image && (
+              <div className="left-section">
+                <img src={submenu.image} alt={submenu.title} />
+                <p>{submenu.description}</p>
+              </div>
+            )}
+            <div
+              className={`right-section ${
+                submenu.image ? "md:col-span-2" : "md:col-span-3"
+              }`}
+            >
+              {submenu.links &&
                 submenu.links.map((group, groupIndex) => (
                   <div key={groupIndex}>
                     {group.title && (
                       <h4 className="font-bold">{group.title}</h4>
                     )}
-                    {group.items ? (
-                      group.items.map((link, linkIndex) => (
-                        <a
-                          key={linkIndex}
-                          href={link.link}
-                          className="block text-blue-500 hover:text-blue-700"
+                    {group.items &&
+                      group.items.map((category, categoryIndex) => (
+                        <div
+                          key={categoryIndex}
+                          className={`${
+                            category.title === "Our Products"
+                              ? "grid grid-cols-2 gap-4"
+                              : "grid grid-cols-1"
+                          }`}
                         >
-                          {link.name}
-                        </a>
-                      ))
-                    ) : (
-                      <a href={group.link}>{group.name}</a>
-                    )}
+                          {category.title && (
+                            <h5 className="font-semibold text-theme-blue text-lg">
+                              {category.title}
+                            </h5>
+                          )}
+                          {category.items &&
+                            category.items.map((item, itemIndex) => {
+                              return group.title === "Our Services" ? (
+                                <Link
+                                  key={itemIndex}
+                                  to={`/solutions#${item.id}`}
+                                  className="block"
+                                >
+                                  {item.name}
+                                </Link>
+                              ) : (
+                                <a
+                                  key={itemIndex}
+                                  href={item.link}
+                                  className="block"
+                                >
+                                  {item.name}
+                                </a>
+                              );
+                            })}
+                        </div>
+                      ))}
                   </div>
-                ))
-              ) : (
-                <a
-                  href={submenu.link}
-                  className="text-blue-500 hover:text-blue-700"
-                >
-                  {submenu.linkText || "Manuals And Support Articles"}
-                </a>
-              )}
+                ))}
             </div>
           </div>
         </li>
@@ -79,13 +103,19 @@ const MenuItems = ({ items, depthLevel }) => {
     };
   }, [dropdown]);
 
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
+
   const onMouseEnter = () => {
-    setDropdown(true);
+    if (!isTouchDevice()) setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    setDropdown(false);
+    if (!isTouchDevice()) setDropdown(false);
   };
+
+  const handleClick = () => setDropdown((prev) => !prev);
 
   return (
     <li
@@ -100,7 +130,7 @@ const MenuItems = ({ items, depthLevel }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
+            onClick={handleClick}
             className="text-lg font-bold"
           >
             {items.name}

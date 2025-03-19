@@ -5,14 +5,26 @@
 import Rubix1 from "../assets/images/RubixCompute/RubixC1.png";
 import Rubix2 from "../assets/images/RubixCompute/RubixC2.png";
 import Rubix3 from "../assets/images/RubixCompute/RubixC3.png";
+import Rubix4 from "../assets/images/RubixCompute/RubixC4.png";
+import Rubix5 from "../assets/images/RubixCompute/RubixC5.png";
+import Rubix6 from "../assets/images/RubixCompute/RubixC6.png";
+import Rubix7 from "../assets/images/RubixCompute/RubixC7.png";
+import Rubix8 from "../assets/images/RubixCompute/RubixC8.png";
+import Rubix9 from "../assets/images/RubixCompute/RubixC9.png";
 
 // Rubix compute mini
 import RubixMini1 from "../assets/images/RubixcomputeMini/RUBIXMINI.png";
 
 // Rubix IO 16
-import RubixIO1 from "../assets/images/RubixCompute/RIO16.png";
-import RubixIO2 from "../assets/images/RubixCompute/RIO162.png";
-import RubixIO3 from "../assets/images/RubixCompute/RIO163.png";
+import RubixIO1 from "../assets/images/RubixIO16/RIO161.png";
+import RubixIO2 from "../assets/images/RubixIO16/RIO162.png";
+import RubixIO3 from "../assets/images/RubixIO16/RIO163.png";
+import RubixIO4 from "../assets/images/RubixIO16/RIO164.png";
+import RubixIO5 from "../assets/images/RubixIO16/RIO165.png";
+import RubixIO6 from "../assets/images/RubixIO16/RIO166.png";
+import RubixIO7 from "../assets/images/RubixIO16/RIO167.png";
+import RubixIO8 from "../assets/images/RubixIO16/RIO168.png";
+import RubixIO9 from "../assets/images/RubixIO16/RIO169.png";
 
 // Niagara Edge
 import Edge1 from "../assets/images/NiagaraEdge/edge.png";
@@ -74,6 +86,30 @@ export const RubixCompute = [
     id: "3",
     image: Rubix3,
   },
+  {
+    id: "4",
+    image: Rubix4,
+  },
+  {
+    id: "5",
+    image: Rubix5,
+  },
+  {
+    id: "6",
+    image: Rubix6,
+  },
+  {
+    id: "7",
+    image: Rubix7,
+  },
+  {
+    id: "8",
+    image: Rubix8,
+  },
+  {
+    id: "9",
+    image: Rubix9,
+  },
 ];
 
 export const RubixMini = [
@@ -96,6 +132,30 @@ export const RubixIO16 = [
     id: "3",
     image: RubixIO3,
   },
+  {
+    id: "4",
+    image: RubixIO4,
+  },
+  {
+    id: "5",
+    image: RubixIO5,
+  },
+  {
+    id: "6",
+    image: RubixIO6,
+  },
+  {
+    id: "7",
+    image: RubixIO7,
+  },
+  {
+    id: "8",
+    image: RubixIO8,
+  },
+  {
+    id: "9",
+    image: RubixIO9,
+  },
 ];
 
 export const Edge = [
@@ -108,23 +168,23 @@ export const Edge = [
 export const Droplet = [
   {
     id: "1",
-    image: Droplet1,
-  },
-  {
-    id: "2",
-    image: Droplet2,
-  },
-  {
-    id: "3",
-    image: Droplet3,
-  },
-  {
-    id: "4",
     image: Droplet4,
   },
   {
-    id: "5",
+    id: "2",
+    image: Droplet1,
+  },
+  {
+    id: "3",
+    image: Droplet2,
+  },
+  {
+    id: "4",
     image: Droplet5,
+  },
+  {
+    id: "5",
+    image: Droplet3,
   },
   {
     id: "6",

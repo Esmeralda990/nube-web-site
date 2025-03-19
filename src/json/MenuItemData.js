@@ -20,55 +20,62 @@ export const menuItemsData = [
         image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
         links: [
           {
-            title: "Our services",
-            items: [
-              { name: "Professional Services", link: "/solutions/" },
-              { name: "OEM", link: "/solutions/" },
-              { name: "Hardware", link: "/solutions/" },
-              { name: "Software", link: "/solutions/" },
-            ],
-          },
-          {
-            title: "Controllers",
-            items: [
-              { name: "Rubix Compute", link: "/rubix-compute/" },
-              { name: "Rubix-Compute-Mini", link: "/rubix-compute-mini/" },
-              { name: "Rubix iO 16", link: "/rubix-io/" },
-              { name: "Niagara N4", link: "/edge/" },
-            ],
-          },
-          {
-            title: "LoRa",
+            title: "Our Services",
             items: [
               {
-                name: "Droplet Indoor Sensor",
-                link: "/lora-environmental-sensor/",
-              },
-              {
-                name: "MicroEdge Asset Monitoring Sensor",
-                link: "/lora-asset-monitoring-sensor/",
+                title: "",
+                items: [
+                  { name: "Professional Services", id: "Professional" },
+                  { name: "OEM", id: "OEM" },
+                  { name: "Hardware", id: "Hardware" },
+                  { name: "Software", id: "Software" },
+                ],
               },
             ],
           },
           {
-            title: "Software",
-            items: [{ name: "Rubix CE", link: "/software-rubix-platform/" }],
-          },
-          {
-            title: "Connectivity",
+            title: "Our Products",
             items: [
               {
-                name: "Nube iO Cloud",
-                link: "/connectivity/",
+                title: "Controllers",
+                items: [
+                  { name: "Rubix Compute", link: "/rubix-compute/" },
+                  { name: "Rubix-Compute-Mini", link: "/rubix-compute-mini/" },
+                  { name: "Rubix iO 16", link: "/rubix-io/" },
+                  { name: "Niagara N4", link: "/edge/" },
+                ],
+              },
+              {
+                title: "Software",
+                items: [
+                  { name: "Rubix CE", link: "/software-rubix-platform/" },
+                ],
               },
             ],
           },
           {
-            title: "Expansion Modules",
+            title: "  ",
             items: [
               {
-                name: "Rubix Conect",
-                link: "/rubix-connect-lw/",
+                title: "LoRa",
+                items: [
+                  {
+                    name: "Droplet Indoor Sensor",
+                    link: "/lora-environmental-sensor/",
+                  },
+                  {
+                    name: "MicroEdge Asset Monitoring Sensor",
+                    link: "/lora-asset-monitoring-sensor/",
+                  },
+                ],
+              },
+              {
+                title: "Connectivity",
+                items: [{ name: "Nube iO Cloud", link: "/connectivity/" }],
+              },
+              {
+                title: "Expansion Modules",
+                items: [{ name: "Rubix Connect", link: "/rubix-connect-lw/" }],
               },
             ],
           },
@@ -81,15 +88,56 @@ export const menuItemsData = [
     name: "Resources",
     subMenu: [
       {
-        title: "Resources",
         image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
-        description:
-          "Real results and valuable insights for your building management journey.",
-        name: "Case Study",
-        link: "/case-study/",
-        linkText: "Case Study",
+        links: [
+          {
+            title: "Case Studies",
+            items: [
+              {
+                title: "",
+                items: [
+                  { name: "Case Studies 1", link: "/case-study/" },
+                  { name: "Case Studies 2", link: "/" },
+                  { name: "Case Studies 3", link: "/" },
+                  { name: "Case Studies 4", link: "/" },
+                ],
+              },
+            ],
+          },
+          {
+            title: " ",
+            items: [
+              {
+                title: " Manuals & Support Articles",
+                items: [
+                  { name: "TM&Support 1", link: "/" },
+                  { name: "TM&Support 2", link: "/" },
+                  { name: "TM&Support 3", link: "/" },
+                ],
+              },
+            ],
+          },
+          {
+            title: "FAQs",
+            items: [
+              {
+                title: "",
+                items: [
+                  {
+                    name: "FAQs1",
+                    link: "/",
+                  },
+                  {
+                    name: "FAQs2",
+                    link: "/",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
     ],
-    gridCols: 1,
+    gridCols: 3,
   },
 ];

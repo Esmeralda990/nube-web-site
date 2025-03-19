@@ -7,7 +7,7 @@ import VideoGif from "../Video/ABOUT_webm.webm";
 
 const GifSectionAbout = () => {
   return (
-    <div className="w-full flex justify-center lg:mt-16">
+    <div className="w-full flex justify-center lg:mt-40">
       <video
         src={VideoGif}
         autoPlay

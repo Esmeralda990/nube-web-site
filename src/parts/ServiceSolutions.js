@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 export default function ServiceSolutions({ data }) {
   return (
     <div className="bg-gray-50">
-      <div className="container mx-auto pt-12 pb-32">
+      <div className="container mx-auto pt-32 pb-32">
         <Fade direction="right" triggerOnce>
           <h1 className="text-5xl text-theme-blue text-center font-bold mb-5">
             Building Smarter, Thinking Forward

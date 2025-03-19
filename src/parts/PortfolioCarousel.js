@@ -16,7 +16,7 @@ import Button from "../elements/Button";
 export default function PorfolioCarousel() {
   return (
     <>
-      <div className="w-full mb-20 mt-24">
+      <div className="w-full mb-20 md:mt-24">
         <Logos3
           heading="Customer Suceess Stories"
           description="All of our 500+ Clients are happy"
@@ -49,7 +49,7 @@ export default function PorfolioCarousel() {
                   <Button
                     href="/get-demo/"
                     type="link"
-                    className="flex w-72 md:w-72 h-12 md:h-18 items-center px-14 py-5 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white "
+                    className="flex w-72 md:w-48 h-12 md:h-18 items-center px-8 py-5 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white "
                   >
                     Get a demo
                     <ArrowRight className="ml-2 w-4" />
