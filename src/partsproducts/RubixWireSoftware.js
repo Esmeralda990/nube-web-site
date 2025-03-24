@@ -28,14 +28,14 @@ const Wire = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
             >
               {RubixWire.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-gif">
+                <SwiperSlide key={item.id}>
                   <img
                     src={item.image}
                     alt={`Wire ${item.id}`}
-                    className="w-full h-full mt-0 object-cover rounded-lg "
+                    className="swiper-product-gif w-full h-full mt-0 object-cover rounded-lg "
                   />
                 </SwiperSlide>
               ))}
@@ -67,7 +67,7 @@ const Wire = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
               >
                 DOCUMENTATION
               </Button>

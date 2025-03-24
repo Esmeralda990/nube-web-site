@@ -47,38 +47,50 @@ const RubixLW = () => {
               <table className="w-full table-auto">
                 <thead>
                   <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
                       FEATURE
                     </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm ">
                       SPECIFICATION
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2 ">Supported Frequencies</td>
-                    <td className="border px-4 py-2 font-light">AU915-928</td>
+                    <td className="border px-4 py-2 text-sm ">
+                      Supported Frequencies
+                    </td>
+                    <td className="border px-4 py-2 font-light text-sm">
+                      AU915-928
+                    </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Spreading Factor</td>
-                    <td className="border px-4 py-2 font-light">6-12</td>
+                    <td className="border px-4 py-2 text-sm">
+                      Spreading Factor
+                    </td>
+                    <td className="border px-4 py-2 font-light text-sm">
+                      6-12
+                    </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Bandwidth</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-sm ">Bandwidth</td>
+                    <td className="border px-4 py-2 font-light text-sm">
                       7.8 – 500 kHz
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Effective Bitrate</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-sm">
+                      Effective Bitrate
+                    </td>
+                    <td className="border px-4 py-2 font-light text-sm">
                       .018 – 37.5 kbps
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Estimated Sensitivity</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-sm">
+                      Estimated Sensitivity
+                    </td>
+                    <td className="border px-4 py-2 font-light text-sm">
                       111 to -148 dBm
                     </td>
                   </tr>
@@ -133,7 +145,7 @@ const RubixLW = () => {
               ].map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 text-teal-500 sm:h-5 sm:w-5" />
-                  <p className="text-sm sm:text-base font-light text-gray-600">
+                  <p className="text-sm sm:text-base font-light text-gray-400">
                     {benefit}
                   </p>
                 </li>

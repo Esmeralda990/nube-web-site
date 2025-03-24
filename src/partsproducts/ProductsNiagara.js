@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const NiagaraEdge = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-32 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Deliver the Reliability of Niagara ® to the Edge
@@ -28,14 +28,14 @@ const NiagaraEdge = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
             >
               {Edge.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-products">
+                <SwiperSlide key={item.id}>
                   <img
                     src={item.image}
                     alt={`Edge ${item.id}`}
-                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
+                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg"
                   />
                 </SwiperSlide>
               ))}
@@ -55,7 +55,7 @@ const NiagaraEdge = () => {
               <a
                 href="/Docs/ConserveIt_CI-EdgeX1 (May 2023).pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="px-6 py-3 bg-gray-300 text-black text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
                 download
               >
                 DATASHEET

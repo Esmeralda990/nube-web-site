@@ -9,9 +9,9 @@ import { Fade } from "react-awesome-reveal";
 export default function DetailsAbout() {
   return (
     <section className="hero sm:items-center lg:items-start sm:flex-row md:mt-20 md:mb-32">
-      <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 md:mt-16 lg:mt-16 xl:mt-16">
+      <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 mt-8 md:mt-16 lg:mt-16 xl:mt-16">
         <Fade direction="up" triggerOnce>
-          <h3 className="text-5xl text-theme-blue font-bold leading-tight mb-10 text-center  ">
+          <h3 className="text-3xl md:text-5xl text-theme-blue font-bold leading-tight mb-10 text-center  ">
             What We Do
           </h3>
         </Fade>

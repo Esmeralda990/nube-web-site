@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const MicroEdge = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-32 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           MicroEdge
@@ -28,14 +28,14 @@ const MicroEdge = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
             >
               {Microedge.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-products">
+                <SwiperSlide key={item.id}>
                   <img
                     src={item.image}
                     alt={`Droplet ${item.id}`}
-                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
+                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
                   />
                 </SwiperSlide>
               ))}
@@ -47,36 +47,38 @@ const MicroEdge = () => {
               <table className="w-full table-auto">
                 <thead>
                   <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-200 font-bold text-sm ">
                       FEATURE/SPECIFICATION
                     </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-300 font-bold text-sm">
                       DETAILS
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2 ">
+                    <td className="border px-4 py-2 text-sm">
                       MicorEdge® capabilities
                     </td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 font-light text-sm">
                       The MicroEdge supports 3x UI (universal inputs) and 1x
                       pulse input (normally used for a gas or water meter
                       reading)
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">
+                    <td className="border px-4 py-2 text-sm  ">
                       Pulse Specifications 1x off{" "}
                     </td>
-                    <td className="border px-4 py-2 font-light">Dry Contact</td>
+                    <td className="border px-4 py-2 font-light text-sm">
+                      Dry Contact
+                    </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">
+                    <td className="border px-4 py-2 text-sm ">
                       UI Specifications (3x off)
                     </td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 font-light text-sm">
                       10K temp sensors, 0-10dc input, On/Off input
                     </td>
                   </tr>
@@ -95,7 +97,7 @@ const MicroEdge = () => {
               <a
                 href="/Docs/MicroEdge-Datasheet.pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download
               >
                 DATASHEET
@@ -103,14 +105,14 @@ const MicroEdge = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/microedge-v2/"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 USER MANUAL
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <p className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <p className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
             </p>
             <ul className="flex flex-col gap-3 sm:gap-2">
@@ -132,7 +134,7 @@ const MicroEdge = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               More about More MicroEdge
             </h2>
             <h3 className="text-sm sm:text-sm lg:text-base font-bold text-theme-teal mb-2">
@@ -146,12 +148,12 @@ const MicroEdge = () => {
               The LoRa® community is expanding rapidly, with many new
               contributions and developments occurring every day.
               <br />
-              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
-              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
+              +Significantly longer range than for Bluetooth and WiFi <br />
+              +Drastically lower power consumption than for Bluetooth, WiFi, or
               4G <br />
-              ✔︎AES128 encryption <br />
-              ✔︎Excellent penetration through obstacles <br />
-              ✔︎Highly versatile application, which translates into easier
+              +AES128 encryption <br />
+              +Excellent penetration through obstacles <br />
+              +Highly versatile application, which translates into easier
               integration
             </p>
             <div className="flex items-center justify-between" />

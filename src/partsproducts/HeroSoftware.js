@@ -27,33 +27,16 @@ export default function HeroSoftware() {
             <Button
               href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
               type="link"
-              className="flex w-38 h-14 md:w-80 md:h-18 items-center 
-             font-bold text-sm md:text-lg 
-             px-6 py-3 md:px-14 md:py-5 
-             text-white bg-theme-teal 
-             rounded-lg shadow-2xl 
-             hover:bg-dark-theme-blue 
-             transition duration-200 "
+              className="flex w-36 h-14 md:w-80 md:h-18 items-center 
+             text-sm md:text-lg 
+             px-4 py-3 md:px-14 md:py-5 
+           bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
             >
               Documentation
-              <svg
-                className="ml-2 w-7 h-7 text-white animate-bounce-x"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
             </Button>
           </Fade>
         </div>
-        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-3/4 pb-24 ">
+        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-3/4 pb-24 ">
           <Fade direction="" triggerOnce>
             <img
               className="max-w-full h-auto lg:ml-32"

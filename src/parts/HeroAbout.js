@@ -14,7 +14,7 @@ export default function HeroAbout() {
     <section className="hero sm:items-center lg:items-start sm:flex-row">
       <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 lg:w-1/2 lg:mt-6 xl:pl-12 xl:mt-20">
         <Fade direction="up" triggerOnce>
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 mt-12">
+          <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 mt-12">
             Innovating the Future of Smart Automation
           </h1>
         </Fade>

@@ -22,10 +22,6 @@
   @apply w-full h-auto;
 }
 
-.portofolio-card:hover .img-hover {
-  @apply opacity-25;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -202,61 +198,13 @@ h6 {
   width: max-content;
   animation: scroll-right 80s linear infinite;
 }
-.iconos-circulares {
-  position: relative;
-  width: 1000px;
-  height: 200px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: 700px;
-}
-
-.icono {
-  position: absolute;
-  bottom: 0;
-  transform-origin: center center;
-  transition: transform 0.3s ease;
-  opacity: 0.9;
-}
-
-.icono:nth-child(1) {
-  transform: rotate(-60deg) translateY(-400px) rotate(60deg);
-}
-
-.icono:nth-child(2) {
-  transform: rotate(-0deg) translateY(-400px) rotate(0deg);
-}
-
-.icono:nth-child(3) {
-  transform: rotate(90deg) translateY(-400px) rotate(-90deg);
-}
-
-.icono:nth-child(4) {
-  transform: rotate(-90deg) translateY(-400px) rotate(90deg);
-}
-
-.icono:nth-child(5) {
-  transform: rotate(60deg) translateY(-350px) rotate(-60deg);
-}
-
-.icono:nth-child(6) {
-  transform: rotate(-50deg) translateY(-0px) rotate(50deg);
-}
-
-.icono:nth-child(7) {
-  transform: rotate(-0deg) translateY(-200px) rotate(0deg);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 header {
+  position: sticky;
   box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
   color: #000;
   padding-top: 40px;
-  height: 150px;
+  height: 130px;
 }
 
 .nav-area {
@@ -268,7 +216,6 @@ header {
 }
 .logo {
   text-decoration: none;
-  font-size: 25px;
   color: inherit;
   margin-right: auto;
   flex: 1;
@@ -368,8 +315,8 @@ header {
 .dropdown {
   width: 1100px;
   left: 0%;
-  transform: translateX(60%);
-  padding: 20px;
+  transform: translateX(40%);
+  padding: 40px;
 }
 
 .dropdown h3 {
@@ -456,7 +403,7 @@ header {
   }
 
   .dropdown .submenu-item a {
-    font-size: 2opx;
+    font-size: 18px;
     width: 100%;
     padding-left: 0;
     background-color: transparent;
@@ -468,8 +415,7 @@ header {
   }
 
   .left-section {
-    width: 100%;
-    margin-right: 0;
+    width: 0%;
   }
 
   .right-section {
@@ -488,21 +434,23 @@ header {
 }
 
 .swiper-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  height: 400px;
+  height: 50vh;
   max-height: 60vh;
   overflow: hidden;
-  width: 500px;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 40vw;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   .swiper-products {
-    position: relative;
-    height: auto;
-    width: 90%;
-    max-width: 90%;
+    height: 30vh;
+    max-width: -20%;
     margin: 0 auto;
     overflow-x: hidden;
   }
@@ -510,18 +458,20 @@ header {
 .swiper-products img {
   display: block;
   width: 70%;
+  max-width: 40rem;
   height: auto;
   object-fit: contain;
   object-position: center;
   margin: 0 auto;
 }
-@media (max-width: 300px) {
+@media (max-width: 768px) {
   .swiper-products img {
-    width: 60%;
-    max-width: 60%;
+    max-height: 50vh;
+    max-width: 110%;
+    width: auto;
     height: auto;
-    object-fit: contain;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 }
 .swiper-products {
@@ -586,15 +536,22 @@ header {
 }
 @media (max-width: 768px) {
   .swiper-slide-gif img {
-    transform: translateX(-130px);
+    transform: translateX(0px);
   }
 }
 
 .floating-icons {
   position: absolute;
-  width: clamp(50px, 8vw, 120px);
-  height: clamp(40px, 8vw, 120px);
+  width: clamp(40px, 10vw, 120px);
+  height: clamp(40px, 10vw, 120px);
 }
+
+@media (max-width: 768px) {
+  .floating-icons {
+    display: none;
+  }
+}
+
 .responsive-image {
   max-width: 100%;
   height: auto;

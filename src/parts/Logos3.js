@@ -5,12 +5,12 @@ import { Logos } from "../json/landingPageData.js";
 
 const Logos3 = ({ heading, description, logos = Logos }) => {
   return (
-    <section className="py-12 mb-8">
-      <div className="container flex flex-col items-center justify-center text-center text-theme-blue mb-14 px-4 lg:px-8 md:ml-24 lg:ml-24">
-        <h1 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue text-justify-center font-bold leading-tight mb-5">
+    <section className="py-12 mb-8 ">
+      <div className="ccontainer mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
           {heading}
         </h1>
-        <p className="font-light text-lg text-gray-400 text-center mb-10">
+        <p className="font-light text-lg text-gray-400 text-center mb-10 lg:text-center">
           {description}
         </p>
       </div>

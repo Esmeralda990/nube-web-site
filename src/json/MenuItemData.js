@@ -29,6 +29,8 @@ export const menuItemsData = [
                   { name: "OEM", id: "OEM" },
                   { name: "Hardware", id: "Hardware" },
                   { name: "Software", id: "Software" },
+                  { name: "Connectivity", link: "/connectivity/" },
+                  { name: "By Case Scenario", link: "/case-study/" },
                 ],
               },
             ],
@@ -64,7 +66,7 @@ export const menuItemsData = [
                     link: "/lora-environmental-sensor/",
                   },
                   {
-                    name: "MicroEdge Asset Monitoring Sensor",
+                    name: "MicroEdge Asset",
                     link: "/lora-asset-monitoring-sensor/",
                   },
                 ],
@@ -83,6 +85,7 @@ export const menuItemsData = [
       },
     ],
     gridCols: 2,
+    hasSubMenu: true,
   },
   {
     name: "Resources",
@@ -105,12 +108,15 @@ export const menuItemsData = [
             ],
           },
           {
-            title: " ",
+            title: "    ",
             items: [
               {
                 title: " Manuals & Support Articles",
                 items: [
-                  { name: "TM&Support 1", link: "/" },
+                  {
+                    name: "TM&Support 1",
+                    link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
+                  },
                   { name: "TM&Support 2", link: "/" },
                   { name: "TM&Support 3", link: "/" },
                 ],
@@ -139,5 +145,6 @@ export const menuItemsData = [
       },
     ],
     gridCols: 3,
+    hasSubMenu: true,
   },
 ];

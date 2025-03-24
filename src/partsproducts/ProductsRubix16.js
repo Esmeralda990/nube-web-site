@@ -14,8 +14,8 @@ import Button from "../elements/Button/index.js";
 
 const ProductRubix16 = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
-      <div className="container mx-auto px-12">
+    <section className="py-32 pb-12 md:ml-24 px-8">
+      <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix iO 16
         </h1>
@@ -28,14 +28,14 @@ const ProductRubix16 = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
             >
               {RubixIO16.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-products">
+                <SwiperSlide key={item.id}>
                   <img
                     src={item.image}
                     alt={`Rubix ${item.id}`}
-                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
+                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
                   />
                 </SwiperSlide>
               ))}
@@ -44,40 +44,54 @@ const ProductRubix16 = () => {
               <table className="w-full table-auto mt-5">
                 <thead>
                   <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
                       SPECIFICATION
                     </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm">
                       VALUE
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2 ">Mounting</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-lg sm:text-sm ">
+                      Mounting
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
                       Din Rail Enclosure
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Size</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-lg sm:text-sm">
+                      Size
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
                       1126556mm H/W/D
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Protection Level</td>
-                    <td className="border px-4 py-2 font-light">IP40</td>
+                    <td className="border px-4 py-2 text-lg sm:text-sm ">
+                      Protection Level
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                      IP40
+                    </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Power Supply</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-lg sm:text-sm">
+                      Power Supply
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
                       24VAC or 24VDC
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Material</td>
-                    <td className="border px-4 py-2 font-light">ABS Plastic</td>
+                    <td className="border px-4 py-2 text-lg sm:text-sm">
+                      Material
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                      ABS Plastic
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -97,7 +111,7 @@ const ProductRubix16 = () => {
               <a
                 href="/Docs/Rubix-IO-16-Datasheet.pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download
               >
                 DATASHEET
@@ -105,14 +119,14 @@ const ProductRubix16 = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-io-16/"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 USER MANUAL
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
             </h2>
             <ul className="flex flex-col gap-3 sm:gap-2">
@@ -126,31 +140,29 @@ const ProductRubix16 = () => {
               ].map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 text-theme-teal sm:h-5 sm:w-5" />
-                  <p className="text-sm sm:text-base font-light text-gray-600">
+                  <p className="text-lg sm:text-base font-light text-gray-400">
                     {benefit}
                   </p>
                 </li>
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               iO Specs
             </h2>
-            <h3 className="text-xl font-bold mt-4 mb-4 text-theme-teal">
+            <h3 className="text-base md:text-lg font-bold mt-4 mb-4 text-theme-teal">
               Inputs
             </h3>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              ✔︎ 0-10dc <br />
-              ✔︎ Digital <br />
-              ✔︎ 4-20ma <br />
-              ✔︎ 10k type 2 thermistor
+              - 0-10dc <br />
+              - Digital <br />
+              - 4-20ma <br />- 10k type 2 thermistor
             </p>
-            <h3 className="text-xl font-bold mt-4 mb-4 text-theme-teal">
+            <h3 className="text-base md:text-lg font-bold mt-4 mb-4 text-theme-teal">
               Outputs
             </h3>
-            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              ✔︎ 0-10dc <br />
-              ✔︎ Digital (Switch a 12vdc Relay)
+            <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+              - 0-10dc <br />- Digital (Switch a 12vdc Relay)
             </p>
             <div className="flex items-center justify-between" />
           </div>

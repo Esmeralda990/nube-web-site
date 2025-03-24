@@ -14,9 +14,9 @@ import Button from "../elements/Button/index.js";
 
 const ProductRubixmini = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-32 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Compute Mini
         </h1>
         <p className="text-sm sm:text-sm lg:text-lg text-center font-bold text-theme-teal mb-2">
@@ -34,7 +34,7 @@ const ProductRubixmini = () => {
               className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
             >
               {RubixMini.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-products">
+                <SwiperSlide key={item.id}>
                   <img
                     src={item.image}
                     alt={`RubixMini ${item.id}`}
@@ -43,65 +43,80 @@ const ProductRubixmini = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            s
-            <div>
-              <table className="w-full table-auto">
+            <div className="overflow-x-auto ">
+              <table className="min-w-m sm:min-w-xs mt-12 table-auto justify-start">
                 <thead>
                   <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-200 font-bold text-xs sm:text-sm ">
                       FEATURE/SPECIFICATION
                     </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt ">
+                    <th className="border px-4 py-2 bg-gray-200 font-bold text-xs sm:text-sm ">
                       DETAILS
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2 ">BMS Integration</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-lg sm:text-sm">
+                      BMS Integration
+                    </td>
+                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
                       Integrate into any BMS via BACnet/IP
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Power Supply</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      Power Supply
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       24VAC and 24VDC
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 ">Memory</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      Memory
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       1GB of RAM & 8GB of storage
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Ethernet Ports</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      Ethernet Ports
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       2x Ethernet Ports (Dual NIC)
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">Serial Communication</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      Serial Communication
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       1x RS-485 & 1x RS-485 via side-plugin
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">LoRa Connectivity</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      LoRa Connectivity
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       1x Inbuilt LoRa® for Nube-IO LoRa sensors
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">LoRaWAN Connectivity</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      LoRaWAN Connectivity
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       1x Addon LoRaWAN® for 3rd party LoRaWAN® sensors
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2">IO Expansion</td>
-                    <td className="border px-4 py-2 font-light">
+                    <td className="border px-4 py-2 text-xs sm:text-sm">
+                      IO Expansion
+                    </td>
+                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
                       1x Side plugin for IO expansion (Power & Comms to the
                       IO-16)
                     </td>
@@ -112,7 +127,7 @@ const ProductRubixmini = () => {
           </article>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
-            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+            <p className="font-light text-base text-gray-400 leading-relaxed md:text-lg sm:break-words overflow-clip max-w-sm md:max-w-full ">
               The Rubix Compute is the Nube iO gateway. It is a small wireless &
               wired gateway capable of monitoring and controlling various
               applications. For example, it can be used in building to control
@@ -126,14 +141,14 @@ const ProductRubixmini = () => {
               <Button
                 href="/contact"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 LEARN MORE
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
             </h2>
             <ul className="flex flex-col gap-3 sm:gap-2">
@@ -155,19 +170,19 @@ const ProductRubixmini = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               Programmable Via Rubix-CE
             </h2>
-            <p className="font-light mb-4 text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              ✔︎Powerful Flow-Based Programming <br />
-              ✔︎100s of pre-made nodes
+            <p className="font-light mb-4 text-base md:text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+              -Powerful Flow-Based Programming <br />
+              -100s of pre-made nodes
               <br />
-              ✔︎Download Via Rs-485 or Ethernet
+              -Download Via Rs-485 or Ethernet
             </p>
-            <h2 className="mb-4  text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               One Device. Multiple Configurations
             </h2>
-            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+            <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               Rubix Compute Mini is a one of a kind IoT gateway that aggregates
               all types of building data via multiple peripherals
             </p>
