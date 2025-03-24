@@ -6,7 +6,7 @@ import { Logos3 } from "./Logos3";
 
 export default function LogosAbout() {
   const headingElement = (
-    <h2 className="text-4xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-5 mr-24 lg:mr-0">
+    <h2 className="text-2xl md:text-4xl text-theme-blue text-center font-bold leading-tight mb-5">
       Powering top building portfolios with Nube iO
     </h2>
   );

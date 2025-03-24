@@ -13,11 +13,8 @@ export default function DetailsHardware() {
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-16">
           <Fade direction="up" triggerOnce>
             <h2 className="text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
-              Hardware Solutions
-            </h2>
-            <h3 className="text-3xl text-theme-blue text-center font-bold leading-tight mb-10">
               Powerful Hardware for Smarter Automation
-            </h3>
+            </h2>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
             <p className="font-light text-xl text-gray-400 leading-relaxed text-center ">

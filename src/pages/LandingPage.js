@@ -5,7 +5,12 @@
 /* eslint-disable object-curly-newline */
 import React, { Component } from "react";
 
-import { Services, Portfolios, Advantages } from "json/landingPageData";
+import {
+  Services,
+  WorldSolutions,
+  Advantages,
+  Badges,
+} from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Hero from "parts/Hero";
 import Service from "parts/Service";
@@ -14,6 +19,7 @@ import Advantage from "parts/Advantage";
 import SolutionHero from "parts/SolutionHero";
 import GifSection from "parts/GifSectionhero";
 import SoftwareSolutions from "parts/SoftwareSolutions";
+import Connect from "parts/Connect";
 import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 
@@ -31,7 +37,8 @@ export default class LandingPage extends Component {
         <Service data={Services} />
         <PorfolioCarousel />
         <Advantage data={Advantages} />
-        <SolutionHero data={Portfolios} />
+        <Connect data={Badges} />
+        <SolutionHero data={WorldSolutions} />
         <GifSection />
         <Discuss />
         <Footer />

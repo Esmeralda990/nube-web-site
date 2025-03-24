@@ -28,10 +28,10 @@ const sections = [
         name: (
           <div className="flex gap-4 text-center">
             <a href="https://x.com/nube_iot?lang=en&mx=2">
-              <FaXTwitter className="size-6 text-2xl" /> {/* Ícono X */}
+              <FaXTwitter className="size-6 text-2xl" />
             </a>
             <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
-              <FaLinkedin className="size-6 text-2xl" /> {/* Ícono LinkedIn */}
+              <FaLinkedin className="size-6 text-2xl" />
             </a>
           </div>
         ),

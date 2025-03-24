@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsRubix from "partsproducts/ProductsRubix";
-import GifSectionAbout from "parts/GifSectionAbout";
+import GifSectionRubix from "partsproducts/GifsectionRubixCompute";
 import Discuss from "parts/Discuss";
 import Footer from "parts/Footer";
 
@@ -20,7 +20,7 @@ export default class RubixCompute extends Component {
       <>
         <Header1 />
         <ProductsRubix />
-        <GifSectionAbout />
+        <GifSectionRubix />
         <Discuss />
         <Footer />
       </>

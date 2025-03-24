@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const LoraDroplet = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-32 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Droplet
@@ -135,7 +135,7 @@ const LoraDroplet = () => {
               <a
                 href="/Docs/Droplet-Datasheet.pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download
               >
                 DATASHEET
@@ -143,7 +143,7 @@ const LoraDroplet = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/droplets-v1/"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 USER MANUAL
@@ -165,7 +165,7 @@ const LoraDroplet = () => {
               ].map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <CheckCircle2 className="h-6 w-6 text-teal-500 sm:h-5 sm:w-5" />
-                  <p className="text-sm sm:text-base font-light text-gray-600">
+                  <p className="text-sm sm:text-base font-light text-gray-400">
                     {benefit}
                   </p>
                 </li>

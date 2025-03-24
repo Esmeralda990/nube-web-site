@@ -29,8 +29,8 @@ const FeatureSwiper = () => {
           {Solutionsfeature.map((feature, index) => (
             <li key={feature.id} className="p-4 rounded-lg transition-all">
               <button
-                className={`cursor-pointer w-full text-left flex items-center gap-3 p-4 rounded-lg transition-all ${
-                  activeIndex === index ? "bg-gray-200 text-black" : ""
+                className={`cursor-pointer w-full text-left flex flex-col items-start gap-3 p-4 rounded-lg transition-all px-8 py-8 ${
+                  activeIndex === index ? "bg-gray-50 text-black" : ""
                 }`}
                 onClick={() => setActiveIndex(index)}
               >
@@ -38,16 +38,16 @@ const FeatureSwiper = () => {
                   <img
                     src={feature.icon}
                     alt={feature.title}
-                    className="size-5"
+                    className="size-10"
                   />
                 ) : (
-                  <feature.icon className="size-5" />
+                  <feature.icon className="size-10" />
                 )}
                 <div>
-                  <h3 className="text-xl text-theme-blue font-bold">
+                  <h3 className="text-xl text-theme-blue font-bold mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-base font-light text-gray-500 text-muted-foreground">
+                  <p className="text-base font-light text-gray-400 text-muted-foreground">
                     {feature.description}
                   </p>
                 </div>

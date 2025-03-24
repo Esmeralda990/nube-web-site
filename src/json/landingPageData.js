@@ -20,7 +20,7 @@ import slide1 from "../assets/images/PortfolioCarousel/Carousel01gif.gif";
 import slide2 from "../assets/images/PortfolioCarousel/Carousel02.gif";
 import slide3 from "../assets/images/PortfolioCarousel/Carousel03.gif";
 
-// Icons connect1
+// Icons connect
 import Icons1 from "../assets/images/Icons/API.png";
 import Icons2 from "../assets/images/Icons/BuildingCompliace.png";
 import Icons3 from "../assets/images/Icons/DataAlerts.png";
@@ -45,10 +45,10 @@ import IconElem8 from "../assets/images/IconElem/co2.png";
 import IconElem9 from "../assets/images/IconElem/nub.png";
 
 // Advantages
-import Technology from "../assets/images/Advantages/Tecnology.png";
-import Integration from "../assets/images/Advantages/Integration.png";
-import Sustainability from "../assets/images/Advantages/Sustainability.png";
-import Insights from "../assets/images/Advantages/Insights.png";
+import Technology from "../assets/images/Advantages/Smart.webp";
+import Integration from "../assets/images/Advantages/End.webp";
+import Sustainability from "../assets/images/Advantages/Sustainability.webp";
+import Insights from "../assets/images/Advantages/Real.webp";
 
 // Testimonials
 import Sasha from "../assets/images/Testimonials/Sasha.jpg";
@@ -90,6 +90,9 @@ import IOT from "../assets/images/Team/JonathanHill.png";
 import Controller from "../assets/images/RubixCompute/RubixC1.png";
 import Lora from "../assets/images/MicroEdge/MICRO4.png";
 import Expansion from "../assets/images/RubixLW/RC-LW.png";
+import Iconshard1 from "../assets/images/IconsHardware/controllers.png";
+import Iconshard2 from "../assets/images/IconsHardware/Lora.png";
+import Iconshard3 from "../assets/images/IconsHardware/Expansion.png";
 
 // Floatings Icons
 import Floatings1 from "../assets/images/IconsTeam/01.svg";
@@ -102,6 +105,11 @@ import Floatings7 from "../assets/images/IconsTeam/07.svg";
 import Floatings8 from "../assets/images/IconsTeam/08.svg";
 import Floatings9 from "../assets/images/IconsTeam/09.svg";
 import Floatings10 from "../assets/images/IconsTeam/10.svg";
+
+// WorldSolutions
+import WorldSolutions1 from "../assets/images/WorldSolutions/Customise.webp";
+import WorldSolutions2 from "../assets/images/WorldSolutions/IoT.webp";
+import WorldSolutions3 from "../assets/images/WorldSolutions/Building.webp";
 
 export const Services = [
   {
@@ -197,25 +205,25 @@ export const Slides = [
   },
 ];
 
-export const Portfolios = [
+export const WorldSolutions = [
   {
-    id: "asd1293uasdads1",
+    id: "1",
     title: "Customise OEM solution",
-    imageUrl: Hardware,
+    imageUrl: WorldSolutions1,
     description: "Custom Hardware and Software for OEM Partners",
     link: "https://dribbble.com/shots/15164950-Recruiting-app",
   },
   {
-    id: "asd1293uhjkhkjh2",
+    id: "2",
     title: "IoT integrations",
-    imageUrl: OEM,
+    imageUrl: WorldSolutions2,
     description: "Custom Hardware and Software for OEM Partners",
     link: "https://dribbble.com/shots/15276430-Stream",
   },
   {
-    id: "asd1293uvbvcbbd3",
+    id: "3",
     title: "Building Rating Systems",
-    imageUrl: Professional,
+    imageUrl: WorldSolutions3,
     description: "Custom Hardware and Software for OEM Partners",
     link: "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
   },
@@ -605,7 +613,7 @@ export const Solutionsfeature = [
     title: "Controllers",
     description:
       "Our state-of-the-art controllers, including Rubix Compute, Rubix IO-16, Rubix Compute Mini, and Rubix IO-24, put advanced automation at your fingertips. Designed for simplicity and scalability, these controllers seamlessly integrate diverse systems and protocols, offering real-time insights and control. With ultimate flexibility and robust performance, our controllers enable smarter decisions, proactive management, and substantial energy savings.",
-    icon: Icons1,
+    icon: Iconshard1,
     image: Controller,
   },
   {
@@ -613,15 +621,15 @@ export const Solutionsfeature = [
     title: "LoRa® Sensors",
     description:
       "Our LoRa® wireless sensors, including the Droplet Indoor Sensor and MicroEdge Asset Monitoring Sensor, deliver exceptional range, reliability, and accuracy for all your automation needs. From precise environmental monitoring and real-time occupancy detection to predictive asset management, our sensors provide critical insights instantly, helping you keep spaces optimised, comfortable, and cost-efficient.",
-    icon: Icons2,
+    icon: Iconshard2,
     image: Lora,
   },
   {
     id: "feature-3",
     title: "Expansion Modules",
     description:
-      "Our Rubix Connect LW expansion modules provide effortless scalability and extended functionality for your automation ecosystem. Quickly integrate additional sensors and devices, strengthen your monitoring capabilities, and unlock enhanced control—all without compromising ease of use or efficiency. Nube iO ensures that as your business grows, your technology adapts seamlessly.!",
-    icon: Icons3,
+      "Our Rubix Connect LW expansion modules provide effortless scalability and extended functionality for your automation ecosystem. Quickly integrate additional sensors and devices, strengthen your monitoring capabilities, and unlock enhanced control—all without compromising ease of use or efficiency. Nube iO ensures that as your business grows, your technology adapts seamlessly.",
+    icon: Iconshard3,
     image: Expansion,
   },
 ];

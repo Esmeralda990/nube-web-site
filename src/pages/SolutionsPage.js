@@ -27,15 +27,25 @@ import Footer from "parts/Footer";
 export default class SolutionsPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
+    this.handleScroll();
+    window.addEventListener("hashchange", this.handleScroll, false);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("hashchange", this.handleScroll, false);
+  }
+
+  handleScroll = () => {
     // eslint-disable-next-line prefer-destructuring
     const hash = window.location.hash;
+
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }
+  };
 
   render() {
     return (

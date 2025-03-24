@@ -37,8 +37,8 @@ export default function PorfolioCarousel() {
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <section className="hero flex flex-col lg:flex-row items-center mt-0 h-auto md:h-[700px] pb-12 md:pb-0">
-              <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2">
+            <section className="hero flex flex-col lg:flex-row items-center mt-0 pb-12 md:pb-0  overflow-hidden">
+              <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2 flex flex-col justify-center items-start px-4">
                 <h1 className="text-3xl md:text-6xl text-theme-blue text-left font-bold leading-tight mb-5">
                   {slide.title}
                 </h1>
@@ -56,12 +56,13 @@ export default function PorfolioCarousel() {
                   </Button>
                 </Fade>
               </div>
-              <div className="flex pt-5 md:w-fit w-full justify-end items-center order-first md:order-first lg:order-last lg:w-1/2">
+              <div className="flex w-full justify-center items-center pt-5 md:w-1/2 lg:w-1/2 w-full g:order-last">
                 <Fade direction="up" triggerOnce>
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="ml-0 max-w-full h-full  object-contain md:object-fill sm:ml-0 md:ml-32"
+                    className="ml-0 max-w-full h-full  object-contain md:object-fill sm:ml-0 md:ml-32  overflow-hidden"
+                    style={{ maxHeight: "100%", objectFit: "contain" }}
                   />
                 </Fade>
               </div>

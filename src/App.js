@@ -14,7 +14,6 @@ import RubixIO16 from "pages/RubixIO16";
 import NiagaraEdge from "pages/NiagaraEdge";
 import LoraDroplet from "pages/LoraDroplet";
 import LoraMicroEdge from "pages/LoraMicroEdge";
-import ProjectPage from "pages/ProjectPage";
 import NotFoundPage from "pages/NotFoundPage";
 import TermsOfUsePage from "pages/TermsOfUsePage";
 import PrivacyPage from "pages/PrivacyPage";
@@ -28,9 +27,6 @@ import RubixLWPage from "pages/RubixLWPage";
 import CaseStudyPage from "pages/CaseStudyPage";
 import GetDemoPage from "pages/GetDemoPage";
 import ContactPage from "pages/ContactPage";
-
-import { ProjectDetailPage } from "pages/ProjectDetailPage";
-import { DiscussProjectPage } from "pages/DiscussProjectPage";
 
 import "./assets/css/styles.css";
 
@@ -52,9 +48,6 @@ function App() {
         />
         <Route path="/software-rubix-platform/" element={<SoftwarePage />} />
         <Route path="/connectivity/" element={<ConnectivityPage />} />
-        <Route path="/project" element={<ProjectPage />} />
-        <Route exact path="/project/:id" element={<ProjectDetailPage />} />
-        <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
         <Route path="**" element={<NotFoundPage />} />
         <Route path="/terms-of-use/" element={<TermsOfUsePage />} />
         <Route path="/privacy-policy/" element={<PrivacyPage />} />

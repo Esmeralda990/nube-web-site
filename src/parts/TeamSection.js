@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-import { Linkedin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 import React from "react";
 import { Managers } from "json/landingPageData";
 
@@ -9,7 +9,7 @@ export default function TeamSection() {
   return (
     <section className="mt-12 md:mb-40 lg:pl-32">
       <div className=" container flex flex-col items-center text-center mb-10">
-        <h2 className="text-5xl sm:text-5xl text-theme-blue font-bold leading-tight mb-10">
+        <h2 className="text-3xl md:text-5xl text-theme-blue font-bold leading-tight mb-10">
           Meet our team
         </h2>
         <p className="mb-8 max-w-4xl text-muted-foreground font-light text-gray-400 lg:text-xl">
@@ -40,7 +40,7 @@ export default function TeamSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="size-5 text-muted-foreground" />
+                <FaLinkedin className="size-5 text-muted-foreground text-theme-blue " />
               </a>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
     <ul
       className={`dropdown ${
         dropdown ? "show" : ""
-      } grid grid-cols-${gridCols} gap-4 p-4`}
+      } grid grid-cols-${gridCols} gap-4 p-4  hidden lg:block `}
     >
       {submenus.map((submenu, index) => (
         <li key={index} className="mb-4">
@@ -55,22 +55,34 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                           )}
                           {category.items &&
                             category.items.map((item, itemIndex) => {
-                              return group.title === "Our Services" ? (
-                                <Link
-                                  key={itemIndex}
-                                  to={`/solutions#${item.id}`}
-                                  className="block"
-                                >
+                              const isService = group.title === "Our Services";
+
+                              if (isService && item.id) {
+                                return (
+                                  <Link
+                                    key={itemIndex}
+                                    to={`/solutions#${item.id}`}
+                                    className="block"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                );
+                              }
+                              if (item.link) {
+                                return (
+                                  <a
+                                    key={itemIndex}
+                                    href={item.link}
+                                    className="block"
+                                  >
+                                    {item.name}
+                                  </a>
+                                );
+                              }
+                              return (
+                                <span key={itemIndex} className="block">
                                   {item.name}
-                                </Link>
-                              ) : (
-                                <a
-                                  key={itemIndex}
-                                  href={item.link}
-                                  className="block"
-                                >
-                                  {item.name}
-                                </a>
+                                </span>
                               );
                             })}
                         </div>
@@ -119,7 +131,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
   return (
     <li
-      className="menu-items"
+      className={`menu-items ${items.subMenu ? "hidden lg:block" : ""}`}
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

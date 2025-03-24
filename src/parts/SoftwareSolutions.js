@@ -14,7 +14,7 @@ export default function SoftwareSolutions() {
           src={GrowthImage}
           alt="Growth"
           className="mx-auto rounded-2xl object-fit h-full object-left-top h-auto object-center responsive-image"
-          height={820}
+          height={720}
           width={1800}
           draggable={false}
         />

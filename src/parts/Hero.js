@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row">
           <a
             href="/solutions/"
             className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
@@ -35,7 +35,7 @@ export default function Hero() {
 
           <div className="flex space-x-4">
             {" "}
-            <Fade direction="up" delay={500} triggerOnce>
+            <Fade direction="up" triggerOnce delay={400}>
               <Button
                 href="/contact-us/"
                 type="link"
@@ -45,7 +45,7 @@ export default function Hero() {
                 <ArrowRight className="ml-2 w-4" />
               </Button>
             </Fade>
-            <Fade direction="up" triggerOnce delay={300}>
+            <Fade direction="up" delay={500} triggerOnce>
               <Button
                 href="/get-demo/"
                 type="link"
@@ -58,10 +58,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center order-first lg:order-last lg:w-full pb-24 ">
+        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-full pb-24 ">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-full h-auto md:ml-32"
+              className="max-w-full h-auto md:ml-32 "
               src={BuildWebsite}
               alt="Build Website"
             />
