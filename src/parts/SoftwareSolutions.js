@@ -13,8 +13,8 @@ export default function SoftwareSolutions() {
         <img
           src={GrowthImage}
           alt="Growth"
-          className="mx-auto rounded-2xl object-fit h-full object-left-top h-auto object-center responsive-image"
-          height={720}
+          className="rounded-2xl object-cover h-full w-full object-center responsive-image object-contain"
+          height={820}
           width={1800}
           draggable={false}
         />

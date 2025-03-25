@@ -49,7 +49,7 @@ export default function Hero() {
               <Button
                 href="/get-demo/"
                 type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
               >
                 Get Demo
                 <ArrowRight className="ml-2 w-4" />
@@ -58,10 +58,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-full pb-24 ">
+        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-full pb-24 overflow-hidden">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-full h-auto md:ml-32 "
+              className="max-w-full h-auto lg:ml-32 object-contain overflow-hidden"
               src={BuildWebsite}
               alt="Build Website"
             />

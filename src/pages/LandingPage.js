@@ -10,6 +10,7 @@ import {
   WorldSolutions,
   Advantages,
   Badges,
+  Slides,
 } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Hero from "parts/Hero";
@@ -35,7 +36,7 @@ export default class LandingPage extends Component {
         <Hero />
         <SoftwareSolutions />
         <Service data={Services} />
-        <PorfolioCarousel />
+        <PorfolioCarousel data={Slides} />
         <Advantage data={Advantages} />
         <Connect data={Badges} />
         <SolutionHero data={WorldSolutions} />

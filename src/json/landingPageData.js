@@ -508,7 +508,7 @@ export const Managers = [
     name: "Tom Fyfe",
     role: "CEO",
     description:
-      "Experienced leader driving strategic growth and innovation in industrial manufacturing and PropTech.",
+      "Experienced leader driving growth and innovation across manufacturing and PropTech.",
     imageUrl: CEOT,
     linkedinUrl: "https://au.linkedin.com/in/tom-fyfe-8352aa51",
   },
@@ -517,7 +517,7 @@ export const Managers = [
     name: "Aidan Pickard",
     role: "CTO & Co-Founder",
     description:
-      "Expert developer shaping smart-building technology with over 15 years in HVAC and automation.",
+      "Expert developer advancing smart-building tech with 15+ years in HVAC and automation.",
     imageUrl: CTO,
     linkedinUrl: "https://www.linkedin.com/in/aidan-pickard-b4689643/",
   },
@@ -526,14 +526,14 @@ export const Managers = [
     name: "Matthew Cady",
     role: "COO & Co-Founder",
     description:
-      "Entrepreneurial finance specialist managing operations, budgets, and strategic partnerships",
+      "Entrepreneurial finance expert managing operations, budgets, and key alliances",
     imageUrl: COO,
     linkedinUrl: "https://www.linkedin.com/in/matt-cady-75596410b/",
   },
   {
     id: "person-4",
     name: "Jonathan Hill",
-    role: "IoT Deployment Manager",
+    role: "General Manager",
     description:
       "Experienced manager leading operations, strategy, and successful project delivery.",
     imageUrl: IOT,

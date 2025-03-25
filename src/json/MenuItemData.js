@@ -6,10 +6,6 @@
 /* eslint-disable comma-dangle */
 export const menuItemsData = [
   {
-    name: "Home",
-    link: "/",
-  },
-  {
     name: "About",
     link: "/about/",
   },
@@ -48,10 +44,8 @@ export const menuItemsData = [
                 ],
               },
               {
-                title: "Software",
-                items: [
-                  { name: "Rubix CE", link: "/software-rubix-platform/" },
-                ],
+                title: "Expansion Modules",
+                items: [{ name: "Rubix Connect", link: "/rubix-connect-lw/" }],
               },
             ],
           },
@@ -72,12 +66,14 @@ export const menuItemsData = [
                 ],
               },
               {
-                title: "Connectivity",
-                items: [{ name: "Nube iO Cloud", link: "/connectivity/" }],
+                title: "Software",
+                items: [
+                  { name: "Rubix CE", link: "/software-rubix-platform/" },
+                ],
               },
               {
-                title: "Expansion Modules",
-                items: [{ name: "Rubix Connect", link: "/rubix-connect-lw/" }],
+                title: "Connectivity",
+                items: [{ name: "Nube iO Cloud", link: "/connectivity/" }],
               },
             ],
           },

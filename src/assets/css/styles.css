@@ -203,8 +203,8 @@ header {
   position: sticky;
   box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
   color: #000;
-  padding-top: 40px;
-  height: 130px;
+  padding-top: 30px;
+  height: 120px;
 }
 
 .nav-area {
@@ -438,7 +438,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 50vh;
+  height: 60vh;
   max-height: 60vh;
   overflow: hidden;
   width: 100%;
@@ -555,6 +555,12 @@ header {
 .responsive-image {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 120%;
+    height: 90%;
+  }
 }
 
 .discuss {
