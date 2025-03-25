@@ -25,18 +25,18 @@ export const ContainerScroll = ({ titleComponent, children }) => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const scaleDimensions = isMobile ? [0.6, 0.8] : [1.2, 1.2];
+  const scaleDimensions = isMobile ? [0.9, 0.9] : [1.2, 1.2];
   const rotate = useTransform(scrollYProgress, [0, 1], [40, -30]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions);
   const translate = useTransform(scrollYProgress, [0, 1], [10, -50]);
 
   return (
     <div
-      className="h-[40rem] md:h-[50rem] flex items-center justify-center relative p-2"
+      className="h-[20rem] md:h-[50rem] w-full flex items-center justify-center relative px-2 overflow-hidden"
       ref={containerRef}
     >
       <div
-        className="py-10 md:py-32 w-full relative"
+        className="py-10 md:py-32 w-full relative overflow-hidden "
         style={{ perspective: "1000px" }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
@@ -78,9 +78,9 @@ export const Card = ({ rotate, scale, translate, children }) => {
         scale,
         translateY: translate,
         boxShadow:
-          "0 4px 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15)",
+          "0 4px 10px rgba(219, 219, 219, 0.31), 0 10px 20px rgba(0, 0, 0, 0.15)",
       }}
-      className="max-w-5xl md:mt-8 mx-auto h-[20rem] md:h-[40rem] w-full border-4 border-white p-2 md:p-6 bg-white rounded-[30px] shadow-xl"
+      className=" w-full md:max-w-4xl md:mt-8 mx-auto h-[20rem] md:h-[40rem] w-full border-4 border-white p-2 md:p-6 bg-white rounded-[30px] shadow-xl"
       transition={{
         duration: 0.1,
         ease: "easeInOut",

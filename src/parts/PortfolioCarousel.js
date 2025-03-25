@@ -37,7 +37,7 @@ export default function PorfolioCarousel() {
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <section className="hero flex flex-col lg:flex-row items-center mt-0 pb-12 md:pb-0  overflow-hidden">
+            <section className="hero w-full flex flex-col lg:flex-row items-center mt-0 pb-12 md:pb-0  overflow-hidden">
               <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2 flex flex-col justify-center items-start px-4">
                 <h1 className="text-3xl md:text-6xl text-theme-blue text-left font-bold leading-tight mb-5">
                   {slide.title}
@@ -49,7 +49,7 @@ export default function PorfolioCarousel() {
                   <Button
                     href="/get-demo/"
                     type="link"
-                    className="flex w-72 md:w-48 h-12 md:h-18 items-center px-8 py-5 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white "
+                    className="flex w-full md:w-48 h-12 md:h-18 items-center px-8 py-5 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white "
                   >
                     Get a demo
                     <ArrowRight className="ml-2 w-4" />
@@ -61,7 +61,7 @@ export default function PorfolioCarousel() {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="ml-0 max-w-full h-full  object-contain md:object-fill sm:ml-0 md:ml-32  overflow-hidden"
+                    className="max-w-[80%] sm:max-w-[80%] md:max-w-[100%] lg:max-w-[100%]h-full  object-contain md:object-fill sm:ml-0 md:ml-28 overflow-hidden"
                     style={{ maxHeight: "100%", objectFit: "contain" }}
                   />
                 </Fade>

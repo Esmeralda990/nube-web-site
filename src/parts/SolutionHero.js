@@ -24,11 +24,11 @@ const WorldSolution = () => {
       <div className="mt-20 grid gap-6 md:grid-cols-3 lg:gap-10">
         {WorldSolutions.map((item, index) => (
           <Fade direction="" triggerOnce key={index}>
-            <div className="flex flex-col rounded-lg border border-bg-gray-500 ">
+            <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden">
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="aspect-video w-full rounded-t-lg object-cover "
+                className="w-full object-cover rounded-t-lg h-64 md:h-80 lg:h-96  "
               />
               <div className="p-6">
                 <h3 className="mb-2.5 font-bold md:text-xl">{item.title}</h3>

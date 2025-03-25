@@ -37,7 +37,7 @@ export default function Advantage({ data }) {
               <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 ">
                 <div className="relative h-auto w-full">
                   <img
-                    className="object-cover object-center w-full h-full sm:mt-0 overflow-hidden"
+                    className="object-cover object-center w-full h-full"
                     src={item.imageUrl}
                     alt={item.title}
                   />
