@@ -4,6 +4,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
 /* eslint-disable comma-dangle */
+import SolutionImg from "../assets/images/ImgMenu/Solutions.png";
+import ResourceImg from "../assets/images/ImgMenu/Resources.png";
+
 export const menuItemsData = [
   {
     name: "About",
@@ -13,7 +16,7 @@ export const menuItemsData = [
     name: "Solutions",
     subMenu: [
       {
-        image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
+        image: SolutionImg,
         links: [
           {
             title: "Our Services",
@@ -87,7 +90,7 @@ export const menuItemsData = [
     name: "Resources",
     subMenu: [
       {
-        image: "https://shadcnblocks.com/images/block/placeholder-1.svg",
+        image: ResourceImg,
         links: [
           {
             title: "Case Studies",
@@ -104,34 +107,28 @@ export const menuItemsData = [
             ],
           },
           {
-            title: "    ",
+            title: "Manuals &",
             items: [
               {
-                title: " Manuals & Support Articles",
+                title: "Support Articles",
                 items: [
                   {
-                    name: "TM&Support 1",
+                    name: "TM&Support",
                     link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
                   },
-                  { name: "TM&Support 2", link: "/" },
-                  { name: "TM&Support 3", link: "/" },
                 ],
               },
             ],
           },
           {
-            title: "FAQs",
+            title: "Frequently",
             items: [
               {
-                title: "",
+                title: "Asked Questions",
                 items: [
                   {
-                    name: "FAQs1",
-                    link: "/",
-                  },
-                  {
-                    name: "FAQs2",
-                    link: "/",
+                    name: "FAQs",
+                    link: "/FAQs/",
                   },
                 ],
               },

@@ -3,12 +3,78 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
-import React from "react";
+import React, { useState } from "react";
 import Button from "../elements/Button/index";
 
 const GetD = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    role: "",
+    whatSystems: "",
+    primaryGoals: "",
+    buildings: "",
+    Specific: "",
+    challenges: "",
+    timeline: "",
+    contactAgreement: false,
+    marketingAgreement: false,
+  });
+
+  const handleChange = (e) => {
+    const { id, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [id]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // eslint-disable-next-line
+    console.log("Enviando:", formData);
+
+    try {
+      const response = await fetch("http://localhost:3001/get-demo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      // eslint-disable-next-line
+      alert(result.message);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        role: "",
+        whatSystems: "",
+        primaryGoals: "",
+        buildings: "",
+        interestedFeatures: "",
+        challenges: "",
+        timeline: "",
+        contactAgreement: false,
+        marketingAgreement: false,
+      });
+      // eslint-disable-next-line
+    } catch (error) {
+      // eslint-disable-next-line
+      console.error("Error:", error);
+      // eslint-disable-next-line
+      alert("Hubo un error al enviar la solicitud de demo.");
+    }
+  };
+
   return (
-    <section className="relative py-32 md:pl-32">
+    <section className="relative py-32 lg:pl-32 px-8">
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.1)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_0%,transparent_80%)]" />
@@ -74,257 +140,256 @@ const GetD = () => {
         </div>
         <div className="flex w-full justify-center lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[50rem] flex-col items-center overflow-visible md:min-w-[24rem]">
-            <form className="z-10 space-y-6">
+            <form onSubmit={handleSubmit} className="z-10 space-y-6">
               <div className="w-full space-y-6 rounded-xl border border-border bg-background px-6 py-10 shadow-sm">
                 <div>
                   <h3 className="text-lg font-bold lg:text-lg">
                     Contact Information
                   </h3>
-                  <label className="mb-2.5 text-sm font-medium">
-                    Name
-                    <input
-                      id="Name"
-                      name="Name"
-                      placeholder="Name"
-                      className="w-full p-2 border rounded"
-                    />
-                  </label>
+                  <label className="text-sm font-medium">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Name"
+                    className="w-full p-2 border rounded"
+                  />
                 </div>
                 <div>
-                  <label className="mb-2.5 text-sm font-medium">
-                    Email
-                    <input
-                      id="Email"
-                      name="Email"
-                      placeholder="name@company.com"
-                      className="w-full p-2 border rounded"
-                    />
-                  </label>
+                  <label className="text-sm font-medium">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="name@company.com"
+                    className="w-full p-2 border rounded"
+                  />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="mb-2.5 text-sm font-medium">
-                    Phone number
-                  </label>
+                  <label className="text-sm font-medium">Phone</label>
                   <input
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="12 3456 7890"
                     className="w-full p-2 border rounded"
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="Company/Organization"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     Company/Organization
                   </label>
                   <input
-                    id="Company/Organization"
-                    name="Company/Organization"
-                    placeholder="12 3456 7890"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Company name"
                     className="w-full p-2 border rounded"
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="You are?"
-                    className="mb-2.5 text-sm font-medium"
-                  >
-                    You are?
-                  </label>
+                  <label className="text-sm font-medium">You are?</label>
                   <select
-                    id="You are"
-                    name="You are"
+                    id="role"
+                    name="role"
+                    value={formData.role}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="">Facility Manager</option>
-                    <option value=""> Building Owner</option>
-                    <option value=""> Distributor</option>
-                    <option value="">System Integrator</option>
-                    <option value=""> OEM</option>
-                    <option value="">Property Owner</option>
-                    <option value=""> Local Authority</option>
-                    <option value=""> Engineering Office</option>
-                    <option value=""> Distributor</option>
-                    <option value="">Installer</option>
-                    <option value=""> Integrator</option>
-                    <option value="">Proptech</option>
-                    <option value=""> Other</option>
+                    <option value="Facility Manager">Facility Manager</option>
+                    <option value="Building Owner">Building Owner</option>
+                    <option value="Distributor">Distributor</option>
+                    <option value="System Integrator">System Integrator</option>
+                    <option value="OEM">OEM</option>
+                    <option value="Property Owner">Property Owner</option>
+                    <option value="Local Authority">Local Authority</option>
+                    <option value="Engineering Office">
+                      Engineering Office
+                    </option>
+                    <option value="Installer">Installer</option>
+                    <option value="Integrator">Integrator</option>
+                    <option value="Proptech">Proptech</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor="WhatSystems"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     What systems are you currently using for building
                     management?
                   </label>
                   <select
-                    id="WhatSystems"
-                    name="WhatSystems"
+                    id="whatSystems"
+                    name="whatSystems"
+                    value={formData.whatSystems}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="">Manual processes</option>
-                    <option value=""> Basic digital tools</option>
-                    <option value="">
+                    <option value="Manual processes">Manual processes</option>
+                    <option value="Basic digital tools">
+                      Basic digital tools
+                    </option>
+                    <option value="Advanced BMS">
                       Advanced building management systems
                     </option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor="PrimaryGoals"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     What are your primary goals in using Nube iO s solutions?
                   </label>
                   <select
-                    id="PrimaryGoals"
-                    name="PrimaryGoals"
+                    id="primaryGoals"
+                    name="primaryGoals"
+                    value={formData.primaryGoals}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="">Energy efficiency improvement</option>
-                    <option value=""> Cost reduction</option>
-                    <option value="">Building comfort enhancement</option>
-                    <option value=""> Streamlined operations</option>
-                    <option value="">Data-driven decision-making</option>
-                    <option value="">Other</option>
+                    <option value="Energy efficiency">
+                      Energy efficiency improvement
+                    </option>
+                    <option value="Cost reduction">Cost reduction</option>
+                    <option value="Comfort enhancement">
+                      Building comfort enhancement
+                    </option>
+                    <option value="Streamlined operations">
+                      Streamlined operations
+                    </option>
+                    <option value="Data-driven decisions">
+                      Data-driven decision-making
+                    </option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor="buildings"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     How many buildings or sites are you managing?
                   </label>
                   <select
                     id="buildings"
                     name="buildings"
+                    value={formData.buildings}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
-                    <option value="">1-5</option>
-                    <option value="">6-10</option>
-                    <option value=""> 11-20</option>
-                    <option value=""> 21 or more</option>
+                    <option value="">Select</option>
+                    <option value="1-5">1-5</option>
+                    <option value="6-10">6-10</option>
+                    <option value="11-20">11-20</option>
+                    <option value="21+">21 or more</option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor=" interested"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     Which features are you most interested in exploring during
                     the demo?
                   </label>
                   <select
-                    id=" interested"
-                    name=" interested"
+                    id="Specific "
+                    name="Specific "
+                    value={formData.Specific}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="search">Real-time monitoring</option>
-                    <option value="">Analytics and reporting</option>
-                    <option value="search">Energy management</option>
-                    <option value="search">System integration</option>
-                    <option value="search">
-                      {" "}
-                      Custom alerts and notifications
+                    <option value="High costs">Real-time monitoring</option>
+                    <option value="Inefficiency">
+                      Analytics and reporting
+                    </option>
+                    <option value="Lack of data"> Energy management</option>
+                    <option value="Integration issues">
+                      System integration
                     </option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor=" challenges"
-                    className="mb-2.5 text-sm font-medium"
-                  >
+                  <label className="text-sm font-medium">
                     What challenges are you facing with your current system?
                   </label>
                   <select
-                    id=" challenges"
-                    name="challenges"
+                    id="Challenges"
+                    name="Challenges"
+                    value={formData.challenges}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="search">High operational costs</option>
-                    <option value="">Inefficiency in processes</option>
-                    <option value="search">Lack of data insights</option>
-                    <option value="search"> Integration issues</option>
+                    <option value="High costs">High operational costs</option>
+                    <option value="Inefficiency">
+                      Analytics and reporting
+                    </option>
+                    <option value="Lack of data"> Energy management</option>
+                    <option value="Integration issues">
+                      System integration
+                    </option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    htmlFor=" challenges"
-                    className="mb-2.5 text-sm font-medium"
-                  >
-                    What is your timeline for implementing a new building
-                    management solution?
+                  <label className="text-sm font-medium">
+                    Implementation timeline?
                   </label>
                   <select
-                    id=" challenges"
-                    name="challenges"
+                    id="timeline"
+                    name="timeline"
+                    value={formData.timeline}
+                    onChange={handleChange}
                     className="w-full p-2 border rounded"
                   >
                     <option value="">Select</option>
-                    <option value="search">Immediate</option>
-                    <option value="">Within 3 months</option>
-                    <option value="search"> 6-12 months</option>
-                    <option value="search"> No immediate plans</option>
+                    <option value="Immediate">Immediate</option>
+                    <option value="3 months">Within 3 months</option>
+                    <option value="6-12 months">6-12 months</option>
+                    <option value="No plans">No immediate plans</option>
                   </select>
+                </div>
+
+                <div className="grid w-full items-center gap-1.5  mb-6 mt-6">
+                  <label htmlFor="message" className="mb-2.5 font-medium">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Enter your message"
+                    className="w-full p-2 border rounded"
+                    rows="4"
+                  />
                 </div>
                 <div>
-                  <label
-                    htmlFor=" Contact"
-                    className="mb-2.5 text-sm font-medium"
-                  >
-                    I agree to be contacted to receive the information requested
+                  <label className="text-sm font-medium">
+                    I agree to be contacted
                   </label>
-                  <select
-                    id=" Contact"
-                    name="Contact"
-                    className="w-full p-2 border rounded"
-                  >
-                    <option value="">Yes</option>
-                  </select>
+                  <input
+                    type="checkbox"
+                    id="contactAgreement"
+                    checked={formData.contactAgreement}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
-                  <label
-                    htmlFor=" Contact"
-                    className="mb-2.5 text-sm font-medium"
-                  >
-                    I agree to be contacted to receive relevant content,
-                    products, and services. For more information, check out our
-                    legal notice. (optional)
+                  <label className="text-sm font-medium">
+                    Receive marketing emails
                   </label>
-                  <select
-                    id=" Contact"
-                    name="Contact"
-                    className="w-full p-2 border rounded"
-                  >
-                    <option value="">Yes</option>
-                  </select>
+                  <input
+                    type="checkbox"
+                    id="marketingAgreement"
+                    checked={formData.marketingAgreement}
+                    onChange={handleChange}
+                  />
                 </div>
-                <div className="flex w-full flex-col justify-end space-y-3 pt-2">
-                  <Button
-                    type="submit"
-                    className="w-full bg-theme-teal text-white py-2 rounded"
-                  >
-                    Submit
-                  </Button>
-                  <div className="text-xs text-muted-foreground">
-                    For more information about how we handle your personal
-                    information, please visit our{" "}
-                    <a href="/privacy-policy/" className="underline">
-                      privacy policy
-                    </a>
-                    .
-                  </div>
-                </div>
+                <Button
+                  type="submit"
+                  className="w-full bg-theme-teal text-white py-2 rounded"
+                >
+                  Submit
+                </Button>
               </div>
             </form>
           </div>

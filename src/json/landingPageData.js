@@ -2,47 +2,33 @@
 /* eslint-disable object-curly-newline */
 
 // Services Img Imports
-import Sofware from "../assets/images/Services/Sofftware.png";
-import OEM from "../assets/images/Services/OEM.png";
-import Professional from "../assets/images/Services/Professsional.png";
-import Hardware from "../assets/images/Services/Hardware.png";
+import Sofware from "../assets/images/Services/Software.webp";
+import OEM from "../assets/images/Services/OEM.webp";
+import Professional from "../assets/images/Services/Professional.webp";
+import Hardware from "../assets/images/Services/Hardware.webp";
 
 // Logos
-import logo1 from "../assets/images/Logos/Schneider1.svg";
-import Logo2 from "../assets/images/Logos/Westpac2.svg";
-import Logo3 from "../assets/images/Logos/Qantas3.svg";
-import Logo4 from "../assets/images/Logos/Fujitsu4.svg";
-import Logo5 from "../assets/images/Logos/Honeywell5.svg";
-import Logo6 from "../assets/images/Logos/JLL6.svg";
+import logo1 from "../assets/images/Logos/Costco.png";
+import Logo2 from "../assets/images/Logos/Fujitsu.png";
+import Logo3 from "../assets/images/Logos/Honeywell.png";
+import Logo4 from "../assets/images/Logos/JLL.png";
+import Logo5 from "../assets/images/Logos/Schneider.png";
+import Logo6 from "../assets/images/Logos/Qantas.png";
+import Logo7 from "../assets/images/Logos/Mc.png";
+import Logo8 from "../assets/images/Logos/Westpac.png";
 
 // Slides
-import slide1 from "../assets/images/PortfolioCarousel/Carousel01gif.gif";
-import slide2 from "../assets/images/PortfolioCarousel/Carousel02.gif";
-import slide3 from "../assets/images/PortfolioCarousel/Carousel03.gif";
+import slide1 from "../assets/images/PortfolioCarousel/Carousel1.gif";
+import slide2 from "../assets/images/PortfolioCarousel/Carousel2.gif";
+import slide3 from "../assets/images/PortfolioCarousel/Carousel3.gif";
 
 // Icons connect
-import Icons1 from "../assets/images/Icons/API.png";
-import Icons2 from "../assets/images/Icons/BuildingCompliace.png";
-import Icons3 from "../assets/images/Icons/DataAlerts.png";
-import Icons4 from "../assets/images/Icons/Energy.png";
-import Icons5 from "../assets/images/Icons/PeopleCouting.png";
-import Icons6 from "../assets/images/Icons/PhoneApp.png";
-import Icons7 from "../assets/images/Icons/RemoteBuilding Monitoring.png";
-import Icons8 from "../assets/images/Icons/Iconslogo1.png";
-import Icons9 from "../assets/images/Icons/Iconslogo2.png";
-import Icons10 from "../assets/images/Icons/Iconslogo3.png";
-import Icons11 from "../assets/images/Icons/Iconslogo4.png";
-import Icons12 from "../assets/images/Icons/Iconslogo5.png";
-import Icons13 from "../assets/images/Icons/Iconslogo6.png";
-
-// Icons Elements
-import IconElem1 from "../assets/images/IconElem/Bot.png";
-import IconElem2 from "../assets/images/IconElem/Controllers.png";
-import IconElem3 from "../assets/images/IconElem/Leak.png";
-import IconElem4 from "../assets/images/IconElem/Lighting.svg";
-import IconElem5 from "../assets/images/IconElem/Security.png";
-import IconElem8 from "../assets/images/IconElem/co2.png";
-import IconElem9 from "../assets/images/IconElem/nub.png";
+import Icons1 from "../assets/images/Icons/Iconslogo1.png";
+import Icons2 from "../assets/images/Icons/Iconslogo2.png";
+import Icons3 from "../assets/images/Icons/Iconslogo3.png";
+import Icons4 from "../assets/images/Icons/Iconslogo4.png";
+import Icons5 from "../assets/images/Icons/Iconslogo5.png";
+import Icons6 from "../assets/images/Icons/Iconslogo6.png";
 
 // Advantages
 import Technology from "../assets/images/Advantages/Smart.webp";
@@ -50,35 +36,16 @@ import Integration from "../assets/images/Advantages/End.webp";
 import Sustainability from "../assets/images/Advantages/Sustainability.webp";
 import Insights from "../assets/images/Advantages/Real.webp";
 
-// Testimonials
-import Sasha from "../assets/images/Testimonials/Sasha.jpg";
-import Reiner from "../assets/images/Testimonials/Reiner.jpg";
-import Kruger from "../assets/images/Testimonials/Kruger.jpg";
-
-// TeamMembers
-import CEO from "../assets/images/TeamMembers/CEO.jpg";
-import HRD from "../assets/images/TeamMembers/HRD.jpg";
-import Finance from "../assets/images/TeamMembers/Finance.jpg";
-import ProjectManager from "../assets/images/TeamMembers/Project-manager.jpg";
-import Frontend1 from "../assets/images/TeamMembers/Frontend1.jpg";
-import Frontend2 from "../assets/images/TeamMembers/Frontend2.jpg";
-import Backend1 from "../assets/images/TeamMembers/Backend1.jpg";
-import Backend2 from "../assets/images/TeamMembers/Backend2.jpg";
-import Mobile1 from "../assets/images/TeamMembers/Mobile1.jpg";
-import Mobile2 from "../assets/images/TeamMembers/Mobile2.jpg";
-import UIUX1 from "../assets/images/TeamMembers/UIUX1.jpg";
-import UIUX2 from "../assets/images/TeamMembers/UIUX2.jpg";
-
 // AdvangeAbout
-import Company from "../assets/images/AdvangesAbout/Company.png";
-import Growth from "../assets/images/AdvangesAbout/Growth.png";
-import Excellence from "../assets/images/AdvangesAbout/Excellence.png";
-import Solutions from "../assets/images/AdvangesAbout/Solutions.png";
+import Company from "../assets/images/AdvangesAbout/Company.webp";
+import Growth from "../assets/images/AdvangesAbout/Growthh.webp";
+import Excellence from "../assets/images/AdvangesAbout/Commitment .webp";
+import Solutions from "../assets/images/AdvangesAbout/Expertise.webp";
 
 // Service Solutions
-import Client from "../assets/images/ServiceSolutions/Client.png";
-import Establish from "../assets/images/ServiceSolutions/Establish.png";
-import Management from "../assets/images/ServiceSolutions/Management.png";
+import Client from "../assets/images/ServiceSolutions/Client.webp";
+import Establish from "../assets/images/ServiceSolutions/Asset.webp";
+import Management from "../assets/images/ServiceSolutions/Establish.webp";
 
 // Managers
 import CEOT from "../assets/images/Team/Tom.png";
@@ -88,7 +55,7 @@ import IOT from "../assets/images/Team/JonathanHill.png";
 
 // solution Feature
 import Controller from "../assets/images/RubixCompute/RubixC1.png";
-import Lora from "../assets/images/MicroEdge/MICRO4.png";
+import Lora from "../assets/images/MicroEdge/MICRO2.png";
 import Expansion from "../assets/images/RubixLW/RC-LW.png";
 import Iconshard1 from "../assets/images/IconsHardware/controllers.png";
 import Iconshard2 from "../assets/images/IconsHardware/Lora.png";
@@ -111,33 +78,39 @@ import WorldSolutions1 from "../assets/images/WorldSolutions/Customise.webp";
 import WorldSolutions2 from "../assets/images/WorldSolutions/IoT.webp";
 import WorldSolutions3 from "../assets/images/WorldSolutions/Building.webp";
 
+// AdvangeOEM Solutions
+import Labelling from "../assets/images/AdvantageSolutionOEM/Labelling.webp";
+import Custom from "../assets/images/AdvantageSolutionOEM/Custom.webp";
+import Leveraging from "../assets/images/AdvantageSolutionOEM/Leveraging.webp";
+import Support from "../assets/images/AdvantageSolutionOEM/Support.webp";
+
 export const Services = [
   {
     id: "Software",
     title: "Software",
     imageUrl: Sofware,
-    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+    type: "Desktop, Licence-Free BMS Programming Software with real-time analytics and intuitive control.",
     animation: "left",
   },
   {
     id: "OEM",
     title: "OEM ",
     imageUrl: OEM,
-    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+    type: "Fully customisable software and hardware solutions tailored specifically to your brand needs.",
     animation: "right",
   },
   {
     id: "Professional",
-    title: "Professional",
+    title: "Professional Services",
     imageUrl: Professional,
-    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+    type: "Expert support, analytics, and insights to optimise your operational performance.",
     animation: "right",
   },
   {
     id: "Hardware",
     title: "Hardware",
     imageUrl: Hardware,
-    type: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+    type: "Reliable, scalable devices designed for seamless integration and intelligent automation.",
     animation: "right",
   },
 ];
@@ -151,7 +124,7 @@ export const Logos = [
   },
   {
     id: "Logo2",
-    description: "logo2",
+    description: "Logo2",
     image: Logo2,
     className: "h-1 w-1",
   },
@@ -175,8 +148,20 @@ export const Logos = [
   },
   {
     id: "Logo6",
-    description: "Logo 6",
+    description: "Logo6",
     image: Logo6,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo7",
+    description: "logo7",
+    image: Logo7,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo8",
+    description: "Logo8",
+    image: Logo8,
     className: "h-1 w-1",
   },
 ];
@@ -232,99 +217,61 @@ export const WorldSolutions = [
 export const Badges = [
   {
     title: "BACnet",
-    icon: Icons1,
     className: "size-1",
   },
   {
     title: "Modbus",
-    icon: Icons2,
     className: "size-1",
   },
   {
     title: "REST",
-    icon: Icons3,
     className: "size-1",
   },
   {
     title: "MQTT",
-    icon: Icons4,
     className: "size-1",
   },
   {
     title: "Serial",
-    icon: Icons5,
     className: "size-1",
   },
   {
     title: "LoRa",
-    icon: Icons6,
     className: "size-1",
   },
   {
     title: "LoRaWAN",
-    icon: Icons7,
     className: "size-1",
   },
   {
     title: "Logo1",
-    icon: Icons8,
+    icon: Icons1,
     className: "size-32",
   },
   {
     title: "Logo2",
-    icon: Icons9,
+    icon: Icons2,
     className: "size-24",
   },
   {
     title: "logo3",
-    icon: Icons10,
+    icon: Icons3,
     className: "size-16",
   },
   {
     title: "Logo4",
-    icon: Icons11,
+    icon: Icons4,
     className: "size-32",
   },
   {
     title: "Logo5",
-    icon: Icons12,
+    icon: Icons5,
     className: "size-32",
   },
   {
     title: "Logo6",
-    icon: Icons13,
+    icon: Icons6,
     className: "size-32",
-  },
-];
-
-export const IconElem = [
-  {
-    image: IconElem1,
-    title: "",
-  },
-  {
-    image: IconElem2,
-    title: "",
-  },
-  {
-    image: IconElem3,
-    title: "",
-  },
-  {
-    image: IconElem4,
-    title: "",
-  },
-  {
-    image: IconElem5,
-    title: "",
-  },
-  {
-    image: IconElem9,
-    title: "",
-  },
-  {
-    image: IconElem8,
-    title: "",
   },
 ];
 
@@ -359,101 +306,12 @@ export const Advantages = [
   ],
 ];
 
-export const Testimonials = [
-  {
-    id: 1,
-    name: "Sasha Rose",
-    company: "Owner, Surveyor Corps",
-    testimoni:
-      "Thanks for Racxstudio, you guys are the best! Keep up the great work!",
-    imageUrl: Sasha,
-  },
-  {
-    id: 2,
-    name: "Kruger Khan",
-    company: "Director, Shultan Oil",
-    testimoni:
-      "I just wanted to let you know that it’s been great working with Racxstudio.",
-    imageUrl: Kruger,
-  },
-  {
-    id: 3,
-    name: "Reiner John",
-    company: "CEO, Marley CO",
-    testimoni: "Racxstudio is so great. Thank you so much for a job well done.",
-    imageUrl: Reiner,
-  },
-];
-
-export const TeaMembers = [
-  {
-    name: "Tom Fyfe",
-    position: "CEO",
-    imageUrl: CEO,
-  },
-  {
-    name: "Pauline Sydney",
-    position: "HRD",
-    imageUrl: HRD,
-  },
-  {
-    name: "Granger Watterson",
-    position: "Finance",
-    imageUrl: Finance,
-  },
-  {
-    name: "Tom Jimmy",
-    position: "Project Manager",
-    imageUrl: ProjectManager,
-  },
-  {
-    name: "Jim Hendrix",
-    position: "Front-end Developer",
-    imageUrl: Frontend1,
-  },
-  {
-    name: "Calvin Max",
-    position: "Front-end Developer",
-    imageUrl: Frontend2,
-  },
-  {
-    name: "Hawkins Jim",
-    position: "Back-end Developer",
-    imageUrl: Backend1,
-  },
-  {
-    name: "Don Bizaro",
-    position: "Back-end Developer",
-    imageUrl: Backend2,
-  },
-  {
-    name: "Bill Markinson",
-    position: "Mobile Developer",
-    imageUrl: Mobile1,
-  },
-  {
-    name: "Igor Kavarov",
-    position: "Mobile Developer",
-    imageUrl: Mobile2,
-  },
-  {
-    name: "Freddie Curl",
-    position: "UI/UX Designer",
-    imageUrl: UIUX2,
-  },
-  {
-    name: "Monica Lovegood",
-    position: "UI/UX Designer",
-    imageUrl: UIUX1,
-  },
-];
-
 export const AdvantageAbout = [
   [
     {
       title: "Company Overview",
       description:
-        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. Combining IoT, cloud computing, and AI insights, we go beyond traditional Building Management Systems (BMS) to streamline operations, optimize energy use, and enable smarter decisions. Our solutions connect outdated systems to the future of automation with seamless connectivity and interoperability.",
+        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. Combining IoT, cloud computing, and AI insights, we go beyond traditional Building Management Systems (BMS) to streamline operations, optimize energy use, and enable smarter decisions. ",
       imageUrl: Company,
     },
     {
@@ -473,7 +331,7 @@ export const AdvantageAbout = [
     {
       title: "Expertise in Smart Technology Solutions",
       description:
-        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions that boost efficiency and innovation. From optimising HVAC and energy systems to streamlining site management and using predictive analytics, we help businesses perform at their best. With seamless integration and data-driven insights, Nube iO is redefining smart spaces and automation.",
+        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions that boost efficiency and innovation. From optimising HVAC and energy systems to streamlining site management and using predictive analytics, we help businesses perform at their best. With seamless integration and data-driven insights.",
       imageUrl: Solutions,
     },
   ],
@@ -640,27 +498,27 @@ export const AdvantageSolutions = [
       title: "White Labelling",
       description:
         "Offer Nube iO products under a client’s brand, providing a cohesive brand experience.",
-      imageUrl: OEM,
+      imageUrl: Labelling,
     },
     {
-      title: "Custom Hardware and Software",
+      title: "Hardware and Software",
       description:
         "Develop tailored hardware and software solutions to meet specific client needs, offering flexibility and bespoke innovation.",
-      imageUrl: OEM,
+      imageUrl: Custom,
     },
   ],
   [
     {
-      title: "Leveraging Our Technology Stack",
+      title: "Leveraging Our Technology",
       description:
         "Utilize Nube iO's existing technology stack to create unique products or solutions for partners, enhancing market differentiation and competitiveness.",
-      imageUrl: OEM,
+      imageUrl: Leveraging,
     },
     {
       title: "Support Services",
       description:
         "Provide ongoing support, training, and maintenance to ensure optimal system performance, empowering our partners to achieve operational excellence.",
-      imageUrl: OEM,
+      imageUrl: Support,
     },
   ],
 ];

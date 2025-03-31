@@ -35,7 +35,11 @@ export default function Service({ data }) {
                 </div>
                 <p className="text-gray-400 font-light">{item.type}</p>
                 <Link
-                  to={`/solutions#${item.id}`}
+                  to={
+                    item.id === "Software"
+                      ? `/software-rubix-platform/`
+                      : `/solutions#${item.id}`
+                  }
                   className="mt-4 flex items-center gap-2 font-medium text-theme-teal"
                 >
                   Learn more

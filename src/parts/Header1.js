@@ -183,7 +183,7 @@ const Header1 = () => {
                         <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="solutions/#Professional"
+                              href="/solutions/#Professional"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Professional Services
@@ -191,7 +191,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="solutions/#OEM"
+                              href="/solutions/#OEM"
                               className="text-gray-400 block px-6 py-2"
                             >
                               OEM
@@ -199,7 +199,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="solutions/#Hardware"
+                              href="/solutions/#Hardware"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Hardware
@@ -207,7 +207,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="solutions/#Software"
+                              href="/solutions/#Software"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Software

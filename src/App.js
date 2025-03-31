@@ -27,6 +27,7 @@ import RubixLWPage from "pages/RubixLWPage";
 import CaseStudyPage from "pages/CaseStudyPage";
 import GetDemoPage from "pages/GetDemoPage";
 import ContactPage from "pages/ContactPage";
+import FAQsPage from "pages/FAQsPage";
 
 import "./assets/css/styles.css";
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/case-study/" element={<CaseStudyPage />} />
         <Route path="/get-demo/" element={<GetDemoPage />} />
         <Route path="/contact-us/" element={<ContactPage />} />
+        <Route path="/FAQs/" element={<FAQsPage />} />
       </Routes>
     </>
   );

@@ -9,7 +9,7 @@ import { Calendar, ChevronRight } from "lucide-react";
 
 const Case4 = () => {
   return (
-    <section className="py-32 pb-0 mb-0 pl-32">
+    <section className="py-32 pb-0 mb-0 md:pl-32 px-6 ">
       <div className="container">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6 text-center">
           <h1 className="text-balance text-4xl font-semibold">

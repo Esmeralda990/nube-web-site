@@ -47,20 +47,20 @@ import Micro3 from "../assets/images/MicroEdge/MICRO3.png";
 import Micro4 from "../assets/images/MicroEdge/MICRO4.png";
 
 // Icons Software Benefits
-import Desktop from "../assets/images/Icons/BuildingCompliace.png";
-import License from "../assets/images/Icons/API.png";
-import Friendly from "../assets/images/Icons/DataAlerts.png";
-import Data from "../assets/images/Icons/PeopleCouting.png";
+import Desktop from "../assets/images/IconsBenefitsSoftware/Desktop.png";
+import License from "../assets/images/IconsBenefitsSoftware/License.png";
+import Friendly from "../assets/images/IconsBenefitsSoftware/Send.png";
+import Data from "../assets/images/IconsBenefitsSoftware/User.png";
 
 // Gif Benefits
-import Anywhere from "../assets/images/SoftwareProducts/Send-your-data-anywhere1.gif";
-import Merge from "../assets/images/SoftwareProducts/Merge-BMS-and-IoT2.gif";
+import Anywhere from "../assets/Video/Sendyourdata01.webm";
+import Merge from "../assets/Video/Merge02.webm";
 import Manage1 from "../assets/images/SoftwareProducts/ce-install-apps-1024x626-31.png";
 import Manage2 from "../assets/images/SoftwareProducts/ce-wires-1024x626-32.png";
 import Manage3 from "../assets/images/SoftwareProducts/ce-select-version-1024x626-33.png";
 
 // Rubix Wire
-import RubixWire1 from "../assets/images/SoftwareProducts/rubixWirex.gif";
+import RubixWire1 from "../assets/Video/RubixWire03_Webm.webm";
 
 // NubeConnectivity
 import Connectivity1 from "../assets/images/Connectivity/Connectivity1.png";

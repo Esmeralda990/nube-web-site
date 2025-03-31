@@ -6,7 +6,7 @@ import React from "react";
 
 import { Fade } from "react-awesome-reveal";
 import { ArrowRight } from "lucide-react";
-import heroAbout from "assets/images/hero/AboutHero.png";
+import heroAbout from "assets/images/hero/About.png";
 import Button from "../elements/Button";
 
 export default function HeroAbout() {
@@ -25,13 +25,13 @@ export default function HeroAbout() {
             environments.
           </p>
         </Fade>
-        <Fade direction="up" delay={500} triggerOnce>
+        <Fade delay={500} triggerOnce>
           <div className="flex space-x-4 mt-8">
             {" "}
             <Button
               href="/solutions/"
               type="link"
-              className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-16 justify-center px-8 py-4 text-white  bg-theme-teal rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
+              className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-14 justify-center px-8 py-3 text-white  bg-theme-teal rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
             >
               Our solutions
               <ArrowRight className="ml-2 w-4" />

@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
-import VideoGif from "../Video/CONECTIVITY_GIF_WEBM.webm";
+import VideoGif from "../assets/Video/ConnectivityFootergif.webm";
 
 const GifSectionConect = () => {
   return (

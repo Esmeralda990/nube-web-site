@@ -11,7 +11,7 @@ export default function OurStory() {
     <section className="hero sm:items-center lg:items-start sm:flex-row md:mb-40">
       <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-16">
         <Fade direction="up" triggerOnce>
-          <h3 className="text-3xl md:text-5x text-theme-blue text-center font-bold leading-tight mb-5">
+          <h3 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-5">
             Our Story
           </h3>
         </Fade>

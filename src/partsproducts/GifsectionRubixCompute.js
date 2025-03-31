@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
-import VideoGif from "../Video/Rubix_Compute.webm";
+import VideoGif from "../assets/Video/RubixComputeFootergif.webm";
 
 const GifSectionRubix = () => {
   return (
