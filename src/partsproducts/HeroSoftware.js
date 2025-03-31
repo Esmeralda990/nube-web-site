@@ -14,7 +14,7 @@ export default function HeroSoftware() {
     <>
       <section className="hero">
         <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 mt-24 text-left px-12 ">
-          <h1 className="text-6xl sm:text-5xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
+          <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
             Rubix-CE
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-10">
@@ -30,7 +30,7 @@ export default function HeroSoftware() {
               className="flex w-36 h-14 md:w-80 md:h-18 items-center 
              text-sm md:text-lg 
              px-4 py-3 md:px-14 md:py-5 
-           bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
+           bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
             >
               Documentation
             </Button>

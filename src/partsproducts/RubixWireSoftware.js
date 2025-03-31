@@ -14,13 +14,13 @@ import Button from "../elements/Button/index.js";
 
 const Wire = () => {
   return (
-    <section className="py-32 pb-12 md:ml-24 ml-0">
+    <section className="py-16 pb-8 md:ml-24 ml-0">
       <div className="container mx-auto px-12">
         <h2 className="text-2xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Wires
         </h2>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1">
+          <article className="prose order-2 mx-auto md:order-1 ">
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={20}
@@ -28,7 +28,7 @@ const Wire = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               speed={400}
-              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+              className="swiper-products mb-12 w-full h-auto object-contain h-auto rounded-lg"
             >
               {RubixWire.map((item) => (
                 <SwiperSlide key={item.id}>
@@ -39,7 +39,7 @@ const Wire = () => {
                     loop
                     muted
                     playsInline
-                    className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg "
+                    className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg"
                   />
                 </SwiperSlide>
               ))}
@@ -71,7 +71,7 @@ const Wire = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
                 type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
               >
                 DOCUMENTATION
               </Button>

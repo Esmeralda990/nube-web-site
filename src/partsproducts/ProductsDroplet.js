@@ -135,7 +135,7 @@ const LoraDroplet = () => {
               <a
                 href="/Docs/Droplet-Datasheet.pdf"
                 type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download
               >
                 DATASHEET
@@ -143,7 +143,7 @@ const LoraDroplet = () => {
               <Button
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/droplets-v1/"
                 type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 USER MANUAL

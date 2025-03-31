@@ -10,7 +10,7 @@ export default function ServiceSolutions({ data }) {
     <div className="bg-gray-50">
       <div className="container mx-auto pt-32 pb-32">
         <Fade direction="" triggerOnce>
-          <h1 className="text-5xl text-theme-blue text-center font-bold mb-5">
+          <h1 className="text-2xl md:text-5xl text-theme-blue text-center font-bold mb-5">
             Building Smarter, Thinking Forward
           </h1>
         </Fade>

@@ -57,18 +57,16 @@ const ProductRubixmini = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2 text-lg sm:text-sm">
+                    <td className="border px-4 py-2 text-lg text-xs ">
                       BMS Integration
                     </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                    <td className="border px-4 py-2 font-light text-lg text-xs">
                       Integrate into any BMS via BACnet/IP
                     </td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-xs sm:text-sm">
-                      Power Supply
-                    </td>
-                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
+                    <td className="border px-4 py-2 text-xs ">Power Supply</td>
+                    <td className="border px-4 py-2 font-light text-xs">
                       24VAC and 24VDC
                     </td>
                   </tr>
@@ -141,7 +139,7 @@ const ProductRubixmini = () => {
               <Button
                 href="/contact"
                 type="link"
-                className="px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:bg-white border border-theme-teal hover:text-black"
+                className="px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 LEARN MORE

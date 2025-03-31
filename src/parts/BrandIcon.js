@@ -12,7 +12,7 @@ export default function BrandIcon() {
       <img
         src="/LogoNube.png"
         alt="nube"
-        className="w-28 h-6=8 md:w-48 md:h-12"
+        className="w-28 h-8 md:w-48 md:h-12"
       />
     </Button>
   );
