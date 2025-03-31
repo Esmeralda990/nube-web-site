@@ -25,7 +25,7 @@ export default function HeroSolutions() {
             <Button
               href="/contact-us/"
               type="link"
-              className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-16 justify-center px-8 py-4 text-black border border-theme-teal bg-white rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal  hover:text-white"
+              className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-12 justify-center px-8 py-2 text-black border border-theme-teal bg-white rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal  hover:text-white"
             >
               Contact us
               <ArrowRight className="ml-2 w-4" />

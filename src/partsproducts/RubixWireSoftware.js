@@ -32,10 +32,14 @@ const Wire = () => {
             >
               {RubixWire.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <img
+                  <video
                     src={item.image}
                     alt={`Wire ${item.id}`}
-                    className="swiper-product-gif w-full h-full mt-0 object-cover rounded-lg "
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg "
                   />
                 </SwiperSlide>
               ))}

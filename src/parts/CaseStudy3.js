@@ -6,7 +6,7 @@ import { Services } from "../json/landingPageData.js";
 
 const Case3 = () => {
   return (
-    <section className="py-32 pl-32 bg-gray-100">
+    <section className="py-32 md:pl-32 px-6 bg-gray-100">
       <div className="container">
         <div className="flex flex-col space-y-10 md:space-y-16">
           <div className="lg:flex lg:gap-x-4">

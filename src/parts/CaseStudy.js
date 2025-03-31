@@ -7,7 +7,7 @@ import React from "react";
 
 const CaseStudy1 = () => {
   return (
-    <section className="py-12 pl-32">
+    <section className="py-12 md:pl-32 px-6">
       <div className="container">
         <div className="flex flex-col items-center justify-start gap-6 lg:flex-row">
           <div className="flex w-full flex-col items-start justify-start gap-24 lg:w-1/2">

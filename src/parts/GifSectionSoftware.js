@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
-import VideoGif from "../Video/SOFTWARE_GIF_WEBM.webm";
+import VideoGif from "../assets/Video/SoftwareFootergif.webm";
 
 const GifSectionSoftware = () => {
   return (

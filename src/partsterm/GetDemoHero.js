@@ -11,7 +11,7 @@ import Button from "../elements/Button/index";
 
 const HeroDemo = () => {
   return (
-    <section className="py-32 md:pl-32 px-8">
+    <section className="py-32 lg:pl-32 px-8">
       <div className="container flex flex-col lg:flex-row items-center lg:text-left">
         <div className="lg:w-1/2 lg:text-left">
           <Fade direction="up" triggerOnce delay={200}>
@@ -42,23 +42,23 @@ const HeroDemo = () => {
           <div className="flex flex-col gap-4 sm:flex-row">
             <Fade direction="up" triggerOnce delay={800}>
               <Button
-                href="/contact-us/"
+                href="/solutions/"
                 type="link"
                 className="flex items-center w-auto px-8 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black mt-8"
               >
-                Contact Us
+                Our Solutions
                 <ArrowRight className="ml-2 w-4" />
               </Button>
             </Fade>
           </div>
         </div>
 
-        <div className="lg:w-3/4 mt-8 lg:mt-0 flex justify-center items-center">
+        <div className="lg:w-3/4 mt-8 lg:mt-0 flex justify-center items-center overflow-hidden">
           <Fade direction="up" triggerOnce delay={1000}>
             <img
               src={heroDemo}
               alt="heroDemo"
-              className="max-w-full h-auto rounded-lg md:ml-32"
+              className="max-w-full h-auto rounded-lg lg:ml-28 overflow-hidden object-cover"
             />
           </Fade>
         </div>

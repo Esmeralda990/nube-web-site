@@ -7,7 +7,7 @@ import React from "react";
 
 const CaseStudy2 = () => {
   return (
-    <section className="bg-muted py-32 pl-32">
+    <section className="bg-muted py-32 md:pl-32 px-6">
       <div className="container">
         <div className="grid gap-14 pb-32 md:grid-cols-2">
           <div>

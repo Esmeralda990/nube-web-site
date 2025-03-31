@@ -22,9 +22,12 @@ const GifBene = () => {
           <div className="lg:flex lg:gap-x-4">
             <div className="lg:w-1/2">
               <div className="mb-6 md:mb-8 lg:mb-0">
-                <img
+                <video
                   src={GifBenefits[0].image}
-                  alt="Anywhere"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="aspect-[4/3] w-auto rounded-md "
                 />
               </div>
@@ -58,9 +61,12 @@ const GifBene = () => {
           <div className="flex-row-reverse lg:flex lg:gap-x-4">
             <div className="lg:w-1/2">
               <div className="mb-6 md:mb-8 lg:mb-0">
-                <img
+                <video
                   src={GifBenefits[1].image}
-                  alt="Merge"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="aspect-[6/3] w-full rounded-md"
                 />
               </div>

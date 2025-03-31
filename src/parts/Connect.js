@@ -45,7 +45,7 @@ const Connect = () => {
           </div>
           <div className="relative mx-auto w-full max-w-full  px-6 overflow-hidden z-10">
             <div className="flex animate-scroll-right justify-start gap-4">
-              {[...Badges.slice(7, 13), ...Badges.slice(7, 13)].map((item) => (
+              {[...Badges.slice(8, 13), ...Badges.slice(8, 13)].map((item) => (
                 <div
                   key={uuidv4()}
                   className="flex h-20 md:h-32 items-center justify-center px-4 py-2"
