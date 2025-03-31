@@ -7,8 +7,8 @@ import { Managers } from "json/landingPageData";
 
 export default function TeamSection() {
   return (
-    <section className="mt-12 md:mb-40 lg:pl-36 ">
-      <div className=" container flex flex-col items-center text-center mb-10">
+    <section className="mt-12 md:mb-40">
+      <div className=" container max-w-screen-xl mx-auto flex flex-col items-center text-center mb-10 ">
         <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
           Meet our team
         </h2>
@@ -18,12 +18,9 @@ export default function TeamSection() {
           Explicabo.
         </p>
       </div>
-      <div className="container mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:px-24">
+      <div className="container mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4 grid-cols-auto-fit lg:pl-60 px-4">
         {Managers.map((person) => (
-          <div
-            key={person.id}
-            className="flex flex-col bg-accent p-8 rounded-xl "
-          >
+          <div key={person.id} className="flex flex-col bg-accent rounded-xl ">
             <img
               src={person.imageUrl}
               alt={person.name}
@@ -31,7 +28,7 @@ export default function TeamSection() {
             />
             <p className="font-bold">{person.name}</p>
             <p className="text-muted-foreground">{person.role}</p>
-            <p className="py-3 font-light text-gray-500 text-base text-muted-foreground">
+            <p className="py-3 font-light text-gray-500 text-base text-muted-foreground overflow-hidden text-ellipsis">
               {person.description}
             </p>
             <div className="mt-2 flex gap-4">

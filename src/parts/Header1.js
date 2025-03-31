@@ -607,15 +607,7 @@ const Header1 = () => {
                                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
                                 className="text-gray-400 block px-6 py-2"
                               >
-                                TM&Support 1
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                TM&Support 2
+                                TM&Support
                               </a>
                             </li>
                           </ul>
@@ -649,18 +641,10 @@ const Header1 = () => {
                           <ul className="pl-6 mt-2 space-y-2">
                             <li>
                               <a
-                                href="/new-solution-1/"
+                                href="/FAQs/"
                                 className="text-gray-400 block px-6 py-2"
                               >
-                                FAQs 1
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/new-solution-2/"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                FAQs 2
+                                FAQs
                               </a>
                             </li>
                           </ul>

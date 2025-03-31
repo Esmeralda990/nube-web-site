@@ -40,8 +40,8 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
               <img
                 src={logo.image}
                 alt={logo.description}
-                className="logo-image w-20 h-auto object-contain sm:w-32 md:w-40 lg:w-40 "
-                style={{ maxWidth: "100%", height: "auto" }}
+                className="logo-image w-20 h-auto object-contain sm:w-30 md:w-40 lg:w-40 "
+                style={{ maxWidth: "70%", height: "auto" }}
               />
             </div>
           ))}

@@ -55,7 +55,7 @@ const NiagaraEdge = () => {
               <a
                 href="/Docs/ConserveIt_CI-EdgeX1 (May 2023).pdf"
                 type="link"
-                className="px-6 py-3 bg-gray-300 text-black text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="flex items-center justify-center w-auto px-6 py-2 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download
               >
                 DATASHEET
@@ -63,7 +63,7 @@ const NiagaraEdge = () => {
               <Button
                 href="https://www.conserveitiot.com/"
                 type="link"
-                className="px-6 py-3 bg-teal-600 text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+                className="pflex items-center justify-center w-auto px-6 py-2 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 download
               >
                 CONSERVE IT WEBSITE

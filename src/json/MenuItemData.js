@@ -41,7 +41,7 @@ export const menuItemsData = [
                 title: "Controllers",
                 items: [
                   { name: "Rubix Compute", link: "/rubix-compute/" },
-                  { name: "Rubix-Compute-Mini", link: "/rubix-compute-mini/" },
+                  { name: "Rubix Compute Mini", link: "/rubix-compute-mini/" },
                   { name: "Rubix iO 16", link: "/rubix-io/" },
                   { name: "Niagara N4", link: "/edge/" },
                 ],
@@ -59,7 +59,7 @@ export const menuItemsData = [
                 title: "LoRa",
                 items: [
                   {
-                    name: "Droplet Indoor Sensor",
+                    name: "Droplet Indoor ",
                     link: "/lora-environmental-sensor/",
                   },
                   {
