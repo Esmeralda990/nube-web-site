@@ -3,8 +3,33 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
+/* eslint-disable react/no-array-index-key */
 import React, { useState } from "react";
+import { Mail, Phone, Building } from "lucide-react";
 import Button from "../elements/Button/index";
+
+const contactMethods = [
+  {
+    icon: Mail,
+    title: "Email",
+    description:
+      "Have a question or need help? Drop us an email, and we'll respond within 24 hours.",
+    contact: "info@nubeio.com",
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    description:
+      "Prefer to chat? Give us a call Monday–Friday, 9 AM–5 PM (PST).",
+    contact: "+61 2 7906 8414",
+  },
+  {
+    icon: Building,
+    title: "Address",
+    description:
+      "Stop by our office @ 123 Productivity Ave, San Francisco, CA 94105",
+  },
+];
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -59,92 +84,35 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="mt-12 pb-12 md:mt-28 lg:pl-32 px-6">
-      <div className="container">
-        <div className="mx-auto flex max-w-full flex-col justify-between gap-10 lg:flex-row lg:gap-20">
-          <div className="mx-auto flex max-w-full flex-col justify-between gap-10">
+    <section className="mt-2 pb-12 lg:pl-32 px-6 mb-20">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
+          <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="mb-2 text-4xl font-bold text-theme-blue lg:mb-1 lg:text-5xl mt-40 max-w-2xl">
-                Unlock Your Buildings Potential
+              <h1 className="mt-40 mb-2 text-2xl lg:text-5xl font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
+                Elevate Your Building Management Solutions with Nube iO
               </h1>
-              <p className="text-muted-foreground font-light text-gray-400 text-lg max-w-2xl">
-                To craft a bespoke experience and maximize the value of your
-                personalized demo, please provide us with a few details
-              </p>
+            </div>
 
-              <div className="mx-auto w-fit lg:mx-0">
-                <h3 className="mb-6 mt-6 text-theme-teal font-bold text-2xl lg:text-left">
-                  Contact Details
-                </h3>
-                <ul className="ml-4 list-disc text-left">
-                  <li>
-                    <span className="font-bold text-lg">Phone: </span>
-                    <span className="font-light text-gray-400 text-lg">
-                      +123-456-7890
-                    </span>
-                  </li>
-                  <li>
-                    <span className="font-bold text-lg">Email: </span>
-                    <a
-                      href="mailto:info@nubeio.com"
-                      className="text-theme-teal underline text-lg"
-                    >
-                      info@nubeio.com
-                    </a>
-                  </li>
-                  <li>
-                    <span className="font-bold text-lg">Address: </span>
-                    <span className="font-light text-gray-400 text-lg">
-                      123 Building Tech Way, Suite 456, Metropolis, AU
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mx-auto w-fit lg:mx-0">
-                <h3 className="mb-6 mt-6 text-teal-600 text-2xl font-semibold lg:text-left">
-                  Business Hours
-                </h3>
-                <ul className="md:ml-4 list-disc text-left">
-                  <li>
-                    <span className="font-bold text-lg">
-                      Monday to Friday:{" "}
-                    </span>
-                    <span className="font-light text-gray-400 text-lg">
-                      9:00 AM - 5:00 PM
-                    </span>
-                  </li>
-                  <li>
-                    <span className="font-bold text-lg">
-                      Saturday and Sunday{" "}
-                    </span>
-                    <span className="font-light text-gray-400 text-lg">
-                      Closed
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mx-auto w-fit lg:mx-0">
-                <h3 className="mb-6 mt-6 text-teal-600 text-2xl font-semibold lg:text-left">
-                  Stay Connected
-                </h3>
-                <span className="font-light text-gray-400 text-lg">
-                  Follow us on our social media platforms to stay updated and
-                  part of our community:{" "}
-                </span>
-                <ul className="ml-4 list-disc text-left">
-                  <li>
-                    <span className="font-bold text-lg">LinkedIn </span>
-                    <a
-                      href="https://linkedin.com/company/nubeio"
-                      className="underline text-theme-teal text-lg"
-                    >
-                      Nube iO LinkedIn
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className="grid flex-2 gap-8 self-start lg:grid-cols-2 mt-6">
+              {contactMethods.map((method, index) => (
+                <div key={index} className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <method.icon className="w-5 h-5 text-theme-teal" />
+                    <h3 className="text-xl tracking-[-0.96px]  text-theme-teal">
+                      {method.title}
+                    </h3>
+                  </div>
+                  <div className="space-y-2 tracking-[-0.32px]">
+                    <p className="text-base font-light text-gray-400">
+                      {method.description}
+                    </p>
+                    <div className="text-base font-light text-gray-400">
+                      {method.contact}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -252,4 +220,5 @@ const ContactForm = () => {
     </section>
   );
 };
+
 export default ContactForm;

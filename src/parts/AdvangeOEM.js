@@ -19,9 +19,9 @@ export default function AdvantageSolutions({ data }) {
                 alt={item.title}
               />
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <div className="font-bold text-xl mb-2 text-theme-blue text-center">
+                <h4 className="font-bold text-xl mb-2 text-theme-blue text-center">
                   {item.title}
-                </div>
+                </h4>
               </div>
 
               <div className="px-6 pb-5">

@@ -9,7 +9,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import Button from "../elements/Button";
 
-import BuildWebsite from "../assets/images/hero/Home_principal.gif";
+import BuildWebsite from "../assets/images/hero/Home_Header.gif";
 
 export default function Hero() {
   return (

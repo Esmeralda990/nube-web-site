@@ -11,16 +11,15 @@ const CaseStudy2 = () => {
       <div className="container">
         <div className="grid gap-14 pb-32 md:grid-cols-2">
           <div>
-            <p className="text-sm font-medium">CASE STUDY</p>
+            <p className="text-sm font-bold">CASE STUDY</p>
             <h1 className="mt-4 text-3xl font-medium md:text-4xl">
-              Simplifying Complex Workflows with Developer-Focused Solutions
+              Smart Building Solutions
             </h1>
           </div>
           <p className="md:text-lg">
-            Our platform provides intuitive solutions for managing and scaling
-            projects. We offer seamless integrations, clear abstractions, and
-            powerful tools to enhance developer productivity and collaboration
-            across teams of all sizes and experience levels.
+            A commercial office building integrated Nube iO s solutions to
+            automate HVAC systems, resulting in a 30% reduction in energy costs
+            and improved occupant comfort.
           </p>
         </div>
         <img
@@ -28,9 +27,6 @@ const CaseStudy2 = () => {
           alt="placeholder"
           className="ml-auto aspect-video max-h-[550px] rounded-xl object-cover"
         />
-        <p className="mt-6 text-center text-xl lg:text-right">
-          Committed to removing complexity from development processes
-        </p>
         <div className="flex flex-col gap-14 py-40 lg:flex-row">
           <p className="mx-auto max-w-xl text-center text-2xl lg:mx-0 lg:text-left">
             We are a team of passionate developers, designers, and

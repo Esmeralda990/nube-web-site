@@ -18,8 +18,8 @@ const FAQs = () => {
   };
 
   return (
-    <section className="py-32 lg:ml-28">
-      <div className="container space-y-16 px-6">
+    <section className="py-32">
+      <div className="container mx-auto space-y-16 px-6">
         <div className="flex flex-col items-start text-left lg:items-center lg:text-center">
           <h2 className="mb-3 max-w-3xl text-2xl font-bold md:mb-4 md:text-4xl lg:mb-6 text-theme-blue">
             Frequently Asked Questions

@@ -12,9 +12,9 @@ export default function Detailsoftware() {
       <section className="hero sm:items-center lg:items-start sm:flex-row pt-16">
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-16">
           <Fade direction="up" triggerOnce>
-            <h3 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
+            <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
               Intuitive Software for Smart, Connected Spaces
-            </h3>
+            </h2>
           </Fade>
           <Fade direction="up" triggerOnce delay={400}>
             <p className="font-light text-xl text-gray-400 leading-relaxed text-center md:pb-32 ">

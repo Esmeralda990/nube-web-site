@@ -44,9 +44,9 @@ const FeatureSwiper = () => {
                   <feature.icon className="size-10" />
                 )}
                 <div>
-                  <h3 className="text-xl  text-theme-blue font-bold mb-3">
+                  <h4 className="text-xl  text-theme-blue font-bold mb-3">
                     {feature.title}
-                  </h3>
+                  </h4>
                   <p className="text-base font-light text-gray-400 text-muted-foreground">
                     {feature.description}
                   </p>

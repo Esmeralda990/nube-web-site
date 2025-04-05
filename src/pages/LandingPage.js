@@ -11,17 +11,19 @@ import {
   Advantages,
   Badges,
   Slides,
+  Logos,
 } from "json/landingPageData";
+
 import Header1 from "parts/Header1";
 import Hero from "parts/Hero";
 import Service from "parts/Service";
 import PorfolioCarousel from "parts/PortfolioCarousel";
 import Advantage from "parts/Advantage";
 import SolutionHero from "parts/SolutionHero";
-import GifSection from "parts/GifSectionhero";
 import SoftwareSolutions from "parts/SoftwareSolutions";
 import Connect from "parts/Connect";
-import Discuss from "parts/Discuss";
+import PartnersSection from "parts/PartnerSection";
+import Discuss from "parts/DiscussHome";
 import Footer from "parts/Footer";
 
 export default class LandingPage extends Component {
@@ -36,11 +38,11 @@ export default class LandingPage extends Component {
         <Hero />
         <SoftwareSolutions />
         <Service data={Services} />
-        <PorfolioCarousel data={Slides} />
+        <PorfolioCarousel data={Slides} logos={Logos} />
         <Advantage data={Advantages} />
+        <PartnersSection />
         <Connect data={Badges} />
         <SolutionHero data={WorldSolutions} />
-        <GifSection />
         <Discuss />
         <Footer />
       </>

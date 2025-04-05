@@ -12,9 +12,9 @@ export default function Discuss() {
       <div className="w-full">
         <div className="flex items-center justify-center rounded-2xl border bg-[url('https://shadcnblocks.com/images/block/circles.svg')] bg-cover bg-center px-4 py-20 text-center text-theme-blue md:p-40">
           <div className="mx-auto max-w-screen-md">
-            <h1 className="text-2xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
+            <h2 className="text-2xl sm:text-4xl text-theme-blue font-bold leading-tight mb-5">
               Ready to Future-Proof Your Building
-            </h1>
+            </h2>
             <p className="font-light text-base md:text-xl text-gray-400 leading-relaxed mb-16">
               Transform your building with Nube iO’s smart solutions. From
               seamless IoT integration to real-time automation and energy

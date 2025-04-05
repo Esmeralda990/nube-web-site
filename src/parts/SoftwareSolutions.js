@@ -9,7 +9,7 @@ import GrowthImage from "../assets/images/Dashboard/DashboardPrincipal.png";
 export default function SoftwareSolutions() {
   return (
     <div className="flex flex-col overflow-hidden w-full px-4">
-      <ContainerScroll>
+      <ContainerScroll titleComponent={<div />}>
         <img
           src={GrowthImage}
           alt="Growth"

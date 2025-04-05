@@ -11,7 +11,7 @@ import ConnectImg from "../assets/images/Icons/02.png";
 
 const Connect = () => {
   return (
-    <div className="mx-auto mt-12 mb-24 grid max-w-screen-xl gap-4 border-1 border-gray-100 rounded-lg md:grid-cols-2 px-6 pb-24">
+    <div className="mx-auto pt-24 mb-24 grid max-w-screen-xl gap-4 border-1 border-gray-100 rounded-lg md:grid-cols-2 px-6 pb-24">
       <div className="flex flex-col rounded-lg overflow-hidden border-2 border-gray-100">
         <img
           src={ConnectImg}

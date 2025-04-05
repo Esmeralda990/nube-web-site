@@ -3,29 +3,40 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-
-import { Fade } from "react-awesome-reveal";
+import heroAbout from "../assets/images/Services/Software.webp";
 
 export default function DetailsAbout() {
   return (
-    <section className="hero sm:items-center lg:items-start sm:flex-row md:mt-20 md:mb-32">
-      <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 mt-8 md:mt-16 lg:mt-16 xl:mt-16">
-        <Fade direction="up" triggerOnce>
-          <h3 className="text-3xl md:text-5xl text-theme-blue font-bold leading-tight mb-10 text-center  ">
-            What We Do
-          </h3>
-        </Fade>
-        <Fade direction="up" triggerOnce delay={400}>
-          <p className="max-w-6xl mx-auto text-center font-light text-xl text-gray-400 leading-relaxed">
-            At Nube iO, we create intelligent technology that transforms the way
-            spaces are managed. Our cutting-edge software, IoT solutions, and
-            data-driven automation empower businesses to optimise energy,
-            streamline operations, and future-proof their infrastructure. From
-            HVAC and energy management to smart diagnostics and
-            predictivemaintenance, we deliver scalable, seamless solutions that
-            bridge the gap between legacy systems and the future of automation.
-          </p>
-        </Fade>
+    <section className="py-32 mt-16 px-12">
+      <div className=" flex justify-center">
+        <div className="lg:flex justify-center items-center">
+          <div className="lg:w-1/2  flex flex-col justify-center">
+            <div className="mb-6 md:mb-8 lg:mb-0 ">
+              <img
+                src={heroAbout}
+                alt="heroAbout"
+                className="aspect-video w-full rounded-md border border-border object-cover"
+              />
+            </div>
+          </div>
+          <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-16 2xl:pl-32 max-w-2xl">
+            <div>
+              <h2 className="mb-3 text-xl font-bold text-theme-blue md:mb-4 md:text-5xl lg:mb-6">
+                What We Do
+              </h2>
+              <p className="text-muted-foreground lg:text-lg font-light text-gray-400">
+                At Nube iO, we create intelligent technology that transforms the
+                way spaces are managed. Our cutting-edge software, IoT
+                solutions, and data-driven automation empower businesses to
+                optimise energy, streamline operations, and future-proof their
+                infrastructure. From HVAC and energy management to smart
+                diagnostics and predictivemaintenance, we deliver scalable,
+                seamless solutions that bridge the gap between legacy systems
+                and the future of automation.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
