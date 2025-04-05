@@ -1,5 +1,6 @@
 // src/components/Logos3.js
 /* eslint-disable react/prop-types */
+/* eslint-disable react/no-array-index-key */
 import React from "react";
 import { Logos } from "../json/landingPageData.js";
 
@@ -7,9 +8,9 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
   return (
     <section className="py-12 mb-8 ">
       <div className="ccontainer mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h1 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
           {heading}
-        </h1>
+        </h2>
         <p className="font-light text-lg text-gray-400 text-center mb-10 lg:text-center">
           {description}
         </p>
@@ -28,9 +29,9 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
             animation: "scroll 80s linear infinite",
           }}
         >
-          {[...logos, ...logos, ...logos, ...logos].map((logo) => (
+          {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
             <div
-              key={logo.id}
+              key={`${logo.id}-${index}`}
               className="flex justify-center items-center"
               style={{
                 width: "auto",

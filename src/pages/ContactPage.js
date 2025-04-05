@@ -4,7 +4,6 @@
 import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
-import HeroContact from "partsterm/HeroContact";
 import ContactForm from "partsterm/ContactForm";
 import Footer from "parts/Footer";
 
@@ -17,7 +16,6 @@ export default class HeroContc extends Component {
     return (
       <>
         <Header1 />
-        <HeroContact />
         <ContactForm />
         <Footer />
       </>

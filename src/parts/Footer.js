@@ -35,7 +35,6 @@ const sections = [
             </a>
           </div>
         ),
-        href: "#",
       },
     ],
   },

@@ -4,79 +4,74 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
 /* eslint-disable comma-dangle */
-import SolutionImg from "../assets/images/ImgMenu/Solutions.png";
 import ResourceImg from "../assets/images/ImgMenu/Resources.png";
+import icons from "../assets/images/IconsMenu/icons.png";
 
 export const menuItemsData = [
   {
-    name: "About",
+    name: "Our Story",
     link: "/about/",
   },
   {
     name: "Solutions",
     subMenu: [
       {
-        image: SolutionImg,
+        image: ResourceImg,
         links: [
           {
-            title: "Our Services",
+            title: "",
             items: [
               {
-                title: "",
+                title: "Our services",
                 items: [
-                  { name: "Professional Services", id: "Professional" },
-                  { name: "OEM", id: "OEM" },
-                  { name: "Hardware", id: "Hardware" },
-                  { name: "Software", id: "Software" },
-                  { name: "Connectivity", link: "/connectivity/" },
-                  { name: "By Case Scenario", link: "/case-study/" },
+                  {
+                    name: "Professional Services",
+                    id: "Professional",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+
+                  {
+                    name: "OEM",
+                    id: "OEM",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "Hardware",
+                    id: "Hardware",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
                 ],
               },
             ],
           },
           {
-            title: "Our Products",
+            title: "",
             items: [
               {
-                title: "Controllers",
-                items: [
-                  { name: "Rubix Compute", link: "/rubix-compute/" },
-                  { name: "Rubix Compute Mini", link: "/rubix-compute-mini/" },
-                  { name: "Rubix iO 16", link: "/rubix-io/" },
-                  { name: "Niagara N4", link: "/edge/" },
-                ],
-              },
-              {
-                title: "Expansion Modules",
-                items: [{ name: "Rubix Connect", link: "/rubix-connect-lw/" }],
-              },
-            ],
-          },
-          {
-            title: "  ",
-            items: [
-              {
-                title: "LoRa",
+                title: "Our services",
                 items: [
                   {
-                    name: "Droplet Indoor ",
-                    link: "/lora-environmental-sensor/",
+                    name: "Software",
+                    id: "Software",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
                   },
                   {
-                    name: "MicroEdge Asset",
-                    link: "/lora-asset-monitoring-sensor/",
+                    name: "Connectivity",
+                    link: "/connectivity/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "By Case Scenario",
+                    link: "/case-study/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
                   },
                 ],
-              },
-              {
-                title: "Software",
-                items: [
-                  { name: "Rubix CE", link: "/software-rubix-platform/" },
-                ],
-              },
-              {
-                title: "Connectivity",
-                items: [{ name: "Nube iO Cloud", link: "/connectivity/" }],
               },
             ],
           },
@@ -87,48 +82,171 @@ export const menuItemsData = [
     hasSubMenu: true,
   },
   {
-    name: "Resources",
+    name: "Products",
     subMenu: [
       {
         image: ResourceImg,
         links: [
           {
-            title: "Case Studies",
+            title: "",
             items: [
               {
-                title: "",
-                items: [
-                  { name: "Case Studies 1", link: "/case-study/" },
-                  { name: "Case Studies 2", link: "/" },
-                  { name: "Case Studies 3", link: "/" },
-                  { name: "Case Studies 4", link: "/" },
-                ],
-              },
-            ],
-          },
-          {
-            title: "Manuals &",
-            items: [
-              {
-                title: "Support Articles",
+                title: "Software",
                 items: [
                   {
-                    name: "TM&Support",
-                    link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
+                    name: "Rubix CE",
+                    link: "/software-rubix-platform/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "Nube iO Cloud",
+                    link: "/connectivity/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui",
                   },
                 ],
               },
             ],
           },
           {
-            title: "Frequently",
+            title: "",
             items: [
               {
-                title: "Asked Questions",
+                title: "Controllers",
+                items: [
+                  {
+                    name: "Rubix Compute",
+                    link: "/rubix-compute/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "Rubix iO 16",
+                    link: "/rubix-io/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "CI-EdgeX2",
+                    link: "/edge/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            title: "",
+            items: [
+              {
+                title: "LoRa",
+                items: [
+                  {
+                    name: "Droplet Indoor ",
+                    link: "/lora-environmental-sensor/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                  {
+                    name: "MicroEdge Asset",
+                    link: "/lora-asset-monitoring-sensor/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                ],
+              },
+              {
+                title: "Expansion Modules",
+                items: [
+                  {
+                    name: "Rubix Connect",
+                    link: "/rubix-connect-lw/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    gridCols: 2,
+    hasSubMenu: true,
+  },
+  {
+    name: "Partners",
+    subMenu: [
+      {
+        type: "featured",
+        image: ResourceImg,
+        title: "Work With Us",
+        description:
+          "Partner with Nube iO and leverage our dedicated support, technical expertise, and collaborative growth opportunities to achieve shared innovation and sustainable success.",
+        name: "Lear More",
+        link: "/",
+      },
+    ],
+    gridCols: 2,
+  },
+  {
+    name: "Resources",
+    subMenu: [
+      {
+        image: ResourceImg,
+        links: [
+          {
+            title: "",
+            items: [
+              {
+                title: "Case Studies",
+                items: [
+                  {
+                    name: "Case Studies 1",
+                    link: "/case-study/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+
+                  {
+                    name: "Case Studies 2",
+                    link: "/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            title: "",
+            items: [
+              {
+                title: "Manuals & Support Articles",
+                items: [
+                  {
+                    name: "TM&Support",
+                    link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            title: "",
+            items: [
+              {
+                title: "Frequently Asked ",
                 items: [
                   {
                     name: "FAQs",
                     link: "/FAQs/",
+                    icon: icons,
+                    description: "Neque porro quisquam est qui ",
                   },
                 ],
               },

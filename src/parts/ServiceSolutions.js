@@ -10,9 +10,9 @@ export default function ServiceSolutions({ data }) {
     <div className="bg-gray-50">
       <div className="container mx-auto pt-32 pb-32">
         <Fade direction="" triggerOnce>
-          <h1 className="text-2xl md:text-5xl text-theme-blue text-center font-bold mb-5">
+          <h3 className="text-2xl md:text-4xl text-theme-blue text-center font-bold mb-5">
             Building Smarter, Thinking Forward
-          </h1>
+          </h3>
         </Fade>
         <Fade direction="" triggerOnce>
           <p className="font-light text-xl text-gray-400 text-center mb-10">
@@ -39,10 +39,9 @@ export default function ServiceSolutions({ data }) {
                 />
                 <div className="py-2">
                   {" "}
-                  {/* títle y descrip */}
-                  <h2 className="text-theme-blue text-center text-xl py-2">
+                  <h4 className="text-theme-blue text-center text-xl py-2">
                     {item.title}
-                  </h2>
+                  </h4>
                   <p className="font-light text-gray-400 text-center">
                     {item.description || item.type} {/* type */}
                   </p>

@@ -32,8 +32,8 @@ export default function Advantage({ data }) {
         </Fade>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 bg-white ">
-          {allCards.map((item) => (
-            <Fade direction="" triggerOnce>
+          {allCards.map((item, index) => (
+            <Fade key={item.id || index} direction="" triggerOnce>
               <div className="flex flex-col overflow-hidden rounded-xl border border-gray-200 ">
                 <div className="relative h-auto w-full">
                   <img

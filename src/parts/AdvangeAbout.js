@@ -2,50 +2,78 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-import React from "react";
+/* eslint-disable object-curly-newline */
+/* eslint-disable max-len */
+import React, { useState } from "react";
+import { AdvantageAbout } from "json/landingPageData";
 
-export default function AdvantageAbout({ data }) {
-  const allCards = data.flat();
+const Feature160 = () => {
+  const advantages = AdvantageAbout.flat();
+  const [cardNumber, setCardNumber] = useState(0);
+
   return (
-    <div className="bg-gray-50 py-24 mb-24 sm:mb-18 xl:mb-16 pt-12">
-      <div className="container mx-auto px-12">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl text-theme-blue font-bold mb-5">
+    <section className="py-32">
+      <div className="container mx-auto px-4">
+        <div className="mb-20 max-w-lg">
+          <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
-          </h1>
+          </h2>
+          <p className="text-lg md:text-xl font-light text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            cupiditate commodi vitae nostrum facilis qui?
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-10">
-          {allCards.map((item) => (
-            <div className="w-88 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-[470px] flex flex-col">
-              <img
-                className="max-w rounded overflow-hidden shadow-lg w-full h-full object-cover"
-                src={item.imageUrl}
-                alt={item.title}
-              />
-              <div className="px-6 py-5 flex-1 flex flex-col">
-                <div className="font-bold text-xl text-theme-blue mb-2 text-theme-gray">
+        <div className="mb-14 grid h-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+          {advantages.map((item, index) => (
+            <div
+              key={index}
+              role="button"
+              tabIndex={0}
+              onClick={() => setCardNumber(index)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setCardNumber(index);
+                }
+              }}
+              className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
+                cardNumber === index ? "opacity-100" : "opacity-50"
+              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-500`}
+            >
+              <div className="mb-2 flex items-center gap-2">
+                {/* Contenedor para el logo con tamaño pequeño */}
+                <span className="w-5 h-5 flex-shrink-0">
+                  {typeof item.logo === "string" ? (
+                    <img
+                      src={item.logo}
+                      alt="Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    item.logo
+                  )}
+                </span>
+                <h4 className="text-lg font-semibold text-theme-teal">
                   {item.title}
-                </div>
-                <p className="text-gray-700 text-sm font-light">
-                  {item.description}
-                </p>
+                </h4>
               </div>
-
-              <div className="px-6 pb-5">
-                {item.tags?.map((tag, tagIndex) => (
-                  <span
-                    key={tagIndex}
-                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
+              <p className="text-base font-light text-gray-500">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
+
+        <div className="rounded-t-[28px] p-1 pb-0">
+          <img
+            src={advantages[cardNumber].image}
+            alt={advantages[cardNumber].title}
+            className="max-h-[500px] w-full rounded-t-[28px] object-cover object-bottom transition-all duration-500"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Feature160;

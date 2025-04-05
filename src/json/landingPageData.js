@@ -309,30 +309,93 @@ export const Advantages = [
 export const AdvantageAbout = [
   [
     {
+      image: Company,
+      logo: Iconshard1,
       title: "Company Overview",
       description:
-        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. Combining IoT, cloud computing, and AI insights, we go beyond traditional Building Management Systems (BMS) to streamline operations, optimize energy use, and enable smarter decisions. ",
-      imageUrl: Company,
+        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. ",
     },
     {
       title: "Growth and Sustainability ",
       description:
-        "Nube iO started in Australia and has grown into a global leader in smart technology. We help businesses cut energy use, lower costs, and reduce environmental impact with advanced automation and data-driven insights. Using cloud-based controls and real-time analytics, we turn spaces into smarter, more efficient environments.",
-      imageUrl: Growth,
+        "Nube iO started in Australia and has grown into a global leader in smart technology. ",
+      logo: Iconshard2,
+      image: Growth,
     },
   ],
   [
     {
       title: "Commitment to Excellence",
       description:
-        "At Nube iO, we provide innovative technology and expert services to drive success. By refining our strategies and improving our software and hardware, we help businesses adapt, integrate, and scale their automation. Through OEM solutions, white-label partnerships, and customised software, we empower organisations to stay ahead in innovation and growth",
-      imageUrl: Excellence,
+        "At Nube iO, we provide innovative technology and expert services to drive success.",
+      logo: Iconshard3,
+      image: Excellence,
     },
     {
       title: "Expertise in Smart Technology Solutions",
       description:
-        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions that boost efficiency and innovation. From optimising HVAC and energy systems to streamlining site management and using predictive analytics, we help businesses perform at their best. With seamless integration and data-driven insights.",
-      imageUrl: Solutions,
+        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions . ",
+      logo: Iconshard1,
+      image: Solutions,
+    },
+  ],
+];
+
+export const OurStoryD = [
+  [
+    {
+      id: 1,
+      title: "Enviro Building Services",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      year: "2009",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+    },
+    {
+      id: 2,
+      title: "Nube iO Operations began",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      year: "2016",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+    },
+    {
+      id: 3,
+      title: "Software Support India/Nepal, Edge 28",
+      year: "2017",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+    },
+    {
+      id: 4,
+      title: "Rubix Wires, Nube iO Cloud ",
+      year: "2018",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+    },
+    {
+      id: 5,
+      title: "Hardware and Rubix Compute and iO16",
+      year: "2020",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+    },
+    {
+      id: 6,
+      title: "Nube iO Mobile App",
+      year: "2023",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image:
+        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
   ],
 ];
