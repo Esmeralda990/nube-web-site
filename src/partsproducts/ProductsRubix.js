@@ -19,120 +19,124 @@ const ProductRubix = () => {
         <h1 className="text-xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Compute
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
-            >
-              {RubixCompute.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <img
-                    src={item.image}
-                    alt={`Rubix ${item.id}`}
-                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <h2 className="text-xl md:text-2xl font-bold mt-8 mb-4 text-theme-blue ">
-              One Device. Multiple Protocols
-            </h2>
-            <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:break-words overflow-hidden ">
-              The Rubix-Compute can be used in the modern web via a REST-API.
-              But the device is also a native BACnet/IP device.
-            </p>
-            <h2 className="text-xl md:text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              One Device. Multiple Configurations
-            </h2>
-            <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed  sm:break-words overflow-clip max-w-sm mb-8">
-              Rubix Compute is a one of a kind IoT gateway that aggregates all
-              types of building data via multiple peripherals
-            </p>
-            <div className="overflow-x-auto ">
-              <table className="min-w-m sm:min-w-xs table-auto justify-start ">
-                <thead>
-                  <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bold text-sm">
-                      FEATURE
-                    </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bold text-sm">
-                      SPECIFICATION
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border px-4 py-2 text-sm">Integration</td>
-                    <td className="border px-4 py-2 font-light text-sm ">
-                      BACnet/IP
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm ">Memory</td>
-                    <td className="border px-4 py-2 font-light text-sm ">
-                      1GB RAM
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm">Storage</td>
-                    <td className="border px-4 py-2 font-light text-sm ">
-                      8GB
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm ">
-                      Ethernet Ports
-                    </td>
-                    <td className="border px-4 py-2 font-light text-sm ">
-                      2xDual NIC
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm">RS 485 Ports</td>
-                    <td className="border px-4 py-2 font-light text-sm">2x</td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-xs sm:text-sm">
-                      Built-in LoRa®
-                    </td>
-                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
-                      For Nube iO LoRa® sensors
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-xs sm:text-sm">
-                      Add-on LoRaWAN®
-                    </td>
-                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
-                      For 3rd party LoRaWAN® sensors
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-xs sm:text-sm">
-                      IO Expansion
-                    </td>
-                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
-                      Side plugin Power & Comms to IO 16
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-xs sm:text-sm">
-                      RS 485 Expansion
-                    </td>
-                    <td className="border px-4 py-2 font-light text-xs sm:text-sm">
-                      2x RJ12 for adding 4x RS-485
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1 ">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+              >
+                {RubixCompute.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <img
+                      src={item.image}
+                      alt={`Rubix ${item.id}`}
+                      className="w-full h-auto mb-4 mt-0 object-contain rounded-lg"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <h2 className="text-xl md:text-2xl font-bold mt-8 mb-4 text-theme-blue ">
+                One Device. Multiple Protocols
+              </h2>
+              <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:break-words overflow-hidden max-w-xl">
+                The Rubix-Compute can be used in the modern web via a REST-API.
+                But the device is also a native BACnet/IP device.
+              </p>
+              <h2 className="text-xl md:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+                One Device. Multiple Configurations
+              </h2>
+              <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed  sm:break-words overflow-clip max-w-xl mb-8">
+                Rubix Compute is a one of a kind IoT gateway that aggregates all
+                types of building data via multiple peripherals
+              </p>
+              <div className="overflow-x-auto ">
+                <table className="min-w-m sm:min-w-xs table-auto justify-start ">
+                  <thead>
+                    <tr>
+                      <th className="border px-4 py-2 bg-gray-200 font-bold text-sm">
+                        FEATURE
+                      </th>
+                      <th className="border px-4 py-2 bg-gray-300 font-bold text-sm">
+                        SPECIFICATION
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border px-4 py-2 text-sm">Integration</td>
+                      <td className="border px-4 py-2 font-light text-sm ">
+                        BACnet/IP
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm ">Memory</td>
+                      <td className="border px-4 py-2 font-light text-sm ">
+                        1GB RAM
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm">Storage</td>
+                      <td className="border px-4 py-2 font-light text-sm ">
+                        8GB
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm ">
+                        Ethernet Ports
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm ">
+                        2xDual NIC
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm">RS 485 Ports</td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        2x
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-xs sm:text-sm">
+                        Built-in LoRa®
+                      </td>
+                      <td className="border px-4 py-2 font-light text-xs sm:text-sm">
+                        For Nube iO LoRa® sensors
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-xs sm:text-sm">
+                        Add-on LoRaWAN®
+                      </td>
+                      <td className="border px-4 py-2 font-light text-xs sm:text-sm">
+                        For 3rd party LoRaWAN® sensors
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-xs sm:text-sm">
+                        IO Expansion
+                      </td>
+                      <td className="border px-4 py-2 font-light text-xs sm:text-sm">
+                        Side plugin Power & Comms to IO 16
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-xs sm:text-sm">
+                        RS 485 Expansion
+                      </td>
+                      <td className="border px-4 py-2 font-light text-xs sm:text-sm">
+                        2x RJ12 for adding 4x RS-485
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row lg:pl-24 lg:mt-0">
             <p className="font-light text-base text-gray-400 leading-relaxed md:text-lg sm:break-words overflow-clip max-w-sm md:max-w-full ">

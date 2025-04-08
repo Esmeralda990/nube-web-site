@@ -23,13 +23,13 @@ const FeatureSwiper = () => {
   }, [activeIndex]);
 
   return (
-    <section className="py-32 pt-12 md:pl-24 pb-12">
-      <div className="container flex flex-col-reverse md:flex-row gap-8 relative px-12 ">
+    <section className="py-32 pt-12  pb-12">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-8 relative px-12 ">
         <ul className="md:w-1/2 flex flex-col gap-4">
           {Solutionsfeature.map((feature, index) => (
             <li key={feature.id} className="p-4 rounded-lg transition-all">
               <button
-                className={`cursor-pointer w-full text-left flex flex-col items-start gap-3 p-4 rounded-lg transition-all px-8 py-8 ${
+                className={`cursor-pointer w-full text-left flex flex-col items-start gap-3 p-4 rounded-lg transition-all px-8  ${
                   activeIndex === index ? "bg-gray-50 text-black" : ""
                 }`}
                 onClick={() => setActiveIndex(index)}
@@ -44,7 +44,7 @@ const FeatureSwiper = () => {
                   <feature.icon className="size-10" />
                 )}
                 <div>
-                  <h4 className="text-xl  text-theme-blue font-bold mb-3">
+                  <h4 className="text-xl text-theme-blue font-bold mb-3">
                     {feature.title}
                   </h4>
                   <p className="text-base font-light text-gray-400 text-muted-foreground">

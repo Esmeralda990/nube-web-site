@@ -13,7 +13,7 @@ const Feature160 = () => {
 
   return (
     <section className="py-32">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="mb-20 max-w-lg">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
@@ -38,7 +38,7 @@ const Feature160 = () => {
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
                 cardNumber === index ? "opacity-100" : "opacity-50"
-              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-500`}
+              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-300`}
             >
               <div className="mb-2 flex items-center gap-2">
                 {/* Contenedor para el logo con tamaño pequeño */}

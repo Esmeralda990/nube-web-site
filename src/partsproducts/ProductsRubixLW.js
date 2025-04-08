@@ -19,85 +19,87 @@ const RubixLW = () => {
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Connect LW
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
-            >
-              {RubixConnectLW.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-products">
-                  <img
-                    src={item.image}
-                    alt={`Droplet ${item.id}`}
-                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              Capabilities
-            </h1>
-            <div>
-              <table className="w-full table-auto">
-                <thead>
-                  <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
-                      FEATURE
-                    </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm ">
-                      SPECIFICATION
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border px-4 py-2 text-sm ">
-                      Supported Frequencies
-                    </td>
-                    <td className="border px-4 py-2 font-light text-sm">
-                      AU915-928
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm">
-                      Spreading Factor
-                    </td>
-                    <td className="border px-4 py-2 font-light text-sm">
-                      6-12
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm ">Bandwidth</td>
-                    <td className="border px-4 py-2 font-light text-sm">
-                      7.8 – 500 kHz
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm">
-                      Effective Bitrate
-                    </td>
-                    <td className="border px-4 py-2 font-light text-sm">
-                      .018 – 37.5 kbps
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-sm">
-                      Estimated Sensitivity
-                    </td>
-                    <td className="border px-4 py-2 font-light text-sm">
-                      111 to -148 dBm
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+              >
+                {RubixConnectLW.map((item) => (
+                  <SwiperSlide key={item.id} className="swiper-slide-products">
+                    <img
+                      src={item.image}
+                      alt={`Droplet ${item.id}`}
+                      className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+                Capabilities
+              </h1>
+              <div>
+                <table className="w-full table-auto">
+                  <thead>
+                    <tr>
+                      <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
+                        FEATURE
+                      </th>
+                      <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm ">
+                        SPECIFICATION
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border px-4 py-2 text-sm ">
+                        Supported Frequencies
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        AU915-928
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm">
+                        Spreading Factor
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        6-12
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm ">Bandwidth</td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        7.8 – 500 kHz
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm">
+                        Effective Bitrate
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        .018 – 37.5 kbps
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-sm">
+                        Estimated Sensitivity
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm">
+                        111 to -148 dBm
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">

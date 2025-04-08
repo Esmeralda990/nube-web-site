@@ -24,7 +24,7 @@ export default function Discuss() {
           <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-5 max-w-lg">
             Ready to Future-Proof Your Building
           </h2>
-          <p className="font-light text-base md:text-xl text-gray-500 leading-relaxed mb-16  max-w-lg">
+          <p className="font-light text-base md:text-xl text-gray-500 leading-relaxed mb-16  max-w-xl">
             Transform your building with Nube iO’s smart solutions. From
             seamless IoT integration to real-time automation and energy
             optimisation, we make buildings smarter, more efficient, and
@@ -52,11 +52,11 @@ export default function Discuss() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center mb-8">
+        <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center mb-8 ">
           <img
             src={CardImag}
             alt="Card"
-            className="w-full max-w-lg object-contain"
+            className="w-full max-w-lg object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)] hidden sm:block"
           />
         </div>
       </div>

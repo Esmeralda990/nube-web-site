@@ -37,7 +37,7 @@ const ContactForm = () => {
     email: "",
     phone: "",
     company: "",
-    role: "",
+    inquiry: "",
     message: "",
   });
 
@@ -70,9 +70,8 @@ const ContactForm = () => {
       setFormData({
         name: "",
         email: "",
-        phone: "",
         company: "",
-        role: "",
+        inquiry: "",
         message: "",
       });
     } catch (error) {
@@ -99,7 +98,7 @@ const ContactForm = () => {
                 <div key={index} className="space-y-4">
                   <div className="flex items-center gap-4">
                     <method.icon className="w-5 h-5 text-theme-teal" />
-                    <h3 className="text-xl tracking-[-0.96px]  text-theme-teal">
+                    <h3 className="text-xl tracking-[-0.96px] font-bold text-theme-teal">
                       {method.title}
                     </h3>
                   </div>
@@ -119,8 +118,8 @@ const ContactForm = () => {
           <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-10 h-full mt-8 md:mt-48">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
-                <div className="grid w-full items-center gap-1.5 ">
-                  <label htmlFor="name">Name</label>
+                <div className="grid w-full items-center gap-3 font-light">
+                  <label htmlFor="name">Name *</label>
                   <input
                     type="text"
                     id="name"
@@ -128,10 +127,11 @@ const ContactForm = () => {
                     onChange={handleChange}
                     placeholder="Name"
                     className="w-full p-1 border rounded"
+                    required
                   />
                 </div>
-                <div className="grid w-full items-center gap-1.5 ">
-                  <label htmlFor="email">Email</label>
+                <div className="grid w-full items-center gap-3 font-light">
+                  <label htmlFor="email">Email *</label>
                   <input
                     type="email"
                     id="email"
@@ -139,23 +139,12 @@ const ContactForm = () => {
                     onChange={handleChange}
                     placeholder="Email"
                     className="w-full p-1 border rounded"
+                    required
                   />
                 </div>
               </div>
 
-              <div className="grid w-full items-center gap-1.5 mb-6 mt-6 ">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone"
-                  className="w-full p-1 border rounded"
-                />
-              </div>
-
-              <div className="grid w-full items-center gap-1.5 mb-6 mt-6 ">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-light">
                 <label htmlFor="company">Company/Organization</label>
                 <input
                   type="text"
@@ -168,48 +157,71 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label htmlFor="role" className="mb-2.5 font-medium mb-6 mt-6 ">
-                  Your Role
+                <label
+                  htmlFor="inquiry"
+                  className="font-light mb-6 mt-6 gap-3 "
+                >
+                  Tell us about your inquiry *
                 </label>
                 <select
-                  id="role"
-                  value={formData.role}
+                  id="inquiry"
+                  value={formData.inquiry}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded mt-4 font-light"
                 >
                   <option value="">Select</option>
-                  <option value="Facility Manager">Facility Manager</option>
-                  <option value="Building Owner">Building Owner</option>
-                  <option value="Distributor">Distributor</option>
-                  <option value="System Integrator">System Integrator</option>
-                  <option value="OEM">OEM</option>
-                  <option value="Property Owner">Property Owner</option>
-                  <option value="Local Authority">Local Authority</option>
-                  <option value="Engineering Office">Engineering Office</option>
-                  <option value="Installer">Installer</option>
-                  <option value="Integrator">Integrator</option>
-                  <option value="Proptech">Proptech</option>
-                  <option value="Other">Other</option>
+                  <option value="Request ">Request a product demo</option>
+                  <option value="solutions">
+                    Learn more about our solutions
+                  </option>
+                  <option value="pricing">Get a quote or pricing info</option>
+                  <option value="support">Technical support</option>
+                  <option value="partner">Become a partner</option>
+                  <option value="General enquiry">General enquiry</option>
                 </select>
               </div>
 
-              <div className="grid w-full items-center gap-1.5  mb-6 mt-6">
-                <label htmlFor="message" className="mb-2.5 font-medium">
-                  Your Message
+              <div className="grid w-full items-center gap-3  mb-6 mt-6">
+                <label htmlFor="message" className="mb-2.5 font-light">
+                  Message
                 </label>
                 <textarea
                   id="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Enter your message"
-                  className="w-full p-2 border rounded"
+                  placeholder="Add any extra details you’d like to share."
+                  className="w-full p-2 border rounded font-light mb-2.5"
                   rows="4"
                 />
               </div>
-
+              <div>
+                <label className="text-sm font-light">
+                  I agree to be contacted by Nube iO regarding my enquiry. *
+                </label>
+                <input
+                  type="checkbox"
+                  id="contactAgreement"
+                  checked={formData.contactAgreement}
+                  onChange={handleChange}
+                  className=" mx-3"
+                  required
+                />
+              </div>
+              <div>
+                <label className="text-sm font-light">
+                  I’d like to receive occasional marketing emails and updates.
+                </label>
+                <input
+                  type="checkbox"
+                  id="marketingAgreement"
+                  checked={formData.marketingAgreement}
+                  onChange={handleChange}
+                  className="mt-4 mx-3 "
+                />
+              </div>
               <Button
                 type="submit"
-                className="w-full bg-theme-teal text-white py-2 rounded"
+                className="w-full bg-theme-teal text-white py-2 rounded mt-6"
               >
                 Submit
               </Button>

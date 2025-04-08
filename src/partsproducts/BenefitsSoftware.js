@@ -6,8 +6,8 @@ import { IconsBenefits } from "../json/ProductsPageData";
 
 const SoftwareBenefits = () => {
   return (
-    <section className="relative mb-12 lg:pl-32">
-      <div className="container relative z-10 flex flex-col space-y-14 px-12">
+    <section className="relative mb-12 ">
+      <div className="container mx-auto relative z-10 flex flex-col space-y-14 px-12">
         <h2 className="mt-12 text-2xl sm:text-3xl lg:text-5xl text-theme-blue text-center font-bold leading-tight mb-5">
           Just a few of the benefits
         </h2>

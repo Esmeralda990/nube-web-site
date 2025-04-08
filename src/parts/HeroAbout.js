@@ -10,7 +10,7 @@ import Button from "../elements/Button";
 
 export default function HeroAbout() {
   return (
-    <section className="text-center flex justify-center items-center ">
+    <section className="text-center flex justify-center items-center mt-24 ">
       <div className="container flex flex-col items-center justify-center text-center">
         <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 max-w-4xl lg:mt-6 xl:pl-12 xl:mt-20">
           <a
@@ -22,12 +22,12 @@ export default function HeroAbout() {
               <ArrowRight className="w-4" />
             </span>
           </a>
-          <Fade direction="up" triggerOnce>
+          <Fade direction="" triggerOnce>
             <h1 className="text-2xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 ">
               Innovating the Future of Smart Automation
             </h1>
           </Fade>
-          <Fade direction="up" triggerOnce delay={400}>
+          <Fade direction="u" triggerOnce delay={400}>
             <p className="font-light text-gray-400 mx-auto max-w-3xl text-muted-foreground lg:text-xl ">
               We create cutting-edge technology that revolutionizes the way
               businesses
