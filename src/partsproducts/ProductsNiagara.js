@@ -19,28 +19,30 @@ const NiagaraEdge = () => {
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Deliver the Reliability of Niagara ® to the Edge
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
-            >
-              {Edge.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <img
-                    src={item.image}
-                    alt={`Edge ${item.id}`}
-                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+              >
+                {Edge.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <img
+                      src={item.image}
+                      alt={`Edge ${item.id}`}
+                      className="w-full h-auto mb-4 mt-0 object-contain rounded-lg"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">

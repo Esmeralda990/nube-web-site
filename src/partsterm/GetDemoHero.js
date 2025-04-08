@@ -11,8 +11,8 @@ import Button from "../elements/Button/index";
 
 const HeroDemo = () => {
   return (
-    <section className="py-32 lg:pl-32 px-8">
-      <div className="container flex flex-col lg:flex-row items-center lg:text-left">
+    <section className="py-32 px-8">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center lg:text-left">
         <div className="lg:w-1/2 lg:text-left">
           <Fade direction="up" triggerOnce delay={200}>
             <a
@@ -28,7 +28,7 @@ const HeroDemo = () => {
 
           <Fade direction="up" triggerOnce delay={400}>
             <h1 className="mx-auto mb-3 mt-4 max-w-3xl text-balance text-theme-blue text-4xl font-bold lg:mb-7 lg:text-6xl">
-              Experience Nube iO’s Smart Solutions Firsthand
+              Experience Nube iO’s Smart Solutions
             </h1>
           </Fade>
 
@@ -53,12 +53,12 @@ const HeroDemo = () => {
           </div>
         </div>
 
-        <div className="lg:w-3/4 mt-8 lg:mt-0 flex justify-center items-center overflow-hidden">
-          <Fade direction="up" triggerOnce delay={1000}>
+        <div className="lg:w-3/4 mt-8 lg:mt-0 flex justify-center items-center ">
+          <Fade direction="" triggerOnce delay={1000}>
             <img
               src={heroDemo}
               alt="heroDemo"
-              className="max-w-full h-auto rounded-lg lg:ml-28 overflow-hidden object-cover"
+              className="max-w-full h-auto rounded-lg ml-0 object-cover"
             />
           </Fade>
         </div>

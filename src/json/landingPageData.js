@@ -533,7 +533,7 @@ export const Solutionsfeature = [
     id: "feature-1",
     title: "Controllers",
     description:
-      "Our state-of-the-art controllers, including Rubix Compute, Rubix IO-16, Rubix Compute Mini, and Rubix IO-24, put advanced automation at your fingertips. Designed for simplicity and scalability, these controllers seamlessly integrate diverse systems and protocols, offering real-time insights and control. With ultimate flexibility and robust performance, our controllers enable smarter decisions, proactive management, and substantial energy savings.",
+      "Our state-of-the-art controllers, including Rubix Compute, Rubix IO-16, Rubix Compute Mini, and Rubix IO-24, put advanced automation at your fingertips. Designed for simplicity and scalability, these controllers seamlessly integrate diverse systems and protocols, offering real-time insights and control.",
     icon: Iconshard1,
     image: Controller,
   },

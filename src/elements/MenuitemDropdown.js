@@ -9,6 +9,8 @@
 /* eslint-disable operator-linebreak */
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+// eslint-disable-next-line import/no-useless-path-segments
+import Button from "../elements/Button/index.js";
 
 const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
   return (
@@ -39,19 +41,23 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                 <h4 className="text-3xl font-bold text-left text-theme-blue mb-2">
                   {submenu.title}
                 </h4>
-                <p className="text-gray-400 font-light text-lg mb-4">
+                <p className="text-gray-400 font-light text-lg mb-4 max-w-2xl">
                   {submenu.description}
                 </p>
-                <a
-                  href={submenu.link}
-                  className="submenu-link mt-auto font-bold underline"
-                >
-                  Learn more
-                </a>
+                <div className="mt-8 flex  justify-center md:justify-start space-x-6 items-center">
+                  <Button
+                    href={submenu.link}
+                    type="link"
+                    className="flex items-center justify-center w-50 px-8 py-3 space-x-4 bg-white text-black text-base rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 "
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </>
           ) : (
             <>
+              {" "}
               <h3 className="font-bold text-xl mb-2">{submenu.title}</h3>
               <div className="dropdown-content grid grid-cols-1 md:grid-cols-3 gap-4">
                 {submenu.image && (
@@ -98,8 +104,8 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                                           className="mr-4 w-10 h-10 object-contain"
                                         />
                                       )}
-                                      <div className="flex flex-col">
-                                        <span className="font-bold">
+                                      <div className="flex flex-col ">
+                                        <span className="font-bold ">
                                           {item.name}
                                         </span>
                                         {item.description && (
@@ -190,7 +196,7 @@ const MenuItems = ({ items, depthLevel }) => {
     if (!isTouchDevice()) {
       timerRef.current = setTimeout(() => {
         setDropdown(false);
-      }, 500);
+      }, 400);
     }
   };
 

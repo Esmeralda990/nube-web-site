@@ -5,7 +5,24 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable comma-dangle */
 import ResourceImg from "../assets/images/ImgMenu/Resources.png";
-import icons from "../assets/images/IconsMenu/icons.png";
+
+// Icons Menu
+import icons1 from "../assets/images/IconsMenu/ProfessionalServices.svg";
+import icons2 from "../assets/images/IconsMenu/OEM.svg";
+import icons3 from "../assets/images/IconsMenu/Hardware.svg";
+import icons4 from "../assets/images/IconsMenu/Software.svg";
+import icons5 from "../assets/images/IconsMenu/Connectivity.svg";
+import icons6 from "../assets/images/IconsMenu/CaseScenario.svg";
+import icons7 from "../assets/images/IconsMenu/RubixCE.svg";
+import icons8 from "../assets/images/IconsMenu/NubeCloud.svg";
+import icons9 from "../assets/images/IconsMenu/RubixCompute.svg";
+import icons10 from "../assets/images/IconsMenu/Rubix16.svg";
+import icons11 from "../assets/images/IconsMenu/Niagara.svg";
+import icons12 from "../assets/images/IconsMenu/Droplet.svg";
+import icons13 from "../assets/images/IconsMenu/MicroEdge.svg";
+import icons14 from "../assets/images/IconsMenu/Expansion.svg";
+import icons15 from "../assets/images/IconsMenu/Support.svg";
+import icons16 from "../assets/images/IconsMenu/FAQS.svg";
 
 export const menuItemsData = [
   {
@@ -27,20 +44,20 @@ export const menuItemsData = [
                   {
                     name: "Professional Services",
                     id: "Professional",
-                    icon: icons,
+                    icon: icons1,
                     description: "Neque porro quisquam est qui ",
                   },
 
                   {
                     name: "OEM",
                     id: "OEM",
-                    icon: icons,
+                    icon: icons2,
                     description: "Neque porro quisquam est qui ",
                   },
                   {
                     name: "Hardware",
                     id: "Hardware",
-                    icon: icons,
+                    icon: icons3,
                     description: "Neque porro quisquam est qui ",
                   },
                 ],
@@ -56,20 +73,20 @@ export const menuItemsData = [
                   {
                     name: "Software",
                     id: "Software",
-                    icon: icons,
+                    icon: icons4,
                     description: "Neque porro quisquam est qui ",
                   },
                   {
                     name: "Connectivity",
                     link: "/connectivity/",
-                    icon: icons,
+                    icon: icons5,
                     description: "Neque porro quisquam est qui ",
                   },
                   {
                     name: "By Case Scenario",
                     link: "/case-study/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons6,
+                    description: "Neque porro quisquam est qui",
                   },
                 ],
               },
@@ -96,14 +113,14 @@ export const menuItemsData = [
                   {
                     name: "Rubix CE",
                     link: "/software-rubix-platform/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons7,
+                    description: "Neque porro quisquam  ",
                   },
                   {
                     name: "Nube iO Cloud",
                     link: "/connectivity/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui",
+                    icon: icons8,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },
@@ -118,20 +135,20 @@ export const menuItemsData = [
                   {
                     name: "Rubix Compute",
                     link: "/rubix-compute/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons9,
+                    description: "Neque porro quisquam  ",
                   },
                   {
                     name: "Rubix iO 16",
                     link: "/rubix-io/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons10,
+                    description: "Neque porro quisquam ",
                   },
                   {
                     name: "CI-EdgeX2",
                     link: "/edge/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons11,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },
@@ -146,14 +163,14 @@ export const menuItemsData = [
                   {
                     name: "Droplet Indoor ",
                     link: "/lora-environmental-sensor/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons12,
+                    description: "Neque porro quisquam ",
                   },
                   {
                     name: "MicroEdge Asset",
                     link: "/lora-asset-monitoring-sensor/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons13,
+                    description: "Neque porro quisquam  ",
                   },
                 ],
               },
@@ -163,8 +180,8 @@ export const menuItemsData = [
                   {
                     name: "Rubix Connect",
                     link: "/rubix-connect-lw/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons14,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },
@@ -206,15 +223,15 @@ export const menuItemsData = [
                   {
                     name: "Case Studies 1",
                     link: "/case-study/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons6,
+                    description: "Neque porro quisquam ",
                   },
 
                   {
                     name: "Case Studies 2",
                     link: "/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons6,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },
@@ -229,8 +246,8 @@ export const menuItemsData = [
                   {
                     name: "TM&Support",
                     link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons15,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },
@@ -245,8 +262,8 @@ export const menuItemsData = [
                   {
                     name: "FAQs",
                     link: "/FAQs/",
-                    icon: icons,
-                    description: "Neque porro quisquam est qui ",
+                    icon: icons16,
+                    description: "Neque porro quisquam ",
                   },
                 ],
               },

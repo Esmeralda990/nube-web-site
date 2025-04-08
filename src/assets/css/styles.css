@@ -11,7 +11,7 @@
 }
 
 .hero {
-  @apply container px-4 flex flex-col mx-auto;
+  @apply container px-3 flex flex-col mx-auto pt-16;
 }
 
 .hero-content {
@@ -294,7 +294,7 @@ header {
   right: 0;
   left: auto;
   box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
-  min-width: 15rem;
+  width: 100vw;
   padding: 1 rem;
   list-style: none;
   background-color: #fff;
@@ -314,33 +314,31 @@ header {
 }
 
 .dropdown {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   left: 0%;
-  transform: translateX(32%);
-  padding: 30px;
+  transform: translateX(30%);
+  padding: clamp(20px, 2vw, 30px);
 }
 
 @media (max-width: 1500px) {
   .dropdown {
-    width: 180%;
-    left: 0;
-    transform: translateX(25%);
-    padding: 20px;
-  }
-
-  .right-section {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    left: 0%;
+    transform: translateX(26%);
+    padding: clamp(20px, 2vw, 28px);
   }
 
   .left-section {
-    width: 400%;
+    width: 200%;
     margin-bottom: 20px;
   }
   .dropdown-content {
-    flex-direction: column;
-    font-size: 12px;
-    gap: 10px;
+    font-size: 10px;
+    gap: 5px;
   }
 }
 
@@ -393,6 +391,12 @@ header {
   text-align: left;
 }
 
+.featured {
+  padding-top: 42px;
+  display: flex;
+  flex-direction: row;
+}
+
 .featured .submenu-link {
   color: #339999 !important;
   font-weight: bold;
@@ -404,25 +408,21 @@ header {
   height: 300px;
   margin-bottom: 30px;
   object-fit: contain;
+  padding-right: 50px;
 }
 
 @media (max-width: 1500px) {
-  .featured {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .featured .left-section,
-  .featured .content {
+  .featured img {
     width: 100%;
-    margin-right: 0;
+    height: auto;
+    margin-bottom: 20px;
   }
-  .featured .content {
-    text-align: start;
-    width: 100%;
+
+  .featured .submenu-link {
+    font-size: 1rem;
   }
 }
+
 .custom-swiper .swiper-pagination {
   position: absolute;
   bottom: 20px;
@@ -447,7 +447,34 @@ header {
   box-sizing: border-box;
 }
 
+@media (min-width: 2754px) {
+  .swiper-products {
+    height: 40vh;
+    max-width: -15%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 2330px) {
+  .swiper-products {
+    height: 35vh;
+    max-width: -15%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 768px) {
+  .swiper-products {
+    height: 45vh;
+    max-width: -20%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 400px) {
   .swiper-products {
     height: 30vh;
     max-width: -20%;
@@ -457,8 +484,8 @@ header {
 }
 .swiper-products img {
   display: block;
-  width: 70%;
-  max-width: 40rem;
+  width: 100%;
+  max-width: 30rem;
   height: auto;
   object-fit: contain;
   object-position: center;

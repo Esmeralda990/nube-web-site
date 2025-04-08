@@ -15,43 +15,45 @@ import Button from "../elements/Button/index.js";
 const Wire = () => {
   return (
     <section className="py-16 pb-8 md:ml-24 ml-0">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-8">
         <h2 className="text-2xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Wires
         </h2>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1 ">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 w-full h-auto object-contain h-auto rounded-lg"
-            >
-              {RubixWire.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <video
-                    src={item.image}
-                    alt={`Wire ${item.id}`}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <h1 className="text-2xl font-bold mb-4 text-theme-blue">
-              No licencing. Free on your device
-            </h1>
-            <p className="font-light text-lg text-gray-400 mb-10">
-              The Wires program comes free with your Nube iO device with no
-              ongoing licencing costs or point restrictions.
-            </p>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1 ">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="swiper-products mb-12 w-full h-auto object-contain h-auto rounded-lg"
+              >
+                {RubixWire.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <video
+                      src={item.image}
+                      alt={`Wire ${item.id}`}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <h1 className="text-2xl font-bold mb-4 text-theme-blue ">
+                No licencing. Free on your device
+              </h1>
+              <p className="font-light text-lg text-gray-400 mb-10">
+                The Wires program comes free with your Nube iO device with no
+                ongoing licencing costs or point restrictions.
+              </p>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <h3 className="text-xl mt-4 text-theme-blue font-bold md:text-2xl">

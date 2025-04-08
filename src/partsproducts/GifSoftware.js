@@ -16,8 +16,8 @@ const GifBene = () => {
   });
 
   return (
-    <section className="py-32 md:pl-32 bg-gray-100">
-      <div className="container px-12">
+    <section className="py-32 bg-gray-100">
+      <div className="container mx-auto px-12">
         <div className="flex flex-col space-y-10 md:space-y-16">
           <div className="lg:flex lg:gap-x-4">
             <div className="lg:w-1/2">

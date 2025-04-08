@@ -5,6 +5,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import GetDemoHero from "partsterm/GetDemoHero.js";
+import LogosAbout from "parts/LogosAbout";
 import GetDemoForms from "partsterm/GetDemoForms";
 import Footer from "parts/Footer";
 
@@ -17,8 +18,9 @@ export default class Getdemo extends Component {
     return (
       <>
         <Header1 />
-        <GetDemoHero />
         <GetDemoForms />
+        <LogosAbout />
+        <GetDemoHero />
         <Footer />
       </>
     );

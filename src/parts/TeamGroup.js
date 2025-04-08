@@ -9,7 +9,7 @@ import { floatingIcons } from "json/landingPageData";
 
 const TeamGroup = () => {
   return (
-    <section className="mx-auto mt-8 mb-8 pt-4 pb-4 md:pt-28 mb:pb:32 sm:mt-4 relative min-h-[500]">
+    <section className="mt-8 mb-8 pt-4 pb-4 md:pt-28 mb:pb:32 sm:mt-4 relative min-h-[500]">
       {/* Floating Icons */}
       {floatingIcons.map((icon, index) => (
         <div
@@ -35,7 +35,7 @@ const TeamGroup = () => {
 
       <div className="container mx-auto max-w-[50%] flex flex-col items-center text-center relative z-10">
         {/* Headline */}
-        <h2 className="text-xl sm:text-xl lg:text-5xl text-theme-blue font-bold leading-tight mb-5">
+        <h2 className="text-xl sm:text-xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
           Who Makes Nube iO Possible? Our Team,Our Strength At Nube iO.
         </h2>
         <p className="text-sm sm:text-base lg:text-xl font-light text-gray-400 leading-relaxed">

@@ -19,84 +19,86 @@ const ProductRubix16 = () => {
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix iO 16
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:grid-cols-1">
-          <article className="prose order-2 mx-auto md:order-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
-            >
-              {RubixIO16.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <img
-                    src={item.image}
-                    alt={`Rubix ${item.id}`}
-                    className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <div>
-              <table className="w-full table-auto mt-5">
-                <thead>
-                  <tr>
-                    <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
-                      SPECIFICATION
-                    </th>
-                    <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm">
-                      VALUE
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border px-4 py-2 text-lg sm:text-sm ">
-                      Mounting
-                    </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
-                      Din Rail Enclosure
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-lg sm:text-sm">
-                      Size
-                    </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
-                      1126556mm H/W/D
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-lg sm:text-sm ">
-                      Protection Level
-                    </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
-                      IP40
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-lg sm:text-sm">
-                      Power Supply
-                    </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
-                      24VAC or 24VDC
-                    </td>
-                  </tr>
-                  <tr className="m-0 border-t p-0 even:bg-muted">
-                    <td className="border px-4 py-2 text-lg sm:text-sm">
-                      Material
-                    </td>
-                    <td className="border px-4 py-2 font-light text-lg sm:text-sm">
-                      ABS Plastic
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+              >
+                {RubixIO16.map((item) => (
+                  <SwiperSlide key={item.id}>
+                    <img
+                      src={item.image}
+                      alt={`Rubix ${item.id}`}
+                      className="w-full h-auto mb-4 mt-0 object-contain rounded-lg "
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <div>
+                <table className="w-full table-auto mt-5">
+                  <thead>
+                    <tr>
+                      <th className="border px-4 py-2 bg-gray-200 font-bolt text-sm ">
+                        SPECIFICATION
+                      </th>
+                      <th className="border px-4 py-2 bg-gray-300 font-bolt text-sm">
+                        VALUE
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border px-4 py-2 text-lg sm:text-sm ">
+                        Mounting
+                      </td>
+                      <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                        Din Rail Enclosure
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-lg sm:text-sm">
+                        Size
+                      </td>
+                      <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                        1126556mm H/W/D
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-lg sm:text-sm ">
+                        Protection Level
+                      </td>
+                      <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                        IP40
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-lg sm:text-sm">
+                        Power Supply
+                      </td>
+                      <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                        24VAC or 24VDC
+                      </td>
+                    </tr>
+                    <tr className="m-0 border-t p-0 even:bg-muted">
+                      <td className="border px-4 py-2 text-lg sm:text-sm">
+                        Material
+                      </td>
+                      <td className="border px-4 py-2 font-light text-lg sm:text-sm">
+                        ABS Plastic
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
