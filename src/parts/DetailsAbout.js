@@ -3,7 +3,7 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import heroAbout from "../assets/images/Services/Software.webp";
+import heroAbout from "../assets/images/AdvangesAbout/WhatWe.webp";
 
 export default function DetailsAbout() {
   return (

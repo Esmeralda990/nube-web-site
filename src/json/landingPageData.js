@@ -37,10 +37,10 @@ import Sustainability from "../assets/images/Advantages/Sustainability.webp";
 import Insights from "../assets/images/Advantages/Real.webp";
 
 // AdvangeAbout
-import Company from "../assets/images/AdvangesAbout/Company.webp";
-import Growth from "../assets/images/AdvangesAbout/Growthh.webp";
-import Excellence from "../assets/images/AdvangesAbout/Commitment .webp";
-import Solutions from "../assets/images/AdvangesAbout/Expertise.webp";
+import Company from "../assets/images/AdvangesAbout/CompanyOverview.webp";
+import Growth from "../assets/images/AdvangesAbout/GrowthSustantibily.webp";
+import Excellence from "../assets/images/AdvangesAbout/CommitmenttoExcellent.webp";
+import Solutions from "../assets/images/AdvangesAbout/SmartTecnology.webp";
 
 // Service Solutions
 import Client from "../assets/images/ServiceSolutions/Client.webp";
@@ -584,4 +584,35 @@ export const AdvantageSolutions = [
       imageUrl: Support,
     },
   ],
+];
+
+export const WhoSupport = [
+  {
+    id: "1",
+    title: "Dedicated Collaboration",
+    imageUrl: Insights,
+    description:
+      "Our team is committed to providing dedicated support, working closely with partners through every stage of project implementation to ensure.",
+  },
+  {
+    id: "2",
+    title: "Technical Expertise",
+    imageUrl: Insights,
+    description:
+      " Partners have direct access to our expert technical teams, ensuring seamless integration and maximised efficiency of solutions.",
+  },
+  {
+    id: "3",
+    title: "Marketing and Support",
+    imageUrl: Insights,
+    description:
+      "We offer co-marketing opportunities, joint sales initiatives, and strategic positioning to enhance visibility and drive mutual growth.",
+  },
+  {
+    id: "4",
+    title: "Continuous Training",
+    imageUrl: Insights,
+    description:
+      "Regular training sessions and educational resources are available to empower partners with the latest knowledge and best practices.",
+  },
 ];

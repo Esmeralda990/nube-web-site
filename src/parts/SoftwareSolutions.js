@@ -12,7 +12,7 @@ export default function SoftwareSolutions() {
       <ContainerScroll titleComponent={<div />}>
         <img
           src={GrowthImage}
-          alt="Growth"
+          alt="Dashboard app"
           className="rounded-2xl object-cover h-full w-full object-center responsive-image object-contain"
           height={820}
           width={1800}

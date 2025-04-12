@@ -4,7 +4,6 @@
 
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/images/LogoNube.png";
 
 const sections = [
@@ -27,9 +26,6 @@ const sections = [
       {
         name: (
           <div className="flex gap-4 text-center">
-            <a href="https://x.com/nube_iot?lang=en&mx=2">
-              <FaXTwitter className="size-6 text-2xl" />
-            </a>
             <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
               <FaLinkedin className="size-6 text-2xl" />
             </a>

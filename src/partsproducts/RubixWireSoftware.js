@@ -15,7 +15,7 @@ import Button from "../elements/Button/index.js";
 const Wire = () => {
   return (
     <section className="py-16 pb-8 md:ml-24 ml-0">
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto max-w-screen-2xl px-8">
         <h2 className="text-2xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Wires
         </h2>

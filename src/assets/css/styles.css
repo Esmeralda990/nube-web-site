@@ -11,7 +11,7 @@
 }
 
 .hero {
-  @apply container px-3 flex flex-col mx-auto pt-16;
+  @apply container mx-auto flex flex-col lg:flex-row pt-16;
 }
 
 .hero-content {
@@ -290,7 +290,7 @@ header {
 
 .main-nav .dropdown {
   position: fixed;
-  top: 165%;
+  top: calc(100% + 25px);
   right: 0;
   left: auto;
   box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
@@ -322,13 +322,13 @@ header {
   padding: clamp(20px, 2vw, 30px);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .dropdown {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     left: 0%;
-    transform: translateX(26%);
+    transform: translateX(27%);
     padding: clamp(20px, 2vw, 28px);
   }
 
@@ -392,9 +392,17 @@ header {
 }
 
 .featured {
-  padding-top: 42px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: start;
   flex-direction: row;
+}
+
+.featured .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .featured .submenu-link {
@@ -404,11 +412,36 @@ header {
 }
 
 .featured img {
-  width: 400px;
-  height: 300px;
-  margin-bottom: 30px;
+  width: 800px;
+  height: 350px;
+  margin-bottom: 0px;
   object-fit: contain;
-  padding-right: 50px;
+  padding-right: 0px;
+}
+
+.featured .right-section a,
+.featured .right-section span,
+.featured .right-section .block {
+  font-size: 16px !important;
+  color: #071435;
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.featured .right-section a:hover {
+  color: #339999;
+  background-color: transparent;
+}
+
+.featured .right-section .flex {
+  align-items: flex-start;
+}
+
+.featured .right-section .flex .flex-col span {
+  font-size: 13px;
+  color: #718096;
 }
 
 @media (max-width: 1500px) {
@@ -421,6 +454,32 @@ header {
   .featured .submenu-link {
     font-size: 1rem;
   }
+}
+
+.featured .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.featured .right-section a {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  font-size: 14px;
+  color: #071435;
+}
+
+.featured .right-section a:hover {
+  color: #339999;
+}
+
+.featured .right-section img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .custom-swiper .swiper-pagination {

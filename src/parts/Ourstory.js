@@ -34,12 +34,11 @@ const Ourstory = () => {
     scrollContainerRef.current?.scrollBy({ left: 300, behavior: "smooth" });
   };
 
-  // Aplanamos la data (OurStoryD está definido como un array anidado)
   const items = OurStoryD.flat();
 
   return (
     <section className="py-32 pb-4 md:pl-18 px-6 md:pb-28">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-screen-2xl">
         <div className="mx-auto flex flex-col items-start gap-6 justify-between">
           <h2 className="text-balance text-2xl md:text-5xl font-bold text-theme-blue">
             Our Story
@@ -81,7 +80,7 @@ const Ourstory = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="aspect-[3/4] w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
+                    className="aspect-[2/2] w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <div className="flex flex-col p-4">

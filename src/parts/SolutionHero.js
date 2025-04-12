@@ -9,7 +9,7 @@ import { WorldSolutions } from "../json/landingPageData";
 
 const WorldSolution = () => {
   return (
-    <section className="container mx-auto flex flex-col items-center mb-40 px-6">
+    <section className="container mx-auto max-w-screen-2xl flex flex-col items-center mb-40 px-6">
       <Fade direction="" triggerOnce>
         <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6">
           Real-World Solutions, Powered by Nube iO
@@ -21,7 +21,7 @@ const WorldSolution = () => {
         </p>
       </Fade>
 
-      <div className="mt-20 grid gap-6 md:grid-cols-3 lg:gap-10">
+      <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 lg:gap-10">
         {WorldSolutions.map((item, index) => (
           <Fade direction="" triggerOnce key={index}>
             <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden">

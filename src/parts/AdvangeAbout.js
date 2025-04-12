@@ -7,14 +7,14 @@
 import React, { useState } from "react";
 import { AdvantageAbout } from "json/landingPageData";
 
-const Feature160 = () => {
+const AdvAbout = () => {
   const advantages = AdvantageAbout.flat();
   const [cardNumber, setCardNumber] = useState(0);
 
   return (
     <section className="py-32">
-      <div className="container mx-auto px-8">
-        <div className="mb-20 max-w-lg">
+      <div className="container mx-auto max-w-screen-2xl px-8 ">
+        <div className="mb-20 max-w-lg ">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
           </h2>
@@ -40,8 +40,7 @@ const Feature160 = () => {
                 cardNumber === index ? "opacity-100" : "opacity-50"
               } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-300`}
             >
-              <div className="mb-2 flex items-center gap-2">
-                {/* Contenedor para el logo con tamaño pequeño */}
+              <div className="mb-2 flex items-center gap-2 ">
                 <span className="w-5 h-5 flex-shrink-0">
                   {typeof item.logo === "string" ? (
                     <img
@@ -63,8 +62,7 @@ const Feature160 = () => {
             </div>
           ))}
         </div>
-
-        <div className="rounded-t-[28px] p-1 pb-0">
+        <div className="rounded-t-[28px] p-1 pb-0 border border-gray-200">
           <img
             src={advantages[cardNumber].image}
             alt={advantages[cardNumber].title}
@@ -76,4 +74,4 @@ const Feature160 = () => {
   );
 };
 
-export default Feature160;
+export default AdvAbout;

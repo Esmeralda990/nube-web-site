@@ -12,8 +12,8 @@ import SoftwareGif from "../assets/images/hero/Software.png";
 export default function HeroSoftware() {
   return (
     <>
-      <section className="hero">
-        <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 mt-24 text-left px-12">
+      <section className="container max-w-screen-2xl mx-auto flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
           <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
             Rubix-CE
           </h1>
@@ -36,10 +36,10 @@ export default function HeroSoftware() {
             </Button>
           </Fade>
         </div>
-        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-3/4 pb-24 ">
+        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-5xl pb-24">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-full h-auto lg:ml-32"
+              className="max-w-full h-auto md:ml-0 object-contain"
               src={SoftwareGif}
               alt="SoftwareGif"
             />
