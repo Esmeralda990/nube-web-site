@@ -23,8 +23,8 @@ const FeatureSwiper = () => {
   }, [activeIndex]);
 
   return (
-    <section className="py-32 pt-12  pb-12">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-8 relative px-12 ">
+    <section className="py-32 pt-12 pb-12">
+      <div className="container mx-auto max-w-screen-2xl flex flex-col-reverse md:flex-row gap-8 relative px-8 h-full">
         <ul className="md:w-1/2 flex flex-col gap-4">
           {Solutionsfeature.map((feature, index) => (
             <li key={feature.id} className="p-4 rounded-lg transition-all">
@@ -38,16 +38,16 @@ const FeatureSwiper = () => {
                   <img
                     src={feature.icon}
                     alt={feature.title}
-                    className="size-10"
+                    className="size-10 h-full"
                   />
                 ) : (
                   <feature.icon className="size-10" />
                 )}
                 <div>
-                  <h4 className="text-xl text-theme-blue font-bold mb-3">
+                  <h4 className="text-xl md:text-base text-theme-blue font-bold mb-3">
                     {feature.title}
                   </h4>
-                  <p className="text-base font-light text-gray-400 text-muted-foreground">
+                  <p className="text-base md:text-sm font-light text-gray-400 text-muted-foreground">
                     {feature.description}
                   </p>
                 </div>
@@ -63,15 +63,18 @@ const FeatureSwiper = () => {
             navigation={false}
             pagination={false}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            className="rounded-lg border border-border h-420 sm:h-60 md:h-72 lg:h-[1000px] max-h-[300px] min-h-[500px] md:max-h-[900px]"
+            className="rounded-lg border border-border w-full h-auto md:h-[900px] xl:h-[900px] "
             slideToClickedSlide
           >
             {Solutionsfeature.map((feature, index) => (
-              <SwiperSlide key={feature.id}>
+              <SwiperSlide
+                key={feature.id}
+                className="flex items-center justify-center p-4"
+              >
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className={`w-full h-100 sm:h-240 lg:h-full md:h-full object-contain rounded-lg ${
+                  className={`w-full max-w-full h-auto object-contain items-center  xl:mt-20 lg:mt-20 md:mt-32 sm:mt-16 rounded-lg transition-opacity duration-300 ${
                     activeIndex === index ? "opacity-100" : "opacity-50"
                   }`}
                 />

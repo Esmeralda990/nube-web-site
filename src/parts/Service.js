@@ -10,7 +10,7 @@ import { ChevronRight } from "react-feather";
 export default function Service({ data }) {
   return (
     <div className="">
-      <div className="container mx-auto pt-12 md:pt-32 pb-12 px-8 ">
+      <div className="container mx-auto max-w-screen-2xl pt-12 md:pt-32 pb-12 px-8 ">
         <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold mb-5">
           Building Smarter, Thinking Forward
         </h1>
@@ -19,7 +19,7 @@ export default function Service({ data }) {
           challenges.
         </p>
 
-        <div className="mt-20 grid gap-10 lg:grid-cols-4 xl:gap-15 mb-32">
+        <div className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32">
           {data.map((item) => (
             <div className="flex flex-col lg:block" key={item.id}>
               <div className="h-full max-h-[400px] rounded-lg border bg-gray-100 p-3">

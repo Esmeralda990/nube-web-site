@@ -14,8 +14,8 @@ import BuildWebsite from "../assets/images/hero/Home_Header.gif";
 export default function Hero() {
   return (
     <>
-      <section className="hero">
-        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row">
+      <section className="container max-w-screen-2xl mx-auto flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row px-8">
           <a
             href="/solutions/"
             className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-7xl text-theme-blue font-bold leading-tight mb-5">
             Automating the Future <br />
           </h1>
-          <p className="font-light text-xl text-gray-400 leading-relaxed mb-16">
+          <p className="font-light text-xl text-gray-400 leading-relaxed mb-16 max-w-xl">
             Transform your operations with cutting-edge technology designed for
             scalability, simplicity, and sustainability.
           </p>
@@ -58,10 +58,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-full pb-24 overflow-hidden">
+        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-5xl pb-24 overflow-hidden">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-full h-auto lg:ml-32 object-contain overflow-hidden"
+              className="max-w-full h-auto xl:ml-32 md:ml-0 object-contain overflow-hidden "
               src={BuildWebsite}
               alt="Build Website"
             />

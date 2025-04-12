@@ -22,9 +22,9 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
       {submenus.map((submenu, index) => (
         <li
           key={index}
-          className={`bg-white rounded-md p-6 flex-col ${
+          className={`bg-white rounded-md p-6 ${
             submenu.type === "featured"
-              ? "featured col-span-2 grid grid-cols-3 "
+              ? "featured col-span-3 grid grid-cols-3"
               : "flex-col"
           }`}
         >
@@ -41,6 +41,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                 <h4 className="text-3xl font-bold text-left text-theme-blue mb-2">
                   {submenu.title}
                 </h4>
+
                 <p className="text-gray-400 font-light text-lg mb-4 max-w-2xl">
                   {submenu.description}
                 </p>
@@ -53,6 +54,45 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                     Learn More
                   </Button>
                 </div>
+              </div>
+              <div className="right-section flex flex-col">
+                {submenu.items &&
+                  submenu.items.map((item) => {
+                    const content = (
+                      <div className="flex items-start">
+                        {item.icon && (
+                          <img
+                            src={item.icon}
+                            alt="icons"
+                            className="mr-4 object-contain"
+                          />
+                        )}
+                        <div className="flex flex-col ">
+                          <span className="font-bold  text-base">
+                            {item.name}
+                          </span>
+                          {item.description && (
+                            <span className="text-sm font-light text-gray-500">
+                              {item.description}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+
+                    if (item.id) {
+                      return (
+                        <Link
+                          key={item.id || item.name}
+                          to={`/partners#${item.id}`}
+                          className="block"
+                        >
+                          {content}
+                        </Link>
+                      );
+                    }
+                    return null;
+                  })}
               </div>
             </>
           ) : (
@@ -165,7 +205,6 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
   const ref = useRef();
-  const timerRef = useRef(null);
 
   useEffect(() => {
     const handler = (event) => {
@@ -186,17 +225,14 @@ const MenuItems = ({ items, depthLevel }) => {
   };
 
   const onMouseEnter = () => {
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
+    if (!isTouchDevice()) {
+      setDropdown(true);
     }
-    if (!isTouchDevice()) setDropdown(true);
   };
 
   const onMouseLeave = () => {
     if (!isTouchDevice()) {
-      timerRef.current = setTimeout(() => {
-        setDropdown(false);
-      }, 400);
+      setDropdown(false);
     }
   };
 
@@ -206,11 +242,13 @@ const MenuItems = ({ items, depthLevel }) => {
     <li
       className={`menu-items ${items.subMenu ? "hidden lg:block" : ""}`}
       ref={ref}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
     >
       {items.subMenu ? (
-        <>
+        <div
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          style={{ position: "relative", zIndex: 10 }}
+        >
           <button
             type="button"
             aria-haspopup="menu"
@@ -221,12 +259,24 @@ const MenuItems = ({ items, depthLevel }) => {
             {items.name}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </button>
+          <div
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: 0,
+              height: "40px",
+              width: "100%",
+              zIndex: 5,
+              pointerEvents: "auto",
+            }}
+          />
+
           <Dropdown
             submenus={items.subMenu}
             dropdown={dropdown}
             depthLevel={depthLevel}
           />
-        </>
+        </div>
       ) : (
         <a href={items.link || "#"} className="font-bold p-2">
           {items.name}

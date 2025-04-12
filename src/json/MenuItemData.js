@@ -4,7 +4,10 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
 /* eslint-disable comma-dangle */
-import ResourceImg from "../assets/images/ImgMenu/Resources.png";
+import ResourceImg from "../assets/images/ImgMenu/Resources.webp";
+import PartnersImg from "../assets/images/ImgMenu/Partner.webp";
+import SolutionsImg from "../assets/images/ImgMenu/Solutions.webp";
+import ProductsImg from "../assets/images/ImgMenu/Products.webp";
 
 // Icons Menu
 import icons1 from "../assets/images/IconsMenu/ProfessionalServices.svg";
@@ -33,13 +36,13 @@ export const menuItemsData = [
     name: "Solutions",
     subMenu: [
       {
-        image: ResourceImg,
+        image: SolutionsImg,
         links: [
           {
             title: "",
             items: [
               {
-                title: "Our services",
+                title: "Our solutions",
                 items: [
                   {
                     name: "Professional Services",
@@ -68,7 +71,7 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Our services",
+                title: "Our solutions",
                 items: [
                   {
                     name: "Software",
@@ -102,7 +105,7 @@ export const menuItemsData = [
     name: "Products",
     subMenu: [
       {
-        image: ResourceImg,
+        image: ProductsImg,
         links: [
           {
             title: "",
@@ -198,15 +201,35 @@ export const menuItemsData = [
     subMenu: [
       {
         type: "featured",
-        image: ResourceImg,
+        image: PartnersImg,
         title: "Work With Us",
         description:
           "Partner with Nube iO and leverage our dedicated support, technical expertise, and collaborative growth opportunities to achieve shared innovation and sustainable success.",
         name: "Lear More",
-        link: "/",
+        link: "/partners/",
+        items: [
+          {
+            name: "Why Partner",
+            id: "Why",
+            icon: icons1,
+            description: "Neque porro quisquam est qui ",
+          },
+          {
+            name: "Support",
+            id: "Support",
+            icon: icons2,
+            description: "Neque porro quisquam est qui ",
+          },
+          {
+            name: "Contact",
+            id: "Hardware",
+            icon: icons3,
+            description: "Neque porro quisquam est qui ",
+          },
+        ],
       },
     ],
-    gridCols: 2,
+    gridCols: 3,
   },
   {
     name: "Resources",

@@ -9,12 +9,12 @@ export default function AdvantageSolutions({ data }) {
 
   return (
     <div className="bg-white py-24 mb-24 sm:mb-18 xl:mb-16 pt-12 md:pt-32">
-      <div className="container mx-auto">
-        <div className=" px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="container mx-auto max-w-screen-2xl px-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item) => (
             <div className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col">
               <img
-                className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover"
+                className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "
                 src={item.imageUrl}
                 alt={item.title}
               />

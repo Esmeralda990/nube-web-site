@@ -28,6 +28,7 @@ import CaseStudyPage from "pages/CaseStudyPage";
 import GetDemoPage from "pages/GetDemoPage";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
+import Partners from "pages/PartnersPage";
 
 import "./assets/css/styles.css";
 
@@ -64,6 +65,7 @@ function App() {
         <Route path="/get-demo/" element={<GetDemoPage />} />
         <Route path="/contact-us/" element={<ContactPage />} />
         <Route path="/FAQs/" element={<FAQsPage />} />
+        <Route path="/partners/" element={<Partners />} />
       </Routes>
     </>
   );
