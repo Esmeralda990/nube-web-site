@@ -245,16 +245,27 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Case Studies 1",
-                    link: "/case-study/",
+                    link: "/case-study1/",
                     icon: icons6,
-                    description: "Neque porro quisquam ",
+                    description: "Fujitsu General–AnywAIR iO",
                   },
-
                   {
                     name: "Case Studies 2",
-                    link: "/",
+                    link: "/case-study2/",
                     icon: icons6,
-                    description: "Neque porro quisquam ",
+                    description: "Galvin TMV ",
+                  },
+                  {
+                    name: "Case Studies 3",
+                    link: "/case-study3/",
+                    icon: icons6,
+                    description: "Enviro",
+                  },
+                  {
+                    name: "Case Studies 4",
+                    link: "/case-study4/",
+                    icon: icons6,
+                    description: "Victorian Schools",
                   },
                 ],
               },
@@ -264,12 +275,19 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Manuals & Support Articles",
+                title: "Case Studies",
                 items: [
                   {
-                    name: "TM&Support",
-                    link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
-                    icon: icons15,
+                    name: "Case Studies 5",
+                    link: "/case-study5/",
+                    icon: icons6,
+                    description: "Daikin",
+                  },
+
+                  {
+                    name: "Case Studies 6",
+                    link: "/",
+                    icon: icons6,
                     description: "Neque porro quisquam ",
                   },
                 ],
@@ -286,6 +304,17 @@ export const menuItemsData = [
                     name: "FAQs",
                     link: "/FAQs/",
                     icon: icons16,
+                    description: "Neque porro quisquam ",
+                  },
+                ],
+              },
+              {
+                title: "Manuals & Support Articles",
+                items: [
+                  {
+                    name: "TM&Support",
+                    link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
+                    icon: icons15,
                     description: "Neque porro quisquam ",
                   },
                 ],

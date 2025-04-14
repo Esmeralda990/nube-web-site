@@ -7,7 +7,7 @@ import React from "react";
 const Why = () => {
   return (
     <section className="py-12 mb-12 px-8 ">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-screen-2xl">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
           <h2 className="mb-2 text-center text-2xl  md:text-3xl lg:text-5xl font-bold text-theme-blue">
             Why Partner With Us

@@ -24,7 +24,11 @@ import AppPolicy from "pages/AppPoliciyPage";
 import SoftwarePage from "pages/SoftwarePage";
 import ConnectivityPage from "pages/ConnectivityPage";
 import RubixLWPage from "pages/RubixLWPage";
-import CaseStudyPage from "pages/CaseStudyPage";
+import CaseStudy1Page from "pages/CaseStudy1Page";
+import CaseStudy2Page from "pages/CaseStudy2Page";
+import CaseStudy3Page from "pages/CaseStudy3Page";
+import CaseStudy4Page from "pages/CaseStudy4Page";
+import CaseStudy5Page from "pages/CaseStudy5Page";
 import GetDemoPage from "pages/GetDemoPage";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
@@ -61,7 +65,11 @@ function App() {
         />
         <Route path="/app-policy/" element={<AppPolicy />} />
         <Route path="/rubix-connect-lw/" element={<RubixLWPage />} />
-        <Route path="/case-study/" element={<CaseStudyPage />} />
+        <Route path="/case-study1/" element={<CaseStudy1Page />} />
+        <Route path="/case-study2/" element={<CaseStudy2Page />} />
+        <Route path="/case-study3/" element={<CaseStudy3Page />} />
+        <Route path="/case-study4/" element={<CaseStudy4Page />} />
+        <Route path="/case-study5/" element={<CaseStudy5Page />} />
         <Route path="/get-demo/" element={<GetDemoPage />} />
         <Route path="/contact-us/" element={<ContactPage />} />
         <Route path="/FAQs/" element={<FAQsPage />} />

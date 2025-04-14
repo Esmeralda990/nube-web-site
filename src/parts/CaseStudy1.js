@@ -1,12 +1,14 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable comma-dangle */
+/* eslint-disable object-curly-newline */
+/* eslint-disable max-len */
 import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../assets/images/LogoNube.png";
 
-const Casestudy4 = () => {
+const Casestudy = () => {
   const [activeSection, setActiveSection] = useState(null);
   const sectionRefs = useRef({});
 
@@ -43,31 +45,25 @@ const Casestudy4 = () => {
       id: "section1",
       title: "Challenge ",
       description:
-        "Victorian schools struggled with high electricity bills from unnecessary appliance use, poor air quality affecting student focus, undetected water leaks, and a lack of actionable data for utility optimisation. These issues undermined sustainability goals, increased operational costs, and negatively impacted the learning environment.",
+        "As the demand for smart building technologies and energy-efficient HVAC management continues to grow, Fujitsu identified the need for a solution that could seamlessly integrate their air conditioning systems with existing building management systems (BMS). To meet this objective, the solution had to be simple to deploy—requiring no complex rewiring or infrastructure modifications—while also being scalable to accommodate various commercial environments. Most importantly, it needed to provide reliable, secure, and continuous real-time monitoring and control to ensure optimal performance and energy efficiency.",
     },
     {
       id: "section2",
       title: "Solution",
       description:
-        "To tackle these challenges, Nube iO partnered with QA Electrical to implement an advanced IoT-based utility monitoring system across over 30 Victorian schools. The solution featured wireless LoRaWAN sensors for real-time monitoring of electricity, water usage, and air quality—eliminating the need for complex cabling. Data was collected via Rubix Compute Gateways and transmitted to a centralised cloud platform. A user-friendly, cloud-based dashboard enabled facility managers to visualise trends, receive alerts, and take proactive steps to improve efficiency, reduce costs, and support healthier learning environments.",
+        "iO Cloud provided an OEM solution that integrates directly with Fujitsu commercial air conditioning systems. The compact, BACnet and Modbus-compatible AnywAIR iO device acts as a bridge between Fujitsu units and third-party BMS platforms, allowing facility managers to remotely monitor and control HVAC systems, optimize energy efficiency through advanced data analytics, and seamlessly integrate with existing infrastructure using standard communication protocols.",
     },
     {
       id: "section3",
       title: "Results & Benefits",
       description:
-        "The deployment of Nube iO’s utility monitoring system led to significant, measurable improvements across all participating schools. Real-time energy monitoring allowed for immediate interventions, reducing unnecessary electricity consumption and lowering utility costs. Air quality enhancements created healthier learning environments, improving student focus, concentration, and overall well-being. Additionally, early leak detection contributed to substantial water conservation, resulting in both financial savings and positive environmental impact. By combining data-driven insights with real-time alerts, schools advanced their sustainability goals while fostering more comfortable, efficient, and productive spaces for students and staff alike.",
+        "Since the launch of AnywAIR iO, Fujitsu has been able to offer its customers a highly flexible and intelligent BMS-compatible solution, with key benefits such as greater control over HVAC systems that improves comfort and efficiency, reduced operating costs through data-driven energy management, and future-proof air conditioning systems thanks to its IoT-enabled capabilities.",
     },
     {
       id: "section4",
-      title: "Why Enviro Chose Nube",
+      title: "Conclusion",
       description:
-        "The decision to partner with Nube iO was driven by their demonstrated expertise in IoT and a shared commitment to creating impactful, future-focused solutions. With a proven track record in delivering tailored IoT systems that enhance building automation and sustainability, Nube iO stood out as the ideal partner. Their scalable and non-intrusive technology enabled seamless integration into existing infrastructure with minimal disruption, while directly supporting the schools' sustainability goals. From improving energy efficiency and water conservation to fostering healthier indoor environments, Nube iO’s approach aligned perfectly with the consortium’s vision. “Nube iO’s ability to deliver scalable, data-driven solutions gave us the confidence to partner with them. Their expertise in IoT allowed us to optimise utilities while improving student well-being across all campuses,” stated a consortium representative.",
-    },
-    {
-      id: "section5",
-      title: "Smarter Buildings with Nube iO",
-      description:
-        "This case study showcases the transformative power of IoT in driving sustainability, cost savings, and healthier environments. Whether you're managing a single site or a portfolio of facilities, Nube iO’s solutions provide the insights and tools you need for smarter building management. Reach out today to see how we can help your organisation unlock its full potential.",
+        "Nube iO’s OEM partnership with Fujitsu General exemplifies how smart integration solutions can transform HVAC management. By embedding Nube iO’s IoT technology into Fujitsu’s air conditioning range, AnywAIR iO delivers the future of smart, connected, and energy-efficient buildings.For more details on how Nube iO’s OEM solutions can elevate your product offerings, contact us today.",
     },
   ];
 
@@ -76,7 +72,7 @@ const Casestudy4 = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
           <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl text-theme-blue font-bold ">
-            Sustainability in 30+ Victorian Schools with IoT
+            Nube iO&apos;s OEM Solution for Fujitsu General-AnywAIR iO
           </h1>
         </div>
 
@@ -90,12 +86,13 @@ const Casestudy4 = () => {
       <div className="mt-20 flex flex-col lg:flex-row gap-10 lg:relative">
         <aside className="w-full lg:w-1/4 lg:sticky top-10">
           <img src={Logo} alt="logo" className="h-8 mb-4" />
-          <h3 className="text-lg font-bold text-theme-blue ">Overview</h3>
+          <h4 className="text-lg font-bold text-theme-blue ">Overview</h4>
           <p className="text-base text-gray-400 font-light mb-4">
-            Over 30 Victorian schools teamed up with QA Electrical to cut rising
-            utility costs and boost sustainability. Seeking smarter, healthier
-            learning spaces, they turned to Nube iO’s IoT solutions to transform
-            their utility management systems.
+            Fujitsu General, a global leader in air conditioning solutions, has
+            partnered with Nube iO to develop AnywAIR iO, an IoT solution that
+            enhances integration with BMS systems. This collaboration highlights
+            how Nube iO&apos;s OEM expertise empowers intelligent automation for
+            leading brands.
           </p>
           <div className="text-sm text-gray-400 space-y-6">
             <div>
@@ -147,21 +144,18 @@ const Casestudy4 = () => {
         <main className="w-full lg:w-3/4">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-x-10 rounded-3xl border p-6 lg:border-none lg:p-0 w-full">
             <div>
-              <h2 className="text-xl font-bold text-theme-teal">Objective</h2>
+              <h3 className="text-xl font-bold text-theme-teal">Objective</h3>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
-                The schools needed to reduce high utility costs, improve air
-                quality, detect water leaks early, and gain actionable data to
-                meet sustainability goals and enhance learning environments.
+                Offer a scalable, reliable, and real-time monitoring-ready
+                solution.
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-theme-teal">Solution </h2>
+              <h3 className="text-xl font-bold text-theme-teal">Solution </h3>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
-                Nube iO and QA Electrical implemented an IoT-based utility
-                monitoring system using LoRaWAN sensors, Rubix Compute Gateways,
-                and a cloud dashboard to track and optimise electricity, water,
-                and air quality in real time.
+                Direct and easy integration between Fujitsu HVAC and BMS systems
+                with AnywAIR iO.
               </p>
             </div>
 
@@ -170,31 +164,27 @@ const Casestudy4 = () => {
             </div>
 
             <div className="col-span-1 lg:col-span-2 border-t pt-10">
-              <h2 className="text-xl font-bold text-theme-teal">
+              <h3 className="text-xl font-bold text-theme-teal">
                 Implementation
-              </h2>
+              </h3>
               <ul className="mt-4 grid gap-x-10 gap-y-3 lg:grid-cols-2">
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    Nube iO ensured minimal disruption to the schools’
-                    day-to-day operations while deploying the IoT solution.
+                    Plug-and-play integration, reducing installation complexity.
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    The wireless nature of the sensors meant no major
-                    infrastructural changes were required, reducing installation
-                    time and avoiding disruptions to students and staff.
+                    Cloud connectivity for remote access and insights.
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    Hands-on training empowered school facility managers to
-                    confidently use the dashboard and respond immediately to
-                    alerts.
+                    Scalability across different building types, from small
+                    businesses to large commercial facilities.
                   </p>
                 </li>
               </ul>
@@ -209,9 +199,9 @@ const Casestudy4 = () => {
                 ref={(ref) => addSectionRef(id, ref)}
                 className="prose max-w-none scroll-mt-28"
               >
-                <h2 className="text-theme-teal font-light text-xl mb-6">
+                <h3 className="text-theme-teal font-light text-xl mb-6">
                   {title}
-                </h2>
+                </h3>
                 <p className="text-gray-400 font-light text-lg mb-8">
                   {description}
                 </p>
@@ -224,7 +214,7 @@ const Casestudy4 = () => {
           <span className="flex items-center gap-2 text-base mb-2 ">
             <AlignLeft className="h-4 w-4" /> On this page
           </span>
-          <ul className="space-y-1 text-sm">
+          <ul className="space-y-2 text-sm">
             {sectionTitles.map(({ id, title }) => (
               <li key={`nav-${id}`}>
                 <a
@@ -246,4 +236,4 @@ const Casestudy4 = () => {
   );
 };
 
-export default Casestudy4;
+export default Casestudy;

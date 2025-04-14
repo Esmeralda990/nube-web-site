@@ -12,7 +12,7 @@ import SoftwareGif from "../assets/images/hero/Software.png";
 export default function HeroSoftware() {
   return (
     <>
-      <section className="container max-w-screen-2xl mx-auto flex flex-col lg:flex-row">
+      <section className=" mt-12 container max-w-screen-2xl mx-auto flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
           <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
             Rubix-CE

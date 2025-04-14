@@ -80,10 +80,10 @@ const Ourstory = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="aspect-[2/2] w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
+                    className="aspect-[2/2] rounded-lg object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
-                <div className="flex flex-col p-4">
+                <div className="flex flex-col ">
                   <h3 className="mb-5 text-xl font-bold text-theme-blue">
                     {item.title}
                   </h3>

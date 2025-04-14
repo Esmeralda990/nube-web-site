@@ -345,57 +345,83 @@ export const OurStoryD = [
   [
     {
       id: 1,
-      title: "Enviro Building Services",
+      title: "Enviro Building Services Started      ",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
       year: "2009",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings1,
     },
     {
       id: 2,
-      title: "Nube iO Operations began",
+      title: "Nube iO Operations officially began",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
       year: "2016",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings2,
     },
     {
       id: 3,
-      title: "Software Support India/Nepal, Edge 28",
+      title: "India & Nepal: Software support setup.",
       year: "2017",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings3,
     },
     {
       id: 4,
-      title: "Rubix Wires, Nube iO Cloud ",
-      year: "2018",
+      title: "Released Edge 28 product and Droplet Sensors ",
+      year: "2017",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings4,
     },
     {
       id: 5,
-      title: "Hardware and Rubix Compute and iO16",
-      year: "2020",
+      title: "Rubix Wires programming software released",
+      year: "2018",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings5,
     },
     {
       id: 6,
-      title: "Nube iO Mobile App",
+      title: "Nube iO Cloud Solution released",
+      year: "2018",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image: Floatings6,
+    },
+    {
+      id: 7,
+      title: "Hardware support in two time zones",
+      year: "2020",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image: Floatings5,
+    },
+    {
+      id: 8,
+      title: "Release of Rubix Compute and iO16",
+      year: "2020",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image: Floatings6,
+    },
+    {
+      id: 9,
+      title: "Rubix Wires programming software released",
       year: "2023",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image:
-        "https://images.unsplash.com/photo-1653288973812-81d1951b8127?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: Floatings5,
+    },
+    {
+      id: 10,
+      title: "Release of the Nube iO Mobile App",
+      year: "2023",
+      description:
+        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
+      image: Floatings6,
     },
   ],
 ];

@@ -6,7 +6,7 @@ import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../assets/images/LogoNube.png";
 
-const Casestudy4 = () => {
+const Casestudy5 = () => {
   const [activeSection, setActiveSection] = useState(null);
   const sectionRefs = useRef({});
 
@@ -43,31 +43,31 @@ const Casestudy4 = () => {
       id: "section1",
       title: "Challenge ",
       description:
-        "Victorian schools struggled with high electricity bills from unnecessary appliance use, poor air quality affecting student focus, undetected water leaks, and a lack of actionable data for utility optimisation. These issues undermined sustainability goals, increased operational costs, and negatively impacted the learning environment.",
+        "Daikin, a leader in the HVAC industry, faced multiple challenges in adapting to the modern digital environment. These included a lack of actionable data for system performance and predictive maintenance, unintuitive interfaces that impact the user experience, and the need to integrate new solutions without disrupting existing operations. To overcome these challenges and future-proof its technology, Daikin sought a partner with proven expertise in IoT, software development, and data integration.",
     },
     {
       id: "section2",
       title: "Solution",
       description:
-        "To tackle these challenges, Nube iO partnered with QA Electrical to implement an advanced IoT-based utility monitoring system across over 30 Victorian schools. The solution featured wireless LoRaWAN sensors for real-time monitoring of electricity, water usage, and air quality—eliminating the need for complex cabling. Data was collected via Rubix Compute Gateways and transmitted to a centralised cloud platform. A user-friendly, cloud-based dashboard enabled facility managers to visualise trends, receive alerts, and take proactive steps to improve efficiency, reduce costs, and support healthier learning environments.",
+        "Nube iO partnered with Daikin to deliver innovative software and co-development services tailored to their specific goals. The collaboration focused on integrating custom software into Daikin’s existing platforms to unlock real-time data insights and provide actionable analytics for performance optimisation. By incorporating IoT-enabled solutions, Daikin gained the ability to monitor HVAC systems, predict maintenance needs, and boost overall efficiency. The partnership also emphasised user-centric design, enhancing the interface for a more intuitive and engaging user experience. Working closely with Daikin’s in-house teams, Nube iO ensured seamless integration and alignment with the company’s long-term strategic vision.",
     },
     {
       id: "section3",
       title: "Results & Benefits",
       description:
-        "The deployment of Nube iO’s utility monitoring system led to significant, measurable improvements across all participating schools. Real-time energy monitoring allowed for immediate interventions, reducing unnecessary electricity consumption and lowering utility costs. Air quality enhancements created healthier learning environments, improving student focus, concentration, and overall well-being. Additionally, early leak detection contributed to substantial water conservation, resulting in both financial savings and positive environmental impact. By combining data-driven insights with real-time alerts, schools advanced their sustainability goals while fostering more comfortable, efficient, and productive spaces for students and staff alike.",
+        "The collaboration between Nube iO and Daikin resulted in tangible improvements and strategic benefits across multiple areas. Real-time data insights empowered Daikin to continuously monitor and optimise system performance, enhancing efficiency and overall reliability. The newly designed, user-friendly interface significantly improved the customer experience, making platform interactions more intuitive and engaging. With IoT-enabled predictive maintenance, Daikin was able to detect potential issues early, reducing downtime and cutting maintenance costs. Additionally, the scalable nature of the co-developed solution positioned Daikin to seamlessly adopt future innovations and expand their system capabilities with ease.",
     },
     {
       id: "section4",
-      title: "Why Enviro Chose Nube",
+      title: "Why Daikin Chose Nube",
       description:
-        "The decision to partner with Nube iO was driven by their demonstrated expertise in IoT and a shared commitment to creating impactful, future-focused solutions. With a proven track record in delivering tailored IoT systems that enhance building automation and sustainability, Nube iO stood out as the ideal partner. Their scalable and non-intrusive technology enabled seamless integration into existing infrastructure with minimal disruption, while directly supporting the schools' sustainability goals. From improving energy efficiency and water conservation to fostering healthier indoor environments, Nube iO’s approach aligned perfectly with the consortium’s vision. “Nube iO’s ability to deliver scalable, data-driven solutions gave us the confidence to partner with them. Their expertise in IoT allowed us to optimise utilities while improving student well-being across all campuses,” stated a consortium representative.",
+        "Daikin chose Nube iO as their strategic partner for this project based on a combination of expertise, collaboration, and innovation. Nube iO brought a strong track record in delivering tailored IoT solutions focused on building automation and performance optimisation. Their collaborative approach ensured that every step of the co-development process was fully aligned with Daikin’s operational goals. Most importantly, Nube iO demonstrated a forward-thinking mindset, offering cutting-edge software capabilities that not only addressed immediate challenges but also laid the groundwork for scalable, long-term growth.",
     },
     {
       id: "section5",
-      title: "Smarter Buildings with Nube iO",
+      title: "Your Potential with Nube",
       description:
-        "This case study showcases the transformative power of IoT in driving sustainability, cost savings, and healthier environments. Whether you're managing a single site or a portfolio of facilities, Nube iO’s solutions provide the insights and tools you need for smarter building management. Reach out today to see how we can help your organisation unlock its full potential.",
+        "This partnership highlights the impact of collaborative co-development and advanced software solutions in driving performance, efficiency, and user satisfaction. Whether you’re looking to optimise existing platforms or build new, data-driven solutions, Nube iO can help your organisation unlock its full potential.Reach out today to learn how we can support your digital transformation journey.",
     },
   ];
 
@@ -75,8 +75,8 @@ const Casestudy4 = () => {
     <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-12">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
-          <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl text-theme-blue font-bold ">
-            Sustainability in 30+ Victorian Schools with IoT
+          <h1 className="mt-10 text-2xl md:text-4xl lg:text-5xl text-theme-blue font-bold ">
+            Enhancing Daikin’s Platforms with Data-Driven Co-Development
           </h1>
         </div>
 
@@ -92,10 +92,9 @@ const Casestudy4 = () => {
           <img src={Logo} alt="logo" className="h-8 mb-4" />
           <h3 className="text-lg font-bold text-theme-blue ">Overview</h3>
           <p className="text-base text-gray-400 font-light mb-4">
-            Over 30 Victorian schools teamed up with QA Electrical to cut rising
-            utility costs and boost sustainability. Seeking smarter, healthier
-            learning spaces, they turned to Nube iO’s IoT solutions to transform
-            their utility management systems.
+            Daikin partnered with Nube iO to enhance its HVAC platforms with
+            data-driven solutions, aiming to optimise performance, streamline
+            operations, and improve user experience through co-development.
           </p>
           <div className="text-sm text-gray-400 space-y-6">
             <div>
@@ -149,19 +148,18 @@ const Casestudy4 = () => {
             <div>
               <h2 className="text-xl font-bold text-theme-teal">Objective</h2>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
-                The schools needed to reduce high utility costs, improve air
-                quality, detect water leaks early, and gain actionable data to
-                meet sustainability goals and enhance learning environments.
+                To enhance system intelligence, usability, and integration by
+                overcoming digital gaps in performance data, UI design, and
+                platform adaptability—ensuring future-ready HVAC solutions.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-theme-teal">Solution </h2>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
-                Nube iO and QA Electrical implemented an IoT-based utility
-                monitoring system using LoRaWAN sensors, Rubix Compute Gateways,
-                and a cloud dashboard to track and optimise electricity, water,
-                and air quality in real time.
+                Nube iO co-developed IoT-enabled software with Daikin,
+                integrating real-time analytics and intuitive UI into existing
+                platforms to boost performance and user experience.
               </p>
             </div>
 
@@ -177,24 +175,25 @@ const Casestudy4 = () => {
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    Nube iO ensured minimal disruption to the schools’
-                    day-to-day operations while deploying the IoT solution.
+                    Seamless Integration Nube iO’s solutions were designed to
+                    complement Daikin’s existing platforms, ensuring smooth
+                    implementation without disrupting ongoing operations.
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    The wireless nature of the sensors meant no major
-                    infrastructural changes were required, reducing installation
-                    time and avoiding disruptions to students and staff.
+                    Agile Development Process A flexible, iterative approach
+                    allowed for continuous feedback and refinement of solutions,
+                    aligning with Daikin’s unique requirements.
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
                   <p className="font-light text-gray-400 text-lg">
-                    Hands-on training empowered school facility managers to
-                    confidently use the dashboard and respond immediately to
-                    alerts.
+                    Knowledge Sharing Close collaboration ensured Daikin’s teams
+                    were equipped to fully leverage the new tools and
+                    technologies.
                   </p>
                 </li>
               </ul>
@@ -246,4 +245,4 @@ const Casestudy4 = () => {
   );
 };
 
-export default Casestudy4;
+export default Casestudy5;
