@@ -27,7 +27,7 @@ import RubixIO8 from "../assets/images/RubixIO16/RIO168.png";
 import RubixIO9 from "../assets/images/RubixIO16/RIO169.png";
 
 // Niagara Edge
-import Edge1 from "../assets/images/NiagaraEdge/edge.png";
+import Edge1 from "../assets/images/NiagaraEdge/Ci-EdgeX2.png";
 
 // Lora Droplet
 import Droplet1 from "../assets/images/LoraDroplet/Droplet1.png";

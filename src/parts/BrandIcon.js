@@ -11,8 +11,8 @@ export default function BrandIcon() {
     <Button className="" type="link" href="/">
       <img
         src="/LogoNube.png"
-        alt="nube"
-        className="w-28 h-8 md:w-48 md:h-12"
+        alt="Logo Nube IO"
+        className="w-auto h-8 md:h-12 max-w-[192px]"
       />
     </Button>
   );

@@ -7,9 +7,9 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 // eslint-disable-next-line
-import CaseStudy1 from "../parts/CaseStudy2";
+import CaseStudy2 from "../parts/CaseStudy2";
 
-export default class Casestudy extends Component {
+export default class Casestudy2 extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -18,7 +18,7 @@ export default class Casestudy extends Component {
     return (
       <>
         <Header1 />
-        <CaseStudy1 />
+        <CaseStudy2 />
         <Footer />
       </>
     );

@@ -443,7 +443,7 @@ const Header1 = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/partners/"
                   className="block px-4 py-3 text-theme-blue font-bold text-lg"
                 >
                   Partners
@@ -503,7 +503,7 @@ const Header1 = () => {
                         <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="/case-study/"
+                              href="/case-study1/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Case Studies 1
@@ -511,7 +511,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study/"
+                              href="/case-study2/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Case Studies 2
@@ -519,7 +519,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study/"
+                              href="/case-study3/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Case Studies 3
@@ -527,10 +527,26 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study/"
+                              href="/case-study4/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 4
+                              Case Studies 5
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/case-study5/"
+                              className="text-gray-400 block px-6 py-2"
+                            >
+                              Case Studies 5
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/case-study6/"
+                              className="text-gray-400 block px-6 py-2"
+                            >
+                              Case Studies 6
                             </a>
                           </li>
                         </ul>
