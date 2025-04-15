@@ -12,75 +12,79 @@ import { Connectivity } from "../json/ProductsPageData.js";
 
 const NubeConect = () => {
   return (
-    <section className="lg:py-32 mt-12 pb-12 md:ml-24 ml-0">
-      <div className="container mx-auto px-12">
+    <section className="lg:mt-28 mt-12 pb-12 md:ml-24 ml-0 px-8">
+      <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Connectivity Overview
         </h1>
-        <div className="relative mt-12 grid gap-16 md:grid-cols-2">
-          <article className="prose order-2 mx-auto md:order-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-              speed={400}
-              className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
-            >
-              {Connectivity.map((item) => (
-                <SwiperSlide key={item.id} className="swiper-slide-">
-                  <img
-                    src={item.image}
-                    alt={`Nube ${item.id}`}
-                    className="w-full h-auto mb-8 mt-0 object-cover rounded-lg "
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              CLOUD SERVICES
-            </h2>
-            <p className="font-light text-lg text-gray-400 mb-10">
-              Cloud services for managing connected devices
-            </p>
-            <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
-              <li>
-                <span className="text-theme-teal">&#10003;</span> MQTT Broker
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Rest-API
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Database
-                services for influx-db or SQL based postgres
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> VPN Data
-                Security
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Communication
-                protocol management
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Automated data
-                collection
-              </li>
-            </ul>
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
-              VPN
-            </h1>
-            <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Secure VPN
-              </li>
-              <li>
-                <span className="text-theme-teal">&#10003;</span> Mass update of
-                Security Certificates to devices
-              </li>
-            </ul>
-          </article>
+        <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+          <div className="mx-auto w-full max-w-[800px]">
+            <article className="prose order-2 mx-auto md:order-1 ">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                speed={400}
+                className="aspect-video w-full h-auto rounded-lg"
+              >
+                {Connectivity.map((item) => (
+                  <SwiperSlide key={item.id} className="swiper-slide-products">
+                    <div className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-lg">
+                      <img
+                        src={item.image}
+                        alt={`Nube ${item.id}`}
+                        className="w-full h-full mb-8 mt-0 object-cover rounded-lg swiper-products-gif "
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+                CLOUD SERVICES
+              </h2>
+              <p className="font-light text-lg text-gray-400 mb-10">
+                Cloud services for managing connected devices
+              </p>
+              <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> MQTT Broker
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> Rest-API
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> Database
+                  services for influx-db or SQL based postgres
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> VPN Data
+                  Security
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span>{" "}
+                  Communication protocol management
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> Automated
+                  data collection
+                </li>
+              </ul>
+              <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+                VPN
+              </h1>
+              <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> Secure VPN
+                </li>
+                <li>
+                  <span className="text-theme-teal">&#10003;</span> Mass update
+                  of Security Certificates to devices
+                </li>
+              </ul>
+            </article>
+          </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <h2 className="text-2xl font-bold mt-2 mb-4 text-theme-blue">

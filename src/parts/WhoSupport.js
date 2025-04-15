@@ -29,9 +29,9 @@ const Partner = () => {
           <Fade direction="" triggerOnce key={index}>
             <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden">
               <img
-                src={item.imageUrl}
+                src={item.image}
                 alt={item.title}
-                className="w-full object-cover rounded-t-lg h-64 md:h-30 lg:h-30  "
+                className="w-full object-cover rounded-t-lg h-64 md:h-30 lg:h-30 transition-transform duration-300 hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="mb-2.5 font-bold md:text-xl">{item.title}</h3>

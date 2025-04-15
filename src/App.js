@@ -9,7 +9,6 @@ import LandingPage from "pages/LandingPage";
 import SolutionsPage from "pages/SolutionsPage";
 import AboutPage from "pages/AboutPage";
 import RubixCompute from "pages/RubixCompute";
-import RubixMiniCompute from "pages/Rubixmini";
 import RubixIO16 from "pages/RubixIO16";
 import NiagaraEdge from "pages/NiagaraEdge";
 import LoraDroplet from "pages/LoraDroplet";
@@ -44,7 +43,6 @@ function App() {
         <Route exact path="/about/" element={<AboutPage />} />
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/rubix-compute/" element={<RubixCompute />} />
-        <Route path="/rubix-compute-mini/" element={<RubixMiniCompute />} />
         <Route path="/rubix-io/" element={<RubixIO16 />} />
         <Route path="/edge/" element={<NiagaraEdge />} />
         <Route path="/lora-environmental-sensor/" element={<LoraDroplet />} />

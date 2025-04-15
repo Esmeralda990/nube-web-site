@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const RubixLW = () => {
   return (
-    <section className="lg:py-32 mt-12 pb-12 md:ml-24 ml-0">
+    <section className="lg:mt-28  mt-12 pb-12 md:ml-24 ml-0">
       <div className="container mx-auto px-12">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Connect LW

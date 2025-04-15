@@ -26,7 +26,7 @@ export default function Service({ data }) {
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className="h-full w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6">

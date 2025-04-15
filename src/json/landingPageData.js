@@ -84,6 +84,29 @@ import Custom from "../assets/images/AdvantageSolutionOEM/Custom.webp";
 import Leveraging from "../assets/images/AdvantageSolutionOEM/Leveraging.webp";
 import Support from "../assets/images/AdvantageSolutionOEM/Support.webp";
 
+// OurStory
+import IconsOur1 from "../assets/images/IconsOurStory/Enviro.png";
+import IconsOur2 from "../assets/images/IconsOurStory/Operationsbegan.png";
+import IconsOur3 from "../assets/images/IconsOurStory/IndiaNepal.png";
+import IconsOur4 from "../assets/images/IconsOurStory/Edge28.png";
+import IconsOur5 from "../assets/images/IconsOurStory/Programming.png";
+import IconsOur6 from "../assets/images/IconsOurStory/NubeCloud.png";
+import IconsOur7 from "../assets/images/IconsOurStory/Hardware.png";
+import IconsOur8 from "../assets/images/IconsOurStory/Rubix.png";
+import IconsOur9 from "../assets/images/IconsOurStory/RubixWires.png";
+import IconsOur10 from "../assets/images/IconsOurStory/Appreleased.png";
+
+// Why partners
+import Why1 from "../assets/images/WhyPartners/Innovation.webp";
+import Why2 from "../assets/images/WhyPartners/Sustainability.webp";
+import Why3 from "../assets/images/WhyPartners/Client.webp";
+
+// Who Support
+import Who1 from "../assets/images/WhoSupport/Dedicated.png";
+import Who2 from "../assets/images/WhoSupport/Technical.png";
+import Who3 from "../assets/images/WhoSupport/Marketing.png";
+import Who4 from "../assets/images/WhoSupport/Continuous.png";
+
 export const Services = [
   {
     id: "Software",
@@ -289,8 +312,6 @@ export const Advantages = [
         "Nube iO seamlessly connects legacy systems with modern technology, offering advanced IoT capabilities while ensuring.",
       imageUrl: Integration,
     },
-  ],
-  [
     {
       title: "Sustainability at the Core",
       description:
@@ -322,8 +343,6 @@ export const AdvantageAbout = [
       logo: Iconshard2,
       image: Growth,
     },
-  ],
-  [
     {
       title: "Commitment to Excellence",
       description:
@@ -349,7 +368,7 @@ export const OurStoryD = [
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
       year: "2009",
-      image: Floatings1,
+      image: IconsOur1,
     },
     {
       id: 2,
@@ -357,7 +376,7 @@ export const OurStoryD = [
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
       year: "2016",
-      image: Floatings2,
+      image: IconsOur2,
     },
     {
       id: 3,
@@ -365,7 +384,7 @@ export const OurStoryD = [
       year: "2017",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings3,
+      image: IconsOur3,
     },
     {
       id: 4,
@@ -373,7 +392,7 @@ export const OurStoryD = [
       year: "2017",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings4,
+      image: IconsOur4,
     },
     {
       id: 5,
@@ -381,7 +400,7 @@ export const OurStoryD = [
       year: "2018",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings5,
+      image: IconsOur5,
     },
     {
       id: 6,
@@ -389,7 +408,7 @@ export const OurStoryD = [
       year: "2018",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings6,
+      image: IconsOur6,
     },
     {
       id: 7,
@@ -397,7 +416,7 @@ export const OurStoryD = [
       year: "2020",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings5,
+      image: IconsOur7,
     },
     {
       id: 8,
@@ -405,7 +424,7 @@ export const OurStoryD = [
       year: "2020",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings6,
+      image: IconsOur8,
     },
     {
       id: 9,
@@ -413,7 +432,7 @@ export const OurStoryD = [
       year: "2023",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings5,
+      image: IconsOur9,
     },
     {
       id: 10,
@@ -421,7 +440,7 @@ export const OurStoryD = [
       year: "2023",
       description:
         "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: Floatings6,
+      image: IconsOur10,
     },
   ],
 ];
@@ -616,29 +635,52 @@ export const WhoSupport = [
   {
     id: "1",
     title: "Dedicated Collaboration",
-    imageUrl: Insights,
+    image: Who1,
     description:
       "Our team is committed to providing dedicated support, working closely with partners through every stage of project implementation to ensure.",
   },
   {
     id: "2",
     title: "Technical Expertise",
-    imageUrl: Insights,
+    image: Who2,
     description:
       " Partners have direct access to our expert technical teams, ensuring seamless integration and maximised efficiency of solutions.",
   },
   {
     id: "3",
     title: "Marketing and Support",
-    imageUrl: Insights,
+    image: Who3,
     description:
       "We offer co-marketing opportunities, joint sales initiatives, and strategic positioning to enhance visibility and drive mutual growth.",
   },
   {
     id: "4",
     title: "Continuous Training",
-    imageUrl: Insights,
+    image: Who4,
     description:
       "Regular training sessions and educational resources are available to empower partners with the latest knowledge and best practices.",
   },
+];
+
+export const WhyData = [
+  [
+    {
+      title: "Innovation Driven",
+      description:
+        "We actively seek collaboration with technology pioneers to offer state-of-the-art solutions.",
+      image: Why1,
+    },
+    {
+      title: "Sustainability Focused",
+      description:
+        "Our partnerships help foster sustainable practices in building management, supporting greener futures.",
+      image: Why2,
+    },
+    {
+      title: "Client-Centric Approach",
+      description:
+        "Working closely with partners, we tailor comprehensive solutions that address the unique challenges faced by our clients.",
+      image: Why3,
+    },
+  ],
 ];

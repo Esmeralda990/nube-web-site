@@ -18,7 +18,7 @@ const Partners = () => {
           | Read more
           <ArrowRight className="ml-2 inline size-4" />
         </a>
-        <h2 className=" mb-6 text-center text-2xl font-bold lg:text-5åxl xl:pl-4 text-theme-blue">
+        <h2 className=" mb-6 text-center text-2xl font-bold lg:text-5xl xl:pl-4 text-theme-blue">
           Collaborating for Innovation
         </h2>
         <p className="mx-auto mb-10 max-w-3xl text-base text-center font-light text-gray-400 text-muted-foreground lg:text-xl">

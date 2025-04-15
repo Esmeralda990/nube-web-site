@@ -7,15 +7,15 @@ import heroAbout from "../assets/images/AdvangesAbout/WhatWe.webp";
 
 export default function DetailsAbout() {
   return (
-    <section className="py-32 mt-16 px-12">
-      <div className=" flex justify-center">
+    <section className="lg:py-32 mt-16 px-12 ">
+      <div className=" flex justify-center max-w-screen-lg mx-auto">
         <div className="lg:flex justify-center items-center">
           <div className="lg:w-1/2  flex flex-col justify-center">
             <div className="mb-6 md:mb-8 lg:mb-0 ">
               <img
                 src={heroAbout}
                 alt="heroAbout"
-                className="aspect-video w-full rounded-md border border-border object-cover"
+                className="aspect-video w-full rounded-md border border-border object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>

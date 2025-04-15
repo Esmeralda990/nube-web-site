@@ -155,7 +155,7 @@ const Header1 = () => {
                         className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
                         onClick={toggleSecondLevelSubmenu}
                       >
-                        Our Services
+                        Our Solutions
                         <svg
                           className={`w-4 h-4 transition-transform ${
                             secondLevelSubmenuOpen ? "transform rotate-180" : ""
@@ -530,7 +530,7 @@ const Header1 = () => {
                               href="/case-study4/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 5
+                              Case Studies 4
                             </a>
                           </li>
                           <li>
@@ -539,14 +539,6 @@ const Header1 = () => {
                               className="text-gray-400 block px-6 py-2"
                             >
                               Case Studies 5
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-study6/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Case Studies 6
                             </a>
                           </li>
                         </ul>

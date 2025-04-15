@@ -23,7 +23,7 @@ const FeatureSwiper = () => {
   }, [activeIndex]);
 
   return (
-    <section className="py-32 pt-12 pb-12">
+    <section className="lg:py-32 pt-12 pb-12">
       <div className="container mx-auto max-w-screen-2xl flex flex-col-reverse md:flex-row gap-8 relative px-8 h-full">
         <ul className="md:w-1/2 flex flex-col gap-4">
           {Solutionsfeature.map((feature, index) => (

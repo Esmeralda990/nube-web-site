@@ -13,7 +13,7 @@ const AdvAbout = () => {
 
   return (
     <section className="py-32">
-      <div className="container mx-auto max-w-screen-2xl px-8 ">
+      <div className="container mx-auto max-w-screen-lg px-8 ">
         <div className="mb-20 max-w-lg ">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
