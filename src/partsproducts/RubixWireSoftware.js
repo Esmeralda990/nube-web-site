@@ -29,7 +29,7 @@ const Wire = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="swiper-products mb-12 w-full h-auto object-contain h-auto rounded-lg"
+                className=" w-full h-auto object-contain h-auto rounded-lg"
               >
                 {RubixWire.map((item) => (
                   <SwiperSlide key={item.id}>
@@ -40,7 +40,7 @@ const Wire = () => {
                       loop
                       muted
                       playsInline
-                      className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg"
+                      className="swiper-product-gif w-full h-auto mt-0 object-cover rounded-lg "
                     />
                   </SwiperSlide>
                 ))}

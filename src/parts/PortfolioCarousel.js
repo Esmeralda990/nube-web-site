@@ -62,7 +62,7 @@ export default function PorfolioCarousel() {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="max-w-[90%] sm:max-w-[90%] md:max-w-[90%] lg:max-w-[100%] xl:max-w-[100%] h-full  object-contain md:object-fill sm:ml-0 xl:ml-48"
+                    className="max-w-[80%] sm:max-w-[80%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] h-full  object-contain md:object-fill sm:ml-0 xl:ml-48"
                     style={{ maxHeight: "100%", objectFit: "contain" }}
                   />
                 </Fade>

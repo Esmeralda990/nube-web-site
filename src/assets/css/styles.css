@@ -108,7 +108,6 @@
   /* Semi-transparent background */
   border-radius: 50%;
   font-size: 30px;
-
   /* Circular shape */
   width: 33px;
   /* Size of the buttons */
@@ -203,8 +202,16 @@ header {
   position: sticky;
   box-shadow: 0 10px 15px -3px #ddd, 0 4px 6px -2px #ddd;
   color: #000;
-  padding-top: 30px;
-  height: 120px;
+  padding-top: 20px;
+  height: 110px;
+}
+
+@media (max-width: 760px) {
+  header {
+    padding-top: 16px;
+    height: 90px;
+    box-shadow: 0 6px 10px -4px #ddd;
+  }
 }
 
 .nav-area {
@@ -214,12 +221,14 @@ header {
   margin: 0 auto;
   padding: 10px 20px;
 }
+
 .logo {
   text-decoration: none;
   color: inherit;
   margin-right: auto;
   flex: 1;
 }
+
 .main-nav .menus {
   display: flex;
   align-items: center;
@@ -360,6 +369,11 @@ header {
   height: 300px;
   margin-bottom: 30px;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.left-section img:hover {
+  transform: scale(1.02);
 }
 
 .dropdown-content {
@@ -614,15 +628,18 @@ header {
 
 .swiper-slide-gif img {
   display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  object-position: left;
+  object-position: center;
 }
+
 @media (max-width: 768px) {
   .swiper-slide-gif img {
-    transform: translateX(0px);
+    object-position: center;
+    transform: none;
   }
 }
 

@@ -72,10 +72,10 @@ const Casestudy4 = () => {
   ];
 
   return (
-    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-12">
+    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-8">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
-          <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl text-theme-blue font-bold ">
+          <h1 className="mt-10 text-2xl max-w-xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
             Sustainability in 30+ Victorian Schools with IoT
           </h1>
         </div>

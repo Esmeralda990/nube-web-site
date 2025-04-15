@@ -7,7 +7,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Badges } from "../json/landingPageData.js";
-import ConnectImg from "../assets/images/Icons/02.png";
+import ConnectImg from "../assets/images/hero/Bring.webp";
 
 const Connect = () => {
   return (
@@ -16,7 +16,7 @@ const Connect = () => {
         <img
           src={ConnectImg}
           alt="Connection Illustration"
-          className="h-48 md:h-full w-full rounded-lg object-cover"
+          className="h-48 md:h-full w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>
 

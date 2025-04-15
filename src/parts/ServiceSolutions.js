@@ -35,7 +35,7 @@ export default function ServiceSolutions({ data }) {
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className="w-full rounded-t-2xl p"
+                  className="w-full rounded-t-2xl "
                 />
                 <div className="py-2">
                   {" "}
@@ -43,7 +43,7 @@ export default function ServiceSolutions({ data }) {
                     {item.title}
                   </h4>
                   <p className="font-light text-gray-400 text-center">
-                    {item.description || item.type} {/* type */}
+                    {item.description || item.type}
                   </p>
                 </div>
               </div>

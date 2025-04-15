@@ -28,7 +28,7 @@ const WorldSolution = () => {
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-full object-cover rounded-t-lg h-64 md:h-80 lg:h-96  "
+                className="w-full object-cover rounded-t-lg h-64 md:h-80 lg:h-96  transition-transform duration-300 hover:scale-105"
               />
               <div className="p-6">
                 <h3 className="mb-2.5 font-bold md:text-xl">{item.title}</h3>

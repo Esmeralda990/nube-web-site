@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const LoraDroplet = () => {
   return (
-    <section className="lg:py-32 mt-12 pb-12 md:ml-24 px-8">
+    <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Droplet
@@ -136,7 +136,7 @@ const LoraDroplet = () => {
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
               The Droplet is a LoRa® IoT sensor. It captures multiple points of
-              data – temperature, humidity, lux, and motion monitoring – with
+              data–temperature, humidity, lux, and motion monitoring with
               minimal time required for installation and wiring.
             </p>
             <div className="flex gap-4 mt-6">

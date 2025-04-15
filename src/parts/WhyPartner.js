@@ -3,11 +3,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
+import { WhyData } from "../json/landingPageData";
 
 const Why = () => {
   return (
     <section className="py-12 mb-12 px-8 ">
-      <div className="container mx-auto max-w-screen-2xl">
+      <div className="container mx-auto max-w-screen-lg">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
           <h2 className="mb-2 text-center text-2xl  md:text-3xl lg:text-5xl font-bold text-theme-blue">
             Why Partner With Us
@@ -19,52 +20,28 @@ const Why = () => {
           </p>
         </div>
         <div className="mt-20 grid gap-10 lg:grid-cols-2">
-          <div>
-            <img
-              src="https://shadcnblocks.com/images/block/placeholder-1.svg"
-              alt="placholder"
-              className="rounded-lg border"
-            />
-            <div className="px-4 pt-10">
-              <h3 className="font-bold text-theme-teal">Innovation Driven</h3>
-              <p className="text-base font-light text-gray-400">
-                We actively seek collaboration with technology pioneers to offer
-                state-of-the-art solutions.
-              </p>
+          {WhyData[0].map((item, index) => (
+            <div
+              key={index}
+              className={`${index === 2 ? "md:col-span-2" : ""}`}
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className={`rounded-lg border transition-transform duration-300 hover:scale-105 ${
+                  index === 2
+                    ? "aspect-video max-h-[480px] w-full bg-muted object-cover transition-transform duration-300 hover:scale-105"
+                    : ""
+                }`}
+              />
+              <div className="px-4 pt-10">
+                <h3 className="font-bold text-theme-teal">{item.title}</h3>
+                <p className="text-base font-light text-gray-400">
+                  {item.description}
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <img
-              src="https://shadcnblocks.com/images/block/placeholder-2.svg"
-              alt="placholder"
-              className="rounded-lg border"
-            />
-            <div className="px-4 pt-10">
-              <h3 className="font-medium text-theme-teal">
-                Sustainability Focused
-              </h3>
-              <p className="text-base font-light text-gray-400">
-                Our partnerships help foster sustainable practices in building
-                management, supporting greener futures.
-              </p>
-            </div>
-          </div>
-          <div className="md:col-span-2">
-            <img
-              src="https://shadcnblocks.com/images/block/placeholder-3.svg "
-              alt="placholder"
-              className="aspect-video max-h-[480px] w-full rounded-lg border bg-muted object-cover"
-            />
-            <div className="px-4 pt-10">
-              <h3 className="font-bold text-theme-teal">
-                Client-Centric Approach
-              </h3>
-              <p className="text-base font-light text-gray-400">
-                Working closely with partners, we tailor comprehensive solutions
-                that address the unique challenges faced by our clients.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

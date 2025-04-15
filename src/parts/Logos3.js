@@ -6,7 +6,7 @@ import { Logos } from "../json/landingPageData.js";
 
 const Logos3 = ({ heading, description, logos = Logos }) => {
   return (
-    <section className="py-12 mb-8 ">
+    <section className="lg:py-12 ">
       <div className="ccontainer mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
         <h2 className="text-4xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
           {heading}

@@ -10,7 +10,7 @@ import Button from "../elements/Button";
 
 export default function HeroAbout() {
   return (
-    <section className="text-center flex justify-center items-center mt-24 ">
+    <section className="text-center flex justify-center items-center mt-12 lg:mt-24 ">
       <div className="container flex flex-col items-center justify-center text-center">
         <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 max-w-4xl lg:mt-6 xl:pl-12 xl:mt-20">
           <a

@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../assets/images/LogoNube.png";
+import ImgLogo from "../assets/images/CaseStudy/Daikin_Blanco.png";
 
 const Casestudy5 = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -72,18 +73,18 @@ const Casestudy5 = () => {
   ];
 
   return (
-    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-12">
+    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-8">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
-          <h1 className="mt-10 text-2xl md:text-4xl lg:text-5xl text-theme-blue font-bold ">
-            Enhancing Daikin’s Platforms with Data-Driven Co-Development
+          <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl max-w-2xl leading-tight text-theme-blue font-bold ">
+            Enhancing Daikin’s Platforms with Data Driven Development
           </h1>
         </div>
 
         <img
-          src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+          src={ImgLogo}
           alt="placeholder"
-          className="max-h-[400px] w-full object-cover lg:w-1/2 rounded"
+          className="max-h-[300px] w-full object-cover lg:w-1/2 rounded"
         />
       </div>
 

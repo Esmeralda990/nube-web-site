@@ -63,15 +63,20 @@ import Manage3 from "../assets/images/SoftwareProducts/ce-select-version-1024x62
 import RubixWire1 from "../assets/Video/RubixWire03_Webm.webm";
 
 // NubeConnectivity
-import Connectivity1 from "../assets/images/Connectivity/Connectivity1.png";
-import Connectivity2 from "../assets/images/Connectivity/Connectivity2.png";
-import Connectivity3 from "../assets/images/Connectivity/Connectivity3.png";
-import Connectivity4 from "../assets/images/Connectivity/Connectivity4.png";
-import Connectivity5 from "../assets/images/Connectivity/Connectivity5.png";
+import Connectivity1 from "../assets/images/Connectivity/Dash01.png";
+import Connectivity2 from "../assets/images/Connectivity/Dash02.png";
+import Connectivity3 from "../assets/images/Connectivity/Dash03.png";
+import Connectivity4 from "../assets/images/Connectivity/Dash04.png";
 
 // Rubix Lw
 import RubixConnect from "../assets/images/RubixLW/RC-LW.png";
 import RubixConnect2 from "../assets/images/RubixLW/Lw2.png";
+
+// Case Blog
+import Img1 from "../assets/images/CaseStudy/Galvin_Color.png";
+import Img2 from "../assets/images/CaseStudy/Eviro_Color.png";
+import Img3 from "../assets/images/CaseStudy/Daikin_Color.png";
+import Img4 from "../assets/images/CaseStudy/Fujitsu_Color.png";
 
 export const RubixCompute = [
   {
@@ -297,10 +302,6 @@ export const Connectivity = [
     id: "4",
     image: Connectivity4,
   },
-  {
-    id: "5",
-    image: Connectivity5,
-  },
 ];
 
 export const RubixConnectLW = [
@@ -311,5 +312,89 @@ export const RubixConnectLW = [
   {
     id: "2",
     image: RubixConnect2,
+  },
+];
+
+export const Blog1 = [
+  {
+    img: Img1,
+    title: "Galvin Engineering",
+    date: "September 23, 2024",
+    link: "/case-study2/",
+  },
+  {
+    img: Img2,
+    title: "Enviro Building Services",
+    date: "April 07, 2024",
+    link: "/case-study3/",
+  },
+  {
+    img: Img3,
+    title: "Daikin",
+    date: "August 31, 2024",
+    link: "/case-study5/",
+  },
+];
+
+export const Blog2 = [
+  {
+    img: Img4,
+    title: "Fujitsu",
+    date: "September 23, 2024",
+    link: "/case-study1/",
+  },
+  {
+    img: Img2,
+    title: "Enviro Building Services",
+    date: "April 07, 2024",
+    link: "/case-study3/",
+  },
+  {
+    img: Img3,
+    title: "Daikin",
+    date: "August 31, 2024",
+    link: "/case-study5/",
+  },
+];
+
+export const Blog3 = [
+  {
+    img: Img1,
+    title: "Galvin Engineering",
+    date: "September 23, 2024",
+    link: "/case-study2/",
+  },
+  {
+    img: Img4,
+    title: "Fujitsu",
+    date: "April 07, 2024",
+    link: "/case-study1/",
+  },
+  {
+    img: Img3,
+    title: "Daikin",
+    date: "August 31, 2024",
+    link: "/case-study5/",
+  },
+];
+
+export const Blog4 = [
+  {
+    img: Img1,
+    title: "Galvin Engineering",
+    date: "September 23, 2024",
+    link: "/case-study2/",
+  },
+  {
+    img: Img4,
+    title: "Fujitsu",
+    date: "April 07, 2024",
+    link: "/case-study1/",
+  },
+  {
+    img: Img2,
+    title: "Enviro Building Services",
+    date: "August 31, 2024",
+    link: "/case-study3/",
   },
 ];
