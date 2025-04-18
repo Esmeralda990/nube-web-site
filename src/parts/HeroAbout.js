@@ -15,7 +15,7 @@ export default function HeroAbout() {
         <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 max-w-4xl lg:mt-6 xl:pl-12 xl:mt-20">
           <a
             href="/solutions"
-            className="mx-auto mb-2 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12"
+            className="mx-auto mb-2 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
           >
             ✨ Software and Hardware Solutions
             <span className="flex size-7 items-center justify-center rounded-full bg-muted">
@@ -23,7 +23,7 @@ export default function HeroAbout() {
             </span>
           </a>
           <Fade direction="" triggerOnce>
-            <h1 className="text-2xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 ">
+            <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 ">
               Innovating the Future of Smart Automation
             </h1>
           </Fade>

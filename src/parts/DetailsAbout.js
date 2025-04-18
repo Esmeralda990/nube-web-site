@@ -7,7 +7,7 @@ import heroAbout from "../assets/images/AdvangesAbout/WhatWe.webp";
 
 export default function DetailsAbout() {
   return (
-    <section className="lg:py-32 mt-16 px-12 ">
+    <section className="lg:py-32 mt-16 px-12">
       <div className=" flex justify-center max-w-screen-lg mx-auto">
         <div className="lg:flex justify-center items-center">
           <div className="lg:w-1/2  flex flex-col justify-center">
@@ -21,7 +21,7 @@ export default function DetailsAbout() {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-16 2xl:pl-32 max-w-2xl">
             <div>
-              <h2 className="mb-3 text-xl font-bold text-theme-blue md:mb-4 md:text-5xl lg:mb-6">
+              <h2 className="mb-3 text-3xl font-bold text-theme-blue md:mb-4 lg:text-5xl lg:mb-6">
                 What We Do
               </h2>
               <p className="text-muted-foreground lg:text-lg font-light text-gray-400">

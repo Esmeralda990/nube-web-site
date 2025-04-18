@@ -29,14 +29,14 @@ const NiagaraEdge = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+                className="swiper-products aspect-[5/4] w-full object-contain h-auto rounded-lg"
               >
                 {Edge.map((item) => (
                   <SwiperSlide key={item.id}>
                     <img
                       src={item.image}
                       alt={`Edge ${item.id}`}
-                      className="w-full h-auto mb-4 mt-0 object-contain rounded-lg"
+                      className="w-full h-auto mt-0 object-contain rounded-lg"
                     />
                   </SwiperSlide>
                 ))}

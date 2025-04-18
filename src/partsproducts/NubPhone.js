@@ -23,9 +23,9 @@ const PhoneNube = ({
           <h2 className="text-4xl font-bold text-theme-blue text-foreground md:text-4xl lg:text-5xl">
             <span>{heading}</span>
           </h2>
-          <h2 className="text-3xl font-bold text-theme-teal   text-foreground md:text-5xl lg:text-3xl">
+          <h3 className="text-3xl font-bold text-theme-teal  text-foreground md:text-5xl lg:text-3xl">
             <span className="text-muted-foreground">{subheading}</span>
-          </h2>
+          </h3>
           <ul className="text-base text-muted-foreground font-light text-gray-500 md:text-lg lg:text-xl list-inside max-w-xl">
             <li>
               <span className="text-theme-teal">&#10003;</span> Log into

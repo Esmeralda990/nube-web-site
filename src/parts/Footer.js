@@ -10,12 +10,11 @@ const sections = [
   {
     title: "Useful links",
     links: [
-      { name: "Hardware", href: "/hardware" },
-      { name: "Software", href: "/software" },
-      { name: "Connectivity", href: "/connectivity" },
-      { name: "Blog", href: "/blog" },
-      { name: "About", href: "/about" },
-      { name: "Contact", href: "/contact" },
+      { name: "Our Story", href: "/ourstory/" },
+      { name: "Solutions", href: "/solutions/" },
+      { name: "Partners", href: "/partners/" },
+      { name: "FAQs", href: "/FAQs/" },
+      { name: "Contact", href: "/contact-us/" },
     ],
   },
   {

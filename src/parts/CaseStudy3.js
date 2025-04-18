@@ -71,7 +71,7 @@ const Casestudy3 = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
           <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
-            Enviro Building Services
+            Enhancing Sustainability and Efficiency
           </h1>
         </div>
 

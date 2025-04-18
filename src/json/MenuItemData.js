@@ -33,7 +33,7 @@ import icons19 from "../assets/images/IconsMenu/Contact.svg";
 export const menuItemsData = [
   {
     name: "Our Story",
-    link: "/about/",
+    link: "/ourstory/",
   },
   {
     name: "Solutions",
@@ -88,11 +88,33 @@ export const menuItemsData = [
                     icon: icons5,
                     description: "Connecting devices",
                   },
+                ],
+              },
+            ],
+          },
+          {
+            title: "",
+            items: [
+              {
+                title: "Case scenarios",
+                items: [
                   {
-                    name: "By Case Scenario",
-                    link: "/case-study/",
+                    name: "By case scenarios 1",
+                    link: "/scenario1-integration/",
                     icon: icons6,
-                    description: "Customized solutions",
+                    description: "Smart Analytics",
+                  },
+                  {
+                    name: "By case scenarios 2",
+                    link: "/scenario2-oem/",
+                    icon: icons6,
+                    description: "OEM Integration",
+                  },
+                  {
+                    name: "By case scenarios 3",
+                    link: "/scenario3-building/",
+                    icon: icons6,
+                    description: "Simplify building",
                   },
                 ],
               },
@@ -101,7 +123,7 @@ export const menuItemsData = [
         ],
       },
     ],
-    gridCols: 2,
+    gridCols: 1,
     hasSubMenu: true,
   },
   {

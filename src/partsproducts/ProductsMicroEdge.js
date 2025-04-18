@@ -29,7 +29,7 @@ const MicroEdge = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="swiper-products mb-12 w-full object-contain h-auto rounded-lg"
+                className="swiper-products aspect-[5/4] mb-12 w-full object-contain h-auto rounded-lg"
               >
                 {Microedge.map((item) => (
                   <SwiperSlide key={item.id}>

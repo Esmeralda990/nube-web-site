@@ -11,7 +11,7 @@ import ConnectImg from "../assets/images/hero/Bring.webp";
 
 const Connect = () => {
   return (
-    <div className="mx-auto pt-24 mb-24 grid max-w-screen-xl gap-4 border-1 border-gray-100 rounded-lg md:grid-cols-2 px-6 pb-24">
+    <div className="mx-auto lg:pt-24 mb-24 grid max-w-screen-xl gap-4 border-1 border-gray-100 rounded-lg md:grid-cols-2 px-6 lg:pb-24">
       <div className="flex flex-col rounded-lg overflow-hidden border-2 border-gray-100">
         <img
           src={ConnectImg}
@@ -22,9 +22,9 @@ const Connect = () => {
 
       <div className="flex flex-col rounded-lg overflow-hidden border-2 border-gray-100 bg-accent p-4">
         <div className="flex h-full flex-col justify-between gap-4 rounded-lg bg-background p-4">
-          <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-snug">
+          <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-snug">
             Bring it all together
-          </h1>
+          </h2>
           <p className="font-light text-base md:text-lg text-gray-400 text-center mb-3">
             With our universal connectivity solution, you can quickly regain
             control of a building, whatever its size, condition.

@@ -25,7 +25,7 @@ export default function Hero() {
               <ArrowUpRight className="w-4" />
             </span>
           </a>
-          <h1 className="text-4xl md:text-7xl text-theme-blue font-bold leading-tight mb-5">
+          <h1 className="text-5xl md:text-7xl text-theme-blue font-bold leading-tight mb-5">
             Automating the Future <br />
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-16 max-w-xl">
@@ -35,7 +35,7 @@ export default function Hero() {
 
           <div className="flex space-x-4">
             {" "}
-            <Fade direction="up" triggerOnce delay={400}>
+            <Fade triggerOnce delay={400}>
               <Button
                 href="/contact-us/"
                 type="link"
@@ -45,11 +45,11 @@ export default function Hero() {
                 <ArrowRight className="ml-2 w-4" />
               </Button>
             </Fade>
-            <Fade direction="up" delay={500} triggerOnce>
+            <Fade delay={500} triggerOnce>
               <Button
                 href="/get-demo/"
                 type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
+                className="flex items-center justify-center w-auto px-4 py-3 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
               >
                 Get Demo
                 <ArrowRight className="ml-2 w-4" />

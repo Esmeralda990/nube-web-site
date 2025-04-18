@@ -27,15 +27,15 @@ const NubeConect = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="aspect-video w-full h-auto rounded-lg"
+                className=" w-full aspect-[5/5]  h-auto rounded-lg  swiper-products"
               >
                 {Connectivity.map((item) => (
                   <SwiperSlide key={item.id} className="swiper-slide-products">
-                    <div className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] overflow-hidden rounded-lg">
+                    <div className="w-full h-full overflow-hidden rounded-lg">
                       <img
                         src={item.image}
                         alt={`Nube ${item.id}`}
-                        className="w-full h-full mb-8 mt-0 object-cover rounded-lg swiper-products-gif "
+                        className="w-full h-full object-cover rounded-lg swiper-products-gif "
                       />
                     </div>
                   </SwiperSlide>

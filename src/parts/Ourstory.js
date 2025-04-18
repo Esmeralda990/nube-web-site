@@ -73,7 +73,7 @@ const Ourstory = () => {
         <div
           ref={scrollContainerRef}
           onScroll={updateScrollState}
-          className="flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar px-6"
+          className="flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar md:px-40 px-12"
         >
           {items.map((item, idx) => (
             <div
@@ -82,11 +82,11 @@ const Ourstory = () => {
                 idx === items.length - 1 ? "pr-6" : ""
               }`}
             >
-              <div className="w-full h-64 overflow-hidden rounded-lg mb-4">
+              <div className="w-full h-70 md:h-72 lg:h-80 overflow-hidden rounded-lg mb-4">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="aspect-[2/2] rounded-lg object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="flex flex-col">

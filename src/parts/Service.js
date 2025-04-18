@@ -10,10 +10,10 @@ import { ChevronRight } from "react-feather";
 export default function Service({ data }) {
   return (
     <div className="">
-      <div className="container mx-auto max-w-screen-2xl pt-12 md:pt-32 pb-12 px-8 ">
-        <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold mb-5">
+      <div className="container mx-auto max-w-screen-xl pt-12 md:pt-32 pb-12 px-8 ">
+        <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold mb-5">
           Building Smarter, Thinking Forward
-        </h1>
+        </h2>
         <p className="font-light text-lg text-gray-400 text-center mb-10">
           Explore our tech for sustainable solutions to current and future
           challenges.
