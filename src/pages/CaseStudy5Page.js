@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 import CaseBlog4 from "parts/CaseBlog4";
+import Discuss from "parts/Discuss";
 // eslint-disable-next-line
 import CaseStudy5 from "../parts/CaseStudy5";
 
@@ -21,6 +22,7 @@ export default class Casestudy5 extends Component {
         <Header1 />
         <CaseStudy5 />
         <CaseBlog4 />
+        <Discuss />
         <Footer />
       </>
     );

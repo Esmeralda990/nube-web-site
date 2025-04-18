@@ -18,7 +18,7 @@ export default function TeamSection() {
           Explicabo.
         </p>
       </div>
-      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4 grid-cols-auto-fit px-4">
+      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4 grid-cols-auto-fit lg:px-12 ">
         {Managers.map((person) => (
           <div key={person.id} className="flex flex-col bg-accent rounded-xl ">
             <img

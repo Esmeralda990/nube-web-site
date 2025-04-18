@@ -34,8 +34,7 @@ const TeamGroup = () => {
       ))}
 
       <div className="container mx-auto md:max-w-[40%] flex flex-col items-center text-center relative z-10 px-4">
-        {/* Headline */}
-        <h2 className="text-xl sm:text-xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
+        <h2 className="text-3xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5">
           Our Team,Our Strength At Nube iO.
         </h2>
         <p className="text-sm sm:text-base lg:text-xl font-light text-gray-400 leading-relaxed mb-12">

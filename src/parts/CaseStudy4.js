@@ -76,7 +76,7 @@ const Casestudy4 = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
           <h1 className="mt-10 text-2xl max-w-xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
-            Sustainability in 30+ Victorian Schools with IoT
+            Driving Sustainability in 30+ Victorian Schools with IoT
           </h1>
         </div>
 

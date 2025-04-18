@@ -29,10 +29,10 @@ const LoraDroplet = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+                className="swiper-products mb-12  aspect-[5/4] w-full h-auto rounded-lg"
               >
                 {Droplet.map((item) => (
-                  <SwiperSlide key={item.id} className="swiper-slide-products">
+                  <SwiperSlide key={item.id}>
                     <img
                       src={item.image}
                       alt={`Droplet ${item.id}`}

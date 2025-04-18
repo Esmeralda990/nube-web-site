@@ -9,10 +9,10 @@ import { Blog1 } from "json//ProductsPageData";
 
 const CaseBlog1 = () => {
   return (
-    <section className=" mb-32 px-6 mt-12 ">
+    <section className="lg:mb-32 mb-12 px-6 mt-12 ">
       <div className="container max-w-screen-2xl mx-auto">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6 text-center">
-          <h2 className="text-balance text-3xl lg:4xl font-bold text-theme-blue">
+          <h2 className="text-balance text-3xl lg:text-4xl font-bold text-theme-blue">
             Explore More Case Studies
           </h2>
           <p className="text-muted-foreground font-light text-xl text-gray-400">

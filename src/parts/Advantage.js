@@ -10,20 +10,20 @@ export default function Advantage({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="pb-24 sm:mb-18 xl:mb-32 md:px-8 lg:px-16 xl:px-32 px-6 ">
+    <div className="pb-24 sm:mb-18 xl:mb-32 lg:px-16 xl:px-32 px-6 ">
       <div className="container mx-auto max-w-screen-lg flex flex-col gap-16">
         <Fade direction="" triggerOnce>
           <div className="lg:max-w-sm">
-            <h2 className="text-3xl md:text-5xl text-theme-blue font-bold mb-5 px-3">
+            <h2 className="text-3xl md:text-5xl text-theme-blue font-bold mb-5 ">
               Why Nube iO?
             </h2>
-            <p className="font-light text-lg text-muted-foreground text-gray-400 mb-3 md:mb-4 md:text-xl lg:mb-6 px-6 ">
+            <p className="font-light text-lg text-muted-foreground text-gray-400 mb-3 md:mb-4 md:text-xl lg:mb-6 ">
               Innovative, Scalable, and Sustainable Solutions for Smarter
               Building Management
             </p>
             <a
               href="/about/"
-              className="group flex items-center text-xs font-ligth text-theme-teal md:text-base lg:text-lg px-6"
+              className="group flex items-center text-xs font-ligth text-theme-teal md:text-base lg:text-lg "
             >
               About us
               <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />

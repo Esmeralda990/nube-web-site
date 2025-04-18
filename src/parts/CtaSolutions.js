@@ -15,9 +15,9 @@ export default function DiscussCta() {
         <section className="flex container mx-auto justify-center">
           <div className="flex w-full flex-col gap-16 overflow-hidden rounded-lg bg-gray-100 p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-26">
             <div className="flex-1">
-              <h1 className="mb-3 text-2xl text-theme-blue font-bold md:mb-4 md:text-4xl lg:mb-6">
+              <h3 className="mb-3 text-2xl text-theme-blue font-bold md:mb-4 md:text-4xl lg:mb-6">
                 Professional Service
-              </h1>
+              </h3>
               <Fade delay={300} triggerOnce>
                 <p className="font-light text-gray-500 p-5 sm:p-0 text-lg sm:text-xl lg:text-2xl xl:text-xl mb-1">
                   Learn More About Professional Services

@@ -29,6 +29,9 @@ import CaseStudy3Page from "pages/CaseStudy3Page";
 import CaseStudy4Page from "pages/CaseStudy4Page";
 import CaseStudy5Page from "pages/CaseStudy5Page";
 import GetDemoPage from "pages/GetDemoPage";
+import ScenarioPage1 from "pages/ScenarioPage1";
+import ScenarioPage2 from "pages/ScenarioPage2";
+import ScenarioPage3 from "pages/ScenarioPage3";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
 import Partners from "pages/PartnersPage";
@@ -40,7 +43,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/about/" element={<AboutPage />} />
+        <Route exact path="/ourstory/" element={<AboutPage />} />
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/rubix-compute/" element={<RubixCompute />} />
         <Route path="/rubix-io/" element={<RubixIO16 />} />
@@ -68,6 +71,9 @@ function App() {
         <Route path="/case-study3/" element={<CaseStudy3Page />} />
         <Route path="/case-study4/" element={<CaseStudy4Page />} />
         <Route path="/case-study5/" element={<CaseStudy5Page />} />
+        <Route path="/scenario1-integration/" element={<ScenarioPage1 />} />
+        <Route path="/scenario2-oem/" element={<ScenarioPage2 />} />
+        <Route path="/scenario3-building/" element={<ScenarioPage3 />} />
         <Route path="/get-demo/" element={<GetDemoPage />} />
         <Route path="/contact-us/" element={<ContactPage />} />
         <Route path="/FAQs/" element={<FAQsPage />} />

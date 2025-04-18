@@ -69,11 +69,11 @@ const Casestudy = () => {
   ];
 
   return (
-    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 mt-8">
+    <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 ">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
-          <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
-            Nube iO&apos;s OEM Solution for Fujitsu General-AnywAIR iO
+          <h1 className="mt-10 text-3xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
+            OEM Solution for Fujitsu AnywAIR iO
           </h1>
         </div>
 

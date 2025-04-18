@@ -9,14 +9,14 @@ import { WorldSolutions } from "../json/landingPageData";
 
 const WorldSolution = () => {
   return (
-    <section className="container mx-auto max-w-screen-2xl flex flex-col items-center mb-40 px-6">
+    <section className="container mx-auto max-w-screen-xl flex flex-col items-center lg:mb-40 px-6">
       <Fade direction="" triggerOnce>
-        <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6">
+        <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6 mb-8">
           Real-World Solutions, Powered by Nube iO
-        </h1>
+        </h2>
       </Fade>
       <Fade direction="" triggerOnce>
-        <p className="font-light text-lg text-gray-400 text-center mb-12">
+        <p className="font-light text-lg text-gray-400 text-center mb-6">
           Discover how Nube iO transforms building management across industries
         </p>
       </Fade>

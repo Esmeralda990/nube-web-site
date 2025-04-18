@@ -218,22 +218,22 @@ export const WorldSolutions = [
     id: "1",
     title: "Customise OEM solution",
     imageUrl: WorldSolutions1,
-    description: "Custom Hardware and Software for OEM Partners",
-    link: "https://dribbble.com/shots/15164950-Recruiting-app",
+    description: "Accelerate innovation with integrated OEM solutions.",
+    link: "/scenario2-oem/",
   },
   {
     id: "2",
     title: "IoT integrations",
     imageUrl: WorldSolutions2,
-    description: "Custom Hardware and Software for OEM Partners",
-    link: "https://dribbble.com/shots/15276430-Stream",
+    description: "Transform building data into actionable insights",
+    link: "/scenario1-integration/",
   },
   {
     id: "3",
     title: "Building Rating Systems",
     imageUrl: WorldSolutions3,
-    description: "Custom Hardware and Software for OEM Partners",
-    link: "https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept",
+    description: "Simplify building ratings for optimal compliance.",
+    link: "/scenario3-building/",
   },
 ];
 

@@ -78,7 +78,7 @@ const Casestudy2 = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
           <h1 className="mt-10 text-2xl md:text-4xl lg:text-6xl leading-tight  text-theme-blue font-bold ">
-            Galvin Engineering–Hospital Thermal Mixing Valve Monitoring
+            Hospital Thermal Valve Monitoring
           </h1>
         </div>
 

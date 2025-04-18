@@ -18,6 +18,7 @@ const Header1 = () => {
   const [secondLevelSubmenuOpen, setSecondLevelSubmenuOpen] = useState(false);
   const [otherSubmenuOpen, setOtherSubmenuOpen] = useState(false);
   const [thirdLevelSubmenuOpen, setThirdLevelSubmenuOpen] = useState(false);
+  const [ScenarioSubmenuOpen, setScenarioSubmenuOpen] = useState(false);
   const [LoraSubmenuOpen, setLoraSubmenuOpen] = useState(false);
   const [SoftSubmenuOpen, setSoftSubmenuOpen] = useState(false);
   const [ExpanSubmenuOpen, setExpanSubmenuOpen] = useState(false);
@@ -32,6 +33,10 @@ const Header1 = () => {
 
   const toggleSecondLevelSubmenu = () => {
     setSecondLevelSubmenuOpen((prev) => !prev);
+  };
+
+  const toggleScenarioSubmenu = () => {
+    setScenarioSubmenuOpen((prev) => !prev);
   };
 
   const toggleOtherSubmenu = () => {
@@ -216,12 +221,58 @@ const Header1 = () => {
                               Connectivity
                             </a>
                           </li>
+                        </ul>
+                      )}
+                    </li>
+
+                    <li className="relative">
+                      <button
+                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
+                        onClick={toggleScenarioSubmenu}
+                      >
+                        By Case Scenario
+                        <svg
+                          className={`w-4 h-4 transition-transform ${
+                            ScenarioSubmenuOpen ? "rotate-180" : ""
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </button>
+
+                      {ScenarioSubmenuOpen && (
+                        <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="/case-study/"
+                              href="/scenario1-integration/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              By Case Scenario
+                              By case scenarios 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/scenario2-oem/"
+                              className="text-gray-400 block px-6 py-2"
+                            >
+                              By case scenarios 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/scenario3-building/"
+                              className="text-gray-400 block px-6 py-2"
+                            >
+                              By case scenarios 3
                             </a>
                           </li>
                         </ul>
