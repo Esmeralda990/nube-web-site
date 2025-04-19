@@ -5,7 +5,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../elements/Button";
-import bgVideo from "../assets/Video/Homediss.webm";
+import bgVideo from "../assets/Video/Home-diss.webm";
 import CardImag from "../assets/images/hero/Card.svg";
 
 export default function Discuss() {
