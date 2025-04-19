@@ -8,14 +8,14 @@ import { Fade } from "react-awesome-reveal";
 export default function ServiceSolutions({ data }) {
   return (
     <div className="bg-gray-50">
-      <div className="container mx-auto max-w-screen-2xl pt-12 lg:pt-32 pb-32 px-8">
+      <div className="container mx-auto max-w-screen-2xl pt-16 pb-32 px-8">
         <Fade direction="" triggerOnce>
-          <h3 className="text-xl md:text-3xl text-theme-blue text-center font-bold mb-5">
+          <h3 className="text-xl md:text-3xl text-theme-blue text-center font-bold mb-6">
             Building Smarter, Thinking Forward
           </h3>
         </Fade>
         <Fade direction="" triggerOnce>
-          <p className="font-light text-xl text-gray-400 text-center mb-10">
+          <p className="font-light text-xl text-gray-400 text-center mb-20">
             Explore our tech for sustainable solutions to current and future
             challenges.
           </p>

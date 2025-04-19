@@ -20,14 +20,13 @@ const contactMethods = [
     icon: Phone,
     title: "Phone",
     description:
-      "Prefer to chat? Give us a call Monday–Friday, 9 AM–5 PM (PST).",
+      "Prefer to chat? Give us a call Monday–Friday, 8:30 AM– 4:30 PM.",
     contact: "+61 2 7906 8414",
   },
   {
     icon: Building,
     title: "Address",
-    description:
-      "Stop by our office @ 123 Productivity Ave, San Francisco, CA 94105",
+    description: "1/17 Cemetery Rd Helensburgh, NSW 2508, Australia",
   },
 ];
 
@@ -39,13 +38,16 @@ const ContactForm = () => {
     company: "",
     inquiry: "",
     message: "",
+    contactAgreement: false,
+    marketingAgreement: false,
   });
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
+    const { id, value, type, checked } = e.target;
     setFormData({
       ...formData,
       [id]: value,
+      [id]: type === "checkbox" ? checked : value,
     });
   };
 

@@ -13,7 +13,7 @@ const ScenarioBuild = () => {
         <div className="max-w-screen-xl mx-auto">
           <div className="relative flex flex-col gap-10 lg:flex-row lg:justify-between">
             <div className="lg:max-w-full">
-              <h1 className="text-3xl lg:text-6xl font-bold text-theme-blue">
+              <h1 className="text-3xl lg:text-7xl font-bold text-theme-blue leading-tight">
                 Building Rating Systems – Enhanced Compliance
               </h1>
               <p className="mt-2 text-lg text-gray-400 font-light">
@@ -29,7 +29,7 @@ const ScenarioBuild = () => {
                 className="my-8 aspect-video w-full rounded-lg object-cover"
               />
 
-              <div className="p-4 border border-gray-300 text-gray-400 rounded-xl mb-6 font-light">
+              <div className="p-4 border border-gray-300 text-gray-400 rounded-xl mb-6 font-light mt-20">
                 <div className="flex items-center gap-2 mb-1">
                   <Lightbulb className="w-5 h-5 text-theme-blue" />
                   <strong className="block mb-1 text-xl font-bold text-theme-blue">
@@ -45,9 +45,9 @@ const ScenarioBuild = () => {
               </div>
 
               <div className="prose max-w-none prose-lg">
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Challenges
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   The pressure to meet rating standards like NABERS or Green
                   Star has grown, but many buildings lack the automation and
@@ -81,9 +81,9 @@ const ScenarioBuild = () => {
                   </table>
                 </div>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Nube iO&apos;s Solution
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   Our technology provides a transparent, automated way to track
                   and report compliance performance across various building
@@ -103,9 +103,9 @@ const ScenarioBuild = () => {
                   </li>
                 </ul>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Implementation
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   Quick to deploy, Nube iO connects your building to smart
                   compliance tools without overhauling your systems.
@@ -129,9 +129,9 @@ const ScenarioBuild = () => {
                   </li>
                 </ul>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Results
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-8">
                   Building managers reduce risk, save time, and stay audit-ready
                   with always-on reporting and real-time data. By streamlining
@@ -140,9 +140,9 @@ const ScenarioBuild = () => {
                   maintain certification thresholds with confidence.
                 </p>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Future Outlook
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   Nube iO is committed to advancing compliance technology
                   through intelligence and automation. Our roadmap includes
@@ -173,11 +173,11 @@ const ScenarioBuild = () => {
                 size="sm"
                 href="/connectivity/"
                 type="link"
-                className="justify-center w-auto px-4 py-3 bg-white text-black border border-gray-500 text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="justify-center w-auto px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
               >
                 Nube IO cloud
               </Button>
-              <div className="my-5 border-t border-gray-300" />
+              <div className="my-8 border-t border-gray-300" />
               <p className="mb-6 text-lg font-bold text-theme-blue">
                 Want to learn more?
               </p>
@@ -191,8 +191,8 @@ const ScenarioBuild = () => {
               </Button>
             </div>
           </div>
-          <div className="mt-32 border border-gray-200 rounded-xl p-6 text-center shadow-sm max-w-4xl mx-auto">
-            <p className="mb-6 text-xl md:text-2xl font-light text-gray-600">
+          <div className="mt-32 border border-gray-200 rounded-xl p-6 text-center shadow-sm max-w-3xl mx-auto">
+            <p className="mb-6 text-lg md:text-xl font-light text-gray-400">
               &ldquo;We no longer fear the next NABERS audit—everything’s ready,
               and our score has improved significantly.&ldquo;
             </p>
@@ -205,10 +205,7 @@ const ScenarioBuild = () => {
               />
             </div>
 
-            <p className="font-semibold text-gray-800 text-lg">Samantha Lee</p>
-            <p className="text-sm text-gray-500 mb-2">
-              Facilities Manager at GreenCore
-            </p>
+            <p className="font-bold text-lg text-theme-blue">Samantha Lee</p>
 
             <div className="flex justify-center gap-1">
               <Star className="w-5 h-5 fill-yellow-400 stroke-none" />

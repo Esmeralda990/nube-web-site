@@ -13,7 +13,7 @@ const ScenarioIT = () => {
         <div className="max-w-screen-xl mx-auto">
           <div className="relative flex flex-col gap-10 lg:flex-row lg:justify-between">
             <div className="lg:max-w-full ">
-              <h1 className="text-3xl lg:text-6xl font-bold text-theme-blue">
+              <h1 className="text-3xl lg:text-7xl font-bold text-theme-blue leading-tight">
                 Smart Analytics for Better Buildings
               </h1>
               <p className="mt-2 text-lg text-gray-400 font-light">
@@ -30,10 +30,10 @@ const ScenarioIT = () => {
                 className="my-8 aspect-video w-full rounded-lg object-cover"
               />
 
-              <div className="p-4 border border-gray-300 text-gray-400 rounded-xl mb-6 font-light">
+              <div className="p-4 border border-gray-300 text-gray-400 rounded-xl mb-6 font-light mt-20 space-y-16">
                 <div className="flex items-center gap-2 mb-1">
                   <Lightbulb className="w-5 h-5 text-theme-blue" />
-                  <strong className="block mb-1 text-xl">
+                  <strong className="block mb-1 text-base lg:text-xl text-theme-blue">
                     {" "}
                     Who This Is For!
                   </strong>
@@ -45,11 +45,11 @@ const ScenarioIT = () => {
                 </span>
               </div>
 
-              <div className="prose max-w-none prose-lg">
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+              <div className="prose max-w-none prose-lg mt-20 ">
+                <h4 className="text-base lg:text-xl font-bold text-theme-teal mb-6">
                   Challenges
-                </h2>
-                <p className="text-lg font-light text-gray-400 mb-6">
+                </h4>
+                <p className="ext-base lg:text-lg font-light text-gray-400 mb-6">
                   Modern buildings generate vast amounts of data from various
                   systems, including HVAC, lighting, and energy management
                   tools. However, this data often remains trapped in isolated
@@ -83,15 +83,15 @@ const ScenarioIT = () => {
                   </table>
                 </div>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20 ">
                   Nube iO&apos;s Solution
-                </h2>
-                <p className="text-lg font-light text-gray-400 mb-6">
+                </h4>
+                <p className="text-base lg:text-lg  font-light text-gray-400 mb-6">
                   To unlock the value of building data, Nube iO delivers an
                   end-to-end platform that bridges the gap between disconnected
                   systems and actionable intelligence.
                 </p>
-                <ul className="list-disc pl-6 mb-8 text-gray-400 font-light text-lg">
+                <ul className="list-disc pl-6 text-gray-400 font-light text-base lg:text-lg">
                   <li>Unified data integration with Rubix Compute</li>
                   <li> Real-time insights via Rubix Platform</li>
                   <li>
@@ -100,9 +100,9 @@ const ScenarioIT = () => {
                   <li>Secure cloud access to data from any location</li>
                 </ul>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Implementation
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   With minimal disruption, Nube iO solutions can be installed
                   and scaled to suit both new and existing infrastructure.
@@ -126,9 +126,9 @@ const ScenarioIT = () => {
                   </li>
                 </ul>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Results
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-8">
                   Our solution empowers teams to make informed decisions,
                   optimize operations, and significantly reduce costs. By
@@ -138,9 +138,9 @@ const ScenarioIT = () => {
                   seamlessly to entire building portfolios.
                 </p>
 
-                <h2 className="text-2xl font-bold text-theme-teal mb-6">
+                <h4 className="text-xl font-bold text-theme-teal mb-6 mt-20">
                   Future Outlook
-                </h2>
+                </h4>
                 <p className="text-lg font-light text-gray-400 mb-6">
                   We&apos;re continuing to invest in new capabilities that help
                   buildings operate smarter and more sustainably. Our latest
@@ -170,7 +170,7 @@ const ScenarioIT = () => {
                 size="sm"
                 href="/connectivity/"
                 type="link"
-                className="justify-center w-auto px-4 py-3 bg-white text-black border border-gray-500 text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
+                className="justify-center w-auto px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
               >
                 Nube IO cloud
               </Button>
@@ -189,8 +189,8 @@ const ScenarioIT = () => {
             </div>
           </div>
         </div>
-        <div className="mt-32 border border-gray-200 rounded-xl p-6 text-center shadow-sm max-w-4xl mx-auto">
-          <p className="mb-6 text-xl md:text-2xl font-light text-gray-600">
+        <div className="mt-32 border border-gray-200 rounded-xl p-6 text-center shadow-sm max-w-3xl mx-auto">
+          <p className="mb-6 text-xl md:text-xl font-light text-gray-400">
             &ldquo;With Nube iO, we finally have a live view into how our
             buildings breathe saving us energy and giving us control we
             didn&apos;t have before&ldquo;
@@ -204,10 +204,7 @@ const ScenarioIT = () => {
             />
           </div>
 
-          <p className="font-semibold text-gray-800 text-lg">Samantha Lee</p>
-          <p className="text-sm text-gray-500 mb-2">
-            Facilities Manager at GreenCore
-          </p>
+          <p className="font-bold text-lg text-theme-blue">Samantha Lee</p>
 
           <div className="flex justify-center gap-1">
             <Star className="w-5 h-5 fill-yellow-400 stroke-none" />

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section {
-  @apply mb-28;
+  @apply mb-40;
 }
 
 .active-link {

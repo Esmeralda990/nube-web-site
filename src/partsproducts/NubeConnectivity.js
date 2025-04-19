@@ -14,7 +14,7 @@ const NubeConect = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 ml-0 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-5xl mt-4 text-theme-blue font-bold lg:text-7xl text-center">
           Connectivity Overview
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
@@ -41,10 +41,10 @@ const NubeConect = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h2 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-lg lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
                 CLOUD SERVICES
-              </h2>
-              <p className="font-light text-lg text-gray-400 mb-10">
+              </h3>
+              <p className="font-light text-lg text-gray-400 mb-6">
                 Cloud services for managing connected devices
               </p>
               <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
@@ -71,7 +71,7 @@ const NubeConect = () => {
                   data collection
                 </li>
               </ul>
-              <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h1 className="text-lg lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
                 VPN
               </h1>
               <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
@@ -87,9 +87,9 @@ const NubeConect = () => {
           </div>
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
-            <h2 className="text-2xl font-bold mt-2 mb-4 text-theme-blue">
-              Portfolio Management
-            </h2>
+            <h3 className="text-lg lg:text-2xl  font-bold mt-2 mb-4 text-theme-blue">
+              PORTFOLIO MANAGEMENT
+            </h3>
 
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
               Nube iO hardware can be connected to the Nube iO dashboard – a
@@ -102,16 +102,16 @@ const NubeConect = () => {
               support for any number of buildings or devices.
             </p>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+            <h3 className="text-lg lg:text-2xl  font-bold mt-8 mb-6 text-theme-blue">
               DATABASE
-            </h1>
-            <p className="font-light text-lg text-gray-400 mb-10">
+            </h3>
+            <p className="font-light text-lg text-gray-400 mb-4">
               To measure change over time, sensor data is stored in a time
               serial database.
             </p>
-            <ul className="text-muted-foreground font-light text-lg text-gray-400 list-inside">
+            <ul className="text-muted-foreground font-light text-lg text-gray-400 list-inside mb-4">
               <li>
-                <span className="text-theme-teal">&#10003;</span> Inbuilt
+                <span className="text-theme-teal ">&#10003;</span> Inbuilt
                 Rest-API to access data
               </li>
               <li>
@@ -127,9 +127,9 @@ const NubeConect = () => {
                 VPN certificates
               </li>
             </ul>
-            <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+            <h3 className="text-lg lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
               Securely Manage on Mass
-            </h1>
+            </h3>
             <ul className="text-muted-foreground font-light text-gray-400 text-lg list-inside">
               <li>
                 <span className="text-theme-teal">&#10003;</span> Manage all

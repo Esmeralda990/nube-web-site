@@ -10,12 +10,12 @@ const Partner = () => {
   return (
     <section className="container mx-auto max-w-screen-2xl flex flex-col items-center lg:mt-28 lg:mb-40 mb-12 px-6">
       <Fade direction="" triggerOnce>
-        <h1 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6 mb-8">
+        <h2 className="text-3xl lg:text-5xl text-theme-blue text-center font-bold px-6 mb-8">
           How We Support Our Partners
-        </h1>
+        </h2>
       </Fade>
       <Fade direction="" triggerOnce>
-        <p className="font-light text-lg text-gray-400 text-center max-w-5xl">
+        <p className="font-light text-base lg:text-lg  text-gray-400 text-center max-w-5xl">
           We foster strong partner relationships through dedicated support,
           expert technical access, collaborative marketing, and continuous
           training. This ensures seamless project implementation, maximized
@@ -34,7 +34,9 @@ const Partner = () => {
                 className="w-full object-cover rounded-t-lg h-64 md:h-30 lg:h-30 transition-transform duration-300 hover:scale-105"
               />
               <div className="p-6">
-                <h3 className="mb-2.5 font-bold md:text-xl">{item.title}</h3>
+                <h4 className="mb-2.5 font-bold text-base lg:text-xl text-theme-teal">
+                  {item.title}
+                </h4>
                 <p className="font-light text-gray-400">{item.description}</p>
               </div>
             </div>

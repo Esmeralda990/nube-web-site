@@ -10,14 +10,14 @@ export default function Advantage({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="pb-24 sm:mb-18 xl:mb-32 lg:px-16 xl:px-32 px-6 ">
-      <div className="container mx-auto max-w-screen-lg flex flex-col gap-16">
+    <div className="mb-24 xl:px-32 px-6 ">
+      <div className="container mx-auto max-w-screen-xl flex flex-col gap-16">
         <Fade direction="" triggerOnce>
           <div className="lg:max-w-sm">
             <h2 className="text-3xl md:text-5xl text-theme-blue font-bold mb-5 ">
               Why Nube iO?
             </h2>
-            <p className="font-light text-lg text-muted-foreground text-gray-400 mb-3 md:mb-4 md:text-xl lg:mb-6 ">
+            <p className="font-light  text-base lg:text-lg  text-muted-foreground text-gray-400 mb-3 md:mb-4 lg:mb-6 ">
               Innovative, Scalable, and Sustainable Solutions for Smarter
               Building Management
             </p>
@@ -44,10 +44,10 @@ export default function Advantage({ data }) {
                 </div>
 
                 <div className="px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12 flex-1 flex flex-col">
-                  <h3 className="mb-3 text-lg font-bold md:mb-4 md:text-2xl lg:mb-6 text-theme-blue">
+                  <h3 className="mb-3 text-lg lg:text-2xl font-bold md:mb-4 lg:mb-6 text-theme-blue">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground lg:text-base font-light text-gray-400">
+                  <p className="text-muted-foreground text-base lg:text-lg font-light text-gray-400 ">
                     {item.description}
                   </p>
                 </div>

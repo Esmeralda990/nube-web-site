@@ -8,12 +8,12 @@ import GrowthImage from "../assets/images/Dashboard/DashboardPrincipal.png";
 
 export default function SoftwareSolutions() {
   return (
-    <div className="flex flex-col overflow-hidden w-full px-4">
+    <div className="flex flex-col overflow-hidden w-full px-4 mb-32">
       <ContainerScroll titleComponent={<div />}>
         <img
           src={GrowthImage}
           alt="Dashboard app"
-          className="rounded-2xl object-cover h-full w-full object-center responsive-image object-contain"
+          className="rounded-2xl object-cover h-full w-full object-center responsive-image object-contain "
           height={820}
           width={1800}
           draggable={false}

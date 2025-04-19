@@ -10,10 +10,10 @@ const Why = () => {
     <section className="py-12 mb-12 px-8 ">
       <div className="container mx-auto max-w-screen-lg">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
-          <h2 className="mb-2 text-center text-2xl  md:text-3xl lg:text-5xl font-bold text-theme-blue">
+          <h2 className="mb-2 text-center text-3xl lg:text-5xl font-bold text-theme-blue">
             Why Partner With Us
           </h2>
-          <p className="text-center font-light lg:text-lg text-gray-400">
+          <p className="text-center font-light text-base lg:text-lg text-gray-400">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
             itaque modi quos hic placeat laudantium inventore reiciendis
             cupiditate, facilis aliquam.
@@ -35,7 +35,9 @@ const Why = () => {
                 }`}
               />
               <div className="px-4 pt-10">
-                <h3 className="font-bold text-theme-teal">{item.title}</h3>
+                <h4 className="font-bold text-theme-teal text-base lg:text-xl mb-4">
+                  {item.title}
+                </h4>
                 <p className="text-base font-light text-gray-400">
                   {item.description}
                 </p>

@@ -6,7 +6,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Fade } from "react-awesome-reveal";
-import heroDemo from "assets/images/hero/Get Demo.png";
+import heroDemo from "assets/images/hero/Partners.png";
 import Button from "../elements/Button/index";
 
 const HeroDemo = () => {

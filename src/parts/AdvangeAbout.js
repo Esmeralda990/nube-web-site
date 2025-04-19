@@ -12,13 +12,13 @@ const AdvAbout = () => {
   const [cardNumber, setCardNumber] = useState(0);
 
   return (
-    <section className="lg:py-32 pt-20 mb-1">
-      <div className="container mx-auto max-w-screen-lg px-8 ">
-        <div className="mb-20 max-w-lg ">
+    <section className="pt-20 mb-1 px-8 ">
+      <div className="container mx-auto max-w-screen-xl ">
+        <div className="mb-20 max-w-md ">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
           </h2>
-          <p className="text-lg md:text-xl font-light text-gray-400">
+          <p className="text-base lg:text-lg  font-light text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
             cupiditate commodi vitae nostrum facilis qui?
           </p>
@@ -52,7 +52,7 @@ const AdvAbout = () => {
                     item.logo
                   )}
                 </span>
-                <h4 className="text-lg font-semibold text-theme-teal">
+                <h4 className=" text-base lg:text-xl font-semibold text-theme-teal">
                   {item.title}
                 </h4>
               </div>

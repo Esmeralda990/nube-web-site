@@ -37,8 +37,8 @@ const Ourstory = () => {
   const items = OurStoryD.flat();
 
   return (
-    <section className="lg:py-32 pb-4 px-6 md:pb-28">
-      <div className="max-w-screen-2xl mx-auto">
+    <section className="mt-12 pb-4 px-6 md:pb-24">
+      <div className="max-w-screen-xl mx-auto">
         <div className="mx-auto flex flex-col items-center gap-6 justify-center">
           <h2 className="text-balance text-2xl md:text-5xl font-bold text-theme-blue">
             Our Story
@@ -73,7 +73,7 @@ const Ourstory = () => {
         <div
           ref={scrollContainerRef}
           onScroll={updateScrollState}
-          className="flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar md:px-40 px-12"
+          className="flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar lg:px-56 px-12"
         >
           {items.map((item, idx) => (
             <div
