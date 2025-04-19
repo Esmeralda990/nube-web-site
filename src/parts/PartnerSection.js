@@ -8,8 +8,8 @@ import Button from "../elements/Button/index";
 
 const Partners = () => {
   return (
-    <section className="py-12 px-6">
-      <div className=" container mx-auto pb-24">
+    <section className="py-32 px-6">
+      <div className=" container mx-auto pb-24 max-w-screen-xl">
         <a
           href="/partners/"
           className="mx-auto mb-4 flex w-fit items-center rounded-full bg-muted px-4 py-2 text-sm border border-theme-teal"
@@ -21,7 +21,7 @@ const Partners = () => {
         <h2 className=" mb-6 text-center text-3xl font-bold lg:text-5xl xl:pl-4 text-theme-blue">
           Collaborating for Innovation
         </h2>
-        <p className="mx-auto mb-10 max-w-3xl text-base text-center font-light text-gray-400 text-muted-foreground lg:text-xl">
+        <p className="mx-auto mb-10 text-base lg:text-lg  text-center font-light text-gray-400 text-muted-foreground">
           At Nube iO, we believe great solutions come from strong partnerships.
           We proudly collaborate with industry leaders, innovative technology
           providers, and trusted service companies to deliver unmatched value to

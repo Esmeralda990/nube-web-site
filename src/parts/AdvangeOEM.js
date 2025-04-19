@@ -7,7 +7,7 @@ export default function AdvantageSolutions({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-white lg:py-24 mb-12 lg:mb-16 pt-12 lg:pt-32">
+    <div className="bg-white lg:py-24 pt-12 mb-12 lg:mb-16 ">
       <div className="container mx-auto max-w-screen-2xl px-12">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
@@ -21,9 +21,9 @@ export default function AdvantageSolutions({ data }) {
                 alt={item.title}
               />
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <h3 className="font-bold text-xl mb-2 text-theme-blue text-center">
+                <h4 className="font-bold text-base lg:text-xl mb-2 text-theme-blue text-center">
                   {item.title}
-                </h3>
+                </h4>
               </div>
 
               <div className="px-6 pb-5">

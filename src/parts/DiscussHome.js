@@ -5,7 +5,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../elements/Button";
-import bgVideo from "../assets/Video/HOMEDiss.webm";
+import bgVideo from "../assets/Video/Homediss.webm";
 import CardImag from "../assets/images/hero/Card.svg";
 
 export default function Discuss() {
@@ -17,7 +17,7 @@ export default function Discuss() {
         loop
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src={bgVideo} type="video/mp4" />
+        <source src={bgVideo} type="video/webm" />
       </video>
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-4 py-20 md:p-40 mt-8">
         <div className="w-full md:w-1/2 text-center md:text-left text-theme-blue">

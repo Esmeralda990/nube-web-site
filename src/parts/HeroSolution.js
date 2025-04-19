@@ -13,10 +13,10 @@ export default function HeroSolutions() {
   return (
     <section className="container mx-auto max-w-screen-2xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-20">
       <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 lg:text-left">
-        <h1 className="text-4xl md:text-6xl text-theme-blue font-bold leading-tight mb-5">
-          Empowering Comprehensive Automation Solutions.
+        <h1 className="text-5xl md:text-7xl text-theme-blue font-bold leading-tight mb-5">
+          Empowering Smart Automation
         </h1>
-        <p className="font-light text-xl text-gray-400 leading-relaxed">
+        <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed">
           Tailored services and advanced technology to meet your space
           management needs.
         </p>

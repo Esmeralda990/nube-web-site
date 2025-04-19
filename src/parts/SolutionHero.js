@@ -11,17 +11,17 @@ const WorldSolution = () => {
   return (
     <section className="container mx-auto max-w-screen-xl flex flex-col items-center lg:mb-40 px-6">
       <Fade direction="" triggerOnce>
-        <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6 mb-8">
+        <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6 mb-6">
           Real-World Solutions, Powered by Nube iO
         </h2>
       </Fade>
       <Fade direction="" triggerOnce>
-        <p className="font-light text-lg text-gray-400 text-center mb-6">
+        <p className="font-light text-lg text-gray-400 text-center mb-20">
           Discover how Nube iO transforms building management across industries
         </p>
       </Fade>
 
-      <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 lg:gap-10">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 lg:gap-10">
         {WorldSolutions.map((item, index) => (
           <Fade direction="" triggerOnce key={index}>
             <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden">

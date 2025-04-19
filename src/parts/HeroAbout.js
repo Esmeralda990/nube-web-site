@@ -23,7 +23,7 @@ export default function HeroAbout() {
             </span>
           </a>
           <Fade direction="" triggerOnce>
-            <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 ">
+            <h1 className="text-5xl lg:text-7xl text-theme-blue font-bold leading-tight mb-5 ">
               Innovating the Future of Smart Automation
             </h1>
           </Fade>

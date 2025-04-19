@@ -6,9 +6,9 @@ import { Logos } from "../json/landingPageData.js";
 
 const Logos3 = ({ heading, description, logos = Logos }) => {
   return (
-    <section className="lg:py-12 ">
-      <div className="ccontainer mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h2 className="text-2xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
+    <section className="lg:py-32">
+      <div className="container mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
+        <h2 className="text-3xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
           {heading}
         </h2>
         <p className="font-light text-lg text-gray-400 text-center mb-10 lg:text-center">
@@ -18,7 +18,7 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
 
       <div
         className="relative mx-auto overflow-hidden"
-        style={{ paddingTop: "2 rem", maxWidth: "80%" }}
+        style={{ paddingTop: "2 rem", maxWidth: "70%" }}
       >
         {" "}
         <div

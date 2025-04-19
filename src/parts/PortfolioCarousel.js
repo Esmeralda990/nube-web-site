@@ -17,7 +17,7 @@ import Button from "../elements/Button";
 export default function PorfolioCarousel() {
   return (
     <>
-      <div className="w-full mb-20 md:mt-24">
+      <div className="w-full">
         <Logos3
           heading="Customer Suceess Stories"
           description="All of our 500+ Clients are happy"
@@ -38,13 +38,13 @@ export default function PorfolioCarousel() {
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <section className="container mx-auto px-4  max-w-screen-2xl ">
+            <section className="container mx-auto px-4 max-w-screen-xl">
               <div className="flex flex-col-reverse md:flex-row items-center gap-10">
                 <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2 flex flex-col justify-center items-start px-4">
-                  <h2 className="text-3xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-5">
+                  <h2 className="text-3xl lg:text-5xl text-theme-blue text-left font-bold leading-tight mb-5">
                     {slide.title}
                   </h2>
-                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-16">
+                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12">
                     {slide.description}
                   </p>
                   <Fade delay={200} triggerOnce>
@@ -63,7 +63,7 @@ export default function PorfolioCarousel() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full max-w-lg sm:max-w-lg md:max-w-2xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain transition-all  duration-300 xl:ml-48  lg:ml-28  md:ml-20  ml-0"
+                      className="w-full max-w-lg sm:max-w-lg md:max-w-2xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain transition-all  duration-300 xl:ml-48  lg:ml-28  md:ml-20 "
                       style={{ maxHeight: "100%", objectFit: "contain" }}
                     />
                   </Fade>

@@ -16,7 +16,7 @@ export default function Hero() {
     <>
       <section className="container mx-auto max-w-screen-2xl flex flex-col lg:flex-row px-8">
         <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center xl:items-start sm:flex-row">
-          <h1 className="text-4xl md:text-6xl max-w-xl text-theme-blue font-bold leading-tight mb-5">
+          <h1 className="text-4xl md:text-7xl max-w-xl text-theme-blue font-bold leading-tight mb-5">
             Our Trusted Partners <br />
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-12">

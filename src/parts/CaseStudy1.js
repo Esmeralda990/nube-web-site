@@ -72,7 +72,7 @@ const Casestudy = () => {
     <section className="lg:py-24 max-w-screen-2xl mx-auto px-8 ">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
-          <h1 className="mt-10 text-3xl md:text-4xl lg:text-6xl leading-tight text-theme-blue font-bold ">
+          <h1 className="mt-10 text-3xl md:text-5xl lg:text-7xl leading-tight text-theme-blue font-bold ">
             OEM Solution for Fujitsu AnywAIR iO
           </h1>
         </div>
@@ -145,7 +145,7 @@ const Casestudy = () => {
         <main className="w-full lg:w-3/4">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-x-10 rounded-3xl border p-6 lg:border-none lg:p-0 w-full">
             <div>
-              <h3 className="text-xl font-bold text-theme-teal">Objective</h3>
+              <h4 className="text-xl font-bold text-theme-teal">Objective</h4>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
                 Offer a scalable, reliable, and real-time monitoring-ready
                 solution.
@@ -153,7 +153,7 @@ const Casestudy = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-theme-teal">Solution </h3>
+              <h4 className="text-xl font-bold text-theme-teal">Solution </h4>
               <p className="mt-3 text-muted-foreground font-light text-gray-400 text-lg">
                 Direct and easy integration between Fujitsu HVAC and BMS systems
                 with AnywAIR iO.
@@ -165,9 +165,9 @@ const Casestudy = () => {
             </div>
 
             <div className="col-span-1 lg:col-span-2 border-t pt-10">
-              <h3 className="text-xl font-bold text-theme-teal">
+              <h4 className="text-xl font-bold text-theme-teal">
                 Implementation
-              </h3>
+              </h4>
               <ul className="mt-4 grid gap-x-10 gap-y-3 lg:grid-cols-2">
                 <li className="flex gap-3">
                   <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-theme-teal" />
@@ -200,9 +200,9 @@ const Casestudy = () => {
                 ref={(ref) => addSectionRef(id, ref)}
                 className="prose max-w-none scroll-mt-28"
               >
-                <h3 className="text-theme-teal font-light text-xl mb-6">
+                <h4 className="text-theme-teal font-light text-xl mb-6">
                   {title}
-                </h3>
+                </h4>
                 <p className="text-gray-400 font-light text-lg mb-8">
                   {description}
                 </p>
