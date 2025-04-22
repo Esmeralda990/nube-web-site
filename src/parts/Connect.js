@@ -23,15 +23,15 @@ const Connect = () => {
       <div className="flex flex-col rounded-lg overflow-hidden border-2 border-gray-100 bg-accent p-4">
         <div className="flex h-full flex-col justify-between gap-4 rounded-lg bg-background p-4">
           <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-snug">
-            Bring it all together
+            Bring all together
           </h2>
           <p className="font-light text-base lg:text-lg text-gray-400 text-center mb-3">
-            With our universal connectivity solution, you can quickly regain
-            control of a building, whatever its size, condition.
+            One platform to connect, visualise, and manage every system,
+            protocol, and device—from edge to cloud.
           </p>
           <div className="relative mx-auto w-full max-w-full overflow-hidden  z-10">
             <div className="flex animate-scroll-left justify-start gap-4">
-              {[...Badges.slice(0, 7), ...Badges.slice(0, 7)].map((item) => (
+              {[...Badges.slice(0, 5), ...Badges.slice(0, 5)].map((item) => (
                 <div
                   key={uuidv4()}
                   className="flex h-12 items-center justify-center rounded-full bg-gray-100 px-5  py-2 shadow-sm"
@@ -45,7 +45,7 @@ const Connect = () => {
           </div>
           <div className="relative mx-auto w-full max-w-full  px-6 overflow-hidden z-10">
             <div className="flex animate-scroll-right justify-start gap-4">
-              {[...Badges.slice(8, 13), ...Badges.slice(8, 13)].map((item) => (
+              {[...Badges.slice(6, 11), ...Badges.slice(6, 11)].map((item) => (
                 <div
                   key={uuidv4()}
                   className="flex h-20 md:h-32 items-center justify-center px-4 py-2"

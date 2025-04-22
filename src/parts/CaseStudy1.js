@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../assets/images/LogoNube.png";
-import ImgLogo from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+import ImgLogo from "../assets/images/CaseStudy/Fujitsu_Blanc.png";
 
 const Casestudy = () => {
   const [activeSection, setActiveSection] = useState(null);
