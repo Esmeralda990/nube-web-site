@@ -13,8 +13,8 @@ const sections = [
       { name: "Our Story", href: "/ourstory/" },
       { name: "Solutions", href: "/solutions/" },
       { name: "Partners", href: "/partners/" },
-      { name: "FAQs", href: "/FAQs/" },
-      { name: "Contact", href: "/contact-us/" },
+      { name: "Software", href: "/software-rubix-platform/" },
+      { name: "Products", href: "/rubix-compute/" },
     ],
   },
   {
@@ -47,13 +47,13 @@ const Footer7 = () => {
                   <img src={logo} alt="Nube Logo" className="h-11" />
                 </span>
                 <p className="mt-6 text-sm text-gray-500">
-                  Nube iO is a manufacturer of IoT devices used to create smart
-                  buildings. This solution was developed in response to key
-                  industry issues such as shortage of low-cost solutions for
-                  small buildings, outdated technology and limited wireless
-                  hardware that can integrate with legacy systems. Nube iO now
-                  provides a technology bridge that is both IoT ready and
-                  building automation ready
+                  Nube iO’s mission is to push the boundaries of traditional
+                  building automation. Our systems do more than just
+                  automate—they optimise every aspect of building management,
+                  from energy efficiency to occupant comfort. By leveraging
+                  cutting-edge IoT technology, Nube iO creates environments that
+                  are smarter, safer, and more sustainable, perfectly aligning
+                  with the growing demand for eco-friendly infrastructure.
                 </p>
               </div>
             </div>

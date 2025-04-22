@@ -5,6 +5,7 @@ import React from "react";
 import { ArrowRight, Lightbulb, Star } from "lucide-react";
 import Button from "../elements/Button/index.js";
 import Logo from "../assets/images/LogoNube.png";
+import ImgLogo from "../assets/images/WorldSolutions/Customise.webp";
 
 const ScenarioOEM = () => {
   return (
@@ -24,7 +25,7 @@ const ScenarioOEM = () => {
                 competitiveness, and provide robust, scalable market solutions.
               </p>
               <img
-                src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+                src={ImgLogo}
                 alt="placeholder"
                 className="my-8 aspect-video w-full rounded-lg object-cover"
               />

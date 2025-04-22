@@ -19,11 +19,10 @@ const AdvAbout = () => {
             Who We Are
           </h2>
           <p className="text-base lg:text-lg  font-light text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            cupiditate commodi vitae nostrum facilis qui?
+            We’re a technology company redefining how spaces are
+            managed—intuitive, connected, and built for the future.
           </p>
         </div>
-
         <div className="mb-14 grid h-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
           {advantages.map((item, index) => (
             <div
@@ -40,8 +39,8 @@ const AdvAbout = () => {
                 cardNumber === index ? "opacity-100" : "opacity-50"
               } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-300`}
             >
-              <div className="mb-2 flex items-center gap-2 ">
-                <span className="w-5 h-5 flex-shrink-0">
+              <div className="flex flex-col items-start gap-2 text-left">
+                <div className="w-6 h-6 mb-1">
                   {typeof item.logo === "string" ? (
                     <img
                       src={item.logo}
@@ -51,14 +50,14 @@ const AdvAbout = () => {
                   ) : (
                     item.logo
                   )}
-                </span>
-                <h4 className=" text-base lg:text-xl font-semibold text-theme-teal">
+                </div>
+                <h4 className="text-base lg:text-lg font-semibold text-theme-teal">
                   {item.title}
                 </h4>
+                <p className="text-base font-light text-gray-500">
+                  {item.description}
+                </p>
               </div>
-              <p className="text-base font-light text-gray-500">
-                {item.description}
-              </p>
             </div>
           ))}
         </div>

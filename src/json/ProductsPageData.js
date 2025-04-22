@@ -73,10 +73,10 @@ import RubixConnect from "../assets/images/RubixLW/RC-LW.png";
 import RubixConnect2 from "../assets/images/RubixLW/Lw2.png";
 
 // Case Blog
-import Img1 from "../assets/images/CaseStudy/Galvin_Color.png";
+import Img1 from "../assets/images/CaseStudy/Galvin_Colo.png";
 import Img2 from "../assets/images/CaseStudy/Eviro_Color.png";
 import Img3 from "../assets/images/CaseStudy/Daikin_Color.png";
-import Img4 from "../assets/images/CaseStudy/Fujitsu_Color.png";
+import Img4 from "../assets/images/CaseStudy/Fujitsu_Colo.png";
 
 export const RubixCompute = [
   {

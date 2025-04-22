@@ -37,10 +37,14 @@ import Sustainability from "../assets/images/Advantages/Sustainability.webp";
 import Insights from "../assets/images/Advantages/Real.webp";
 
 // AdvangeAbout
-import Company from "../assets/images/AdvangesAbout/CompanyOverview.webp";
+import Company from "../assets/images/AdvangesAbout/S1.png";
 import Growth from "../assets/images/AdvangesAbout/GrowthSustantibily.webp";
 import Excellence from "../assets/images/AdvangesAbout/CommitmenttoExcellent.webp";
 import Solutions from "../assets/images/AdvangesAbout/SmartTecnology.webp";
+import IconsCom from "../assets/images/AdvangesAbout/IconsCom.png";
+import IconsGro from "../assets/images/AdvangesAbout/ IconsGro.png";
+import IconsExc from "../assets/images/AdvangesAbout/ IconsCom.png";
+import IconsSol from "../assets/images/AdvangesAbout/GroupExc.png";
 
 // Service Solutions
 import Client from "../assets/images/ServiceSolutions/Client.webp";
@@ -239,7 +243,7 @@ export const WorldSolutions = [
 
 export const Badges = [
   {
-    title: "BACnet",
+    title: "BACnet®",
     className: "size-1",
   },
   {
@@ -247,23 +251,15 @@ export const Badges = [
     className: "size-1",
   },
   {
-    title: "REST",
-    className: "size-1",
-  },
-  {
-    title: "MQTT",
-    className: "size-1",
-  },
-  {
     title: "Serial",
     className: "size-1",
   },
   {
-    title: "LoRa",
+    title: "LoRa®",
     className: "size-1",
   },
   {
-    title: "LoRaWAN",
+    title: "LoRaWAN®",
     className: "size-1",
   },
   {
@@ -331,7 +327,7 @@ export const AdvantageAbout = [
   [
     {
       image: Company,
-      logo: Iconshard1,
+      logo: IconsCom,
       title: "Company Overview",
       description:
         "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. ",
@@ -340,21 +336,21 @@ export const AdvantageAbout = [
       title: "Growth and Sustainability ",
       description:
         "Nube iO started in Australia and has grown into a global leader in smart technology. ",
-      logo: Iconshard2,
+      logo: IconsGro,
       image: Growth,
     },
     {
       title: "Commitment to Excellence",
       description:
         "At Nube iO, we provide innovative technology and expert services to drive success.",
-      logo: Iconshard3,
+      logo: IconsExc,
       image: Excellence,
     },
     {
-      title: "Expertise in Smart Technology Solutions",
+      title: "Technology Solutions",
       description:
         "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions . ",
-      logo: Iconshard1,
+      logo: IconsSol,
       image: Solutions,
     },
   ],

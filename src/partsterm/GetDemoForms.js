@@ -127,7 +127,7 @@ const GetD = () => {
           <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-10 h-full px-4">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
-                <div className="grid w-full items-center gap-3 font-light">
+                <div className="grid w-full items-center gap-3 font-bold">
                   <label htmlFor="name">Name *</label>
                   <input
                     type="text"
@@ -139,7 +139,7 @@ const GetD = () => {
                     required
                   />
                 </div>
-                <div className="grid w-full items-center gap-3 font-light">
+                <div className="grid w-full items-center gap-3 font-bold">
                   <label htmlFor="email">Email *</label>
                   <input
                     type="email"
@@ -153,7 +153,7 @@ const GetD = () => {
                 </div>
               </div>
 
-              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-light">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold">
                 <label htmlFor="company">Company/Organization* </label>
                 <input
                   type="text"
@@ -166,7 +166,7 @@ const GetD = () => {
                 />
               </div>
 
-              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-light">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold">
                 <label htmlFor="phone">Phone </label>
                 <input
                   type="tel"
@@ -179,10 +179,7 @@ const GetD = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="inquiry"
-                  className="font-light mb-6 mt-6 gap-3 "
-                >
+                <label htmlFor="inquiry" className="font-bold mb-6 mt-6 gap-3 ">
                   What would you like to see in the demo *
                 </label>
                 <select
@@ -210,7 +207,7 @@ const GetD = () => {
               </div>
 
               <div className="grid w-full items-center gap-3  mb-6 mt-6">
-                <label htmlFor="message" className="mb-2.5 font-light">
+                <label htmlFor="message" className="mb-2.5 font-bold">
                   Preferred date or time
                 </label>
                 <textarea

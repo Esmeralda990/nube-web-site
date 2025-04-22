@@ -120,7 +120,7 @@ const ContactForm = () => {
           <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-10 h-full mt-8 md:mt-48">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
-                <div className="grid w-full items-center gap-3 font-light">
+                <div className="grid w-full items-center gap-3 font-bold">
                   <label htmlFor="name">Name *</label>
                   <input
                     type="text"
@@ -132,7 +132,7 @@ const ContactForm = () => {
                     required
                   />
                 </div>
-                <div className="grid w-full items-center gap-3 font-light">
+                <div className="grid w-full items-center gap-3 font-bold">
                   <label htmlFor="email">Email *</label>
                   <input
                     type="email"
@@ -146,7 +146,7 @@ const ContactForm = () => {
                 </div>
               </div>
 
-              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-light">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold">
                 <label htmlFor="company">Company/Organization</label>
                 <input
                   type="text"
@@ -159,10 +159,7 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="inquiry"
-                  className="font-light mb-6 mt-6 gap-3 "
-                >
+                <label htmlFor="inquiry" className="font-light mb-6 mt-6 gap-3">
                   Tell us about your inquiry *
                 </label>
                 <select
@@ -184,7 +181,7 @@ const ContactForm = () => {
               </div>
 
               <div className="grid w-full items-center gap-3  mb-6 mt-6">
-                <label htmlFor="message" className="mb-2.5 font-light">
+                <label htmlFor="message" className="mb-2.5 font-bold">
                   Message
                 </label>
                 <textarea

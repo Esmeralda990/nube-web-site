@@ -4,7 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable comma-dangle */
 import React, { useRef, useState, useEffect } from "react";
-import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { OurStoryD } from "../json/landingPageData.js";
 
 const Ourstory = () => {
@@ -44,18 +44,10 @@ const Ourstory = () => {
             Our Story
           </h2>
           <p className="text-muted-foreground max-w-screen-md text-lg text-gray-400 font-light text-center">
-            At Nube iO, we’re revolutionising automation, remote monitoring, and
-            intelligent infrastructure. With over 14 years of experience, our
-            team leads the way in developing advanced software and hardware to
-            meet the challenges of a rapidly changing world.
+            From our roots in system integration to becoming a global tech
+            innovator, Nube iO’s journey is driven by purpose, progress, and
+            possibilities.
           </p>
-          <a
-            href="/get-demo/"
-            className="flex items-center gap-1 text-lg text-theme-teal"
-          >
-            Get Demo
-            <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
-          </a>
         </div>
       </div>
 

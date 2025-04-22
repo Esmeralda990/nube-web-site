@@ -691,3 +691,21 @@ header {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.scroll-on-hover {
+  overflow-x: hidden;
+}
+
+.scroll-on-hover:hover {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.scroll-on-hover::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-on-hover::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}

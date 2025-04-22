@@ -38,9 +38,9 @@ export default function PorfolioCarousel() {
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <section className="container mx-auto px-4 max-w-screen-xl">
+            <section className="container mx-auto px-4 md:mt-12">
               <div className="flex flex-col-reverse md:flex-row items-center gap-10">
-                <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2 flex flex-col justify-center items-start px-4">
+                <div className="w-full lg:w-1/2 xl:pl-0 sm:pr-2 mt-2 flex flex-col justify-center items-start lg:ml-28">
                   <h2 className="text-3xl lg:text-5xl text-theme-blue text-left font-bold leading-tight mb-5">
                     {slide.title}
                   </h2>
@@ -63,7 +63,7 @@ export default function PorfolioCarousel() {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full max-w-lg sm:max-w-lg md:max-w-2xl lg:max-w-2xl xl:max-w-3xl h-auto object-contain transition-all  duration-300 xl:ml-48  lg:ml-28  md:ml-20 "
+                      className="w-full max-w-lg md:max-w-3xl lg:max-w-3xl xl:max-w-3xl h-auto object-contain transition-all duration-300 xl:ml-48 lg:ml-28 md:ml-24 "
                       style={{ maxHeight: "100%", objectFit: "contain" }}
                     />
                   </Fade>

@@ -13,9 +13,9 @@ export default function TeamSection() {
           Meet our team
         </h2>
         <p className="mb-8 max-w-4xl text-muted-foreground font-light text-gray-400 lg:text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
-          doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur.
-          Explicabo.
+          Behind every solution is a passionate team of innovators, engineers,
+          and leaders driving Nube iO’s vision forward—one smart space at a
+          time.
         </p>
       </div>
       <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4 grid-cols-auto-fit lg:px-32">

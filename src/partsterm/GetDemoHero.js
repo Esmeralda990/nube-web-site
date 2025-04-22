@@ -6,7 +6,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Fade } from "react-awesome-reveal";
-import heroDemo from "assets/images/hero/Partners.png";
+import heroDemo from "assets/images/hero/Get Demo.png";
 import Button from "../elements/Button/index";
 
 const HeroDemo = () => {
@@ -14,7 +14,7 @@ const HeroDemo = () => {
     <section className="py-32 px-8">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:text-left">
         <div className="lg:w-1/2 lg:text-left">
-          <Fade direction="up" triggerOnce delay={200}>
+          <Fade triggerOnce delay={200}>
             <a
               href="/solutions/"
               className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
@@ -26,14 +26,14 @@ const HeroDemo = () => {
             </a>
           </Fade>
 
-          <Fade direction="up" triggerOnce delay={400}>
-            <h1 className="mx-auto mb-3 mt-4 max-w-3xl text-balance text-theme-blue text-4xl font-bold lg:mb-7 lg:text-6xl">
+          <Fade triggerOnce delay={400}>
+            <h1 className="mx-auto mb-3 mt-4 max-w-3xl text-balance text-theme-blue text-4xl font-bold lg:mb-7 lg:text-6xl leading-tight ">
               Experience Nube iO’s Smart Solutions
             </h1>
           </Fade>
 
-          <Fade direction="up" triggerOnce delay={600}>
-            <p className="mx-auto text-left font-light text-gray-400 lg:text-xl">
+          <Fade triggerOnce delay={600}>
+            <p className="mx-auto text-left font-light text-gray-400 lg:text-xl ">
               Request a live demo and see how we can transform your building
               operations.
             </p>
@@ -53,12 +53,12 @@ const HeroDemo = () => {
           </div>
         </div>
 
-        <div className="lg:w-3/4 mt-8 lg:mt-0 flex justify-center items-center ">
-          <Fade direction="" triggerOnce delay={1000}>
+        <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+          <Fade triggerOnce delay={1000}>
             <img
               src={heroDemo}
               alt="heroDemo"
-              className="max-w-full h-auto rounded-lg ml-0 object-cover"
+              className="max-w-full h-auto rounded-lg ml-12 "
             />
           </Fade>
         </div>
