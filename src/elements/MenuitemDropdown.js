@@ -51,7 +51,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                     type="link"
                     className="flex items-center justify-center w-50 px-8 py-3 space-x-4 bg-white text-black text-base rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 "
                   >
-                    Learn More
+                    Become a Partner
                   </Button>
                 </div>
               </div>
