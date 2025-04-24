@@ -96,25 +96,25 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Case scenarios",
+                title: "By Case Scenarios",
                 items: [
                   {
                     name: "Smart Analytics",
                     link: "/scenario1-integration/",
                     icon: icons6,
-                    description: "Learn More",
+                    description: "Smart Building Analytics",
                   },
                   {
                     name: "OEM Integration",
                     link: "/scenario2-oem/",
                     icon: icons6,
-                    description: "Learn More",
+                    description: "Accelerate OEM Innovation",
                   },
                   {
-                    name: "Simplify building",
+                    name: "Building Rating Sys",
                     link: "/scenario3-building/",
                     icon: icons6,
-                    description: "Learn More",
+                    description: "Easy Building Ratings",
                   },
                 ],
               },
@@ -230,7 +230,7 @@ export const menuItemsData = [
         title: "Work With Us",
         description:
           "Partner with Nube iO and leverage our dedicated support, technical expertise, and collaborative growth opportunities to achieve shared innovation and sustainable success.",
-        name: "Lear More",
+        name: "Become a Partner",
         link: "/partners/",
         items: [
           {
@@ -243,7 +243,7 @@ export const menuItemsData = [
             name: "Support",
             id: "Support",
             icon: icons18,
-            description: "Specialized assistance",
+            description: "Specialise assistance",
           },
           {
             name: "Contact",
@@ -275,7 +275,7 @@ export const menuItemsData = [
                     description: "Learn More",
                   },
                   {
-                    name: "Galvin TMV ",
+                    name: "Galvin TMV",
                     link: "/case-study2/",
                     icon: icons6,
                     description: "Learn More",
@@ -304,7 +304,7 @@ export const menuItemsData = [
                   },
 
                   {
-                    name: "Daikin ",
+                    name: "Daikin",
                     link: "/case-study5/",
                     icon: icons6,
                     description: "Learn More",

@@ -256,7 +256,7 @@ const Header1 = () => {
                               href="/scenario1-integration/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              By case scenarios 1
+                              Smart Analytics
                             </a>
                           </li>
                           <li>
@@ -264,7 +264,7 @@ const Header1 = () => {
                               href="/scenario2-oem/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              By case scenarios 2
+                              OEM integration
                             </a>
                           </li>
                           <li>
@@ -272,7 +272,7 @@ const Header1 = () => {
                               href="/scenario3-building/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              By case scenarios 3
+                              Building Rating Sys
                             </a>
                           </li>
                         </ul>
@@ -557,7 +557,7 @@ const Header1 = () => {
                               href="/case-study1/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 1
+                              Fujitsu General–AnywAIRiO
                             </a>
                           </li>
                           <li>
@@ -565,7 +565,7 @@ const Header1 = () => {
                               href="/case-study2/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 2
+                              Galvin TMV
                             </a>
                           </li>
                           <li>
@@ -573,7 +573,7 @@ const Header1 = () => {
                               href="/case-study3/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 3
+                              Enviro
                             </a>
                           </li>
                           <li>
@@ -581,7 +581,7 @@ const Header1 = () => {
                               href="/case-study4/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 4
+                              Victorian Schools
                             </a>
                           </li>
                           <li>
@@ -589,7 +589,7 @@ const Header1 = () => {
                               href="/case-study5/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Case Studies 5
+                              Daikin
                             </a>
                           </li>
                         </ul>

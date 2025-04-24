@@ -22,14 +22,6 @@ import slide1 from "../assets/images/PortfolioCarousel/Carousel1.gif";
 import slide2 from "../assets/images/PortfolioCarousel/Carousel2.gif";
 import slide3 from "../assets/images/PortfolioCarousel/Carousel3.gif";
 
-// Icons connect
-import Icons1 from "../assets/images/Icons/Iconslogo1.png";
-import Icons2 from "../assets/images/Icons/Iconslogo2.png";
-import Icons3 from "../assets/images/Icons/Iconslogo3.png";
-import Icons4 from "../assets/images/Icons/Iconslogo4.png";
-import Icons5 from "../assets/images/Icons/Iconslogo5.png";
-import Icons6 from "../assets/images/Icons/Iconslogo6.png";
-
 // Advantages
 import Technology from "../assets/images/Advantages/Smart.webp";
 import Integration from "../assets/images/Advantages/End.webp";
@@ -264,33 +256,27 @@ export const Badges = [
   },
   {
     title: "Logo1",
-    icon: Icons1,
-    className: "size-32",
+    className: "size-1",
   },
   {
-    title: "Logo2",
-    icon: Icons2,
-    className: "size-24",
+    title: "Protocol Agnostic",
+    className: "size-1",
   },
   {
-    title: "logo3",
-    icon: Icons3,
-    className: "size-16",
+    title: "Remote Access",
+    className: "size-1",
   },
   {
-    title: "Logo4",
-    icon: Icons4,
-    className: "size-32",
+    title: "Real-Time Insights",
+    className: "size-1",
   },
   {
-    title: "Logo5",
-    icon: Icons5,
-    className: "size-32",
+    title: "Multi-Site Control",
+    className: "size-1",
   },
   {
-    title: "Logo6",
-    icon: Icons6,
-    className: "size-32",
+    title: "AI + Analytics Ready",
+    className: "size-1",
   },
 ];
 

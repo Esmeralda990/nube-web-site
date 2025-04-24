@@ -65,12 +65,12 @@ const Ourstory = () => {
         <div
           ref={scrollContainerRef}
           onScroll={updateScrollState}
-          className="flex space-x-6 overflow-x-auto scroll-smooth no-scrollbar lg:px-56 px-12"
+          className="flex space-x-6 overflow-x-auto scroll-smooth ml-12 lg:ml-48 scrollbar-custom"
         >
           {items.map((item, idx) => (
             <div
               key={item.id}
-              className={`flex-shrink-0 w-80 ${
+              className={`flex-shrink-0 w-80  hover:bg-gray-100 rounded-xl${
                 idx === items.length - 1 ? "pr-6" : ""
               }`}
             >

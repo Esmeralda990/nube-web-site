@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { ArrowRight, Lightbulb, Star } from "lucide-react";
+import { ArrowRight, Lightbulb } from "lucide-react";
 import Button from "../elements/Button/index.js";
 import Logo from "../assets/images/LogoNube.png";
 import ImgLogo from "../assets/images/WorldSolutions/Building.webp";
@@ -170,50 +170,56 @@ const ScenarioBuild = () => {
                 Technology
               </p>
               <p className="mb-6 text-lg font-bold text-theme-blue">Solution</p>
-              <Button
-                size="sm"
-                href="/connectivity/"
-                type="link"
-                className="justify-center w-auto px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
-              >
-                Nube IO cloud
-              </Button>
+              <div className="flex flex-col gap-4 lg:max-w-30   ">
+                <Button
+                  size="sm"
+                  href="/connectivity/"
+                  type="link"
+                  className="justify-center inline-flex px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:bg-gray-100"
+                >
+                  Nube iO Cloud
+                </Button>
+
+                <Button
+                  size="sm"
+                  href="/solutions#Hardware"
+                  type="link"
+                  className="justify-center inline-flex px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:bg-gray-100"
+                >
+                  Hardware
+                </Button>
+
+                <Button
+                  size="sm"
+                  href="/software-rubix-platform/"
+                  type="link"
+                  className="justify-center inline-flex px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:bg-gray-100"
+                >
+                  Software
+                </Button>
+              </div>
               <div className="my-8 border-t border-gray-300" />
               <p className="mb-6 text-lg font-bold text-theme-blue">
                 Want to learn more?
               </p>
-              <Button
-                className="flex items-center text-lg text-gray-400 font-light hover:text-theme-teal"
-                href="/contact-us/"
-                type="link"
-              >
-                Contact
-                <ArrowRight className="ml-2 w-4" />
-              </Button>
-            </div>
-          </div>
-          <div className="mt-32 border border-gray-200 rounded-xl p-6 text-center shadow-sm max-w-3xl mx-auto">
-            <p className="mb-6 text-lg md:text-xl font-light text-gray-400">
-              &ldquo;We no longer fear the next NABERS audit—everything’s ready,
-              and our score has improved significantly.&ldquo;
-            </p>
-
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://shadcnblocks.com/images/block/avatar-1.webp"
-                alt="Samantha Lee"
-                className="w-16 h-16 md:w-24 md:h-24 rounded-full object-cover"
-              />
-            </div>
-
-            <p className="font-bold text-lg text-theme-blue">Samantha Lee</p>
-
-            <div className="flex justify-center gap-1">
-              <Star className="w-5 h-5 fill-yellow-400 stroke-none" />
-              <Star className="w-5 h-5 fill-yellow-400 stroke-none" />
-              <Star className="w-5 h-5 fill-yellow-400 stroke-none" />
-              <Star className="w-5 h-5 fill-yellow-400 stroke-none" />
-              <Star className="w-5 h-5 fill-yellow-400 stroke-none" />
+              <div className="flex flex-col gap-4 ">
+                <Button
+                  className="flex items-center text-lg text-gray-400 font-light hover:text-theme-teal"
+                  href="/scenario2-oem/"
+                  type="link"
+                >
+                  Smart Analytics
+                  <ArrowRight className="ml-2 w-4" />
+                </Button>
+                <Button
+                  className="flex items-center text-lg text-gray-400 font-light hover:text-theme-teal"
+                  href="/scenario3-building/"
+                  type="link"
+                >
+                  OEM Integration
+                  <ArrowRight className="ml-2 w-4" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
