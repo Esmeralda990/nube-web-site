@@ -14,8 +14,8 @@ import BuildWebsite from "../assets/images/hero/Home_Header.gif";
 export default function Hero() {
   return (
     <>
-      <section className=" container max-w-screen-xl mx-auto flex flex-col lg:flex-row mb-24">
-        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row px-8">
+      <section className=" container mx-auto flex flex-col lg:flex-row lg:mb-24">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row px-8 lg:ml-24">
           <a
             href="/solutions/"
             className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
@@ -59,9 +59,9 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col pt-5 w-full justify-end items-center lg:order-last overflow-hidden">
-          <Fade direction="" triggerOnce>
+          <Fade triggerOnce>
             <img
-              className="max-w-full h-auto object-contain lg:ml-28"
+              className="max-w-full  lg:max-w-[1100px] md:max-w-[1100px] h-auto object-contain lg:ml-8"
               src={BuildWebsite}
               alt="Build Website"
             />

@@ -4,10 +4,6 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
 /* eslint-disable comma-dangle */
-import ResourceImg from "../assets/images/ImgMenu/Resources.webp";
-import PartnersImg from "../assets/images/ImgMenu/Partner.webp";
-import SolutionsImg from "../assets/images/ImgMenu/Solutions.webp";
-import ProductsImg from "../assets/images/ImgMenu/Products.webp";
 
 // Icons Menu
 import icons1 from "../assets/images/IconsMenu/ProfessionalServices.svg";
@@ -39,7 +35,6 @@ export const menuItemsData = [
     name: "Solutions",
     subMenu: [
       {
-        image: SolutionsImg,
         links: [
           {
             title: "",
@@ -74,7 +69,7 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Our solutions",
+                title: "Our Technology",
                 items: [
                   {
                     name: "Software",
@@ -130,7 +125,6 @@ export const menuItemsData = [
     name: "Products",
     subMenu: [
       {
-        image: ProductsImg,
         links: [
           {
             title: "",
@@ -226,7 +220,6 @@ export const menuItemsData = [
     subMenu: [
       {
         type: "featured",
-        image: PartnersImg,
         title: "Work With Us",
         description:
           "Partner with Nube iO and leverage our dedicated support, technical expertise, and collaborative growth opportunities to achieve shared innovation and sustainable success.",
@@ -260,7 +253,6 @@ export const menuItemsData = [
     name: "Resources",
     subMenu: [
       {
-        image: ResourceImg,
         links: [
           {
             title: "",
@@ -269,7 +261,7 @@ export const menuItemsData = [
                 title: "Case Studies",
                 items: [
                   {
-                    name: "Fujitsu General–AnywAIRiO",
+                    name: "Fujitsu Gen–AnywAIRiO",
                     link: "/case-study1/",
                     icon: icons6,
                     description: "Learn More",

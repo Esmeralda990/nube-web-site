@@ -25,8 +25,13 @@ const contactMethods = [
   },
   {
     icon: Building,
-    title: "Address",
+    title: "Sydney office",
     description: "1/17 Cemetery Rd Helensburgh, NSW 2508, Australia",
+  },
+  {
+    icon: Building,
+    title: "Warehouse",
+    description: "Suite 3 10/28 Margaret Street, Sydney NSW",
   },
 ];
 

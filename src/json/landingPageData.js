@@ -112,10 +112,10 @@ export const Services = [
     animation: "left",
   },
   {
-    id: "OEM",
-    title: "OEM ",
-    imageUrl: OEM,
-    type: "Fully customisable software and hardware solutions tailored specifically to your brand needs.",
+    id: "Hardware",
+    title: "Hardware",
+    imageUrl: Hardware,
+    type: "Reliable, scalable devices designed for seamless integration and intelligent automation.",
     animation: "right",
   },
   {
@@ -126,10 +126,10 @@ export const Services = [
     animation: "right",
   },
   {
-    id: "Hardware",
-    title: "Hardware",
-    imageUrl: Hardware,
-    type: "Reliable, scalable devices designed for seamless integration and intelligent automation.",
+    id: "OEM",
+    title: "OEM ",
+    imageUrl: OEM,
+    type: "Fully customisable software and hardware solutions tailored specifically to your brand needs.",
     animation: "right",
   },
 ];
@@ -465,7 +465,7 @@ export const Managers = [
     name: "Aidan Pickard",
     role: "CTO & Co-Founder",
     description:
-      "Expert developer advancing smart-building tech with 15+ years in HVAC and automation.",
+      "HVAC & Automation Expert | 15+ Years Driving Smart Building Innovation",
     imageUrl: CTO,
     linkedinUrl: "https://www.linkedin.com/in/aidan-pickard-b4689643/",
   },
@@ -486,6 +486,15 @@ export const Managers = [
       "Experienced manager leading operations, strategy, and successful project delivery.",
     imageUrl: IOT,
     linkedinUrl: "https://www.linkedin.com/in/jonathan-hill-6775b187/",
+  },
+  {
+    id: "person-5",
+    name: "Jon Kane",
+    role: "C.F.O",
+    description:
+      "Experienced finance leader in growth businesses across FMCG & manufacturing.",
+    imageUrl: IOT,
+    linkedinUrl: "https://www.linkedin.com/in/jon-kane-4564363/",
   },
 ];
 

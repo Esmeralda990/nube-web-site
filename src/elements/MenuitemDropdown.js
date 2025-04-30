@@ -30,14 +30,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
         >
           {submenu.type === "featured" ? (
             <>
-              <div className="left-section">
-                <img
-                  src={submenu.image}
-                  alt={submenu.image}
-                  className="featured-img"
-                />
-              </div>
-              <div className="w-3/4 w- h-48 flex flex-col justify-start content">
+              <div className="w-3/4 w- h-48 flex flex-col justify-start  ml-12">
                 <h4 className="text-3xl font-bold text-left text-theme-blue mb-2">
                   {submenu.title}
                 </h4>
@@ -45,11 +38,11 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                 <p className="text-gray-400 font-light text-lg mb-4 max-w-2xl">
                   {submenu.description}
                 </p>
-                <div className="mt-8 flex  justify-center md:justify-start space-x-6 items-center">
+                <div className=" flex justify-center md:justify-start space-x-6 items-center">
                   <Button
                     href={submenu.link}
                     type="link"
-                    className="flex items-center justify-center w-50 px-8 py-3 space-x-4 bg-white text-black text-base rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 "
+                    className="flex items-center justify-center w-50 px-8 py-3 space-x-4 bg-white text-black text-sm rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 "
                   >
                     Become a Partner
                   </Button>
@@ -64,13 +57,11 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                           <img
                             src={item.icon}
                             alt="icons"
-                            className="mr-4 object-contain"
+                            className=" object-contain"
                           />
                         )}
                         <div className="flex flex-col ">
-                          <span className="font-bold  text-base">
-                            {item.name}
-                          </span>
+                          <span className="font-bold text-lg">{item.name}</span>
                           {item.description && (
                             <span className="text-sm font-light text-gray-500">
                               {item.description}
@@ -145,7 +136,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                                         />
                                       )}
                                       <div className="flex flex-col ">
-                                        <span className="font-bold ">
+                                        <span className="font-bold text-md">
                                           {item.name}
                                         </span>
                                         {item.description && (
