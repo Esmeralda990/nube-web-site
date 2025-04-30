@@ -27,13 +27,13 @@ const HeroDemo = () => {
           </Fade>
 
           <Fade triggerOnce delay={400}>
-            <h1 className="mx-auto mb-3 mt-4 max-w-3xl text-balance text-theme-blue text-4xl font-bold lg:mb-7 lg:text-6xl leading-tight ">
+            <h1 className="mx-auto mb-3 mt-4 text-balance text-theme-blue text-4xl font-bold lg:mb-7 lg:text-6xl leading-tight">
               Experience Nube iO’s Smart Solutions
             </h1>
           </Fade>
 
           <Fade triggerOnce delay={600}>
-            <p className="mx-auto text-left font-light text-gray-400 lg:text-xl ">
+            <p className=" text-left font-light text-gray-400 lg:text-xl max-w-lg ">
               Request a live demo and see how we can transform your building
               operations.
             </p>
