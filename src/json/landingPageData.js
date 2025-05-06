@@ -18,13 +18,13 @@ import Logo7 from "../assets/images/Logos/Mc.png";
 import Logo8 from "../assets/images/Logos/Westpac.png";
 
 // Slides
-import slide1 from "../assets/images/PortfolioCarousel/Carousel1.gif";
-import slide2 from "../assets/images/PortfolioCarousel/Carousel2.gif";
-import slide3 from "../assets/images/PortfolioCarousel/Carousel3.gif";
+import slide1 from "../assets/images/PortfolioCarousel/01.gif";
+import slide2 from "../assets/images/PortfolioCarousel/02.gif";
+import slide3 from "../assets/images/PortfolioCarousel/03.gif";
 
 // Advantages
 import Technology from "../assets/images/Advantages/Smart.webp";
-import Integration from "../assets/images/Advantages/End.webp";
+import Integration from "../assets/images/Advantages/Endto.png";
 import Sustainability from "../assets/images/Advantages/Sustainability.webp";
 import Insights from "../assets/images/Advantages/Real.webp";
 
@@ -44,10 +44,11 @@ import Establish from "../assets/images/ServiceSolutions/Asset.webp";
 import Management from "../assets/images/ServiceSolutions/Establish.webp";
 
 // Managers
-import CEOT from "../assets/images/Team/Tom.png";
-import CTO from "../assets/images/Team/AidanPickard.png";
-import COO from "../assets/images/Team/MatthewCady.png";
-import IOT from "../assets/images/Team/JonathanHill.png";
+import CEOT from "../assets/images/Team/TomFyfe.png";
+import CTO from "../assets/images/Team/Aidan.png";
+import COO from "../assets/images/Team/Matthew.png";
+import IOT from "../assets/images/Team/Jonathan.png";
+import CFO from "../assets/images/Team/Jonkane.png";
 
 // solution Feature
 import Controller from "../assets/images/RubixCompute/RubixC1.png";
@@ -493,7 +494,7 @@ export const Managers = [
     role: "C.F.O",
     description:
       "Experienced finance leader in growth businesses across FMCG & manufacturing.",
-    imageUrl: IOT,
+    imageUrl: CFO,
     linkedinUrl: "https://www.linkedin.com/in/jon-kane-4564363/",
   },
 ];

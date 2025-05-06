@@ -9,7 +9,7 @@ import { WorldSolutions } from "../json/landingPageData";
 
 const WorldSolution = () => {
   return (
-    <section className="container mx-auto max-w-screen-xl flex flex-col items-center lg:mb-40 px-6">
+    <section className="container mx-auto lg:max-w-screen-xl flex flex-col items-center lg:mb-40 px-6">
       <Fade direction="" triggerOnce>
         <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold px-6 mb-6">
           Real-World Solutions, Powered by Nube iO

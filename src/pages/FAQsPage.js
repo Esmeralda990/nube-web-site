@@ -6,7 +6,7 @@ import React, { Component } from "react";
 import { DataAccordion } from "json/FaqData";
 import Header1 from "parts/Header1";
 import FAQs from "partsterm/Faqs";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 
 export default class FAqs extends Component {

@@ -9,7 +9,7 @@ import Button from "../elements/Button/index";
 const Partners = () => {
   return (
     <section className="py-32 px-6">
-      <div className=" container mx-auto pb-24 max-w-screen-xl">
+      <div className=" container mx-auto pb-24 lg:max-w-screen-xl">
         <a
           href="/partners/"
           className="mx-auto mb-4 flex w-fit items-center rounded-full bg-muted px-4 py-2 text-sm border border-theme-teal"

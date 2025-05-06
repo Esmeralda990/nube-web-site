@@ -6,8 +6,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import ProductsRubixLW from "partsproducts/ProductsRubixLW.js";
 import Footer from "parts/Footer";
-import GifSection from "parts/GifSectionAbout";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1.js";
 
 import { RubixConnectLW } from "../json/ProductsPageData.js";
 
@@ -21,7 +20,6 @@ export default class ProductsRubixConnectLW extends Component {
       <>
         <Header1 />
         <ProductsRubixLW data={RubixConnectLW} />
-        <GifSection />
         <Discuss />
         <Footer />
       </>

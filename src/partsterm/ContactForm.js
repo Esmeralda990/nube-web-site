@@ -4,6 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/no-array-index-key */
+/* eslint-disable comma-dangle */
 import React, { useState } from "react";
 import { Mail, Phone, Building } from "lucide-react";
 import Button from "../elements/Button/index";
@@ -110,12 +111,27 @@ const ContactForm = () => {
                     </h3>
                   </div>
                   <div className="space-y-2 tracking-[-0.32px]">
-                    <p className="text-base font-light text-gray-400">
-                      {method.description}
-                    </p>
-                    <div className="text-base font-light text-gray-400">
-                      {method.contact}
-                    </div>
+                    {["Sydney office", "Warehouse"].includes(method.title) ? (
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                          method.description
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-light text-theme-teal underline"
+                      >
+                        {method.description}
+                      </a>
+                    ) : (
+                      <p className="text-base font-light text-gray-400">
+                        {method.description}
+                      </p>
+                    )}
+                    {method.contact && (
+                      <div className="text-base font-light text-gray-400">
+                        {method.contact}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

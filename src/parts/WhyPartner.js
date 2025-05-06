@@ -8,7 +8,7 @@ import { WhyData } from "../json/landingPageData";
 const Why = () => {
   return (
     <section className="py-12 mb-12 px-8 ">
-      <div className="container mx-auto max-w-screen-lg">
+      <div className="container mx-auto lg:max-w-screen-lg">
         <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
           <h2 className="mb-2 text-center text-3xl lg:text-5xl font-bold text-theme-blue">
             Why Partner With Us

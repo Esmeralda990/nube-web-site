@@ -14,7 +14,7 @@ import partners from "../assets/images/hero/Partners.png";
 export default function Hero() {
   return (
     <>
-      <section className="container mx-auto max-w-screen-2xl flex flex-col lg:flex-row px-8">
+      <section className="container mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row px-8 mb-24">
         <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center xl:items-start sm:flex-row">
           <h1 className="text-4xl md:text-7xl max-w-xl text-theme-blue font-bold leading-tight mb-5">
             Our Trusted Partners <br />
@@ -45,7 +45,7 @@ export default function Hero() {
         <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 pb-24 overflow-hidden">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-1/2 h-auto lg:ml-32 object-contain overflow-hidden"
+              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden"
               src={partners}
               alt="Partners"
             />

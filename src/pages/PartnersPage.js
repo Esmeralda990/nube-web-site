@@ -6,7 +6,7 @@ import React, { Component } from "react";
 import { WhoSupport } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Partner from "parts/HeroPartners";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 import WhoSuport from "parts/WhoSupport";
 import WhyPartners from "parts/WhyPartner";

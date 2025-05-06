@@ -6,7 +6,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
-import Logo from "../assets/images/LogoNube.png";
 import ImgLogo from "../assets/images/CaseStudy/Fujitsu_Blanc.png";
 
 const Casestudy = () => {
@@ -86,8 +85,7 @@ const Casestudy = () => {
 
       <div className="mt-20 flex flex-col lg:flex-row gap-10 lg:relative">
         <aside className="w-full lg:w-1/4 lg:sticky top-10">
-          <img src={Logo} alt="logo" className="h-8 mb-4" />
-          <h4 className="text-lg font-bold text-theme-blue ">Overview</h4>
+          <h4 className="text-lg font-bold text-theme-blue mb-4">Overview</h4>
           <p className="text-base text-gray-400 font-light mb-4">
             Fujitsu General, a global leader in air conditioning solutions, has
             partnered with Nube iO to develop AnywAIR iO, an IoT solution that
@@ -100,37 +98,41 @@ const Casestudy = () => {
               <strong className="text-theme-blue font-bold text-base">
                 Sector
               </strong>
-              <div className="text-base font-light">Technology: Automation</div>
+              <div className="text-base font-light mt-4">
+                Technology: Automation
+              </div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Team size:
               </strong>
-              <div className="text-base font-light">10-100</div>
+              <div className="text-base font-light mt-4">10-100</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Location:
               </strong>
-              <div className="text-base font-light">San Francisco</div>
+              <div className="text-base font-light mt-4">San Francisco</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Established:
               </strong>
-              <div className="text-base font-light">2020</div>
+              <div className="text-base font-light mt-4">2020</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Funding:
               </strong>
-              <div className="text-base font-light">$25m (Series A)</div>
+              <div className="text-base font-light mt-4">$25m (Series A)</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Core features:
               </strong>
-              <div className="text-base font-light">Dashboards, Tools, API</div>
+              <div className="text-base font-light mt-4">
+                Dashboards, Tools, API
+              </div>
             </div>
           </div>
           <div className="mt-6">

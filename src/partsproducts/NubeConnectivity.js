@@ -14,7 +14,7 @@ const NubeConect = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 ml-0 px-8">
       <div className="container mx-auto">
-        <h1 className="text-5xl mt-4 text-theme-blue font-bold lg:text-7xl text-center">
+        <h1 className="text-2xl mt-4 text-theme-blue font-bold lg:text-5xl text-center">
           Connectivity Overview
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">

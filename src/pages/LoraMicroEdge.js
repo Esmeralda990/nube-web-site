@@ -6,8 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsMicroEdge from "partsproducts/ProductsMicroEdge";
-import GifSectionAbout from "parts/GifSectionAbout";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 
 export default class MicroEdge extends Component {
@@ -20,7 +19,6 @@ export default class MicroEdge extends Component {
       <>
         <Header1 />
         <ProductsMicroEdge />
-        <GifSectionAbout />
         <Discuss />
         <Footer />
       </>

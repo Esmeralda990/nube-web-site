@@ -20,8 +20,7 @@ import DetailsHardware from "parts/DetailsHardware";
 import SolutionHardware from "parts/SolutionHardware";
 import DetailsSoftware from "parts/DetailsSoftware";
 import SoftwareSolutions from "parts/SoftwareSolutions";
-import Discuss from "parts/Discuss";
-import GifSectionSolution from "parts/GifSeccionSolutions";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 
 export default class SolutionsPage extends Component {
@@ -75,7 +74,6 @@ export default class SolutionsPage extends Component {
         </section>
 
         <Discuss />
-        <GifSectionSolution />
         <Footer />
       </>
     );
