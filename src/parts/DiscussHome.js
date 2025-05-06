@@ -5,26 +5,25 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../elements/Button";
-import bgVideo from "../assets/Video/Home-diss.webm";
+import bgImg from "../assets/images/ImgFooter/Fondo_Home.svg";
 import CardImag from "../assets/images/hero/Card.svg";
 
-export default function Discuss() {
+export default function Discusshome() {
   return (
-    <section className="w-full relative overflow-hidden">
-      <video
-        autoPlay
-        muted
-        loop
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src={bgVideo} type="video/webm" />
-      </video>
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-4 py-20 md:p-40 mt-8">
-        <div className="w-full md:w-1/2 text-center md:text-left text-theme-blue">
+    <section className="w-full relative overflow-hidden ">
+      <img
+        src={bgImg}
+        alt="Background"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 drop-shadow-[0_4px_8px_rgba(0,0,0,0.18)]"
+        style={{ objectFit: "cover", transform: "scale(1.3) " }}
+      />
+
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center px-4 py-20 md:p-40 mt-8">
+        <div className="w-full md:w-1/2 text-center md:text-left text-theme-blue lg:ml-8">
           <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-5 max-w-lg">
             Ready to Future-Proof Your Building
           </h2>
-          <p className="font-light text-base md:text-xl text-gray-500 leading-relaxed mb-16  max-w-xl">
+          <p className="font-light text-base lg:text-xl text-gray-500 leading-relaxed mb-16  max-w-xl">
             Transform your building with Nube iO’s smart solutions. From
             seamless IoT integration to real-time automation and energy
             optimisation, we make buildings smarter, more efficient, and
@@ -56,7 +55,7 @@ export default function Discuss() {
           <img
             src={CardImag}
             alt="Card"
-            className="w-full max-w-lg object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)] hidden sm:block"
+            className="w-full max-w-lg object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)] hidden md:block"
           />
         </div>
       </div>

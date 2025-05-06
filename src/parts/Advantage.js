@@ -11,7 +11,7 @@ export default function Advantage({ data }) {
 
   return (
     <div className="mb-24 xl:px-32 px-6 ">
-      <div className="container mx-auto max-w-screen-xl flex flex-col gap-16">
+      <div className="container mx-auto lg:max-w-screen-xl  flex flex-col gap-16">
         <Fade direction="" triggerOnce>
           <div className="lg:max-w-sm">
             <h2 className="text-3xl md:text-5xl text-theme-blue font-bold mb-5 ">

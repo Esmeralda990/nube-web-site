@@ -18,13 +18,13 @@ export default function TeamSection() {
           time.
         </p>
       </div>
-      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-3 lg:grid-cols-5 grid-cols-auto-fit lg:px-32">
+      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-3 lg:grid-cols-5 grid-cols-auto-fit lg:">
         {Managers.map((person) => (
           <div key={person.id} className="flex flex-col bg-accent rounded-xl ">
             <img
               src={person.imageUrl}
               alt={person.name}
-              className="mb-4 w-32 h-30 sm:w-30 sm:h-40 md:w-40 md:h-40 lg:w-24 lg:h-24 rounded-full object-cover"
+              className="mb-4 w-32 h-30 sm:w-30 sm:h-40 md:w-40 md:h-40 lg:w-30 lg:h-25 rounded-full object-cover"
             />
             <p className="font-bold">{person.name}</p>
             <p className="text-muted-foreground">{person.role}</p>

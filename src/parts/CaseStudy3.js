@@ -4,7 +4,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
-import Logo from "../assets/images/LogoNube.png";
 import ImgLogo from "../assets/images/CaseStudy/Eviro_Blanco.png";
 
 const Casestudy3 = () => {
@@ -84,8 +83,7 @@ const Casestudy3 = () => {
 
       <div className="mt-20 flex flex-col lg:flex-row gap-10 lg:relative">
         <aside className="w-full lg:w-1/4 lg:sticky top-10">
-          <img src={Logo} alt="logo" className="h-8 mb-4" />
-          <h3 className="text-lg font-bold text-theme-blue ">Overview</h3>
+          <h3 className="text-lg font-bold text-theme-blue mb-4 ">Overview</h3>
           <p className="text-base text-gray-400 font-light mb-4">
             Enviro Building Services is an Australian BMS integrator
             specializing in HVAC and automation, focusing on sustainable,
@@ -96,37 +94,41 @@ const Casestudy3 = () => {
               <strong className="text-theme-blue font-bold text-base">
                 Sector
               </strong>
-              <div className="text-base font-light">Technology: Automation</div>
+              <div className="text-base font-light mt-4">
+                Technology: Automation
+              </div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Team size:
               </strong>
-              <div className="text-base font-light">10-100</div>
+              <div className="text-base font-light mt-4">10-100</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Location:
               </strong>
-              <div className="text-base font-light">San Francisco</div>
+              <div className="text-base font-light mt-4">San Francisco</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Established:
               </strong>
-              <div className="text-base font-light">2020</div>
+              <div className="text-base font-light mt-4">2020</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Funding:
               </strong>
-              <div className="text-base font-light">$25m (Series A)</div>
+              <div className="text-base font-light mt-4">$25m (Series A)</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
                 Core features:
               </strong>
-              <div className="text-base font-light">Dashboards, Tools, API</div>
+              <div className="text-base font-light mt-4">
+                Dashboards, Tools, API
+              </div>
             </div>
           </div>
           <div className="mt-6">

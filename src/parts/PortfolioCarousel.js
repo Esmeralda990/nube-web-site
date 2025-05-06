@@ -34,7 +34,8 @@ export default function PorfolioCarousel() {
         speed={200}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        className="w-full mb-20 md:mb-40"
+        className="w-full mb-20 xl:mb-60"
+        style={{ height: "auto" }}
       >
         {Slides.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -44,7 +45,7 @@ export default function PorfolioCarousel() {
                   <h2 className="text-3xl lg:text-5xl text-theme-blue text-left font-bold leading-tight mb-5">
                     {slide.title}
                   </h2>
-                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12">
+                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12 max-w-xl">
                     {slide.description}
                   </p>
                   <Fade delay={200} triggerOnce>
@@ -58,13 +59,16 @@ export default function PorfolioCarousel() {
                     </Button>
                   </Fade>
                 </div>
-                <div className="w-full justify-center pt-5 lg:w-1/2">
+                <div className="w-full justify-center lg:w-1/2 pt-6 px-6">
                   <Fade triggerOnce>
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="w-full max-w-lg md:max-w-3xl lg:max-w-3xl xl:max-w-3xl h-auto object-contain transition-all duration-300 xl:ml-48 lg:ml-28 md:ml-24 "
-                      style={{ maxHeight: "100%", objectFit: "contain" }}
+                      className="w-full max-w-xs xl:max-w-6xl h-auto object-contain transition-all duration-300 lg:ml-20 md:ml-16 "
+                      style={{
+                        objectFit: "contain",
+                        transform: "scale(1.9)",
+                      }}
                     />
                   </Fade>
                 </div>

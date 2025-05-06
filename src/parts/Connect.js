@@ -7,7 +7,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Badges } from "../json/landingPageData.js";
-import ConnectImg from "../assets/images/hero/Bring.webp";
+import ConnectImg from "../assets/images/hero/Unify.png";
 
 const Connect = () => {
   return (

@@ -9,7 +9,7 @@ import { ChevronRight } from "react-feather";
 
 export default function Service({ data }) {
   return (
-    <div className="container mx-auto max-w-screen-xl px-8 mb-28">
+    <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28">
       <h2 className="text-3xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
         Building Smarter, Thinking Forward
       </h2>

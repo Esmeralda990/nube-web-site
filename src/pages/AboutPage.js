@@ -13,8 +13,7 @@ import LogosAbout from "parts/LogosAbout";
 import OurStory from "parts/Ourstory";
 import TeamSection from "parts/TeamSection";
 import TeamGroup from "parts/TeamGroup";
-import GifSectionAbout from "parts/GifSectionAbout";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 
 export default class ProjectPage extends Component {
@@ -33,7 +32,6 @@ export default class ProjectPage extends Component {
         <OurStory />
         <TeamSection data={Managers} />
         <TeamGroup data={floatingIcons} />
-        <GifSectionAbout />
         <Discuss />
         <Footer />
       </>

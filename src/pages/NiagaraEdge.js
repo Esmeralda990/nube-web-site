@@ -6,8 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsNiagara from "partsproducts/ProductsNiagara";
-import GifSectionAbout from "parts/GifSectionAbout";
-import Discuss from "parts/Discuss";
+import Discuss from "parts/Discuss1";
 import Footer from "parts/Footer";
 
 export default class Niagara extends Component {
@@ -20,7 +19,6 @@ export default class Niagara extends Component {
       <>
         <Header1 />
         <ProductsNiagara />
-        <GifSectionAbout />
         <Discuss />
         <Footer />
       </>
