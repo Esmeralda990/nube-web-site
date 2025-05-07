@@ -35,18 +35,18 @@ export default function HeroAbout() {
                 <Users className="mr-1 w-4 md:w-5" />
                 Connect
               </span>
-              to
               <span className="mx-2 inline-flex font-medium text-primary text-theme-teal ">
                 <Blocks className="mr-1 w-5" />
                 Automate,
               </span>
+              and
               <span className="mx-2 inline-flex font-medium text-primary text-theme-teal">
                 <MessagesSquare className="mr-1 w-5" />
                 Optimise,
               </span>
-              their environments. By combining IoT-powered automation with
-              real-time data insights, were pushing the boundaries of what smart
-              infrastructure can achieve.
+              their environments. By combining next-level BMS with IoT-powered
+              automation and real-time data insights, we&apos;re pushing the
+              boundaries of what smart infrastructure can achieve.
             </p>
           </Fade>
           <Fade delay={500} triggerOnce>

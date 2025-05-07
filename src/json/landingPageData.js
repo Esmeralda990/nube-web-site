@@ -317,26 +317,26 @@ export const AdvantageAbout = [
       logo: IconsCom,
       title: "Company Overview",
       description:
-        "Nube iO, an Australian technology company, is transforming building automation with smart, scalable, software-driven solutions. ",
+        "Nube iO is an Australian technology company transforming building automation with simple, open, and scalable solutions.",
     },
     {
-      title: "Growth and Sustainability ",
+      title: "Global Reach & Growth",
       description:
-        "Nube iO started in Australia and has grown into a global leader in smart technology. ",
+        "From Australia to Southeast Asia, our global development team powers innovation across time zones to support smart building ecosystems",
       logo: IconsGro,
       image: Growth,
     },
     {
-      title: "Commitment to Excellence",
+      title: "Innovation & Impact",
       description:
-        "At Nube iO, we provide innovative technology and expert services to drive success.",
+        "We combine intelligent hardware, flexible software, and cloud automation to drive performance, energy efficiency, and long-term value.",
       logo: IconsExc,
       image: Excellence,
     },
     {
-      title: "Technology Solutions",
+      title: "Future-Ready Technology",
       description:
-        "We specialise in intelligent infrastructure, cloud automation, and IoT connectivity, delivering customised, future-ready solutions . ",
+        "Our platform integrates with existing systems, enabling real-time control, advanced analytics, and future-proof infrastructure for every building.Updated ",
       logo: IconsSol,
       image: Solutions,
     },
@@ -346,84 +346,108 @@ export const AdvantageAbout = [
 export const OurStoryD = [
   [
     {
-      id: 1,
-      title: "Enviro Building Services Started      ",
+      id: 0,
+      title: "Enviro Building Services Founded",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      year: "2009",
-      image: IconsOur1,
+        "Foundation laid for future innovation in building services and facility optimisation.",
+      date: "2009",
+      icon: IconsOur1,
+    },
+    {
+      id: 1,
+      title: "Nube iO Begins Operations",
+      description:
+        "Launched with a mission to simplify building automation through advanced IoT and software solutions.",
+      date: "2016",
+      icon: IconsOur2,
     },
     {
       id: 2,
-      title: "Nube iO Operations officially began",
+      title: "Global Software Support Established",
+      date: "2017",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      year: "2016",
-      image: IconsOur2,
+        "Development teams set up across time zones to provide continuous innovation and support.",
+      icon: IconsOur3,
     },
     {
       id: 3,
-      title: "India & Nepal: Software support setup.",
-      year: "2017",
+      title: "First Hardware Release – Edge Gateway & Droplet Sensors",
+      date: "2017",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur3,
+        "Released initial IoT hardware devices enabling multi-site data collection and edge processing.",
+      icon: IconsOur4,
     },
     {
       id: 4,
-      title: "Released Edge 28 product and Droplet Sensors ",
-      year: "2017",
+      title: "Rubix Wires Programming Software (v1.0)",
+      date: "2018",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur4,
+        "Introduced low-code configuration tool for seamless device programming and logic control.",
+      icon: IconsOur5,
     },
     {
       id: 5,
-      title: "Rubix Wires programming software released",
-      year: "2018",
+      title: "Nube iO Cloud Platform Launched",
+      date: "2018",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur5,
+        "Released secure, scalable cloud infrastructure for remote monitoring and control.",
+      icon: IconsOur6,
     },
     {
       id: 6,
-      title: "Nube iO Cloud Solution released",
-      year: "2018",
+      title: "Expanded Global Support – Dual Time Zones",
+      date: "2020",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur6,
+        "Scaled customer and technical support to operate effectively across Asia-Pacific and global regions.",
+      icon: IconsOur7,
     },
     {
       id: 7,
-      title: "Hardware support in two time zones",
-      year: "2020",
+      title: "Rubix Compute Gateway & iO16 Controller Released",
+      date: "2020",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur7,
+        "Launched key IoT edge devices, enabling integrated control and monitoring for BMS.",
+      icon: IconsOur8,
     },
     {
       id: 8,
-      title: "Release of Rubix Compute and iO16",
-      year: "2020",
+      title: "Rubix Wires Programming 2.0 Released",
+      date: "2023",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur8,
+        "Enhanced UI/UX and logic capabilities for system integrators and developers.",
+      icon: IconsOur9,
     },
     {
       id: 9,
-      title: "Rubix Wires programming software released",
-      year: "2023",
+      title: "Nube iO Mobile App Launched",
+      date: "2023",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur9,
+        "Brought real-time BMS control and monitoring to mobile devices.",
+      icon: IconsOur10,
     },
     {
       id: 10,
-      title: "Release of the Nube iO Mobile App",
-      year: "2023",
+      title: "Partnership with Fujitsu General Australia",
+      date: "2024",
       description:
-        "Nube iO’s advanced software solutions transform complex building management into simple, actionable insights.",
-      image: IconsOur10,
+        "Collaborated on HVAC control solutions as part of an OEM integration strategy.",
+      icon: IconsOur9,
+    },
+    {
+      id: 11,
+      title: "Southeast Asia R&D Office Opened – Vietnam",
+      date: "2025",
+      description:
+        "Established dedicated Research & Development operations to support regional growth and innovation.",
+      icon: IconsOur10,
+    },
+    {
+      id: 12,
+      title: "Zone Control Module for Residential Ducted Systems",
+      date: "2025",
+      description:
+        "New product release supporting advanced temperature zoning in homes.",
+      icon: IconsOur10,
     },
   ],
 ];
