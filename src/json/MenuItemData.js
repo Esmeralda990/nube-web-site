@@ -40,7 +40,7 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Our solutions",
+                title: "Our Solutions",
                 items: [
                   {
                     name: "Professional Services",

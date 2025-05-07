@@ -8,7 +8,7 @@ import { Managers } from "json/landingPageData";
 export default function TeamSection() {
   return (
     <section className="mt-20 md:pb-48 px-8">
-      <div className=" container max-w-screen-xl mx-auto flex flex-col items-center text-center mb-10 ">
+      <div className=" container mx-auto flex flex-col items-center text-center mb-10 ">
         <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
           Meet our team
         </h2>
@@ -18,7 +18,7 @@ export default function TeamSection() {
           time.
         </p>
       </div>
-      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-3 lg:grid-cols-5 grid-cols-auto-fit lg:">
+      <div className="container mx-auto mt-12 grid gap-5 md:grid-cols-3 lg:grid-cols-5 grid-cols-auto-fit overflow-hidden">
         {Managers.map((person) => (
           <div key={person.id} className="flex flex-col bg-accent rounded-xl ">
             <img

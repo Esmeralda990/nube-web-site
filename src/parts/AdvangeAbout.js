@@ -13,17 +13,18 @@ const AdvAbout = () => {
 
   return (
     <section className="pt-20 mb-1 px-8 ">
-      <div className="container mx-auto max-w-screen-xl ">
+      <div className="container mx-auto lg:max-w-screen-xl ">
         <div className="mb-20 max-w-md ">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
             Who We Are
           </h2>
           <p className="text-base lg:text-lg  font-light text-gray-400">
-            We’re a technology company redefining how spaces are
-            managed—intuitive, connected, and built for the future.
+            We’re a technology company redefining how buildings are connected,
+            automated, and optimised—intuitive, scalable, and ready for the
+            future.
           </p>
         </div>
-        <div className="mb-14 grid h-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mb-14 grid h-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 ">
           {advantages.map((item, index) => (
             <div
               key={index}
@@ -37,7 +38,7 @@ const AdvAbout = () => {
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
                 cardNumber === index ? "opacity-100" : "opacity-50"
-              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-300`}
+              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-400 border `}
             >
               <div className="flex flex-col items-start gap-2 text-left">
                 <div className="w-6 h-6 mb-1">

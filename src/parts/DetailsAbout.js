@@ -8,7 +8,7 @@ import heroAbout from "../assets/images/AdvangesAbout/WhatWe.webp";
 export default function DetailsAbout() {
   return (
     <section className="lg:py-32 mt-16 px-12">
-      <div className=" flex justify-center max-w-screen-xl mx-auto">
+      <div className=" container flex justify-center lg:max-w-screen-xl mx-auto">
         <div className="lg:flex justify-center items-center">
           <div className="lg:w-1/2  flex flex-col justify-center">
             <div className="mb-6 md:mb-8 lg:mb-0 ">
