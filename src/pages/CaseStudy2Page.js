@@ -7,7 +7,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 import CaseBlog2 from "parts/CaseBlog2";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussAbout.js";
 // eslint-disable-next-line
 import CaseStudy2 from "../parts/CaseStudy2";
 

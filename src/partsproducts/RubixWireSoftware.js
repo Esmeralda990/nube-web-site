@@ -4,91 +4,59 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { CheckCircle2 } from "lucide-react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { RubixWire } from "../json/ProductsPageData.js";
 import Button from "../elements/Button/index.js";
 
-const Wire = () => {
-  const { image } = RubixWire[0];
-  return (
-    <section className="py-16 pb-8">
-      <div className="container mx-auto max-w-screen-2xl px-8">
-        <h2 className="text-2xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
-          Rubix Wires
-        </h2>
+const checkedItems = [
+  "Drag-and-drop visual editor – create and deploy control logic without traditional coding",
+  "Real-time monitoring – view live data flows and system behaviour instantly",
+  "Built-in protocol support – works with BACnet, Modbus, and LoRaWAN®",
+  "Flexible control options – program PACs, PIDs, RTUs, and FCUs with ease",
+  "No licensing fees – included with all Nube iO controllers",
+  "Designed for HVAC and IoT – ideal for smart buildings and connected devices",
+  "Remote access – configure and monitor systems from anywhere",
+];
 
-        <div className="w-full ">
+const ProductsRubixW = () => {
+  return (
+    <section className="lg:py-32 container mx-auto flex flex-col items-start gap-8 lg:flex-row lg:items-center">
+      <div className="relative z-10 w-full flex justify-center">
+        <div className="w-full lg:w-[50%] flex justify-center">
           <video
-            src={image}
+            src={RubixWire[0].image}
             autoPlay
             loop
             muted
             playsInline
-            className="w-full max-w-3xl aspect-video object-cover rounded-lg mx-auto"
+            className="aspect-[4/3] lg:scale-[2] w-full object-contain rounded-md "
           />
         </div>
+      </div>
 
-        <div className="flex flex-col lg:flex-row gap-20">
-          <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-4 text-theme-blue mt-10">
-              No licencing. Free on your device
-            </h3>
-            <p className="font-light text-lg text-gray-400 mb-10">
-              The Wires program comes free with your Nube iO device with no
-              ongoing licencing costs or point restrictions.
-            </p>
-
-            <h3 className="text-xl mt-4 text-theme-blue font-bold md:text-2xl">
-              Program your devices from anywhere
-            </h3>
-            <p className="text-muted-foreground font-light text-lg text-gray-400 leading-relaxed">
-              Wires is an easy to use programming tool that allows users to
-              remotely program BMS and IoT projects.
-            </p>
-          </div>
-
-          <div className="w-full lg:w-1/2 lg:mt-4">
-            <h3 className="text-xl text-theme-blue font-bold md:text-2xl">
-              Take a tour
-            </h3>
-            <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
-              Learn more about Rubix Wires features in the HVAC and IoT space.
-            </p>
-
-            <div className="flex gap-4 mt-6 mb-6">
-              <Button
-                href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
-                type="link"
-                className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
-              >
-                DOCUMENTATION
-              </Button>
-            </div>
-
-            <ul className="flex flex-col gap-3 sm:gap-2">
-              {[
-                "Flow-based and real-time editor",
-                "Drag-and-drop style",
-                "Intuitive UI",
-                "Similar to other well known BMS commissioning interfaces",
-                "BACnet, Modbus, LoRaWAN® ready",
-                "Pre-built nodes (blocks) for PAC, PID, RTU and FCU control",
-              ].map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-theme-teal sm:h-5 sm:w-5" />
-                  <p className="text-lg sm:text-lg font-light text-gray-400">
-                    {benefit}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <div className="w-full lg:w-[60%] px-6 flex flex-col items-center lg:items-start">
+        <h2 className="mb-6 text-3xl lg:text-5xl font-bold text-theme-blue text-center">
+          Engineering Tools: Rubix Wires
+        </h2>
+        <p className="mb-6 text-base lg:text-lg font-light text-gray-400 ">
+          Rubix Wires is Nube iO’s powerful low-code engineering tool for fast,
+          flexible building automation and IoT deployment.
+        </p>
+        <ul className="mb-8 list-disc pl-10 text-muted-foreground font-light text-gray-400 text-base lg:text-lg">
+          {checkedItems.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <Button
+          href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
+          type="link"
+          className=" flex item-center justify-center px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+          download
+        >
+          USER MANUAL
+        </Button>
       </div>
     </section>
   );
 };
 
-export default Wire;
+export default ProductsRubixW;

@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussSolutions";
 import Scenario2 from "parts/Scenario2";
 
 export default class scenario2 extends Component {

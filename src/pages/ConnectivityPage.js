@@ -6,7 +6,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import NubeConnectivity from "partsproducts/NubeConnectivity";
 import PhoneNube from "partsproducts/NubPhone.js";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussAbout.js";
 import Footer from "parts/Footer";
 
 import { Connectivity } from "../json/ProductsPageData.js";

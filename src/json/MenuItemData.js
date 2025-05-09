@@ -43,23 +43,22 @@ export const menuItemsData = [
                 title: "Our Solutions",
                 items: [
                   {
-                    name: "Professional Services",
-                    id: "Professional",
-                    icon: icons1,
-                    description: "Support and consulting",
-                  },
-
-                  {
-                    name: "OEM",
-                    id: "OEM",
-                    icon: icons2,
-                    description: "Custom integration ",
+                    name: "Software",
+                    id: "Software",
+                    icon: icons4,
+                    description: "Intelligent IoT system",
                   },
                   {
                     name: "Hardware",
                     id: "Hardware",
                     icon: icons3,
                     description: "IoT control equipment",
+                  },
+                  {
+                    name: "Professional Services",
+                    id: "Professional",
+                    icon: icons1,
+                    description: "Support and consulting",
                   },
                 ],
               },
@@ -69,13 +68,13 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Our Technology",
+                title: "",
                 items: [
                   {
-                    name: "Software",
-                    id: "Software",
-                    icon: icons4,
-                    description: "Intelligent IoT system",
+                    name: "OEM",
+                    id: "OEM",
+                    icon: icons2,
+                    description: "Custom integration ",
                   },
                   {
                     name: "Connectivity",
@@ -286,7 +285,7 @@ export const menuItemsData = [
             title: "",
             items: [
               {
-                title: "Case Studies",
+                title: "",
                 items: [
                   {
                     name: "Victorian Schools",

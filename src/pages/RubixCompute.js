@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsRubix from "partsproducts/ProductsRubix";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussRC";
 import Footer from "parts/Footer";
 
 export default class RubixCompute extends Component {

@@ -20,7 +20,7 @@ import DetailsHardware from "parts/DetailsHardware";
 import SolutionHardware from "parts/SolutionHardware";
 import DetailsSoftware from "parts/DetailsSoftware";
 import SoftwareSolutions from "parts/SoftwareSolutions";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussSolutions";
 import Footer from "parts/Footer";
 
 export default class SolutionsPage extends Component {
@@ -52,6 +52,16 @@ export default class SolutionsPage extends Component {
         <Header1 />
         <HeroSolution />
 
+        <section id="Software">
+          <DetailsSoftware />
+          <SoftwareSolutions />
+        </section>
+
+        <section id="Hardware">
+          <DetailsHardware />
+          <SolutionHardware data={Solutionsfeature} />
+        </section>
+
         <section id="Professional">
           <DetailsProfessionalService />
           <Servicesolutions data={ServiceSolutions} />
@@ -61,16 +71,6 @@ export default class SolutionsPage extends Component {
         <section id="OEM">
           <Detailoem />
           <AdvantagesOEM data={AdvantageSolutions} />
-        </section>
-
-        <section id="Hardware">
-          <DetailsHardware />
-          <SolutionHardware data={Solutionsfeature} />
-        </section>
-
-        <section id="Software">
-          <DetailsSoftware />
-          <SoftwareSolutions />
         </section>
 
         <Discuss />

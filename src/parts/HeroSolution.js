@@ -11,7 +11,7 @@ import Herosolutions from "../assets/images/hero/SolutionsHero.png";
 
 export default function HeroSolutions() {
   return (
-    <section className="container mx-auto max-w-screen-2xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-20">
+    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-20">
       <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 lg:text-left">
         <h1 className="text-5xl md:text-7xl text-theme-blue font-bold leading-tight mb-5">
           Empowering Smart Automation
@@ -37,7 +37,7 @@ export default function HeroSolutions() {
       <div className="flex justify-center items-center w-full lg:w-1/2 mt-10 lg:mt-0">
         <Fade direction="up" triggerOnce>
           <img
-            className="max-w-full h-auto"
+            className="max-w-full lg:max-w-[800px] md:max-w-[700px] h-auto "
             src={Herosolutions}
             alt="Solutions Nube IO"
           />

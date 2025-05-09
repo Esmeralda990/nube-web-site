@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsDroplet from "partsproducts/ProductsDroplet";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussDroplet";
 import Footer from "parts/Footer";
 
 export default class Droplet extends Component {

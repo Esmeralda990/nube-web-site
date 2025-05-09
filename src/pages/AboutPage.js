@@ -13,7 +13,7 @@ import LogosAbout from "parts/LogosAbout";
 import OurStory from "parts/Ourstory";
 import TeamSection from "parts/TeamSection";
 import TeamGroup from "parts/TeamGroup";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussAbout";
 import Footer from "parts/Footer";
 
 export default class ProjectPage extends Component {

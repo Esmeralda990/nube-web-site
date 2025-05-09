@@ -10,7 +10,7 @@ import SoftwareBenefits from "partsproducts/BenefitsSoftware";
 import VideoSoftware from "partsproducts/VideoSoftware";
 import GifSoftware from "partsproducts/GifSoftware";
 import RubixWireSoftware from "partsproducts/RubixWireSoftware";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussAbout.js";
 import Footer from "parts/Footer";
 
 export default class SoftwarePage extends Component {

@@ -8,26 +8,24 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Detailoem() {
   return (
-    <div className="bg-white">
-      <section className="hero sm:items-center lg:items-start sm:flex-row pt-12 md:pt-24">
-        <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-16">
-          <Fade direction="up" triggerOnce>
-            <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-6">
-              OEM Solutions
-            </h2>
-          </Fade>
-          <Fade direction="up" triggerOnce delay={400}>
-            <p className="max-w-6xl mx-auto text-center font-light text-base lg:text-lg text-gray-400 leading-relaxed text-center ">
-              Nube iO provides flexible OEM solutions like white labelling,
-              custom hardware, and software development. We help businesses
-              integrate advanced building automation technology, expanding their
-              offerings with tailored, scalable solutions. Focusing on
-              customisation, sustainability, and seamless IoT integration, our
-              OEM services meet the unique.
-            </p>
-          </Fade>
-        </div>
-      </section>
-    </div>
+    <section className="hero sm:items-center lg:items-start sm:flex-row pt-12 lg:pt-24">
+      <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 ">
+        <Fade triggerOnce>
+          <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-6">
+            OEM Solutions
+          </h2>
+        </Fade>
+        <Fade triggerOnce delay={400}>
+          <p className="max-w-6xl mx-auto text-center font-light text-base lg:text-lg text-gray-400 leading-relaxed text-center ">
+            Nube iO provides flexible OEM solutions like white labelling, custom
+            hardware, and software development. We help businesses integrate
+            advanced building automation technology, expanding their offerings
+            with tailored, scalable solutions. Focusing on customisation,
+            sustainability, and seamless IoT integration, our OEM services meet
+            the unique.
+          </p>
+        </Fade>
+      </div>
+    </section>
   );
 }

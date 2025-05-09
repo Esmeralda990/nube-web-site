@@ -3,12 +3,12 @@
 /* eslint-disable import/extensions */
 import React from "react";
 
-export default function AdvantageSolutions({ data }) {
+export default function AdvantageOem({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-white lg:py-24 pt-12 mb-12 lg:mb-16 ">
-      <div className="container mx-auto max-w-screen-2xl px-12">
+    <div className="bg-white lg:py-24 pt-12 mb-6  ">
+      <div className="container mx-auto  px-12">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
             <div

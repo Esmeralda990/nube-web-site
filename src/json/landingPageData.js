@@ -51,9 +51,9 @@ import IOT from "../assets/images/Team/Jonathan.png";
 import CFO from "../assets/images/Team/Jonkane.png";
 
 // solution Feature
-import Controller from "../assets/images/RubixCompute/RubixC1.png";
-import Lora from "../assets/images/MicroEdge/MICRO2.png";
-import Expansion from "../assets/images/RubixLW/RC-LW.png";
+import Controller from "../assets/images/RubixCompute/RubixCompute01.png";
+import Lora from "../assets/images/MicroEdge/MicroEdge01.png";
+import Expansion from "../assets/images/RubixLW/RubixConnect01.png";
 import Iconshard1 from "../assets/images/IconsHardware/controllers.png";
 import Iconshard2 from "../assets/images/IconsHardware/Lora.png";
 import Iconshard3 from "../assets/images/IconsHardware/Expansion.png";
