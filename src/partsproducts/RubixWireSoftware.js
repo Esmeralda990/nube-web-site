@@ -46,14 +46,15 @@ const ProductsRubixW = () => {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <Button
-          href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
-          type="link"
-          className=" flex item-center justify-center px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
-          download
-        >
-          USER MANUAL
-        </Button>
+        <div className=" w-full flex justify-center ">
+          <Button
+            href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
+            type="link"
+            className="block mx-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+          >
+            USER MANUAL
+          </Button>
+        </div>
       </div>
     </section>
   );
