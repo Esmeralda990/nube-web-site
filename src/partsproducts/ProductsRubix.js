@@ -138,7 +138,7 @@ const ProductRubix = () => {
             </article>
           </div>
 
-          <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row lg:pl-24 lg:mt-0">
+          <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row lg:mt-0">
             <p className="font-light text-base text-gray-400 leading-relaxed md:text-lg sm:break-words overflow-clip max-w-sm md:max-w-full ">
               The Rubix Compute is the Nube iO gateway. It is a small wireless &
               wired gateway capable of monitoring and controlling various

@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const RubixLW = () => {
   return (
-    <section className="lg:mt-28  mt-12 pb-12 md:ml-24 ml-0">
+    <section className="lg:mt-28 lg:mt-12 pb-12 mt-4">
       <div className="container mx-auto px-12">
         <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Rubix Connect LW
@@ -29,7 +29,7 @@ const RubixLW = () => {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
                 speed={400}
-                className="swiper-products mb-12 aspect-video w-full h-auto rounded-lg"
+                className="swiper-products aspect-[5/4] mb-12 object-contain w-full max-w-4xl mx-auto rounded-lg"
               >
                 {RubixConnectLW.map((item) => (
                   <SwiperSlide key={item.id} className="swiper-slide-products">

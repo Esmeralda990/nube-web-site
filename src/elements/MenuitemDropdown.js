@@ -118,10 +118,12 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                                   : "grid grid-cols-1"
                               }`}
                             >
-                              {category.title && (
+                              {category.title?.trim() ? (
                                 <h5 className="font-bold text-theme-blue text-lg whitespace-nowrap">
                                   {category.title}
                                 </h5>
+                              ) : (
+                                <div className="h-6" />
                               )}
                               {category.items &&
                                 category.items.map((item) => {

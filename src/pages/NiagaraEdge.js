@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsNiagara from "partsproducts/ProductsNiagara";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussCI";
 import Footer from "parts/Footer";
 
 export default class Niagara extends Component {

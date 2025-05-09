@@ -38,7 +38,7 @@ const AdvAbout = () => {
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
                 cardNumber === index ? "opacity-100" : "opacity-50"
-              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-gray-400 border `}
+              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-theme-teal border `}
             >
               <div className="flex flex-col items-start gap-2 text-left">
                 <div className="w-6 h-6 mb-1">

@@ -6,7 +6,7 @@ import React, { Component } from "react";
 import Header1 from "parts/Header1";
 import ProductsRubixLW from "partsproducts/ProductsRubixLW.js";
 import Footer from "parts/Footer";
-import Discuss from "parts/Discuss1.js";
+import Discuss from "parts/DiscussLW.js";
 
 import { RubixConnectLW } from "../json/ProductsPageData.js";
 

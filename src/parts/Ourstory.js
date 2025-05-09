@@ -12,11 +12,11 @@ const Ourstory = () => {
   const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
-    scrollContainerRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+    scrollContainerRef.current?.scrollBy({ left: -600, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    scrollContainerRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+    scrollContainerRef.current?.scrollBy({ left: 600, behavior: "smooth" });
   };
 
   const progressWidth = `${(OurStoryD[0].length - 1) * 6}%`;
@@ -42,14 +42,14 @@ const Ourstory = () => {
               onClick={scrollLeft}
               className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
             >
-              <ArrowLeft size={20} />
+              <ArrowLeft size={20} className="text-theme-teal" />
             </button>
             <button
               type="button"
               onClick={scrollRight}
               className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
             >
-              <ArrowRight size={20} />
+              <ArrowRight size={20} className="text-theme-teal" />
             </button>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Ourstory = () => {
             initial={{ width: 0 }}
             whileInView={{ width: progressWidth }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="absolute top-10 left-0 h-[2px] bg-gray-800 z-10"
+            className="absolute top-10 left-0 h-[2px] bg-theme-teal z-10"
           />
 
           <div className="w-full overflow-x-auto no-scrollbar pb-10 items-start">

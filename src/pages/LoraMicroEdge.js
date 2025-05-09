@@ -6,7 +6,7 @@ import React, { Component } from "react";
 
 import Header1 from "parts/Header1";
 import ProductsMicroEdge from "partsproducts/ProductsMicroEdge";
-import Discuss from "parts/Discuss1";
+import Discuss from "parts/DiscussMicro";
 import Footer from "parts/Footer";
 
 export default class MicroEdge extends Component {

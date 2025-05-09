@@ -6,7 +6,7 @@ import GifSoftware from "../assets/images/SoftwareProducts/rubix-ce-overview.gif
 
 const VidSoftware = () => {
   return (
-    <section className="relative pb-20 mt-20 ">
+    <section className="relative lg:mb-32 mt-20 mb-12">
       <div className="mx-auto mb:-mb-48 overflow-hidden px-12">
         <div className="mx-auto aspect-[16/12] max-w-5xl rounded-xl border border-300 bg-gray-200 p-6">
           <img
