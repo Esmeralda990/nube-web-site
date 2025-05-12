@@ -13,13 +13,8 @@ const GetD = () => {
     email: "",
     phone: "",
     company: "",
-    role: "",
-    whatSystems: "",
-    primaryGoals: "",
-    buildings: "",
-    Specific: "",
-    challenges: "",
-    timeline: "",
+    inquiry: "",
+    message: "",
     contactAgreement: false,
     marketingAgreement: false,
   });
@@ -55,13 +50,8 @@ const GetD = () => {
         email: "",
         phone: "",
         company: "",
-        role: "",
-        whatSystems: "",
-        primaryGoals: "",
-        buildings: "",
-        interestedFeatures: "",
-        challenges: "",
-        timeline: "",
+        inquiry: "",
+        message: "",
         contactAgreement: false,
         marketingAgreement: false,
       });
@@ -70,7 +60,7 @@ const GetD = () => {
       // eslint-disable-next-line
       console.error("Error:", error);
       // eslint-disable-next-line
-      alert("Hubo un error al enviar la solicitud de demo.");
+      alert("There was an error sending the demo request.");
     }
   };
 

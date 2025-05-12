@@ -24,34 +24,15 @@ const Ourstory = () => {
   return (
     <section className="bg-white w-full py-16 lg:mb-32">
       <div className="container mx-auto space-y-10 px-8 ">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-5xl text-theme-blue mb-4">
-              Our Story
-            </h2>
-            <p className=" text-gray-400 font-light text-base lg:text-lg max-w-xl mb-12">
-              From our roots in system integration to becoming a global tech
-              innovator, Nube iO’s journey is driven by purpose, progress, and
-              possibilities.
-            </p>
-          </div>
-
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={scrollLeft}
-              className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
-            >
-              <ArrowLeft size={20} className="text-theme-teal" />
-            </button>
-            <button
-              type="button"
-              onClick={scrollRight}
-              className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
-            >
-              <ArrowRight size={20} className="text-theme-teal" />
-            </button>
-          </div>
+        <div className="justify-between mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-5xl text-theme-blue mb-4">
+            Our Story
+          </h2>
+          <p className=" text-gray-400 font-light text-base lg:text-lg max-w-xl mb-12">
+            From our roots in system integration to becoming a global tech
+            innovator, Nube iO’s journey is driven by purpose, progress, and
+            possibilities.
+          </p>
         </div>
 
         <div className="relative">
@@ -98,6 +79,22 @@ const Ourstory = () => {
             </div>
           </div>
         </div>
+      </div>{" "}
+      <div className=" flex justify-center gap-4 mt-6">
+        <button
+          type="button"
+          onClick={scrollLeft}
+          className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
+        >
+          <ArrowLeft size={20} className="text-theme-teal" />
+        </button>
+        <button
+          type="button"
+          onClick={scrollRight}
+          className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
+        >
+          <ArrowRight size={20} className="text-theme-teal" />
+        </button>
       </div>
     </section>
   );

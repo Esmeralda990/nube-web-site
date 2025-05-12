@@ -8,7 +8,7 @@ import { WhoSupport } from "../json/landingPageData";
 
 const Partner = () => {
   return (
-    <section className="container mx-auto lg:max-w-screen-xl flex flex-col items-center lg:mt-28 lg:mb-40 mb-12 px-6">
+    <section className="container mx-auto lg:max-w-screen-xl flex flex-col items-center lg:mt-28 lg:mb-40 mb-12 px-6 mt-20">
       <Fade direction="" triggerOnce>
         <h2 className="text-3xl lg:text-5xl text-theme-blue text-center font-bold px-6 mb-8">
           How We Support Our Partners

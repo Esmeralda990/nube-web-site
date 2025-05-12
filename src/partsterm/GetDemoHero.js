@@ -53,12 +53,12 @@ const HeroDemo = () => {
           </div>
         </div>
 
-        <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+        <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center overflow-visible">
           <Fade triggerOnce delay={1000}>
             <img
               src={heroDemo}
               alt="heroDemo"
-              className="max-w-full h-auto rounded-lg ml-12 "
+              className="max-w-full h-auto rounded-lg"
             />
           </Fade>
         </div>

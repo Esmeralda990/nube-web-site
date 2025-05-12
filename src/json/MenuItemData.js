@@ -105,7 +105,7 @@ export const menuItemsData = [
                     description: "Accelerate OEM Innovation",
                   },
                   {
-                    name: "Building Rating Sys",
+                    name: "Building Rating Systems",
                     link: "/scenario3-building/",
                     icon: icons6,
                     description: "Easy Building Ratings",
@@ -239,7 +239,7 @@ export const menuItemsData = [
           },
           {
             name: "Contact",
-            id: "Hardware",
+            id: "Contact",
             icon: icons19,
             description: "Contact us today",
           },
@@ -260,7 +260,7 @@ export const menuItemsData = [
                 title: "Case Studies",
                 items: [
                   {
-                    name: "Fujitsu Gen–AnywAIRiO",
+                    name: "Fujitsu Gen–AnywAiR iO",
                     link: "/case-study1/",
                     icon: icons6,
                     description: "Learn More",

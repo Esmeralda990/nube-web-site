@@ -46,7 +46,7 @@ const ProductsRubixW = () => {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <div className=" w-full flex justify-center ">
+        <div className="w-full flex justify-center">
           <Button
             href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-ce/"
             type="link"

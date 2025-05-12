@@ -8,9 +8,9 @@ import Button from "../elements/Button";
 
 export default function BrandIcon() {
   return (
-    <Button className="" type="link" href="/">
+    <Button type="link" href="/">
       <img
-        src="/LogoNube.png"
+        src="/Logo.svg"
         alt="Logo Nube IO"
         className="w-auto h-8 md:h-12 max-w-[192px]"
       />
