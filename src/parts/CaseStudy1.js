@@ -72,7 +72,7 @@ const Casestudy = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="lg:w-1/2">
           <h1 className="mt-10 text-3xl md:text-5xl lg:text-7xl leading-tight text-theme-blue font-bold ">
-            OEM Solution for Fujitsu AnywAIR iO
+            OEM Solution for Fujitsu AnywAiR iO
           </h1>
         </div>
 

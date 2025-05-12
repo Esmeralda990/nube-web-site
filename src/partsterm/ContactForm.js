@@ -59,8 +59,6 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // eslint-disable-next-line
-    console.log(formData);
 
     try {
       const response = await fetch("http://localhost:3001/contact-form", {

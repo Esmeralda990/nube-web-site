@@ -3,13 +3,13 @@
   "name": "Nube iO App",
   "icons": [
     {
-      "src": "logoNube.png",
-      "type": "image/png",
+      "src": "/Logo.svg",
+      "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "/logoNube.png",
-      "type": "image/png",
+      "src": "/Logo.svg",
+      "type": "image/svg",
       "sizes": "512x512"
     }
   ],

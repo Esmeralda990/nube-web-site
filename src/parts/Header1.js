@@ -272,7 +272,7 @@ const Header1 = () => {
                               href="/scenario3-building/"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              Building Rating Sys
+                              Building Rating Systems
                             </a>
                           </li>
                         </ul>

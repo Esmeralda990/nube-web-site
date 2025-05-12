@@ -29,10 +29,10 @@ import Sustainability from "../assets/images/Advantages/Sustainability.webp";
 import Insights from "../assets/images/Advantages/Real.webp";
 
 // AdvangeAbout
-import Company from "../assets/images/AdvangesAbout/S1.png";
-import Growth from "../assets/images/AdvangesAbout/GrowthSustantibily.webp";
-import Excellence from "../assets/images/AdvangesAbout/CommitmenttoExcellent.webp";
-import Solutions from "../assets/images/AdvangesAbout/SmartTecnology.webp";
+import Company from "../assets/images/AdvangesAbout/Company.svg";
+import Growth from "../assets/images/AdvangesAbout/Global.svg";
+import Excellence from "../assets/images/AdvangesAbout/Innovationt.svg";
+import Solutions from "../assets/images/AdvangesAbout/Future.svg";
 import IconsCom from "../assets/images/AdvangesAbout/IconsCom.png";
 import IconsGro from "../assets/images/AdvangesAbout/ IconsGro.png";
 import IconsExc from "../assets/images/AdvangesAbout/ IconsCom.png";
@@ -92,11 +92,6 @@ import IconsOur7 from "../assets/images/IconsOurStory/Hardware.png";
 import IconsOur8 from "../assets/images/IconsOurStory/Rubix.png";
 import IconsOur9 from "../assets/images/IconsOurStory/RubixWires.png";
 import IconsOur10 from "../assets/images/IconsOurStory/Appreleased.png";
-
-// Why partners
-import Why1 from "../assets/images/WhyPartners/Innovation.webp";
-import Why2 from "../assets/images/WhyPartners/Sustainability.webp";
-import Why3 from "../assets/images/WhyPartners/Client.webp";
 
 // Who Support
 import Who1 from "../assets/images/WhoSupport/Dedicated.png";
@@ -681,22 +676,32 @@ export const WhoSupport = [
 export const WhyData = [
   [
     {
+      id: "phase1",
       title: "Innovation Driven",
       description:
-        "We actively seek collaboration with technology pioneers to offer state-of-the-art solutions.",
-      image: Why1,
+        "We design with purpose, delivering solutions that push the boundaries of smart building automation.",
+      image: Who3,
     },
     {
+      id: "phase2",
       title: "Sustainability Focused",
       description:
-        "Our partnerships help foster sustainable practices in building management, supporting greener futures.",
-      image: Why2,
+        "Our technology helps partners achieve energy efficiency and long-term environmental goals.",
+      image: Who2,
     },
     {
+      id: "phase3",
       title: "Client-Centric Approach",
       description:
-        "Working closely with partners, we tailor comprehensive solutions that address the unique challenges faced by our clients.",
-      image: Why3,
+        "We tailor our offerings to meet your project needs and customer expectations.",
+      image: Who1,
+    },
+    {
+      id: "phase4",
+      title: "Collaborative Market Approach",
+      description:
+        "We actively support our partners in winning business through co-marketing and tailored support.",
+      image: Who3,
     },
   ],
 ];

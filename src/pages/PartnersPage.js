@@ -48,7 +48,10 @@ export default class Partnerss extends Component {
           <WhoSuport data={WhoSupport} />
         </section>
 
-        <CtaPartners />
+        <section id="Contact">
+          <CtaPartners />
+        </section>
+
         <Discuss />
         <Footer />
       </>

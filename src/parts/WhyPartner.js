@@ -2,52 +2,70 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Button from "../elements/Button";
 import { WhyData } from "../json/landingPageData";
 
-const Why = () => {
+const Partnerswhy = () => {
+  const PHASES = WhyData[0];
+  const [activeTab, setActiveTab] = useState(0);
+  const current = PHASES[activeTab];
+
   return (
-    <section className="py-12 mb-12 px-8 ">
-      <div className="container mx-auto lg:max-w-screen-lg">
-        <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
-          <h2 className="mb-2 text-center text-3xl lg:text-5xl font-bold text-theme-blue">
-            Why Partner With Us
-          </h2>
-          <p className="text-center font-light text-base lg:text-lg text-gray-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-            itaque modi quos hic placeat laudantium inventore reiciendis
-            cupiditate, facilis aliquam.
-          </p>
-        </div>
-        <div className="mt-20 grid gap-10 lg:grid-cols-2">
-          {WhyData[0].map((item, index) => (
-            <div
-              key={index}
-              className={`${index === 2 ? "md:col-span-2" : ""}`}
+    <section className="bg-white">
+      <div className="container mx-auto lg:max-w-screen-xl px-4 py-24 flex flex-col items-center justify-center">
+        <h2 className="mb-12 text-3xl lg:text-5xl font-bold tracking-tighter lg:mb-24 text-center text-theme-blue">
+          Why Partner With Us
+        </h2>
+
+        <div className="grid w-full grid-cols-2 sm:grid-cols-4 gap-2 border-b">
+          {PHASES.map((phase, index) => (
+            <Button
+              key={phase.id}
+              onClick={() => setActiveTab(index)}
+              className={`text-md py-4 border-b-2 transition-all duration-200 ${
+                activeTab === index
+                  ? "border-theme-teal text-gray-500 font-bold text-base"
+                  : "border-transparent text-gray-400 font-light"
+              }`}
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                className={`rounded-lg border transition-transform duration-300 hover:scale-105 ${
-                  index === 2
-                    ? "aspect-video max-h-[480px] w-full bg-muted object-cover transition-transform duration-300 hover:scale-105"
-                    : ""
-                }`}
-              />
-              <div className="px-4 pt-10">
-                <h4 className="font-bold text-theme-teal text-base lg:text-xl mb-4">
-                  {item.title}
-                </h4>
-                <p className="text-base font-light text-gray-400">
-                  {item.description}
-                </p>
+              {phase.title}
+            </Button>
+          ))}
+        </div>
+
+        <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 w-full">
+          <div className="col-span-1 flex flex-col gap-4 max-w-xl">
+            <h3 className="text-lg lg:text-3xl font-medium tracking-tighter text-theme-teal md:text-5xl">
+              {current.title}
+            </h3>
+            <p className="text-lg text-gray-400 font-light max-w-md">
+              {current.description}
+            </p>
+          </div>
+
+          <motion.div
+            key={current.id}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: [0, 0.71, 0.2, 1.01], duration: 0.8 }}
+            className="col-span-1"
+          >
+            <div className="rounded-3xl border bg-gray-50 p-2 shadow-none">
+              <div className="rounded-2xl border-2 border-white bg-muted overflow-hidden">
+                <img
+                  src={current.image}
+                  alt={current.title}
+                  className="lg:max-w-[500px] lg:max-h-[400px] object-contain mx-auto transition-all duration-300 ease-in-out hover:scale-95"
+                />
               </div>
             </div>
-          ))}
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Why;
+export default Partnerswhy;

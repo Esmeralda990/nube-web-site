@@ -62,11 +62,11 @@ const AdvAbout = () => {
             </div>
           ))}
         </div>
-        <div className="rounded-t-[28px] p-1 pb-0 border border-gray-200">
+        <div className="rounded-t-[28px] overflow-hidden border border-gray-200">
           <img
             src={advantages[cardNumber].image}
             alt={advantages[cardNumber].title}
-            className="max-h-[500px] w-full rounded-t-[28px] object-cover object-bottom transition-all duration-500"
+            className="w-full h-[500px] object-cover object-center transition-all duration-500 transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>
