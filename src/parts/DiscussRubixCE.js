@@ -5,19 +5,19 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../elements/Button";
 import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import ProdRubix from "../assets/images/ImgFooter/Card02.svg";
+import ProdRubix from "../assets/images/ImgFooter/RubixCE.svg";
 
 export default function DiscussRubixCE() {
   return (
     <section className="relative w-full flex justify-center py-24 px-4 ">
-      <div className="relative lg:max-w-[104rem] w-full rounded-3xl overflow-hidden drop-shadow-[0_4px_8px_rgba(0,0,0,0.18)]">
+      <div className="relative lg:max-w-[104rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.20)]">
         <img
           src={bgImg}
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-70"
           style={{ objectFit: "cover" }}
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-white bg-opacity-50 z-10" />
+        <div className="absolute top-0 left-0 w-full h-full bg-white bg-opacity-50 z-0" />
 
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center px-4 p-20 md:p-40">
           <div className="w-fulllg:w-1/2 text-center md:text-left text-theme-blue lg:ml-8">
@@ -56,7 +56,7 @@ export default function DiscussRubixCE() {
             <img
               src={ProdRubix}
               alt="Rubix CE"
-              className="w-full max-w-lg object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)] hidden md:block"
+              className=" max-w-sm object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.12)] hidden sm:block"
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ const RubixLW = () => {
   return (
     <section className="lg:mt-28 lg:mt-12 pb-12 mt-4">
       <div className="container mx-auto px-12">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
           Rubix Connect LW
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
@@ -41,9 +41,9 @@ const RubixLW = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
                 Capabilities
-              </h1>
+              </h3>
               <div>
                 <table className="w-full table-auto">
                   <thead>
@@ -134,9 +134,9 @@ const RubixLW = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <p className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
-            </p>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-2">
               {[
                 "Easy to install Attach to any surface. No wiring required",

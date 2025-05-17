@@ -25,10 +25,12 @@ import Micro2 from "../assets/images/MicroEdge/MicroEdge02.png";
 import Micro3 from "../assets/images/MicroEdge/MicroEdge03.png";
 
 // Icons Software Benefits
-import Desktop from "../assets/images/IconsBenefitsSoftware/Desktop.png";
-import License from "../assets/images/IconsBenefitsSoftware/License.png";
-import Friendly from "../assets/images/IconsBenefitsSoftware/Send.png";
-import Data from "../assets/images/IconsBenefitsSoftware/User.png";
+import Unified from "../assets/images/IconsBenefitsSoftware/UnifiedPlatform.svg";
+import Cloud from "../assets/images/IconsBenefitsSoftware/CloudNative.svg";
+import Flexible from "../assets/images/IconsBenefitsSoftware/FlexibleScalable.svg";
+import Open from "../assets/images/IconsBenefitsSoftware/OpenProtocol.svg";
+import Real from "../assets/images/IconsBenefitsSoftware/RealTime.svg";
+import Code from "../assets/images/IconsBenefitsSoftware/LowCode.svg";
 
 // Gif Benefits
 import Anywhere from "../assets/Video/Sendyourdata01.webm";
@@ -39,12 +41,6 @@ import Manage3 from "../assets/images/SoftwareProducts/ce-select-version-1024x62
 
 // Rubix Wire
 import RubixWire1 from "../assets/Video/RubixWire03_Webm.webm";
-
-// NubeConnectivity
-import Connectivity1 from "../assets/images/Connectivity/Dash01.png";
-import Connectivity2 from "../assets/images/Connectivity/Dash02.png";
-import Connectivity3 from "../assets/images/Connectivity/Dash03.png";
-import Connectivity4 from "../assets/images/Connectivity/Dash04.png";
 
 // Rubix Lw
 import RubixConnect from "../assets/images/RubixLW/RubixConnect01.png";
@@ -130,41 +126,41 @@ export const IconsBenefits = [
     title: "Unified Platform",
     description:
       "Manage, visualise, and control multiple systems from one place.",
-    icon: Desktop,
+    icon: Unified,
   },
   {
     id: "2",
     title: "Cloud-Native Control",
     description:
       "Access and configure your building systems remotely—anytime, anywhere.",
-    icon: License,
+    icon: Cloud,
   },
   {
     id: "3",
     title: "Flexible & Scalable",
     description:
       "Deploy across one site or many, with tools that grow with your needs.",
-    icon: Friendly,
+    icon: Flexible,
   },
   {
     id: "4",
     title: "Open Protocol Integration",
     description:
       "Supports BACnet, Modbus, LoRaWAN, MQTT and more—no vendor lock-in.",
-    icon: Data,
+    icon: Open,
   },
   {
     id: "5",
     title: "Real-Time Monitoring",
     description:
       "Get live insights from HVAC, energy, lighting, and sensor data.",
-    icon: Friendly,
+    icon: Real,
   },
   {
     id: "6",
     title: "Low-Code Configuration",
     description: "Configure logic and control without complex programming.",
-    icon: Data,
+    icon: Code,
   },
 ];
 
@@ -195,25 +191,6 @@ export const RubixWire = [
   {
     id: "1",
     image: RubixWire1,
-  },
-];
-
-export const Connectivity = [
-  {
-    id: "1",
-    image: Connectivity1,
-  },
-  {
-    id: "2",
-    image: Connectivity2,
-  },
-  {
-    id: "3",
-    image: Connectivity3,
-  },
-  {
-    id: "4",
-    image: Connectivity4,
   },
 ];
 
@@ -313,5 +290,41 @@ export const Blog4 = [
     title: "Enviro Building Services",
     date: "August 31, 2024",
     link: "/case-study3/",
+  },
+];
+
+export const AppConect = [
+  {
+    id: 1,
+    icon: Unified,
+    description:
+      "Log into multiple buildings across a large geographical area from one",
+  },
+  {
+    id: 2,
+    icon: Unified,
+    description:
+      "Access your data on your phone, laptop or tablet with no software",
+  },
+  {
+    id: 3,
+    icon: Unified,
+    description: "Fully customisable with multiple skin designs",
+  },
+  {
+    id: 4,
+    icon: Unified,
+    description: "Analyse data using a highly visual dashboard",
+  },
+  {
+    id: 5,
+    icon: Unified,
+    description:
+      "Stay on top of the BMS performance with daily updates and alerts",
+  },
+  {
+    id: 6,
+    icon: Unified,
+    description: "Scheduling & trending",
   },
 ];

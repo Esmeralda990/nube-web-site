@@ -22,6 +22,7 @@ import DetailsSoftware from "parts/DetailsSoftware";
 import SoftwareSolutions from "parts/SoftwareSolutions";
 import Discuss from "parts/DiscussSolutions";
 import Footer from "parts/Footer";
+import Connectivity from "../partsproducts/Connectivity.js";
 
 export default class SolutionsPage extends Component {
   componentDidMount() {
@@ -71,6 +72,10 @@ export default class SolutionsPage extends Component {
         <section id="OEM">
           <Detailoem />
           <AdvantagesOEM data={AdvantageSolutions} />
+        </section>
+
+        <section id="Connectivity">
+          <Connectivity />
         </section>
 
         <Discuss />

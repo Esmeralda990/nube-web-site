@@ -215,7 +215,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/connectivity/"
+                              href="/solutions/#Connectivity"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Connectivity
@@ -626,7 +626,7 @@ const Header1 = () => {
                               href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
                               className="text-gray-400 block px-6 py-2"
                             >
-                              TM&Support
+                              Technical Resources
                             </a>
                           </li>
                         </ul>

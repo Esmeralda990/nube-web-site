@@ -16,7 +16,7 @@ const NiagaraEdge = () => {
   return (
     <section className="lg:mt-28  mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
           Deliver the Reliability of Niagara ® to the Edge
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
@@ -72,9 +72,9 @@ const NiagaraEdge = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <p className="mb-4 text-lg sm:text-xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
-            </p>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-2">
               {[
                 "MULTIPLE CONFIGURATIONS 2 x Ethernet And 2x485",

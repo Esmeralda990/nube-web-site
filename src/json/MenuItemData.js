@@ -78,7 +78,7 @@ export const menuItemsData = [
                   },
                   {
                     name: "Connectivity",
-                    link: "/connectivity/",
+                    id: "Connectivity",
                     icon: icons5,
                     description: "Connecting devices",
                   },
@@ -322,7 +322,7 @@ export const menuItemsData = [
                 title: "Manuals & Support Articles",
                 items: [
                   {
-                    name: "TM&Support",
+                    name: "Technical Resources",
                     link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
                     icon: icons15,
                     description: "Manuals and support",

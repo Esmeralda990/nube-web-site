@@ -16,7 +16,7 @@ const ProductRubix16 = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-4xl lg:text-6xl  mt-4 text-theme-blue font-bold text-center">
           Rubix iO 16
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
@@ -128,9 +128,9 @@ const ProductRubix16 = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
-            </h2>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-2">
               {[
                 "INTEGRATE INTO ANY BMS Easily add to your existing",
@@ -149,20 +149,20 @@ const ProductRubix16 = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
               iO Specs
-            </h2>
-            <h3 className="text-base md:text-lg font-bold mt-4 mb-4 text-theme-teal">
-              Inputs
             </h3>
+            <h4 className="text-base lg:text-lg font-bold mt-4 mb-4 text-theme-teal">
+              Inputs
+            </h4>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               - 0-10dc <br />
               - Digital <br />
               - 4-20ma <br />- 10k type 2 thermistor
             </p>
-            <h3 className="text-base md:text-lg font-bold mt-4 mb-4 text-theme-teal">
+            <h4 className="text-base lg:text-lg font-bold mt-4 mb-4 text-theme-teal">
               Outputs
-            </h3>
+            </h4>
             <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               - 0-10dc <br />- Digital (Switch a 12vdc Relay)
             </p>

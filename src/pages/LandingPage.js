@@ -20,11 +20,11 @@ import Service from "parts/Service";
 import PorfolioCarousel from "parts/PortfolioCarousel";
 import Advantage from "parts/Advantage";
 import SolutionHero from "parts/SolutionHero";
-import SoftwareSolutions from "parts/SoftwareSolutions";
 import Connect from "parts/Connect";
 import PartnersSection from "parts/PartnerSection";
 import Discuss from "parts/DiscussHome";
 import Footer from "parts/Footer";
+import Connectivity from "../partsproducts/Connectivity.js";
 
 export default class LandingPage extends Component {
   componentDidMount() {
@@ -36,7 +36,7 @@ export default class LandingPage extends Component {
       <>
         <Header1 />
         <Hero />
-        <SoftwareSolutions />
+        <Connectivity showTitle={false} />
         <Service data={Services} />
         <PorfolioCarousel data={Slides} logos={Logos} />
         <Advantage data={Advantages} />

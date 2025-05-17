@@ -24,20 +24,22 @@ const Partner = () => {
         </p>
       </Fade>
 
-      <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1lg:gap-10">
+      <div className="mt-20 grid gap-6  lg:grid-cols-2 sm:grid-cols-1 lg:gap-8">
         {WhoSupport.map((item, index) => (
           <Fade direction="" triggerOnce key={index}>
-            <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden">
+            <div className="flex flex-col rounded-lg border border-bg-gray-500 overflow-hidden ">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full object-cover rounded-t-lg h-64 md:h-30 lg:h-30 transition-transform duration-300 hover:scale-105"
+                className="w-full object-contain rounded-t-lg h-64 lg:h-30 transition-transform duration-300 hover:scale-105 "
               />
               <div className="p-6">
                 <h4 className="mb-2.5 font-bold text-base lg:text-xl text-theme-teal">
                   {item.title}
                 </h4>
-                <p className="font-light text-gray-400">{item.description}</p>
+                <p className="font-light text-base text-gray-400">
+                  {item.description}
+                </p>
               </div>
             </div>
           </Fade>

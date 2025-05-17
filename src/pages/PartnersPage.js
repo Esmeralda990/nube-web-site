@@ -6,11 +6,10 @@ import React, { Component } from "react";
 import { WhoSupport } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Partner from "parts/HeroPartners";
-import Discuss from "parts/DiscussSolutions";
+import Discuss from "parts/DiscussPartners";
 import Footer from "parts/Footer";
 import WhoSuport from "parts/WhoSupport";
 import WhyPartners from "parts/WhyPartner";
-import CtaPartners from "parts/CtaPartners";
 
 export default class Partnerss extends Component {
   componentDidMount() {
@@ -49,10 +48,9 @@ export default class Partnerss extends Component {
         </section>
 
         <section id="Contact">
-          <CtaPartners />
+          <Discuss />
         </section>
 
-        <Discuss />
         <Footer />
       </>
     );

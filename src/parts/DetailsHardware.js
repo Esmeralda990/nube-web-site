@@ -8,8 +8,8 @@ import { Fade } from "react-awesome-reveal";
 
 export default function DetailsHardware() {
   return (
-    <div className="bg-white">
-      <section className="hero sm:items-center lg:items-start sm:flex-row pt-12">
+    <div className="bg-white container mx-auto lg:max-w-screen-xl">
+      <section className="sm:items-center lg:items-start sm:flex-row pt-12">
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-8">
           <Fade triggerOnce>
             <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
