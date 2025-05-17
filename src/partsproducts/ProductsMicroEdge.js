@@ -16,7 +16,7 @@ const MicroEdge = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl mt-4 text-theme-blue font-bold md:text-5xl text-center">
+        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
           MicroEdge
         </h1>
         <div className="relative mt-12 grid gap-16  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
@@ -41,9 +41,9 @@ const MicroEdge = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h1 className="text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
                 Capabilities
-              </h1>
+              </h3>
               <div>
                 <table className="w-full table-auto">
                   <thead>
@@ -114,9 +114,9 @@ const MicroEdge = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <p className="mb-4 text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
-            </p>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-2">
               {[
                 "3 UNIVERSAL INPUTS Use it for CT or sensor monitoring ",
@@ -136,12 +136,12 @@ const MicroEdge = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h2 className="mb-4text-xl md:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               More about More MicroEdge
-            </h2>
-            <h3 className="text-sm sm:text-sm lg:text-base font-bold text-theme-teal mb-2">
-              Why Lora®
             </h3>
+            <h4 className="text-base lg:text-xl font-bold text-theme-teal mb-2">
+              Why Lora®
+            </h4>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               LoRa® is a low-power, long-range wireless technology designed for
               the Internet of Things. It is less affected by buildings and other

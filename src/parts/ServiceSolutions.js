@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function ServiceSolutions({ data }) {
   return (
-    <div className="container mx-auto max-w-screen-2xl pt-16 pb-32 px-8">
+    <div className="container mx-auto max-w-screen-xl pt-16 pb-32 px-8">
       <Fade triggerOnce>
         <h3 className="text-xl md:text-3xl text-theme-blue text-center font-bold mb-6">
           Building Smarter, Thinking Forward
@@ -32,7 +32,7 @@ export default function ServiceSolutions({ data }) {
               />
               <div className="py-2">
                 {" "}
-                <h4 className="text-theme-blue text-center text-xl py-2">
+                <h4 className="text-theme-blue text-center  text-base lg:text-lg py-2">
                   {item.title}
                 </h4>
                 <p className="font-light text-gray-400 text-center">

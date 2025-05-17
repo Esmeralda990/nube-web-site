@@ -19,24 +19,24 @@ const Partnerswhy = () => {
           Why Partner With Us
         </h2>
 
-        <div className="grid w-full grid-cols-2 sm:grid-cols-4 gap-2 border-b">
+        <div className="grid w-full grid-cols-4 lg:grid-cols-4 gap-2 border-b">
           {PHASES.map((phase, index) => (
             <Button
               key={phase.id}
               onClick={() => setActiveTab(index)}
-              className={`text-md py-4 border-b-2 transition-all duration-200 ${
+              className={`text-xs lg:text-base md:text-base py-4 border-b-2 transition-all duration-200 ${
                 activeTab === index
                   ? "border-theme-teal text-gray-500 font-bold text-base"
                   : "border-transparent text-gray-400 font-light"
               }`}
             >
-              {phase.title}
+              {phase.heading}
             </Button>
           ))}
         </div>
 
         <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 w-full">
-          <div className="col-span-1 flex flex-col gap-4 max-w-xl">
+          <div className="col-span-1 flex flex-col gap-4 max-w-xl lg:mt-24">
             <h3 className="text-lg lg:text-3xl font-medium tracking-tighter text-theme-teal md:text-5xl">
               {current.title}
             </h3>
@@ -57,7 +57,7 @@ const Partnerswhy = () => {
                 <img
                   src={current.image}
                   alt={current.title}
-                  className="lg:max-w-[500px] lg:max-h-[400px] object-contain mx-auto transition-all duration-300 ease-in-out hover:scale-95"
+                  className="lg:max-w-[700px] lg:max-h-[400px] object-contain mx-auto transition-all duration-300 ease-in-out hover:scale-95 scale[1.5]"
                 />
               </div>
             </div>

@@ -82,16 +82,19 @@ import Leveraging from "../assets/images/AdvantageSolutionOEM/Leveraging.webp";
 import Support from "../assets/images/AdvantageSolutionOEM/Support.webp";
 
 // OurStory
-import IconsOur1 from "../assets/images/IconsOurStory/Enviro.png";
-import IconsOur2 from "../assets/images/IconsOurStory/Operationsbegan.png";
-import IconsOur3 from "../assets/images/IconsOurStory/IndiaNepal.png";
-import IconsOur4 from "../assets/images/IconsOurStory/Edge28.png";
-import IconsOur5 from "../assets/images/IconsOurStory/Programming.png";
-import IconsOur6 from "../assets/images/IconsOurStory/NubeCloud.png";
-import IconsOur7 from "../assets/images/IconsOurStory/Hardware.png";
-import IconsOur8 from "../assets/images/IconsOurStory/Rubix.png";
-import IconsOur9 from "../assets/images/IconsOurStory/RubixWires.png";
-import IconsOur10 from "../assets/images/IconsOurStory/Appreleased.png";
+import IconsOur1 from "../assets/images/OurStory/Enviro1.svg";
+import IconsOur2 from "../assets/images/OurStory/NubeiO2.svg";
+import IconsOur3 from "../assets/images/OurStory/Software3svg.svg";
+import IconsOur4 from "../assets/images/OurStory/Edge4.svg";
+import IconsOur5 from "../assets/images/OurStory/RubixWires5.svg";
+import IconsOur6 from "../assets/images/OurStory/NubeiOCloud6.svg";
+import IconsOur7 from "../assets/images/OurStory/Hardwaresupport7.svg";
+import IconsOur8 from "../assets/images/OurStory/RubixCompute8.svg";
+import IconsOur9 from "../assets/images/OurStory/RubixWires9.svg";
+import IconsOur10 from "../assets/images/OurStory/NubeiOMobile10.svg";
+import IconsOur11 from "../assets/images/OurStory/Partnership11.svg";
+import IconsOur12 from "../assets/images/OurStory/SoutheastAsia12.svg";
+import IconsOur13 from "../assets/images/OurStory/ZoneControl13.svg";
 
 // Who Support
 import Who1 from "../assets/images/WhoSupport/Dedicated.png";
@@ -426,7 +429,7 @@ export const OurStoryD = [
       date: "2024",
       description:
         "Collaborated on HVAC control solutions as part of an OEM integration strategy.",
-      icon: IconsOur9,
+      icon: IconsOur11,
     },
     {
       id: 11,
@@ -434,7 +437,7 @@ export const OurStoryD = [
       date: "2025",
       description:
         "Established dedicated Research & Development operations to support regional growth and innovation.",
-      icon: IconsOur10,
+      icon: IconsOur12,
     },
     {
       id: 12,
@@ -442,7 +445,7 @@ export const OurStoryD = [
       date: "2025",
       description:
         "New product release supporting advanced temperature zoning in homes.",
-      icon: IconsOur10,
+      icon: IconsOur13,
     },
   ],
 ];
@@ -648,7 +651,7 @@ export const WhoSupport = [
     title: "Dedicated Collaboration",
     image: Who1,
     description:
-      "Our team is committed to providing dedicated support, working closely with partners through every stage of project implementation to ensure.",
+      "Our team is committed to providing dedicated support, working closely with partners through every stage of project implementation.",
   },
   {
     id: "2",
@@ -677,13 +680,15 @@ export const WhyData = [
   [
     {
       id: "phase1",
+      heading: "Innovation",
       title: "Innovation Driven",
       description:
         "We design with purpose, delivering solutions that push the boundaries of smart building automation.",
-      image: Who3,
+      image: Who1,
     },
     {
       id: "phase2",
+      heading: "Sustainability",
       title: "Sustainability Focused",
       description:
         "Our technology helps partners achieve energy efficiency and long-term environmental goals.",
@@ -691,17 +696,19 @@ export const WhyData = [
     },
     {
       id: "phase3",
+      heading: "User-centric",
       title: "Client-Centric Approach",
       description:
         "We tailor our offerings to meet your project needs and customer expectations.",
-      image: Who1,
+      image: Who3,
     },
     {
       id: "phase4",
+      heading: "Co-marketing",
       title: "Collaborative Market Approach",
       description:
         "We actively support our partners in winning business through co-marketing and tailored support.",
-      image: Who3,
+      image: Who4,
     },
   ],
 ];

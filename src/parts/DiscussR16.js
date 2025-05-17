@@ -10,7 +10,7 @@ import ProdImag2 from "../assets/images/ImgFooter/Rubix_io_16.svg";
 export default function DiscussRubix16() {
   return (
     <section className="relative w-full flex justify-center py-24 px-4 ">
-      <div className="relative lg:max-w-[104rem] w-full rounded-3xl overflow-hidden drop-shadow-[0_4px_8px_rgba(0,0,0,0.18)]">
+      <div className="relative lg:max-w-[104rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.20)]">
         <img
           src={bgImg}
           alt="Background"

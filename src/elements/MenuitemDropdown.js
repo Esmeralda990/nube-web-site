@@ -162,11 +162,19 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                                     );
                                   }
                                   if (item.link) {
+                                    const isExternal =
+                                      item.link.startsWith("http");
                                     return (
                                       <a
                                         key={item.id || item.name}
                                         href={item.link}
-                                        className="block  whitespace-nowrap"
+                                        className="block whitespace-nowrap"
+                                        target={isExternal ? "_blank" : "_self"}
+                                        rel={
+                                          isExternal
+                                            ? "noopener noreferrer"
+                                            : undefined
+                                        }
                                       >
                                         {content}
                                       </a>

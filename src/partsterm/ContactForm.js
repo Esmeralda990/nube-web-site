@@ -27,7 +27,7 @@ const contactMethods = [
   {
     icon: Building,
     title: "Sydney office",
-    description: "28 Margaret St, Sydney NSW 2000, Australia",
+    description: "Suite 3 10/28 Margaret Street, Sydney NSW",
   },
   {
     icon: Building,

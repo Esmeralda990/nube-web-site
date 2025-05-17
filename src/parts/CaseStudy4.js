@@ -4,6 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AlignLeft, CheckCircle2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
+import ImgLogo from "../assets/images/CaseStudy/Victorian.png";
 
 const Casestudy4 = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -80,7 +81,7 @@ const Casestudy4 = () => {
         </div>
 
         <img
-          src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+          src={ImgLogo}
           alt="placeholder"
           className="max-h-[400px] w-full object-cover lg:w-1/2 rounded"
         />

@@ -14,17 +14,8 @@ import BuildWebsite from "../assets/images/hero/Home_Header.gif";
 export default function Hero() {
   return (
     <>
-      <section className=" container mx-auto flex flex-col lg:flex-row lg:mb-24">
+      <section className="container mx-auto flex flex-col lg:flex-row ">
         <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-32 sm:items-center lg:items-start sm:flex-row px-8 lg:ml-24">
-          <a
-            href="/solutions/"
-            className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
-          >
-            ✨ Software and Hardware solutions
-            <span className="flex size-7 items-center justify-center rounded-full bg-muted">
-              <ArrowUpRight className="w-4" />
-            </span>
-          </a>
           <h1 className="text-5xl lg:text-7xl text-theme-blue font-bold leading-tight mb-5">
             Automating the Future <br />
           </h1>
@@ -32,7 +23,6 @@ export default function Hero() {
             Transform your operations with cutting-edge technology designed for
             scalability, simplicity, and sustainability.
           </p>
-
           <div className="flex space-x-4">
             {" "}
             <Fade triggerOnce delay={400}>
@@ -55,7 +45,16 @@ export default function Hero() {
                 <ArrowRight className="ml-2 w-4" />
               </Button>
             </Fade>
-          </div>
+          </div>{" "}
+          <a
+            href="/solutions/"
+            className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12"
+          >
+            ✨ Software and Hardware solutions
+            <span className="flex size-7 items-center justify-center rounded-full bg-muted">
+              <ArrowUpRight className="w-4" />
+            </span>
+          </a>
         </div>
 
         <div className="flex flex-col pt-5 w-full justify-end items-center lg:order-last overflow-hidden">
