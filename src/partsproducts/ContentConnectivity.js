@@ -10,10 +10,10 @@ const Content = () => {
     <section className="max-w-screen-md mx-auto px-8">
       <div className="flex flex-col justify-between gap-10">
         <div className="mt-12 space-y-8">
-          <h4 className="text-theme-teal font-light text-base lg:text-xl mb-6">
+          <h3 className="text-theme-teal font-light text-xl lg:text-2xl mb-6">
             {" "}
             Portfolio Management
-          </h4>
+          </h3>
           <p className="text-gray-400 font-light text-lg">
             Nube iO hardware can be connected to the Nube iO dashboard –a
             user-friendly, fully customisable web-based interface. Featuring
@@ -27,9 +27,9 @@ const Content = () => {
         </div>
 
         <div className="prose max-w-none mt-8">
-          <h4 className="text-theme-teal font-light text-base lg:text-xl mb-6">
+          <h3 className="text-theme-teal font-light text-xl lg:text-2xl mb-6">
             Database
-          </h4>
+          </h3>
           <p className="text-gray-400 font-light text-lg mb-6">
             To measure change over time, sensor data is stored in a time serial
             database.
@@ -37,7 +37,7 @@ const Content = () => {
           <table className="text-left w-full border-collapse text-gray-400 font-light">
             <thead>
               <tr>
-                <th className="border-b py-2">SPECIFICATION</th>
+                <th className="border-b py-2">Specification</th>
               </tr>
             </thead>
             <tbody>
@@ -57,13 +57,13 @@ const Content = () => {
           </table>
         </div>
         <div className="prose max-w-none mt-8">
-          <h4 className="text-theme-teal font-light text-xl mb-6">
+          <h3 className="text-theme-teal font-light text-xl lg:text-2xl mb-6">
             Securely Manage on Mass
-          </h4>
+          </h3>
           <table className="text-left w-full border-collapse text-gray-400 font-light">
             <thead>
               <tr>
-                <th className="border-b py-2">SPECIFICATION</th>
+                <th className="border-b py-2">Specification</th>
               </tr>
             </thead>
             <tbody>
@@ -79,16 +79,16 @@ const Content = () => {
           </table>
         </div>
         <div className="prose max-w-none mt-8">
-          <h4 className="text-theme-teal font-light text-base lg:text-xl mb-6">
+          <h3 className="text-theme-teal font-light text-xl lg:text-2xl mb-6">
             Cloud Services
-          </h4>
+          </h3>
           <p className="text-gray-400 font-light text-lg mb-6">
             Cloud services for managing connected devices
           </p>
           <table className="text-left w-full border-collapse text-gray-400 font-light">
             <thead>
               <tr>
-                <th className="border-b py-2">SPECIFICATION</th>
+                <th className="border-b py-2">Specification</th>
               </tr>
             </thead>
             <tbody>
@@ -117,11 +117,13 @@ const Content = () => {
           </table>
         </div>
         <div className="prose max-w-none mt-8">
-          <h4 className="text-theme-teal font-light text-xl mb-6">VPN</h4>
+          <h3 className="text-theme-teal font-light text-xl lg:text-2xl mb-6">
+            VPN
+          </h3>
           <table className="text-left w-full border-collapse text-gray-400 font-light">
             <thead>
               <tr>
-                <th className="border-b py-2">SPECIFICATION</th>
+                <th className="border-b py-2">Specification</th>
               </tr>
             </thead>
             <tbody>

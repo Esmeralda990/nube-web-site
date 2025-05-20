@@ -21,7 +21,7 @@ export default class NubConnectivity extends Component {
     return (
       <>
         <Header1 />
-        <Connectivity />
+        <Connectivity showTitle />
         <ContentConnectivity />
         <AppcConnectivity />
         <Appcaracterist />

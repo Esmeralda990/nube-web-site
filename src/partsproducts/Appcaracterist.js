@@ -18,9 +18,13 @@ const FeatureCard = ({ title, description, icon }) => {
 };
 
 FeatureCard.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+};
+
+FeatureCard.defaultProps = {
+  title: "",
 };
 
 const CaracteristApp = () => {
@@ -43,9 +47,9 @@ const CaracteristApp = () => {
         <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-theme-blue">
           App
         </h2>
-        <h4 className=" text-base lg:text-xl text-gray-400 max-w-3xl mx-auto mb-12 font-light text-theme-teal">
+        <h3 className=" text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 font-light text-theme-teal">
           Remotely Monitor Your Entire Asset Portfolio
-        </h4>
+        </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-24 px-4">
           {AppConect.map((item) => (

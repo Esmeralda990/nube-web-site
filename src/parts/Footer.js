@@ -25,11 +25,17 @@ const sections = [
       {
         name: (
           <div className="flex gap-4 text-center">
-            <a href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au">
+            <a
+              href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <FaLinkedin className="size-6 text-2xl" />
             </a>
           </div>
         ),
+        href: "https://www.linkedin.com/company/nube-io/?originalSubdomain=au",
       },
     ],
   },
@@ -66,8 +72,17 @@ const Footer7 = () => {
                   </h3>
                   <ul className="space-y-4 text-sm text-gray-600">
                     {section.links.map((link) => (
-                      <li key={link.name} className="hover:text-primary">
-                        <a href={link.href}>{link.name}</a>
+                      <li
+                        key={
+                          typeof link.name === "string" ? link.name : link.href
+                        }
+                        className="hover:text-primary"
+                      >
+                        {typeof link.name === "string" ? (
+                          <a href={link.href}>{link.name}</a>
+                        ) : (
+                          link.name
+                        )}
                       </li>
                     ))}
                   </ul>

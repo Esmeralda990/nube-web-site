@@ -8,14 +8,14 @@ import Professional from "../assets/images/Services/Professional.webp";
 import Hardware from "../assets/images/Services/Hardware.webp";
 
 // Logos
-import logo1 from "../assets/images/Logos/Costco.png";
-import Logo2 from "../assets/images/Logos/Fujitsu.png";
-import Logo3 from "../assets/images/Logos/Honeywell.png";
-import Logo4 from "../assets/images/Logos/JLL.png";
-import Logo5 from "../assets/images/Logos/Schneider.png";
-import Logo6 from "../assets/images/Logos/Qantas.png";
-import Logo7 from "../assets/images/Logos/Mc.png";
-import Logo8 from "../assets/images/Logos/Westpac.png";
+import logo1 from "../assets/images/Logos/7.svg";
+import Logo2 from "../assets/images/Logos/Fujitsu.svg";
+import Logo3 from "../assets/images/Logos/Mc.svg";
+import Logo4 from "../assets/images/Logos/Qantas.svg";
+import Logo5 from "../assets/images/Logos/Schneider.svg";
+import Logo6 from "../assets/images/Logos/Sydney.svg";
+import Logo7 from "../assets/images/Logos/VictoriaState.svg";
+import Logo8 from "../assets/images/Logos/Westpac.svg";
 
 // Slides
 import slide1 from "../assets/images/PortfolioCarousel/01.gif";
@@ -101,6 +101,12 @@ import Who1 from "../assets/images/WhoSupport/Dedicated.png";
 import Who2 from "../assets/images/WhoSupport/Technical.png";
 import Who3 from "../assets/images/WhoSupport/Marketing.png";
 import Who4 from "../assets/images/WhoSupport/Continuous.png";
+
+// Why Partners
+import Why1 from "../assets/images/WhyPartners/Client.svg";
+import Why2 from "../assets/images/WhyPartners/Collaborative2.svg";
+import Why3 from "../assets/images/WhyPartners/Innovation3.svg";
+import Why4 from "../assets/images/WhyPartners/Sustainability4.svg";
 
 export const Services = [
   {
@@ -684,7 +690,7 @@ export const WhyData = [
       title: "Innovation Driven",
       description:
         "We design with purpose, delivering solutions that push the boundaries of smart building automation.",
-      image: Who1,
+      image: Why1,
     },
     {
       id: "phase2",
@@ -692,7 +698,7 @@ export const WhyData = [
       title: "Sustainability Focused",
       description:
         "Our technology helps partners achieve energy efficiency and long-term environmental goals.",
-      image: Who2,
+      image: Why2,
     },
     {
       id: "phase3",
@@ -700,7 +706,7 @@ export const WhyData = [
       title: "Client-Centric Approach",
       description:
         "We tailor our offerings to meet your project needs and customer expectations.",
-      image: Who3,
+      image: Why3,
     },
     {
       id: "phase4",
@@ -708,7 +714,7 @@ export const WhyData = [
       title: "Collaborative Market Approach",
       description:
         "We actively support our partners in winning business through co-marketing and tailored support.",
-      image: Who4,
+      image: Why4,
     },
   ],
 ];

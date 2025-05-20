@@ -17,7 +17,7 @@ const Logos3 = ({ heading, description, logos = Logos }) => {
       </div>
 
       <div
-        className="relative mx-auto overflow-hidden"
+        className="relative mx-auto overflow-hidden fade-mask"
         style={{ paddingTop: "2 rem", maxWidth: "70%" }}
       >
         {" "}

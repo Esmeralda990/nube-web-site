@@ -53,6 +53,14 @@ import Img2 from "../assets/images/CaseStudy/Eviro_Color.png";
 import Img3 from "../assets/images/CaseStudy/Daikin_Color.png";
 import Img4 from "../assets/images/CaseStudy/Fujitsu_Colo.png";
 
+// App Icons
+import Icon1 from "../assets/images/IconsConnectivity/App1.svg";
+import Icon2 from "../assets/images/IconsConnectivity/App2.svg";
+import Icon3 from "../assets/images/IconsConnectivity/App3.svg";
+import Icon4 from "../assets/images/IconsConnectivity/App4.svg";
+import Icon5 from "../assets/images/IconsConnectivity/App5.svg";
+import Icon6 from "../assets/images/IconsConnectivity/App6.svg";
+
 export const RubixCompute = [
   {
     id: "1",
@@ -296,35 +304,35 @@ export const Blog4 = [
 export const AppConect = [
   {
     id: 1,
-    icon: Unified,
+    icon: Icon1,
     description:
       "Log into multiple buildings across a large geographical area from one",
   },
   {
     id: 2,
-    icon: Unified,
+    icon: Icon2,
     description:
       "Access your data on your phone, laptop or tablet with no software",
   },
   {
     id: 3,
-    icon: Unified,
+    icon: Icon3,
     description: "Fully customisable with multiple skin designs",
   },
   {
     id: 4,
-    icon: Unified,
+    icon: Icon4,
     description: "Analyse data using a highly visual dashboard",
   },
   {
     id: 5,
-    icon: Unified,
+    icon: Icon5,
     description:
       "Stay on top of the BMS performance with daily updates and alerts",
   },
   {
     id: 6,
-    icon: Unified,
+    icon: Icon6,
     description: "Scheduling & trending",
   },
 ];
