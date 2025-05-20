@@ -59,7 +59,7 @@ const Ourstory = () => {
                       <img
                         src={phase.icon}
                         alt={phase.title}
-                        className="w-32 h-28 object-contain"
+                        className="w-32 h-28"
                       />
                     </div>
                     <div className="pt-16">

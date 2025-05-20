@@ -19,7 +19,7 @@ const AppNub = () => {
               loop
               muted
               playsInline
-              className="absolute top-[5%] left-[11.5%] w-[77%] h-[81%] object-cover rounded-[40px] z-10"
+              className="absolute top-[7%] left-[7.4%] w-[85%] h-[81%] object-cover rounded-[40px] z-10"
             />
             <img
               src="https://shadcnblocks.com/images/block/hero108/iphone.png"

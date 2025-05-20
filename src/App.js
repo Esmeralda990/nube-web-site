@@ -55,7 +55,7 @@ function App() {
         />
         <Route path="/software-rubix-platform/" element={<SoftwarePage />} />
         <Route path="/connectivity/" element={<ConnectivityPage />} />
-        <Route path="**" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
         <Route path="/terms-of-use/" element={<TermsOfUsePage />} />
         <Route path="/privacy-policy/" element={<PrivacyPage />} />
         <Route path="/terms-and-conditions/" element={<TcsPage />} />

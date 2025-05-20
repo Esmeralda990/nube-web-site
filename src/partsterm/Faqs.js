@@ -21,10 +21,10 @@ const FAQs = () => {
     <section className="py-32">
       <div className="container mx-auto space-y-16 px-6">
         <div className="flex flex-col items-start text-left lg:items-center lg:text-center">
-          <h2 className="mb-3 max-w-3xl text-2xl font-bold md:mb-4 md:text-4xl lg:mb-6 text-theme-blue">
+          <h1 className="mb-3 max-w-3xl text-3xl lg:text-5xl font-bold md:mb-4 lg:mb-6 text-theme-blue">
             Frequently Asked Questions
-          </h2>
-          <p className="max-w-3xl font-light text-gray-400 foreground lg:text-lg">
+          </h1>
+          <p className="max-w-3xl font-light text-gray-400 foreground text-base lg:text-lg ">
             Welcome to our FAQ page. Find quick answers to common questions
             about Nube iO products, solutions, and support.
           </p>
@@ -50,7 +50,9 @@ const FAQs = () => {
               </button>
               {openId === item.id && (
                 <div className="px-6 py-4">
-                  <p className="text-gray-700 font-light ">{item.answer}</p>
+                  <p className="text-gray-400 font-light text-base lg:text-lg  ">
+                    {item.answer}
+                  </p>
                 </div>
               )}
             </div>
