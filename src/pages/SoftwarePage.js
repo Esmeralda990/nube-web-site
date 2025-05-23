@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 
 import { IconsBenefits, GifBenefits, RubixWire } from "json/ProductsPageData";
 import Header1 from "parts/Header1";
@@ -21,6 +22,28 @@ export default class SoftwarePage extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Nube iO Software | Visual BMS & IoT Control Platform</title>
+          <meta
+            name="description"
+            content="Rubix-CE and Rubix Wires provide powerful, low-code, real-time control over building systems and IoT devices."
+          />
+          <meta
+            name="keywords"
+            content="BMS software, IoT software platform, low-code automation"
+          />
+          <link rel="canonical" href="https://nubeio.com/home" />
+          <meta
+            property="og:title"
+            content="Nube iO Software | Visual BMS & IoT Control Platform"
+          />
+          <meta
+            property="og:description"
+            content="Rubix-CE and Rubix Wires provide powerful, low-code, real-time control over building systems and IoT devices."
+          />
+          <meta property="og:url" content="https://nubeio.com/home" />
+        </Helmet>
+
         <Header1 />
         <HeroSoftware />
         <SoftwareBenefits data={IconsBenefits} />

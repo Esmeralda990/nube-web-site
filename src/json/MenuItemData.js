@@ -29,7 +29,7 @@ import icons19 from "../assets/images/IconsMenu/Contact.svg";
 export const menuItemsData = [
   {
     name: "Our Story",
-    link: "/ourstory/",
+    link: "/our-story/",
   },
   {
     name: "Solutions",
@@ -94,19 +94,19 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Smart Analytics",
-                    link: "/scenario1-integration/",
+                    link: "/case-analytics/",
                     icon: icons6,
                     description: "Smart Building Analytics",
                   },
                   {
                     name: "OEM Integration",
-                    link: "/scenario2-oem/",
+                    link: "/case-oem/",
                     icon: icons6,
                     description: "Accelerate OEM Innovation",
                   },
                   {
                     name: "Building Rating Systems",
-                    link: "/scenario3-building/",
+                    link: "/case-compliance/",
                     icon: icons6,
                     description: "Easy Building Ratings",
                   },
@@ -133,7 +133,7 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Rubix CE",
-                    link: "/software-rubix-platform/",
+                    link: "/software/",
                     icon: icons7,
                     description: "Web IoT platform",
                   },
@@ -161,13 +161,13 @@ export const menuItemsData = [
                   },
                   {
                     name: "Rubix iO 16",
-                    link: "/rubix-io/",
+                    link: "/rubix-io-16/",
                     icon: icons10,
                     description: "Input/output module",
                   },
                   {
                     name: "CI-EdgeX2",
-                    link: "/edge/",
+                    link: "/ci-edgex2/",
                     icon: icons11,
                     description: "Edge gateway",
                   },
@@ -183,13 +183,13 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Droplet Indoor ",
-                    link: "/lora-environmental-sensor/",
+                    link: "/droplet/",
                     icon: icons12,
                     description: "LoRa indoor sensor",
                   },
                   {
                     name: "MicroEdge Asset",
-                    link: "/lora-asset-monitoring-sensor/",
+                    link: "/microedge/",
                     icon: icons13,
                     description: "Tracking via LoRa",
                   },
@@ -261,19 +261,19 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Fujitsu Gen–AnywAiR iO",
-                    link: "/case-study1/",
+                    link: "/case-fujitsu/",
                     icon: icons6,
                     description: "Learn More",
                   },
                   {
                     name: "Galvin TMV",
-                    link: "/case-study2/",
+                    link: "/case-galvin/",
                     icon: icons6,
                     description: "Learn More",
                   },
                   {
                     name: "Enviro",
-                    link: "/case-study3/",
+                    link: "/case-enviro/",
                     icon: icons6,
                     description: "Learn More",
                   },
@@ -289,14 +289,14 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Victorian Schools",
-                    link: "/case-study4/",
+                    link: "/case-qa/",
                     icon: icons6,
                     description: "Learn More",
                   },
 
                   {
                     name: "Daikin",
-                    link: "/case-study5/",
+                    link: "/case-daikin/",
                     icon: icons6,
                     description: "Learn More",
                   },
@@ -312,7 +312,7 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "FAQs",
-                    link: "/FAQs/",
+                    link: "/faqs/",
                     icon: icons16,
                     description: "Common IoT Answers",
                   },

@@ -59,7 +59,7 @@ const Casestudy4 = () => {
     },
     {
       id: "section4",
-      title: "Why Enviro Chose Nube",
+      title: "Why Victorian Chose Nube",
       description:
         "The decision to partner with Nube iO was driven by their demonstrated expertise in IoT and a shared commitment to creating impactful, future-focused solutions. With a proven track record in delivering tailored IoT systems that enhance building automation and sustainability, Nube iO stood out as the ideal partner. Their scalable and non-intrusive technology enabled seamless integration into existing infrastructure with minimal disruption, while directly supporting the schools' sustainability goals. From improving energy efficiency and water conservation to fostering healthier indoor environments, Nube iO’s approach aligned perfectly with the consortium’s vision. “Nube iO’s ability to deliver scalable, data-driven solutions gave us the confidence to partner with them. Their expertise in IoT allowed us to optimise utilities while improving student well-being across all campuses,” stated a consortium representative.",
     },
@@ -107,27 +107,9 @@ const Casestudy4 = () => {
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
-                Team size:
-              </strong>
-              <div className="text-base font-light mt-4">10-100</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
                 Location:
               </strong>
               <div className="text-base font-light mt-4">San Francisco</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
-                Established:
-              </strong>
-              <div className="text-base font-light mt-4">2020</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
-                Funding:
-              </strong>
-              <div className="text-base font-light mt-4">$25m (Series A)</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">

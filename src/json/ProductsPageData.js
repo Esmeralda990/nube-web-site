@@ -222,19 +222,19 @@ export const Blog1 = [
     img: Img1,
     title: "Galvin Engineering",
     date: "September 23, 2024",
-    link: "/case-study2/",
+    link: "/case-galvin/",
   },
   {
     img: Img2,
     title: "Enviro Building Services",
     date: "April 07, 2024",
-    link: "/case-study3/",
+    link: "/case-enviro/",
   },
   {
     img: Img3,
     title: "Daikin",
     date: "August 31, 2024",
-    link: "/case-study5/",
+    link: "/case-daikin/",
   },
 ];
 
@@ -243,19 +243,19 @@ export const Blog2 = [
     img: Img4,
     title: "Fujitsu",
     date: "September 23, 2024",
-    link: "/case-study1/",
+    link: "/case-fujitsu/",
   },
   {
     img: Img2,
     title: "Enviro Building Services",
     date: "April 07, 2024",
-    link: "/case-study3/",
+    link: "/case-enviro/",
   },
   {
     img: Img3,
     title: "Daikin",
     date: "August 31, 2024",
-    link: "/case-study5/",
+    link: "/case-daikin/",
   },
 ];
 
@@ -264,19 +264,19 @@ export const Blog3 = [
     img: Img1,
     title: "Galvin Engineering",
     date: "September 23, 2024",
-    link: "/case-study2/",
+    link: "/case-galvin/",
   },
   {
     img: Img4,
     title: "Fujitsu",
     date: "April 07, 2024",
-    link: "/case-study1/",
+    link: "/case-fujitsu/",
   },
   {
     img: Img3,
     title: "Daikin",
     date: "August 31, 2024",
-    link: "/case-study5/",
+    link: "/case-daikin/",
   },
 ];
 
@@ -285,19 +285,19 @@ export const Blog4 = [
     img: Img1,
     title: "Galvin Engineering",
     date: "September 23, 2024",
-    link: "/case-study2/",
+    link: "/case-galvin/",
   },
   {
     img: Img4,
     title: "Fujitsu",
     date: "April 07, 2024",
-    link: "/case-study1/",
+    link: "/case-fujitsu/",
   },
   {
     img: Img2,
     title: "Enviro Building Services",
     date: "August 31, 2024",
-    link: "/case-study3/",
+    link: "/case-enviro/",
   },
 ];
 

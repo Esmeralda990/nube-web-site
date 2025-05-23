@@ -33,11 +33,11 @@ export default function DiscussRubixCE() {
             <div className="mt-8 flex  justify-center md:justify-start space-x-4 sm:space-y-0 sm:space-x-4 items-center">
               <Fade direction="up" triggerOnce>
                 <Button
-                  href="/contact-us/"
+                  href="/contact/"
                   type="link"
                   className="flex items-center justify-center max-w-fit px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
                 >
-                  Take a Tour
+                  Contact
                 </Button>
               </Fade>
               <Fade direction="up" triggerOnce delay={300}>

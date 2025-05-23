@@ -3,7 +3,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable-next-line */
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 
+import { Blog2 } from "json//ProductsPageData";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 import CaseBlog2 from "parts/CaseBlog2";
@@ -19,9 +21,31 @@ export default class Casestudy2 extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Case Study: Galvin Engineering | Smart Valve Monitoring</title>
+          <meta
+            name="description"
+            content="Discover how Galvin Engineering used Nube iO wireless sensors to streamline hospital water compliance."
+          />
+          <meta
+            name="keywords"
+            content="hospital compliance monitoring, water safety IoT"
+          />
+          <link rel="canonical" href="https://nubeio.com/case-galvin/ " />
+          <meta
+            property="og:title"
+            content="Case Study: Galvin Engineering | Smart Valve Monitoring"
+          />
+          <meta
+            property="og:description"
+            content="Discover how Galvin Engineering used Nube iO wireless sensors to streamline hospital water compliance."
+          />
+          <meta property="og:url" content="https://nubeio.com/case-galvin/" />
+        </Helmet>
+
         <Header1 />
         <CaseStudy2 />
-        <CaseBlog2 />
+        <CaseBlog2 data={Blog2} />
         <Discuss />
         <Footer />
       </>

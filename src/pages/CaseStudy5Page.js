@@ -3,7 +3,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable-next-line */
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 
+import { Blog4 } from "json//ProductsPageData";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 import CaseBlog4 from "parts/CaseBlog4";
@@ -19,9 +21,33 @@ export default class Casestudy5 extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>
+            Case Study: Daikin | Smarter Data for Better HVAC Products
+          </title>
+          <meta
+            name="description"
+            content="See how Daikin used Nube iO’s sensors and cloud tools to enhance product testing and development."
+          />
+          <meta
+            name="keywords"
+            content="HVAC IoT feedback, product testing analytics"
+          />
+          <link rel="canonical" href="https://nubeio.com/case-daikin/ " />
+          <meta
+            property="og:title"
+            content="Case Study: Daikin | Smarter Data for Better HVAC Products"
+          />
+          <meta
+            property="og:description"
+            content="See how Daikin used Nube iO’s sensors and cloud tools to enhance product testing and development."
+          />
+          <meta property="og:url" content="https://nubeio.com/case-daikin/" />
+        </Helmet>
+
         <Header1 />
         <CaseStudy5 />
-        <CaseBlog4 />
+        <CaseBlog4 data={Blog4} />
         <Discuss />
         <Footer />
       </>

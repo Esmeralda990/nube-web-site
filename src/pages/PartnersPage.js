@@ -2,8 +2,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 
-import { WhoSupport } from "json/landingPageData";
+import { WhoSupport, WhyData } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Partner from "parts/HeroPartners";
 import Discuss from "parts/DiscussPartners";
@@ -37,10 +38,32 @@ export default class Partnerss extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Partners | Nube iO – Become a Global Technology Partner</title>
+          <meta
+            name="description"
+            content="Join our partner network to deliver smart building solutions under your brand."
+          />
+          <meta
+            name="keywords"
+            content="BMS partners, smart building distributors, OEM integration"
+          />
+          <link rel="canonical" href="https://nubeio.com/partners/ " />
+          <meta
+            property="og:title"
+            content="Partners | Nube iO – Become a Global Technology Partner"
+          />
+          <meta
+            property="og:description"
+            content="Join our partner network to deliver smart building solutions under your brand."
+          />
+          <meta property="og:url" content="https://nubeio.com/partners/" />
+        </Helmet>
+
         <Header1 />
         <Partner />
         <section id="Why">
-          <WhyPartners />
+          <WhyPartners data={WhyData} />
         </section>
 
         <section id="Support">

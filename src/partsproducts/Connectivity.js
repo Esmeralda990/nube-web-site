@@ -13,16 +13,16 @@ import {
 } from "lucide-react";
 import React from "react";
 import PropTypes from "prop-types";
-import DashPC from "../assets/images/DasboardConnect/DashboardConnect.png";
-import DashPhone from "../assets/images/DasboardConnect/DashboardConnect2.png";
+import DashPC from "../assets/images/DasboardConnect/Dashboard1.png";
+import DashPhone from "../assets/images/DasboardConnect/Dashboard2.png";
 
 const Connectivity = ({ showTitle = true }) => {
   return (
     <section className="bg-white py-28 px-4">
       <div className="container mx-auto w-full flex flex-col items-center text-center">
         {showTitle && (
-          <h1 className="font-bold text-5xl lg:text-6xl text-foreground  text-theme-blue">
-            Connectivity Overview
+          <h1 className="font-bold text-5xl lg:text-6xl text-foreground  text-theme-blue mb-20">
+            One Ecosystem. Total Control.
           </h1>
         )}
 
@@ -47,7 +47,7 @@ Connectivity.propTypes = {
 };
 
 const BrowserMockup = ({ url, DahboardUrlDesktop, DahboardUrlMobile }) => (
-  <div className="relative w-full overflow-hidden rounded-xl border mt-20">
+  <div className="relative w-full overflow-hidden rounded-xl border ">
     <div className="flex items-center justify-between gap-10 bg-muted px-8 py-4 lg:gap-25 bg-gray-100">
       <div className="flex items-center gap-2">
         <div className="size-3 rounded-full bg-red-500" />

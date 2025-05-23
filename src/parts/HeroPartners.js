@@ -31,7 +31,7 @@ export default function Hero() {
             {" "}
             <Fade direction="up" triggerOnce delay={400}>
               <Button
-                href="/contact-us/"
+                href="/contact/"
                 type="link"
                 className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
               >

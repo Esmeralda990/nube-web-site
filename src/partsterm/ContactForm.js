@@ -5,7 +5,7 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable comma-dangle */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Mail, Phone, Building } from "lucide-react";
 import Button from "../elements/Button/index";
 
@@ -36,6 +36,8 @@ const contactMethods = [
   },
 ];
 
+const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -47,6 +49,21 @@ const ContactForm = () => {
     contactAgreement: false,
     marketingAgreement: false,
   });
+
+  useEffect(() => {
+    if (!siteKey) {
+      return undefined;
+    }
+
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const handleChange = (e) => {
     const { id, value, type, checked } = e.target;
@@ -61,28 +78,37 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
+      if (!window.grecaptcha) throw new Error("reCAPTCHA is not loaded");
+
+      const token = await window.grecaptcha.execute(siteKey, {
+        action: "submit",
+      });
+
       const response = await fetch("http://localhost:3001/contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, token }),
       });
 
       const result = await response.json();
       // eslint-disable-next-line
       alert(result.message);
 
+      if (!response.ok) throw new Error(result.message || "Unknown error");
+
       setFormData({
         name: "",
         email: "",
+        phone: "",
         company: "",
         inquiry: "",
         message: "",
+        contactAgreement: false,
+        marketingAgreement: false,
       });
     } catch (error) {
-      // eslint-disable-next-line
-      console.error("Error:", error);
       // eslint-disable-next-line
       alert("There was an error submitting the form.");
     }
@@ -94,8 +120,8 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="mt-40 mb-2 text-2xl lg:text-5xl font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
-                Elevate Your Building Management Solutions with Nube iO
+              <h1 className="mt-40 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
+                Ready to Future Proof Your Building?
               </h1>
             </div>
 
@@ -188,13 +214,17 @@ const ContactForm = () => {
                   className="w-full p-2 border rounded mt-4 font-light"
                 >
                   <option value="">Select</option>
-                  <option value="Request ">Request a product demo</option>
-                  <option value="solutions">
+                  <option value="Request a product demo">
+                    Request a product demo
+                  </option>
+                  <option value="Learn more about our solutions">
                     Learn more about our solutions
                   </option>
-                  <option value="pricing">Get a quote or pricing info</option>
-                  <option value="support">Technical support</option>
-                  <option value="partner">Become a partner</option>
+                  <option value="Get a quote or pricing info">
+                    Get a quote or pricing info
+                  </option>
+                  <option value="Technical support">Technical support</option>
+                  <option value="Become a partner">Become a partner</option>
                   <option value="General enquiry">General enquiry</option>
                 </select>
               </div>

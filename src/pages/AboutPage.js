@@ -3,8 +3,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from "react";
+import { Helmet } from "react-helmet-async";
 
-import { AdvantageAbout, Managers, floatingIcons } from "json/landingPageData";
+import {
+  AdvantageAbout,
+  Managers,
+  floatingIcons,
+  Logos,
+  OurStoryD,
+} from "json/landingPageData";
 import Header1 from "parts/Header1";
 import HeroAbout from "parts/HeroAbout";
 import DetailsAbout from "parts/DetailsAbout";
@@ -16,7 +23,7 @@ import TeamGroup from "parts/TeamGroup";
 import Discuss from "parts/DiscussAbout";
 import Footer from "parts/Footer";
 
-export default class ProjectPage extends Component {
+export default class OurStoryPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -24,12 +31,34 @@ export default class ProjectPage extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Our Story | Nube iO – Smart Building Innovation</title>
+          <meta
+            name="description"
+            content="Learn how Nube iO is transforming building automation through scalable IoT and software-driven integration."
+          />
+          <meta
+            name="keywords"
+            content="about Nube iO, smart building innovation, IoT automation"
+          />
+          <link rel="canonical" href="https://nubeio.com/our-story/" />
+          <meta
+            property="og:title"
+            content="Our Story | Nube iO – Smart Building Innovation"
+          />
+          <meta
+            property="og:description"
+            content="Learn how Nube iO is transforming building automation through scalable IoT and software-driven integration."
+          />
+          <meta property="og:url" content="https://nubeio.com/our-story/" />
+        </Helmet>
+
         <Header1 />
         <HeroAbout />
         <DetailsAbout />
         <AdvangeAbout data={AdvantageAbout} />
-        <LogosAbout />
-        <OurStory />
+        <LogosAbout logos={Logos} />
+        <OurStory data={OurStoryD} />
         <TeamSection data={Managers} />
         <TeamGroup data={floatingIcons} />
         <Discuss />

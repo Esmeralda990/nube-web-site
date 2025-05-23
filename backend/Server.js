@@ -1,7 +1,11 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 require("dotenv").config();
 
 const app = express();
@@ -24,10 +28,37 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/contact-form", async (req, res) => {
-  const { name, email, phone, company, inquiry, message } = req.body;
+async function verifyRecaptchaToken(token) {
+  const secretKey = process.env.RECAPTCHA_SECRET;
 
-  const isHuman = await verifyRecaptchaToken(token);
+  try {
+    const response = await fetch(
+      "https://www.google.com/recaptcha/api/siteverify",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${secretKey}&response=${token}`,
+      }
+    );
+
+    const data = await response.json();
+
+    return data.success && (data.score === undefined || data.score >= 0.5);
+  } catch (err) {
+    console.error("❌ Error verificando reCAPTCHA:", err);
+    return false;
+  }
+}
+
+app.post("/contact-form", async (req, res) => {
+  const { name, email, phone, company, inquiry, message, token } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ message: "Required fields are missing." });
+  }
+
+  const isDev = process.env.NODE_ENV !== "production";
+  const isHuman = isDev ? true : await verifyRecaptchaToken(token);
   if (!isHuman) {
     return res.status(400).json({ message: "reCAPTCHA verification failed" });
   }
@@ -49,14 +80,11 @@ app.post("/contact-form", async (req, res) => {
     if (error) {
       return res.status(500).json({ message: "Error sending email", error });
     }
-    if (!name || !email || !message) {
-      return res.status(400).json({ message: "Required fields are missing." });
-    }
     res.status(200).json({ message: "Email sent successfully", info });
   });
 });
 
-app.post("/Get-demo", async (req, res) => {
+app.post("/get-demo", async (req, res) => {
   const {
     name,
     email,
@@ -69,10 +97,16 @@ app.post("/Get-demo", async (req, res) => {
     token,
   } = req.body;
 
-  const mailOptions = {
+  const isDev = process.env.NODE_ENV !== "production";
+  const isHuman = isDev ? true : await verifyRecaptchaToken(token);
+  if (!isHuman) {
+    return res.status(400).json({ message: "reCAPTCHA verification failed." });
+  }
+
+  const DemoMailOptions = {
     from: email,
     to: process.env.EMAIL,
-    subject: `New demo request ${name}`,
+    subject: `New DEMO request from ${name}`,
     text: `
       Name: ${name}
       Mail: ${email}
@@ -85,7 +119,7 @@ app.post("/Get-demo", async (req, res) => {
     `,
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(DemoMailOptions, (error, info) => {
     if (error) {
       return res.status(500).json({ message: "Error sending request", error });
     }

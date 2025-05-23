@@ -104,27 +104,9 @@ const Casestudy = () => {
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
-                Team size:
-              </strong>
-              <div className="text-base font-light mt-4">10-100</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
                 Location:
               </strong>
               <div className="text-base font-light mt-4">San Francisco</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
-                Established:
-              </strong>
-              <div className="text-base font-light mt-4">2020</div>
-            </div>
-            <div>
-              <strong className="text-theme-blue font-bold text-base">
-                Funding:
-              </strong>
-              <div className="text-base font-light mt-4">$25m (Series A)</div>
             </div>
             <div>
               <strong className="text-theme-blue font-bold text-base">
