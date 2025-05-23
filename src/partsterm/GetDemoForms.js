@@ -54,14 +54,16 @@ const GetD = () => {
         action: "submit",
       });
 
-      const response = await fetch("http://localhost:3001/contact-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...formData, token }),
-      });
-
+      const response = await fetch(
+        `${process.env.REACT_APP_API_BASE}/get-demo`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ...formData, token }),
+        }
+      );
       const result = await response.json();
       // eslint-disable-next-line
       alert(result.message);
