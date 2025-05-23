@@ -3,9 +3,12 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable object-curly-newline */
-import React, { useState } from "react";
+/* eslint-disable comma-dangle */
+import React, { useState, useEffect } from "react";
 import { Check } from "lucide-react";
 import Button from "../elements/Button/index";
+
+const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
 const GetD = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +22,20 @@ const GetD = () => {
     marketingAgreement: false,
   });
 
+  useEffect(() => {
+    if (!siteKey) {
+      return undefined;
+    }
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const handleChange = (e) => {
     const { id, value, type, checked } = e.target;
     setFormData({
@@ -29,21 +46,27 @@ const GetD = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // eslint-disable-next-line
-    console.log("Enviando:", formData);
 
     try {
-      const response = await fetch("http://localhost:3001/get-demo", {
+      if (!window.grecaptcha) throw new Error("reCAPTCHA is not loaded");
+
+      const token = await window.grecaptcha.execute(siteKey, {
+        action: "submit",
+      });
+
+      const response = await fetch("http://localhost:3001/contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, token }),
       });
 
       const result = await response.json();
       // eslint-disable-next-line
       alert(result.message);
+
+      if (!response.ok) throw new Error(result.message || "Unknown error");
 
       setFormData({
         name: "",
@@ -180,17 +203,17 @@ const GetD = () => {
                   required
                 >
                   <option value="">Select</option>
-                  <option value="automation ">
+                  <option value="Full building automation demo">
                     Full building automation demo
                   </option>
-                  <option value="Software ">
+                  <option value="Software features">
                     Software features (Rubix CE / Cloud)
                   </option>
-                  <option value="Hardware">
+                  <option value="Hardware overview">
                     Hardware overview (controllers, sensors)
                   </option>
                   <option value="OEM">OEM / custom solutions</option>
-                  <option value="sample">
+                  <option value="Im not sure - just show me whats possible">
                     Im not sure - just show me whats possible
                   </option>
                 </select>

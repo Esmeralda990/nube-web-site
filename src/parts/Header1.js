@@ -86,7 +86,7 @@ const Header1 = () => {
         </div>
         <div className="hidden lg:flex space-x-4 ml-auto">
           <Button
-            href="/contact-us/"
+            href="/contact/"
             type="link"
             className="flex items-center justify-center px-6 py-3 text-black text-base font-bold rounded-xl transition duration-300 ease-in-out hover:text-theme-teal "
           >
@@ -253,7 +253,7 @@ const Header1 = () => {
                         <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="/scenario1-integration/"
+                              href="/case-analytics/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Smart Analytics
@@ -261,7 +261,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/scenario2-oem/"
+                              href="/case-oem/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               OEM integration
@@ -269,7 +269,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/scenario3-building/"
+                              href="/case-compliance/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Building Rating Systems
@@ -344,7 +344,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/rubix-io/"
+                              href="/rubix-io-16/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Rubix iO 16
@@ -352,7 +352,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/edge/"
+                              href="/ci-edgex2/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               CI-EdgeX2
@@ -388,7 +388,7 @@ const Header1 = () => {
                           <ul className="pl-6 mt-2 space-y-2">
                             <li>
                               <a
-                                href="/lora-environmental-sensor/"
+                                href="/droplet/"
                                 className="text-gray-400 block px-6 py-2"
                               >
                                 Droplet Indoor Sensor
@@ -396,7 +396,7 @@ const Header1 = () => {
                             </li>
                             <li>
                               <a
-                                href="/lora-asset-monitoring-sensor/"
+                                href="/microedge/"
                                 className="text-gray-400 block px-6 py-2"
                               >
                                 MicroEdge Asset
@@ -433,7 +433,7 @@ const Header1 = () => {
                           <ul className="pl-6 mt-2 space-y-2">
                             <li>
                               <a
-                                href="/software-rubix-platform/"
+                                href="/software/"
                                 className="text-gray-400 block px-6 py-2"
                               >
                                 Rubix CE
@@ -554,7 +554,7 @@ const Header1 = () => {
                         <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="/case-study1/"
+                              href="/case-fujitsu/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Fujitsu General–AnywAIRiO
@@ -562,7 +562,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study2/"
+                              href="/case-galvin/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Galvin TMV
@@ -570,7 +570,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study3/"
+                              href="/case-enviro/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Enviro
@@ -578,7 +578,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study4/"
+                              href="/case-qa/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Victorian Schools
@@ -586,7 +586,7 @@ const Header1 = () => {
                           </li>
                           <li>
                             <a
-                              href="/case-study5/"
+                              href="/case-daikin/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               Daikin
@@ -625,6 +625,8 @@ const Header1 = () => {
                             <a
                               href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
                               className="text-gray-400 block px-6 py-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
                               Technical Resources
                             </a>
@@ -660,7 +662,7 @@ const Header1 = () => {
                         <ul className="pl-6 mt-2 space-y-2">
                           <li>
                             <a
-                              href="/FAQs/"
+                              href="/faqs/"
                               className="text-gray-400 block px-6 py-2"
                             >
                               FAQs
@@ -682,7 +684,7 @@ const Header1 = () => {
                 </Button>
 
                 <Button
-                  href="/contact-us/"
+                  href="/contact/"
                   type="link"
                   className="w-full px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
                 >

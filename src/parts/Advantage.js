@@ -22,7 +22,7 @@ export default function Advantage({ data }) {
               Building Management
             </p>
             <a
-              href="/about/"
+              href="/our-story/"
               className="group flex items-center text-xs font-ligth text-theme-teal md:text-base lg:text-lg "
             >
               About us

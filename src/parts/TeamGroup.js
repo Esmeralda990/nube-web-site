@@ -41,7 +41,7 @@ const TeamGroup = () => {
           Our people drive our innovation and success.From engineers and sales
           specialists to customer support and marketing teams, every department
           plays a vital role. Together, we create technology that transforms
-          industries.s
+          industries.
         </p>
       </div>
     </section>

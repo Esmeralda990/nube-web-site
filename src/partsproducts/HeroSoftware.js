@@ -15,7 +15,7 @@ export default function HeroSoftware() {
       <section className=" mt-12 container lg:max-w-screen-xl mx-auto flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
           <h1 className="text-4xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 lg:mt-12">
-            Rubix-CE
+            Smarter Control, Built for the Real World
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
             Desktop, Licence-Free BMS Programming Software. Program the
@@ -36,7 +36,7 @@ export default function HeroSoftware() {
             </Button>
           </Fade>
         </div>
-        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-3xl pb-24">
+        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-2xl pb-24">
           <Fade direction="" triggerOnce>
             <img
               className="max-w-full h-auto md:ml-0 object-contain"

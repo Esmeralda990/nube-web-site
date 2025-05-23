@@ -23,7 +23,7 @@ export default function HeroSolutions() {
         <div className="flex justify-start lg:justify-start space-x-4 mt-8">
           <Fade direction="up" delay={500} triggerOnce>
             <Button
-              href="/contact-us/"
+              href="/contact/"
               type="link"
               className="text-sm sm:text-sm md:text-base lg:text-lg flex w-68 h-12 justify-center px-8 py-2 text-black border border-theme-teal bg-white rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal  hover:text-white"
             >

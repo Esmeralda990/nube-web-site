@@ -220,21 +220,21 @@ export const WorldSolutions = [
     title: "Customise OEM solution",
     imageUrl: WorldSolutions1,
     description: "Accelerate innovation with integrated OEM solutions.",
-    link: "/scenario2-oem/",
+    link: "/case-oem/",
   },
   {
     id: "2",
     title: "IoT integrations",
     imageUrl: WorldSolutions2,
     description: "Transform building data into actionable insights",
-    link: "/scenario1-integration/",
+    link: "/case-analytics/",
   },
   {
     id: "3",
     title: "Building Rating Systems",
     imageUrl: WorldSolutions3,
     description: "Simplify building ratings for optimal compliance.",
-    link: "/scenario3-building/",
+    link: "/case-compliance/",
   },
 ];
 
@@ -710,7 +710,7 @@ export const WhyData = [
     },
     {
       id: "phase4",
-      heading: "Co-marketing",
+      heading: "Co-market",
       title: "Collaborative Market Approach",
       description:
         "We actively support our partners in winning business through co-marketing and tailored support.",

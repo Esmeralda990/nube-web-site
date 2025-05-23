@@ -21,7 +21,7 @@ const FAQs = () => {
     <section className="py-32">
       <div className="container mx-auto space-y-16 px-6">
         <div className="flex flex-col items-start text-left lg:items-center lg:text-center">
-          <h1 className="mb-3 max-w-3xl text-3xl lg:text-5xl font-bold md:mb-4 lg:mb-6 text-theme-blue">
+          <h1 className="mb-3 max-w-3xl text-4xl lg:text-6xl font-bold md:mb-4 lg:mb-6 text-theme-blue">
             Frequently Asked Questions
           </h1>
           <p className="max-w-3xl font-light text-gray-400 foreground text-base lg:text-lg ">

@@ -15,7 +15,7 @@ const ScenarioIT = () => {
           <div className="relative flex flex-col gap-10 lg:flex-row lg:justify-between">
             <div className="lg:max-w-full ">
               <h1 className="text-3xl lg:text-7xl font-bold text-theme-blue leading-tight">
-                Smart Analytics for Better Buildings
+                Turn Building Data into Smarter Decisions
               </h1>
               <p className="mt-2 text-lg text-gray-400 font-light">
                 In an era of smart technology and sustainability, modern
@@ -179,7 +179,7 @@ const ScenarioIT = () => {
 
                 <Button
                   size="sm"
-                  href="/software-rubix-platform/"
+                  href="/software/"
                   type="link"
                   className="justify-center inline-flex px-4 py-3 bg-white text-black border border-theme-blue text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:bg-gray-100"
                 >
@@ -202,7 +202,7 @@ const ScenarioIT = () => {
               <div className="flex flex-col gap-4 ">
                 <Button
                   className="flex items-center text-lg text-gray-400 font-light hover:text-theme-teal"
-                  href="/scenario2-oem/"
+                  href="/case-oem/"
                   type="link"
                 >
                   OEM integration
@@ -210,7 +210,7 @@ const ScenarioIT = () => {
                 </Button>
                 <Button
                   className="flex items-center text-lg text-gray-400 font-light hover:text-theme-teal"
-                  href="/scenario3-building/"
+                  href="/case-compliance/"
                   type="link"
                 >
                   Building Rating
