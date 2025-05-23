@@ -12,11 +12,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000", "https://nube-web-site.vercel.app"],
   methods: "GET,POST",
   allowedHeaders: "Content-Type,Authorization",
 };
-
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
