@@ -7,9 +7,10 @@ import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
 import ProductsDroplet from "partsproducts/ProductsDroplet";
+import ProductsMicroEdge from "partsproducts/ProductsMicroEdge";
 import Discuss from "parts/DiscussDroplet";
 import Footer from "parts/Footer";
-import { Droplet } from "../json/ProductsPageData.js";
+import { Droplet, Microedge } from "../json/ProductsPageData.js";
 
 export default class DropletPage extends Component {
   componentDidMount() {
@@ -20,10 +21,10 @@ export default class DropletPage extends Component {
     return (
       <>
         <Helmet>
-          <title>Droplet Sensor | Nube iO – Wireless Indoor Monitoring</title>
+          <title>Lora Sensor | Nube iO – Wireless Indoor Monitoring</title>
           <meta
             name="description"
-            content="The Droplet is a compact LoRa sensor that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
+            content="The Lora Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
           />
           <meta
             name="keywords"
@@ -32,16 +33,17 @@ export default class DropletPage extends Component {
           <link rel="canonical" href="https://nubeio.com/droplet/ " />
           <meta
             property="og:title"
-            content="Droplet Sensor | Nube iO – Wireless Indoor Monitoring"
+            content="Lora Sensor| Nube iO – Wireless Indoor Monitoring"
           />
           <meta
             property="og:description"
-            content="The Droplet is a compact LoRa sensor that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
+            content="The Lora Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
           />
           <meta property="og:url" content="https://nubeio.com/droplet/" />
         </Helmet>
         <Header1 />
         <ProductsDroplet data={Droplet} />
+        <ProductsMicroEdge data={Microedge} />
         <Discuss />
         <Footer />
       </>

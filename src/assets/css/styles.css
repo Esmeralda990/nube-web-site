@@ -97,7 +97,7 @@
 
 .swiper-pagination {
   position: absolute;
-  bottom: 0px !important;
+  bottom: 60px !important;
   left: 0;
   width: 100%;
   text-align: center;
@@ -163,18 +163,14 @@
   padding: 5px;
 }
 
-/* Rotate arrows to point in the correct direction */
 .swiper-button-next::after {
   transform: rotate(-45deg);
-  /* Right arrow */
 }
 
 .swiper-button-prev::after {
   transform: rotate(135deg);
-  /* Left arrow */
 }
 
-/* Hover effect for buttons */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: rgba(0, 0, 0, 0.4);
@@ -189,40 +185,6 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: bold !important;
-}
-
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animate-scroll-left {
-  display: flex;
-  gap: 50px;
-  white-space: nowrap;
-  width: max-content;
-  animation: scroll-left 80s linear infinite;
-}
-
-.animate-scroll-right {
-  display: flex;
-  gap: 50px;
-  white-space: nowrap;
-  width: max-content;
-  animation: scroll-right 80s linear infinite;
 }
 
 header {

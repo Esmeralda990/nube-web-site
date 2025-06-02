@@ -7,9 +7,9 @@ import { Managers } from "json/landingPageData";
 
 export default function TeamSection() {
   return (
-    <section className="mt-20 md:pb-48 px-8">
+    <section className="lg:mt-48 md:pb-48 px-8 mt-16">
       <div className=" container mx-auto flex flex-col items-center text-center mb-10 ">
-        <h2 className="text-3xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
+        <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-10">
           Meet our team
         </h2>
         <p className="mb-8 max-w-4xl text-muted-foreground font-light text-gray-400 lg:text-xl">

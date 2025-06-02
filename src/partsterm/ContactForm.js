@@ -7,6 +7,7 @@
 /* eslint-disable comma-dangle */
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, Building } from "lucide-react";
+import { toast } from "react-toastify";
 import Button from "../elements/Button/index";
 
 const contactMethods = [
@@ -74,8 +75,11 @@ const ContactForm = () => {
     });
   };
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
       if (!window.grecaptcha) throw new Error("reCAPTCHA is not loaded");
@@ -94,25 +98,28 @@ const ContactForm = () => {
           body: JSON.stringify({ ...formData, token }),
         }
       );
+
       const result = await response.json();
-      // eslint-disable-next-line
-      alert(result.message);
 
-      if (!response.ok) throw new Error(result.message || "Unknown error");
-
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        inquiry: "",
-        message: "",
-        contactAgreement: false,
-        marketingAgreement: false,
-      });
+      if (result.status === "success") {
+        toast.success(result.message || "Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          inquiry: "",
+          message: "",
+          contactAgreement: false,
+          marketingAgreement: false,
+        });
+      } else {
+        toast.error(result.message || "Failed to send the message.");
+      }
     } catch (error) {
-      // eslint-disable-next-line
-      alert("There was an error submitting the form.");
+      toast.error("Failed to send the message.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -271,9 +278,10 @@ const ContactForm = () => {
               </div>
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full bg-theme-teal text-white py-2 rounded mt-6"
               >
-                Submit
+                {isSubmitting ? "Sending..." : "Submit"}
               </Button>
             </form>
           </div>

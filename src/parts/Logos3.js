@@ -2,18 +2,25 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-array-index-key */
 import React from "react";
+import { ArrowUpRight } from "lucide-react";
 import { Logos } from "../json/landingPageData.js";
 
-const Logos3 = ({ heading, description, logos = Logos }) => {
+const Logos3 = ({ heading, logos = Logos }) => {
   return (
-    <section className="lg:py-32">
+    <section className="mb-24">
       <div className="container mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h2 className="text-3xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight mb-5 lg:text-center ">
+        <h2 className="text-2xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight  lg:text-center ">
           {heading}
         </h2>
-        <p className="font-light text-lg text-gray-400 text-center mb-10 lg:text-center">
-          {description}
-        </p>
+        <a
+          href="/solutions/"
+          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold"
+        >
+          ✨ Explore Our Customer Sucess Stories
+          <span className="flex size-7 items-center justify-center rounded-full bg-muted">
+            <ArrowUpRight className="w-4" />
+          </span>
+        </a>
       </div>
 
       <div

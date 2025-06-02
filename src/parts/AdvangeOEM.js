@@ -8,7 +8,7 @@ export default function AdvantageOem({ data }) {
 
   return (
     <div className="bg-white lg:py-24 pt-12 mb-6  ">
-      <div className="container mx-auto  px-12">
+      <div className="container mx-auto lg:max-w-screen-xl px-12">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
             <div
@@ -21,9 +21,12 @@ export default function AdvantageOem({ data }) {
                 alt={item.title}
               />
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-2 text-theme-blue text-center">
+                <h4 className="font-bold text-base lg:text-xl mb-5 text-theme-blue text-center">
                   {item.title}
                 </h4>
+                <p className="text-base font-light text-gray-500">
+                  {item.description}
+                </p>
               </div>
 
               <div className="px-6 pb-5">

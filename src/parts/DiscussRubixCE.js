@@ -40,15 +40,6 @@ export default function DiscussRubixCE() {
                   Contact
                 </Button>
               </Fade>
-              <Fade direction="up" triggerOnce delay={300}>
-                <Button
-                  href="/get-demo/"
-                  type="link"
-                  className="flex items-center justify-center max-w-fit px-6 py-3 bg-white text-black text-base rounded-xl transition duration-300 ease-in-out border border-theme-teal hover:scale-105 hover:bg-theme-teal hover:text-white"
-                >
-                  Get Demo
-                </Button>
-              </Fade>
             </div>
           </div>
 

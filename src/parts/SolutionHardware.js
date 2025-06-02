@@ -4,87 +4,59 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 /* eslint-disable max-len */
-import React, { useState, useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
-import { Solutionsfeature } from "json/landingPageData";
+import React from "react";
+import { Link } from "react-router-dom";
+import { ChevronRight } from "react-feather";
 
-const FeatureSwiper = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slideTo(activeIndex);
-    }
-  }, [activeIndex]);
+export default function Solutionsfeature({ data }) {
+  const allCards = data.flat();
 
   return (
-    <section className="mt-12 mb-20">
-      <div className="container mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row gap-8 relative px-8 h-full">
-        <ul className="md:w-1/2 flex flex-col">
-          {Solutionsfeature.map((feature, index) => (
-            <li key={feature.id} className="p-4 rounded-lg transition-all">
-              <button
-                className={`cursor-pointer w-full text-left flex flex-col items-start gap-3 p-4 rounded-lg transition-all px-8  ${
-                  activeIndex === index ? "bg-gray-50 text-black" : ""
-                }`}
-                onClick={() => setActiveIndex(index)}
-              >
-                {typeof feature.icon === "string" ? (
-                  <img
-                    src={feature.icon}
-                    alt={feature.title}
-                    className="size-10 h-full"
-                  />
-                ) : (
-                  <feature.icon className="size-10" />
-                )}
-                <div>
-                  <h4 className="text-base lg:text-xl text-theme-blue font-bold mb-3">
-                    {feature.title}
-                  </h4>
-                  <p className="text-sm lg:text-base font-light text-gray-400 text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              </button>
-            </li>
-          ))}
-        </ul>
-
-        <div className="md:w-1/2">
-          <Swiper
-            ref={swiperRef}
-            modules={[Navigation, Pagination]}
-            navigation={false}
-            pagination={false}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            className="rounded-lg border border-border w-full h-auto md:h-[900px] xl:h-[900px] "
-            slideToClickedSlide
-          >
-            {Solutionsfeature.map((feature, index) => (
-              <SwiperSlide
-                key={feature.id}
-                className="flex items-center justify-center p-4"
-              >
+    <div className="bg-white lg:py-24 pt-12 mb-6  ">
+      <div className="container mx-auto  px-12 max-w-screen-xl">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {allCards.map((item, index) => (
+            <div
+              key={item.id || `${item.title}-${index}`}
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+            >
+              <Link to={item.link}>
                 <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className={`w-full max-w-full h-auto object-contain items-center  xl:mt-20 lg:mt-20 md:mt-32 sm:mt-16 rounded-lg transition-opacity duration-300 ${
-                    activeIndex === index ? "opacity-100" : "opacity-50"
-                  }`}
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "
+                  src={item.image}
+                  alt={item.title}
                 />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+              </Link>
+              <div className="px-6 py-5 flex-1 flex flex-col">
+                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-center">
+                  {item.title}
+                </h4>
+                <p className="font-light text-lg text-gray-400 text-left mb-6">
+                  {item.description}
+                </p>
+                <Link
+                  to={item.link}
+                  className="mt-4 flex items-center gap-2 font-medium text-theme-teal"
+                >
+                  Learn more
+                  <ChevronRight className="w-4" />
+                </Link>
+              </div>
+
+              <div className="px-6 pb-5">
+                {item.tags?.map((tag) => (
+                  <span
+                    key={`${item.title}-${tag}`}
+                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default FeatureSwiper;
+}

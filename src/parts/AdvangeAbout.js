@@ -12,10 +12,10 @@ const AdvAbout = () => {
   const [cardNumber, setCardNumber] = useState(0);
 
   return (
-    <section className="pt-20 mb-1 px-8 ">
+    <section className="mb-1 px-8">
       <div className="container mx-auto lg:max-w-screen-xl ">
-        <div className="mb-20 max-w-md ">
-          <h2 className="mb-4 text-3xl font-bold md:text-5xl text-theme-blue">
+        <div className="mb-16 max-w-md ">
+          <h2 className="mb-4 text-2xl font-bold md:text-5xl text-theme-blue">
             Who We Are
           </h2>
           <p className="text-base lg:text-lg  font-light text-gray-400">
@@ -37,8 +37,8 @@ const AdvAbout = () => {
                 }
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
-                cardNumber === index ? "opacity-100" : "opacity-50"
-              } hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-theme-teal border `}
+                cardNumber === index ? "opacity-100" : "opacity-100"
+              }  ring-2 ring-theme-teal border  focus:ring-1 ring-theme-teal border `}
             >
               <div className="flex flex-col items-start gap-2 text-left">
                 <div className="w-6 h-6 mb-1">
@@ -66,7 +66,7 @@ const AdvAbout = () => {
           <img
             src={advantages[cardNumber].image}
             alt={advantages[cardNumber].title}
-            className="w-full h-[500px] object-cover object-center transition-all duration-500 transition-transform duration-300 hover:scale-105"
+            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 hover:scale-105"
           />
         </div>
       </div>

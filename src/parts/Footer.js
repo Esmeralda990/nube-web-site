@@ -8,16 +8,6 @@ import logo from "../assets/images/LogoNube.png";
 
 const sections = [
   {
-    title: "Useful links",
-    links: [
-      { name: "Our Story", href: "/ourstory/" },
-      { name: "Solutions", href: "/solutions/" },
-      { name: "Partners", href: "/partners/" },
-      { name: "Software", href: "/software-rubix-platform/" },
-      { name: "Products", href: "/rubix-compute/" },
-    ],
-  },
-  {
     title: "Contact us",
     links: [
       { name: "info@nube-io.com", href: "mailto:info@nube-io.com" },
@@ -68,7 +58,7 @@ const Footer7 = () => {
               {sections.map((section) => (
                 <div key={section.title}>
                   <h3 className="mb-6 font-bold text-gray-800">
-                    {section.title}
+                    {section.title === "empty-section" ? "" : section.title}
                   </h3>
                   <ul className="space-y-4 text-sm text-gray-600">
                     {section.links.map((link) => (

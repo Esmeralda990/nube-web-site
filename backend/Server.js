@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://nube-web-site.vercel.app"],
+  origin: ["http://localhost:3000"],
   methods: "GET,POST",
   allowedHeaders: "Content-Type,Authorization",
 };
@@ -44,22 +44,38 @@ async function verifyRecaptchaToken(token) {
 
     return data.success && (data.score === undefined || data.score >= 0.5);
   } catch (err) {
-    console.error("❌ Error verificando reCAPTCHA:", err);
+    console.error(" Error verifying reCAPTCHA:", err);
     return false;
   }
 }
 
 app.post("/contact-form", async (req, res) => {
-  const { name, email, phone, company, inquiry, message, token } = req.body;
+  const {
+    name,
+    email,
+    phone,
+    company,
+    inquiry,
+    message,
+    token,
+    contactAgreement,
+    marketingAgreement,
+  } = req.body;
 
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: "Required fields are missing." });
+  if (!name || !email || !inquiry || !message) {
+    return res.status(400).json({
+      status: "error",
+      message: "Required fields are missing.",
+    });
   }
 
   const isDev = process.env.NODE_ENV !== "production";
   const isHuman = isDev ? true : await verifyRecaptchaToken(token);
   if (!isHuman) {
-    return res.status(400).json({ message: "reCAPTCHA verification failed" });
+    return res.status(400).json({
+      status: "error",
+      message: "reCAPTCHA verification failed.",
+    });
   }
 
   const mailOptions = {
@@ -72,14 +88,26 @@ app.post("/contact-form", async (req, res) => {
       Phone: ${phone}
       Company: ${company}
       Inquiry: ${inquiry}
-      Message: ${message}`,
+      Message: ${message}
+      Accept contact: ${contactAgreement ? "Yes" : "No"}
+      Accept marketing: ${marketingAgreement ? "Yes" : "No"}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return res.status(500).json({ message: "Error sending email", error });
+      return res.status(500).json({
+        status: "error",
+        message: "Error sending email.",
+        error,
+      });
     }
-    res.status(200).json({ message: "Email sent successfully", info });
+
+    return res.status(200).json({
+      status: "success",
+      message: "Email sent successfully.",
+      status: "success",
+      info,
+    });
   });
 });
 
@@ -99,7 +127,10 @@ app.post("/get-demo", async (req, res) => {
   const isDev = process.env.NODE_ENV !== "production";
   const isHuman = isDev ? true : await verifyRecaptchaToken(token);
   if (!isHuman) {
-    return res.status(400).json({ message: "reCAPTCHA verification failed." });
+    return res.status(400).json({
+      status: "error",
+      message: "reCAPTCHA verification failed.",
+    });
   }
 
   const DemoMailOptions = {
@@ -120,9 +151,17 @@ app.post("/get-demo", async (req, res) => {
 
   transporter.sendMail(DemoMailOptions, (error, info) => {
     if (error) {
-      return res.status(500).json({ message: "Error sending request", error });
+      return res.status(500).json({
+        status: "error",
+        message: "Error sending demo request.",
+        error,
+      });
     }
-    res.status(200).json({ message: "Request submitted successfully", info });
+    return res.status(200).json({
+      status: "success",
+      message: "Request submitted successfully.",
+      info,
+    });
   });
 });
 

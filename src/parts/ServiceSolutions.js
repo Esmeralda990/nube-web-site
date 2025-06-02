@@ -3,45 +3,35 @@
 /* eslint-disable import/extensions */
 import React from "react";
 
-import { Fade } from "react-awesome-reveal";
-
 export default function ServiceSolutions({ data }) {
   return (
-    <div className="container mx-auto max-w-screen-xl pt-16 pb-32 px-8">
-      <Fade triggerOnce>
-        <h3 className="text-xl md:text-3xl text-theme-blue text-center font-bold mb-6">
-          Building Smarter, Thinking Forward
-        </h3>
-      </Fade>
-      <Fade triggerOnce>
-        <p className="font-light text-xl text-gray-400 text-center mb-20">
-          Explore our tech for sustainable solutions to current and future
-          challenges.
-        </p>
-      </Fade>
-
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-8 sm:gap-6 xl:gap-16">
-        {data.map((item, index) => (
-          <Fade direction={item} delay={300 * index} triggerOnce key={item.id}>
-            {" "}
-            <div className="group rounded-2xl shadow-sm border border-gray-300">
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className="w-full rounded-t-2xl "
-              />
-              <div className="py-2">
-                {" "}
-                <h4 className="text-theme-blue text-center  text-base lg:text-lg py-2">
-                  {item.title}
-                </h4>
-                <p className="font-light text-gray-400 text-center">
-                  {item.description || item.type}
-                </p>
+    <div className="bg-white lg:py-24 pt-12 mb-6  ">
+      <div className="container mx-auto px-12 lg:max-w-screen-xl">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {data.map((item, index) => (
+            <div
+              key={item.id || `${item.title}-${index}`}
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+            >
+              <div className="group rounded-2xl shadow-sm">
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "
+                />
+                <div className="py-2">
+                  {" "}
+                  <h4 className="text-theme-blue text-center  text-base lg:text-lg py-2">
+                    {item.title}
+                  </h4>
+                  <p className="font-light text-gray-400 text-center">
+                    {item.description || item.type}
+                  </p>
+                </div>
               </div>
             </div>
-          </Fade>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

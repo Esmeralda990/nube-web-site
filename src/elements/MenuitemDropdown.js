@@ -250,8 +250,8 @@ const MenuItems = ({ items, depthLevel }) => {
           onMouseLeave={onMouseLeave}
           style={{ position: "relative", zIndex: 10 }}
         >
-          <button
-            type="button"
+          <Link
+            to={items.link || "#"}
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={handleClick}
@@ -259,7 +259,7 @@ const MenuItems = ({ items, depthLevel }) => {
           >
             {items.name}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
-          </button>
+          </Link>
           <div
             style={{
               position: "absolute",

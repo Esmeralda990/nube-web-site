@@ -14,19 +14,17 @@ import Header1 from "parts/Header1";
 import HeroSolution from "parts/HeroSolution";
 import DetailsProfessionalService from "parts/DetailsProfessionalService";
 import Servicesolutions from "parts/ServiceSolutions";
-import Ctasolutions from "parts/CtaSolutions";
+import CtaProfessional from "parts/CtaProfessional.js";
 import CtaSoftware from "parts/CtaSoftware.js";
-import CtaConnect from "parts/CtaConnectivity.js";
+import CtaHardware from "parts/CtaHardware.js";
+import CtaOEM from "parts/CtaOEM";
 import Detailoem from "parts/DetailsOEM";
 import AdvantagesOEM from "parts/AdvangeOEM";
 import DetailsHardware from "parts/DetailsHardware";
 import SolutionHardware from "parts/SolutionHardware";
 import DetailsSoftware from "parts/DetailsSoftware";
-import DetailsConnectivity from "parts/DetailsConect.js";
 import SoftwareSolutions from "parts/SoftwareSolutions";
-import Discuss from "parts/DiscussSolutions";
 import Footer from "parts/Footer";
-import Connectivity from "../partsproducts/Connectivity.js";
 
 export default class SolutionsPage extends Component {
   componentDidMount() {
@@ -90,26 +88,21 @@ export default class SolutionsPage extends Component {
         <section id="Hardware">
           <DetailsHardware />
           <SolutionHardware data={Solutionsfeature} />
+          <CtaHardware />
         </section>
 
         <section id="Professional">
           <DetailsProfessionalService />
           <Servicesolutions data={ServiceSolutions} />
-          <Ctasolutions />
+          <CtaProfessional />
         </section>
 
         <section id="OEM">
           <Detailoem />
           <AdvantagesOEM data={AdvantageSolutions} />
+          <CtaOEM />
         </section>
 
-        <section id="Connectivity">
-          <DetailsConnectivity />
-          <Connectivity showTitle={false} />
-          <CtaConnect />
-        </section>
-
-        <Discuss />
         <Footer />
       </>
     );

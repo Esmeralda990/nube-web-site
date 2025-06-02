@@ -6,6 +6,7 @@
 /* eslint-disable comma-dangle */
 import React, { useState, useEffect } from "react";
 import { Check } from "lucide-react";
+import { toast } from "react-toastify";
 import Button from "../elements/Button/index";
 
 const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
@@ -43,9 +44,11 @@ const GetD = () => {
       [id]: type === "checkbox" ? checked : value,
     });
   };
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
       if (!window.grecaptcha) throw new Error("reCAPTCHA is not loaded");
@@ -65,27 +68,26 @@ const GetD = () => {
         }
       );
       const result = await response.json();
-      // eslint-disable-next-line
-      alert(result.message);
 
-      if (!response.ok) throw new Error(result.message || "Unknown error");
-
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        inquiry: "",
-        message: "",
-        contactAgreement: false,
-        marketingAgreement: false,
-      });
-      // eslint-disable-next-line
+      if (result.status === "success") {
+        toast.success(result.message || "Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          inquiry: "",
+          message: "",
+          contactAgreement: false,
+          marketingAgreement: false,
+        });
+      } else {
+        toast.error(result.message || "Failed to send the message.");
+      }
     } catch (error) {
-      // eslint-disable-next-line
-      console.error("Error:", error);
-      // eslint-disable-next-line
-      alert("There was an error sending the demo request.");
+      toast.error("Failed to send the message.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -261,9 +263,10 @@ const GetD = () => {
               </div>
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full bg-theme-teal text-white py-2 rounded mt-6"
               >
-                Request Demo
+                {isSubmitting ? "Sending..." : "Request Demo"}
               </Button>
             </form>
           </div>
