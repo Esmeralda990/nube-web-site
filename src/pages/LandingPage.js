@@ -6,26 +6,12 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
 
-import {
-  Services,
-  WorldSolutions,
-  Advantages,
-  Badges,
-  Slides,
-  Logos,
-} from "json/landingPageData";
+import { Services, Slides, Logos } from "json/landingPageData";
 
 import Header1 from "parts/Header1";
-import Hero from "parts/Hero";
 import Service from "parts/Service";
-import PorfolioCarousel from "parts/PortfolioCarousel";
-import Advantage from "parts/Advantage";
-import SolutionHero from "parts/SolutionHero";
-import Connect from "parts/Connect";
-import PartnersSection from "parts/PartnerSection";
-import Discuss from "parts/DiscussHome";
+import HeroCarousel from "parts/HeroCarousel";
 import Footer from "parts/Footer";
-import Connectivity from "../partsproducts/Connectivity.js";
 
 export default class LandingPage extends Component {
   componentDidMount() {
@@ -58,15 +44,8 @@ export default class LandingPage extends Component {
         </Helmet>
 
         <Header1 />
-        <Hero />
-        <Connectivity showTitle={false} />
+        <HeroCarousel data={Slides} logos={Logos} />
         <Service data={Services} />
-        <PorfolioCarousel data={Slides} logos={Logos} />
-        <Advantage data={Advantages} />
-        <PartnersSection />
-        <Connect data={Badges} />
-        <SolutionHero data={WorldSolutions} />
-        <Discuss />
         <Footer />
       </>
     );

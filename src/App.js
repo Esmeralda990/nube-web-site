@@ -5,6 +5,8 @@
 /* eslint-disable-next-line no-unused-vars */
 import { Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import LandingPage from "pages/LandingPage";
 import SolutionsPage from "pages/SolutionsPage";
@@ -13,7 +15,6 @@ import RubixCompute from "pages/RubixCompute";
 import RubixIO16 from "pages/RubixIO16";
 import NiagaraEdge from "pages/NiagaraEdge";
 import LoraDroplet from "pages/LoraDroplet";
-import LoraMicroEdge from "pages/LoraMicroEdge";
 import NotFoundPage from "pages/NotFoundPage";
 import TermsOfUsePage from "pages/TermsOfUsePage";
 import PrivacyPage from "pages/PrivacyPage";
@@ -50,8 +51,7 @@ function App() {
           <Route path="/rubix-compute/" element={<RubixCompute />} />
           <Route path="/rubix-io-16/" element={<RubixIO16 />} />
           <Route path="/ci-edgex2/" element={<NiagaraEdge />} />
-          <Route path="/droplet/" element={<LoraDroplet />} />
-          <Route path="/microedge/" element={<LoraMicroEdge />} />
+          <Route path="/Lora/" element={<LoraDroplet />} />
           <Route path="/software/" element={<SoftwarePage />} />
           <Route path="/connectivity/" element={<ConnectivityPage />} />
           <Route path="*" element={<NotFoundPage />} />
@@ -79,6 +79,7 @@ function App() {
           <Route path="/partners/" element={<Partners />} />
         </Routes>
       </HelmetProvider>
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }

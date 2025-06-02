@@ -15,13 +15,6 @@ import Button from "../elements/Button/index.js";
 const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  const [secondLevelSubmenuOpen, setSecondLevelSubmenuOpen] = useState(false);
-  const [otherSubmenuOpen, setOtherSubmenuOpen] = useState(false);
-  const [thirdLevelSubmenuOpen, setThirdLevelSubmenuOpen] = useState(false);
-  const [ScenarioSubmenuOpen, setScenarioSubmenuOpen] = useState(false);
-  const [LoraSubmenuOpen, setLoraSubmenuOpen] = useState(false);
-  const [SoftSubmenuOpen, setSoftSubmenuOpen] = useState(false);
-  const [ExpanSubmenuOpen, setExpanSubmenuOpen] = useState(false);
   const [ResourceSubmenuOpen, setResourceSubmenuOpen] = useState(false);
   const [SecondResoSubmenuOpen, setSecondResoSubmenuOpen] = useState(false);
   const [ManualSubmenuOpen, setManualSubmenuOpen] = useState(false);
@@ -29,34 +22,6 @@ const Header1 = () => {
 
   const toggleSubmenu = () => {
     setSubmenuOpen(!submenuOpen);
-  };
-
-  const toggleSecondLevelSubmenu = () => {
-    setSecondLevelSubmenuOpen((prev) => !prev);
-  };
-
-  const toggleScenarioSubmenu = () => {
-    setScenarioSubmenuOpen((prev) => !prev);
-  };
-
-  const toggleOtherSubmenu = () => {
-    setOtherSubmenuOpen(!otherSubmenuOpen);
-  };
-
-  const toggleThirdLevelSubmenu = () => {
-    setThirdLevelSubmenuOpen(!thirdLevelSubmenuOpen);
-  };
-
-  const toggleLoraSubmenu = () => {
-    setLoraSubmenuOpen(!LoraSubmenuOpen);
-  };
-
-  const toggleSoftSubmenu = () => {
-    setSoftSubmenuOpen(!SoftSubmenuOpen);
-  };
-
-  const toggleExpanSubmenu = () => {
-    setExpanSubmenuOpen(!ExpanSubmenuOpen);
   };
 
   const toggleResourceSubmenu = () => {
@@ -88,17 +53,9 @@ const Header1 = () => {
           <Button
             href="/contact/"
             type="link"
-            className="flex items-center justify-center px-6 py-3 text-black text-base font-bold rounded-xl transition duration-300 ease-in-out hover:text-theme-teal "
+            className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
           >
             Contact
-          </Button>
-
-          <Button
-            href="/get-demo/"
-            type="link"
-            className="flex items-center justify-center px-6 py-3 bg-white text-black text-base rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
-          >
-            Get Demo
             <ArrowRight className="ml-2 w-4" />
           </Button>
         </div>
@@ -128,7 +85,14 @@ const Header1 = () => {
         <div className="lg:hidden">
           <div className="transition-opacity duration-400 ease-in-out opacity-100">
             <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300">
-              <Navbar />
+              <li>
+                <a
+                  href="/our-story/"
+                  className="block px-4 py-3 text-theme-blue font-bold text-lg"
+                >
+                  Our Story
+                </a>
+              </li>{" "}
               <li className="relative">
                 <button
                   className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
@@ -155,339 +119,37 @@ const Header1 = () => {
 
                 {submenuOpen && (
                   <ul className="pl-6 mt-2 space-y-2">
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleSecondLevelSubmenu}
+                    <li>
+                      <a
+                        href="/solutions/#Professional"
+                        className="text-gray-400 block px-6 py-2"
                       >
-                        Our Solutions
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            secondLevelSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {secondLevelSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/solutions/#Professional"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Professional Services
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/solutions/#OEM"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              OEM
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/solutions/#Hardware"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Hardware
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/solutions/#Software"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Software
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/solutions/#Connectivity"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Connectivity
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                        Professional Services
+                      </a>
                     </li>
-
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleScenarioSubmenu}
+                    <li>
+                      <a
+                        href="/solutions/#OEM"
+                        className="text-gray-400 block px-6 py-2"
                       >
-                        By Case Scenario
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            ScenarioSubmenuOpen ? "rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {ScenarioSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/case-analytics/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Smart Analytics
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-oem/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              OEM integration
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-compliance/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Building Rating Systems
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                        OEM
+                      </a>
                     </li>
-                  </ul>
-                )}
-              </li>
-
-              <li className="relative">
-                <button
-                  className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
-                  onClick={toggleOtherSubmenu}
-                >
-                  Products
-                  <svg
-                    className={`w-4 h-4 transition-transform ${
-                      otherSubmenuOpen ? "transform rotate-180" : ""
-                    }`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-
-                {otherSubmenuOpen && (
-                  <ul className="pl-6 mt-2 space-y-2">
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleThirdLevelSubmenu}
+                    <li>
+                      <a
+                        href="/solutions/#Hardware"
+                        className="text-gray-400 block px-6 py-2"
                       >
-                        Controllers
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            thirdLevelSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {thirdLevelSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/rubix-compute/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Rubix Compute
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/rubix-io-16/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Rubix iO 16
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/ci-edgex2/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              CI-EdgeX2
-                            </a>
-                          </li>
-                        </ul>
-                      )}
-                      <li className="relative">
-                        <button
-                          className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                          onClick={toggleLoraSubmenu}
-                        >
-                          LoRa
-                          <svg
-                            className={`w-4 h-4 transition-transform ${
-                              LoraSubmenuOpen ? "transform rotate-180" : ""
-                            }`}
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M19 9l-7 7-7-7"
-                            />
-                          </svg>
-                        </button>
-
-                        {LoraSubmenuOpen && (
-                          <ul className="pl-6 mt-2 space-y-2">
-                            <li>
-                              <a
-                                href="/droplet/"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                Droplet Indoor Sensor
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/microedge/"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                MicroEdge Asset
-                              </a>
-                            </li>
-                          </ul>
-                        )}
-                      </li>
-                      <li className="relative">
-                        <button
-                          className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                          onClick={toggleSoftSubmenu}
-                        >
-                          Software
-                          <svg
-                            className={`w-4 h-4 transition-transform ${
-                              SoftSubmenuOpen ? "transform rotate-180" : ""
-                            }`}
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M19 9l-7 7-7-7"
-                            />
-                          </svg>
-                        </button>
-
-                        {SoftSubmenuOpen && (
-                          <ul className="pl-6 mt-2 space-y-2">
-                            <li>
-                              <a
-                                href="/software/"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                Rubix CE
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="/connectivity/"
-                                className="text-gray-400 block px-6 py-2"
-                              >
-                                Nube iO Cloud
-                              </a>
-                            </li>
-                          </ul>
-                        )}
-                      </li>
+                        Hardware
+                      </a>
                     </li>
-
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleExpanSubmenu}
+                    <li>
+                      <a
+                        href="/solutions/#Software"
+                        className="text-gray-400 block px-6 py-2"
                       >
-                        Expansion Modules
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            ExpanSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {ExpanSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/rubix-connect-lw/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Rubix Connect
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                        Software
+                      </a>
                     </li>
                   </ul>
                 )}
@@ -675,14 +337,6 @@ const Header1 = () => {
                 )}
               </li>
               <div className="flex flex-col space-y-4 p-4">
-                <Button
-                  href="/get-demo/"
-                  type="link"
-                  className="w-full px-6 py-3 bg-white text-black border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-100"
-                >
-                  Get a Demo
-                </Button>
-
                 <Button
                   href="/contact/"
                   type="link"

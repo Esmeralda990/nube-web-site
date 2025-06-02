@@ -9,18 +9,14 @@ import {
   AdvantageAbout,
   Managers,
   floatingIcons,
-  Logos,
   OurStoryD,
 } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import HeroAbout from "parts/HeroAbout";
-import DetailsAbout from "parts/DetailsAbout";
 import AdvangeAbout from "parts/AdvangeAbout";
-import LogosAbout from "parts/LogosAbout";
 import OurStory from "parts/Ourstory";
 import TeamSection from "parts/TeamSection";
 import TeamGroup from "parts/TeamGroup";
-import Discuss from "parts/DiscussAbout";
 import Footer from "parts/Footer";
 
 export default class OurStoryPage extends Component {
@@ -55,13 +51,10 @@ export default class OurStoryPage extends Component {
 
         <Header1 />
         <HeroAbout />
-        <DetailsAbout />
-        <AdvangeAbout data={AdvantageAbout} />
-        <LogosAbout logos={Logos} />
         <OurStory data={OurStoryD} />
+        <AdvangeAbout data={AdvantageAbout} />
         <TeamSection data={Managers} />
         <TeamGroup data={floatingIcons} />
-        <Discuss />
         <Footer />
       </>
     );

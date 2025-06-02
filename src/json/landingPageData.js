@@ -1,5 +1,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable object-curly-newline */
+/* eslint-disable react/no-array-index-key */
 
 // Services Img Imports
 import Sofware from "../assets/images/Services/Software.webp";
@@ -18,15 +19,9 @@ import Logo7 from "../assets/images/Logos/VictoriaState.svg";
 import Logo8 from "../assets/images/Logos/Westpac.svg";
 
 // Slides
-import slide1 from "../assets/images/PortfolioCarousel/01.gif";
-import slide2 from "../assets/images/PortfolioCarousel/02.gif";
-import slide3 from "../assets/images/PortfolioCarousel/03.gif";
-
-// Advantages
-import Technology from "../assets/images/Advantages/Smart.webp";
-import Integration from "../assets/images/Advantages/Endto.png";
-import Sustainability from "../assets/images/Advantages/Sustainability.webp";
-import Insights from "../assets/images/Advantages/Real.webp";
+import slide1 from "../assets/animaciones/C1.json";
+import slide2 from "../assets/animaciones/C2.json";
+import slide3 from "../assets/animaciones/C3.json";
 
 // AdvangeAbout
 import Company from "../assets/images/AdvangesAbout/Company.svg";
@@ -42,6 +37,7 @@ import IconsSol from "../assets/images/AdvangesAbout/GroupExc.png";
 import Client from "../assets/images/ServiceSolutions/Client.webp";
 import Establish from "../assets/images/ServiceSolutions/Asset.webp";
 import Management from "../assets/images/ServiceSolutions/Establish.webp";
+import Energy from "../assets/images/ServiceSolutions/Energy.png";
 
 // Managers
 import CEOT from "../assets/images/Team/TomFyfe.png";
@@ -51,12 +47,9 @@ import IOT from "../assets/images/Team/Jonathan.png";
 import CFO from "../assets/images/Team/Jonkane.png";
 
 // solution Feature
-import Controller from "../assets/images/RubixCompute/RubixCompute01.png";
-import Lora from "../assets/images/MicroEdge/MicroEdge01.png";
-import Expansion from "../assets/images/RubixLW/RubixConnect01.png";
-import Iconshard1 from "../assets/images/IconsHardware/controllers.png";
-import Iconshard2 from "../assets/images/IconsHardware/Lora.png";
-import Iconshard3 from "../assets/images/IconsHardware/Expansion.png";
+import RubixSolu from "../assets/images/ImgFooter/RubixCompute.svg";
+import Rubix16Solu from "../assets/images/ImgFooter/Rubix_io_16.svg";
+import ExpansionSolu from "../assets/images/ImgFooter/Rubix_Connect.svg";
 
 // Floatings Icons
 import Floatings1 from "../assets/images/IconsTeam/01.svg";
@@ -194,23 +187,26 @@ export const Slides = [
   {
     id: "slide-1",
     image: slide1,
-    title: "The power to predict, adapt, and optimise",
+    title: "Building Smarter, Thinking Forward",
+    Subtitles: "The power to predict, adapt, and optimise",
     description:
-      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions—before they happen.",
+      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
   },
   {
     id: "slide-2",
     image: slide2,
-    title: "Total control of every connection",
+    title: "Building Smarter, Thinking Forward",
+    Subtitles: "The power to predict, adapt, and optimise",
     description:
-      "Achieve seamless integration and visibility across devices, spaces, and systems, unified on one intuitive platform.",
+      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
   },
   {
     id: "slide-3",
     image: slide3,
-    title: "Insights that drive action",
+    title: "Building Smarter, Thinking Forward",
+    Subtitles: "The power to predict, adapt, and optimise",
     description:
-      "Reveal hidden opportunities to improve efficiency, reduce costs, and enhance building performance.",
+      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
   },
 ];
 
@@ -283,35 +279,6 @@ export const Badges = [
     title: "AI + Analytics Ready",
     className: "size-1",
   },
-];
-
-export const Advantages = [
-  [
-    {
-      title: "Smart, Scalable Technology",
-      description:
-        "Our solutions grow with your needs, from single sites to multi-building portfolios,providing the flexibility to adapt to any",
-      imageUrl: Technology,
-    },
-    {
-      title: "End-to-End Integration",
-      description:
-        "Nube iO seamlessly connects legacy systems with modern technology, offering advanced IoT capabilities while ensuring.",
-      imageUrl: Integration,
-    },
-    {
-      title: "Sustainability at the Core",
-      description:
-        "We’re committed to creating energy-efficient and environmentally responsible systems that help reduce carbon footprints and meet.",
-      imageUrl: Sustainability,
-    },
-    {
-      title: "Real-Time Insights",
-      description:
-        "Our advanced analytics and monitoring advanced analytics and monitoring advanced analytics and monitoring advanced ",
-      imageUrl: Insights,
-    },
-  ],
 ];
 
 export const AdvantageAbout = [
@@ -439,18 +406,18 @@ export const OurStoryD = [
     },
     {
       id: 11,
-      title: "Southeast Asia R&D Office Opened – Vietnam",
+      title: "APC Design Centre Opened – Vietnam",
       date: "2025",
       description:
-        "Established dedicated Research & Development operations to support regional growth and innovation.",
+        "Launched a regional design hub to support APAC growth, custom solutions, and partner integration.",
       icon: IconsOur12,
     },
     {
       id: 12,
-      title: "Zone Control Module for Residential Ducted Systems",
+      title: "Smart Home Solution Launched",
       date: "2025",
       description:
-        "New product release supporting advanced temperature zoning in homes.",
+        "Introduced intelligent control technology for residential HVAC and energy automation..",
       icon: IconsOur13,
     },
   ],
@@ -466,14 +433,21 @@ export const ServiceSolutions = [
   },
   {
     id: "Establish",
-    title: "Establish Long-Term Compliance",
+    title: "Client Solutions",
     imageUrl: Establish,
     animation: "right",
   },
   {
     id: "Management",
-    title: "Asset Management",
+    title: "Sales & Marketing",
     imageUrl: Management,
+    type: "",
+    animation: "right",
+  },
+  {
+    id: "Energy",
+    title: "Energy Analytics",
+    imageUrl: Energy,
     type: "",
     animation: "right",
   },
@@ -596,27 +570,35 @@ export const floatingIcons = [
 export const Solutionsfeature = [
   {
     id: "feature-1",
-    title: "Controllers",
+    title: "Rubix Compute",
     description:
-      "Our state-of-the-art controllers, including Rubix Compute, Rubix IO-16, Rubix Compute Mini, and Rubix IO-24, put advanced automation at your fingertips. Designed for simplicity and scalability, these controllers seamlessly integrate diverse systems and protocols, offering real-time insights and control.",
-    icon: Iconshard1,
-    image: Controller,
+      "Edge Controller for real-time automation, data processing, and multi-protocol integration in smart building environments.",
+    image: RubixSolu,
+    link: "/rubix-compute/",
   },
   {
     id: "feature-2",
-    title: "LoRa® Sensors",
+    title: "Rubix iO 16",
     description:
-      "Our LoRa® wireless sensors, including the Droplet Indoor Sensor and MicroEdge Asset Monitoring Sensor, deliver exceptional range, reliability, and accuracy for all your automation needs. From precise environmental monitoring and real-time occupancy detection to predictive asset management, our sensors provide critical insights instantly, helping you keep spaces optimised, comfortable, and cost-efficient.",
-    icon: Iconshard2,
-    image: Lora,
+      "Compact I/O Module for scalable sensor and actuator control across HVAC, lighting, and building systems.",
+    image: Rubix16Solu,
+    link: "/rubix-io-16/",
   },
   {
     id: "feature-3",
+    title: "LoRa® Sensors",
+    description:
+      "Wireless LoRaWAN® Sensors for long-range, battery-powered monitoring of temperature, humidity, and indoor air quality.",
+    image: IconsOur4,
+    link: "/Lora/",
+  },
+  {
+    id: "feature-4",
     title: "Expansion Modules",
     description:
-      "Our Rubix Connect LW expansion modules provide effortless scalability and extended functionality for your automation ecosystem. Quickly integrate additional sensors and devices, strengthen your monitoring capabilities, and unlock enhanced control—all without compromising ease of use or efficiency. Nube iO ensures that as your business grows, your technology adapts seamlessly.",
-    icon: Iconshard3,
-    image: Expansion,
+      "Modular Add-ons that extend Rubix controller capabilities with additional inputs, outputs, and communication features.",
+    image: ExpansionSolu,
+    link: "/rubix-connect-lw/",
   },
 ];
 
@@ -625,27 +607,27 @@ export const AdvantageSolutions = [
     {
       title: "White Labelling",
       description:
-        "Offer Nube iO products under a client’s brand, providing a cohesive brand experience.",
+        "Custom-branded interfaces and hardware that let your product shine—with Nube iO behind the scenes.",
       imageUrl: Labelling,
     },
     {
-      title: "Hardware and Software",
+      title: "Scalable Commercial Models",
       description:
-        "Develop tailored hardware and software solutions to meet specific client needs, offering flexibility and bespoke innovation.",
+        "Flexible licencing and deployment strategies tailored to your business growth.",
       imageUrl: Custom,
     },
   ],
   [
     {
-      title: "Leveraging Our Technology",
+      title: "Embedded Integration",
       description:
-        "Utilize Nube iO's existing technology stack to create unique products or solutions for partners, enhancing market differentiation and competitiveness.",
+        "Seamlessly embed Rubix devices and software into your existing platforms and product ecosystem.",
       imageUrl: Leveraging,
     },
     {
-      title: "Support Services",
+      title: "Onboarding Enablement",
       description:
-        "Provide ongoing support, training, and maintenance to ensure optimal system performance, empowering our partners to achieve operational excellence.",
+        "Partner toolkits, documentation, and training to get your team up and running—fast.",
       imageUrl: Support,
     },
   ],
