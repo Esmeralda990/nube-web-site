@@ -23,14 +23,12 @@ import WarrantyPage from "pages/WarrantyPage";
 import ApplicationPage from "pages/ApplicationPage";
 import AppPolicy from "pages/AppPoliciyPage";
 import SoftwarePage from "pages/SoftwarePage";
-import ConnectivityPage from "pages/ConnectivityPage";
 import RubixLWPage from "pages/RubixLWPage";
 import CaseStudy1Page from "pages/CaseStudy1Page";
 import CaseStudy2Page from "pages/CaseStudy2Page";
 import CaseStudy3Page from "pages/CaseStudy3Page";
 import CaseStudy4Page from "pages/CaseStudy4Page";
 import CaseStudy5Page from "pages/CaseStudy5Page";
-import GetDemoPage from "pages/GetDemoPage";
 import ScenarioPage1 from "pages/ScenarioPage1";
 import ScenarioPage2 from "pages/ScenarioPage2";
 import ScenarioPage3 from "pages/ScenarioPage3";
@@ -53,7 +51,6 @@ function App() {
           <Route path="/ci-edgex2/" element={<NiagaraEdge />} />
           <Route path="/Lora/" element={<LoraDroplet />} />
           <Route path="/software/" element={<SoftwarePage />} />
-          <Route path="/connectivity/" element={<ConnectivityPage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/terms-of-use/" element={<TermsOfUsePage />} />
           <Route path="/privacy-policy/" element={<PrivacyPage />} />
@@ -73,7 +70,6 @@ function App() {
           <Route path="/case-analytics/" element={<ScenarioPage1 />} />
           <Route path="/case-oem/" element={<ScenarioPage2 />} />
           <Route path="/case-compliance/" element={<ScenarioPage3 />} />
-          <Route path="/get-demo/" element={<GetDemoPage />} />
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faqs/" element={<FAQsPage />} />
           <Route path="/partners/" element={<Partners />} />

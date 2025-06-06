@@ -16,9 +16,6 @@ const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [ResourceSubmenuOpen, setResourceSubmenuOpen] = useState(false);
-  const [SecondResoSubmenuOpen, setSecondResoSubmenuOpen] = useState(false);
-  const [ManualSubmenuOpen, setManualSubmenuOpen] = useState(false);
-  const [FAQSubmenuOpen, setFAQSubmenuOpen] = useState(false);
 
   const toggleSubmenu = () => {
     setSubmenuOpen(!submenuOpen);
@@ -26,18 +23,6 @@ const Header1 = () => {
 
   const toggleResourceSubmenu = () => {
     setResourceSubmenuOpen(!ResourceSubmenuOpen);
-  };
-
-  const toggleSecondResoSubmenu = () => {
-    setSecondResoSubmenuOpen((prev) => !prev);
-  };
-
-  const toggleManualSubmenu = () => {
-    setManualSubmenuOpen((prev) => !prev);
-  };
-
-  const toggleFAQSubmenu = () => {
-    setFAQSubmenuOpen((prev) => !prev);
   };
 
   return (
@@ -98,7 +83,13 @@ const Header1 = () => {
                   className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
                   onClick={toggleSubmenu}
                 >
-                  Solutions
+                  <a
+                    href="/solutions/"
+                    className="text-theme-blue hover:underline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Solutions
+                  </a>
                   <svg
                     className={`w-4 h-4 transition-transform ${
                       submenuOpen ? "transform rotate-180" : ""
@@ -121,18 +112,10 @@ const Header1 = () => {
                   <ul className="pl-6 mt-2 space-y-2">
                     <li>
                       <a
-                        href="/solutions/#Professional"
+                        href="/solutions/#Software"
                         className="text-gray-400 block px-6 py-2"
                       >
-                        Professional Services
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/solutions/#OEM"
-                        className="text-gray-400 block px-6 py-2"
-                      >
-                        OEM
+                        Software
                       </a>
                     </li>
                     <li>
@@ -145,10 +128,18 @@ const Header1 = () => {
                     </li>
                     <li>
                       <a
-                        href="/solutions/#Software"
+                        href="/solutions/#OEM"
                         className="text-gray-400 block px-6 py-2"
                       >
-                        Software
+                        OEM
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/solutions/#Professional"
+                        className="text-gray-400 block px-6 py-2"
+                      >
+                        Professional Services
                       </a>
                     </li>
                   </ul>
@@ -188,150 +179,31 @@ const Header1 = () => {
 
                 {ResourceSubmenuOpen && (
                   <ul className="pl-6 mt-2 space-y-2">
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleSecondResoSubmenu}
+                    <li>
+                      <a
+                        href="/case-fujitsu/"
+                        className="text-gray-400 block px-6 py-2"
                       >
                         Case Studies
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            SecondResoSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {SecondResoSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/case-fujitsu/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Fujitsu General–AnywAIRiO
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-galvin/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Galvin TMV
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-enviro/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Enviro
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-qa/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Victorian Schools
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/case-daikin/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              Daikin
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                      </a>
                     </li>
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleManualSubmenu}
+                    <li>
+                      <a
+                        href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
+                        className="text-gray-400 block px-6 py-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Manuals & Support Articles
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            ManualSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {ManualSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials"
-                              className="text-gray-400 block px-6 py-2"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              Technical Resources
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                        Technical Resources
+                      </a>
                     </li>
-                    <li className="relative">
-                      <button
-                        className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold"
-                        onClick={toggleFAQSubmenu}
+                    <li>
+                      <a
+                        href="/faqs/"
+                        className="text-gray-400 block px-6 py-2"
                       >
                         FAQs
-                        <svg
-                          className={`w-4 h-4 transition-transform ${
-                            FAQSubmenuOpen ? "transform rotate-180" : ""
-                          }`}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </button>
-
-                      {FAQSubmenuOpen && (
-                        <ul className="pl-6 mt-2 space-y-2">
-                          <li>
-                            <a
-                              href="/faqs/"
-                              className="text-gray-400 block px-6 py-2"
-                            >
-                              FAQs
-                            </a>
-                          </li>
-                        </ul>
-                      )}
+                      </a>
                     </li>
                   </ul>
                 )}

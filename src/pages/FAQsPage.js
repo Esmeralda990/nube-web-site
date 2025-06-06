@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet-async";
 import { DataAccordion } from "json/FaqData";
 import Header1 from "parts/Header1";
 import FAQs from "partsterm/Faqs";
-import Discuss from "parts/DiscussAbout.js";
 import Footer from "parts/Footer";
 
 export default class FAqs extends Component {
@@ -41,7 +40,6 @@ export default class FAqs extends Component {
         </Helmet>
         <Header1 />
         <FAQs data={DataAccordion} />
-        <Discuss />
         <Footer />
       </>
     );

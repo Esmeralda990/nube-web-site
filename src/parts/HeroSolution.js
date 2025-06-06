@@ -9,7 +9,7 @@ import Herosolutions from "../assets/images/hero/SolutionsHero.png";
 
 export default function HeroSolutions() {
   return (
-    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-32 mb-8 lg:max-w-screen-2xl">
+    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 lg:py-32 mb-8 lg:max-w-screen-2xl mt-12">
       <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 lg:text-left">
         <h1 className="text-3xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-12 max-w-lg">
           Powering Smart Building Innovation
@@ -22,7 +22,7 @@ export default function HeroSolutions() {
       </div>
 
       <div className="flex justify-center items-center w-full lg:w-1/2 mt-10 lg:mt-0">
-        <Fade direction="up" triggerOnce>
+        <Fade triggerOnce>
           <img
             className="max-w-full h-auto lg:scale-[1.2]"
             src={Herosolutions}

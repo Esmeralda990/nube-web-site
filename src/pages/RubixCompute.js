@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
 import ProductsRubix from "partsproducts/ProductsRubix";
-import Discuss from "parts/DiscussRC";
 import Footer from "parts/Footer";
 import { RubixCompute } from "../json/ProductsPageData.js";
 
@@ -42,7 +41,6 @@ export default class RubixComputePage extends Component {
         </Helmet>
         <Header1 />
         <ProductsRubix data={RubixCompute} />
-        <Discuss />
         <Footer />
       </>
     );

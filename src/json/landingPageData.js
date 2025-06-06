@@ -17,6 +17,13 @@ import Logo5 from "../assets/images/Logos/Schneider.svg";
 import Logo6 from "../assets/images/Logos/Sydney.svg";
 import Logo7 from "../assets/images/Logos/VictoriaState.svg";
 import Logo8 from "../assets/images/Logos/Westpac.svg";
+import Logo9 from "../assets/images/Logos/Unsw.png";
+import Logo10 from "../assets/images/Logos/Pulford.png";
+import Logo11 from "../assets/images/Logos/Property.png";
+import Logo12 from "../assets/images/Logos/JLL.png";
+import Logo13 from "../assets/images/Logos/Honeywell.png";
+import Logo14 from "../assets/images/Logos/Aldi.png";
+import Logo15 from "../assets/images/Logos/Costco.png";
 
 // Slides
 import slide1 from "../assets/animaciones/C1.json";
@@ -50,23 +57,6 @@ import CFO from "../assets/images/Team/Jonkane.png";
 import RubixSolu from "../assets/images/ImgFooter/RubixCompute.svg";
 import Rubix16Solu from "../assets/images/ImgFooter/Rubix_io_16.svg";
 import ExpansionSolu from "../assets/images/ImgFooter/Rubix_Connect.svg";
-
-// Floatings Icons
-import Floatings1 from "../assets/images/IconsTeam/01.svg";
-import Floatings2 from "../assets/images/IconsTeam/02.svg";
-import Floatings3 from "../assets/images/IconsTeam/03.svg";
-import Floatings4 from "../assets/images/IconsTeam/04.svg";
-import Floatings5 from "../assets/images/IconsTeam/05.svg";
-import Floatings6 from "../assets/images/IconsTeam/06.svg";
-import Floatings7 from "../assets/images/IconsTeam/07.svg";
-import Floatings8 from "../assets/images/IconsTeam/08.svg";
-import Floatings9 from "../assets/images/IconsTeam/09.svg";
-import Floatings10 from "../assets/images/IconsTeam/10.svg";
-
-// WorldSolutions
-import WorldSolutions1 from "../assets/images/WorldSolutions/Customise.webp";
-import WorldSolutions2 from "../assets/images/WorldSolutions/IoT.webp";
-import WorldSolutions3 from "../assets/images/WorldSolutions/Building.webp";
 
 // AdvangeOEM Solutions
 import Labelling from "../assets/images/AdvantageSolutionOEM/Labelling.webp";
@@ -181,6 +171,48 @@ export const Logos = [
     image: Logo8,
     className: "h-1 w-1",
   },
+  {
+    id: "Logo9",
+    description: "Logo9",
+    image: Logo9,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo10",
+    description: "Logo10",
+    image: Logo10,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo11",
+    description: "Logo11",
+    image: Logo11,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo12",
+    description: "Logo12",
+    image: Logo12,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo13",
+    description: "Logo13",
+    image: Logo13,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo14",
+    description: "Logo14",
+    image: Logo14,
+    className: "h-1 w-1",
+  },
+  {
+    id: "Logo15",
+    description: "Logo15",
+    image: Logo15,
+    className: "h-1 w-1",
+  },
 ];
 
 export const Slides = [
@@ -207,30 +239,6 @@ export const Slides = [
     Subtitles: "The power to predict, adapt, and optimise",
     description:
       "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
-  },
-];
-
-export const WorldSolutions = [
-  {
-    id: "1",
-    title: "Customise OEM solution",
-    imageUrl: WorldSolutions1,
-    description: "Accelerate innovation with integrated OEM solutions.",
-    link: "/case-oem/",
-  },
-  {
-    id: "2",
-    title: "IoT integrations",
-    imageUrl: WorldSolutions2,
-    description: "Transform building data into actionable insights",
-    link: "/case-analytics/",
-  },
-  {
-    id: "3",
-    title: "Building Rating Systems",
-    imageUrl: WorldSolutions3,
-    description: "Simplify building ratings for optimal compliance.",
-    link: "/case-compliance/",
   },
 ];
 
@@ -433,13 +441,13 @@ export const ServiceSolutions = [
   },
   {
     id: "Establish",
-    title: "Client Solutions",
+    title: "Sales & Marketing",
     imageUrl: Establish,
     animation: "right",
   },
   {
     id: "Management",
-    title: "Sales & Marketing",
+    title: "Training & Support",
     imageUrl: Management,
     type: "",
     animation: "right",
@@ -498,72 +506,6 @@ export const Managers = [
       "Experienced finance leader in growth businesses across FMCG & manufacturing.",
     imageUrl: CFO,
     linkedinUrl: "https://www.linkedin.com/in/jon-kane-4564363/",
-  },
-];
-
-export const floatingIcons = [
-  // Left Floating Icons
-  {
-    position: "left",
-    offset: "15vw",
-    top: "0vh",
-    src: Floatings1,
-  },
-  {
-    position: "left",
-    offset: "5vw",
-    top: "10vh",
-    src: Floatings2,
-  },
-  {
-    position: "left",
-    offset: "18vw",
-    top: "20vh",
-    src: Floatings3,
-  },
-  {
-    position: "left",
-    offset: "10vw",
-    top: "30vh",
-    src: Floatings4,
-  },
-  {
-    position: "left",
-    offset: "2vw",
-    top: "40vh",
-    src: Floatings5,
-  },
-
-  // Right Floating Icons
-  {
-    position: "right",
-    offset: "15vw",
-    top: "0vh",
-    src: Floatings6,
-  },
-  {
-    position: "right",
-    offset: "5vw",
-    top: "10vh",
-    src: Floatings7,
-  },
-  {
-    position: "right",
-    offset: "18vw",
-    top: "20vh",
-    src: Floatings8,
-  },
-  {
-    position: "right",
-    offset: "10vw",
-    top: "30vh",
-    src: Floatings9,
-  },
-  {
-    position: "right",
-    offset: "2vw",
-    top: "40vh",
-    src: Floatings10,
   },
 ];
 

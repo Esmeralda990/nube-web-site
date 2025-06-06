@@ -26,21 +26,15 @@ import Micro3 from "../assets/images/MicroEdge/MicroEdge03.png";
 
 // Icons Software Benefits
 import Unified from "../assets/images/IconsBenefitsSoftware/UnifiedPlatform.svg";
-import Cloud from "../assets/images/IconsBenefitsSoftware/CloudNative.svg";
-import Flexible from "../assets/images/IconsBenefitsSoftware/FlexibleScalable.svg";
 import Open from "../assets/images/IconsBenefitsSoftware/OpenProtocol.svg";
-import Real from "../assets/images/IconsBenefitsSoftware/RealTime.svg";
-import Code from "../assets/images/IconsBenefitsSoftware/LowCode.svg";
+import Flexible from "../assets/images/IconsBenefitsSoftware/FlexibleScalable.svg";
+import Real from "../assets/images/IconsBenefitsSoftware/Monitoring.svg";
 
 // Gif Benefits
-import Anywhere from "../assets/Video/Sendyourdata01.webm";
-import Merge from "../assets/Video/Merge02.webm";
-import Manage1 from "../assets/images/SoftwareProducts/ce-install-apps-1024x626-31.png";
-import Manage2 from "../assets/images/SoftwareProducts/ce-wires-1024x626-32.png";
-import Manage3 from "../assets/images/SoftwareProducts/ce-select-version-1024x626-33.png";
-
-// Rubix Wire
-import RubixWire1 from "../assets/Video/RubixWire03_Webm.webm";
+import Anywhere from "../assets/Video/Node01.webm";
+import Merge from "../assets/Video/Node02.webm";
+import Manage from "../assets/Video/Node04.webm";
+import RubixWire1 from "../assets/Video/Node03.webm";
 
 // Rubix Lw
 import RubixConnect from "../assets/images/RubixLW/RubixConnect01.png";
@@ -131,44 +125,31 @@ export const Microedge = [
 export const IconsBenefits = [
   {
     id: "1",
-    title: "Unified Platform",
+    title: "Intuitive Visual Programming",
     description:
-      "Manage, visualise, and control multiple systems from one place.",
+      "Drag-and-drop logic builder designed for fast, clear setup — no traditional coding required, making complex control easier than ever.",
     icon: Unified,
   },
   {
     id: "2",
-    title: "Cloud-Native Control",
+    title: "Real-Time Data Control",
     description:
-      "Access and configure your building systems remotely—anytime, anywhere.",
-    icon: Cloud,
+      "Edit and deploy live logic while monitoring real-time device feedback — test, refine, and adjust without disrupting your building operations.",
+    icon: Real,
   },
   {
     id: "3",
-    title: "Flexible & Scalable",
+    title: "Scalable Across Sites",
     description:
-      "Deploy across one site or many, with tools that grow with your needs.",
+      "Easily manage one or hundreds of buildings from one central login — designed to scale across portfolios, projects, or multi-site deployments.",
     icon: Flexible,
   },
   {
     id: "4",
-    title: "Open Protocol Integration",
+    title: "Built for Integration",
     description:
-      "Supports BACnet, Modbus, LoRaWAN, MQTT and more—no vendor lock-in.",
+      "Compatible with BACnet, Modbus, and LoRaWAN® protocols — Rubix CE connects your devices and systems into one smart automation workflow.",
     icon: Open,
-  },
-  {
-    id: "5",
-    title: "Real-Time Monitoring",
-    description:
-      "Get live insights from HVAC, energy, lighting, and sensor data.",
-    icon: Real,
-  },
-  {
-    id: "6",
-    title: "Low-Code Configuration",
-    description: "Configure logic and control without complex programming.",
-    icon: Code,
   },
 ];
 
@@ -183,21 +164,10 @@ export const GifBenefits = [
   },
   {
     id: "3",
-    image: Manage1,
+    image: Manage,
   },
   {
-    id: "4",
-    image: Manage2,
-  },
-  {
-    id: "5",
-    image: Manage3,
-  },
-];
-
-export const RubixWire = [
-  {
-    id: "1",
+    id: "3",
     image: RubixWire1,
   },
 ];

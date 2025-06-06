@@ -255,9 +255,10 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={handleClick}
-            className="text-lg font-bold"
+            className="relative text-lg font-bold py-2 px-4 group"
           >
-            {items.name}
+            <span>{items.name}</span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-theme-teal transition-all duration-300 group-hover:w-full" />
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </Link>
           <div
@@ -279,9 +280,13 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </div>
       ) : (
-        <a href={items.link || "#"} className="font-bold p-2">
-          {items.name}
-        </a>
+        <Link
+          to={items.link || "#"}
+          className="relative font-bold py-2 px-4 group inline-block"
+        >
+          <span>{items.name}</span>
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-theme-teal transition-all duration-300 group-hover:w-full" />
+        </Link>
       )}
     </li>
   );

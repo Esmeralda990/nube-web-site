@@ -5,11 +5,11 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import Team from "../assets/images/IconsTeam/Teams.svg";
+import Team from "../assets/images/IconsTeam/Team.svg";
 
 const TeamGroup = () => {
   return (
-    <section className="lg:py-24">
+    <section className="lg:py-24 px-8">
       <div className="overflow-hidden mt-12 ">
         <div className="container mx-auto">
           <div className="mx-auto flex max-w-5xl flex-col items-center">

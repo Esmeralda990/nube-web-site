@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const RubixLW = () => {
   return (
-    <section className="lg:mt-28 lg:mt-12 pb-12 mt-4">
+    <section className="lg:mt-28 lg:mt-12 pb-32 mt-4">
       <div className="container mx-auto px-12">
         <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
           Expand Your Network. Unlock LoRaWAN® Potential.

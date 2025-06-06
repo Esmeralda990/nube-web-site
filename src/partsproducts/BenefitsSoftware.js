@@ -1,42 +1,58 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
+/* eslint-disable operator-linebreak */
 import React from "react";
 import { IconsBenefits } from "../json/ProductsPageData";
 
-const SoftwareBenefits = () => {
+export default function SoftwareBenefits() {
   return (
-    <section className="lg:py-24">
-      <div className="container mx-auto lg:max-w-screen-xl">
-        <div className="lg:mb-24 flex flex-col items-center justify-center gap-6">
-          <h2 className="w-full text-center text-3xl font-medium lg:text-5xl text-theme-blue">
-            Just a few of the benefits
+    <div className="bg-white  mb-6  ">
+      <div className="container mx-auto max-w-screen-2xl">
+        <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-20 lg:py-32">
+          <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
+            Why Rubix CE
           </h2>
+          <p className="font-light text-lg text-gray-400 text-center mb-20 max-w-4xl mx-auto">
+            Rubix CE gives you the freedom to deploy powerful, licence-free
+            control logic with real-time responsiveness and protocol-ready
+            flexibility.
+          </p>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {IconsBenefits.map((item, index) => (
+              <div
+                key={item.id || `${item.title}-${index}`}
+                className="w-70 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+              >
+                <img
+                  className="max-w rounded overflow-hidden w-full h-30 object-cover scale-[0.6]"
+                  src={item.icon}
+                  alt={item.title}
+                />
+                <div className="px-6 py-3 flex-1 flex flex-col">
+                  <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left">
+                    {item.title}
+                  </h4>
+                  <p className="font-light text-lg text-gray-400 text-left mb-6">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="px-6 pb-5">
+                  {item.tags?.map((tag) => (
+                    <span
+                      key={`${item.title}-${tag}`}
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <ul className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-6">
-          {IconsBenefits.map((benefit) => (
-            <li
-              key={benefit.title}
-              className="p-6 rounded-xl border border-gray-200 flex flex-col items-start"
-            >
-              <img
-                src={benefit.icon}
-                alt={benefit.title}
-                className="w-12 mb-4"
-              />
-              <h4 className="mt-4 mb-4 text-base lg:text-xl font-bold text-theme-teal">
-                {benefit.title}
-              </h4>
-              <p className=" text-base lg:text-lg text-gray-400 font-light text-muted-foreground">
-                {benefit.description}
-              </p>
-            </li>
-          ))}
-        </ul>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default SoftwareBenefits;
+}

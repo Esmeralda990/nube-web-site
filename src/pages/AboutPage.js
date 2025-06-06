@@ -5,12 +5,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
 
-import {
-  AdvantageAbout,
-  Managers,
-  floatingIcons,
-  OurStoryD,
-} from "json/landingPageData";
+import { AdvantageAbout, Managers, OurStoryD } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import HeroAbout from "parts/HeroAbout";
 import AdvangeAbout from "parts/AdvangeAbout";
@@ -54,7 +49,7 @@ export default class OurStoryPage extends Component {
         <OurStory data={OurStoryD} />
         <AdvangeAbout data={AdvantageAbout} />
         <TeamSection data={Managers} />
-        <TeamGroup data={floatingIcons} />
+        <TeamGroup />
         <Footer />
       </>
     );

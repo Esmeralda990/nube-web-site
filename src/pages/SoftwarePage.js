@@ -4,14 +4,13 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
 
-import { IconsBenefits, GifBenefits, RubixWire } from "json/ProductsPageData";
+import { IconsBenefits, GifBenefits } from "json/ProductsPageData";
 import Header1 from "parts/Header1";
 import HeroSoftware from "partsproducts/HeroSoftware";
 import SoftwareBenefits from "partsproducts/BenefitsSoftware";
+import CtaSoftware from "parts/CtaSoftware.js";
 import VideoSoftware from "partsproducts/VideoSoftware";
 import GifSoftware from "partsproducts/GifSoftware";
-import RubixWireSoftware from "partsproducts/RubixWireSoftware";
-import Discuss from "parts/DiscussRubixCE";
 import Footer from "parts/Footer";
 
 export default class SoftwarePage extends Component {
@@ -48,9 +47,8 @@ export default class SoftwarePage extends Component {
         <HeroSoftware />
         <SoftwareBenefits data={IconsBenefits} />
         <VideoSoftware />
+        <CtaSoftware />
         <GifSoftware data={GifBenefits} />
-        <RubixWireSoftware data={RubixWire} />
-        <Discuss />
         <Footer />
       </>
     );

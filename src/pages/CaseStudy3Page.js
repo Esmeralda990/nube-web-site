@@ -9,7 +9,6 @@ import { Blog3 } from "json//ProductsPageData";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
 import CaseBlog3 from "parts/CaseBlog3";
-import Discuss from "parts//DiscussAbout.js";
 // eslint-disable-next-line
 import CaseStudy3 from "../parts/CaseStudy3";
 
@@ -46,7 +45,6 @@ export default class Casestudy3 extends Component {
         <Header1 />
         <CaseStudy3 />
         <CaseBlog3 data={Blog3} />
-        <Discuss />
         <Footer />
       </>
     );

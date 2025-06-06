@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
-import Discuss from "parts/DiscussSolutions";
 import Scenario1 from "parts/Scenario1";
 
 export default class scenario1 extends Component {
@@ -44,7 +43,6 @@ export default class scenario1 extends Component {
         </Helmet>
         <Header1 />
         <Scenario1 />
-        <Discuss />
         <Footer />
       </>
     );

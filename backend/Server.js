@@ -109,61 +109,6 @@ app.post("/contact-form", async (req, res) => {
     return res.status(200).json({
       status: "success",
       message: "Email sent successfully.",
-      status: "success",
-      info,
-    });
-  });
-});
-
-app.post("/get-demo", async (req, res) => {
-  const {
-    name,
-    email,
-    phone,
-    company,
-    inquiry,
-    message,
-    contactAgreement,
-    marketingAgreement,
-    token,
-  } = req.body;
-
-  const isDev = process.env.NODE_ENV !== "production";
-  const isHuman = isDev ? true : await verifyRecaptchaToken(token);
-  if (!isHuman) {
-    return res.status(400).json({
-      status: "error",
-      message: "reCAPTCHA verification failed.",
-    });
-  }
-
-  const DemoMailOptions = {
-    from: email,
-    to: process.env.EMAIL,
-    subject: `New DEMO request from ${name}`,
-    text: `
-      Name: ${name}
-      Mail: ${email}
-      Phone: ${phone}
-      Company: ${company}
-      What do you want to see in the demo?: ${inquiry}
-      Preferred date or time: ${message}
-      Accept contact: ${contactAgreement ? "Yes" : "No"}
-      Accept marketing: ${marketingAgreement ? "Yes" : "No"}
-    `,
-  };
-
-  transporter.sendMail(DemoMailOptions, (error, info) => {
-    if (error) {
-      return res.status(500).json({
-        status: "error",
-        message: "Error sending demo request.",
-        error,
-      });
-    }
-    return res.status(200).json({
-      status: "success",
-      message: "Request submitted successfully.",
       info,
     });
   });

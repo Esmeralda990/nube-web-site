@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
 import ProductsNiagara from "partsproducts/ProductsNiagara";
-import Discuss from "parts/DiscussCI";
 import Footer from "parts/Footer";
 import { Edge } from "../json/ProductsPageData.js";
 
@@ -42,7 +41,6 @@ export default class Niagara extends Component {
         </Helmet>
         <Header1 />
         <ProductsNiagara data={Edge} />
-        <Discuss />
         <Footer />
       </>
     );

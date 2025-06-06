@@ -14,7 +14,7 @@ import Button from "../elements/Button/index.js";
 
 const MicroEdge = () => {
   return (
-    <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
+    <section className="lg:mt-28 mt-12 pb-32 md:ml-24 px-8">
       <div className="container mx-auto">
         <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
           Smarter Asset Monitoring, Anywhere

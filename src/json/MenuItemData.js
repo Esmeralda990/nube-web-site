@@ -11,8 +11,8 @@ import icons2 from "../assets/images/IconsMenu/OEM.svg";
 import icons3 from "../assets/images/IconsMenu/Hardware.svg";
 import icons4 from "../assets/images/IconsMenu/Software.svg";
 import icons6 from "../assets/images/IconsMenu/CaseScenario.svg";
-import icons15 from "../assets/images/IconsMenu/Support.svg";
-import icons16 from "../assets/images/IconsMenu/FAQS.svg";
+import icons7 from "../assets/images/IconsMenu/Support.svg";
+import icons8 from "../assets/images/IconsMenu/FAQS.svg";
 
 export const menuItemsData = [
   {
@@ -124,7 +124,7 @@ export const menuItemsData = [
                   {
                     name: "FAQs",
                     link: "/faqs/",
-                    icon: icons16,
+                    icon: icons8,
                     description: "Common IoT Answers",
                   },
                 ],
@@ -140,7 +140,7 @@ export const menuItemsData = [
                   {
                     name: "Technical Resources",
                     link: "https://nubeio.github.io/rubix-ce-docs/docs/category/tutorials",
-                    icon: icons15,
+                    icon: icons7,
                     description: "Manuals and support",
                   },
                 ],

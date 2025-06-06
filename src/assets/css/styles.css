@@ -18,10 +18,6 @@
   @apply mb-3;
 }
 
-.hero-video {
-  @apply w-full h-auto;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -283,7 +279,7 @@ header {
 
 .main-nav .menu-items button:hover {
   color: #339999;
-  font-weight: semibold;
+  font-weight: 600;
 }
 
 .main-nav .dropdown {
@@ -600,29 +596,6 @@ header {
   .swiper-slide-gif img {
     object-position: center;
     transform: none;
-  }
-}
-
-.floating-icons {
-  position: absolute;
-  width: clamp(40px, 10vw, 120px);
-  height: clamp(40px, 10vw, 120px);
-}
-
-@media (max-width: 768px) {
-  .floating-icons {
-    display: none;
-  }
-}
-
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  .responsive-image {
-    max-width: 120%;
-    height: 90%;
   }
 }
 
