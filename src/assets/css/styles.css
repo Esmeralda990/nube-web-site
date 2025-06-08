@@ -293,16 +293,22 @@ header {
   list-style: none;
   background-color: #fff;
   border-radius: 0.5rem;
-  display: none;
   max-width: 1000px;
   min-width: 1000px;
-  height: 350px;
-  min-height: 350px;
+  height: 250px;
+  min-height: 300px;
   z-index: 9999;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
 }
 
 .main-nav .dropdown.show {
   display: block;
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
 }
 
 .nav-wrapper {
@@ -312,11 +318,11 @@ header {
 }
 
 .dropdown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(25%) !important;
   width: 100%;
   max-width: 1050px;
-  margin: 0 auto;
-  left: 0%;
-  transform: translateX(25%);
   padding: 0 clamp(20px, 2vw, 30px);
 }
 

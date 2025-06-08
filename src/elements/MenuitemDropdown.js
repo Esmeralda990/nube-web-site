@@ -17,7 +17,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
     <ul
       className={`dropdown ${
         dropdown ? "show" : ""
-      } grid grid-cols-${gridCols} gap-4 p-4  hidden lg:block `}
+      } grid grid-cols-${gridCols} gap-4 p-4  hidden lg:block  `}
     >
       {submenus.map((submenu, index) => (
         <li

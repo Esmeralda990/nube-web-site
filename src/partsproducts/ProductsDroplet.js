@@ -16,8 +16,10 @@ const LoraDroplet = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
-          Compact, Wireless, and Packed with Insights
+        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+          Droplet <br />
+          Compact Sensors for <br />
+          Smarter Monitoring
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">

@@ -12,11 +12,11 @@ export default function Service({ data }) {
   return (
     <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-20 lg:py-32">
       <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
-        Building Smarter, Thinking Forward
+        Define Your Smart Building Solution
       </h2>
       <p className="font-light text-lg text-gray-400 text-center mb-20">
-        Explore our tech for sustainable solutions to current and future
-        challenges.
+        Explore our technology built to optimise performance, sustainability,
+        and control
       </p>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32">
@@ -36,9 +36,9 @@ export default function Service({ data }) {
                 </div>
               </Link>
               <div className="p-6">
-                <div className="mb-1 font-semibold text-theme-blue text-base lg:text-xl">
+                <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl">
                   {item.title}
-                </div>
+                </h4>
                 <p className="text-gray-400 font-light text-base">
                   {item.type}
                 </p>

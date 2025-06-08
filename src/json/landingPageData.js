@@ -79,17 +79,11 @@ import IconsOur11 from "../assets/images/OurStory/Partnership11.svg";
 import IconsOur12 from "../assets/images/OurStory/SoutheastAsia12.svg";
 import IconsOur13 from "../assets/images/OurStory/ZoneControl13.svg";
 
-// Who Support
-import Who1 from "../assets/images/WhoSupport/Dedicated.png";
-import Who2 from "../assets/images/WhoSupport/Technical.png";
-import Who3 from "../assets/images/WhoSupport/Marketing.png";
-import Who4 from "../assets/images/WhoSupport/Continuous.png";
-
-// Why Partners
-import Why1 from "../assets/images/WhyPartners/Client.svg";
-import Why2 from "../assets/images/WhyPartners/Collaborative2.svg";
-import Why3 from "../assets/images/WhyPartners/Innovation3.svg";
-import Why4 from "../assets/images/WhyPartners/Sustainability4.svg";
+// Why partner
+import Why1 from "../assets/images/WhoSupport/Dedicated.png";
+import Why2 from "../assets/images/WhoSupport/Technical.png";
+import Why3 from "../assets/images/WhoSupport/Marketing.png";
+import Why4 from "../assets/images/WhoSupport/Continuous.png";
 
 export const Services = [
   {
@@ -219,7 +213,7 @@ export const Slides = [
   {
     id: "slide-1",
     image: slide1,
-    title: "Building Smarter, Thinking Forward",
+    title: "Building Smarter,  Thinking Forward",
     Subtitles: "The power to predict, adapt, and optimise",
     description:
       "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
@@ -227,18 +221,18 @@ export const Slides = [
   {
     id: "slide-2",
     image: slide2,
-    title: "Building Smarter, Thinking Forward",
-    Subtitles: "The power to predict, adapt, and optimise",
+    title: "Building Smarter,  Thinking Forward",
+    Subtitles: "Total control of every connection",
     description:
-      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
+      "Achieve seamless integration and visibility across devices, spaces, and systems, unified on one intuitive platform.",
   },
   {
     id: "slide-3",
     image: slide3,
-    title: "Building Smarter, Thinking Forward",
-    Subtitles: "The power to predict, adapt, and optimise",
+    title: "Building Smarter,  Thinking Forward",
+    Subtitles: "Insights that drive action",
     description:
-      "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
+      "Reveal hidden opportunities to improve efficiency, reduce costs, and enhance building performance.",
   },
 ];
 
@@ -575,69 +569,34 @@ export const AdvantageSolutions = [
   ],
 ];
 
-export const WhoSupport = [
-  {
-    id: "1",
-    title: "Dedicated Collaboration",
-    image: Who1,
-    description:
-      "Our team is committed to providing dedicated support, working closely with partners through every stage of project implementation.",
-  },
-  {
-    id: "2",
-    title: "Technical Expertise",
-    image: Who2,
-    description:
-      " Partners have direct access to our expert technical teams, ensuring seamless integration and maximised efficiency of solutions.",
-  },
-  {
-    id: "3",
-    title: "Marketing and Support",
-    image: Who3,
-    description:
-      "We offer co-marketing opportunities, joint sales initiatives, and strategic positioning to enhance visibility and drive mutual growth.",
-  },
-  {
-    id: "4",
-    title: "Continuous Training",
-    image: Who4,
-    description:
-      "Regular training sessions and educational resources are available to empower partners with the latest knowledge and best practices.",
-  },
-];
-
 export const WhyData = [
   [
     {
-      id: "phase1",
-      heading: "Innovation",
-      title: "Innovation Driven",
+      id: "1",
+      title: "Innovation",
       description:
-        "We design with purpose, delivering solutions that push the boundaries of smart building automation.",
+        "Empower your offering with advanced technology, APIs, and integration tools designed for smart, scalable automation.",
       image: Why1,
     },
     {
-      id: "phase2",
-      heading: "Sustainability",
-      title: "Sustainability Focused",
+      id: "2",
+      title: "Sustainability",
       description:
-        "Our technology helps partners achieve energy efficiency and long-term environmental goals.",
+        "Build efficient, future-ready environments with open systems that reduce energy use and support long-term goals.",
       image: Why2,
     },
     {
-      id: "phase3",
-      heading: "User-centric",
-      title: "Client-Centric Approach",
+      id: "3",
+      title: "Sales & Marketing",
       description:
-        "We tailor our offerings to meet your project needs and customer expectations.",
+        "Access tailored campaigns, co-branded assets, and strategic tools to grow visibility and drive commercial success.",
       image: Why3,
     },
     {
-      id: "phase4",
-      heading: "Co-market",
-      title: "Collaborative Market Approach",
+      id: "4",
+      title: "Training & Support",
       description:
-        "We actively support our partners in winning business through co-marketing and tailored support.",
+        "Equip your team with expert training, ongoing support, and the resources needed to deliver and scale confidently.",
       image: Why4,
     },
   ],

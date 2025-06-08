@@ -16,8 +16,11 @@ const RubixLW = () => {
   return (
     <section className="lg:mt-28 lg:mt-12 pb-32 mt-4">
       <div className="container mx-auto px-12">
-        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
-          Expand Your Network. Unlock LoRaWAN® Potential.
+        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+          Rubix Connect LW <br />
+          Seamless LoRaWAN® Connectivity
+          <br />
+          for Smart Buildings
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">

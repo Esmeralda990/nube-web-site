@@ -42,10 +42,10 @@ import RubixConnect2 from "../assets/images/RubixLW/RubixConnect02.png";
 import RubixConnect3 from "../assets/images/RubixLW/RubixConnect03.png";
 
 // Case Blog
-import Img1 from "../assets/images/CaseStudy/Galvin_Colo.png";
-import Img2 from "../assets/images/CaseStudy/Eviro_Color.png";
-import Img3 from "../assets/images/CaseStudy/Daikin_Color.png";
-import Img4 from "../assets/images/CaseStudy/Fujitsu_Colo.png";
+import Img1 from "../assets/images/ImgFooter/RubixCompute.svg";
+import Img2 from "../assets/images/ImgFooter/Rubix_io_16.svg";
+import Img3 from "../assets/images/ImgFooter/Droplet.svg";
+import Img4 from "../assets/images/ImgFooter/Rubix_Connect.svg";
 
 // App Icons
 import Icon1 from "../assets/images/IconsConnectivity/App1.svg";
@@ -189,85 +189,73 @@ export const RubixConnectLW = [
 
 export const Blog1 = [
   {
-    img: Img1,
-    title: "Galvin Engineering",
-    date: "September 23, 2024",
-    link: "/case-galvin/",
+    img: Img3,
+    title: "Lora ® Sensors",
+    link: "/Lora/",
   },
   {
     img: Img2,
-    title: "Enviro Building Services",
-    date: "April 07, 2024",
-    link: "/case-enviro/",
+    title: "Rubix IO 16",
+    link: "/rubix-io-16/",
   },
   {
-    img: Img3,
-    title: "Daikin",
-    date: "August 31, 2024",
-    link: "/case-daikin/",
+    img: Img4,
+    title: "Rubix Connect LW",
+    link: "rubix-connect-lw",
   },
 ];
 
 export const Blog2 = [
   {
-    img: Img4,
-    title: "Fujitsu",
-    date: "September 23, 2024",
-    link: "/case-fujitsu/",
-  },
-  {
-    img: Img2,
-    title: "Enviro Building Services",
-    date: "April 07, 2024",
-    link: "/case-enviro/",
+    img: Img1,
+    title: "Rubix Compute",
+    link: "/rubix-compute/",
   },
   {
     img: Img3,
-    title: "Daikin",
-    date: "August 31, 2024",
-    link: "/case-daikin/",
+    title: "Lora ® Sensors",
+    link: "/Lora/",
+  },
+  {
+    img: Img4,
+    title: "Rubix Connect LW",
+    link: "rubix-connect-lw",
   },
 ];
 
 export const Blog3 = [
   {
     img: Img1,
-    title: "Galvin Engineering",
-    date: "September 23, 2024",
-    link: "/case-galvin/",
+    title: "Rubix Compute",
+    link: "/rubix-compute/",
+  },
+  {
+    img: Img2,
+    title: "Rubix IO 16",
+    link: "/rubix-io-16/",
   },
   {
     img: Img4,
-    title: "Fujitsu",
-    date: "April 07, 2024",
-    link: "/case-fujitsu/",
-  },
-  {
-    img: Img3,
-    title: "Daikin",
-    date: "August 31, 2024",
-    link: "/case-daikin/",
+    title: "Rubix Connect LW",
+    link: "rubix-connect-lw",
   },
 ];
 
 export const Blog4 = [
   {
     img: Img1,
-    title: "Galvin Engineering",
-    date: "September 23, 2024",
-    link: "/case-galvin/",
-  },
-  {
-    img: Img4,
-    title: "Fujitsu",
-    date: "April 07, 2024",
-    link: "/case-fujitsu/",
+    title: "Rubix Compute",
+    link: "/rubix-compute/",
   },
   {
     img: Img2,
-    title: "Enviro Building Services",
-    date: "August 31, 2024",
-    link: "/case-enviro/",
+    title: "Rubix IO 16",
+    link: "/rubix-io-16/",
+  },
+  {
+    img: Img3,
+    title: "Lora ® Sensors",
+    link: "/Lora/",
   },
 ];
 

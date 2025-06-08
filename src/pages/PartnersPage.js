@@ -8,7 +8,8 @@ import { WhyData } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Partner from "parts/HeroPartners";
 import Footer from "parts/Footer";
-import WhyPartners from "parts/WhyPartner";
+import Discuss from "parts/DiscussPartners";
+import WhyPartner from "parts/WhyPartner";
 
 export default class Partnerss extends Component {
   componentDidMount() {
@@ -61,11 +62,12 @@ export default class Partnerss extends Component {
         <Header1 />
         <Partner />
         <section id="Why">
-          <WhyPartners data={WhyData} />
+          <WhyPartner data={WhyData} />
         </section>
 
         <section id="Contact" />
 
+        <Discuss />
         <Footer />
       </>
     );

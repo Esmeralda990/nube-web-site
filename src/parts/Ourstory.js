@@ -66,9 +66,9 @@ const Ourstory = () => {
                       <p className="text-lg text-gray-500 whitespace-nowrap text-theme-teal">
                         {phase.date}
                       </p>
-                      <h3 className="text-lg font-bold text-gray-900 mt-1 text-theme-blue">
+                      <h4 className=" text-base lg:text-lg font-bold text-gray-900 mt-1 text-theme-blue">
                         {phase.title}
-                      </h3>
+                      </h4>
                       <p className="text-base text-gray-400 font-light mt-1 ">
                         {phase.description}
                       </p>

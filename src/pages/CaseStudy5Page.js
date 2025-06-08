@@ -5,10 +5,8 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
 
-import { Blog4 } from "json//ProductsPageData";
 import Header1 from "parts/Header1";
 import Footer from "parts/Footer";
-import CaseBlog4 from "parts/CaseBlog4";
 // eslint-disable-next-line
 import CaseStudy5 from "../parts/CaseStudy5";
 
@@ -46,7 +44,6 @@ export default class Casestudy5 extends Component {
 
         <Header1 />
         <CaseStudy5 />
-        <CaseBlog4 data={Blog4} />
         <Footer />
       </>
     );

@@ -2,70 +2,53 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import Button from "../elements/Button";
+import React from "react";
 import { WhyData } from "../json/landingPageData";
 
-const Partnerswhy = () => {
-  const PHASES = WhyData[0];
-  const [activeTab, setActiveTab] = useState(0);
-  const current = PHASES[activeTab];
-
+export default function Partner() {
   return (
-    <section className="bg-white">
-      <div className="container mx-auto lg:max-w-screen-xl px-4 py-24 flex flex-col items-center justify-center">
-        <h2 className="mb-12 text-3xl lg:text-5xl font-bold tracking-tighter lg:mb-24 text-center text-theme-blue">
-          Why Partner With Us
-        </h2>
+    <div className="bg-white mb-6 ">
+      <div className="container mx-auto max-w-screen-2xl">
+        <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-12 lg:mt-40">
+          <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 lg:mb-20">
+            Why Partner With Us
+          </h2>
 
-        <div className="grid w-full grid-cols-4 lg:grid-cols-4 gap-2 border-b">
-          {PHASES.map((phase, index) => (
-            <Button
-              key={phase.id}
-              onClick={() => setActiveTab(index)}
-              className={`text-xs lg:text-base md:text-base py-4 border-b-2 transition-all duration-200 ${
-                activeTab === index
-                  ? "border-theme-teal text-gray-500 font-bold text-base"
-                  : "border-transparent text-gray-400 font-light"
-              }`}
-            >
-              {phase.heading}
-            </Button>
-          ))}
-        </div>
-
-        <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 w-full">
-          <div className="col-span-1 flex flex-col gap-4 max-w-xl lg:mt-24">
-            <h3 className="text-lg lg:text-3xl font-medium tracking-tighter text-theme-teal md:text-5xl">
-              {current.title}
-            </h3>
-            <p className="text-lg text-gray-400 font-light max-w-md">
-              {current.description}
-            </p>
-          </div>
-
-          <motion.div
-            key={current.id}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: [0, 0.71, 0.2, 1.01], duration: 0.8 }}
-            className="col-span-1"
-          >
-            <div className="rounded-3xl border bg-gray-50 p-2 shadow-none">
-              <div className="rounded-2xl border-2 border-white bg-muted overflow-hidden">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {WhyData[0].map((item, index) => (
+              <div
+                key={item.id || `${item.title}-${index}`}
+                className="w-70 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+              >
                 <img
-                  src={current.image}
-                  alt={current.title}
-                  className="lg:max-w-[700px] lg:max-h-[400px] object-contain mx-auto transition-all duration-300 ease-in-out hover:scale-95 scale[1.5]"
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-30 object-cover "
+                  src={item.image}
+                  alt={item.title}
                 />
+                <div className="px-6 py-3 flex-1 flex flex-col">
+                  <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left">
+                    {item.title}
+                  </h4>
+                  <p className="font-light text-lg text-gray-400 text-left ">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="px-6 pb-5">
+                  {item.tags?.map((tag) => (
+                    <span
+                      key={`${item.title}-${tag}`}
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Partnerswhy;
+}

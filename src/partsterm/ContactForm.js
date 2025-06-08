@@ -5,6 +5,7 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable comma-dangle */
+/* eslint-disable indent */
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, Building } from "lucide-react";
 import { toast } from "react-toastify";
@@ -34,6 +35,12 @@ const contactMethods = [
     icon: Building,
     title: "Warehouse",
     description: "17 Cemetery Rd, Helensburgh NSW 2508, Australia",
+  },
+  {
+    icon: Building,
+    title: "Vietnam Office",
+    description:
+      "238 Đ. Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng 550000, Vietnam",
   },
 ];
 
@@ -144,7 +151,9 @@ const ContactForm = () => {
                     </h3>
                   </div>
                   <div className="space-y-2 tracking-[-0.32px]">
-                    {["Sydney office", "Warehouse"].includes(method.title) ? (
+                    {["Sydney office", "Vietnam Office", "Warehouse"].includes(
+                      method.title
+                    ) ? (
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
                           method.description

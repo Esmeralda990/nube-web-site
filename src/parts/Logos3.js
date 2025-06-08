@@ -9,7 +9,7 @@ const Logos3 = ({ heading, logos = Logos }) => {
   return (
     <section className="mb-24">
       <div className="container mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h2 className="text-2xl md:text-5xl lg:text-5xl  text-theme-blue font-bold leading-tight  lg:text-center ">
+        <h2 className="text-2xl lg:text-5xl  text-theme-blue font-bold leading-tight lg:text-center ">
           {heading}
         </h2>
         <a
