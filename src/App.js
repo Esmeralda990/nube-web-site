@@ -25,13 +25,6 @@ import AppPolicy from "pages/AppPoliciyPage";
 import SoftwarePage from "pages/SoftwarePage";
 import RubixLWPage from "pages/RubixLWPage";
 import CaseStudy1Page from "pages/CaseStudy1Page";
-import CaseStudy2Page from "pages/CaseStudy2Page";
-import CaseStudy3Page from "pages/CaseStudy3Page";
-import CaseStudy4Page from "pages/CaseStudy4Page";
-import CaseStudy5Page from "pages/CaseStudy5Page";
-import ScenarioPage1 from "pages/ScenarioPage1";
-import ScenarioPage2 from "pages/ScenarioPage2";
-import ScenarioPage3 from "pages/ScenarioPage3";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
 import Partners from "pages/PartnersPage";
@@ -62,14 +55,7 @@ function App() {
           />
           <Route path="/app-policy/" element={<AppPolicy />} />
           <Route path="/rubix-connect-lw/" element={<RubixLWPage />} />
-          <Route path="/case-fujitsu/" element={<CaseStudy1Page />} />
-          <Route path="/case-galvin/" element={<CaseStudy2Page />} />
-          <Route path="/case-enviro/" element={<CaseStudy3Page />} />
-          <Route path="/case-qa/" element={<CaseStudy4Page />} />
-          <Route path="/case-daikin/" element={<CaseStudy5Page />} />
-          <Route path="/case-analytics/" element={<ScenarioPage1 />} />
-          <Route path="/case-oem/" element={<ScenarioPage2 />} />
-          <Route path="/case-compliance/" element={<ScenarioPage3 />} />
+          <Route path="/cases/" element={<CaseStudy1Page />} />
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faqs/" element={<FAQsPage />} />
           <Route path="/partners/" element={<Partners />} />

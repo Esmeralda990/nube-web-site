@@ -11,15 +11,22 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",").map((origin) => origin.trim())
+  : [];
+
 const corsOptions = {
-origin: [
-    "http://localhost:3000",
-    "https://nube-web-site.vercel.app",
-    "https://nube-web-site-zrrm-8dhmtzp89-esmeraldas-projects-dbdcf044.vercel.app"
-  ],
-  methods: "GET,POST",
-  allowedHeaders: "Content-Type,Authorization",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
+
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 

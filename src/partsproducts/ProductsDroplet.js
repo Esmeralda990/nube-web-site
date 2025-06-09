@@ -4,7 +4,6 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { CheckCircle2 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -163,7 +162,7 @@ const LoraDroplet = () => {
             <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
               Just a few of the benefits
             </h3>
-            <ul className="flex flex-col gap-3 sm:gap-2">
+            <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
                 "UP TO 10-YEAR BATTERY LIFE Simply install it and start collecting data",
                 "MULTIPLE DATA CAPTURE POINTS Temp, humidity, lux and motion monitoring ",
@@ -173,12 +172,7 @@ const LoraDroplet = () => {
                 "100 PLUS DEVICES PER GATEWAY Easily scale up or down ",
                 "LOW POWER CONSUMPTION Drastically better than 4G, Wifi, or Bluetooth-based devices",
               ].map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-teal-500 sm:h-5 sm:w-5" />
-                  <p className="text-sm sm:text-base font-light text-gray-400">
-                    {benefit}
-                  </p>
-                </li>
+                <li key={index}>{benefit}</li>
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
@@ -188,7 +182,7 @@ const LoraDroplet = () => {
             <h4 className=" text-base lg:text-xl font-bold text-teal-600 mb-2">
               Why Lora®
             </h4>
-            <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
+            <p className="font-light  text-base lg:text-lg  text-gray-400 leading-relaxed sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               LoRa® is a low-power, long-range wireless technology designed for
               the Internet of Things. It is less affected by buildings and other
               obstructions than regular WiFi, with one gateway generally being
@@ -197,13 +191,12 @@ const LoraDroplet = () => {
               The LoRa® community is expanding rapidly, with many new
               contributions and developments occurring every day.
               <br />
-              ✔︎Significantly longer range than for Bluetooth and WiFi <br />
-              ✔︎Drastically lower power consumption than for Bluetooth, WiFi, or
+              • Significantly longer range than for Bluetooth and WiFi <br />
+              • Drastically lower power consumption than for Bluetooth, WiFi, or
               4G <br />
-              ✔︎AES128 encryption <br />
-              ✔︎Excellent penetration through obstacles <br />
-              ✔︎Highly versatile application, which translates into easier
-              integration
+              • AES128 encryption <br />
+              • Excellent penetration through obstacles <br />• Highly versatile
+              application, which translates into easier integration
             </p>
             <div className="flex items-center justify-between" />
           </div>

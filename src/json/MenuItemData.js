@@ -107,7 +107,7 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Case studies",
-                    link: "/case-fujitsu/",
+                    link: "/cases/",
                     icon: icons6,
                     description: "Learn More",
                   },

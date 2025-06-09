@@ -4,7 +4,6 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
-import { CheckCircle2 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -172,7 +171,7 @@ const ProductRubix = () => {
             <h3 className="mb-4 text-xl md:text-2xl font-bold mt-8 text-theme-blue">
               Just a few of the benefits
             </h3>
-            <ul className="flex flex-col gap-3 sm:gap-2 ">
+            <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
                 "MULTIPLE CONFIGURATIONS Use it as a master, slave, or gateway device",
                 "SEAMLESS INTEGRATION Integrate in your existing BMS Via BACnet/IP",
@@ -182,12 +181,7 @@ const ProductRubix = () => {
                 "RUN MULTIPLE SERVICES Run BACnet and LoRaWan®, MQTT at the same time",
                 "SEND DATA ANYWHERE Be it a cloud, local server, or 3rd-party hardware",
               ].map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-theme-teal sm:h-5 sm:w-5" />
-                  <p className="text-lg sm:text-base font-light text-gray-400">
-                    {benefit}
-                  </p>
-                </li>
+                <li key={index}>{benefit}</li>
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />

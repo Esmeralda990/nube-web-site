@@ -6,9 +6,8 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
+import Case from "partsproducts/Cases";
 import Footer from "parts/Footer";
-// eslint-disable-next-line
-import CaseStudy1 from "../parts/CaseStudy1";
 
 export default class Casestudy1 extends Component {
   componentDidMount() {
@@ -41,7 +40,7 @@ export default class Casestudy1 extends Component {
         </Helmet>
 
         <Header1 />
-        <CaseStudy1 />
+        <Case />
         <Footer />
       </>
     );
