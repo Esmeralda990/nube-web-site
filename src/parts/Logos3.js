@@ -13,7 +13,7 @@ const Logos3 = ({ heading, logos = Logos }) => {
           {heading}
         </h2>
         <a
-          href="/solutions/"
+          href="/cases/"
           className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold"
         >
           ✨ Explore Our Customer Sucess Stories

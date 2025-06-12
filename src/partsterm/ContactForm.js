@@ -38,7 +38,7 @@ const contactMethods = [
   },
   {
     icon: Building,
-    title: "Vietnam Office",
+    title: "APAC Design Centre Vietnam",
     description:
       "238 Đ. Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng 550000, Vietnam",
   },
@@ -136,7 +136,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="mt-40 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
+              <h1 className="lg:mt-40 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
                 Ready to Future Proof Your Building?
               </h1>
             </div>
@@ -151,9 +151,11 @@ const ContactForm = () => {
                     </h3>
                   </div>
                   <div className="space-y-2 tracking-[-0.32px]">
-                    {["Sydney office", "Vietnam Office", "Warehouse"].includes(
-                      method.title
-                    ) ? (
+                    {[
+                      "Sydney office",
+                      "APAC Design Centre Vietnam",
+                      "Warehouse",
+                    ].includes(method.title) ? (
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
                           method.description

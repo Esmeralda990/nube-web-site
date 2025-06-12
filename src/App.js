@@ -3,7 +3,8 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable-next-line no-unused-vars */
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -24,14 +25,21 @@ import ApplicationPage from "pages/ApplicationPage";
 import AppPolicy from "pages/AppPoliciyPage";
 import SoftwarePage from "pages/SoftwarePage";
 import RubixLWPage from "pages/RubixLWPage";
-import CaseStudy1Page from "pages/CaseStudy1Page";
+import CaseStudyPage from "pages/CaseStudyPage";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
 import Partners from "pages/PartnersPage";
 
+import { pageview } from "utils/Analytics";
+
 import "./assets/css/styles.css";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
   return (
     <>
       <HelmetProvider>
@@ -55,7 +63,7 @@ function App() {
           />
           <Route path="/app-policy/" element={<AppPolicy />} />
           <Route path="/rubix-connect-lw/" element={<RubixLWPage />} />
-          <Route path="/cases/" element={<CaseStudy1Page />} />
+          <Route path="/cases/" element={<CaseStudyPage />} />
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faqs/" element={<FAQsPage />} />
           <Route path="/partners/" element={<Partners />} />

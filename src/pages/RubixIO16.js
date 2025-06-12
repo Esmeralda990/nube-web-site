@@ -8,7 +8,8 @@ import { Helmet } from "react-helmet-async";
 import Header1 from "parts/Header1";
 import ProductsRubix16 from "partsproducts/ProductsRubix16";
 import Footer from "parts/Footer";
-import { RubixIO16 } from "../json/ProductsPageData.js";
+import Products from "parts/ProductsBlog2.js";
+import { RubixIO16, Blog2 } from "../json/ProductsPageData.js";
 
 export default class RubixIO extends Component {
   componentDidMount() {
@@ -41,7 +42,7 @@ export default class RubixIO extends Component {
         </Helmet>
         <Header1 />
         <ProductsRubix16 data={RubixIO16} />
-
+        <Products data={Blog2} />
         <Footer />
       </>
     );

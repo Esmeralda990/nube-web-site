@@ -201,7 +201,7 @@ export const Blog1 = [
   {
     img: Img4,
     title: "Rubix Connect LW",
-    link: "rubix-connect-lw",
+    link: "/rubix-connect-lw/",
   },
 ];
 
@@ -219,7 +219,7 @@ export const Blog2 = [
   {
     img: Img4,
     title: "Rubix Connect LW",
-    link: "rubix-connect-lw",
+    link: "/rubix-connect-lw/",
   },
 ];
 
@@ -237,7 +237,7 @@ export const Blog3 = [
   {
     img: Img4,
     title: "Rubix Connect LW",
-    link: "rubix-connect-lw",
+    link: "/rubix-connect-lw/",
   },
 ];
 

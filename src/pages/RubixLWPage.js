@@ -6,9 +6,10 @@ import { Helmet } from "react-helmet-async";
 
 import Header1 from "parts/Header1";
 import ProductsRubixLW from "partsproducts/ProductsRubixLW.js";
+import Products from "parts/ProductsBlog4.js";
 import Footer from "parts/Footer";
 
-import { RubixConnectLW } from "../json/ProductsPageData.js";
+import { RubixConnectLW, Blog4 } from "../json/ProductsPageData.js";
 
 export default class ProductsRubixConnectLW extends Component {
   componentDidMount() {
@@ -44,6 +45,7 @@ export default class ProductsRubixConnectLW extends Component {
           />
         </Helmet>
         <ProductsRubixLW data={RubixConnectLW} />
+        <Products data={Blog4} />
         <Footer />
       </>
     );

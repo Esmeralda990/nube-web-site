@@ -29,7 +29,7 @@ const Ourstory = () => {
             Our Story
           </h2>
           <p className=" text-gray-400 font-light text-base lg:text-lg max-w-xl mb-12">
-            From our roots in system integration to becoming a global tech
+            From our roots in system integration to becoming a global technology
             innovator, Nube iO’s journey is driven by purpose, progress, and
             possibilities.
           </p>

@@ -181,7 +181,7 @@ const Header1 = () => {
                   <ul className="pl-6 mt-2 space-y-2">
                     <li>
                       <a
-                        href="/case-fujitsu/"
+                        href="/cases/"
                         className="text-gray-400 block px-6 py-2"
                       >
                         Case Studies

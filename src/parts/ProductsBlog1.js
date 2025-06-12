@@ -10,26 +10,26 @@ import { Link } from "react-router-dom";
 
 const CaseBlog1 = () => {
   return (
-    <section className="lg:mb-32 mb-12 px-6 mt-12 pb-12">
-      <div className="container max-w-screen-2xl mx-auto">
-        <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6 text-center">
-          <h2 className="text-balance text-3xl lg:text-4xl font-bold text-theme-blue">
+    <section className="lg:mb-32 mb-12 px-6 lg:mt-12 pb-12 ">
+      <div className="container mx-auto max-w-fit">
+        <div className="flex flex-col items-center gap-6 text-center">
+          <h2 className="text-balance text-2xl lg:text-5xl font-bold text-theme-blue">
             Explore More Products
           </h2>
         </div>
 
-        <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
           {Blog1.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col bg-white rounded-lg shadow-md overflow-hidden h-full"
+              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem]"
             >
               <div className="w-full">
                 <Link to={item.link}>
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-72 object-cover object-center transition-transform duration-300 hover:scale-[1] scale-[0.8] object-responsive"
+                    className="w-full h-60 object-cover object-center transition-transform duration-300 hover:scale-[1] scale-[0.8] object-responsive"
                   />
                 </Link>
               </div>

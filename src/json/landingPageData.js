@@ -31,10 +31,10 @@ import slide2 from "../assets/animaciones/C2.json";
 import slide3 from "../assets/animaciones/C3.json";
 
 // AdvangeAbout
-import Company from "../assets/images/AdvangesAbout/Company.svg";
-import Growth from "../assets/images/AdvangesAbout/Global.svg";
-import Excellence from "../assets/images/AdvangesAbout/Innovationt.svg";
-import Solutions from "../assets/images/AdvangesAbout/Future.svg";
+import Company from "../assets/images/AdvangesAbout/Company1.svg";
+import Growth from "../assets/images/AdvangesAbout/Global2.svg";
+import Excellence from "../assets/images/AdvangesAbout/Innovation3.svg";
+import Solutions from "../assets/images/AdvangesAbout/Future4.svg";
 import IconsCom from "../assets/images/AdvangesAbout/IconsCom.png";
 import IconsGro from "../assets/images/AdvangesAbout/ IconsGro.png";
 import IconsExc from "../assets/images/AdvangesAbout/ IconsCom.png";
@@ -288,28 +288,28 @@ export const AdvantageAbout = [
     {
       image: Company,
       logo: IconsCom,
-      title: "Company Overview",
+      title: "Why We Exist",
       description:
-        "Nube iO is an Australian technology company transforming building automation with simple, open, and scalable solutions.",
+        "Building automation should be simple, smart, and accessible. We create tools that do more—with less complexity.",
     },
     {
       title: "Global Reach & Growth",
       description:
-        "From Australia to Southeast Asia, our global development team powers innovation across time zones to support smart building ecosystems",
+        "From Australia to Southeast Asia, we deliver smart building solutions with local support and global impact.",
       logo: IconsGro,
       image: Growth,
     },
     {
       title: "Innovation & Impact",
       description:
-        "We combine intelligent hardware, flexible software, and cloud automation to drive performance, energy efficiency, and long-term value.",
+        "Built by industry experts, our products simplify integration and maximise control.",
       logo: IconsExc,
       image: Excellence,
     },
     {
       title: "Future-Ready Technology",
       description:
-        "Our platform integrates with existing systems, enabling real-time control, advanced analytics, and future-proof infrastructure for every building.Updated ",
+        "With IoT-native design and protocol flexibility, our tech meets the demands of tomorrow—today. ",
       logo: IconsSol,
       image: Solutions,
     },

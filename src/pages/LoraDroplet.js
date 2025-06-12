@@ -9,7 +9,8 @@ import Header1 from "parts/Header1";
 import ProductsDroplet from "partsproducts/ProductsDroplet";
 import ProductsMicroEdge from "partsproducts/ProductsMicroEdge";
 import Footer from "parts/Footer";
-import { Droplet, Microedge } from "../json/ProductsPageData.js";
+import Products from "parts/ProductsBlog2.js";
+import { Droplet, Microedge, Blog3 } from "../json/ProductsPageData.js";
 
 export default class DropletPage extends Component {
   componentDidMount() {
@@ -43,6 +44,7 @@ export default class DropletPage extends Component {
         <Header1 />
         <ProductsDroplet data={Droplet} />
         <ProductsMicroEdge data={Microedge} />
+        <Products data={Blog3} />
         <Footer />
       </>
     );

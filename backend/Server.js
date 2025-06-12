@@ -80,13 +80,9 @@ app.post("/contact-form", async (req, res) => {
     });
   }
 
-  const isDev = process.env.NODE_ENV !== "production";
-  const isHuman = isDev ? true : await verifyRecaptchaToken(token);
+  const isHuman = await verifyRecaptchaToken(token);
   if (!isHuman) {
-    return res.status(400).json({
-      status: "error",
-      message: "reCAPTCHA verification failed.",
-    });
+    return res.status(400).json({ message: "reCAPTCHA verification failed" });
   }
 
   const mailOptions = {

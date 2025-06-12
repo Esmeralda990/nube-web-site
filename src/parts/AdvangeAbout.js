@@ -66,7 +66,7 @@ const AdvAbout = () => {
           <img
             src={advantages[cardNumber].image}
             alt={advantages[cardNumber].title}
-            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 hover:scale-105"
+            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 "
           />
         </div>
       </div>

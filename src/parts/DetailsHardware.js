@@ -16,7 +16,7 @@ export default function DetailsHardware() {
               Hardware That Connects, Controls, and Scales
             </h2>
           </Fade>
-          <Fade triggerOnce delay={400}>
+          <Fade triggerOnce>
             <p className="font-light text-xl text-gray-400 leading-relaxed text-center ">
               Explore Nube iO’s hardware suite—from powerful controllers to
               wireless sensors—designed to seamlessly integrate with your
