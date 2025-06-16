@@ -5,7 +5,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import Team from "../assets/images/IconsTeam/Team.svg";
+import Team from "../assets/images/IconsTeam/Teams.svg";
 
 const TeamGroup = () => {
   return (
@@ -26,7 +26,7 @@ const TeamGroup = () => {
             </div>
           </div>
           <img
-            className="max-w-1/2 h-auto object-contain overflow-hidden lg:-mt-60 scale-[0.8] lg:-mb-32"
+            className="max-w-1/2 h-auto object-contain overflow-hidden lg:-mt-60 scale-[0.5] lg:-mb-60"
             src={Team}
             alt="Team group"
           />

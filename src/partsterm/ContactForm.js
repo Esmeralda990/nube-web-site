@@ -162,7 +162,7 @@ const ContactForm = () => {
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-base font-light text-theme-teal underline"
+                        className="text-base font-light text-gray-400 underline hover:text-theme-teal"
                       >
                         {method.description}
                       </a>
@@ -185,7 +185,7 @@ const ContactForm = () => {
           <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-10 h-full mt-8 md:mt-48">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
-                <div className="grid w-full items-center gap-3 font-bold">
+                <div className="grid w-full items-center gap-3 font-bold text-theme-blue">
                   <label htmlFor="name">Name *</label>
                   <input
                     type="text"
@@ -193,11 +193,11 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Name"
-                    className="w-full p-1 border rounded"
+                    className="w-full p-1 border rounded font-light"
                     required
                   />
                 </div>
-                <div className="grid w-full items-center gap-3 font-bold">
+                <div className="grid w-full items-center gap-3 font-bold text-theme-blue">
                   <label htmlFor="email">Email *</label>
                   <input
                     type="email"
@@ -205,13 +205,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="w-full p-1 border rounded"
+                    className="w-full p-1 border rounded font-light"
                     required
                   />
                 </div>
               </div>
 
-              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold text-theme-blue">
                 <label htmlFor="company">Company/Organization</label>
                 <input
                   type="text"
@@ -219,19 +219,22 @@ const ContactForm = () => {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Company/Organization"
-                  className="w-full p-1 border rounded"
+                  className="w-full p-1 border rounded font-light"
                 />
               </div>
 
               <div>
-                <label htmlFor="inquiry" className="font-light mb-6 mt-6 gap-3">
+                <label
+                  htmlFor="inquiry"
+                  className="font-bold text-theme-blue mb-6 mt-6 gap-3"
+                >
                   Tell us about your inquiry *
                 </label>
                 <select
                   id="inquiry"
                   value={formData.inquiry}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded mt-4 font-light"
+                  className="w-full p-2 border rounded mt-4 font-light text-gray-400"
                 >
                   <option value="">Select</option>
                   <option value="Request a product demo">
@@ -250,7 +253,10 @@ const ContactForm = () => {
               </div>
 
               <div className="grid w-full items-center gap-3  mb-6 mt-6">
-                <label htmlFor="message" className="mb-2.5 font-bold">
+                <label
+                  htmlFor="message"
+                  className="mb-2.5 font-bold text-theme-blue"
+                >
                   Message
                 </label>
                 <textarea
@@ -263,7 +269,7 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                <label className="text-sm font-light">
+                <label className="text-sm font-light text-gray-400">
                   I agree to be contacted by Nube iO regarding my enquiry. *
                 </label>
                 <input
@@ -276,7 +282,7 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                <label className="text-sm font-light">
+                <label className="text-sm font-light text-gray-400 ">
                   I’d like to receive occasional marketing emails and updates.
                 </label>
                 <input
@@ -290,7 +296,7 @@ const ContactForm = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-theme-teal text-white py-2 rounded mt-6"
+                className="w-full bg-theme-teal text-white py-2 rounded mt-6 hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
               >
                 {isSubmitting ? "Sending..." : "Submit"}
               </Button>

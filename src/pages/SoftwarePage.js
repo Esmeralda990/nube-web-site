@@ -8,7 +8,6 @@ import { IconsBenefits, GifBenefits } from "json/ProductsPageData";
 import Header1 from "parts/Header1";
 import HeroSoftware from "partsproducts/HeroSoftware";
 import SoftwareBenefits from "partsproducts/BenefitsSoftware";
-import CtaSoftware from "parts/CtaSoftware.js";
 import VideoSoftware from "partsproducts/VideoSoftware";
 import GifSoftware from "partsproducts/GifSoftware";
 import Footer from "parts/Footer";
@@ -47,7 +46,6 @@ export default class SoftwarePage extends Component {
         <HeroSoftware />
         <SoftwareBenefits data={IconsBenefits} />
         <VideoSoftware />
-        <CtaSoftware />
         <GifSoftware data={GifBenefits} />
         <Footer />
       </>

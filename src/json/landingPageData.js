@@ -485,21 +485,21 @@ export const Managers = [
   },
   {
     id: "person-4",
-    name: "Jonathan Hill",
-    role: "General Manager",
-    description:
-      "Experienced manager leading operations, strategy, and successful project delivery.",
-    imageUrl: IOT,
-    linkedinUrl: "https://www.linkedin.com/in/jonathan-hill-6775b187/",
-  },
-  {
-    id: "person-5",
     name: "Jon Kane",
     role: "C.F.O",
     description:
       "Experienced finance leader in growth businesses across FMCG & manufacturing.",
     imageUrl: CFO,
     linkedinUrl: "https://www.linkedin.com/in/jon-kane-4564363/",
+  },
+  {
+    id: "person-5",
+    name: "Jonathan Hill",
+    role: "General Manager",
+    description:
+      "Experienced manager leading operations, strategy, and successful project delivery.",
+    imageUrl: IOT,
+    linkedinUrl: "https://www.linkedin.com/in/jonathan-hill-6775b187/",
   },
 ];
 

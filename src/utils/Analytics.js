@@ -13,7 +13,6 @@ export const initGA = () => {
 
 export const pageview = (path) => {
   if (GA_ID) {
-    console.log("📊 Tracking pageview:", path);
     ReactGA.send({ hitType: "pageview", page: path });
   }
 };

@@ -8,24 +8,14 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Linkedin } from "lucide-react";
 import PropTypes from "prop-types";
 import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Colo.png";
-import Galvin from "../assets/images/CaseStudy/Galvin_Colo.png";
-import Enviro from "../assets/images/CaseStudy/Eviro_Color.png";
+import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+import Galvin from "../assets/images/CaseStudy/Galvin_Blanco.png";
+import Enviro from "../assets/images/CaseStudy/Eviro_Blanco.png";
 import Victorian from "../assets/images/CaseStudy/Victorian1.png";
-import Daikin from "../assets/images/CaseStudy/Daikin_Color.png";
-import Smart from "../assets/images/WorldSolutions/IoT.webp";
-import OEM from "../assets/images/WorldSolutions/Customise.webp";
-import Building from "../assets/images/WorldSolutions/Building.webp";
-
-const BREADCRUMB = [
-  {
-    label: "Resources",
-  },
-  {
-    label: "Case Studies",
-    link: "/cases/",
-  },
-];
+import Daikin from "../assets/images/CaseStudy/Daikin_Blanco.png";
+import Smart from "../assets/images/CaseStudy/02.webp";
+import OEM from "../assets/images/CaseStudy/01.webp";
+import Building from "../assets/images/CaseStudy/03.webp";
 
 const SHARE_LINKS = [
   {
@@ -33,8 +23,6 @@ const SHARE_LINKS = [
     url: "https://www.linkedin.com/company/nube-io/",
   },
 ];
-
-const ARTICLE_DATE = "2025";
 
 const Blogpost6 = () => {
   const [activeId, setActiveId] = useState(null);
@@ -86,11 +74,7 @@ const Blogpost6 = () => {
         <div className="relative z-10 container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
-              <BreadcrumbBlog breadcrumb={BREADCRUMB} />
               <div className="flex w-full flex-col gap-5 text-center">
-                <div className="flex justify-center gap-2.5 text-sm font-bold text-theme-teal">
-                  <div>{ARTICLE_DATE}</div>
-                </div>
                 <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue">
                   Real-World Results: Case Studies & Scenarios
                 </h1>
