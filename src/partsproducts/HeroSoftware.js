@@ -20,7 +20,7 @@ export default function HeroSoftware() {
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
             Seamlessly manage your Rubix devices and building systems from a
             single platform — designed to simplify complex control across any
-            portfolio
+            portfolio.
           </p>
           <Fade direction="up" delay={500} triggerOnce>
             <a

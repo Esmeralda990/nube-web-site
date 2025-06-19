@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
+/* eslint-disable react/no-array-index-key */
 
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
@@ -14,14 +15,14 @@ const sections = [
       { name: "+61 2 7906 8414", href: "tel:+61 2 7906 8414" },
       {
         name: (
-          <div className="flex gap-4 text-center">
+          <div className="flex gap-4 justify-center lg:justify-start">
             <a
               href="https://www.linkedin.com/company/nube-io/?originalSubdomain=au"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <FaLinkedin className="size-6 text-2xl" />
+              <FaLinkedin className="size-6 text-2xl text-theme-blue" />
             </a>
           </div>
         ),
@@ -55,17 +56,15 @@ const Footer7 = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-20">
-              {sections.map((section) => (
-                <div key={section.title}>
+              {sections.map((section, i) => (
+                <div key={`${section.title}-${i}`}>
                   <h3 className="mb-6 font-bold text-gray-800">
                     {section.title === "empty-section" ? "" : section.title}
                   </h3>
                   <ul className="space-y-4 text-sm text-gray-600">
-                    {section.links.map((link) => (
+                    {section.links.map((link, index) => (
                       <li
-                        key={
-                          typeof link.name === "string" ? link.name : link.href
-                        }
+                        key={`${section.title}-link-${index}`}
                         className="hover:text-primary"
                       >
                         {typeof link.name === "string" ? (

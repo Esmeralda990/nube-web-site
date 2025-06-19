@@ -5,7 +5,7 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/no-array-index-key */
 import React, { Fragment, useEffect, useState } from "react";
-import { Linkedin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 import PropTypes from "prop-types";
 import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
 import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
@@ -19,7 +19,7 @@ import Building from "../assets/images/CaseStudy/03.webp";
 
 const SHARE_LINKS = [
   {
-    icon: Linkedin,
+    icon: FaLinkedin,
     url: "https://www.linkedin.com/company/nube-io/",
   },
 ];
@@ -92,7 +92,7 @@ const Blogpost6 = () => {
                       href={link.url}
                       className="p-2 rounded-full border bg-white hover:bg-gray-200 transition"
                     >
-                      <link.icon className="w-4 h-4 text-theme-teal" />
+                      <link.icon className="w-5 h-5 text-theme-blue" />
                     </a>
                   ))}
                 </div>
@@ -155,7 +155,7 @@ const Blogpost6 = () => {
                     [
                       "Smart Analytics",
                       "OEM Integration",
-                      "Building Rating Systems",
+                      "Portfolio-Wide Visibility and Control",
                     ][idx]
                   }
                 </a>

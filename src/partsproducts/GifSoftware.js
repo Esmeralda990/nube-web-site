@@ -34,13 +34,13 @@ const GifBene = () => {
               </p>
               <ul className="text-muted-foreground font-light text-base lg:text-lg  list-disc text-gray-400">
                 <li>
-                  <span /> Works with BACnet/IP, MQTT, and RESTful APIs
+                  <span /> Works with BACnet/IP, MQTT, and RESTful APIs.
                 </li>
                 <li>
-                  <span /> Supports cloud-to-cloud and on-prem data flows
+                  <span /> Supports cloud-to-cloud and on-prem data flows.
                 </li>
                 <li>
-                  <span /> Functions as both BACnet-Master and BACnet device
+                  <span /> Functions as both BACnet-Master and BACnet device.
                 </li>
               </ul>
             </div>
@@ -72,14 +72,14 @@ const GifBene = () => {
               <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc">
                 <li>
                   <span /> Unified interface for legacy (BACnet, Modbus) and
-                  wireless (LoRaWAN®, 3G/4G)
+                  wireless (LoRaWAN®, 3G/4G).
                 </li>
                 <li>
                   <span /> Simplifies complex projects across multi-vendor
-                  environments
+                  environments.
                 </li>
                 <li>
-                  <span /> One tool, endless flexibility
+                  <span /> One tool, endless flexibility.
                 </li>
               </ul>
             </div>
@@ -110,13 +110,13 @@ const GifBene = () => {
               </p>
               <ul className="text-muted-foreground font-light lg:text-lg list-disc text-gray-400">
                 <li>
-                  <span /> Compatible with any Rubix Compute
+                  <span /> Compatible with any Rubix Compute.
                 </li>
                 <li>
-                  <span /> Scales easily across multiple sites
+                  <span /> Scales easily across multiple sites.
                 </li>
                 <li>
-                  <span /> Real-time control with flexible deployment options
+                  <span /> Real-time control with flexible deployment options.
                 </li>
               </ul>
             </div>
@@ -147,17 +147,17 @@ const GifBene = () => {
               </p>
               <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-36">
                 <li>
-                  <span /> Drag-and-drop editor for custom logic
+                  <span /> Drag-and-drop editor for custom logic.
                 </li>
                 <li>
                   <span />
-                  Built-in support for BACnet, Modbus, LoRaWAN®
+                  Built-in support for BACnet, Modbus, LoRaWAN®.
                 </li>
                 <li>
-                  <span /> Real-time visualisation of system behaviour
+                  <span /> Real-time visualisation of system behaviour.
                 </li>
                 <li>
-                  <span /> Works across HVAC and smart building projects
+                  <span /> Works across HVAC and smart building projects.
                 </li>
               </ul>
             </div>

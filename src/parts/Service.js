@@ -16,7 +16,7 @@ export default function Service({ data }) {
       </h2>
       <p className="font-light text-lg text-gray-400 text-center mb-20">
         Explore our technology built to optimise performance, sustainability,
-        and control
+        and control.
       </p>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32">

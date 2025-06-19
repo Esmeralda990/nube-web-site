@@ -35,7 +35,7 @@ export default function PorfolioCarousel() {
             <section className="container mx-auto lg:px-4 md:mt-12 px-4 mt-12">
               <div className="flex flex-col md:flex-row items-center ">
                 <div className="w-full lg:w-1/2 sm:pr-2 mt-2 flex flex-col justify-center items-start ">
-                  <h1 className="text-3xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-5 ">
+                  <h1 className=" text-3xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-5 ">
                     {slide.title}
                   </h1>
                   <p className="text-xl lg:text-4xl text-theme-blue text-left font-light mb-5">
@@ -61,7 +61,7 @@ export default function PorfolioCarousel() {
         ))}
       </Swiper>
       <div className="w-full">
-        <Logos3 heading="Customer Suceess" />
+        <Logos3 heading="Customer success" />
       </div>
     </>
   );

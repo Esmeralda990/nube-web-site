@@ -16,7 +16,7 @@ const Logos3 = ({ heading, logos = Logos }) => {
           href="/cases/"
           className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold"
         >
-          ✨ Explore Our Customer Sucess Stories
+          ✨ Explore our customers success stories
           <span className="flex size-7 items-center justify-center rounded-full bg-muted">
             <ArrowUpRight className="w-4" />
           </span>
