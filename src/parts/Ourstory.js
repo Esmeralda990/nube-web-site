@@ -22,13 +22,13 @@ const Ourstory = () => {
   const progressWidth = `${(OurStoryD[0].length - 1) * 6}%`;
 
   return (
-    <section className="bg-white w-full lg:py-32 lg:mb-24 mt-16 mb-12">
+    <section className="bg-white w-full lg:py-20 lg:mb-24 mt-16 mb-12">
       <div className="container mx-auto space-y-10 px-8 ">
-        <div className="justify-between mx-auto">
-          <h2 className="text-2xl  font-bold text-gray-900 lg:text-5xl text-theme-blue mb-4">
+        <div className="text-center mx-auto">
+          <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8">
             Our Story
-          </h2>
-          <p className=" text-gray-400 font-light text-base lg:text-lg max-w-xl mb-12">
+          </h1>
+          <p className="mx-auto text-gray-400 font-light text-base lg:text-lg max-w-xl mb-16">
             From our roots in system integration to becoming a global technology
             innovator, Nube iO’s journey is driven by purpose, progress, and
             possibilities.

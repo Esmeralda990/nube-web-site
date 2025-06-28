@@ -5,7 +5,7 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/no-array-index-key */
 import React, { Fragment, useEffect, useState } from "react";
-import { FaLinkedin } from "react-icons/fa";
+
 import PropTypes from "prop-types";
 import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
 import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
@@ -16,13 +16,6 @@ import Daikin from "../assets/images/CaseStudy/Daikin_Blanco.png";
 import Smart from "../assets/images/CaseStudy/02.webp";
 import OEM from "../assets/images/CaseStudy/01.webp";
 import Building from "../assets/images/CaseStudy/03.webp";
-
-const SHARE_LINKS = [
-  {
-    icon: FaLinkedin,
-    url: "https://www.linkedin.com/company/nube-io/",
-  },
-];
 
 const Blogpost6 = () => {
   const [activeId, setActiveId] = useState(null);
@@ -76,26 +69,15 @@ const Blogpost6 = () => {
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
                 <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue">
-                  Real-World Results: Case Studies & Scenarios
+                  Real-World Results: Case Studies
                 </h1>
-                <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
-                  Explore how Nube iO&apos;s smart building solutions are
-                  solving real challenges across industries. From commercial
+                <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
+                  Explore how Nube iO&#39;s smart building solutions are solving
+                  real-world challenges across industries. From commercial
                   offices to large-scale facilities, these case studies and
                   implementation scenarios show how we help clients connect,
-                  automate, and optimise their environments.
+                  automate, and optimise their building environments.
                 </p>
-                <div className="flex items-center justify-center gap-2.5">
-                  {SHARE_LINKS.map((link) => (
-                    <a
-                      key={link.url}
-                      href={link.url}
-                      className="p-2 rounded-full border bg-white hover:bg-gray-200 transition"
-                    >
-                      <link.icon className="w-5 h-5 text-theme-blue" />
-                    </a>
-                  ))}
-                </div>
               </div>
             </div>
           </div>

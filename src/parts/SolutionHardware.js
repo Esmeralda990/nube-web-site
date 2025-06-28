@@ -12,7 +12,7 @@ export default function Solutionsfeature({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-white lg:py-24 pt-12 mb-6  ">
+    <div className="bg-white lg:pb-28 pt-12 mb-6  ">
       <div className="container mx-auto  px-12 max-w-screen-xl">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (

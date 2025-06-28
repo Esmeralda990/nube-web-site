@@ -29,6 +29,8 @@ import CaseStudyPage from "pages/CaseStudyPage";
 import ContactPage from "pages/ContactPage";
 import FAQsPage from "pages/FAQsPage";
 import Partners from "pages/PartnersPage";
+import HardwarePage from "pages/HardwarePage";
+import ProfessionalPage from "pages/ProfessionalPage";
 
 import { pageview } from "utils/Analytics";
 
@@ -67,6 +69,8 @@ function App() {
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/faqs/" element={<FAQsPage />} />
           <Route path="/partners/" element={<Partners />} />
+          <Route path="/hardware/" element={<HardwarePage />} />
+          <Route path="/professional/" element={<ProfessionalPage />} />
         </Routes>
       </HelmetProvider>
       <ToastContainer position="top-right" autoClose={3000} />

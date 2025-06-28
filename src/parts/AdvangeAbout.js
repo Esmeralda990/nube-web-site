@@ -13,12 +13,12 @@ const AdvAbout = () => {
 
   return (
     <section className="mb-1 px-8">
-      <div className="container mx-auto lg:max-w-screen-xl ">
-        <div className="mb-16 max-w-md ">
-          <h2 className="mb-4 text-2xl font-bold md:text-5xl text-theme-blue">
+      <div className="container mx-auto lg:max-w-screen-xl">
+        <div className="mb-16 text-center mx-auto">
+          <h2 className=" mb-4 text-2xl font-bold lg:text-5xl text-theme-blue">
             Who We Are
           </h2>
-          <p className="text-base lg:text-lg  font-light text-gray-400">
+          <p className="text-base lg:text-lg font-light text-gray-400 max-w-xl mx-auto">
             We’re a technology company redefining how buildings are connected,
             automated, and optimised—intuitive, scalable, and ready for the
             future.
@@ -30,7 +30,7 @@ const AdvAbout = () => {
               key={index}
               role="button"
               tabIndex={0}
-              onClick={() => setCardNumber(index)}
+              onMouseEnter={() => setCardNumber(index)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   setCardNumber(index);
@@ -38,7 +38,7 @@ const AdvAbout = () => {
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
                 cardNumber === index ? "opacity-100" : "opacity-100"
-              }  ring-2 ring-theme-teal border  focus:ring-1 ring-theme-teal border `}
+              }  ring-2 ring-theme-teal border `}
             >
               <div className="flex flex-col items-start gap-2 text-left">
                 <div className="w-6 h-6 mb-1">

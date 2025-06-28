@@ -16,12 +16,7 @@ import icons8 from "../assets/images/IconsMenu/FAQS.svg";
 
 export const menuItemsData = [
   {
-    name: "Our Story",
-    link: "/our-story/",
-  },
-  {
     name: "Solutions",
-    link: "/solutions/",
     subMenu: [
       {
         links: [
@@ -33,13 +28,13 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "Software",
-                    id: "Software",
+                    link: "/software/",
                     icon: icons4,
                     description: "Intelligent IoT system",
                   },
                   {
                     name: "Hardware",
-                    id: "Hardware",
+                    link: "/hardware/",
                     icon: icons3,
                     description: "IoT control equipment",
                   },
@@ -61,7 +56,7 @@ export const menuItemsData = [
                   },
                   {
                     name: "Professional Services",
-                    id: "Professional",
+                    link: "/professional/",
                     icon: icons1,
                     description: "Support and consulting",
                   },
@@ -131,6 +126,7 @@ export const menuItemsData = [
               },
             ],
           },
+
           {
             title: "",
             items: [
@@ -152,5 +148,9 @@ export const menuItemsData = [
     ],
     gridCols: 3,
     hasSubMenu: true,
+  },
+  {
+    name: "About Us",
+    link: "/our-story/",
   },
 ];

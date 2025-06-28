@@ -7,7 +7,7 @@ import { IconsBenefits } from "../json/ProductsPageData";
 
 export default function SoftwareBenefits() {
   return (
-    <div className="bg-white  mb-6  ">
+    <div className="bg-white mb-6">
       <div className="container mx-auto max-w-screen-2xl">
         <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-20 lg:py-32">
           <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
@@ -22,10 +22,10 @@ export default function SoftwareBenefits() {
             {IconsBenefits.map((item, index) => (
               <div
                 key={item.id || `${item.title}-${index}`}
-                className="w-70 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+                className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
               >
                 <img
-                  className="max-w rounded overflow-hidden w-full h-30 object-cover scale-[0.6]"
+                  className=" object-contain w-7 h-12 ml-7 pt-4"
                   src={item.icon}
                   alt={item.title}
                 />
@@ -33,7 +33,7 @@ export default function SoftwareBenefits() {
                   <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left">
                     {item.title}
                   </h4>
-                  <p className="font-light text-lg text-gray-400 text-left mb-6">
+                  <p className="font-light text-lg text-gray-400 text-left ">
                     {item.description}
                   </p>
                 </div>

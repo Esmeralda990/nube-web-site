@@ -10,7 +10,9 @@ import { Services, Slides, Logos } from "json/landingPageData";
 
 import Header1 from "parts/Header1";
 import Service from "parts/Service";
-import HeroCarousel from "parts/HeroCarousel";
+import Hero from "parts/Hero";
+import Carousel from "parts/Carousel";
+import CtaHome from "parts/CTAHome";
 import Footer from "parts/Footer";
 
 export default class LandingPage extends Component {
@@ -44,8 +46,10 @@ export default class LandingPage extends Component {
         </Helmet>
 
         <Header1 />
-        <HeroCarousel data={Slides} logos={Logos} />
+        <Hero />
+        <Carousel data={Slides} logos={Logos} />
         <Service data={Services} />
+        <CtaHome />
         <Footer />
       </>
     );

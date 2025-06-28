@@ -11,13 +11,10 @@ const GifBene = () => {
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <video
+              <img
                 src={GifBenefits[0].image}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
+                alt="Send your data anywhere"
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md object-contain"
               />
             </div>
           </div>
@@ -28,19 +25,20 @@ const GifBene = () => {
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
                 Whether you&apos;re modernising an old system or deploying new
-                infrastructure, Rubix CE bridges the gap. Connect seamlessly to
-                existing BMSs, third-party platforms, or cloud
-                environments—without complicated integrations.
+                infrastructure, Rubix CE bridges the gap. Connects seamlessly to
+                existing BMS solutions, third-party platforms or cloud
+                environments – without complicated integrations.
               </p>
-              <ul className="text-muted-foreground font-light text-base lg:text-lg  list-disc text-gray-400">
+              <ul className="text-muted-foreground font-light text-base lg:text-lg  list-disc text-gray-400 pl-5">
                 <li>
                   <span /> Works with BACnet/IP, MQTT, and RESTful APIs.
                 </li>
                 <li>
-                  <span /> Supports cloud-to-cloud and on-prem data flows.
+                  <span /> Supports cloud-to-cloud and on-premise data flows.
                 </li>
                 <li>
-                  <span /> Functions as both BACnet-Master and BACnet device.
+                  <span /> Functions as both BACnet-Master and BACnet-Slave
+                  device.
                 </li>
               </ul>
             </div>
@@ -49,13 +47,10 @@ const GifBene = () => {
         <div className="flex-row-reverse lg:flex lg:gap-x-4 ">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <video
+              <img
                 src={GifBenefits[1].image}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md"
+                alt="Merge BMS and IoT projects"
+                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md object-contain"
               />
             </div>
           </div>
@@ -66,20 +61,21 @@ const GifBene = () => {
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
                 Rubix CE makes integration easy. Manage IoT and traditional BMS
-                devices from one unified platform.Forget siloed systems—this is
-                full-stack control from edge to cloud.
+                devices from one unified platform. Forget siloed systems – this
+                is full-stack control from edge to cloud.
               </p>
-              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc">
+              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pl-5">
                 <li>
                   <span /> Unified interface for legacy (BACnet, Modbus) and
-                  wireless (LoRaWAN®, 3G/4G).
+                  wireless devices (LoRaWAN, 3G/4G)
+                </li>
+                <li>
+                  <span /> Supported Protocols: BACnet, Modbus, LoRaWAN, LoRa
+                  and REST API
                 </li>
                 <li>
                   <span /> Simplifies complex projects across multi-vendor
                   environments.
-                </li>
-                <li>
-                  <span /> One tool, endless flexibility.
                 </li>
               </ul>
             </div>
@@ -88,27 +84,24 @@ const GifBene = () => {
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8 lg:mt-24">
-              <video
+              <img
                 src={GifBenefits[2].image}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
+                alt="Manage Rubix-Computes"
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md object-contain"
               />
             </div>
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 ">
             <div>
               <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight  mb-5">
-                Manage one or multiple Rubix-Computes
+                Manage one or multiple Rubix-Compute gateways
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
-                Rubix CE adapts to your scale. Whether you&apos;re running a
-                single controller or hundreds, you can deploy, monitor, and
-                manage your setup—locally or in the cloud.
+                Whether you’re running a single controller or hundreds of sites,
+                you can deploy, monitor and manage your set-up – locally or in
+                the cloud.
               </p>
-              <ul className="text-muted-foreground font-light lg:text-lg list-disc text-gray-400">
+              <ul className="text-muted-foreground font-light lg:text-lg list-disc text-gray-400 pl-5">
                 <li>
                   <span /> Compatible with any Rubix Compute.
                 </li>
@@ -125,13 +118,10 @@ const GifBene = () => {
         <div className="flex-row-reverse lg:flex lg:gap-x-4 ">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <video
-                src={GifBenefits[1].image}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md"
+              <img
+                src={GifBenefits[3].image}
+                alt="Engineering Tools"
+                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md object-contain"
               />
             </div>
           </div>
@@ -143,9 +133,9 @@ const GifBene = () => {
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
                 Rubix Wires gives engineers a low-code platform to program
                 control logic, monitor live data, and adapt to evolving building
-                needs—without steep learning curves. Bullet Points:
+                needs—without steep learning curves.
               </p>
-              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-36">
+              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-12 pl-5 ">
                 <li>
                   <span /> Drag-and-drop editor for custom logic.
                 </li>

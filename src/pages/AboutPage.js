@@ -7,11 +7,11 @@ import { Helmet } from "react-helmet-async";
 
 import { AdvantageAbout, Managers, OurStoryD } from "json/landingPageData";
 import Header1 from "parts/Header1";
-import HeroAbout from "parts/HeroAbout";
 import AdvangeAbout from "parts/AdvangeAbout";
 import OurStory from "parts/Ourstory";
 import TeamSection from "parts/TeamSection";
 import TeamGroup from "parts/TeamGroup";
+import CtaAbout from "parts/CtaAbout";
 import Footer from "parts/Footer";
 
 export default class OurStoryPage extends Component {
@@ -45,11 +45,11 @@ export default class OurStoryPage extends Component {
         </Helmet>
 
         <Header1 />
-        <HeroAbout />
         <OurStory data={OurStoryD} />
         <AdvangeAbout data={AdvantageAbout} />
-        <TeamSection data={Managers} />
         <TeamGroup />
+        <TeamSection data={Managers} />
+        <CtaAbout />
         <Footer />
       </>
     );

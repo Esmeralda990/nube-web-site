@@ -42,7 +42,6 @@ import IconsSol from "../assets/images/AdvangesAbout/GroupExc.png";
 
 // Service Solutions
 import Client from "../assets/images/ServiceSolutions/Client.webp";
-import Establish from "../assets/images/ServiceSolutions/Asset.webp";
 import Management from "../assets/images/ServiceSolutions/Establish.webp";
 import Energy from "../assets/images/ServiceSolutions/Energy.png";
 
@@ -90,7 +89,7 @@ export const Services = [
     id: "Software",
     title: "Software",
     imageUrl: Sofware,
-    type: "Desktop, Licence-Free BMS Programming Software with real-time analytics and intuitive control.",
+    type: "Desktop, licence-free BMS programming software with real-time analytics and intuitive control.",
     animation: "left",
   },
   {
@@ -111,7 +110,7 @@ export const Services = [
     id: "OEM",
     title: "OEM ",
     imageUrl: OEM,
-    type: "Fully customisable software and hardware solutions tailored specifically to your brand needs.",
+    type: "Fully customisable software and hardware solutions tailored specifically to your brands needs.",
     animation: "right",
   },
 ];
@@ -213,7 +212,6 @@ export const Slides = [
   {
     id: "slide-1",
     image: slide1,
-    title: "Building Smarter,  Thinking Forward",
     Subtitles: "The power to predict, adapt, and optimise",
     description:
       "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
@@ -221,7 +219,6 @@ export const Slides = [
   {
     id: "slide-2",
     image: slide2,
-    title: "Building Smarter,  Thinking Forward",
     Subtitles: "Total control of every connection",
     description:
       "Achieve seamless integration and visibility across devices, spaces, and systems, unified on one intuitive platform.",
@@ -229,7 +226,6 @@ export const Slides = [
   {
     id: "slide-3",
     image: slide3,
-    title: "Building Smarter,  Thinking Forward",
     Subtitles: "Insights that drive action",
     description:
       "Reveal hidden opportunities to improve efficiency, reduce costs, and enhance building performance.",
@@ -430,27 +426,21 @@ export const ServiceSolutions = [
     id: "Client",
     title: "Client Solutions",
     imageUrl: Client,
-    type: "",
+    type: "Tailored dashboards give complete visibility across your building portfolio—all in one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
     animation: "left",
   },
   {
-    id: "Establish",
-    title: "Sales & Marketing",
-    imageUrl: Establish,
+    id: "Energy",
+    title: "Energy Analytics",
+    imageUrl: Energy,
+    type: "Sustainability and green certifications like Green Star and NABERS are essential for client satisfaction. Nube iO helps optimise energy use, reducing consumption and ensuring your buildings run at optimal efficiency.",
     animation: "right",
   },
   {
     id: "Management",
     title: "Training & Support",
     imageUrl: Management,
-    type: "",
-    animation: "right",
-  },
-  {
-    id: "Energy",
-    title: "Energy Analytics",
-    imageUrl: Energy,
-    type: "",
+    type: "We provide comprehensive guidance for clients and contractors during the dashboard setup process. Ensuring all users are set-up for success, Nube iO empowers your team to deliver better business outcomes.",
     animation: "right",
   },
 ];
@@ -506,7 +496,7 @@ export const Managers = [
 export const Solutionsfeature = [
   {
     id: "feature-1",
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     description:
       "Edge Controller for real-time automation, data processing, and multi-protocol integration in smart building environments.",
     image: RubixSolu,
@@ -514,7 +504,7 @@ export const Solutionsfeature = [
   },
   {
     id: "feature-2",
-    title: "Rubix iO 16",
+    title: "iO Contollers",
     description:
       "Compact I/O Module for scalable sensor and actuator control across HVAC, lighting, and building systems.",
     image: Rubix16Solu,

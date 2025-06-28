@@ -10,6 +10,7 @@ import HeroSoftware from "partsproducts/HeroSoftware";
 import SoftwareBenefits from "partsproducts/BenefitsSoftware";
 import VideoSoftware from "partsproducts/VideoSoftware";
 import GifSoftware from "partsproducts/GifSoftware";
+import CtaSoftware from "parts/CtaSoftware";
 import Footer from "parts/Footer";
 
 export default class SoftwarePage extends Component {
@@ -47,6 +48,7 @@ export default class SoftwarePage extends Component {
         <SoftwareBenefits data={IconsBenefits} />
         <VideoSoftware />
         <GifSoftware data={GifBenefits} />
+        <CtaSoftware />
         <Footer />
       </>
     );
