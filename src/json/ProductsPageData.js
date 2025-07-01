@@ -31,10 +31,10 @@ import Flexible from "../assets/images/IconsBenefitsSoftware/FlexibleScalable.sv
 import Real from "../assets/images/IconsBenefitsSoftware/Monitoring.svg";
 
 // Gif Benefits
-import Anywhere from "../assets/images/GifSection/Nodo01.gif";
-import Merge from "../assets/images/GifSection/Node03.gif";
-import Manage from "../assets/images/GifSection/Node04.gif";
-import RubixWire1 from "../assets/images/GifSection/Node02.gif";
+import Anywhere from "../assets/Video/Node01.webm";
+import Merge from "../assets/Video/Node03.webm";
+import Manage from "../assets/Video/Node04.webm";
+import RubixWire1 from "../assets/Video/Node02.webm";
 
 // Rubix Lw
 import RubixConnect from "../assets/images/RubixLW/RubixConnect01.png";

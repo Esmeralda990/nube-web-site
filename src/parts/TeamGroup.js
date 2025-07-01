@@ -13,7 +13,7 @@ const TeamGroup = () => {
       <div className="container mx-auto mt-24 overflow-hidden max-w-7xl ">
         <div className="text-center mb-12  mx-auto">
           <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 ">
-            Our Team, Our Strength At Nube iO.
+            Our Team, Our Strength.
           </h2>
         </div>
 

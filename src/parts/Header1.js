@@ -83,13 +83,7 @@ const Header1 = () => {
                   className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
                   onClick={toggleSubmenu}
                 >
-                  <a
-                    href="/solutions/"
-                    className="text-theme-blue hover:underline"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    Solutions
-                  </a>
+                  Solutions
                   <svg
                     className={`w-4 h-4 transition-transform ${
                       submenuOpen ? "transform rotate-180" : ""
@@ -112,7 +106,7 @@ const Header1 = () => {
                   <ul className="pl-6 mt-2 space-y-2">
                     <li>
                       <a
-                        href="/solutions/#Software"
+                        href="/software/"
                         className="text-gray-400 block px-6 py-2"
                       >
                         Software
@@ -120,7 +114,7 @@ const Header1 = () => {
                     </li>
                     <li>
                       <a
-                        href="/solutions/#Hardware"
+                        href="/hardware/"
                         className="text-gray-400 block px-6 py-2"
                       >
                         Hardware
@@ -136,7 +130,7 @@ const Header1 = () => {
                     </li>
                     <li>
                       <a
-                        href="/solutions/#Professional"
+                        href="/professional/"
                         className="text-gray-400 block px-6 py-2"
                       >
                         Professional Services

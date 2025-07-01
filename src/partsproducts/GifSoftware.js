@@ -11,10 +11,13 @@ const GifBene = () => {
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <img
+              <video
                 src={GifBenefits[0].image}
-                alt="Send your data anywhere"
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
               />
             </div>
           </div>
@@ -47,10 +50,13 @@ const GifBene = () => {
         <div className="flex-row-reverse lg:flex lg:gap-x-4 ">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <img
+              <video
                 src={GifBenefits[1].image}
-                alt="Merge BMS and IoT projects"
-                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md"
               />
             </div>
           </div>
@@ -84,10 +90,13 @@ const GifBene = () => {
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8 lg:mt-24">
-              <img
+              <video
                 src={GifBenefits[2].image}
-                alt="Manage Rubix-Computes"
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
               />
             </div>
           </div>
@@ -118,10 +127,13 @@ const GifBene = () => {
         <div className="flex-row-reverse lg:flex lg:gap-x-4 ">
           <div className="lg:w-1/2">
             <div className="mb-6 lg:mb-8">
-              <img
+              <video
                 src={GifBenefits[3].image}
-                alt="Engineering Tools"
-                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
               />
             </div>
           </div>
