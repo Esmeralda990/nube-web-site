@@ -5,26 +5,27 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import IOT from "../assets/images/IconsHardware/IoT.webp";
+import IOT from "../assets/images/AdvantageSolutionOEM/Customise.webp";
 
-const SmartHardw = () => {
+const SmartOem = () => {
   return (
-    <section className="lg:py-20 px-8 mb-12 mt-16">
+    <section className="lg:py-20 px-8 mb-12 mt-12">
       <div className="container mx-auto overflow-hidden max-w-6xl ">
         <div className="text-center mb-8 mx-auto">
           <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 ">
-            Smart Devices for Better Buildings
+            OEM Integrations: Smarter, Faster, Better
           </h2>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="lg:w-1/2">
             <p className="text-muted-foreground font-light text-gray-400 lg:text-xl max-w-md">
-              Many facilities have siloed systems with no real-time visibility,
-              driving up costs and reducing operational control. Using wireless
-              sensors, Rubix Compute gateways and the Rubix Platform, Nube iO
-              can deliver a unified data stream with real-time dashboards and
-              cloud insights.
+              Nube iO helps OEMs deliver branded IoT solutions without investing
+              in costly product development cycles. By eliminating the need to
+              build software, hardware or cloud infrastructure from the ground
+              up, Nube iO can help your business bring connected solutions to
+              market more swiftly – delivering powerful connected products with
+              long-term scalability and end- user satisfaction.
             </p>
           </div>
 
@@ -41,4 +42,4 @@ const SmartHardw = () => {
   );
 };
 
-export default SmartHardw;
+export default SmartOem;

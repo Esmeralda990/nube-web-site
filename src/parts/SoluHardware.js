@@ -27,9 +27,9 @@ export default function SoluHardware() {
             </p>
           </Fade>
 
-          <div className="relative mx-auto w-full max-w-[70%] overflow-hidden">
-            <div className="absolute left-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-r from-white to-transparent" />
-            <div className="absolute right-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-l from-white to-transparent" />
+          <div className="relative mx-auto w-full lg:max-w-[80%] overflow-hidden">
+            <div className="absolute left-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-r from-white to-transparent hidden md:block" />
+            <div className="absolute right-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-l from-white to-transparent hidden md:block" />
 
             <div className="flex animate-scroll-left justify-start gap-4 z-10 relative">
               {[...Badges.slice(0, 5), ...Badges.slice(0, 5)].map((item) => (

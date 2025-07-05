@@ -10,7 +10,7 @@ import ProductsNiagara from "partsproducts/ProductsNiagara";
 import Footer from "parts/Footer";
 import { Edge } from "../json/ProductsPageData.js";
 
-export default class Niagara extends Component {
+export default class NiagaraPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

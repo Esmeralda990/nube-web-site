@@ -50,7 +50,7 @@ export const menuItemsData = [
                 items: [
                   {
                     name: "OEM",
-                    id: "OEM",
+                    link: "/oem/",
                     icon: icons2,
                     description: "Custom integration ",
                   },

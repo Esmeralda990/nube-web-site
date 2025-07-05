@@ -55,6 +55,13 @@ import Icon4 from "../assets/images/IconsConnectivity/App4.svg";
 import Icon5 from "../assets/images/IconsConnectivity/App5.svg";
 import Icon6 from "../assets/images/IconsConnectivity/App6.svg";
 
+// Case Study
+import Galvin from "../assets/images/CaseStudy/Galvin_Blanco.png";
+import Enviro from "../assets/images/CaseStudy/Eviro_Blanco.png";
+import Daikin from "../assets/images/CaseStudy/Daikin_Blanco.png";
+import Victorian from "../assets/images/CaseStudy/Victorian1.png";
+import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+
 export const RubixCompute = [
   {
     id: "1",
@@ -292,5 +299,56 @@ export const AppConect = [
     id: 6,
     icon: Icon6,
     description: "Scheduling & trending",
+  },
+];
+
+export const Casestudy = [
+  {
+    id: "Galvin",
+    title: "Galvin Engineering",
+    imageUrl: Galvin,
+    type: "Enhanced patient safety & operational reliability in critical healthcare environments.",
+    animation: "left",
+    link: "/galvin/",
+  },
+  {
+    id: "Enviro",
+    title: "Enviro Building Services",
+    imageUrl: Enviro,
+    type: "Reinforced their position as a leader in sustainable building management.",
+    animation: "right",
+    link: "/enviro/",
+  },
+  {
+    id: "Daiken",
+    title: "Daiken",
+    imageUrl: Daikin,
+    type: "Enhanced system response times to boost customer satisfaction.",
+    animation: "right",
+    link: "/daikin/",
+  },
+  {
+    id: "Victorian Schools",
+    title: "Victorian Schools",
+    imageUrl: Victorian,
+    type: "Energy savings support long-term sustainability goals and healthierlearning spaces.",
+    animation: "left",
+    link: "/victorian/",
+  },
+  {
+    id: "Fujitsu",
+    title: "Fujitsu AnywAIR iO",
+    imageUrl: Fujitsu,
+    type: "Complete BMS solution for Oasis Shopping Centre.",
+    animation: "right",
+    link: "/fujitsu/",
+  },
+  {
+    id: "Fujitsu AnywAIR iO",
+    title: "Fujitsu AnywAIR iO:",
+    imageUrl: Fujitsu,
+    type: "Real-time monitoring solution and alerting system for maintenance.",
+    animation: "right",
+    link: "/fujitsu2/",
   },
 ];

@@ -222,7 +222,10 @@ const MenuItems = ({ items, depthLevel }) => {
   }, [dropdown]);
 
   const isTouchDevice = () => {
-    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    return (
+      window.matchMedia("(pointer: coarse)").matches &&
+      !window.matchMedia("(hover: hover)").matches
+    );
   };
 
   const onMouseEnter = () => {
@@ -255,6 +258,8 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={handleClick}
+            onFocus={() => setDropdown(true)}
+            onBlur={() => setDropdown(false)}
             className="relative text-lg font-bold py-2 px-4 group"
           >
             <span>{items.name}</span>

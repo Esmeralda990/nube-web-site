@@ -33,7 +33,7 @@ export default class HardwarePage extends Component {
             name="keywords"
             content="BMS solutions, IoT integration, automation services"
           />
-          <link rel="canonical" href="https://nubeio.com/solutions" />
+          <link rel="canonical" href="https://nubeio.com/hardware/" />
           <meta
             property="og:title"
             content=" Hardware | Nube iO – Integrated BMS & IoT Technology"
@@ -42,14 +42,13 @@ export default class HardwarePage extends Component {
             property="og:description"
             content="Explore hardware, software, and professional services tailored to modern building needs."
           />
-          <meta property="og:url" content="https://nubeio.com/solutions" />
+          <meta property="og:url" content="https://nubeio.com/hardware" />
         </Helmet>
 
         <Header1 />
         <HeroSolution />
         <DetailsHardware />
         <SolutionHardware data={Solutionsfeature} />
-
         <SmartHardware />
         <SoluHardware />
         <CtaHardware />

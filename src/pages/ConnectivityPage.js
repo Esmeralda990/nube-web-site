@@ -13,7 +13,7 @@ import ContentConnectivity from "../partsproducts/ContentConnectivity.js";
 import Appcaracterist from "../partsproducts/Appcaracterist.js";
 import { AppConect } from "../json/ProductsPageData.js";
 
-export default class NubConnectivity extends Component {
+export default class NubConnectivityPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

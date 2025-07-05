@@ -4,15 +4,12 @@
 /* eslint-disable-next-line */
 import React, { Component } from "react";
 import { Helmet } from "react-helmet-async";
-import { Casestudy } from "json/ProductsPageData";
 
 import Header1 from "parts/Header1";
-import HeroCase from "partsproducts/HeroCase";
-import Casestudys from "partsproducts/CasesStudy";
+import CaseFujitsu2 from "partsproducts/CaseFujitsu2";
 import Footer from "parts/Footer";
-import CtaCase from "partsproducts/CtaCase";
 
-export default class CasesPage extends Component {
+export default class CaseFujitsu2Page extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -32,7 +29,7 @@ export default class CasesPage extends Component {
             name="keywords"
             content="smart building automation, building management system (BMS),OEM BMS integration,IoT for buildings,LoRaWAN building systems,Nube iO building automation,data-driven building performance"
           />
-          <link rel="canonical" href="https://nubeio.com/cases/ " />
+          <link rel="canonical" href="https://nubeio.com/galvin/ " />
           <meta
             property="og:title"
             content="Smart Building Case Studies | Nube iO Real-World Scenarios"
@@ -41,13 +38,11 @@ export default class CasesPage extends Component {
             property="og:description"
             content="Discover how Nube iO transforms buildings with scalable automation. Browse our case studies and implementation scenarios to see real-world results in action."
           />
-          <meta property="og:url" content="https://nubeio.com/cases/" />
+          <meta property="og:url" content="https://nubeio.com/galvin/" />
         </Helmet>
 
         <Header1 />
-        <HeroCase />
-        <Casestudys data={Casestudy} />
-        <CtaCase />
+        <CaseFujitsu2 />
         <Footer />
       </>
     );

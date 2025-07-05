@@ -14,7 +14,7 @@ import TeamGroup from "parts/TeamGroup";
 import CtaAbout from "parts/CtaAbout";
 import Footer from "parts/Footer";
 
-export default class OurStoryPage extends Component {
+export default class AboutPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -23,7 +23,7 @@ export default class OurStoryPage extends Component {
     return (
       <>
         <Helmet>
-          <title>Our Story | Nube iO – Smart Building Innovation</title>
+          <title>About | Nube iO – Smart Building Innovation</title>
           <meta
             name="description"
             content="Learn how Nube iO is transforming building automation through scalable IoT and software-driven integration."
@@ -35,7 +35,7 @@ export default class OurStoryPage extends Component {
           <link rel="canonical" href="https://nubeio.com/our-story/" />
           <meta
             property="og:title"
-            content="Our Story | Nube iO – Smart Building Innovation"
+            content="About | Nube iO – Smart Building Innovation"
           />
           <meta
             property="og:description"

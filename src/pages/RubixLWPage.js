@@ -11,7 +11,7 @@ import Footer from "parts/Footer";
 
 import { RubixConnectLW, Blog4 } from "../json/ProductsPageData.js";
 
-export default class ProductsRubixConnectLW extends Component {
+export default class RubixLWPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

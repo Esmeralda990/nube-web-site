@@ -21,8 +21,14 @@ export default function AdvantageOem({ data }) {
                 alt={item.title}
               />
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-5 text-theme-blue text-center">
-                  {item.title}
+                <h4 className="font-bold text-base lg:text-xl mb-5 text-theme-blue text-center leading-snug break-words max-w-[16ch] mx-auto">
+                  {item.title === "White Labelling" ? (
+                    <>
+                      White <br /> Labelling
+                    </>
+                  ) : (
+                    item.title
+                  )}
                 </h4>
                 <p className="text-base font-light text-gray-500">
                   {item.description}

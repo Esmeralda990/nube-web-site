@@ -7,7 +7,7 @@ import Button from "../elements/Button/index.js";
 
 export default function CtaProfessional() {
   return (
-    <section className="py-32">
+    <section className="lg:py-32 px-8 mt-12 pb-16">
       <div className="container mx-auto lg:max-w-screen-xl">
         <div className="flex flex-col items-center rounded-lg bg-gray-100 p-8 text-center md:rounded-xl lg:p-16 ">
           <h3 className="mb-3 max-w-3xl text-lg lg:text-3xl font-bold md:mb-4 lg:mb-6 text-theme-blue">

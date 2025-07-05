@@ -10,7 +10,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import LandingPage from "pages/LandingPage";
-import SolutionsPage from "pages/SolutionsPage";
 import AboutPage from "pages/AboutPage";
 import RubixCompute from "pages/RubixCompute";
 import RubixIO16 from "pages/RubixIO16";
@@ -31,6 +30,13 @@ import FAQsPage from "pages/FAQsPage";
 import Partners from "pages/PartnersPage";
 import HardwarePage from "pages/HardwarePage";
 import ProfessionalPage from "pages/ProfessionalPage";
+import OEMPage from "pages/OemPage";
+import GalvinPage from "pages/GalvinPage";
+import EnviroPage from "pages/EnviroPage";
+import DaikinPage from "pages/DaikinPage";
+import VictorianPage from "pages/VictorianPage";
+import FujitsuPage from "pages/FujitsuPage1";
+import FujitsuPage2 from "pages/FujitsuPage2";
 
 import { pageview } from "utils/Analytics";
 
@@ -48,7 +54,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/our-story/" element={<AboutPage />} />
-          <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/rubix-compute/" element={<RubixCompute />} />
           <Route path="/rubix-io-16/" element={<RubixIO16 />} />
           <Route path="/ci-edgex2/" element={<NiagaraEdge />} />
@@ -71,6 +76,13 @@ function App() {
           <Route path="/partners/" element={<Partners />} />
           <Route path="/hardware/" element={<HardwarePage />} />
           <Route path="/professional/" element={<ProfessionalPage />} />
+          <Route path="/oem/" element={<OEMPage />} />
+          <Route path="/galvin/" element={<GalvinPage />} />
+          <Route path="/enviro/" element={<EnviroPage />} />
+          <Route path="/daikin/" element={<DaikinPage />} />
+          <Route path="/victorian/" element={<VictorianPage />} />
+          <Route path="/fujitsu/" element={<FujitsuPage />} />
+          <Route path="/fujitsu2/" element={<FujitsuPage2 />} />
         </Routes>
       </HelmetProvider>
       <ToastContainer position="top-right" autoClose={3000} />

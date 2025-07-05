@@ -9,7 +9,7 @@ import Header1 from "parts/Header1";
 import FAQs from "partsterm/Faqs";
 import Footer from "parts/Footer";
 
-export default class FAqs extends Component {
+export default class FAqsPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

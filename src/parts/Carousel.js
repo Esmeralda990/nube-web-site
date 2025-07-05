@@ -14,7 +14,7 @@ import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { Slides } from "../json/landingPageData";
 import { Logos3 } from "./Logos3";
 
-export default function PorfolioCarousel() {
+export default function Carousel() {
   return (
     <>
       <Swiper
@@ -27,7 +27,7 @@ export default function PorfolioCarousel() {
         speed={200}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        className="w-full mb-20 lg:mb-40"
+        className="w-full mb-20 lg:mb-40 mt-12"
         style={{ height: "auto" }}
       >
         {Slides.map((slide) => (
@@ -35,14 +35,14 @@ export default function PorfolioCarousel() {
             <section className="container mx-auto lg:px-4 px-4">
               <div className="flex flex-col md:flex-row items-center ">
                 <div className="w-full lg:w-1/2 sm:pr-2 mt-2 flex flex-col justify-center items-start">
-                  <p className="text-xl lg:text-4xl text-theme-blue text-left font-light mb-5">
+                  <h2 className="text-2xl lg:text-5xl text-theme-blue text-left font-light mb-5 max-w-xl lg:mt-20">
                     {slide.Subtitles}
-                  </p>
+                  </h2>
                   <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12 max-w-xl">
                     {slide.description}
                   </p>
                 </div>
-                <div className="w-full justify-center lg:w-1/2 pt-6 lg:scale-[1.2] scale-[1.1]">
+                <div className="w-full justify-center lg:w-1/2 pt-6 lg:scale-[1.1] scale-[1.1]">
                   <Fade triggerOnce>
                     <Lottie
                       key={slide.id}

@@ -8,7 +8,7 @@ import Header1 from "parts/Header1";
 import ContactForm from "partsterm/ContactForm";
 import Footer from "parts/Footer";
 
-export default class HeroContc extends Component {
+export default class ContactPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

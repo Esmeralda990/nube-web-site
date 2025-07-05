@@ -121,10 +121,7 @@ const Header1 = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="/solutions/#OEM"
-                        className="text-gray-400 block px-6 py-2"
-                      >
+                      <a href="/oem/" className="text-gray-400 block px-6 py-2">
                         OEM
                       </a>
                     </li>

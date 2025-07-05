@@ -591,3 +591,9 @@ export const WhyData = [
     },
   ],
 ];
+
+export const Testimonial = {
+  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+  name: "Kyle Rafter",
+  role: "GM Product & Strategy",
+};

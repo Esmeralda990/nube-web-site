@@ -8,31 +8,13 @@ import { WhyData } from "json/landingPageData";
 import Header1 from "parts/Header1";
 import Partner from "parts/HeroPartners";
 import Footer from "parts/Footer";
-import Discuss from "parts/DiscussPartners";
+import CTAPartners from "parts/CTAPartners";
 import WhyPartner from "parts/WhyPartner";
 
-export default class Partnerss extends Component {
+export default class PartnersPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.handleScroll();
-    window.addEventListener("hashchange", this.handleScroll, false);
   }
-
-  componentWillUnmount() {
-    window.removeEventListener("hashchange", this.handleScroll, false);
-  }
-
-  handleScroll = () => {
-    // eslint-disable-next-line prefer-destructuring
-    const hash = window.location.hash;
-
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
 
   render() {
     return (
@@ -67,7 +49,7 @@ export default class Partnerss extends Component {
 
         <section id="Contact" />
 
-        <Discuss />
+        <CTAPartners />
         <Footer />
       </>
     );

@@ -7,9 +7,9 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
 
-export default function Hero() {
+export default function HeroCase() {
   return (
-    <section className="relative text-center flex justify-center items-center pb-12 ">
+    <section className="relative text-center flex justify-center items-center ">
       <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl max-w-[130rem] w-full mx-auto">
         <img
           src={bgImg}
@@ -22,16 +22,17 @@ export default function Hero() {
       <div className="relative z-10 container flex flex-col items-center justify-center text-center">
         <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 max-w-5xl lg:mt-6 xl:pl-12 xl:mt-20">
           <Fade direction="" triggerOnce>
-            <h1 className="text-3xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-4xl mt-24">
-              Innovating the Future of Smart Building
+            <h1 className="text-3xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-3xl mt-24 mx-auto">
+              Read-World Results: Case Studies
             </h1>
           </Fade>
           <Fade triggerOnce delay={400}>
             <p className="font-light text-gray-400 mx-auto text-muted-foreground lg:text-xl lg:mb-24">
-              We help businesses connect and automate their buildings with
-              scalable, data-driven technology. By bridging BMS and IoT, we
-              simplify control, improve visibility, and unlock smarter, more
-              sustainable operations.
+              Explore how Nube iO&#39;s smart building solutions are solving
+              real-world challenges across industries. From commercial offices
+              to large-scale facilities, these case studies and implementation
+              scenarios show how we help clients connect, automate, and optimise
+              their building environments.
             </p>
           </Fade>
         </div>

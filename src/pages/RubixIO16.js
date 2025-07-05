@@ -11,7 +11,7 @@ import Footer from "parts/Footer";
 import Products from "parts/ProductsBlog2.js";
 import { RubixIO16, Blog2 } from "../json/ProductsPageData.js";
 
-export default class RubixIO extends Component {
+export default class RubixIOPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

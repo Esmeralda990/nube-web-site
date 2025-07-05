@@ -11,7 +11,7 @@ import Button from "../elements/Button";
 
 import partners from "../assets/images/hero/Partners.png";
 
-export default function Hero() {
+export default function Heropartners() {
   return (
     <>
       <section className="container mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row px-8 lg:mb-24">
@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="flex space-x-4">
             {" "}
-            <Fade direction="up" triggerOnce delay={400}>
+            <Fade triggerOnce delay={400}>
               <Button
                 href="/contact/"
                 type="link"

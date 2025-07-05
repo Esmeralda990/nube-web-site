@@ -7,9 +7,9 @@
 import React from "react";
 import Building from "../assets/images/ServiceSolutions/Building.webp";
 
-const SmartProf = () => {
+const SmartPS = () => {
   return (
-    <section className="lg:py-20 px-8 mb-12">
+    <section className="lg:py-20 px-8 mb-12 mt-12">
       <div className="container mx-auto overflow-hidden max-w-6xl ">
         <div className="text-center mb-8 mx-auto">
           <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 ">
@@ -41,4 +41,4 @@ const SmartProf = () => {
   );
 };
 
-export default SmartProf;
+export default SmartPS;
