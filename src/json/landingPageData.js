@@ -26,9 +26,9 @@ import Logo14 from "../assets/images/Logos/Aldi.png";
 import Logo15 from "../assets/images/Logos/Costco.png";
 
 // Slides
-import slide1 from "../assets/animaciones/C1.json";
-import slide2 from "../assets/animaciones/C2.json";
-import slide3 from "../assets/animaciones/C3.json";
+import slide1 from "../assets/Video/c1.webm";
+import slide2 from "../assets/Video/c2.webm";
+import slide3 from "../assets/Video/c3.webm";
 
 // AdvangeAbout
 import Company from "../assets/images/AdvangesAbout/Company1.svg";
@@ -98,6 +98,7 @@ export const Services = [
     imageUrl: Hardware,
     type: "Reliable, scalable devices designed for seamless integration and intelligent automation.",
     animation: "right",
+    link: "/hardware/",
   },
   {
     id: "Professional",
@@ -105,6 +106,7 @@ export const Services = [
     imageUrl: Professional,
     type: "Expert support, analytics, and insights to optimise your operational performance.",
     animation: "right",
+    link: "/professional/",
   },
   {
     id: "OEM",
@@ -112,6 +114,7 @@ export const Services = [
     imageUrl: OEM,
     type: "Fully customisable software and hardware solutions tailored specifically to your brands needs.",
     animation: "right",
+    link: "/oem/",
   },
 ];
 
@@ -498,7 +501,7 @@ export const Solutionsfeature = [
     id: "feature-1",
     title: "Edge Gateway",
     description:
-      "Edge Controller for real-time automation, data processing, and multi-protocol integration in smart building environments.",
+      "Edge controller for real-time automation, local processing, and multi-protocol integration across your building systems.",
     image: RubixSolu,
     link: "/rubix-compute/",
   },
@@ -506,7 +509,7 @@ export const Solutionsfeature = [
     id: "feature-2",
     title: "iO Contollers",
     description:
-      "Compact I/O Module for scalable sensor and actuator control across HVAC, lighting, and building systems.",
+      "Compact I/O modules for scalable sensor and actuator control — perfect for HVAC, lighting, building services, and integration.",
     image: Rubix16Solu,
     link: "/rubix-io-16/",
   },
@@ -514,7 +517,7 @@ export const Solutionsfeature = [
     id: "feature-3",
     title: "LoRa® Sensors",
     description:
-      "Wireless LoRaWAN® Sensors for long-range, battery-powered monitoring of temperature, humidity, and indoor air quality.",
+      "Long-range, battery-powered LoRaWAN® sensors for accurate temperature, humidity, and indoor air quality monitoring.",
     image: IconsOur4,
     link: "/Lora/",
   },
@@ -522,7 +525,7 @@ export const Solutionsfeature = [
     id: "feature-4",
     title: "Expansion Modules",
     description:
-      "Modular Add-ons that extend Rubix controller capabilities with additional inputs, outputs, and communication features.",
+      "Modular add-ons that extend controller functionality with more inputs, outputs, and smart communication features.",
     image: ExpansionSolu,
     link: "/rubix-connect-lw/",
   },
@@ -593,7 +596,7 @@ export const WhyData = [
 ];
 
 export const Testimonial = {
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+  text: "As part of our evolving controls strategy, Fujitsu General Australia conducted a comprehensive market review and identified Nube iO as the standout technology partner. Their robust, scalable technology stack offers a holistic solution for everything from small multi-site systems to large commercial projects. We’re proud to partner with an organisation whose innovative, collaborative and forward-thinking values align with ours. This partnership not only enhances our IoT capabilities but also signifies our commitment to integrating smart technology into our offerings— representing a major advancement in the relationship between technology and indoor comfort. By embracing these innovations, Fujitsu General Australia is positioned to meet market demands and lead the industry into the future.",
   name: "Kyle Rafter",
-  role: "GM Product & Strategy",
+  role: "General Manager Product & Strategy, Fujitsu General",
 };

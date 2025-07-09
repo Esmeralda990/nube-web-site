@@ -8,7 +8,7 @@ const VidSoftware = () => {
   return (
     <section className="relative lg:mb-32 mb-12">
       <div className="container mx-auto lg:max-w-screen-xl px-8 ">
-        <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
+        <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white ">
           Rubix CE in Action
         </h2>
         <p className="font-light text-lg text-gray-400 text-center mb-5">

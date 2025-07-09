@@ -11,6 +11,7 @@ import { ArrowRight } from "lucide-react";
 import Navbar from "./Navbar.js";
 import BrandIcon from "./BrandIcon.js";
 import Button from "../elements/Button/index.js";
+import Toggle from "../elements/DarkModeToggle.js";
 
 const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +27,13 @@ const Header1 = () => {
   };
 
   return (
-    <header className="sticky top-0 w-full bg-white shadow-md z-[1000]">
+    <header className="sticky top-0 w-full bg-white shadow-md z-[1000] dark:bg-gray-800 dark:text-white ">
       <div className="nav-area flex justify-between items-center px-6 py-4">
         <div className="logo flex-shrink-0">
           <BrandIcon />
+        </div>
+        <div className="mr-12">
+          <Toggle />
         </div>
         <div className="nav-wrapper flex-1 hidden lg:block">
           <Navbar />
@@ -46,7 +50,7 @@ const Header1 = () => {
         </div>
         <div className="lg:hidden flex items-center">
           <button
-            className="text-theme-blue focus:outline-none"
+            className="text-theme-blue focus:outline-none dark:text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -69,18 +73,10 @@ const Header1 = () => {
       {isMenuOpen && (
         <div className="lg:hidden">
           <div className="transition-opacity duration-400 ease-in-out opacity-100">
-            <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300">
-              <li>
-                <a
-                  href="/our-story/"
-                  className="block px-4 py-3 text-theme-blue font-bold text-lg"
-                >
-                  Our Story
-                </a>
-              </li>{" "}
+            <ul className="z-50 flex flex-col text-theme-blue  tracking-widest my-3 absolute bg-white w-full border-b-2 border-gray-300 dark:bg-gray-800 ">
               <li className="relative">
                 <button
-                  className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
+                  className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg dark:text-white"
                   onClick={toggleSubmenu}
                 >
                   Solutions
@@ -107,7 +103,7 @@ const Header1 = () => {
                     <li>
                       <a
                         href="/software/"
-                        className="text-gray-400 block px-6 py-2"
+                        className="text-gray-400 block px-6 py-2 "
                       >
                         Software
                       </a>
@@ -139,14 +135,14 @@ const Header1 = () => {
               <li>
                 <a
                   href="/partners/"
-                  className="block px-4 py-3 text-theme-blue font-bold text-lg"
+                  className="block px-4 py-3 text-theme-blue font-bold text-lg dark:text-white"
                 >
                   Partners
                 </a>
               </li>
               <li className="relative">
                 <button
-                  className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg"
+                  className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg dark:text-white"
                   onClick={toggleResourceSubmenu}
                 >
                   Resources
@@ -199,6 +195,14 @@ const Header1 = () => {
                   </ul>
                 )}
               </li>
+              <li>
+                <a
+                  href="/our-story/"
+                  className="block px-4 py-3 text-theme-blue font-bold text-lg dark:text-white"
+                >
+                  Our Story
+                </a>
+              </li>{" "}
               <div className="flex flex-col space-y-4 p-4">
                 <Button
                   href="/contact/"

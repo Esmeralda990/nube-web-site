@@ -9,8 +9,6 @@
 /* eslint-disable operator-linebreak */
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-// eslint-disable-next-line import/no-useless-path-segments
-import Button from "../elements/Button/index.js";
 
 const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
   return (
@@ -22,7 +20,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
       {submenus.map((submenu, index) => (
         <li
           key={index}
-          className={`bg-white rounded-md p-6 ${
+          className={`rounded-md p-6 ${
             submenu.type === "featured"
               ? "featured col-span-3 grid grid-cols-3"
               : "flex-col"
@@ -31,22 +29,13 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
           {submenu.type === "featured" ? (
             <>
               <div className="w-3/4 w- h-48 flex flex-col justify-start  ml-12">
-                <h4 className="text-3xl font-bold text-left text-theme-blue mb-2">
+                <h4 className="text-3xl font-bold text-left text-theme-blue dark:text-white mb-2">
                   {submenu.title}
                 </h4>
 
                 <p className="text-gray-400 font-light text-lg mb-4 max-w-2xl">
                   {submenu.description}
                 </p>
-                <div className=" flex justify-center md:justify-start space-x-6 items-center">
-                  <Button
-                    href={submenu.link}
-                    type="link"
-                    className="flex items-center justify-center w-50 px-8 py-3 space-x-4 bg-white text-black text-sm rounded-xl border border-theme-teal text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 "
-                  >
-                    Become a Partner
-                  </Button>
-                </div>
               </div>
               <div className="right-section flex flex-col">
                 {submenu.items &&
@@ -119,7 +108,7 @@ const Dropdown = ({ submenus, dropdown, gridCols = 4 }) => {
                               }`}
                             >
                               {category.title?.trim() ? (
-                                <h5 className="font-bold text-theme-blue text-lg whitespace-nowrap">
+                                <h5 className="font-bold text-theme-blue dark:text-theme-teal text-lg whitespace-nowrap">
                                   {category.title}
                                 </h5>
                               ) : (

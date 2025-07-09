@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-white;
+}
+
+html.dark {
+  @apply bg-theme-dark;
+}
+
 .section {
   @apply mb-40;
 }
@@ -79,6 +87,14 @@
 .fade-mask::after {
   right: 0;
   background: linear-gradient(to left, white, transparent);
+}
+
+html.dark .fade-mask::before {
+  background: linear-gradient(to right, #111827, transparent);
+}
+
+html.dark .fade-mask::after {
+  background: linear-gradient(to left, #111827, transparent);
 }
 
 @media (min-width: 1024px) {
@@ -365,85 +381,26 @@ header {
   text-align: left;
 }
 
-.featured {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 4px;
-  padding-bottom: 50px;
-  align-items: start;
-  flex-direction: row;
+html.dark .main-nav .dropdown {
+  background-color: #1f2937;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.6),
+    0 4px 6px -2px rgba(0, 0, 0, 0.5);
 }
 
-.featured .right-section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  gap: 4px;
+html.dark .dropdown h3 {
+  color: #ffffff;
 }
 
-.featured .submenu-link {
-  color: #339999 !important;
-  font-weight: bold;
-  text-decoration: underline !important;
+html.dark .dropdown-content {
+  color: #e5e7eb;
 }
 
-.featured img {
-  width: 50px;
-  height: 60px;
-  margin-bottom: 0px;
-  object-fit: contain;
-  padding-right: 6px;
+html.dark .right-section a {
+  color: #f3f4f6;
 }
 
-.feature-content {
-  display: flex;
-  font-weight: lighter;
-  font-size: 14px;
-  color: #718096;
-  justify-content: center;
-}
-
-.featured .right-section a,
-.featured .right-section span,
-.featured .right-section .block {
-  font-size: 16px !important;
-  color: #071435;
-  display: flex;
-  align-items: flex-start;
-  padding: 4px 0;
-  text-decoration: none;
-}
-
-.featured .right-section a:hover {
-  color: #339999 !important;
-  background-color: transparent;
-}
-
-.featured .right-section .flex {
-  align-items: flex-start;
-}
-
-.featured .right-section .flex .flex-col span {
-  font-size: 8px;
-  color: #718096;
-}
-
-.featured .right-section {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
-
-.featured .right-section a {
-  display: flex;
-  align-items: flex-start;
-  text-decoration: none;
-  font-size: 14px;
-  color: #071435;
-}
-
-.featured .right-section a:hover {
-  color: #339999 !important;
+html.dark .right-section div h4 {
+  color: #ffffff;
 }
 
 .custom-swiper .swiper-pagination {

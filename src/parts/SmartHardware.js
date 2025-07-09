@@ -12,7 +12,7 @@ const SmartHardw = () => {
     <section className="lg:py-20 px-8 mb-12 mt-16">
       <div className="container mx-auto overflow-hidden max-w-6xl ">
         <div className="text-center mb-8 mx-auto">
-          <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 ">
+          <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white">
             Smart Devices for Better Buildings
           </h2>
         </div>

@@ -11,7 +11,7 @@ export default function DetailsPS() {
     <section className="hero sm:items-center lg:items-start sm:flex-row md:pt-16 ">
       <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-8 lg:mt-6 xl:mt-16">
         <Fade triggerOnce>
-          <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight lg:mb-16 mb-8 mx-auto max-w-4xl">
+          <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight lg:mb-16 mb-8 mx-auto max-w-4xl dark:text-white">
             Professional Services for Smart Building Success
           </h2>
         </Fade>

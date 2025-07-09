@@ -23,7 +23,7 @@ const GifBene = () => {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 ">
             <div>
-              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight mb-5">
+              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight mb-5 dark:text-white ">
                 Send your data anywhere
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
@@ -62,7 +62,7 @@ const GifBene = () => {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24 ">
             <div>
-              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight max-w-full mb-5">
+              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight max-w-full mb-5 dark:text-white ">
                 Merge BMS and IoT projects
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
@@ -102,7 +102,7 @@ const GifBene = () => {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 ">
             <div>
-              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight  mb-5">
+              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight  mb-5 dark:text-white ">
                 Manage one or multiple Rubix-Compute gateways
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
@@ -139,7 +139,7 @@ const GifBene = () => {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24 ">
             <div>
-              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight max-w-full mb-5">
+              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight max-w-full mb-5 dark:text-white ">
                 Engineering Tools: Rubix Wires
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">

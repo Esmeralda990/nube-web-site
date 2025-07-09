@@ -11,7 +11,7 @@ import { ChevronRight } from "react-feather";
 export default function Service({ data }) {
   return (
     <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-40 lg:pb-24">
-      <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6">
+      <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white">
         Define Your Smart Building Solution
       </h2>
       <p className="font-light text-lg text-gray-400 text-center mb-20">
@@ -21,8 +21,7 @@ export default function Service({ data }) {
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32">
         {data.map((item) => {
-          const path =
-            item.id === "Software" ? "/software/" : `/solutions#${item.id}`;
+          const path = item.link;
 
           return (
             <div className="flex flex-col lg:block" key={item.id}>
@@ -36,7 +35,7 @@ export default function Service({ data }) {
                 </div>
               </Link>
               <div className="p-6">
-                <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl">
+                <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl dark:text-white">
                   {item.title}
                 </h4>
                 <p className="text-gray-400 font-light text-base">

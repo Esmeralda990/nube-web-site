@@ -11,7 +11,7 @@ import { fontFamily as _fontFamily } from "tailwindcss/defaultTheme";
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     fontFamily: {
       sans: ["Poppins", ..._fontFamily.sans],
@@ -45,6 +45,7 @@ module.exports = {
         "theme-teal": " #339999",
         "dark-theme-blue": "#071435",
         "theme-blue": "#184171",
+        "theme-dark": "#0F1320",
       },
       margin: {
         "-112": "-28rem",

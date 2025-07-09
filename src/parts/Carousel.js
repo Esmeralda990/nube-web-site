@@ -3,7 +3,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/no-array-index-key */
 import React from "react";
-import Lottie from "lottie-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -35,20 +34,22 @@ export default function Carousel() {
             <section className="container mx-auto lg:px-4 px-4">
               <div className="flex flex-col md:flex-row items-center ">
                 <div className="w-full lg:w-1/2 sm:pr-2 mt-2 flex flex-col justify-center items-start">
-                  <h2 className="text-2xl lg:text-5xl text-theme-blue text-left font-light mb-5 max-w-xl lg:mt-20">
+                  <h2 className="text-2xl lg:text-5xl text-theme-blue dark:text-white text-left font-light mb-5 max-w-xl lg:mt-20 ">
                     {slide.Subtitles}
                   </h2>
                   <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12 max-w-xl">
                     {slide.description}
                   </p>
                 </div>
-                <div className="w-full justify-center lg:w-1/2 pt-6 lg:scale-[1.1] scale-[1.1]">
+                <div className="w-full justify-center lg:w-1/2 pt-6">
                   <Fade triggerOnce>
-                    <Lottie
+                    <video
                       key={slide.id}
-                      animationData={slide.image}
-                      autoplay
-                      className="w-full max-w-xs xl:max-w-5xl h-auto"
+                      src={slide.image}
+                      autoPlay
+                      muted
+                      loop
+                      className="w-full max-w-xs lg:max-w-4xl h-auto"
                     />
                   </Fade>
                 </div>

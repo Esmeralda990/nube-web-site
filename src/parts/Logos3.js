@@ -9,12 +9,12 @@ const Logos3 = ({ heading, logos = Logos }) => {
   return (
     <section className="mb-24">
       <div className="container mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h2 className="text-2xl lg:text-5xl  text-theme-blue font-bold leading-tight lg:text-center ">
+        <h2 className="text-2xl lg:text-5xl  text-theme-blue font-bold leading-tight lg:text-center dark:text-white">
           {heading}
         </h2>
         <a
           href="/cases/"
-          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold"
+          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold dark:text-white"
         >
           ✨ Explore our customers success stories
           <span className="flex size-7 items-center justify-center rounded-full bg-muted">
@@ -24,7 +24,7 @@ const Logos3 = ({ heading, logos = Logos }) => {
       </div>
 
       <div
-        className="relative mx-auto overflow-hidden fade-mask"
+        className="relative mx-auto overflow-hidden fade-mask "
         style={{ paddingTop: "2 rem", maxWidth: "70%" }}
       >
         {" "}

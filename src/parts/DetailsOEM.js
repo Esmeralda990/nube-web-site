@@ -11,7 +11,7 @@ export default function Detailoem() {
     <section className="hero sm:items-center lg:items-start sm:flex-row pt-12 lg:pt-24">
       <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 ">
         <Fade triggerOnce>
-          <h1 className="text-3xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-4xl mx-auto">
+          <h1 className="text-3xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-4xl mx-auto dark:text-white">
             OEM Solutions
           </h1>
         </Fade>

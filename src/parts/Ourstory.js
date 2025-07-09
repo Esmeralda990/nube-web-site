@@ -22,10 +22,10 @@ const Ourstory = () => {
   const progressWidth = `${(OurStoryD[0].length - 1) * 6}%`;
 
   return (
-    <section className="bg-white w-full lg:py-20 lg:mb-24 mt-16 mb-12">
+    <section className=" w-full lg:py-20 lg:mb-24 mt-16 mb-12 ">
       <div className="container mx-auto space-y-10 px-8 ">
         <div className="text-center mx-auto">
-          <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8">
+          <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8 dark:text-white">
             Our Story
           </h1>
           <p className="mx-auto text-gray-400 font-light text-base lg:text-lg max-w-xl mb-16">
@@ -55,7 +55,7 @@ const Ourstory = () => {
                     key={phase.id}
                     className="flex flex-col items-center text-start pt-10 relative"
                   >
-                    <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 bg-white rounded-full ">
+                    <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 bg-white dark:bg-gray-900 rounded-full ">
                       <img
                         src={phase.icon}
                         alt={phase.title}
@@ -63,10 +63,10 @@ const Ourstory = () => {
                       />
                     </div>
                     <div className="pt-16">
-                      <p className="text-lg text-gray-500 whitespace-nowrap text-theme-teal">
+                      <p className="text-lg text-gray-500 whitespace-nowrap text-theme-teal dark:text-white">
                         {phase.date}
                       </p>
-                      <h4 className=" text-base lg:text-lg font-bold text-gray-900 mt-1 text-theme-blue">
+                      <h4 className=" text-base lg:text-lg font-bold text-gray-900 mt-1 text-theme-blue dark:text-theme-teal">
                         {phase.title}
                       </h4>
                       <p className="text-base text-gray-400 font-light mt-1 ">
@@ -84,14 +84,14 @@ const Ourstory = () => {
         <button
           type="button"
           onClick={scrollLeft}
-          className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
+          className="p-2 bg-white dark:bg-gray-900 border rounded-full shadow hover:bg-gray-100"
         >
           <ArrowLeft size={20} className="text-theme-teal" />
         </button>
         <button
           type="button"
           onClick={scrollRight}
-          className="p-2 bg-white border rounded-full shadow hover:bg-gray-100"
+          className="p-2 bg-white dark:bg-gray-900 border rounded-full shadow hover:bg-gray-100"
         >
           <ArrowRight size={20} className="text-theme-teal" />
         </button>

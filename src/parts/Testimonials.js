@@ -12,13 +12,13 @@ const Testimonials = () => {
   return (
     <section className="lg:py-24">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
-        <p className="mb-8 max-w-2xl font-medium md:px-8 lg:text-xl text-gray-800">
+        <p className="mb-8 max-w-6xl font-light md:px-8 lg:text-lg text-gray-400 dark:text-gray-400">
           &ldquo;{Testimonial.text}&rdquo;
         </p>
-        <p className="mb-1 text-sm font-medium md:text-lg text-gray-900">
+        <p className="mb-1 text-sm font-medium lg:text-lg text-theme-blue dark:text-white">
           {Testimonial.name}
         </p>
-        <p className="mb-2 text-sm text-gray-500 md:text-lg">
+        <p className="mb-2 text-sm text-gray-500 lg:text-md dark:text-white">
           {Testimonial.role}
         </p>
         <div className="mt-2 flex items-center gap-1">

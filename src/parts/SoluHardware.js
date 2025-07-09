@@ -10,11 +10,11 @@ import { Badges } from "../json/landingPageData.js";
 
 export default function SoluHardware() {
   return (
-    <div className="bg-white container mx-auto lg:max-w-screen-xl mb-12">
+    <div className=" container mx-auto lg:max-w-screen-xl mb-12">
       <section className="sm:items-center lg:items-start sm:flex-row pt-12 relative">
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-8">
           <Fade triggerOnce>
-            <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-16 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-5xl text-theme-blue text-center font-bold leading-tight mb-16 max-w-3xl mx-auto dark:text-white">
               Industry-Leading Solutions and Expertise
             </h2>
           </Fade>
@@ -28,8 +28,8 @@ export default function SoluHardware() {
           </Fade>
 
           <div className="relative mx-auto w-full lg:max-w-[80%] overflow-hidden">
-            <div className="absolute left-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-r from-white to-transparent hidden md:block" />
-            <div className="absolute right-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-l from-white to-transparent hidden md:block" />
+            <div className="absolute left-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-r from-white to-transparent hidden md:block dark:from-theme-dark" />
+            <div className="absolute right-0 top-0 h-full w-20 z-20 pointer-events-none bg-gradient-to-l from-white to-transparent hidden md:block dark:from-theme-dark" />
 
             <div className="flex animate-scroll-left justify-start gap-4 z-10 relative">
               {[...Badges.slice(0, 5), ...Badges.slice(0, 5)].map((item) => (

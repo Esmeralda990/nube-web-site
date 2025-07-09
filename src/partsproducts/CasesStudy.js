@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Casestudys({ data }) {
   return (
-    <div className="bg-white lg:py-24 pt-12 mb-6">
+    <div className="lg:py-24 pt-12 mb-6">
       <div className="container mx-auto px-12 lg:max-w-screen-xl">
         <div className="grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-6">
           {data.map((item, index) => (

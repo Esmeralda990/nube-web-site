@@ -12,13 +12,13 @@ export default function Solutionsfeature({ data }) {
   const allCards = data.flat();
 
   return (
-    <div className="bg-white lg:pb-28 pt-12 mb-6  ">
+    <div className="lg:pb-28 pt-12 mb-6  ">
       <div className="container mx-auto  px-12 max-w-screen-xl">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-gray-800 "
             >
               <Link to={item.link}>
                 <img
@@ -28,7 +28,7 @@ export default function Solutionsfeature({ data }) {
                 />
               </Link>
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-center">
+                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-center dark:text-white">
                   {item.title}
                 </h4>
                 <p className="font-light text-lg text-gray-400 text-left mb-6">

@@ -14,7 +14,7 @@ export default function HeroSoftware() {
     <>
       <section className="mt-12 container lg:max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:mt-24 ">
         <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
-          <h1 className="text-3xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 lg:mt-12">
+          <h1 className="text-3xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 lg:mt-12 dark:text-white s">
             Rubix CE: Powerful and Intuitive Control
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
