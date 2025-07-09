@@ -91,6 +91,7 @@ export const Services = [
     imageUrl: Sofware,
     type: "Desktop, licence-free BMS programming software with real-time analytics and intuitive control.",
     animation: "left",
+    link: "/software/",
   },
   {
     id: "Hardware",
