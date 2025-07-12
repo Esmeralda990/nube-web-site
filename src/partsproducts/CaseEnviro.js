@@ -6,7 +6,8 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
 
-import bgImg from "../assets/images/ImgFooter/Fondo_Hom.svg";
+import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
+import bgImgDark from "../assets/images/ImgFooter/Fondo_Home.svg";
 import Enviro from "../assets/images/CaseStudy/Enviro.png";
 
 const CaseEnviro2 = () => {
@@ -15,18 +16,23 @@ const CaseEnviro2 = () => {
       <div className="relative lg:max-w-[130rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.4]">
         <div className="absolute inset-0 z-0">
           <img
-            src={bgImg}
-            alt="Background"
-            className="w-full h-full object-cover opacity-70"
+            src={bgImgLight}
+            alt="Light Background"
+            className="block dark:hidden w-full h-full object-cover opacity-70"
           />
-          <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white z-10" />
+          <img
+            src={bgImgDark}
+            alt="Dark Background"
+            className="hidden dark:block w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
         <div className="relative z-10 container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
-                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue">
+                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
                   Enhancing Sustainability and Efficiency
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
@@ -44,7 +50,7 @@ const CaseEnviro2 = () => {
         <div className="mx-auto w-full max-w-5xl lg:flex lg:gap-20 ">
           <div className="flex w-full max-w-[40rem] mx-auto flex-col gap-10">
             <div className="prose">
-              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue mb-12 pt-4 text-center mt-12">
+              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue mb-12 pt-4 text-center mt-12 dark:text-white">
                 Enviro Building Services - Smarter Retrofits
               </h2>
               <img
@@ -52,7 +58,7 @@ const CaseEnviro2 = () => {
                 alt="Enviro Building"
                 className="w-full scale-[0.4] object-contain "
               />
-              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 pt-4">
+              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 pt-4 dark:text-theme-teal">
                 Overview
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
@@ -60,7 +66,7 @@ const CaseEnviro2 = () => {
                 high-profile commercial sites.
               </p>
               <br />
-              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 ">
+              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 dark:text-theme-teal ">
                 Challenge
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
@@ -74,7 +80,7 @@ const CaseEnviro2 = () => {
                 smarter, more efficient building systems.
               </p>
               <br />{" "}
-              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 ">
+              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 dark:text-theme-teal">
                 Solution
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
@@ -90,7 +96,7 @@ const CaseEnviro2 = () => {
                 minimal disruption.
               </p>
               <br />
-              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 ">
+              <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 dark:text-theme-teal">
                 Results
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
@@ -114,7 +120,7 @@ const CaseEnviro2 = () => {
                 <span className="text-theme-teal transition-transform group-hover:translate-x-1">
                   ←
                 </span>
-                <h4 className="text-2xl font-bold text-theme-blue">
+                <h4 className="text-2xl font-bold text-theme-blue dark:text-white">
                   Case Studies
                 </h4>
               </a>

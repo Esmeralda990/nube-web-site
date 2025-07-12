@@ -18,7 +18,7 @@ export default function Solutionsfeature({ data }) {
           {allCards.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-gray-800 "
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
               <Link to={item.link}>
                 <img
@@ -28,7 +28,7 @@ export default function Solutionsfeature({ data }) {
                 />
               </Link>
               <div className="px-6 py-5 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-center dark:text-white">
+                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-center dark:text-theme-teal">
                   {item.title}
                 </h4>
                 <p className="font-light text-lg text-gray-400 text-left mb-6">
@@ -36,7 +36,7 @@ export default function Solutionsfeature({ data }) {
                 </p>
                 <Link
                   to={item.link}
-                  className="mt-4 flex items-center gap-2 font-medium text-theme-teal"
+                  className="mt-4 flex items-center gap-2 font-medium text-theme-teal dark:text-white"
                 >
                   Learn more
                   <ChevronRight className="w-4" />

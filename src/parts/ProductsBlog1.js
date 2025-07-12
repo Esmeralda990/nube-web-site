@@ -18,11 +18,11 @@ const CaseBlog1 = () => {
           </h2>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 justify-center gap-6 md:grid-cols-2 lg:grid-cols-3 ">
           {Blog1.map((item, index) => (
             <div
               key={index}
-              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem]"
+              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem] dark:bg-theme-tarjet dark:border-theme-border"
             >
               <div className="w-full">
                 <Link to={item.link}>
@@ -41,7 +41,7 @@ const CaseBlog1 = () => {
                 <div className="flex justify-between items-center text-sm mt-auto">
                   <a
                     href={item.link}
-                    className="flex items-center gap-1 font-light text-base hover:text-theme-teal transition-colors duration-300"
+                    className="flex items-center gap-1 font-light text-base hover:text-theme-teal transition-colors duration-300 dark:text-white"
                   >
                     Read more
                     <ChevronRight className="h-full w-3" />

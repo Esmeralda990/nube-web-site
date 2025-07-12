@@ -15,7 +15,7 @@ const RubixLW = () => {
   return (
     <section className="lg:mt-28 lg:mt-12 pb-32 mt-4">
       <div className="container mx-auto px-12">
-        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Connect LW <br />
           Seamless LoRaWAN® Connectivity
           <br />
@@ -43,7 +43,7 @@ const RubixLW = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 Capabilities
               </h3>
               <div>
@@ -60,14 +60,14 @@ const RubixLW = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border px-4 py-2 text-sm ">
+                      <td className="border px-4 py-2 text-sm dark:text-white">
                         Supported Frequencies
                       </td>
-                      <td className="border px-4 py-2 font-light text-sm">
+                      <td className="border px-4 py-2 font-light text-sm dark:text-white">
                         AU915-928
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm">
                         Spreading Factor
                       </td>
@@ -75,13 +75,13 @@ const RubixLW = () => {
                         6-12
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm ">Bandwidth</td>
                       <td className="border px-4 py-2 font-light text-sm">
                         7.8 – 500 kHz
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm">
                         Effective Bitrate
                       </td>
@@ -89,7 +89,7 @@ const RubixLW = () => {
                         .018 – 37.5 kbps
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm">
                         Estimated Sensitivity
                       </td>
@@ -136,7 +136,7 @@ const RubixLW = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               Just a few of the benefits
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">

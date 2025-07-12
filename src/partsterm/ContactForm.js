@@ -136,7 +136,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="lg:mt-40 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0">
+              <h1 className="lg:mt-40 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
                 Ready to Future Proof Your Building?
               </h1>
             </div>
@@ -182,10 +182,10 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 md:mt-48">
+          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 md:mt-48 ">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
-                <div className="grid w-full items-center gap-3 font-bold text-theme-blue">
+                <div className="grid w-full items-center gap-3 font-bold text-theme-blue dark:text-white">
                   <label htmlFor="name">Name *</label>
                   <input
                     type="text"
@@ -193,11 +193,11 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Name"
-                    className="w-full p-1 border rounded font-light"
+                    className="w-full p-1 border rounded font-light dark:bg-theme-dark "
                     required
                   />
                 </div>
-                <div className="grid w-full items-center gap-3 font-bold text-theme-blue">
+                <div className="grid w-full items-center gap-3 font-bold text-theme-blue dark:text-white">
                   <label htmlFor="email">Email *</label>
                   <input
                     type="email"
@@ -205,13 +205,13 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="w-full p-1 border rounded font-light"
+                    className="w-full p-1 border rounded font-light dark:bg-theme-dark"
                     required
                   />
                 </div>
               </div>
 
-              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold text-theme-blue">
+              <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold text-theme-blue dark:text-white">
                 <label htmlFor="company">Company/Organization</label>
                 <input
                   type="text"
@@ -219,14 +219,14 @@ const ContactForm = () => {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Company/Organization"
-                  className="w-full p-1 border rounded font-light"
+                  className="w-full p-1 border rounded font-light dark:bg-theme-dark"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="inquiry"
-                  className="font-bold text-theme-blue mb-6 mt-6 gap-3"
+                  className="font-bold text-theme-blue mb-6 mt-6 gap-3 dark:text-white"
                 >
                   Tell us about your inquiry *
                 </label>
@@ -234,7 +234,7 @@ const ContactForm = () => {
                   id="inquiry"
                   value={formData.inquiry}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded mt-4 font-light text-gray-400"
+                  className="w-full p-2 border rounded mt-4 font-light text-gray-400 dark:bg-theme-dark"
                 >
                   <option value="">Select</option>
                   <option value="Request a product demo">
@@ -255,7 +255,7 @@ const ContactForm = () => {
               <div className="grid w-full items-center gap-3  mb-6 mt-6">
                 <label
                   htmlFor="message"
-                  className="mb-2.5 font-bold text-theme-blue"
+                  className="mb-2.5 font-bold text-theme-blue dark:text-white"
                 >
                   Message
                 </label>
@@ -264,7 +264,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Add any extra details you’d like to share."
-                  className="w-full p-2 border rounded font-light mb-2.5"
+                  className="w-full p-2 border rounded font-light mb-2.5 dark:bg-theme-dark"
                   rows="4"
                 />
               </div>

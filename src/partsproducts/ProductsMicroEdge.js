@@ -15,7 +15,7 @@ const MicroEdge = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-32 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+        <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           MicroEdge <br />
           Small Form, Powerful Edge Control
         </h1>
@@ -41,7 +41,7 @@ const MicroEdge = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-white">
                 Capabilities
               </h3>
               <div>
@@ -58,16 +58,16 @@ const MicroEdge = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border px-4 py-2 text-sm">
+                      <td className="border px-4 py-2 text-sm dark:text-white">
                         MicorEdge® capabilities
                       </td>
-                      <td className="border px-4 py-2 font-light text-sm">
+                      <td className="border px-4 py-2 font-light text-sm dark:text-white">
                         The MicroEdge supports 3x UI (universal inputs) and 1x
                         pulse input (normally used for a gas or water meter
                         reading)
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm  ">
                         Pulse Specifications 1x off{" "}
                       </td>
@@ -75,7 +75,7 @@ const MicroEdge = () => {
                         Dry Contact
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm ">
                         UI Specifications (3x off)
                       </td>
@@ -114,7 +114,7 @@ const MicroEdge = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               Just a few of the benefits
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
@@ -131,10 +131,10 @@ const MicroEdge = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               More about More MicroEdge
             </h3>
-            <h4 className="text-base lg:text-xl font-bold text-theme-teal mb-2">
+            <h4 className="text-base lg:text-xl font-bold text-theme-teal mb-2 dark:text-white">
               Why Lora®
             </h4>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">

@@ -21,7 +21,7 @@ export default function SoftwareBenefits() {
           {IconsBenefits.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-gray-800"
+              className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border shadow-md transition duration-300 "
             >
               <img
                 className=" object-contain w-7 h-12 ml-7 pt-4"
@@ -29,7 +29,7 @@ export default function SoftwareBenefits() {
                 alt={item.title}
               />
               <div className="px-6 py-3 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left dark:text-white ">
+                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left dark:text-theme-teal ">
                   {item.title}
                 </h4>
                 <p className="font-light text-lg text-gray-400 text-left ">

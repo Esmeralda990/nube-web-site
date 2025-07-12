@@ -11,7 +11,7 @@ export default function Casestudys({ data }) {
           {data.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
               <div className="group rounded-xl">
                 <img
@@ -21,7 +21,7 @@ export default function Casestudys({ data }) {
                 />
                 <div className="py-2">
                   {" "}
-                  <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4">
+                  <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4 dark:text-theme-teal">
                     {item.title}
                   </h4>
                   <p className="font-light text-gray-400 text-center mb-4">
@@ -31,7 +31,7 @@ export default function Casestudys({ data }) {
                 <div className=" px-6 py-4">
                   <a
                     href={item.link || "#"}
-                    className="block text-center text-sm font-semibold text-white bg-theme-teal hover:bg-teal-600 transition-colors py-2 px-4 rounded-xl"
+                    className="block text-center text-sm font-bold text-white bg-theme-teal hover:bg-white hover:text-black  border border-theme-teal  py-2 px-4 rounded-xl mb-6"
                   >
                     Learn More
                   </a>

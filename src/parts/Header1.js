@@ -27,7 +27,7 @@ const Header1 = () => {
   };
 
   return (
-    <header className="sticky top-0 w-full bg-white shadow-md z-[1000] dark:bg-gray-800 dark:text-white ">
+    <header className="sticky top-0 w-full bg-white shadow-md z-[1000] dark:bg-theme-dark dark:text-white shadow-md">
       <div className="nav-area flex justify-between items-center px-6 py-4">
         <div className="logo flex-shrink-0">
           <BrandIcon />

@@ -46,6 +46,9 @@ module.exports = {
         "dark-theme-blue": "#071435",
         "theme-blue": "#184171",
         "theme-dark": "#0F1320",
+        "theme-gray": "#E3E2E2",
+        "theme-tarjet": "#151A27",
+        "theme-border": "#1e2433",
       },
       margin: {
         "-112": "-28rem",

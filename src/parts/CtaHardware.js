@@ -9,7 +9,7 @@ export default function CtaHardware() {
   return (
     <section className="lg:py-32 px-8 mt-12 pb-16">
       <div className="container mx-auto lg:max-w-screen-xl">
-        <div className="flex flex-col items-center rounded-lg bg-gray-100 p-8 text-center md:rounded-xl lg:p-16 dark:bg-gray-800">
+        <div className="flex flex-col items-center rounded-lg bg-gray-100 p-8 text-center md:rounded-xl lg:p-16 dark:bg-theme-tarjet dark:border border-theme-border">
           <h3 className="mb-3 max-w-3xl text-lg lg:text-3xl font-bold md:mb-4 lg:mb-6 text-theme-blue dark:text-white ">
             Smarter Buildings. Forward Thinking.
           </h3>

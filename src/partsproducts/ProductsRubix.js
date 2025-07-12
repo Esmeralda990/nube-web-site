@@ -15,7 +15,7 @@ const ProductRubix = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-32 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Compute <br />
           Multi-protocol control. <br />
           Scalable. Smart.
@@ -42,14 +42,14 @@ const ProductRubix = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue ">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 One Device. Multiple Protocols
               </h3>
               <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:break-words overflow-hidden max-w-xl">
                 The Rubix-Compute can be used in the modern web via a REST-API.
                 But the device is also a native BACnet/IP device.
               </p>
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 One Device. Multiple Configurations
               </h3>
               <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed  sm:break-words overflow-clip max-w-xl mb-8">
@@ -57,10 +57,10 @@ const ProductRubix = () => {
                 types of building data via multiple peripherals
               </p>
               <div className="overflow-x-auto ">
-                <table className="min-w-m sm:min-w-xs table-auto justify-start ">
+                <table className="min-w-m sm:min-w-xs table-auto justify-start">
                   <thead>
                     <tr>
-                      <th className="border px-4 py-2 bg-gray-200 font-bold text-sm">
+                      <th className="border px-4 py-2 bg-gray-200 font-bold text-sm ">
                         FEATURE
                       </th>
                       <th className="border px-4 py-2 bg-gray-300 font-bold text-sm">
@@ -70,24 +70,26 @@ const ProductRubix = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border px-4 py-2 text-sm">Integration</td>
-                      <td className="border px-4 py-2 font-light text-sm ">
+                      <td className="border px-4 py-2 text-sm dark:text-white ">
+                        Integration
+                      </td>
+                      <td className="border px-4 py-2 font-light text-sm dark:text-white ">
                         BACnet/IP
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm ">Memory</td>
                       <td className="border px-4 py-2 font-light text-sm ">
                         1GB RAM
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
-                      <td className="border px-4 py-2 text-sm">Storage</td>
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
+                      <td className="border px-4 py-2 text-sm ">Storage</td>
                       <td className="border px-4 py-2 font-light text-sm ">
                         8GB
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white ">
                       <td className="border px-4 py-2 text-sm ">
                         Ethernet Ports
                       </td>
@@ -95,13 +97,13 @@ const ProductRubix = () => {
                         2xDual NIC
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-sm">RS 485 Ports</td>
                       <td className="border px-4 py-2 font-light text-sm">
                         2x
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-xs sm:text-sm">
                         Built-in LoRa®
                       </td>
@@ -109,7 +111,7 @@ const ProductRubix = () => {
                         For Nube iO LoRa® sensors
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-xs sm:text-sm">
                         Add-on LoRaWAN®
                       </td>
@@ -117,7 +119,7 @@ const ProductRubix = () => {
                         For 3rd party LoRaWAN® sensors
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-xs sm:text-sm">
                         IO Expansion
                       </td>
@@ -125,7 +127,7 @@ const ProductRubix = () => {
                         Side plugin Power & Comms to IO 16
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-xs sm:text-sm">
                         RS 485 Expansion
                       </td>
@@ -168,7 +170,7 @@ const ProductRubix = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl md:text-2xl font-bold mt-8 text-theme-blue">
+            <h3 className="mb-4 text-xl md:text-2xl font-bold mt-8 text-theme-blue dark:text-theme-teal">
               Just a few of the benefits
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">

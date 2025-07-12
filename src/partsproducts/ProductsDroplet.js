@@ -15,7 +15,7 @@ const LoraDroplet = () => {
   return (
     <section className="lg:mt-28 mt-12 pb-12 md:ml-24 px-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center">
+        <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Droplet <br />
           Compact Sensors for <br />
           Smarter Monitoring
@@ -42,11 +42,11 @@ const LoraDroplet = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 Capabilities
               </h3>
               <div>
-                <table className="w-full table-auto">
+                <table className="w-full table-auto ">
                   <thead>
                     <tr>
                       <th className="border px-4 py-2 bg-gray-200 font-bolt ">
@@ -59,30 +59,30 @@ const LoraDroplet = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border px-4 py-2 ">
+                      <td className="border px-4 py-2 dark:text-white">
                         Supported Frequencies
                       </td>
-                      <td className="border px-4 py-2 font-light">
+                      <td className="border px-4 py-2 font-light dark:text-white">
                         868/915Mhz
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 ">Spreading Factor</td>
                       <td className="border px-4 py-2 font-light">6-12</td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 ">Bandwidth</td>
                       <td className="border px-4 py-2 font-light">
                         7.8 – 500 kHz
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2">Effective Bitrate</td>
                       <td className="border px-4 py-2 font-light">
                         .018 – 37.5 kbps
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2">
                         Estimated Sensitivity
                       </td>
@@ -94,7 +94,7 @@ const LoraDroplet = () => {
                 </table>
               </div>
 
-              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue">
+              <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 Sensor Specifications
               </h3>
               <div>
@@ -111,18 +111,20 @@ const LoraDroplet = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="border px-4 py-2 ">Temperature Sensor</td>
-                      <td className="border px-4 py-2 font-light">
+                      <td className="border px-4 py-2 dark:text-white">
+                        Temperature Sensor
+                      </td>
+                      <td className="border px-4 py-2 font-light dark:text-white">
                         @25°C ± 0.5°C, from 0…65°C ±1°C
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 ">Humidity Sensor</td>
                       <td className="border px-4 py-2 font-light">
                         -40°C - 85°C, Resolution .008 %RH
                       </td>
                     </tr>
-                    <tr className="m-0 border-t p-0 even:bg-muted">
+                    <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 ">Light Sensor</td>
                       <td className="border px-4 py-2 font-light">
                         Range of 1 – 65535lx
@@ -159,7 +161,7 @@ const LoraDroplet = () => {
               </Button>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               Just a few of the benefits
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
@@ -176,10 +178,10 @@ const LoraDroplet = () => {
               ))}
             </ul>
             <div className="my-6 w-full border-t border-gray-300" />
-            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto">
+            <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               More about the Droplet
             </h3>
-            <h4 className=" text-base lg:text-xl font-bold text-teal-600 mb-2">
+            <h4 className=" text-base lg:text-xl font-bold text-teal-600 mb-2 dark:text-white">
               Why Lora®
             </h4>
             <p className="font-light  text-base lg:text-lg  text-gray-400 leading-relaxed sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">

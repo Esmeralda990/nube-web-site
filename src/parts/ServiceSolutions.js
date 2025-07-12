@@ -11,7 +11,7 @@ export default function ServiceSolutions({ data }) {
           {data.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-gray-800"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border border-theme-border"
             >
               <div className="group rounded-xl">
                 <img
@@ -21,7 +21,7 @@ export default function ServiceSolutions({ data }) {
                 />
                 <div className="py-2">
                   {" "}
-                  <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4 dark:text-white">
+                  <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4 dark:text-theme-teal">
                     {item.title}
                   </h4>
                   <p className="font-light text-gray-400 text-center mb-4">

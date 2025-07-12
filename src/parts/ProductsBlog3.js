@@ -13,7 +13,7 @@ const CaseBlog3 = () => {
     <section className="lg:mb-32 mb-12 px-6 lg:mt-12 pb-12 ">
       <div className="container mx-auto max-w-fit">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="text-balance text-2xl lg:text-5xl font-bold text-theme-blue">
+          <h2 className="text-balance text-2xl lg:text-5xl font-bold text-theme-blue dark:text-white">
             Explore More Products
           </h2>
         </div>
@@ -22,7 +22,7 @@ const CaseBlog3 = () => {
           {Blog3.map((item, index) => (
             <div
               key={index}
-              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem]"
+              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem] dark:bg-theme-tarjet dark:border-theme-border"
             >
               <div className="w-full">
                 <Link to={item.link}>
@@ -41,7 +41,7 @@ const CaseBlog3 = () => {
                 <div className="flex justify-between items-center text-sm mt-auto">
                   <a
                     href={item.link}
-                    className="flex items-center gap-1 font-light text-base hover:text-theme-teal transition-colors duration-300"
+                    className="flex items-center gap-1 font-light text-base hover:text-theme-teal transition-colors duration-300 dark:text-white"
                   >
                     Read more
                     <ChevronRight className="h-full w-3" />

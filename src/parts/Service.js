@@ -10,7 +10,7 @@ import { ChevronRight } from "react-feather";
 
 export default function Service({ data }) {
   return (
-    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-40 lg:pb-24">
+    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-40 lg:pb-24 ">
       <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white">
         Define Your Smart Building Solution
       </h2>
@@ -26,16 +26,16 @@ export default function Service({ data }) {
           return (
             <div className="flex flex-col lg:block" key={item.id}>
               <Link to={path}>
-                <div className="h-full max-h-[400px] rounded-lg border bg-gray-100 p-3 hover:shadow-lg transition-shadow duration-300">
+                <div className="h-full max-h-[400px] rounded-lg border bg-gray-100 p-3 hover:shadow-lg dark:border-theme-border dark:bg-theme-tarjet transition-shadow duration-300">
                   <img
                     src={item.imageUrl}
                     alt={item.title}
-                    className="h-full w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105"
+                    className="h-full w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105 dark:border-theme-border"
                   />
                 </div>
               </Link>
               <div className="p-6">
-                <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl dark:text-white">
+                <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl dark:text-theme-teal">
                   {item.title}
                 </h4>
                 <p className="text-gray-400 font-light text-base">
@@ -43,7 +43,7 @@ export default function Service({ data }) {
                 </p>
                 <Link
                   to={path}
-                  className="mt-4 flex items-center gap-2 font-medium text-theme-teal"
+                  className="mt-4 flex items-center gap-2 font-medium text-theme-teal dark:text-white"
                 >
                   Learn more
                   <ChevronRight className="w-4" />

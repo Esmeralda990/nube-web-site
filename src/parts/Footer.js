@@ -33,7 +33,7 @@ const sections = [
 
 const Footer7 = () => {
   return (
-    <section className="py-32 bg-gray-200 dark:bg-gray-800">
+    <section className="py-32 bg-gray-200 dark:bg-theme-dark dark:border dark:border-theme-border">
       <div className="container mx-auto px-6">
         <footer>
           <div className="flex flex-col items-center justify-center gap-10 text-center lg:flex-row lg:text-left">
