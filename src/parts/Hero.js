@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="w-full px-5 flex flex-col mb-5 sm:px-12 sm:mt-6 max-w-5xl lg:mt-6 xl:pl-12 xl:mt-20">
           <Fade direction="" triggerOnce>
             <h1 className="text-3xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-4xl mt-24 dark:text-white">
-              Innovating the Future of Smart Building
+              Innovating the Future of Smart Buildings
             </h1>
           </Fade>
           <Fade triggerOnce delay={400}>

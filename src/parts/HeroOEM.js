@@ -13,7 +13,7 @@ export default function AdvantageOem({ data }) {
           {allCards.map((item, index) => (
             <div
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border border-theme-border"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
               <img
                 className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "

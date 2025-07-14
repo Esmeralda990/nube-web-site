@@ -17,7 +17,7 @@ export default class NotFoundPage extends Component {
         <div className="flex w-full justify-center">
           <img src={NotFound} alt="Not Found" className="sm:w-3/4 xl:w-3/12" />
         </div>
-        <h1 className="text-theme-blue text-2xl text-center mt-5">
+        <h1 className="text-theme-blue text-2xl text-center mt-5 dark:text-white">
           You weren't supposed to find this place...
         </h1>
         <div className="flex justify-center">

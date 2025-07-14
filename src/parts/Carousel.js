@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 /* eslint-disable react/no-array-index-key */
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,6 +13,17 @@ import { Slides } from "../json/landingPageData";
 import { Logos3 } from "./Logos3";
 
 export default function Carousel() {
+  const videoRefs = useRef([]);
+
+  const handleSlideChange = (swiper) => {
+    const currentIndex = swiper.activeIndex;
+    const currentVideo = videoRefs.current[currentIndex];
+
+    if (currentVideo) {
+      currentVideo.currentTime = 0;
+      currentVideo.play().catch(() => {});
+    }
+  };
   return (
     <>
       <Swiper
@@ -20,17 +31,18 @@ export default function Carousel() {
         pagination={{ clickable: true }}
         loop={false}
         autoplay={{
-          delay: 5000,
+          delay: 4000,
         }}
-        speed={300}
+        speed={200}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         preload="auto"
         playsInline
+        onSlideChange={handleSlideChange}
         className="w-full mb-20 lg:mb-40 mt-12"
         style={{ height: "auto" }}
       >
-        {Slides.map((slide) => (
+        {Slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
             <section className="container mx-auto lg:px-4 px-4">
               <div className="flex flex-col md:flex-row items-center ">
@@ -44,11 +56,15 @@ export default function Carousel() {
                 </div>
                 <div className="w-full lg:w-1/2 pt-6 flex justify-center lg:justify-end">
                   <video
+                    ref={(el) => {
+                      videoRefs.current[index] = el;
+                    }}
                     src={slide.image}
                     autoPlay
                     muted
                     loop
                     preload="auto"
+                    playsInline
                     className="w-full max-w-xs lg:max-w-4xl h-auto"
                   />
                 </div>

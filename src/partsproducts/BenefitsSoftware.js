@@ -24,7 +24,7 @@ export default function SoftwareBenefits() {
               className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border shadow-md transition duration-300 "
             >
               <img
-                className=" object-contain w-7 h-12 ml-7 pt-4"
+                className=" object-contain w-7 h-12 ml-7 pt-4 dark:text-white"
                 src={item.icon}
                 alt={item.title}
               />
