@@ -3,6 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable operator-linebreak */
 import React from "react";
+import GlowCard from "elements/GlowCard";
 import { IconsBenefits } from "../json/ProductsPageData";
 
 export default function SoftwareBenefits() {
@@ -19,14 +20,19 @@ export default function SoftwareBenefits() {
         </p>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {IconsBenefits.map((item, index) => (
-            <div
+            <GlowCard
               key={item.id || `${item.title}-${index}`}
-              className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border shadow-md transition duration-300 "
+              className="w-full bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet/70 dark:border-theme-border shadow-md transition duration-300 "
             >
               <img
-                className=" object-contain w-7 h-12 ml-7 pt-4 dark:text-white"
                 src={item.icon}
                 alt={item.title}
+                className="w-7 h-12 object-contain block dark:hidden ml-6 pt-4"
+              />
+              <img
+                src={item.iconDark}
+                alt={item.title}
+                className="w-7 h-12 object-contain hidden dark:block ml-6 pt-4"
               />
               <div className="px-6 py-3 flex-1 flex flex-col">
                 <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left dark:text-theme-teal ">
@@ -47,7 +53,7 @@ export default function SoftwareBenefits() {
                   </span>
                 ))}
               </div>
-            </div>
+            </GlowCard>
           ))}
         </div>
       </div>

@@ -7,6 +7,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "react-feather";
+import GlowCard from "elements/GlowCard";
 
 export default function Service({ data }) {
   return (
@@ -19,20 +20,25 @@ export default function Service({ data }) {
         sustainability.
       </p>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32 ">
         {data.map((item) => {
           const path = item.link;
 
           return (
-            <div className="flex flex-col lg:block" key={item.id}>
+            <div className="flex flex-col lg:block " key={item.id}>
               <Link to={path}>
-                <div className="h-full max-h-[400px] rounded-lg border bg-gray-100 p-3 hover:shadow-lg dark:border-theme-border dark:bg-theme-tarjet transition-shadow duration-300">
+                <GlowCard className="h-full max-h-[400px] border bg-gray-100 p-3 dark:bg-theme-tarjet/60 dark:border-theme-border rounded-xl ">
                   <img
                     src={item.imageUrl}
                     alt={item.title}
-                    className="h-full w-full rounded-lg object-cover transition-transform duration-300 hover:scale-105 dark:border-theme-border"
+                    className="aspect-[4/6] object-contain rounded-lg object-cover transition-transform duration-300 hover:scale-105 block dark:hidden"
                   />
-                </div>
+                  <img
+                    src={item.imageUrlDark}
+                    alt={item.title}
+                    className="aspect-[4/6] object-cover rounded-lg transition-transform duration-300 hover:scale-105 hidden dark:block"
+                  />
+                </GlowCard>
               </Link>
               <div className="p-6">
                 <h4 className="mb-1 font-semibold text-theme-blue text-base lg:text-xl dark:text-theme-teal">

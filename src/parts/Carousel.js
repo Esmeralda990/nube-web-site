@@ -65,7 +65,19 @@ export default function Carousel() {
                     loop
                     preload="auto"
                     playsInline
-                    className="w-full max-w-xs lg:max-w-4xl h-auto"
+                    className="w-full max-w-xs lg:max-w-4xl h-auto  block dark:hidden"
+                  />
+                  <video
+                    ref={(el) => {
+                      videoRefs.current[index] = el;
+                    }}
+                    src={slide.imageDark}
+                    autoPlay
+                    muted
+                    loop
+                    preload="auto"
+                    playsInline
+                    className="w-full max-w-xs lg:max-w-4xl h-auto hidden dark:block"
                   />
                 </div>
               </div>

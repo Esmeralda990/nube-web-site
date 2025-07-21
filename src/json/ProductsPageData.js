@@ -26,9 +26,13 @@ import Micro3 from "../assets/images/MicroEdge/MicroEdge03.png";
 
 // Icons Software Benefits
 import Unified from "../assets/images/IconsBenefitsSoftware/UnifiedPlatform.svg";
+import UnifiedDark from "../assets/images/IconsBenefitsSoftware/UnifiedDark.svg";
 import Open from "../assets/images/IconsBenefitsSoftware/OpenProtocol.svg";
+import OpenDark from "../assets/images/IconsBenefitsSoftware/OpenDark.svg";
 import Flexible from "../assets/images/IconsBenefitsSoftware/FlexibleScalable.svg";
+import FlexibleDark from "../assets/images/IconsBenefitsSoftware/FlexibleDark.svg";
 import Real from "../assets/images/IconsBenefitsSoftware/Monitoring.svg";
+import RealDark from "../assets/images/IconsBenefitsSoftware/RealDark.svg";
 
 // Gif Benefits
 import Anywhere from "../assets/Video/Node01.webm";
@@ -136,6 +140,7 @@ export const IconsBenefits = [
     description:
       "Drag-and-drop logic builder designed for fast, clear setup — no traditional coding required, making complex control easier than ever.",
     icon: Unified,
+    iconDark: UnifiedDark,
   },
   {
     id: "2",
@@ -143,6 +148,7 @@ export const IconsBenefits = [
     description:
       "Edit and deploy live logic while monitoring real-time device feedback — test, refine, and adjust without disrupting your building operations.",
     icon: Real,
+    iconDark: RealDark,
   },
   {
     id: "3",
@@ -150,6 +156,7 @@ export const IconsBenefits = [
     description:
       "Easily manage one or hundreds of buildings from one central login — designed to scale across portfolios, projects, or multi-site deployments.",
     icon: Flexible,
+    iconDark: FlexibleDark,
   },
   {
     id: "4",
@@ -157,6 +164,7 @@ export const IconsBenefits = [
     description:
       "Compatible with BACnet, Modbus, and LoRaWAN® protocols — Rubix CE connects your devices and systems into one smart automation workflow.",
     icon: Open,
+    iconDark: OpenDark,
   },
 ];
 

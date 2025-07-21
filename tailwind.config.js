@@ -42,13 +42,14 @@ module.exports = {
     extend: {
       colors: {
         "theme-yellow": "#FBB93E",
-        "theme-teal": " #339999",
+        "theme-teal": " #459AA4",
+        "theme-green": " #88c20e",
         "dark-theme-blue": "#071435",
         "theme-blue": "#184171",
-        "theme-dark": "#0F1320",
-        "theme-gray": "#E3E2E2",
-        "theme-tarjet": "#151A27",
-        "theme-border": "#1e2433",
+        "theme-dark": "#000000",
+        "theme-gray": "#e3e2e2",
+        "theme-tarjet": "#111111",
+        "theme-border": "#ffffff1a",
       },
       margin: {
         "-112": "-28rem",

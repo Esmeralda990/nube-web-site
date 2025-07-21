@@ -7,6 +7,10 @@ import Sofware from "../assets/images/Services/Software.webp";
 import OEM from "../assets/images/Services/OEM.webp";
 import Professional from "../assets/images/Services/Professional.webp";
 import Hardware from "../assets/images/Services/Hardware.webp";
+import SofwareDark from "../assets/images/Services/SoftwareDark.webp";
+import OEMDark from "../assets/images/Services/OEMDark.webp";
+import ProfessionalDark from "../assets/images/Services/ProfessionalDark.webp";
+import HardwareDark from "../assets/images/Services/Hardwaredark.webp";
 
 // Logos
 import logo1 from "../assets/images/Logos/7.svg";
@@ -17,18 +21,36 @@ import Logo5 from "../assets/images/Logos/Schneider.svg";
 import Logo6 from "../assets/images/Logos/Sydney.svg";
 import Logo7 from "../assets/images/Logos/VictoriaState.svg";
 import Logo8 from "../assets/images/Logos/Westpac.svg";
-import Logo9 from "../assets/images/Logos/Unsw.png";
-import Logo10 from "../assets/images/Logos/Pulford.png";
-import Logo11 from "../assets/images/Logos/Property.png";
-import Logo12 from "../assets/images/Logos/JLL.png";
-import Logo13 from "../assets/images/Logos/Honeywell.png";
-import Logo14 from "../assets/images/Logos/Aldi.png";
-import Logo15 from "../assets/images/Logos/Costco.png";
+import Logo9 from "../assets/images/Logos/unsw.svg";
+import Logo10 from "../assets/images/Logos/Pulford.svg";
+import Logo11 from "../assets/images/Logos/nsw.svg";
+import Logo12 from "../assets/images/Logos/JLL.svg";
+import Logo13 from "../assets/images/Logos/Honeywell.svg";
+import Logo14 from "../assets/images/Logos/Aldi 1.svg";
+import Logo15 from "../assets/images/Logos/Costco.svg";
+import Logo16 from "../assets/images/Logos/7d.svg";
+import Logo17 from "../assets/images/Logos/Fujitsud.svg";
+import Logo18 from "../assets/images/Logos/Macd.svg";
+import Logo19 from "../assets/images/Logos/Qantasd.svg";
+import Logo20 from "../assets/images/Logos/Schneiderd.svg";
+import Logo21 from "../assets/images/Logos/SydneyD.svg";
+import Logo22 from "../assets/images/Logos/VictoriaD.svg";
+import Logo23 from "../assets/images/Logos/Westpacd.svg";
+import Logo24 from "../assets/images/Logos/unswd.svg";
+import Logo25 from "../assets/images/Logos/pulfordd.svg";
+import Logo26 from "../assets/images/Logos/nswdark.svg";
+import Logo27 from "../assets/images/Logos/JLLd.svg";
+import Logo28 from "../assets/images/Logos/Honeywelld.svg";
+import Logo29 from "../assets/images/Logos/aldidark.svg";
+import Logo30 from "../assets/images/Logos/Costcod.svg";
 
 // Slides
 import slide1 from "../assets/Video/c1.webm";
 import slide2 from "../assets/Video/c2.webm";
 import slide3 from "../assets/Video/c3.webm";
+import slide1dark from "../assets/Video/c1_dark.webm";
+import slide2dark from "../assets/Video/c2_Dark.webm";
+import slide3dark from "../assets/Video/c3_Dark.webm";
 
 // AdvangeAbout
 import Company from "../assets/images/AdvangesAbout/Company1.svg";
@@ -89,6 +111,7 @@ export const Services = [
     id: "Software",
     title: "Software",
     imageUrl: Sofware,
+    imageUrlDark: SofwareDark,
     type: "Desktop, licence-free BMS programming software with real-time analytics and intuitive control.",
     animation: "left",
     link: "/software/",
@@ -97,6 +120,7 @@ export const Services = [
     id: "Hardware",
     title: "Hardware",
     imageUrl: Hardware,
+    imageUrlDark: HardwareDark,
     type: "Reliable, scalable devices designed for seamless integration and intelligent automation.",
     animation: "right",
     link: "/hardware/",
@@ -105,6 +129,7 @@ export const Services = [
     id: "Professional",
     title: "Professional Services",
     imageUrl: Professional,
+    imageUrlDark: ProfessionalDark,
     type: "Expert support, analytics, and insights to optimise your operational performance.",
     animation: "right",
     link: "/professional/",
@@ -113,6 +138,7 @@ export const Services = [
     id: "OEM",
     title: "OEM ",
     imageUrl: OEM,
+    imageUrlDark: OEMDark,
     type: "Fully customisable software and hardware solutions tailored specifically to your brands needs.",
     animation: "right",
     link: "/oem/",
@@ -124,90 +150,105 @@ export const Logos = [
     id: "Logo1",
     description: "Logo1",
     image: logo1,
+    imageDark: Logo16,
     className: "h-1 w-1 ",
   },
   {
     id: "Logo2",
     description: "Logo2",
     image: Logo2,
+    imageDark: Logo17,
     className: "h-1 w-1",
   },
   {
     id: "Logo3",
     description: "logo3",
     image: Logo3,
+    imageDark: Logo18,
     className: "h-1 w-1",
   },
   {
     id: "Logo4",
     description: "logo4",
     image: Logo4,
+    imageDark: Logo19,
     className: "h-1 w-1",
   },
   {
     id: "Logo5",
     description: "logo5",
     image: Logo5,
+    imageDark: Logo20,
     className: "h-1 w-1",
   },
   {
     id: "Logo6",
     description: "Logo6",
     image: Logo6,
+    imageDark: Logo21,
     className: "h-1 w-1",
   },
   {
     id: "Logo7",
     description: "logo7",
     image: Logo7,
+    imageDark: Logo22,
     className: "h-1 w-1",
   },
   {
     id: "Logo8",
     description: "Logo8",
     image: Logo8,
+    imageDark: Logo23,
     className: "h-1 w-1",
   },
   {
     id: "Logo9",
     description: "Logo9",
     image: Logo9,
+    imageDark: Logo24,
     className: "h-1 w-1",
   },
   {
     id: "Logo10",
     description: "Logo10",
     image: Logo10,
+    imageDark: Logo25,
     className: "h-1 w-1",
   },
   {
     id: "Logo11",
     description: "Logo11",
     image: Logo11,
+    imageDark: Logo26,
     className: "h-1 w-1",
   },
   {
     id: "Logo12",
     description: "Logo12",
     image: Logo12,
+    imageDark: Logo27,
     className: "h-1 w-1",
   },
   {
     id: "Logo13",
     description: "Logo13",
     image: Logo13,
+    imageDark: Logo28,
     className: "h-1 w-1",
   },
   {
     id: "Logo14",
     description: "Logo14",
     image: Logo14,
+    imageDark: Logo29,
     className: "h-1 w-1",
   },
   {
     id: "Logo15",
     description: "Logo15",
     image: Logo15,
+    imageDark: Logo30,
     className: "h-1 w-1",
   },
 ];
@@ -216,6 +257,7 @@ export const Slides = [
   {
     id: "slide-1",
     image: slide1,
+    imageDark: slide1dark,
     Subtitles: "The power to predict, adapt, and optimise",
     description:
       "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
@@ -223,6 +265,7 @@ export const Slides = [
   {
     id: "slide-2",
     image: slide2,
+    imageDark: slide2dark,
     Subtitles: "Total control of every connection",
     description:
       "Achieve seamless integration and visibility across devices, spaces, and systems, unified on one intuitive platform.",
@@ -230,6 +273,7 @@ export const Slides = [
   {
     id: "slide-3",
     image: slide3,
+    imageDark: slide3dark,
     Subtitles: "Insights that drive action",
     description:
       "Reveal hidden opportunities to improve efficiency, reduce costs, and enhance building performance.",

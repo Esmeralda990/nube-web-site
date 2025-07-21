@@ -7,6 +7,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "react-feather";
+import GlowCard from "elements/GlowCard";
 
 export default function Solutionsfeature({ data }) {
   const allCards = data.flat();
@@ -16,7 +17,7 @@ export default function Solutionsfeature({ data }) {
       <div className="container mx-auto  px-12 max-w-screen-xl">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
-            <div
+            <GlowCard
               key={item.id || `${item.title}-${index}`}
               className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
@@ -53,7 +54,7 @@ export default function Solutionsfeature({ data }) {
                   </span>
                 ))}
               </div>
-            </div>
+            </GlowCard>
           ))}
         </div>
       </div>

@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
+import GlowCard from "elements/GlowCard";
 
 export default function AdvantageOem({ data }) {
   const allCards = data.flat();
@@ -11,7 +12,7 @@ export default function AdvantageOem({ data }) {
       <div className="container mx-auto lg:max-w-screen-xl px-12">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {allCards.map((item, index) => (
-            <div
+            <GlowCard
               key={item.id || `${item.title}-${index}`}
               className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
@@ -45,7 +46,7 @@ export default function AdvantageOem({ data }) {
                   </span>
                 ))}
               </div>
-            </div>
+            </GlowCard>
           ))}
         </div>
       </div>

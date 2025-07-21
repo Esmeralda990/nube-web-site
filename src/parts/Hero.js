@@ -6,7 +6,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import bgImgDark from "../assets/images/ImgFooter/Fondo_Home.svg";
+import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
 
 export default function Hero() {
   return (

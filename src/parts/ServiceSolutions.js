@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/extensions */
 import React from "react";
+import GlowCard from "elements/GlowCard";
 
 export default function ServiceSolutions({ data }) {
   return (
@@ -9,7 +10,7 @@ export default function ServiceSolutions({ data }) {
       <div className="container mx-auto px-12 lg:max-w-screen-xl">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.map((item, index) => (
-            <div
+            <GlowCard
               key={item.id || `${item.title}-${index}`}
               className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
             >
@@ -29,7 +30,7 @@ export default function ServiceSolutions({ data }) {
                   </p>
                 </div>
               </div>
-            </div>
+            </GlowCard>
           ))}
         </div>
       </div>

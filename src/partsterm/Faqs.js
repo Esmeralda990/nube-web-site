@@ -10,7 +10,7 @@ import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { DataAccordion } from "../json/FaqData.js";
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import bgImgDark from "../assets/images/ImgFooter/Fondo_Home.svg";
+import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
 
 const FAQs = () => {
   const [openId, setOpenId] = useState(null);

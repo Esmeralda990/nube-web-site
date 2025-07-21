@@ -14,7 +14,7 @@ const Logos3 = ({ heading, logos = Logos }) => {
         </h2>
         <a
           href="/cases/"
-          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold dark:text-white"
+          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold dark:text-white dark:bg-theme-tarjet dark:border-theme-border dark:hover:bg-theme-teal/40"
         >
           ✨ Explore our customers success stories
           <span className="flex size-7 items-center justify-center rounded-full bg-muted">
@@ -48,7 +48,13 @@ const Logos3 = ({ heading, logos = Logos }) => {
               <img
                 src={logo.image}
                 alt={logo.description}
-                className="logo-image w-20 h-auto object-contain sm:w-30 md:w-40 lg:w-40 "
+                className="logo-image w-20 h-auto object-contain sm:w-30 md:w-40 lg:w-40 block dark:hidden"
+                style={{ maxWidth: "70%", height: "auto" }}
+              />
+              <img
+                src={logo.imageDark}
+                alt={logo.description}
+                className="logo-image w-20 h-auto object-contain sm:w-30 md:w-40 lg:w-40 hidden dark:block"
                 style={{ maxWidth: "70%", height: "auto" }}
               />
             </div>

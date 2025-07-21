@@ -16,8 +16,12 @@ const VidSoftware = () => {
           your fingertips.
         </p>
 
-        <div className="mx-auto  overflow-hidden px-12">
-          <div className="mx-auto aspect-[14/9] max-w-5xl rounded-xl p-6 lg:scale-[0.8]">
+        <div className="mx-auto overflow-hidden px-12">
+          <div className="relative mx-auto aspect-[14/9] max-w-5xl p-6 lg:scale-[0.8] rounded-xl">
+            {/* Glow efecto horizontal en dark mode */}
+            <div className="absolute inset-0 -z-10 hidden dark:block">
+              <div className="absolute inset-0 mx-auto h-[600px] w-[100%] bg-gradient-to-r from-theme-teal/80 via-theme-teal/80 to-white/80 blur-[60px] opacity-30 dark:opacity-50 transition-all duration-500 rounded-3xl" />
+            </div>
             <img
               src={GifSoftware}
               alt="GifSoftware"

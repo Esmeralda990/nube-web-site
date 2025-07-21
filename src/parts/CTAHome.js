@@ -7,13 +7,21 @@ import Button from "../elements/Button/index.js";
 
 export default function CtaHome() {
   return (
-    <section className="lg:py-32 px-8 pb-16">
-      <div className="container mx-auto lg:max-w-screen-xl">
-        <div className="flex flex-col items-center rounded-lg bg-gray-100  p-8 text-center md:rounded-xl lg:p-16 dark:bg-theme-tarjet dark:border border-theme-border">
+    <section className="relative lg:py-32 px-8 pb-16">
+      <div className="container mx-auto lg:max-w-screen-lg">
+        <div className="absolute inset-0 z-0 flex justify-center items-center">
+          <div
+            className="w-[95%] sm:w-[85%] md:w-[80%] lg:w-[45%] h-[180px] sm:h-[120px] md:h-[120px] lg:h-[220px] rounded-full 
+    bg-gradient-to-r from-white/80 via-white/80 to-white/80
+    blur-[60px] opacity-30 dark:opacity-50 transition-all duration-500"
+          />
+        </div>
+
+        <div className="relative z-10 flex flex-col items-center rounded-xl bg-gray-100 p-8 text-center lg:p-16 dark:bg-theme-tarjet/70 dark:border dark:border-theme-border shadow-xl">
           <h3 className="mb-3 max-w-3xl text-lg lg:text-3xl font-bold md:mb-4 lg:mb-6 text-theme-blue dark:text-white">
             Smarter Buildings. Forward Thinking.
           </h3>
-          <p className="mb-8 max-w-3xl text-muted-foreground text-base lg:text-lg font-light text-gray-500">
+          <p className="mb-8 max-w-3xl text-muted-foreground text-base lg:text-lg font-light text-gray-500 dark:text-gray-400">
             Are you ready to get smart? Contact Nube iO for a demo.
           </p>
           <div className="flex w-full justify-center">
