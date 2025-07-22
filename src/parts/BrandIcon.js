@@ -15,7 +15,7 @@ export default function BrandIcon() {
       <img
         src={logoSrc}
         alt="Logo Nube IO"
-        className="w-auto h-8 md:h-12 max-w-[192px] transition-all duration-300"
+        className="w-auto h-8 md:h-12 max-w-[192px] transition-all duration-300 ml-4"
       />
     </Link>
   );
