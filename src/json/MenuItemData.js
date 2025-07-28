@@ -7,11 +7,11 @@
 
 // Icons Menu
 import icons1 from "../assets/images/IconsMenu/ProfessionalServices.svg";
-import icons2 from "../assets/images/IconsMenu/OEM.svg";
-import icons3 from "../assets/images/IconsMenu/Hardware.svg";
-import icons4 from "../assets/images/IconsMenu/Software.svg";
+import icons2 from "../assets/images/IconsMenu/OEMicon.svg";
+import icons3 from "../assets/images/IconsMenu/Hardwareicon.svg";
+import icons4 from "../assets/images/IconsMenu/Softwareicon.svg";
 import icons6 from "../assets/images/IconsMenu/CaseScenario.svg";
-import icons7 from "../assets/images/IconsMenu/Support.svg";
+import icons7 from "../assets/images/IconsMenu/Supporticon.svg";
 import icons8 from "../assets/images/IconsMenu/FAQS.svg";
 
 export const menuItemsData = [

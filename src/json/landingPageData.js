@@ -3,14 +3,14 @@
 /* eslint-disable react/no-array-index-key */
 
 // Services Img Imports
-import Sofware from "../assets/images/Services/Software.webp";
-import OEM from "../assets/images/Services/OEM.webp";
-import Professional from "../assets/images/Services/Professional.webp";
-import Hardware from "../assets/images/Services/Hardware.webp";
-import SofwareDark from "../assets/images/Services/SoftwareDark.webp";
-import OEMDark from "../assets/images/Services/OEMDark.webp";
-import ProfessionalDark from "../assets/images/Services/ProfessionalDark.webp";
-import HardwareDark from "../assets/images/Services/Hardwaredark.webp";
+import Sofware from "../assets/images/Services/Software.svg";
+import OEM from "../assets/images/Services/OEM.svg";
+import Professional from "../assets/images/Services/Professional.svg";
+import Hardware from "../assets/images/Services/Hardware.svg";
+import SofwareDark from "../assets/images/Services/Softwaredark.svg";
+import OEMDark from "../assets/images/Services/OEMdark.svg";
+import ProfessionalDark from "../assets/images/Services/Professionaldark.svg";
+import HardwareDark from "../assets/images/Services/Hardwaredark.svg";
 
 // Logos
 import logo1 from "../assets/images/Logos/7.svg";
@@ -63,9 +63,12 @@ import IconsExc from "../assets/images/AdvangesAbout/ IconsCom.png";
 import IconsSol from "../assets/images/AdvangesAbout/GroupExc.png";
 
 // Service Solutions
-import Client from "../assets/images/ServiceSolutions/Client.webp";
-import Management from "../assets/images/ServiceSolutions/Establish.webp";
-import Energy from "../assets/images/ServiceSolutions/Energy.png";
+import Client from "../assets/images/ServiceSolutions/Client.svg";
+import ClientDark from "../assets/images/ServiceSolutions/Clientdark.svg";
+import Management from "../assets/images/ServiceSolutions/Establish.svg";
+import ManagementDark from "../assets/images/ServiceSolutions/Establishdark.svg";
+import Energy from "../assets/images/ServiceSolutions/Energy.svg";
+import EnergyDark from "../assets/images/ServiceSolutions/Energydark.svg";
 
 // Managers
 import CEOT from "../assets/images/Team/TomFyfe.png";
@@ -80,10 +83,14 @@ import Rubix16Solu from "../assets/images/ImgFooter/Rubix_io_16.svg";
 import ExpansionSolu from "../assets/images/ImgFooter/Rubix_Connect.svg";
 
 // AdvangeOEM Solutions
-import Labelling from "../assets/images/AdvantageSolutionOEM/Labelling.webp";
-import Custom from "../assets/images/AdvantageSolutionOEM/Custom.webp";
-import Leveraging from "../assets/images/AdvantageSolutionOEM/Leveraging.webp";
-import Support from "../assets/images/AdvantageSolutionOEM/Support.webp";
+import Labelling from "../assets/images/AdvantageSolutionOEM/Labelling.svg";
+import Labellingdark from "../assets/images/AdvantageSolutionOEM/Labellingdark.svg";
+import Custom from "../assets/images/AdvantageSolutionOEM/Custom.svg";
+import Customdark from "../assets/images/AdvantageSolutionOEM/Customdark.svg";
+import Leveraging from "../assets/images/AdvantageSolutionOEM/Leveraging.svg";
+import Leveragingdark from "../assets/images/AdvantageSolutionOEM/Leveragingdark.svg";
+import Support from "../assets/images/AdvantageSolutionOEM/Support.svg";
+import Supportdark from "../assets/images/AdvantageSolutionOEM/Supportdark.svg";
 
 // OurStory
 import IconsOur1 from "../assets/images/OurStory/Enviro1.svg";
@@ -101,10 +108,14 @@ import IconsOur12 from "../assets/images/OurStory/SoutheastAsia12.svg";
 import IconsOur13 from "../assets/images/OurStory/ZoneControl13.svg";
 
 // Why partner
-import Why1 from "../assets/images/WhoSupport/Dedicated.png";
-import Why2 from "../assets/images/WhoSupport/Technical.png";
-import Why3 from "../assets/images/WhoSupport/Marketing.png";
-import Why4 from "../assets/images/WhoSupport/Continuous.png";
+import Why1 from "../assets/images/WhoSupport/Dedicated.svg";
+import Why1Dark from "../assets/images/WhoSupport/Dedicateddark.svg";
+import Why2 from "../assets/images/WhoSupport/Technical.svg";
+import Why2Dark from "../assets/images/WhoSupport/Technicaldark.svg";
+import Why3 from "../assets/images/WhoSupport/Marketing.svg";
+import Why3Dark from "../assets/images/WhoSupport/Marketingdark.svg";
+import Why4 from "../assets/images/WhoSupport/Continuous.svg";
+import Why4Dark from "../assets/images/WhoSupport/Continuousdark.svg";
 
 export const Services = [
   {
@@ -474,6 +485,7 @@ export const ServiceSolutions = [
     id: "Client",
     title: "Client Solutions",
     imageUrl: Client,
+    imageUrlDark: ClientDark,
     type: "Tailored dashboards give complete visibility across your building portfolio—all in one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
     animation: "left",
   },
@@ -481,6 +493,7 @@ export const ServiceSolutions = [
     id: "Energy",
     title: "Energy Analytics",
     imageUrl: Energy,
+    imageUrlDark: EnergyDark,
     type: "Sustainability and green certifications like Green Star and NABERS are essential for client satisfaction. Nube iO helps optimise energy use, reducing consumption and ensuring your buildings run at optimal efficiency.",
     animation: "right",
   },
@@ -488,6 +501,7 @@ export const ServiceSolutions = [
     id: "Management",
     title: "Training & Support",
     imageUrl: Management,
+    imageUrlDark: ManagementDark,
     type: "We provide comprehensive guidance for clients and contractors during the dashboard setup process. Ensuring all users are set-up for success, Nube iO empowers your team to deliver better business outcomes.",
     animation: "right",
   },
@@ -583,12 +597,14 @@ export const AdvantageSolutions = [
       description:
         "Custom-branded interfaces and hardware that let your product shine—with Nube iO behind the scenes.",
       imageUrl: Labelling,
+      imageUrlDark: Labellingdark,
     },
     {
       title: "Scalable Commercial Models",
       description:
         "Flexible licencing and deployment strategies tailored to your business growth.",
       imageUrl: Custom,
+      imageUrlDark: Customdark,
     },
   ],
   [
@@ -597,12 +613,14 @@ export const AdvantageSolutions = [
       description:
         "Seamlessly embed Rubix devices and software into your existing platforms and product ecosystem.",
       imageUrl: Leveraging,
+      imageUrlDark: Leveragingdark,
     },
     {
       title: "Onboarding Enablement",
       description:
         "Partner toolkits, documentation, and training to get your team up and running—fast.",
       imageUrl: Support,
+      imageUrlDark: Supportdark,
     },
   ],
 ];
@@ -615,6 +633,7 @@ export const WhyData = [
       description:
         "Empower your offering with advanced technology, APIs, and integration tools designed for smart, scalable automation.",
       image: Why1,
+      imageDark: Why1Dark,
     },
     {
       id: "2",
@@ -622,6 +641,7 @@ export const WhyData = [
       description:
         "Build efficient, future-ready environments with open systems that reduce energy use and support long-term goals.",
       image: Why2,
+      imageDark: Why2Dark,
     },
     {
       id: "3",
@@ -629,6 +649,7 @@ export const WhyData = [
       description:
         "Access tailored campaigns, co-branded assets, and strategic tools to grow visibility and drive commercial success.",
       image: Why3,
+      imageDark: Why3Dark,
     },
     {
       id: "4",
@@ -636,6 +657,7 @@ export const WhyData = [
       description:
         "Equip your team with expert training, ongoing support, and the resources needed to deliver and scale confidently.",
       image: Why4,
+      imageDark: Why4Dark,
     },
   ],
 ];

@@ -51,10 +51,10 @@ const FAQs = () => {
         {DataAccordion.map((item) => (
           <div
             key={item.id}
-            className="border-c border-gray-100 dark:bg-theme-tarjet dark:border-theme-border"
+            className="border-c border-gray-100 dark:bg-theme-tarjet/70 dark:border-theme-border"
           >
             <button
-              className="w-full text-left py-4 px-6 bg-gray-50 hover:bg-gray-200 focus:outline-none flex items-center justify-between dark:bg-gray-800"
+              className="w-full text-left py-4 px-6 bg-gray-50 hover:bg-gray-200 focus:outline-none flex items-center justify-between dark:bg-theme-tarjet/70"
               onClick={() => handleToggle(item.id)}
             >
               <div className="flex items-center">
@@ -72,7 +72,7 @@ const FAQs = () => {
               </div>
             </button>
             {openId === item.id && (
-              <div className="px-6 py-4 bg-white dark:bg-gray-800">
+              <div className="px-6 py-4 bg-white dark:bg-theme-tarjet/70">
                 <p className="text-gray-400 font-light text-base lg:text-lg">
                   {item.answer}
                 </p>

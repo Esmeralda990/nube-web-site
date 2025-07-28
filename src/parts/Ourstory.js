@@ -84,16 +84,16 @@ const Ourstory = () => {
         <button
           type="button"
           onClick={scrollLeft}
-          className="p-2 bg-white dark:bg-gray-900 border rounded-full shadow hover:bg-gray-100"
+          className="p-2 bg-white dark:bg-theme-tarjet/70 border rounded-full shadow hover:bg-gray-100  dark:border-theme-border dark:hover:bg-theme-border"
         >
           <ArrowLeft size={20} className="text-theme-teal" />
         </button>
         <button
           type="button"
           onClick={scrollRight}
-          className="p-2 bg-white dark:bg-gray-900 border rounded-full shadow hover:bg-gray-100"
+          className="p-2 bg-white dark:bg-theme-tarjet/70 border rounded-full shadow hover:bg-gray-100  dark:border-theme-border dark:hover:bg-theme-border"
         >
-          <ArrowRight size={20} className="text-theme-teal" />
+          <ArrowRight size={20} className="text-theme-teal " />
         </button>
       </div>
     </section>

@@ -6,6 +6,7 @@
 /* eslint-disable max-len */
 import React from "react";
 import Team from "../assets/images/IconsTeam/Teams.svg";
+import Teamdark from "../assets/images/IconsTeam/Teamsdark.svg";
 
 const TeamGroup = () => {
   return (
@@ -29,8 +30,13 @@ const TeamGroup = () => {
 
           <div className="lg:w-1/2 flex justify-center mt-12">
             <img
-              className="w-full max-w-xl h-auto object-contain"
+              className="w-full max-w-xl h-auto object-contain  block dark:hidden"
               src={Team}
+              alt="Team group"
+            />
+            <img
+              className="w-full max-w-xl h-auto object-contain hidden dark:block"
+              src={Teamdark}
               alt="Team group"
             />
           </div>

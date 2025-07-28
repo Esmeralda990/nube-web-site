@@ -5,7 +5,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import IOT from "../assets/images/AdvantageSolutionOEM/Customise.webp";
+import Custom from "../assets/images/AdvantageSolutionOEM/Customise.svg";
+import Customdark from "../assets/images/AdvantageSolutionOEM/Customisedark.svg";
 
 const SmartOem = () => {
   return (
@@ -29,10 +30,15 @@ const SmartOem = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl">
+          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl dark:border-theme-border">
             <img
-              className="w-full max-w-xl h-auto object-contain rounded-xl"
-              src={IOT}
+              className="w-full max-w-xl h-auto object-contain rounded-xl block dark:hidden "
+              src={Custom}
+              alt="IOT"
+            />
+            <img
+              className="w-full max-w-xl h-auto object-contain rounded-xl hidden dark:block"
+              src={Customdark}
               alt="IOT"
             />
           </div>

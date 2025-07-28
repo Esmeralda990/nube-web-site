@@ -12,13 +12,18 @@ export default function ServiceSolutions({ data }) {
           {data.map((item, index) => (
             <GlowCard
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet/70 dark:border-theme-border"
             >
               <div className="group rounded-xl">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover block dark:hidden"
+                />
+                <img
+                  src={item.imageUrlDark}
+                  alt={item.title}
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover hidden dark:block"
                 />
                 <div className="py-2">
                   {" "}

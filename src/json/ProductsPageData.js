@@ -329,7 +329,7 @@ export const Casestudy = [
   },
   {
     id: "Daiken",
-    title: "Daiken",
+    title: "Daikin",
     imageUrl: Daikin,
     type: "Enhanced system response times to boost customer satisfaction.",
     animation: "right",

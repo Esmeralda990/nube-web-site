@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from "react";
+import GlowCard from "elements/GlowCard";
 import { WhyData } from "../json/landingPageData";
 
 export default function Partner() {
@@ -15,13 +16,18 @@ export default function Partner() {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {WhyData[0].map((item, index) => (
-            <div
+            <GlowCard
               key={item.id || `${item.title}-${index}`}
-              className="w-70 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border "
+              className="w-70 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet/70 dark:border-theme-border "
             >
               <img
-                className="max-w rounded overflow-hidden shadow-lg w-full h-30 object-cover"
+                className="max-w rounded overflow-hidden shadow-lg w-full h-30 object-cover block dark:hidden"
                 src={item.image}
+                alt={item.title}
+              />
+              <img
+                className="max-w rounded overflow-hidden shadow-lg w-full h-30 object-cover hidden dark:block"
+                src={item.imageDark}
                 alt={item.title}
               />
               <div className="px-6 py-3 flex-1 flex flex-col">
@@ -43,7 +49,7 @@ export default function Partner() {
                   </span>
                 ))}
               </div>
-            </div>
+            </GlowCard>
           ))}
         </div>
       </div>

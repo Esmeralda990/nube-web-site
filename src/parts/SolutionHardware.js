@@ -19,7 +19,7 @@ export default function Solutionsfeature({ data }) {
           {allCards.map((item, index) => (
             <GlowCard
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 flex flex-col dark:bg-theme-tarjet/70 dark:border-theme-border"
             >
               <Link to={item.link}>
                 <img

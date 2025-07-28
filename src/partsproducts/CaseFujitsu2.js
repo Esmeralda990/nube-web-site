@@ -7,7 +7,7 @@
 import React from "react";
 
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import bgImgDark from "../assets/images/ImgFooter/Fondo_Home.svg";
+import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
 import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
 
 const CaseFujitsu6 = () => {

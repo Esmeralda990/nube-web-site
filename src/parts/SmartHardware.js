@@ -5,7 +5,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import IOT from "../assets/images/IconsHardware/IoT.webp";
+import IOT from "../assets/images/IconsHardware/IoT.svg";
+import IOTDark from "../assets/images/IconsHardware/IoTdark.svg";
 
 const SmartHardw = () => {
   return (
@@ -28,10 +29,15 @@ const SmartHardw = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl">
+          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl dark:border-theme-border">
             <img
-              className="w-full max-w-xl h-auto object-contain rounded-xl"
+              className="w-full max-w-xl h-auto object-contain rounded-xl block dark:hidden"
               src={IOT}
+              alt="IOT"
+            />
+            <img
+              className="w-full max-w-xl h-auto object-contain rounded-xl hidden dark:block"
+              src={IOTDark}
               alt="IOT"
             />
           </div>

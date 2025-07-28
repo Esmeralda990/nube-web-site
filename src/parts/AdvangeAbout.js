@@ -38,7 +38,7 @@ const AdvAbout = () => {
               }}
               className={`cursor-pointer rounded-lg p-4 transition-opacity duration-300 ${
                 cardNumber === index ? "opacity-100" : "opacity-100"
-              }  ring-2 ring-theme-teal border dark:ring-theme-border dark:bg-theme-tarjet `}
+              }  ring-2 ring-theme-teal border dark:ring-theme-tarjet dark:bg-theme-tarjet`}
             >
               <div className="flex flex-col items-start gap-2 text-left">
                 <div className="w-6 h-6 mb-1">
@@ -62,7 +62,7 @@ const AdvAbout = () => {
             </div>
           ))}
         </div>
-        <div className="rounded-t-[28px] overflow-hidden border border-gray-200 dark:border-gray-800 ">
+        <div className="rounded-t-[28px] overflow-hidden border border-gray-200 dark:border-theme-border">
           <img
             src={advantages[cardNumber].image}
             alt={advantages[cardNumber].title}

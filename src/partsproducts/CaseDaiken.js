@@ -6,7 +6,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
-import bgImgDark from "../assets/images/ImgFooter/Fondo_Home.svg";
+import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
 import Daikin from "../assets/images/CaseStudy/Daikin_Blanco.png";
 
 const CaseDaikin3 = () => {

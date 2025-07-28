@@ -5,7 +5,8 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from "react";
-import Building from "../assets/images/ServiceSolutions/Building.webp";
+import Building from "../assets/images/ServiceSolutions/Building.svg";
+import Buildingdark from "../assets/images/ServiceSolutions/Buildingdark.svg";
 
 const SmartPS = () => {
   return (
@@ -28,10 +29,15 @@ const SmartPS = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl">
+          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl dark:border-theme-border">
             <img
-              className="w-full max-w-xl h-auto object-contain rounded-xl"
+              className="w-full max-w-xl h-auto object-contain rounded-xl block dark:hidden"
               src={Building}
+              alt="Building"
+            />
+            <img
+              className="w-full max-w-xl h-auto object-contain rounded-xl hidden dark:block"
+              src={Buildingdark}
               alt="Building"
             />
           </div>
