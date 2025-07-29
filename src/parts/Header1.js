@@ -73,7 +73,7 @@ const Header1 = () => {
       {isMenuOpen && (
         <div className="lg:hidden">
           <div className="transition-opacity duration-400 ease-in-out opacity-100">
-            <ul className="z-50 flex flex-col text-theme-blue  tracking-widest my-3 absolute bg-white w-full border-b-2 border-gray-300 dark:bg-gray-800 ">
+            <ul className="z-50 flex flex-col text-theme-blue  tracking-widest my-3 absolute bg-white w-full border-b-2 border-gray-300 dark:bg-theme-dark ">
               <li className="relative">
                 <button
                   className="flex items-center justify-between w-full px-4 py-3 text-theme-blue font-bold text-lg dark:text-white"
