@@ -17,7 +17,15 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden"
+              />
+              <video
+                src={GifBenefits[0].imageDark}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>
@@ -56,7 +64,15 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md"
+                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md  block dark:hidden"
+              />
+              <video
+                src={GifBenefits[1].imageDark}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[6/3] lg:scale-[1.3] w-full rounded-md hidden dark:block"
               />
             </div>
           </div>
@@ -96,7 +112,15 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden "
+              />
+              <video
+                src={GifBenefits[2].imageDark}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>
@@ -133,7 +157,15 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md "
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden"
+              />
+              <video
+                src={GifBenefits[3].imageDark}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>

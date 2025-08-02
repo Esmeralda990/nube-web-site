@@ -11,7 +11,7 @@ import { Testimonial } from "json/landingPageData";
 const Testimonials = () => {
   return (
     <section className="lg:py-24">
-      <div className="container mx-auto px-4 flex flex-col items-center text-center">
+      <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
         <p className="mb-8 max-w-6xl font-light md:px-8 lg:text-lg text-gray-400 dark:text-gray-400">
           &ldquo;{Testimonial.text}&rdquo;
         </p>

@@ -8,11 +8,11 @@ export default function Casestudys({ data }) {
   return (
     <div className="lg:py-24 pt-12 mb-6">
       <div className="container mx-auto px-12 lg:max-w-screen-xl">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-6">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-6 mb-12">
           {data.map((item, index) => (
             <GlowCard
               key={item.id || `${item.title}-${index}`}
-              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 flex flex-col dark:bg-theme-tarjet dark:border-theme-border"
+              className="w-88 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 flex flex-col dark:bg-theme-tarjet/60 dark:border-theme-border"
             >
               <div className="group rounded-xl">
                 <img

@@ -38,7 +38,7 @@ const contactMethods = [
   },
   {
     icon: Building,
-    title: "APAC Design Centre Vietnam",
+    title: "Design Centre Vietnam",
     description:
       "238 Đ. Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng 550000, Vietnam",
   },
@@ -153,7 +153,7 @@ const ContactForm = () => {
                   <div className="space-y-2 tracking-[-0.32px]">
                     {[
                       "Sydney office",
-                      "APAC Design Centre Vietnam",
+                      "Design Centre Vietnam",
                       "Warehouse",
                     ].includes(method.title) ? (
                       <a
@@ -264,7 +264,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Add any extra details you’d like to share."
-                  className="w-full p-2 border rounded font-light mb-2.5 dark:bg-theme-dark"
+                  className="w-full p-2 border rounded font-light mb-2.5 dark:bg-theme-dark dark:text-white"
                   rows="4"
                 />
               </div>

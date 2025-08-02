@@ -55,11 +55,16 @@ const Ourstory = () => {
                     key={phase.id}
                     className="flex flex-col items-center text-start pt-10 relative"
                   >
-                    <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 bg-white dark:bg-theme-dark rounded-full ">
+                    <div className="absolute top-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 bg-white dark:bg-theme-dark rounded-full ">
                       <img
                         src={phase.icon}
                         alt={phase.title}
-                        className="w-32 h-28"
+                        className="w-24 h-24 block dark:hidden"
+                      />
+                      <img
+                        src={phase.iconDark}
+                        alt={phase.title}
+                        className="w-24 h-24 hidden dark:block"
                       />
                     </div>
                     <div className="pt-16">

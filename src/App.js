@@ -37,6 +37,7 @@ import DaikinPage from "pages/DaikinPage";
 import VictorianPage from "pages/VictorianPage";
 import FujitsuPage from "pages/FujitsuPage1";
 import FujitsuPage2 from "pages/FujitsuPage2";
+import ComingSoonPage from "pages/ComingSoonPage";
 
 import { pageview } from "utils/Analytics";
 
@@ -83,6 +84,7 @@ function App() {
           <Route path="/victorian/" element={<VictorianPage />} />
           <Route path="/fujitsu/" element={<FujitsuPage />} />
           <Route path="/fujitsu2/" element={<FujitsuPage2 />} />
+          <Route path="/comingsoon/" element={<ComingSoonPage />} />
         </Routes>
       </HelmetProvider>
       <ToastContainer position="top-right" autoClose={3000} />

@@ -29,7 +29,7 @@ const SmartPS = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl dark:border-theme-border">
+          <div className="lg:w-1/2 flex justify-center mt-12 border border-gray-200 rounded-xl dark:border-theme-border mb-8">
             <img
               className="w-full max-w-xl h-auto object-contain rounded-xl block dark:hidden"
               src={Building}

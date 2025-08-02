@@ -54,9 +54,15 @@ import slide3dark from "../assets/Video/c3_Dark.webm";
 
 // AdvangeAbout
 import Company from "../assets/images/AdvangesAbout/Company1.svg";
+import CompanyDark from "../assets/images/AdvangesAbout/Company1Dark.svg";
 import Growth from "../assets/images/AdvangesAbout/Global2.svg";
+import Growthmobile from "../assets/images/AdvangesAbout/GlobalMobile.svg";
+import GrowthDark from "../assets/images/AdvangesAbout/Global2Dark.svg";
+import GrowthDarkMobile from "../assets/images/AdvangesAbout/GlobalmobileDark.svg";
 import Excellence from "../assets/images/AdvangesAbout/Innovation3.svg";
+import ExcellenceDark from "../assets/images/AdvangesAbout/Innovation3Dark.svg";
 import Solutions from "../assets/images/AdvangesAbout/Future4.svg";
+import SolutionsDark from "../assets/images/AdvangesAbout/Future4Dark.svg";
 import IconsCom from "../assets/images/AdvangesAbout/IconsCom.png";
 import IconsGro from "../assets/images/AdvangesAbout/ IconsGro.png";
 import IconsExc from "../assets/images/AdvangesAbout/ IconsCom.png";
@@ -79,8 +85,8 @@ import CFO from "../assets/images/Team/Jonkane.png";
 
 // solution Feature
 import RubixSolu from "../assets/images/ImgFooter/RubixCompute.svg";
-import Rubix16Solu from "../assets/images/ImgFooter/Rubix_io_16.svg";
-import ExpansionSolu from "../assets/images/ImgFooter/Rubix_Connect.svg";
+import Rubix16Solu from "../assets/images/ImgFooter/RubixiO16.svg";
+import ExpansionSolu from "../assets/images/ImgFooter/RubixConnect.svg";
 
 // AdvangeOEM Solutions
 import Labelling from "../assets/images/AdvantageSolutionOEM/Labelling.svg";
@@ -106,6 +112,19 @@ import IconsOur10 from "../assets/images/OurStory/NubeiOMobile10.svg";
 import IconsOur11 from "../assets/images/OurStory/Partnership11.svg";
 import IconsOur12 from "../assets/images/OurStory/SoutheastAsia12.svg";
 import IconsOur13 from "../assets/images/OurStory/ZoneControl13.svg";
+import IconsOur14 from "../assets/images/OurStory/Enviro1Dark.svg";
+import IconsOur15 from "../assets/images/OurStory/NubeiO2Dark.svg";
+import IconsOur16 from "../assets/images/OurStory/Software3svgDark.svg";
+import IconsOur17 from "../assets/images/OurStory/Edge4Dark.svg";
+import IconsOur18 from "../assets/images/OurStory/RubixWires5Dark.svg";
+import IconsOur19 from "../assets/images/OurStory/NubeiOCloud6Dark.svg";
+import IconsOur20 from "../assets/images/OurStory/Hardwaresupport7Dark.svg";
+import IconsOur21 from "../assets/images/OurStory/RubixCompute8Dark.svg";
+import IconsOur22 from "../assets/images/OurStory/RubixWires9Dark.svg";
+import IconsOur23 from "../assets/images/OurStory/NubeiOMobile10Dark.svg";
+import IconsOur24 from "../assets/images/OurStory/Partnership11Dark.svg";
+import IconsOur25 from "../assets/images/OurStory/SoutheastAsia12Dark.svg";
+import IconsOur26 from "../assets/images/OurStory/ZoneControl13Dark.svg";
 
 // Why partner
 import Why1 from "../assets/images/WhoSupport/Dedicated.svg";
@@ -269,6 +288,7 @@ export const Slides = [
     id: "slide-1",
     image: slide1,
     imageDark: slide1dark,
+
     Subtitles: "The power to predict, adapt, and optimise",
     description:
       "Stay ahead with technology that anticipates changes in energy demand, system performance, and environmental conditions before they happen.",
@@ -342,6 +362,7 @@ export const AdvantageAbout = [
   [
     {
       image: Company,
+      imageDark: CompanyDark,
       logo: IconsCom,
       title: "Why We Exist",
       description:
@@ -353,6 +374,9 @@ export const AdvantageAbout = [
         "From Australia to Southeast Asia, we deliver smart building solutions with local support and global impact.",
       logo: IconsGro,
       image: Growth,
+      imageDark: GrowthDark,
+      imagemobile: Growthmobile,
+      imagemobileDark: GrowthDarkMobile,
     },
     {
       title: "Innovation & Impact",
@@ -360,6 +384,7 @@ export const AdvantageAbout = [
         "Built by industry experts, our products simplify integration and maximise control.",
       logo: IconsExc,
       image: Excellence,
+      imageDark: ExcellenceDark,
     },
     {
       title: "Future-Ready Technology",
@@ -367,6 +392,7 @@ export const AdvantageAbout = [
         "With IoT-native design and protocol flexibility, our tech meets the demands of tomorrow—today. ",
       logo: IconsSol,
       image: Solutions,
+      imageDark: SolutionsDark,
     },
   ],
 ];
@@ -380,6 +406,7 @@ export const OurStoryD = [
         "Foundation laid for future innovation in building services and facility optimisation.",
       date: "2009",
       icon: IconsOur1,
+      iconDark: IconsOur14,
     },
     {
       id: 1,
@@ -388,6 +415,7 @@ export const OurStoryD = [
         "Launched with a mission to simplify building automation through advanced IoT and software solutions.",
       date: "2016",
       icon: IconsOur2,
+      iconDark: IconsOur15,
     },
     {
       id: 2,
@@ -396,6 +424,7 @@ export const OurStoryD = [
       description:
         "Development teams set up across time zones to provide continuous innovation and support.",
       icon: IconsOur3,
+      iconDark: IconsOur16,
     },
     {
       id: 3,
@@ -404,6 +433,7 @@ export const OurStoryD = [
       description:
         "Released initial IoT hardware devices enabling multi-site data collection and edge processing.",
       icon: IconsOur4,
+      iconDark: IconsOur17,
     },
     {
       id: 4,
@@ -412,6 +442,7 @@ export const OurStoryD = [
       description:
         "Introduced low-code configuration tool for seamless device programming and logic control.",
       icon: IconsOur5,
+      iconDark: IconsOur18,
     },
     {
       id: 5,
@@ -420,6 +451,7 @@ export const OurStoryD = [
       description:
         "Released secure, scalable cloud infrastructure for remote monitoring and control.",
       icon: IconsOur6,
+      iconDark: IconsOur19,
     },
     {
       id: 6,
@@ -428,6 +460,7 @@ export const OurStoryD = [
       description:
         "Scaled customer and technical support to operate effectively across Asia-Pacific and global regions.",
       icon: IconsOur7,
+      iconDark: IconsOur20,
     },
     {
       id: 7,
@@ -436,6 +469,7 @@ export const OurStoryD = [
       description:
         "Launched key IoT edge devices, enabling integrated control and monitoring for BMS.",
       icon: IconsOur8,
+      iconDark: IconsOur21,
     },
     {
       id: 8,
@@ -444,6 +478,7 @@ export const OurStoryD = [
       description:
         "Enhanced UI/UX and logic capabilities for system integrators and developers.",
       icon: IconsOur9,
+      iconDark: IconsOur22,
     },
     {
       id: 9,
@@ -452,6 +487,7 @@ export const OurStoryD = [
       description:
         "Brought real-time BMS control and monitoring to mobile devices.",
       icon: IconsOur10,
+      iconDark: IconsOur23,
     },
     {
       id: 10,
@@ -460,14 +496,16 @@ export const OurStoryD = [
       description:
         "Collaborated on HVAC control solutions as part of an OEM integration strategy.",
       icon: IconsOur11,
+      iconDark: IconsOur24,
     },
     {
       id: 11,
-      title: "APC Design Centre Opened – Vietnam",
+      title: "Design Centre Vietnam",
       date: "2025",
       description:
         "Launched a regional design hub to support APAC growth, custom solutions, and partner integration.",
       icon: IconsOur12,
+      iconDark: IconsOur25,
     },
     {
       id: 12,
@@ -476,6 +514,7 @@ export const OurStoryD = [
       description:
         "Introduced intelligent control technology for residential HVAC and energy automation..",
       icon: IconsOur13,
+      iconDark: IconsOur26,
     },
   ],
 ];

@@ -29,7 +29,7 @@ const CaseBlog4 = () => {
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-60 object-cover object-center transition-transform duration-300 hover:scale-[1] scale-[0.8] object-responsive"
+                    className="w-full h-60 object-center transition-transform duration-300 hover:scale-[0.8] scale-[0.7] object-contain"
                   />
                 </Link>
               </div>

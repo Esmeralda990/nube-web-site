@@ -9,7 +9,8 @@ import { ArrowRight } from "lucide-react";
 
 import Button from "../elements/Button";
 
-import partners from "../assets/images/hero/Partners.png";
+import Partners from "../assets/images/hero/PartnersH.svg";
+import Partnersdark from "../assets/images/hero/PartnersHdark.svg";
 
 export default function Heropartners() {
   return (
@@ -43,9 +44,14 @@ export default function Heropartners() {
         <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 lg:pb-24 overflow-hidden lg:mt-24">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[1.2]"
-              src={partners}
-              alt="Partners"
+              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8]  block dark:hidden"
+              src={Partners}
+              alt="Partners Nube IO"
+            />
+            <img
+              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8]  hidden dark:block"
+              src={Partnersdark}
+              alt="Partners Nube IO"
             />
           </Fade>
         </div>

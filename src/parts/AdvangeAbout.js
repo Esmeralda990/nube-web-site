@@ -4,12 +4,22 @@
 /* eslint-disable import/extensions */
 /* eslint-disable object-curly-newline */
 /* eslint-disable max-len */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AdvantageAbout } from "json/landingPageData";
 
 const AdvAbout = () => {
   const advantages = AdvantageAbout.flat();
   const [cardNumber, setCardNumber] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const currentCard = advantages[cardNumber];
 
   return (
     <section className="mb-1 px-8">
@@ -64,9 +74,22 @@ const AdvAbout = () => {
         </div>
         <div className="rounded-t-[28px] overflow-hidden border border-gray-200 dark:border-theme-border">
           <img
-            src={advantages[cardNumber].image}
-            alt={advantages[cardNumber].title}
-            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 "
+            src={
+              isMobile && currentCard.imagemobile
+                ? currentCard.imagemobile
+                : currentCard.image
+            }
+            alt={currentCard.title}
+            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 block dark:hidden "
+          />
+          <img
+            src={
+              isMobile && currentCard.imagemobileDark
+                ? currentCard.imagemobileDark
+                : currentCard.imageDark
+            }
+            alt={currentCard.title}
+            className="w-full h-[300px] object-cover object-center transition-all duration-500 transition-transform duration-300 hidden dark:block "
           />
         </div>
       </div>

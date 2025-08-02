@@ -23,7 +23,7 @@ export default function Solutionsfeature({ data }) {
             >
               <Link to={item.link}>
                 <img
-                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover "
+                  className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-contain"
                   src={item.image}
                   alt={item.title}
                 />

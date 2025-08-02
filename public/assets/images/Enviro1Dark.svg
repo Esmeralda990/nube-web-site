@@ -1,0 +1,29 @@
+<svg width="462" height="823" viewBox="0 0 462 823" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M374.871 113.76V159.45L231.131 242.42V167.97L374.871 85V113.76Z" fill="#459AA4"/>
+<path d="M459.77 162.8L231.13 294.79L2.5 162.8L87.41 113.76V159.45L231.13 242.42L374.87 159.45V113.76L459.77 162.8Z" fill="black"/>
+<path d="M231.13 167.97V242.42L87.4102 159.45V85L231.13 167.97Z" fill="black"/>
+<path d="M2.5 162.8L231.13 294.79V821.14L2.5 689.13V162.8Z" fill="black"/>
+<path d="M231.131 821.14V294.79L459.771 162.8V689.13L231.131 821.14Z" fill="black"/>
+<path d="M259.35 64.41C273.95 72.86 273.95 86.53 259.35 94.95C244.75 103.38 221.06 103.38 206.44 94.95C191.84 86.52 191.84 72.86 206.44 64.41C221.06 55.98 244.75 55.98 259.35 64.41Z" fill="#FBB93E"/>
+<path d="M374.87 85L231.13 167.97L87.4102 85L231.13 2L374.87 85ZM259.35 94.95C273.95 86.52 273.95 72.86 259.35 64.41C244.75 55.98 221.06 55.98 206.44 64.41C191.84 72.86 191.84 86.53 206.44 94.95C221.06 103.38 244.75 103.38 259.35 94.95Z" fill="black"/>
+<path d="M58.39 195.07L2.5 162.8L87.41 113.76" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M374.869 113.76L459.769 162.8L231.129 294.79L182.039 266.45" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M231.131 294.79V821.14" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M459.77 162.8V689.13L231.13 821.14L2.5 689.13V162.8" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M374.87 85L231.13 167.97L87.4102 85L231.13 2L374.87 85Z" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M231.131 167.97V242.42" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M374.87 85V159.45L231.13 242.42L87.4102 159.45V85" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M259.35 64.41C273.95 72.86 273.95 86.53 259.35 94.95C244.75 103.38 221.06 103.38 206.44 94.95C191.84 86.52 191.84 72.86 206.44 64.41C221.06 55.98 244.75 55.98 259.35 64.41Z" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M182.041 266.45L58.3906 195.07" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M179.769 369.67L56.1094 298.27" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M179.769 441.92L56.1094 370.52" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M179.769 514.16L56.1094 442.76" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M179.769 586.41L56.1094 515.01" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M179.769 658.66L56.1094 587.25" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask0_935_3710" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="291" y="353" width="118" height="264">
+<path d="M291.97 616.02L291.41 420.81L408.23 353.37L408.78 548.58L291.97 616.02Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_935_3710)">
+<path d="M376.889 371.46L311.109 409.44C308.889 410.72 307.659 414.36 309.029 415.58L335.429 439.07C336.799 440.29 335.559 443.92 333.359 445.19H333.339L296.429 466.24H296.409C294.169 467.54 292.939 471.26 294.369 472.42L324.889 497.27C325.709 497.94 325.709 499.58 324.889 501.18L292.439 564.58C291.619 566.19 291.619 567.83 292.439 568.5L325.779 595.38C326.289 595.79 327.029 595.77 327.829 595.31L378.349 566.14C379.179 565.66 379.959 564.76 380.459 563.72L408.389 505.21C409.709 502.43 408.459 500.26 406.259 501.53L350.699 533.61C348.479 534.89 347.239 532.68 348.589 529.9L377.169 470.98C377.929 469.42 377.899 467.85 377.119 467.19L347.309 442.52C345.889 441.34 347.119 437.64 349.349 436.35L405.929 403.68C408.129 402.41 409.369 398.78 408.009 397.56L378.989 371.42C378.479 370.96 377.709 370.98 376.889 371.45" fill="#23A3A0"/>
+</g>
+</svg>

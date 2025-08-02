@@ -67,6 +67,7 @@ export default function Carousel() {
                     playsInline
                     className="w-full max-w-xs lg:max-w-4xl h-auto  block dark:hidden"
                   />
+
                   <video
                     ref={(el) => {
                       videoRefs.current[index] = el;

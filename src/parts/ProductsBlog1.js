@@ -22,14 +22,14 @@ const CaseBlog1 = () => {
           {Blog1.map((item, index) => (
             <div
               key={index}
-              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[16rem] dark:bg-theme-tarjet dark:border-theme-border"
+              className=" flex flex-col bg-white rounded-lg shadow-md overflow-hidden min-h-[18rem] dark:bg-theme-tarjet dark:border-theme-border"
             >
               <div className="w-full">
                 <Link to={item.link}>
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-60 object-cover object-center transition-transform duration-300 hover:scale-[1] scale-[0.8] object-responsive"
+                    className="w-full h-60 object-center transition-transform duration-300 hover:scale-[0.8] scale-[0.7] object-contain"
                   />
                 </Link>
               </div>

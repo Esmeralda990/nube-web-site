@@ -7,14 +7,15 @@ import { Fade } from "react-awesome-reveal";
 
 import { ArrowRight } from "lucide-react";
 
-import SoftwareGif from "../assets/images/hero/Software.png";
+import Software from "../assets/images/hero/SoftwareH.svg";
+import Softwaredark from "../assets/images/hero/SoftwareHdark.svg";
 
 export default function HeroSoftware() {
   return (
     <>
       <section className="mt-12 container lg:max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:mt-24 ">
         <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
-          <h1 className="text-3xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 lg:mt-12 dark:text-white s">
+          <h1 className="text-3xl lg:text-6xl text-theme-blue font-bold leading-tight mb-5 lg:mt-12 dark:text-white max-w-xl">
             Rubix CE: Powerful and Intuitive Control
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
@@ -37,12 +38,17 @@ export default function HeroSoftware() {
             </a>
           </Fade>
         </div>
-        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-2xl pb-24">
+        <div className="flex flex-grow-0 pt-5 w-full justify-end items-center lg:order-last lg:max-w-xl pb-24 ">
           <Fade triggerOnce>
             <img
-              className="max-w-full h-auto md:ml-0 object-contain"
-              src={SoftwareGif}
-              alt="SoftwareGif"
+              className="max-w-full h-auto md:ml-0 object-contain block dark:hidden"
+              src={Software}
+              alt="Rubix CE"
+            />
+            <img
+              className="max-w-full h-auto md:ml-0 object-contain hidden dark:block"
+              src={Softwaredark}
+              alt="Rubix CE"
             />
           </Fade>
         </div>

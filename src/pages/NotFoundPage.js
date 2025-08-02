@@ -8,14 +8,24 @@ import React, { Component } from "react";
 import Button from "elements/Button";
 
 import NotFound from "assets/images/404.svg";
+import NotFoundDark from "assets/images/404Dark.svg";
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class NotFoundPage extends Component {
   render() {
     return (
       <div className="flex flex-col w-full h-screen justify-center ">
-        <div className="flex w-full justify-center">
-          <img src={NotFound} alt="Not Found" className="sm:w-3/4 xl:w-3/12" />
+        <div className="flex w-full justify-center ">
+          <img
+            src={NotFound}
+            alt="Not Found"
+            className="sm:w-3/4 xl:w-3/12 block dark:hidden"
+          />
+          <img
+            src={NotFoundDark}
+            alt="Not Found"
+            className="sm:w-3/4 xl:w-3/12 hidden dark:block"
+          />
         </div>
         <h1 className="text-theme-blue text-2xl text-center mt-5 dark:text-white">
           You weren't supposed to find this place...

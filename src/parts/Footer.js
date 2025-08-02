@@ -51,7 +51,7 @@ const Footer7 = () => {
                     className="h-11 hidden dark:block"
                   />
                 </span>
-                <p className="mt-6 text-sm text-gray-500 dark:text-white">
+                <p className="mt-6 text-sm text-gray-500 dark:text-white font-light">
                   Nube iO’s mission is to push the boundaries of traditional
                   building automation. Our systems do more than just
                   automate—they optimise every aspect of building management,

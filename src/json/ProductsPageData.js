@@ -36,9 +36,13 @@ import RealDark from "../assets/images/IconsBenefitsSoftware/RealDark.svg";
 
 // Gif Benefits
 import Anywhere from "../assets/Video/Node01.webm";
+import AnywhereDark from "../assets/Video/Node01dark.webm";
 import Merge from "../assets/Video/Node03.webm";
+import MergeDark from "../assets/Video/Node03dark.webm";
 import Manage from "../assets/Video/Node04.webm";
+import ManageDark from "../assets/Video/Node04dark.webm";
 import RubixWire1 from "../assets/Video/Node02.webm";
+import RubixWire1Dark from "../assets/Video/Node02dark.webm";
 
 // Rubix Lw
 import RubixConnect from "../assets/images/RubixLW/RubixConnect01.png";
@@ -47,9 +51,9 @@ import RubixConnect3 from "../assets/images/RubixLW/RubixConnect03.png";
 
 // Case Blog
 import Img1 from "../assets/images/ImgFooter/RubixCompute.svg";
-import Img2 from "../assets/images/ImgFooter/Rubix_io_16.svg";
+import Img2 from "../assets/images/ImgFooter/RubixiO16.svg";
 import Img3 from "../assets/images/ImgFooter/Droplet.svg";
-import Img4 from "../assets/images/ImgFooter/Rubix_Connect.svg";
+import Img4 from "../assets/images/ImgFooter/RubixConnect.svg";
 
 // App Icons
 import Icon1 from "../assets/images/IconsConnectivity/App1.svg";
@@ -172,18 +176,22 @@ export const GifBenefits = [
   {
     id: "1",
     image: Anywhere,
+    imageDark: AnywhereDark,
   },
   {
     id: "2",
     image: Merge,
+    imageDark: MergeDark,
   },
   {
     id: "3",
     image: Manage,
+    imageDark: ManageDark,
   },
   {
     id: "4",
     image: RubixWire1,
+    imageDark: RubixWire1Dark,
   },
 ];
 
@@ -357,6 +365,6 @@ export const Casestudy = [
     imageUrl: Fujitsu,
     type: "Real-time monitoring solution and alerting system for maintenance.",
     animation: "right",
-    link: "/fujitsu2/",
+    link: "/comingsoon/",
   },
 ];
