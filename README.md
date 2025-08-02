@@ -1,24 +1,25 @@
-
 ### About
-A software house profile website built with ReactJS and TailwindCSS 
+
+A modern, responsive website for Nube iO, built with ReactJS and TailwindCSS.
 
 ### Tech Stack
+
 - [**ReactJS**](https://github.com/facebook/create-react-app)
 - [**PostCSS**](https://postcss.org/)
 - [**TailwindCSS**](https://tailwindcss.com/)
-- [**Vercel**](https://vercel.com/)
 
 ### Library
+
 - [**emailJS**](https://www.emailjs.com/) : Send email from javascript
 - [**headlessUI**](https://github.com/tailwindlabs/headlessui) : Transition Style
 - [**React Splide**](https://splidejs.com/integration-react-splide/) : Carousel / Slider
-- [**React Reveal**](https://www.react-reveal.com/) : Animation 
+- [**React Reveal**](https://www.react-reveal.com/) : Animation
 - [**React Tabs**](https://www.npmjs.com/package/react-tabs) : Tab component
-- [**React Toastify**](https://www.npmjs.com/package/react-toastify) : Toast notification 
+- [**React Toastify**](https://www.npmjs.com/package/react-toastify) : Toast notification
 - [**ESLint**](https://eslint.org/) : Linting and formatting
 
-
 ### Available Scripts
+
 In the project directory, you can run:
 
 #### `npm start`

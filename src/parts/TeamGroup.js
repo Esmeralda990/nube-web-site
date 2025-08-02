@@ -10,7 +10,7 @@ import Teamdark from "../assets/images/IconsTeam/Teamsdark.svg";
 
 const TeamGroup = () => {
   return (
-    <section className="lg:py-28 px-8 ">
+    <section className="lg:py-28 px-8 mb-12">
       <div className="container mx-auto mt-24 overflow-hidden max-w-7xl ">
         <div className="text-center mb-12  mx-auto">
           <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white">
