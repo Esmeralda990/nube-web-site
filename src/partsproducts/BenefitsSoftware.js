@@ -9,11 +9,11 @@ import { IconsBenefits } from "../json/ProductsPageData";
 export default function SoftwareBenefits() {
   return (
     <div className="container mx-auto max-w-screen-2xl">
-      <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-20 lg:py-32">
+      <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-16">
         <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white ">
           Why Rubix CE
         </h2>
-        <p className="font-light text-lg text-gray-400 text-center mb-20 max-w-4xl mx-auto">
+        <p className="font-light text-lg text-gray-400 text-center mb-12 max-w-4xl mx-auto">
           Rubix CE gives you the freedom to deploy powerful, licence-free
           control logic with real-time responsiveness and protocol-ready
           flexibility.

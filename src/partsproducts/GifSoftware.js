@@ -6,7 +6,7 @@ import { GifBenefits } from "../json/ProductsPageData.js";
 
 const GifBene = () => {
   return (
-    <div className="container mx-auto px-12 lg:max-w-screen-xl lg:pt-16">
+    <div className="container mx-auto px-12 lg:max-w-screen-xl lg:pt-6">
       <div className="flex flex-col space-y-10 md:space-y-16">
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
@@ -40,7 +40,7 @@ const GifBene = () => {
                 existing BMS solutions, third-party platforms or cloud
                 environments – without complicated integrations.
               </p>
-              <ul className="text-muted-foreground font-light text-base lg:text-lg  list-disc text-gray-400 pl-5">
+              <ul className="text-muted-foreground font-light text-base lg:text-lg list-disc text-gray-400 pl-5">
                 <li>
                   <span /> Works with BACnet/IP, MQTT, and RESTful APIs.
                 </li>
@@ -126,7 +126,7 @@ const GifBene = () => {
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 ">
             <div>
-              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight  mb-5 dark:text-white ">
+              <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight mb-5 dark:text-white ">
                 Manage one or multiple Rubix-Compute gateways
               </h3>
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">

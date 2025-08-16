@@ -182,7 +182,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 md:mt-48 ">
+          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 lg:mt-48 ">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
                 <div className="grid w-full items-center gap-3 font-bold text-theme-blue dark:text-white">

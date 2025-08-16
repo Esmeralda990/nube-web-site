@@ -10,9 +10,9 @@ import HeroHardwareDark from "../assets/images/hero/HardwareHdark.svg";
 
 export default function HeroSolutions() {
   return (
-    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 lg:py-32 mb-8 lg:max-w-screen-2xl ">
-      <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 lg:text-left">
-        <h1 className="text-3xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-12 dark:text-white">
+    <section className="container lg:max-w-screen-xl mx-auto flex flex-col mt-12 lg:flex-row lg:py-20 md:py-8">
+      <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
+        <h1 className="text-4xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-12 dark:text-white">
           Powering Smart Building Innovation
         </h1>
         <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed">
@@ -22,7 +22,7 @@ export default function HeroSolutions() {
         </p>
       </div>
 
-      <div className="flex justify-center items-center w-full lg:w-1/2 mt-10 lg:mt-0">
+      <div className="flex justify-center items-center w-full lg:w-1/2 mt-10">
         <Fade triggerOnce>
           <img
             className="max-w-full h-auto scale-[0.8] block dark:hidden "

@@ -6,31 +6,26 @@
 /* eslint-disable max-len */
 import React from "react";
 import { Star } from "lucide-react";
-import { Testimonial } from "json/landingPageData";
+import { Testimonial2 } from "json/landingPageData";
 
-const Testimonials = () => {
-  const { image1, image2 } = Testimonial;
+const Testimonials2 = () => {
+  const { image1 } = Testimonial2;
   return (
     <section className="lg:py-16">
       <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
-        <div className="flex items-center justify-center gap-8 mb-6">
-          <img
-            src={image1}
-            alt="AnywAir Io"
-            className="w-36 h-24 object-cover"
-          />
-          <img src={image2} alt="Fujitsu" className="w-32 h-18 object-cover" />
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <img src={image1} alt="ESR" className="w-16 h-auto object-cover" />
         </div>
         <p className="mb-8 max-w-6xl font-light md:px-8 lg:text-lg text-gray-400 dark:text-gray-400">
-          &ldquo;{Testimonial.text}&rdquo;
+          &ldquo;{Testimonial2.text}&rdquo;
         </p>
         <p className="mb-1 text-sm font-medium lg:text-lg text-theme-blue dark:text-white">
-          {Testimonial.name}
+          {Testimonial2.name}
         </p>
         <p className="mb-2 text-sm text-gray-500 lg:text-md dark:text-white">
-          {Testimonial.role}
+          {Testimonial2.role}
         </p>
-        <div className="mt-2 flex items-center gap-1">
+        <div className="mt-2 flex items-center gap-1 mb-4">
           {[...Array(5)].map((_, index) => (
             <Star
               key={index}
@@ -43,4 +38,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Testimonials2;

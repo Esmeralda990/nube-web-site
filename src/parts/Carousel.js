@@ -39,18 +39,18 @@ export default function Carousel() {
         preload="auto"
         playsInline
         onSlideChange={handleSlideChange}
-        className="w-full mb-20 lg:mb-40 mt-12"
+        className="w-full mb-20 lg:mb-38"
         style={{ height: "auto" }}
       >
         {Slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
             <section className="container mx-auto lg:px-4 px-4">
-              <div className="flex flex-col md:flex-row items-center ">
-                <div className="w-full lg:w-1/2 sm:pr-2 mt-2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+              <div className="flex flex-col md:flex-row items-start ">
+                <div className="w-full lg:w-1/2 sm:pr-2 mt-2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:pt-48 md:pt-24">
                   <h2 className="text-2xl lg:text-5xl text-theme-blue dark:text-white text-center lg:text-left font-light mb-5 max-w-xl lg:mt-20 ">
                     {slide.Subtitles}
                   </h2>
-                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-6 md:mb-12 max-w-xl">
+                  <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-4 md:mb-8 max-w-xl">
                     {slide.description}
                   </p>
                 </div>

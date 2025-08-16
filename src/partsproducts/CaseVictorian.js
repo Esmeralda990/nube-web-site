@@ -32,7 +32,7 @@ const CaseVictorian4 = () => {
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
-                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
+                <h1 className="text-4xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
                   Driving Sustainability in 30+ Victorian Schools with IoT
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
@@ -123,7 +123,7 @@ const CaseVictorian4 = () => {
                 <span className="text-theme-teal transition-transform group-hover:translate-x-1">
                   ←
                 </span>
-                <h4 className="text-2xl font-bold text-theme-blue dark:text-white">
+                <h4 className="text-xl font-bold text-theme-blue dark:text-white">
                   Case Studies
                 </h4>
               </a>

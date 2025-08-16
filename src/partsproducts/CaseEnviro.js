@@ -12,7 +12,7 @@ import Enviro from "../assets/images/CaseStudy/Enviro.png";
 
 const CaseEnviro2 = () => {
   return (
-    <section className="pb-32 px-4">
+    <section className="pb-32 px-8">
       <div className="relative lg:max-w-[130rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.4]">
         <div className="absolute inset-0 z-0">
           <img
@@ -32,7 +32,7 @@ const CaseEnviro2 = () => {
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
-                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
+                <h1 className="text-4xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
                   Enhancing Sustainability and Efficiency
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
@@ -50,7 +50,7 @@ const CaseEnviro2 = () => {
         <div className="mx-auto w-full max-w-5xl lg:flex lg:gap-20 ">
           <div className="flex w-full max-w-[40rem] mx-auto flex-col gap-10">
             <div className="prose">
-              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue mb-12 pt-4 text-center mt-12 dark:text-white">
+              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue lg:mb-12 pt-4 text-center mt-12 dark:text-white">
                 Enviro Building Services - Smarter Retrofits
               </h2>
               <img
@@ -120,7 +120,7 @@ const CaseEnviro2 = () => {
                 <span className="text-theme-teal transition-transform group-hover:translate-x-1">
                   ←
                 </span>
-                <h4 className="text-2xl font-bold text-theme-blue dark:text-white">
+                <h4 className="text-xl font-bold text-theme-blue dark:text-white">
                   Case Studies
                 </h4>
               </a>

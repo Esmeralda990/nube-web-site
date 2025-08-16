@@ -15,9 +15,9 @@ import Partnersdark from "../assets/images/hero/PartnersHdark.svg";
 export default function Heropartners() {
   return (
     <>
-      <section className="container mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row px-8 lg:mb-24">
-        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 md:pt-60 sm:items-center xl:items-start sm:flex-row">
-          <h1 className="text-3xl lg:text-6xl max-w-xl text-theme-blue font-bold leading-tight mb-5 dark:text-white">
+      <section className="container mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row px-8 md:py-8">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 lg:pt-48 sm:items-center xl:items-start sm:flex-row">
+          <h1 className="text-4xl lg:text-6xl max-w-xl text-theme-blue font-bold leading-tight mb-5 dark:text-white">
             Trusted Partners <br />
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed mb-12">
@@ -28,28 +28,26 @@ export default function Heropartners() {
 
           <div className="flex space-x-4">
             {" "}
-            <Fade triggerOnce delay={400}>
-              <Button
-                href="/contact/"
-                type="link"
-                className="mb-4 flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
-              >
-                Become a Partner
-                <ArrowRight className="ml-2 w-4" />
-              </Button>
-            </Fade>
+            <Button
+              href="/contact/"
+              type="link"
+              className="mb-4 flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black "
+            >
+              Become a Partner
+              <ArrowRight className="ml-2 w-4" />
+            </Button>
           </div>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 lg:pb-24 overflow-hidden lg:mt-24">
+        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 lg:pb-12 overflow-hidden lg:mt-16">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8]  block dark:hidden"
+              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8] block dark:hidden"
               src={Partners}
               alt="Partners Nube IO"
             />
             <img
-              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8]  hidden dark:block"
+              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8] hidden dark:block"
               src={Partnersdark}
               alt="Partners Nube IO"
             />

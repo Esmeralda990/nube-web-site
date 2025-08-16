@@ -6,9 +6,9 @@ import GlowCard from "elements/GlowCard";
 
 export default function Casestudys({ data }) {
   return (
-    <div className="lg:py-24 pt-12 mb-6">
+    <div className="lg:py-16 mt-12 mb-12">
       <div className="container mx-auto px-12 lg:max-w-screen-xl">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-6 mb-12">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-12 ">
           {data.map((item, index) => (
             <GlowCard
               key={item.id || `${item.title}-${index}`}
@@ -20,7 +20,7 @@ export default function Casestudys({ data }) {
                   alt={item.title}
                   className="max-w rounded overflow-hidden shadow-md w-full h-56 object-contain"
                 />
-                <div className="py-2">
+                <div className="py-2 px-4 lg:min-h-[160px] flex flex-col items-center text-center">
                   {" "}
                   <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4 dark:text-theme-teal">
                     {item.title}

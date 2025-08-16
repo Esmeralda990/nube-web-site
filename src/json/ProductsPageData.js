@@ -347,7 +347,7 @@ export const Casestudy = [
     id: "Victorian Schools",
     title: "Victorian Schools",
     imageUrl: Victorian,
-    type: "Energy savings support long-term sustainability goals and healthierlearning spaces.",
+    type: "Energy savings support long-term sustainability goals and healthier learning spaces.",
     animation: "left",
     link: "/victorian/",
   },

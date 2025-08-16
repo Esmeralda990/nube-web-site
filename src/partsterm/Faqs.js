@@ -36,7 +36,7 @@ const FAQs = () => {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
-        <div className="relative z-10 px-8 py-20 flex flex-col items-start text-left lg:items-center lg:text-center">
+        <div className="relative z-10 px-8 py-20 flex flex-col items-center text-center">
           <h1 className="mb-3 max-w-3xl text-4xl lg:text-6xl font-bold md:mb-4 lg:mb-6 text-theme-blue dark:text-white">
             Frequently Asked Questions
           </h1>

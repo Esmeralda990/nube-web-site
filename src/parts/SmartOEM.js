@@ -10,10 +10,10 @@ import Customdark from "../assets/images/AdvantageSolutionOEM/Customisedark.svg"
 
 const SmartOem = () => {
   return (
-    <section className="lg:py-20 px-8 mb-12 mt-12">
+    <section className="lg:py-16 px-8 mb-8 mt-8 md:py-12">
       <div className="container mx-auto overflow-hidden max-w-6xl ">
         <div className="text-center mb-8 mx-auto">
-          <h2 className="text-3xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white ">
+          <h2 className="text-2xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white ">
             OEM Integrations: Smarter, Faster, Better
           </h2>
         </div>

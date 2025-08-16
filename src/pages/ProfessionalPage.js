@@ -10,6 +10,7 @@ import Header1 from "parts/Header1";
 import CtaProfessional from "parts/CtaProfessional.js";
 import DetailProfessional from "parts/DetailsProfessionalService";
 import SmartProfessional from "parts/SmartProfessional";
+import Testimonials2 from "parts/Testimonials2";
 import Servicesolutions from "parts/ServiceSolutions";
 import Footer from "parts/Footer";
 
@@ -49,6 +50,7 @@ export default class ProfessionalPage extends Component {
         <DetailProfessional />
         <Servicesolutions data={ServiceSolutions} />
         <SmartProfessional />
+        <Testimonials2 />
         <CtaProfessional />
         <Footer />
       </>

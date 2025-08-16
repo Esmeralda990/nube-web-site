@@ -7,7 +7,7 @@ import Button from "../elements/Button/index.js";
 
 export default function CtaAbout() {
   return (
-    <section className="relative lg:py-32 px-8 pb-16">
+    <section className="relative lg:py-16 px-8 pb-16">
       <div className="container mx-auto lg:max-w-screen-lg">
         <div className="absolute inset-0 z-0 flex justify-center items-center">
           <div

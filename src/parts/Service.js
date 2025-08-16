@@ -11,7 +11,7 @@ import GlowCard from "elements/GlowCard";
 
 export default function Service({ data }) {
   return (
-    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-40 lg:pb-24 ">
+    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-32">
       <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white">
         Define Your Smart Building Solution
       </h2>

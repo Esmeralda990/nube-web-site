@@ -22,10 +22,10 @@ const Ourstory = () => {
   const progressWidth = `${(OurStoryD[0].length - 1) * 6}%`;
 
   return (
-    <section className=" w-full lg:py-20 lg:mb-24 mt-16 mb-12 ">
+    <section className=" w-full lg:py-16 lg:mb-24 mt-12 mb-12">
       <div className="container mx-auto space-y-10 px-8 ">
         <div className="text-center mx-auto">
-          <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8 dark:text-white">
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8 dark:text-white">
             Our Story
           </h1>
           <p className="mx-auto text-gray-400 font-light text-base lg:text-lg max-w-xl mb-16">

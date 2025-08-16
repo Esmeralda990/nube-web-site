@@ -136,6 +136,11 @@ import Why3Dark from "../assets/images/WhoSupport/Marketingdark.svg";
 import Why4 from "../assets/images/WhoSupport/Continuous.svg";
 import Why4Dark from "../assets/images/WhoSupport/Continuousdark.svg";
 
+// Testimonials
+import AnyAir from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+import fujitsu from "../assets/images/CaseStudy/Fujitsu.png";
+import ESR from "../assets/images/CaseStudy/ESR.png";
+
 export const Services = [
   {
     id: "Software",
@@ -705,4 +710,13 @@ export const Testimonial = {
   text: "As part of our evolving controls strategy, Fujitsu General Australia conducted a comprehensive market review and identified Nube iO as the standout technology partner. Their robust, scalable technology stack offers a holistic solution for everything from small multi-site systems to large commercial projects. We’re proud to partner with an organisation whose innovative, collaborative and forward-thinking values align with ours. This partnership not only enhances our IoT capabilities but also signifies our commitment to integrating smart technology into our offerings— representing a major advancement in the relationship between technology and indoor comfort. By embracing these innovations, Fujitsu General Australia is positioned to meet market demands and lead the industry into the future.",
   name: "Kyle Rafter",
   role: "General Manager Product & Strategy, Fujitsu General",
+  image1: AnyAir,
+  image2: fujitsu,
+};
+
+export const Testimonial2 = {
+  text: "ESR partnered with NUBE to find a simple metering solution for our industrial and logistics portfolio. The NUBE product provides ESR and our customers with a window into utilities performance and ongoing reporting requirements without the need for complex building management systems.",
+  name: "Nick Morse",
+  role: "Head of Property Operations , ESR",
+  image1: ESR,
 };
