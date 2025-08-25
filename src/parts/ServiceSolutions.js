@@ -6,7 +6,7 @@ import GlowCard from "elements/GlowCard";
 
 export default function ServiceSolutions({ data }) {
   return (
-    <div className="lg:py-16 pt-12 ">
+    <div className="lg:py-16 pt-12 mb-6 pb-8">
       <div className="container mx-auto px-12 lg:max-w-screen-xl">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.map((item, index) => (

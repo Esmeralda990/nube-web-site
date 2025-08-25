@@ -9,14 +9,14 @@ const Logos3 = ({ heading, logos = Logos }) => {
   return (
     <section className="mb-24">
       <div className="container mx-auto text-center text-theme-blue mb-14 px-4 lg:px-8">
-        <h2 className="text-2xl lg:text-5xl  text-theme-blue font-bold leading-tight lg:text-center dark:text-white">
+        <h2 className="text-2xl lg:text-5xl  text-theme-blue font-bold leading-tight lg:text-center dark:text-white mb-6">
           {heading}
         </h2>
         <a
           href="/cases/"
-          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-12 font-bold dark:text-white dark:bg-theme-tarjet dark:border-theme-border dark:hover:bg-theme-teal/40"
+          className="mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm mt-6 font-bold dark:text-white dark:bg-theme-tarjet dark:border-theme-border dark:hover:bg-theme-teal/40"
         >
-          ✨ Explore our customers success stories
+          ✨ Explore all our success stories
           <span className="flex size-7 items-center justify-center rounded-full bg-muted">
             <ArrowUpRight className="w-4" />
           </span>

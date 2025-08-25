@@ -9,7 +9,7 @@ import { WhyData } from "../json/landingPageData";
 export default function Partner() {
   return (
     <div className="container mx-auto max-w-screen-2xl mb-6">
-      <div className="container mx-auto lg:max-w-screen-xl px-8 mb-24 mt-12">
+      <div className="container mx-auto lg:max-w-screen-xl px-8 mb-24">
         <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 lg:mb-20 dark:text-white">
           Why Partner With Us
         </h2>

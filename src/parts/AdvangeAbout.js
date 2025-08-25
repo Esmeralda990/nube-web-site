@@ -22,7 +22,7 @@ const AdvAbout = () => {
   const currentCard = advantages[cardNumber];
 
   return (
-    <section className="mb-1 px-8">
+    <section className="px-8">
       <div className="container mx-auto lg:max-w-screen-xl">
         <div className="mb-16 text-center mx-auto">
           <h2 className=" mb-4 text-2xl font-bold lg:text-5xl text-theme-blue dark:text-white">

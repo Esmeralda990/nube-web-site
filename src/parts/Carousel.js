@@ -39,7 +39,7 @@ export default function Carousel() {
         preload="auto"
         playsInline
         onSlideChange={handleSlideChange}
-        className="w-full mb-20 lg:mb-38"
+        className="w-full mb-4 lg:mb-12"
         style={{ height: "auto" }}
       >
         {Slides.map((slide, index) => (
@@ -54,7 +54,7 @@ export default function Carousel() {
                     {slide.description}
                   </p>
                 </div>
-                <div className="w-full lg:w-1/2 pt-6 flex justify-center lg:justify-end">
+                <div className="w-full lg:w-1/2 pt-4 flex justify-center lg:justify-end">
                   <video
                     ref={(el) => {
                       videoRefs.current[index] = el;
@@ -87,7 +87,7 @@ export default function Carousel() {
         ))}
       </Swiper>
       <div className="w-full">
-        <Logos3 heading="Customer success" />
+        <Logos3 heading="Nube iO delivered Customer Success" />
       </div>
     </>
   );

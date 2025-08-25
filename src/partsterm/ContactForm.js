@@ -136,7 +136,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="lg:mt-40 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
+              <h1 className="lg:mt-36 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
                 Ready to Future Proof Your Building?
               </h1>
             </div>

@@ -10,7 +10,7 @@ import HeroHardwareDark from "../assets/images/hero/HardwareHdark.svg";
 
 export default function HeroSolutions() {
   return (
-    <section className="container lg:max-w-screen-xl mx-auto flex flex-col mt-12 lg:flex-row lg:py-20 md:py-8">
+    <section className="container lg:max-w-screen-xl mx-auto flex flex-col mt-12 lg:flex-row pb-6">
       <div className="w-full lg:w-1/2 sm:pr-2 xl:mt-24 text-left px-8">
         <h1 className="text-4xl lg:text-6xl text-theme-blue text-left font-bold leading-tight mb-12 dark:text-white">
           Powering Smart Building Innovation
@@ -25,12 +25,12 @@ export default function HeroSolutions() {
       <div className="flex justify-center items-center w-full lg:w-1/2 mt-10">
         <Fade triggerOnce>
           <img
-            className="max-w-full h-auto scale-[0.8] block dark:hidden "
+            className="max-w-full h-auto scale-[0.9] block dark:hidden "
             src={HeroHardware}
             alt="Hardware Nube IO"
           />
           <img
-            className="max-w-full h-auto scale-[0.8] hidden dark:block"
+            className="max-w-full h-auto scale-[0.9] hidden dark:block"
             src={HeroHardwareDark}
             alt="Hardware Nube IO"
           />

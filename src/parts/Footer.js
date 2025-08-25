@@ -66,10 +66,19 @@ const Footer7 = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-20">
               {sections.map((section, i) => (
                 <div key={`${section.title}-${i}`}>
-                  <h3 className="mb-6 font-bold text-gray-800 dark:text-theme-teal">
-                    {section.title === "empty-section" ? "" : section.title}
-                  </h3>
-                  <ul className="space-y-4 text-sm text-gray-600 dark:text-white">
+                  {section.title === "Contact us" ? (
+                    <a
+                      href="/contact"
+                      className="mb-6 font-bold text-gray-800 dark:text-theme-teal hover:underline"
+                    >
+                      {section.title}
+                    </a>
+                  ) : (
+                    <h3 className="mb-6 font-bold text-gray-800 dark:text-theme-teal">
+                      {section.title === "empty-section" ? "" : section.title}
+                    </h3>
+                  )}
+                  <ul className="space-y-4 text-sm text-gray-600 dark:text-white mt-4">
                     {section.links.map((link, index) => (
                       <li
                         key={`${section.title}-link-${index}`}

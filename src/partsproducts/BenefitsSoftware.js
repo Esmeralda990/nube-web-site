@@ -6,10 +6,45 @@ import React from "react";
 import GlowCard from "elements/GlowCard";
 import { IconsBenefits } from "../json/ProductsPageData";
 
+function renderTitle(title) {
+  if (title === "Scalable Across Sites") {
+    return (
+      <>
+        <span>Scalable Across</span>
+        <br className="hidden lg:block" />
+        <span> Sites</span>
+      </>
+    );
+  }
+
+  if (title === "Built for Integration") {
+    return (
+      <>
+        <span>Built for</span>
+        <br className="hidden lg:block" />
+        <span> Integration</span>
+      </>
+    );
+  }
+
+  if (title === "Scalable Across Sites, Built for Integration") {
+    return (
+      <>
+        <span>Scalable Across</span>
+        <br className="hidden lg:block" />
+        <span> Sites, Built for</span>
+        <br className="hidden lg:block" />
+        <span> Integration</span>
+      </>
+    );
+  }
+  return title;
+}
+
 export default function SoftwareBenefits() {
   return (
     <div className="container mx-auto max-w-screen-2xl">
-      <div className="container mx-auto lg:max-w-screen-xl px-8 mb-28 mt-16">
+      <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mb-28 mt-16 mb-16">
         <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white ">
           Why Rubix CE
         </h2>
@@ -35,8 +70,8 @@ export default function SoftwareBenefits() {
                 className="w-7 h-12 object-contain hidden dark:block ml-6 pt-4"
               />
               <div className="px-6 py-3 flex-1 flex flex-col">
-                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left dark:text-theme-teal ">
-                  {item.title}
+                <h4 className="font-bold text-base lg:text-xl mb-6 text-theme-blue text-left dark:text-theme-teal leading-snug">
+                  {renderTitle(item.title)}
                 </h4>
                 <p className="font-light text-lg text-gray-400 text-left ">
                   {item.description}

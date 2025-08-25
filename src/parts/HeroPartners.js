@@ -16,7 +16,7 @@ export default function Heropartners() {
   return (
     <>
       <section className="container mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row px-8 md:py-8">
-        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 lg:pt-48 sm:items-center xl:items-start sm:flex-row">
+        <div className="w-full lg:w-1/2 sm:pr-2 text-left pt-12 lg:pt-32 sm:items-center xl:items-start sm:flex-row">
           <h1 className="text-4xl lg:text-6xl max-w-xl text-theme-blue font-bold leading-tight mb-5 dark:text-white">
             Trusted Partners <br />
           </h1>
@@ -39,15 +39,15 @@ export default function Heropartners() {
           </div>
         </div>
 
-        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 lg:pb-12 overflow-hidden lg:mt-16">
+        <div className="flex pt-5 w-full justify-end items-center lg:order-last lg:w-1/2 lg:pb-8 overflow-hidden lg:mt-16">
           <Fade direction="" triggerOnce>
             <img
-              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8] block dark:hidden"
+              className="max-w-1/2 h-auto object-contain overflow-hidden scale-[0.9] block dark:hidden"
               src={Partners}
               alt="Partners Nube IO"
             />
             <img
-              className="max-w-1/2 h-auto lg:ml-16 object-contain overflow-hidden scale-[0.8] hidden dark:block"
+              className="max-w-1/2 h-auto object-contain overflow-hidden scale-[0.9] hidden dark:block"
               src={Partnersdark}
               alt="Partners Nube IO"
             />

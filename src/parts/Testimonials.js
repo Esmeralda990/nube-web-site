@@ -11,7 +11,7 @@ import { Testimonial } from "json/landingPageData";
 const Testimonials = () => {
   const { image1, image2 } = Testimonial;
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-12">
       <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
         <div className="flex items-center justify-center gap-8 mb-6">
           <img

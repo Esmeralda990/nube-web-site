@@ -10,7 +10,7 @@ import IOTDark from "../assets/images/IconsHardware/IoTdark.svg";
 
 const SmartHardw = () => {
   return (
-    <section className="lg:py-16 px-8 mb-8 mt-16 md:py-12">
+    <section className="lg:py-12 px-8 md:py-12">
       <div className="container mx-auto overflow-hidden max-w-6xl ">
         <div className="text-center mb-8 mx-auto">
           <h2 className="text-2xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white">

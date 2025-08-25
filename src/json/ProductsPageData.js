@@ -166,7 +166,7 @@ export const IconsBenefits = [
     id: "4",
     title: "Built for Integration",
     description:
-      "Compatible with BACnet, Modbus, and LoRaWAN® protocols — Rubix CE connects your devices and systems into one smart automation workflow.",
+      "Compatible with BACnet, Modbus, and LoRaWAN® protocols — connect your devices and systems into one smart automation workflow.",
     icon: Open,
     iconDark: OpenDark,
   },

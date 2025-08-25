@@ -6,18 +6,21 @@ import { GifBenefits } from "../json/ProductsPageData.js";
 
 const GifBene = () => {
   return (
-    <div className="container mx-auto px-12 lg:max-w-screen-xl lg:pt-6">
-      <div className="flex flex-col space-y-10 md:space-y-16">
+    <div className="container mx-auto px-12 lg:max-w-screen-xl pt-4">
+      <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold lg:mb-6 dark:text-white pt-4 lg:pb-12">
+        Nube iO delivers more to your fingertips
+      </h2>
+      <div className="flex flex-col space-y-8 lg:space-y-24">
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
-            <div className="mb-6 lg:mb-8">
+            <div className="lg:mb-8">
               <video
                 src={GifBenefits[0].image}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden"
+                className="aspect-[6/3] lg:scale-[1.3] md: w-auto rounded-md block dark:hidden"
               />
               <video
                 src={GifBenefits[0].imageDark}
@@ -25,7 +28,7 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
+                className="aspect-[6/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>
@@ -57,7 +60,7 @@ const GifBene = () => {
         </div>
         <div className="flex-row-reverse lg:flex lg:gap-x-4 ">
           <div className="lg:w-1/2">
-            <div className="mb-6 lg:mb-8">
+            <div className="lg:mb-8">
               <video
                 src={GifBenefits[1].image}
                 autoPlay
@@ -105,14 +108,14 @@ const GifBene = () => {
         </div>
         <div className="lg:flex lg:gap-x-4">
           <div className="lg:w-1/2">
-            <div className="mb-6 lg:mb-8 lg:mt-24">
+            <div className="mb-6 lg:mb-8">
               <video
                 src={GifBenefits[2].image}
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden "
+                className="aspect-[6/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden "
               />
               <video
                 src={GifBenefits[2].imageDark}
@@ -120,7 +123,7 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
+                className="aspect-[6/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>
@@ -157,7 +160,7 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden"
+                className="aspect-[6/3] lg:scale-[1.3] w-auto rounded-md block dark:hidden"
               />
               <video
                 src={GifBenefits[3].imageDark}
@@ -165,11 +168,11 @@ const GifBene = () => {
                 loop
                 muted
                 playsInline
-                className="aspect-[4/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
+                className="aspect-[6/3] lg:scale-[1.3] w-auto rounded-md hidden dark:block"
               />
             </div>
           </div>
-          <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24 ">
+          <div className="lg:flex lg:w-1/2 lg:items-center lg:pr-24">
             <div>
               <h3 className=" text-lg lg:text-3xl text-theme-blue font-bold leading-tight max-w-full mb-5 dark:text-white ">
                 Engineering Tools: Rubix Wires
@@ -179,7 +182,7 @@ const GifBene = () => {
                 control logic, monitor live data, and adapt to evolving building
                 needs—without steep learning curves.
               </p>
-              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-12 pl-5 ">
+              <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-24 pl-5 ">
                 <li>
                   <span /> Drag-and-drop editor for custom logic.
                 </li>

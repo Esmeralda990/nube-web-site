@@ -10,7 +10,7 @@ import { Badges } from "../json/landingPageData.js";
 
 export default function SoluHardware() {
   return (
-    <div className=" container mx-auto lg:max-w-screen-xl mb-12">
+    <div className=" container mx-auto lg:max-w-screen-xl mb-12 pt-4">
       <section className="sm:items-center lg:items-start sm:flex-row pt-12 relative">
         <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-8">
           <Fade triggerOnce>

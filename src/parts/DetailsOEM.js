@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Detailoem() {
   return (
-    <section className="hero sm:items-center lg:items-start sm:flex-row pt-12 lg:pt-24">
+    <section className="hero sm:items-center lg:items-start sm:flex-row pt-12 lg:pt-32">
       <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 ">
         <h1 className="text-4xl lg:text-6xl text-theme-blue text-center font-bold leading-tight mb-5 lg:max-w-4xl mx-auto dark:text-white">
           OEM Solutions

@@ -11,7 +11,7 @@ import { Testimonial2 } from "json/landingPageData";
 const Testimonials2 = () => {
   const { image1 } = Testimonial2;
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-12">
       <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
         <div className="flex items-center justify-center gap-4 mb-6">
           <img src={image1} alt="ESR" className="w-16 h-auto object-cover" />
@@ -25,7 +25,7 @@ const Testimonials2 = () => {
         <p className="mb-2 text-sm text-gray-500 lg:text-md dark:text-white">
           {Testimonial2.role}
         </p>
-        <div className="mt-2 flex items-center gap-1 mb-4">
+        <div className="mt-2 flex items-center gap-1 mb-2">
           {[...Array(5)].map((_, index) => (
             <Star
               key={index}

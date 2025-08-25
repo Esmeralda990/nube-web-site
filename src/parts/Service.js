@@ -11,7 +11,7 @@ import GlowCard from "elements/GlowCard";
 
 export default function Service({ data }) {
   return (
-    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-32">
+    <div className="container mx-auto lg:max-w-screen-xl px-8 lg:mt-28">
       <h2 className="text-2xl lg:text-5xl text-theme-blue text-center font-bold mb-6 dark:text-white">
         Define Your Smart Building Solution
       </h2>
@@ -20,7 +20,7 @@ export default function Service({ data }) {
         sustainability.
       </p>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-32 ">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-1 xl:gap-15 mb-20">
         {data.map((item) => {
           const path = item.link;
 

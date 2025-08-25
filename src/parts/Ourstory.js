@@ -22,7 +22,7 @@ const Ourstory = () => {
   const progressWidth = `${(OurStoryD[0].length - 1) * 6}%`;
 
   return (
-    <section className=" w-full lg:py-16 lg:mb-24 mt-12 mb-12">
+    <section className=" w-full lg:py-20 mt-12 mb-8">
       <div className="container mx-auto space-y-10 px-8 ">
         <div className="text-center mx-auto">
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 text-theme-blue mb-8 dark:text-white">
@@ -44,7 +44,7 @@ const Ourstory = () => {
             className="absolute top-10 left-0 h-[2px] bg-theme-teal z-10"
           />
 
-          <div className="w-full overflow-x-auto no-scrollbar pb-10 items-start">
+          <div className="w-full overflow-x-auto no-scrollbar lg:pb-10 items-start">
             <div
               ref={scrollContainerRef}
               className="relative z-20 grid grid-flow-col auto-cols-[minmax(240px,_1fr)] gap-24"
@@ -85,7 +85,7 @@ const Ourstory = () => {
           </div>
         </div>
       </div>{" "}
-      <div className=" flex justify-center gap-4 mt-6">
+      <div className=" flex justify-center gap-4 lg:mt-6 pb-2">
         <button
           type="button"
           onClick={scrollLeft}
