@@ -9,12 +9,21 @@ import { Star } from "lucide-react";
 import { Testimonial2 } from "json/landingPageData";
 
 const Testimonials2 = () => {
-  const { image1 } = Testimonial2;
+  const { image1, imageDark } = Testimonial2;
   return (
     <section className="lg:py-12">
       <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
         <div className="flex items-center justify-center gap-4 mb-6">
-          <img src={image1} alt="ESR" className="w-16 h-auto object-cover" />
+          <img
+            src={image1}
+            alt="ESR"
+            className="w-32 h-auto object-cover dark:hidden"
+          />
+          <img
+            src={imageDark}
+            alt="ESR"
+            className="w-32 h-auto object-cover hidden dark:block"
+          />
         </div>
         <p className="mb-8 max-w-6xl font-light md:px-8 lg:text-lg text-gray-400 dark:text-gray-400">
           &ldquo;{Testimonial2.text}&rdquo;

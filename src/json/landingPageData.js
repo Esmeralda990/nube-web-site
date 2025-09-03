@@ -140,6 +140,7 @@ import Why4Dark from "../assets/images/WhoSupport/Continuousdark.svg";
 import AnyAir from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
 import fujitsu from "../assets/images/CaseStudy/Fujitsu.png";
 import ESR from "../assets/images/CaseStudy/ESR.png";
+import ESRDark from "../assets/images/CaseStudy/ESRDark.png";
 
 export const Services = [
   {
@@ -719,4 +720,5 @@ export const Testimonial2 = {
   name: "Nick Morse",
   role: "Head of Property Operations , ESR",
   image1: ESR,
+  imageDark: ESRDark,
 };
