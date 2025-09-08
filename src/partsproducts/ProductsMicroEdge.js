@@ -91,9 +91,9 @@ const MicroEdge = () => {
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
-              MicroEdge is a LoRa® technology-based IoT sensor. It seamlessly
+              MicroEdge is a LoRa® technology - based IoT sensor. It seamlessly
               captures data from your equipment and other assets, enabling you
-              to make smart, data-driven decisions.
+              to make smart, data - driven decisions.
             </p>
             <div className="flex gap-4 mt-6">
               <a
@@ -119,13 +119,13 @@ const MicroEdge = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "3 UNIVERSAL INPUTS Use it for CT or sensor monitoring ",
-                "ONE PULSE INPUT Monitor the pulse count for a water or electrical meter",
-                "UP TO 2KM TRANSMISSION A small device with powerful capabilities",
-                "LORA® WIRELESS COMMUNICATION Built based on LoRa® wireless protocol ",
-                "EASY TO INSTALL Instal this battery-powered sensor anywhere ",
-                "100 PLUS DEVICES PER GATEWAY Easily scale up or down",
-                "WATERPROOF Suitable for outdoors or hard-to-access meters",
+                "3 UNIVERSAL INPUTS: Use it for CT or sensor monitoring ",
+                "ONE PULSE INPUT: Monitor the pulse count for a water or electrical meter",
+                "UP TO 2KM TRANSMISSION: A small device with powerful capabilities",
+                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol ",
+                "EASY TO INSTALL: Instal this battery-powered sensor anywhere ",
+                "100 PLUS DEVICES PER GATEWAY: Easily scale up or down",
+                "WATERPROOF: Suitable for outdoors or hard-to-access meters",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}
@@ -138,11 +138,11 @@ const MicroEdge = () => {
               Why Lora®
             </h4>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              LoRa® is a low-power, long-range wireless technology designed for
-              the Internet of Things. It is less affected by buildings and other
-              obstructions than regular WiFi, with one gateway generally being
-              LoRa® is expected to hold 75% of the IoT device market share soon.
-              The LoRa® community is expanding rapidly, with many new
+              LoRa® is a low - power, long - range wireless technology designed
+              for the Internet of Things. It is less affected by buildings and
+              other obstructions than regular WiFi, with one gateway generally
+              being LoRa® is expected to hold 75% of the IoT device market share
+              soon. The LoRa® community is expanding rapidly, with many new
               contributions and developments occurring every day.
               <br />
               •Significantly longer range than for Bluetooth and WiFi <br />

@@ -30,8 +30,8 @@ const AdvAbout = () => {
           </h2>
           <p className="text-base lg:text-lg font-light text-gray-400 max-w-xl mx-auto">
             We’re a technology company redefining how buildings are connected,
-            automated, and optimised—intuitive, scalable, and ready for the
-            future.
+            automated, and optimised — ensuring they are intuitive, scalable,
+            and ready for the future.
           </p>
         </div>
         <div className="mb-14 grid h-full grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 ">

@@ -31,7 +31,7 @@ export default function CtaPartners() {
               type="link"
               className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
             >
-              Become a Partners
+              Become a Partner
               <ArrowRight className="ml-2 w-4" />
             </Button>
           </div>

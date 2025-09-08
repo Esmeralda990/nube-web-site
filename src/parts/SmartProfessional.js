@@ -22,9 +22,9 @@ const SmartPS = () => {
           <div className="lg:w-1/2">
             <p className="text-muted-foreground font-light text-gray-400 lg:text-xl max-w-md">
               Managing multiple buildings with disconnected systems is complex
-              and inefficient. Nube iO brings everything together—uniting data
+              and inefficient. Nube iO brings everything together — uniting data
               from all sites into one scalable platform for live monitoring,
-              faster fault response, and portfolio-wide performance
+              faster fault response, and portfolio - wide performance
               optimisation.
             </p>
           </div>

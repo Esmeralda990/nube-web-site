@@ -17,8 +17,7 @@ const ProductRubix = () => {
       <div className="container mx-auto">
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Compute <br />
-          Multi-protocol control. <br />
-          Scalable. Smart.
+          Multi-Protocol Smart Gateway <br />
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -46,15 +45,15 @@ const ProductRubix = () => {
                 One Device. Multiple Protocols
               </h3>
               <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed sm:break-words overflow-hidden max-w-xl">
-                The Rubix-Compute can be used in the modern web via a REST-API.
-                But the device is also a native BACnet/IP device.
+                The Rubix - Compute can be used in the modern web via a REST -
+                API. But the device is also a native BACnet/IP device.
               </p>
               <h3 className="text-xl lg:text-2xl font-bold mt-8 mb-4 text-theme-blue dark:text-theme-teal">
                 One Device. Multiple Configurations
               </h3>
               <p className="font-light text-base md:text-lg text-gray-400 leading-relaxed  sm:break-words overflow-clip max-w-xl mb-8">
                 Rubix Compute is a one of a kind IoT gateway that aggregates all
-                types of building data via multiple peripherals
+                types of building data via multiple peripherals.
               </p>
               <div className="overflow-x-auto ">
                 <table className="min-w-m sm:min-w-xs table-auto justify-start">
@@ -121,10 +120,10 @@ const ProductRubix = () => {
                     </tr>
                     <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
                       <td className="border px-4 py-2 text-xs sm:text-sm">
-                        IO Expansion
+                        I/O Expansion
                       </td>
                       <td className="border px-4 py-2 font-light text-xs sm:text-sm">
-                        Side plugin Power & Comms to IO 16
+                        Side plugin Power & Comms to iO 16
                       </td>
                     </tr>
                     <tr className="m-0 border-t p-0 even:bg-muted dark:text-white">
@@ -147,7 +146,7 @@ const ProductRubix = () => {
               wired gateway capable of monitoring and controlling various
               applications. For example, it can be used in building to control
               and monitor the heating, cooling and ventilation systems. This BMS
-              multi-gateway will collect data from both wired and wireless
+              multi - gateway will collect data from both wired and wireless
               devices. It will enable you to aggregate data from multiple
               sensors and send it anywhere – your cloud, a local server, or
               3rd-party hardware via BACnet
@@ -175,13 +174,13 @@ const ProductRubix = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "MULTIPLE CONFIGURATIONS Use it as a master, slave, or gateway device",
-                "SEAMLESS INTEGRATION Integrate in your existing BMS Via BACnet/IP",
-                "WIRELESS COMMUNICATION Wireless enabled comms: LoRa® & LoRaWAN®",
-                "WIRELESS RECEIVER LoRa® & LoRaWAN®",
-                "HVAC CONTROLS Use it as a native stand-alone HVAC and lighting control",
-                "RUN MULTIPLE SERVICES Run BACnet and LoRaWan®, MQTT at the same time",
-                "SEND DATA ANYWHERE Be it a cloud, local server, or 3rd-party hardware",
+                "MULTIPLE CONFIGURATIONS: Use it as a master, slave, or gateway device",
+                "SEAMLESS INTEGRATION: Integrate in your existing BMS Via BACnet/IP",
+                "WIRELESS COMMUNICATION: Wireless enabled comms: LoRa® & LoRaWAN®",
+                "WIRELESS RECEIVER: LoRa® & LoRaWAN®",
+                "HVAC CONTROLS: Use it as a native stand-alone HVAC and lighting control",
+                "RUN MULTIPLE SERVICES: Run BACnet and LoRaWan®, MQTT at the same time",
+                "SEND DATA ANYWHERE: Be it a cloud, local server, or 3rd-party hardware",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}

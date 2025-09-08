@@ -158,7 +158,7 @@ export const IconsBenefits = [
     id: "3",
     title: "Scalable Across Sites",
     description:
-      "Easily manage one or hundreds of buildings from one central login — designed to scale across portfolios, projects, or multi-site deployments.",
+      "Easily manage one or hundreds of buildings from one central login — designed to scale across portfolios, projects, or multi - site deployments.",
     icon: Flexible,
     iconDark: FlexibleDark,
   },
@@ -213,17 +213,17 @@ export const RubixConnectLW = [
 export const Blog1 = [
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "LoRa® Sensors",
     link: "/Lora/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -231,17 +231,17 @@ export const Blog1 = [
 export const Blog2 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "LoRa® Sensors",
     link: "/Lora/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -249,17 +249,17 @@ export const Blog2 = [
 export const Blog3 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -267,17 +267,17 @@ export const Blog3 = [
 export const Blog4 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "LoRa® Sensors",
     link: "/Lora/",
   },
 ];
@@ -347,7 +347,7 @@ export const Casestudy = [
     id: "Victorian Schools",
     title: "Victorian Schools",
     imageUrl: Victorian,
-    type: "Energy savings support long-term sustainability goals and healthier learning spaces.",
+    type: "Energy savings support long - term sustainability goals and healthier learning spaces.",
     animation: "left",
     link: "/victorian/",
   },
@@ -361,7 +361,7 @@ export const Casestudy = [
   },
   {
     id: "Fujitsu AnywAIR iO",
-    title: "Fujitsu AnywAIR iO:",
+    title: "Fujitsu AnywAIR iO",
     imageUrl: Fujitsu,
     type: "Real-time monitoring solution and alerting system for maintenance.",
     animation: "right",

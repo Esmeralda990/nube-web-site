@@ -17,8 +17,9 @@ export default function HeroSolutions() {
         </h1>
         <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed">
           We help businesses connect and automate their buildings with scalable,
-          data-driven technology. By bridging BMS and IoT, we simplify control,
-          improve visibility, and unlock smarter, more sustainable operations.
+          data - driven technology. By bridging BMS and IoT, we simplify
+          control, improve visibility, and unlock smarter, more sustainable
+          operations.
         </p>
       </div>
 
