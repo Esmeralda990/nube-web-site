@@ -26,7 +26,7 @@ export const DataAccordion = [
     id: 1,
     question: "What does Nube iO do?",
     answer:
-      "Nube iO creates intelligent automation technologies, including advanced hardware and software solutions, to simplify, optimise, and future - proof management of smart spaces and infrastructures.",
+      "Nube iO creates intelligent automation technologies, including advanced hardware and software solutions, to simplify, optimise, and future-proof management of smart spaces and infrastructures.",
     icons: Icons1,
   },
   {
@@ -47,7 +47,7 @@ export const DataAccordion = [
     id: 4,
     question: "What types of hardware does Nube iO offer?",
     answer:
-      "Nube iO provides controllers ( Rubix Compute, Rubix IO 16), LoRa® wireless sensors (Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (Rubix Connect LW).",
+      "Nube iO provides controllers (e.g., Rubix Compute, Rubix IO-16), LoRa® wireless sensors (Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (Rubix Connect LW).",
     icons: Icons4,
   },
   {
@@ -61,28 +61,28 @@ export const DataAccordion = [
     id: 6,
     question: "What is LoRa®, and why does Nube iO use it?",
     answer:
-      "LoRa® (Long Range) is a wireless technology enabling reliable, secure communication over extended distances with low power consumption. Nube iO leverages LoRa® for cost - effective, scalable deployments and superior data reliability.",
+      "LoRa® (Long Range) is a wireless technology enabling reliable, secure communication over extended distances with low power consumption. Nube iO leverages LoRa® for cost-effective, scalable deployments and superior data reliability.",
     icons: Icons6,
   },
   {
     id: 7,
     question: "What software solutions does Nube iO provide?",
     answer:
-      "Our software portfolio includes Rubix CE, a cloud - based management platform (Nube iO Cloud), and extensive API connectivity services for seamless third - party integrations.",
+      "Our software portfolio includes Rubix CE, a cloud-based management platform (Nube iO Cloud), and extensive API connectivity services for seamless third-party integrations.",
     icons: Icons7,
   },
   {
     id: 8,
     question: "Can I remotely manage multiple buildings with Nube iO software?",
     answer:
-      "Absolutely. Nube iO Cloud provides a centralised interface, enabling real - time monitoring and management of multiple sites from anywhere in the world.",
+      "Absolutely. Nube iO Cloud provides a centralised interface, enabling real-time monitoring and management of multiple sites from anywhere in the world.",
     icons: Icons8,
   },
   {
     id: 9,
     question: "Is special training required to operate Nube iO software?",
     answer:
-      "No. Our software is designed to be intuitive and user - friendly, but we also offer comprehensive training and professional support services to maximise user confidence and efficiency.",
+      "No. Our software is designed to be intuitive and user-friendly, but we also offer comprehensive training and professional support services to maximise user confidence and efficiency.",
     icons: Icons9,
   },
   {
@@ -103,7 +103,7 @@ export const DataAccordion = [
     id: 12,
     question: "Can Nube iO solutions be customised for OEM partners?",
     answer:
-      "Yes. We offer fully customisable and white - labelled solutions designed specifically for OEM partners, enabling you to leverage our advanced technology stack under your brand.",
+      "Yes. We offer fully customisable and white-labelled solutions designed specifically for OEM partners, enabling you to leverage our advanced technology stack under your brand.",
     icons: Icons12,
   },
   {
@@ -123,9 +123,10 @@ export const DataAccordion = [
   },
   {
     id: 15,
-    question: "Can Nube iO help buildings achieve regulatory compliance?",
+    question:
+      "Can Nube iO help buildings achieve regulatory compliance (e.g., NABERS)?",
     answer:
-      "Absolutely. Nube iO solutions support various compliance standards such as NABERS, Green Star, and other global sustainability certifications by providing accurate reporting, analytics, and energy - efficient technology.",
+      "Absolutely. Nube iO solutions support various compliance standards such as NABERS, Green Star, and other global sustainability certifications by providing accurate reporting, analytics, and energy-efficient technology.",
     icons: Icons15,
   },
   {

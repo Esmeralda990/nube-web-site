@@ -17,8 +17,9 @@ const RubixLW = () => {
       <div className="container mx-auto px-12">
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Connect LW <br />
-          Smart LoRaWAN® Gateway
+          Seamless LoRaWAN® Connectivity
           <br />
+          for Smart Buildings
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -104,17 +105,17 @@ const RubixLW = () => {
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
-              The Rubix Connect LW features a high - performance LoRaWAN®
+              The Rubix Connect LW features a high-performance LoRaWAN®
               concentrator card seamlessly integrated into a specialised module
               for use with the Rubix Compute and other IOT systems. A powerful,
               efficient platform for deploying LoRaWAN® networks. Designed for
-              low power consumption and multi - channel support, it streamlines
+              low power consumption and multi-channel support, it streamlines
               network setup and scales easily to accommodate various
               applications such as smart cities, agricultural monitoring,
               environmental sensing, industrial automation, and smart metering.
-              The RC-LW-CON-1 is an add - on module to the Nube iO Rubix -
-              Compute. Once plugged into the Rubix Compute this enables the
-              Rubix Compute to run as a LoRaWAN® server.
+              The RC-LW-CON-1 is an add-on module to the Nube iO Rubix-Compute.
+              Once plugged into the Rubix Compute this enables the Rubix Compute
+              to run as a LoRaWAN® server.
             </p>
             <div className="flex gap-4 mt-6">
               <a
@@ -140,11 +141,11 @@ const RubixLW = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "EASY TO INSTALL: Attach to any surface. No wiring required",
-                "PLUG AND PLAY: Add extra modules to the Rubix-Compute",
-                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol",
-                "EASILY SCALE UP OR DOWN: 100 Plus devices per gateway",
-                "INTEGRATE INTO ANY BMS: Easily add to your existing building management system via BACnet, Modbus or LoRaWAN®",
+                "Easy to install Attach to any surface. No wiring required",
+                "PLUG AN PLAY Add extra modules to the Rubix-Compute",
+                "Lora wireless communication Built based on LoRa® wireless protocol",
+                "100 Plus devices per gateway Easily scale up or down",
+                "INTEGRATE INTO ANY BMS Easily add to your existing building management system via BACnet, Modbus or LoRaWAN®",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}

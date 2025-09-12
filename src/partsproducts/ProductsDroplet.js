@@ -139,7 +139,7 @@ const LoraDroplet = () => {
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="text-muted-foreground font-light text-lg text-gray-400 mb-10 leading-relaxed">
               The Droplet is a LoRa® IoT sensor. It captures multiple points of
-              data – temperature, humidity, lux, and motion monitoring with
+              data–temperature, humidity, lux, and motion monitoring with
               minimal time required for installation and wiring.
             </p>
             <div className="flex gap-4 mt-6">
@@ -166,13 +166,13 @@ const LoraDroplet = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "UP TO 10-YEAR BATTERY LIFE: Simply install it and start collecting data",
-                "MULTIPLE DATA CAPTURE POINTS: Temp, humidity, lux and motion monitoring ",
-                "UP TO 200M TRANSMISSION (INDOORS): A small device with powerful capabilities",
-                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol ",
-                "EASY TO INSTAL: Attach to any surface. No wiring required ",
-                "100 PLUS DEVICES PER GATEWAY: Easily scale up or down ",
-                "LOW POWER CONSUMPTION: Drastically better than 4G, Wifi, or Bluetooth-based devices",
+                "UP TO 10-YEAR BATTERY LIFE Simply install it and start collecting data",
+                "MULTIPLE DATA CAPTURE POINTS Temp, humidity, lux and motion monitoring ",
+                "UP TO 200M TRANSMISSION (INDOORS) A small device with powerful capabilities",
+                "LORA® WIRELESS COMMUNICATION Built based on LoRa® wireless protocol ",
+                "EASY TO INSTAL Attach to any surface. No wiring required ",
+                "100 PLUS DEVICES PER GATEWAY Easily scale up or down ",
+                "LOW POWER CONSUMPTION Drastically better than 4G, Wifi, or Bluetooth-based devices",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}
@@ -185,11 +185,10 @@ const LoraDroplet = () => {
               Why Lora®
             </h4>
             <p className="font-light  text-base lg:text-lg  text-gray-400 leading-relaxed sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              LoRa® is a low - power, long - range wireless technology designed
-              for the Internet of Things. It is less affected by buildings and
-              other obstructions than regular WiFi, with one gateway generally
-              being able to provide coverage for a 70x70m 3 - story building.{" "}
-              <br />
+              LoRa® is a low-power, long-range wireless technology designed for
+              the Internet of Things. It is less affected by buildings and other
+              obstructions than regular WiFi, with one gateway generally being
+              able to provide coverage for a 70x70m 3-story building. <br />
               LoRa® is expected to hold 75% of the IoT device market share soon.
               The LoRa® community is expanding rapidly, with many new
               contributions and developments occurring every day.

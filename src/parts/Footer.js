@@ -53,12 +53,12 @@ const Footer7 = () => {
                 </span>
                 <p className="mt-6 text-sm text-gray-500 dark:text-white font-light">
                   Nube iO’s mission is to push the boundaries of traditional
-                  building automation. Our systems do more than just automate —
-                  they optimise every aspect of building management, from energy
-                  efficiency to occupant comfort. By leveraging cutting - edge
-                  IoT technology, Nube iO creates environments that are smarter,
-                  safer, and more sustainable, perfectly aligning with the
-                  growing demand for eco - friendly infrastructure.
+                  building automation. Our systems do more than just
+                  automate—they optimise every aspect of building management,
+                  from energy efficiency to occupant comfort. By leveraging
+                  cutting-edge IoT technology, Nube iO creates environments that
+                  are smarter, safer, and more sustainable, perfectly aligning
+                  with the growing demand for eco-friendly infrastructure.
                 </p>
               </div>
             </div>

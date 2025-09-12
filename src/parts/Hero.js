@@ -35,7 +35,7 @@ export default function Hero() {
           <Fade triggerOnce delay={400}>
             <p className="font-light text-gray-400 mx-auto text-muted-foreground lg:text-xl lg:mb-24">
               We help businesses connect and automate their buildings with
-              scalable, data - driven technology. By bridging BMS and IoT, we
+              scalable, data-driven technology. By bridging BMS and IoT, we
               simplify control, improve visibility, and unlock smarter, more
               sustainable operations.
             </p>

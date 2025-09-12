@@ -14,7 +14,7 @@ const CaseBlog2 = () => {
       <div className="container mx-auto max-w-fit">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="text-balance text-2xl lg:text-5xl font-bold text-theme-blue dark:text-white">
-            Product Category
+            Explore More Products
           </h2>
         </div>
 

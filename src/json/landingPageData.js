@@ -372,7 +372,7 @@ export const AdvantageAbout = [
       logo: IconsCom,
       title: "Why We Exist",
       description:
-        "Building automation should be simple, smart, and accessible. We create tools that do more — with less complexity.",
+        "Building automation should be simple, smart, and accessible. We create tools that do more—with less complexity.",
     },
     {
       title: "Global Reach & Growth",
@@ -395,7 +395,7 @@ export const AdvantageAbout = [
     {
       title: "Future-Ready Technology",
       description:
-        "With IoT - native design and protocol flexibility, our tech meets the demands of tomorrow — today. ",
+        "With IoT-native design and protocol flexibility, our tech meets the demands of tomorrow—today. ",
       logo: IconsSol,
       image: Solutions,
       imageDark: SolutionsDark,
@@ -446,7 +446,7 @@ export const OurStoryD = [
       title: "Rubix Wires Programming Software (v1.0)",
       date: "2018",
       description:
-        "Introduced low - code configuration tool for seamless device programming and logic control.",
+        "Introduced low-code configuration tool for seamless device programming and logic control.",
       icon: IconsOur5,
       iconDark: IconsOur18,
     },
@@ -464,7 +464,7 @@ export const OurStoryD = [
       title: "Expanded Global Support – Dual Time Zones",
       date: "2020",
       description:
-        "Scaled customer and technical support to operate effectively across Asia - Pacific and global regions.",
+        "Scaled customer and technical support to operate effectively across Asia-Pacific and global regions.",
       icon: IconsOur7,
       iconDark: IconsOur20,
     },
@@ -491,7 +491,7 @@ export const OurStoryD = [
       title: "Nube iO Mobile App Launched",
       date: "2023",
       description:
-        "Brought real - time BMS control and monitoring to mobile devices.",
+        "Brought real-time BMS control and monitoring to mobile devices.",
       icon: IconsOur10,
       iconDark: IconsOur23,
     },
@@ -518,7 +518,7 @@ export const OurStoryD = [
       title: "Smart Home Solution Launched",
       date: "2025",
       description:
-        "Introduced intelligent control technology for residential HVAC and energy automation.",
+        "Introduced intelligent control technology for residential HVAC and energy automation..",
       icon: IconsOur13,
       iconDark: IconsOur26,
     },
@@ -531,7 +531,7 @@ export const ServiceSolutions = [
     title: "Client Solutions",
     imageUrl: Client,
     imageUrlDark: ClientDark,
-    type: "Tailored dashboards give complete visibility across your building portfolio — all in one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
+    type: "Tailored dashboards give complete visibility across your building portfolio—all in one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
     animation: "left",
   },
   {
@@ -547,7 +547,7 @@ export const ServiceSolutions = [
     title: "Training & Support",
     imageUrl: Management,
     imageUrlDark: ManagementDark,
-    type: "We provide comprehensive guidance for clients and contractors during the dashboard setup process. Ensuring all users are set - up for success, Nube iO empowers your team to deliver better business outcomes.",
+    type: "We provide comprehensive guidance for clients and contractors during the dashboard setup process. Ensuring all users are set-up for success, Nube iO empowers your team to deliver better business outcomes.",
     animation: "right",
   },
 ];
@@ -567,7 +567,7 @@ export const Managers = [
     name: "Aidan Pickard",
     role: "CTO & Co-Founder",
     description:
-      "HVAC & Automation Expert | 15+ Years Driving Smart Building Innovation.",
+      "HVAC & Automation Expert | 15+ Years Driving Smart Building Innovation",
     imageUrl: CTO,
     linkedinUrl: "https://www.linkedin.com/in/aidan-pickard-b4689643/",
   },
@@ -576,7 +576,7 @@ export const Managers = [
     name: "Matthew Cady",
     role: "COO & Co-Founder",
     description:
-      "Entrepreneurial finance expert managing operations, budgets, and key alliances.",
+      "Entrepreneurial finance expert managing operations, budgets, and key alliances",
     imageUrl: COO,
     linkedinUrl: "https://www.linkedin.com/in/matt-cady-75596410b/",
   },
@@ -605,7 +605,7 @@ export const Solutionsfeature = [
     id: "feature-1",
     title: "Edge Gateway",
     description:
-      "Edge controller for real - time automation, local processing, and multi-protocol integration across your building systems.",
+      "Edge controller for real-time automation, local processing, and multi-protocol integration across your building systems.",
     image: RubixSolu,
     link: "/rubix-compute/",
   },
@@ -621,7 +621,7 @@ export const Solutionsfeature = [
     id: "feature-3",
     title: "LoRa® Sensors",
     description:
-      "Long-range, battery - powered LoRaWAN® sensors for accurate temperature, humidity, and indoor air quality monitoring.",
+      "Long-range, battery-powered LoRaWAN® sensors for accurate temperature, humidity, and indoor air quality monitoring.",
     image: IconsOur4,
     link: "/Lora/",
   },
@@ -629,7 +629,7 @@ export const Solutionsfeature = [
     id: "feature-4",
     title: "Expansion Modules",
     description:
-      "Modular add - ons that extend controller functionality with more inputs, outputs, and smart communication features.",
+      "Modular add-ons that extend controller functionality with more inputs, outputs, and smart communication features.",
     image: ExpansionSolu,
     link: "/rubix-connect-lw/",
   },
@@ -640,7 +640,7 @@ export const AdvantageSolutions = [
     {
       title: "White Labelling",
       description:
-        "Custom - branded interfaces and hardware that let your product shine — with Nube iO behind the scenes.",
+        "Custom-branded interfaces and hardware that let your product shine—with Nube iO behind the scenes.",
       imageUrl: Labelling,
       imageUrlDark: Labellingdark,
     },
@@ -663,7 +663,7 @@ export const AdvantageSolutions = [
     {
       title: "Onboarding Enablement",
       description:
-        "Partner toolkits, documentation, and training to get your team up and running — fast.",
+        "Partner toolkits, documentation, and training to get your team up and running—fast.",
       imageUrl: Support,
       imageUrlDark: Supportdark,
     },
@@ -684,7 +684,7 @@ export const WhyData = [
       id: "2",
       title: "Sustainability",
       description:
-        "Build efficient, future - ready environments with open systems that reduce energy use and support long - term goals.",
+        "Build efficient, future-ready environments with open systems that reduce energy use and support long-term goals.",
       image: Why2,
       imageDark: Why2Dark,
     },
@@ -692,7 +692,7 @@ export const WhyData = [
       id: "3",
       title: "Sales & Marketing",
       description:
-        "Access tailored campaigns, co - branded assets, and strategic tools to grow visibility and drive commercial success.",
+        "Access tailored campaigns, co-branded assets, and strategic tools to grow visibility and drive commercial success.",
       image: Why3,
       imageDark: Why3Dark,
     },

@@ -49,7 +49,7 @@ export default function SoftwareBenefits() {
           Why Rubix CE
         </h2>
         <p className="font-light text-lg text-gray-400 text-center mb-12 max-w-4xl mx-auto">
-          Rubix CE gives you the freedom to deploy powerful, licence - free
+          Rubix CE gives you the freedom to deploy powerful, licence-free
           control logic with real-time responsiveness and protocol-ready
           flexibility.
         </p>

@@ -18,7 +18,8 @@ const ProductRubix16 = () => {
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix iO 16
           <br />
-          Smart I/O Controller for Buildings <br />
+          Scalable I/O Control <br />
+          for Smart Buildings
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -103,12 +104,12 @@ const ProductRubix16 = () => {
 
           <div className="order-1 h-fit md:sticky md:top-20 md:order-2 sm:items-center lg:items-start sm:flex-row">
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
-              Rubix iO 16 is a series of low - cost iO modules that can
-              communicate wirelessly or over wired Ethernet & RS - 485. This
-              means no more frustrations of cabling in legacy automation
-              solutions. Monitor and control your HVAC, power, and water usage.
-              8 universal outputs, 8 universal inputs capable of 0-10dc, 4-20ma,
-              Digital & 10K Temperatu
+              Rubix iO 16 is a series of low-cost iO modules that can
+              communicate wirelessly or over wired Ethernet & RS-485. This means
+              no more frustrations of cabling in legacy automation solutions.
+              Monitor and control your HVAC, power, and water usage. 8 universal
+              outputs, 8 universal inputs capable of 0-10dc, 4-20ma, Digital &
+              10K Temperatu
             </p>
             <div className="flex gap-4 mt-6">
               <a
@@ -134,12 +135,12 @@ const ProductRubix16 = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "INTEGRATE INTO ANY BMS: Easily add to your existing",
+                "INTEGRATE INTO ANY BMS Easily add to your existing",
                 "HVAC CONTROLS AND REMOTE METERING  ",
-                "LORA® WIRELESS COMMUNICATION: LoRaWAN® enabled IO-Device",
-                "EASY TO INSTALL: Fast install at a low cost ",
-                "PLUG AND PLAY: Add extra modules to the Rubix Compute",
-                "SEND DATA ANYWHERE: Add to any BMS system ",
+                "LORA WIRELESS COMMUNICATION LoRaWAN® enabled IO-Device",
+                "EASY TO INSTALL Fast install at a low cost ",
+                "PLUG AND PLAY Add extra modules to the Rubix Compute",
+                "SEND DATA ANYWHERE Add to any BMS system ",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}
