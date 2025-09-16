@@ -17,9 +17,7 @@ const RubixLW = () => {
       <div className="container mx-auto px-12">
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Connect LW <br />
-          Seamless LoRaWAN® Connectivity
-          <br />
-          for Smart Buildings
+          Smart LoRaWAN®
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -141,11 +139,11 @@ const RubixLW = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "Easy to install Attach to any surface. No wiring required",
-                "PLUG AN PLAY Add extra modules to the Rubix-Compute",
-                "Lora wireless communication Built based on LoRa® wireless protocol",
-                "100 Plus devices per gateway Easily scale up or down",
-                "INTEGRATE INTO ANY BMS Easily add to your existing building management system via BACnet, Modbus or LoRaWAN®",
+                "EASY TO INSTALL: Attach to any surface. No wiring required",
+                "PLUG AND PLAY: Add extra modules to the Rubix-Compute",
+                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol",
+                "EASILY SCALE UP OR DOWN: 100 Plus devices per gateway",
+                "INTEGRATE INTO ANY BMS: Easily add to your existing building management system via BACnet, Modbus or LoRaWAN®",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}

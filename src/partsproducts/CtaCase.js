@@ -20,7 +20,7 @@ export default function CtaCase() {
 
         <div className="relative z-10 flex flex-col items-center rounded-xl bg-gray-100 p-8 text-center lg:p-16 dark:bg-theme-tarjet/70 dark:border dark:border-theme-border shadow-xl">
           <h3 className="mb-3 max-w-3xl text-lg lg:text-3xl font-bold md:mb-4 lg:mb-6 text-theme-blue dark:text-white">
-            Smarter Buildings. Forward Thinking.
+            Smarter Buildings. Forward Thinking
           </h3>
           <p className="mb-8 max-w-3xl text-muted-foreground text-base lg:text-lg font-light text-gray-500">
             Start your Nube iO journey.

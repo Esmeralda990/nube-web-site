@@ -166,13 +166,13 @@ const LoraDroplet = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "UP TO 10-YEAR BATTERY LIFE Simply install it and start collecting data",
-                "MULTIPLE DATA CAPTURE POINTS Temp, humidity, lux and motion monitoring ",
-                "UP TO 200M TRANSMISSION (INDOORS) A small device with powerful capabilities",
-                "LORA® WIRELESS COMMUNICATION Built based on LoRa® wireless protocol ",
-                "EASY TO INSTAL Attach to any surface. No wiring required ",
-                "100 PLUS DEVICES PER GATEWAY Easily scale up or down ",
-                "LOW POWER CONSUMPTION Drastically better than 4G, Wifi, or Bluetooth-based devices",
+                "UP TO 10-YEAR BATTERY LIFE: Simply install it and start collecting data",
+                "MULTIPLE DATA CAPTURE POINTS: Temp, humidity, lux and motion monitoring ",
+                "UP TO 200M TRANSMISSION (INDOORS): A small device with powerful capabilities",
+                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol ",
+                "EASY TO INSTAL: Attach to any surface. No wiring required ",
+                "100 PLUS DEVICES PER GATEWAY: Easily scale up or down ",
+                "LOW POWER CONSUMPTION: Drastically better than 4G, Wifi, or Bluetooth-based devices",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}

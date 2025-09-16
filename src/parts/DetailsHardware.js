@@ -13,9 +13,9 @@ export default function DetailsHardware() {
             Hardware that Connects, Controls and Scales
           </h2>
           <p className="font-light text-xl text-gray-400 leading-relaxed text-center max-w-4xl mx-auto">
-            Explore Nube iO’s hardware suite—from powerful controllers to
-            wireless sensors—designed to seamlessly integrate with your building
-            systems.
+            Explore Nube iO’s hardware suite — from powerful controllers to
+            wireless sensors — designed to seamlessly integrate with your
+            building systems.
           </p>
         </div>
       </section>

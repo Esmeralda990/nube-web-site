@@ -372,7 +372,7 @@ export const AdvantageAbout = [
       logo: IconsCom,
       title: "Why We Exist",
       description:
-        "Building automation should be simple, smart, and accessible. We create tools that do more—with less complexity.",
+        "Building automation should be simple, smart, and accessible. We create tools that do more — with less complexity.",
     },
     {
       title: "Global Reach & Growth",
@@ -395,7 +395,7 @@ export const AdvantageAbout = [
     {
       title: "Future-Ready Technology",
       description:
-        "With IoT-native design and protocol flexibility, our tech meets the demands of tomorrow—today. ",
+        "With IoT-native design and protocol flexibility, our tech meets the demands of tomorrow — today. ",
       logo: IconsSol,
       image: Solutions,
       imageDark: SolutionsDark,
@@ -567,7 +567,7 @@ export const Managers = [
     name: "Aidan Pickard",
     role: "CTO & Co-Founder",
     description:
-      "HVAC & Automation Expert | 15+ Years Driving Smart Building Innovation",
+      "HVAC & Automation Expert | 15+ Years Driving Smart Building Innovation.",
     imageUrl: CTO,
     linkedinUrl: "https://www.linkedin.com/in/aidan-pickard-b4689643/",
   },
@@ -576,7 +576,7 @@ export const Managers = [
     name: "Matthew Cady",
     role: "COO & Co-Founder",
     description:
-      "Entrepreneurial finance expert managing operations, budgets, and key alliances",
+      "Entrepreneurial finance expert managing operations, budgets, and key alliances.",
     imageUrl: COO,
     linkedinUrl: "https://www.linkedin.com/in/matt-cady-75596410b/",
   },
@@ -640,7 +640,7 @@ export const AdvantageSolutions = [
     {
       title: "White Labelling",
       description:
-        "Custom-branded interfaces and hardware that let your product shine—with Nube iO behind the scenes.",
+        "Custom-branded interfaces and hardware that let your product shine — with Nube iO behind the scenes.",
       imageUrl: Labelling,
       imageUrlDark: Labellingdark,
     },
@@ -663,7 +663,7 @@ export const AdvantageSolutions = [
     {
       title: "Onboarding Enablement",
       description:
-        "Partner toolkits, documentation, and training to get your team up and running—fast.",
+        "Partner toolkits, documentation, and training to get your team up and running — fast.",
       imageUrl: Support,
       imageUrlDark: Supportdark,
     },

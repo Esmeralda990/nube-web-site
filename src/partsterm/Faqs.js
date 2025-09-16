@@ -20,7 +20,7 @@ const FAQs = () => {
   };
 
   return (
-    <section className="pb-32 px-4">
+    <section className="pb-32">
       <div className="relative lg:max-w-[130rem] mx-auto w-full rounded-3xl overflow-hidden  mb-16">
         <div className="absolute inset-0 z-0 overflow-hidden max-w-[130rem] w-full mx-auto">
           <img

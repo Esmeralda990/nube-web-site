@@ -36,7 +36,7 @@ import EnviroPage from "pages/EnviroPage";
 import DaikinPage from "pages/DaikinPage";
 import VictorianPage from "pages/VictorianPage";
 import FujitsuPage from "pages/FujitsuPage1";
-import FujitsuPage2 from "pages/FujitsuPage2";
+import AnywairPage from "pages/McAnywairPage";
 import ComingSoonPage from "pages/ComingSoonPage";
 
 import { pageview } from "utils/Analytics";
@@ -83,7 +83,7 @@ function App() {
           <Route path="/daikin/" element={<DaikinPage />} />
           <Route path="/victorian/" element={<VictorianPage />} />
           <Route path="/fujitsu/" element={<FujitsuPage />} />
-          <Route path="/fujitsu2/" element={<FujitsuPage2 />} />
+          <Route path="/Anywair/" element={<AnywairPage />} />
           <Route path="/comingsoon/" element={<ComingSoonPage />} />
         </Routes>
       </HelmetProvider>

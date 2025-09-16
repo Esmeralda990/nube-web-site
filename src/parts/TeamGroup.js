@@ -14,7 +14,7 @@ const TeamGroup = () => {
       <div className="container mx-auto overflow-hidden max-w-7xl ">
         <div className="text-center mb-12  mx-auto">
           <h2 className="text-2xl lg:text-5xl text-theme-blue font-bold leading-tight mb-6 dark:text-white">
-            Our Team, Our Strength.
+            Our Team, Our Strength
           </h2>
         </div>
 

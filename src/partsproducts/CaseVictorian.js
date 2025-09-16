@@ -12,7 +12,7 @@ import Victorian from "../assets/images/CaseStudy/Victorian1.png";
 
 const CaseVictorian4 = () => {
   return (
-    <section className="pb-32 px-4">
+    <section className="pb-32">
       <div className="relative lg:max-w-[130rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.4]">
         <div className="absolute inset-0 z-0">
           <img

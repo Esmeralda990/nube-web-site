@@ -180,7 +180,7 @@ const GifBene = () => {
               <p className="font-light text-base lg:text-lg text-gray-400 leading-relaxed mb-3 max-w-xl">
                 Rubix Wires gives engineers a low-code platform to program
                 control logic, monitor live data, and adapt to evolving building
-                needs—without steep learning curves.
+                needs — without steep learning curves.
               </p>
               <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pb-24 pl-5 ">
                 <li>

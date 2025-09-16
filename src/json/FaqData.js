@@ -47,7 +47,7 @@ export const DataAccordion = [
     id: 4,
     question: "What types of hardware does Nube iO offer?",
     answer:
-      "Nube iO provides controllers (e.g., Rubix Compute, Rubix IO-16), LoRa® wireless sensors (Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (Rubix Connect LW).",
+      "Nube iO provides controllers (e.g. Rubix Compute, Rubix IO-16), LoRa® wireless sensors (Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (Rubix Connect LW).",
     icons: Icons4,
   },
   {
@@ -124,7 +124,7 @@ export const DataAccordion = [
   {
     id: 15,
     question:
-      "Can Nube iO help buildings achieve regulatory compliance (e.g., NABERS)?",
+      "Can Nube iO help buildings achieve regulatory compliance (e.g. NABERS)?",
     answer:
       "Absolutely. Nube iO solutions support various compliance standards such as NABERS, Green Star, and other global sustainability certifications by providing accurate reporting, analytics, and energy-efficient technology.",
     icons: Icons15,

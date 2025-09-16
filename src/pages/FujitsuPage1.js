@@ -29,7 +29,7 @@ export default class CaseFujitsu1Page extends Component {
             name="keywords"
             content="smart building automation, building management system (BMS),OEM BMS integration,IoT for buildings,LoRaWAN building systems,Nube iO building automation,data-driven building performance"
           />
-          <link rel="canonical" href="https://nubeio.com/galvin/ " />
+          <link rel="canonical" href="https://nubeio.com/fujitsu/ " />
           <meta
             property="og:title"
             content="Smart Building Case Studies | Nube iO Real-World Scenarios"
@@ -38,7 +38,7 @@ export default class CaseFujitsu1Page extends Component {
             property="og:description"
             content="Discover how Nube iO transforms buildings with scalable automation. Browse our case studies and implementation scenarios to see real-world results in action."
           />
-          <meta property="og:url" content="https://nubeio.com/galvin/" />
+          <meta property="og:url" content="https://nubeio.com/fujitsu/" />
         </Helmet>
 
         <Header1 />

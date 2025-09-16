@@ -119,13 +119,13 @@ const MicroEdge = () => {
             </h3>
             <ul className="list-disc pl-5 space-y-3 sm:space-y-2 text-lg sm:text-base font-light text-gray-400">
               {[
-                "3 UNIVERSAL INPUTS Use it for CT or sensor monitoring ",
-                "ONE PULSE INPUT Monitor the pulse count for a water or electrical meter",
-                "UP TO 2KM TRANSMISSION A small device with powerful capabilities",
-                "LORA® WIRELESS COMMUNICATION Built based on LoRa® wireless protocol ",
-                "EASY TO INSTALL Instal this battery-powered sensor anywhere ",
-                "100 PLUS DEVICES PER GATEWAY Easily scale up or down",
-                "WATERPROOF Suitable for outdoors or hard-to-access meters",
+                "3 UNIVERSAL INPUTS: Use it for CT or sensor monitoring ",
+                "ONE PULSE INPUT: Monitor the pulse count for a water or electrical meter",
+                "UP TO 2KM TRANSMISSION: A small device with powerful capabilities",
+                "LORA® WIRELESS COMMUNICATION: Built based on LoRa® wireless protocol ",
+                "EASY TO INSTALL: Instal this battery-powered sensor anywhere ",
+                "100 PLUS DEVICES PER GATEWAY: Easily scale up or down",
+                "WATERPROOF: Suitable for outdoors or hard-to-access meters",
               ].map((benefit, index) => (
                 <li key={index}>{benefit}</li>
               ))}

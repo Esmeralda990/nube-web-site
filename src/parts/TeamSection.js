@@ -14,7 +14,7 @@ export default function TeamSection() {
         </h2>
         <p className="mb-8 max-w-4xl text-muted-foreground font-light text-gray-400 lg:text-xl">
           Behind every solution is a passionate team of innovators, engineers,
-          and leaders driving Nube iO’s vision forward—one smart space at a
+          and leaders driving Nube iO’s vision forward — one smart space at a
           time.
         </p>
       </div>

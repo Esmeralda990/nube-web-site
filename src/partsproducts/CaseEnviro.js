@@ -12,7 +12,7 @@ import Enviro from "../assets/images/CaseStudy/Enviro.png";
 
 const CaseEnviro2 = () => {
   return (
-    <section className="pb-32 px-8">
+    <section className="pb-32">
       <div className="relative lg:max-w-[130rem] w-full rounded-3xl overflow-hidden shadow-[0_4px_8px_rgba(0,0,0,0.4]">
         <div className="absolute inset-0 z-0">
           <img

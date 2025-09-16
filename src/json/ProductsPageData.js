@@ -64,11 +64,12 @@ import Icon5 from "../assets/images/IconsConnectivity/App5.svg";
 import Icon6 from "../assets/images/IconsConnectivity/App6.svg";
 
 // Case Study
-import Galvin from "../assets/images/CaseStudy/Galvin_Blanco.png";
-import Enviro from "../assets/images/CaseStudy/Eviro_Blanco.png";
-import Daikin from "../assets/images/CaseStudy/Daikin_Blanco.png";
-import Victorian from "../assets/images/CaseStudy/Victorian1.png";
-import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+import Galvin from "../assets/images/CaseStudy/CaseGalving.png";
+import Enviro from "../assets/images/CaseStudy/CaseEnviro.png";
+import Daikin from "../assets/images/CaseStudy/CaseDaikin.png";
+import Victorian from "../assets/images/CaseStudy/CaseVictorian.png";
+import Fujitsu from "../assets/images/CaseStudy/CaseFujitsu.png";
+import Mc from "../assets/images/CaseStudy/CaseMcDonal.png";
 
 export const RubixCompute = [
   {
@@ -213,17 +214,17 @@ export const RubixConnectLW = [
 export const Blog1 = [
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "Lora® Sensors",
     link: "/Lora/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -231,17 +232,17 @@ export const Blog1 = [
 export const Blog2 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "Lora® Sensors",
     link: "/Lora/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -249,17 +250,17 @@ export const Blog2 = [
 export const Blog3 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img4,
-    title: "Rubix Connect LW",
+    title: "Expansion Modules",
     link: "/rubix-connect-lw/",
   },
 ];
@@ -267,17 +268,17 @@ export const Blog3 = [
 export const Blog4 = [
   {
     img: Img1,
-    title: "Rubix Compute",
+    title: "Edge Gateway",
     link: "/rubix-compute/",
   },
   {
     img: Img2,
-    title: "Rubix IO 16",
+    title: "iO Controllers",
     link: "/rubix-io-16/",
   },
   {
     img: Img3,
-    title: "Lora ® Sensors",
+    title: "Lora® Sensors",
     link: "/Lora/",
   },
 ];
@@ -353,18 +354,18 @@ export const Casestudy = [
   },
   {
     id: "Fujitsu",
-    title: "Fujitsu AnywAIR iO",
+    title: "Fujitsu AnywAiR iO",
     imageUrl: Fujitsu,
-    type: "Complete BMS solution for Oasis Shopping Centre.",
+    type: "iO Cloud delivered an OEM integration for Fujitsu's commercial HVAC systems.",
     animation: "right",
     link: "/fujitsu/",
   },
   {
-    id: "Fujitsu AnywAIR iO",
-    title: "Fujitsu AnywAIR iO:",
-    imageUrl: Fujitsu,
-    type: "Real-time monitoring solution and alerting system for maintenance.",
+    id: "AnywAIR iO",
+    title: "AnywAiR iO",
+    imageUrl: Mc,
+    type: "Want to see how the AnywAiR® iO solution performs in a real-world environment?",
     animation: "right",
-    link: "/comingsoon/",
+    link: "/Anywair/",
   },
 ];
