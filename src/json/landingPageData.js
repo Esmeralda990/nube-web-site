@@ -518,7 +518,7 @@ export const OurStoryD = [
       title: "Smart Home Solution Launched",
       date: "2025",
       description:
-        "Introduced intelligent control technology for residential HVAC and energy automation..",
+        "Introduced intelligent control technology for residential HVAC and energy automation.",
       icon: IconsOur13,
       iconDark: IconsOur26,
     },
@@ -531,7 +531,7 @@ export const ServiceSolutions = [
     title: "Client Solutions",
     imageUrl: Client,
     imageUrlDark: ClientDark,
-    type: "Tailored dashboards give complete visibility across your building portfolio—all in one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
+    type: "Tailored dashboards give complete visibility across building portfolio’s — all from the one platform. Nube iO seamlessly integrates with existing systems, delivering a unified view for monitoring, control, and scalable solution deployment.",
     animation: "left",
   },
   {

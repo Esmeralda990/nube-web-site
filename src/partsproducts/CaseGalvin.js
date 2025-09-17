@@ -8,7 +8,7 @@ import React from "react";
 
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
 import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
-import Galvin from "../assets/images/CaseStudy/Galvin_Blanco.png";
+import Galvin from "../assets/images/CaseStudy/CaseGalving.png";
 
 const CaseGalvin1 = () => {
   return (
@@ -28,19 +28,18 @@ const CaseGalvin1 = () => {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
-        <div className="relative z-10 container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
+        <div className="relative z-10 container mx-auto px-6 flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
-            <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
+            <div className="flex w-full max-w-[54rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
-                <h1 className="text-4xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
-                  Hospital Thermal Valve Monitoring
+                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
+                  IoT Innovation Transforming Water Safety Compliance in
+                  Hospitals
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
-                  Galvin Engineering is a trusted manufacturer and supplier of
-                  specialised water solutions for the health, education, and
-                  commercial sectors. Their hospital-grade thermal mixing valves
-                  are critical for maintaining water safety and ensuring
-                  regulatory compliance in healthcare environments.
+                  Galvin Engineering partnered with Nube iO to deliver a
+                  scalable IoT solution, ensuring water safety compliance in
+                  hospitals.
                 </p>
               </div>
             </div>
@@ -48,17 +47,14 @@ const CaseGalvin1 = () => {
         </div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-6">
         <div className="mx-auto w-full max-w-5xl lg:flex lg:gap-20 ">
           <div className="flex w-full max-w-[40rem] mx-auto flex-col gap-10">
             <div className="prose">
-              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue lg:mb-12 text-center mt-12 dark:text-white ">
-                Galvin Engineering
-              </h2>
               <img
                 src={Galvin}
                 alt="Galvin Engineering"
-                className="w-full object-contain "
+                className="w-full object-contain rounded-lg mb-12"
               />
               <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 pt-4 dark:text-theme-teal">
                 Overview

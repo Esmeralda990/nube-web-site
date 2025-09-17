@@ -23,7 +23,7 @@ export default class AboutPage extends Component {
     return (
       <>
         <Helmet>
-          <title>About | Nube iO – Smart Building Innovation</title>
+          <title>About Us | Nube iO – Smart Building Innovation</title>
           <meta
             name="description"
             content="Learn how Nube iO is transforming building automation through scalable IoT and software-driven integration."

@@ -26,7 +26,7 @@ export const DataAccordion = [
     id: 1,
     question: "What does Nube iO do?",
     answer:
-      "Nube iO creates intelligent automation technologies, including advanced hardware and software solutions, to simplify, optimise, and future-proof management of smart spaces and infrastructures.",
+      "Nube iO provides controllers (e.g. Rubix Compute, Rubix iO 16), LoRa® wireless sensors (e.g. Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (e.g. Rubix Connect LW).",
     icons: Icons1,
   },
   {

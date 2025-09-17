@@ -8,7 +8,7 @@ import React from "react";
 
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
 import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
-import Fujitsu from "../assets/images/CaseStudy/Fujitsu_Blanco.png";
+import Fujitsu from "../assets/images/CaseStudy/CaseMcDonal.png";
 
 const CaseFujitsu6 = () => {
   return (
@@ -28,7 +28,7 @@ const CaseFujitsu6 = () => {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
-        <div className="relative z-10 container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
+        <div className="relative z-10 container mx-auto px-6 flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
@@ -36,10 +36,10 @@ const CaseFujitsu6 = () => {
                   Smarter Operations at McDonald’s Burwood
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
-                  Explore how Fujitsu General implemented this technology at
-                  McDonald’s Burwood, enabling remote HVAC management, energy
-                  monitoring, and indoor air quality insights — all powered by
-                  Nube iO’s OEM solution.
+                  Explore how Fujitsu General implemented their anywAiR® iO
+                  technology at McDonald’s Burwood, enabling remote HVAC
+                  management, energy monitoring, and indoor air quality insights
+                  — all powered by Nube iO’s OEM solution.
                 </p>
               </div>
             </div>
@@ -47,17 +47,14 @@ const CaseFujitsu6 = () => {
         </div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-6">
         <div className="mx-auto w-full max-w-5xl lg:flex lg:gap-20 ">
           <div className="flex w-full max-w-[40rem] mx-auto flex-col gap-10">
             <div className="prose">
-              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue mb-12 pt-4 text-center mt-12 dark:text-white">
-                McDonalds Burwood, Victoria
-              </h2>
               <img
                 src={Fujitsu}
                 alt="McDonald’s"
-                className="w-full object-contain "
+                className="w-full object-contain rounded-lg mb-12"
               />
               <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 pt-4 dark:text-theme-teal">
                 The Project

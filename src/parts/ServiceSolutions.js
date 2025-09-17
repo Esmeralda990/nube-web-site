@@ -25,12 +25,12 @@ export default function ServiceSolutions({ data }) {
                   alt={item.title}
                   className="max-w rounded overflow-hidden shadow-lg w-full h-56 object-cover hidden dark:block"
                 />
-                <div className="py-2">
+                <div className="py-4">
                   {" "}
                   <h4 className="text-theme-blue text-center  text-base lg:text-lg mb-4 mt-4 dark:text-theme-teal">
                     {item.title}
                   </h4>
-                  <p className="font-light text-gray-400 text-center mb-4">
+                  <p className="font-light text-gray-400 text-left mb-4 px-8">
                     {item.description || item.type}
                   </p>
                 </div>

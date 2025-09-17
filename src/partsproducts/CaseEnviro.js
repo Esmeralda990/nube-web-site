@@ -8,7 +8,7 @@ import React from "react";
 
 import bgImgLight from "../assets/images/ImgFooter/Fondo_Hom.svg";
 import bgImgDark from "../assets/images/ImgFooter/Fondo_HomeD.svg";
-import Enviro from "../assets/images/CaseStudy/Enviro.png";
+import Enviro from "../assets/images/CaseStudy/CaseEnviro.png";
 
 const CaseEnviro2 = () => {
   return (
@@ -28,17 +28,18 @@ const CaseEnviro2 = () => {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
-        <div className="relative z-10 container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
+        <div className="relative z-10 container mx-auto px-6 flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
-                <h1 className="text-4xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
-                  Enhancing Sustainability and Efficiency
+                <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
+                  Enviro Delivers Scalable HVAC & BMS Modernisation
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
-                  Enviro Building Services is an Australian BMS integrator
-                  specializing in HVAC and automation, focusing on sustainable,
-                  efficient, and user-centric solutions.
+                  Enviro Building Services leverages Nube iO’s automation stack
+                  to deliver scalable HVAC and BMS upgrades with minimal
+                  disruption, transforming legacy systems into smart,
+                  sustainable solutions.
                 </p>
               </div>
             </div>
@@ -46,17 +47,14 @@ const CaseEnviro2 = () => {
         </div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto px-6">
         <div className="mx-auto w-full max-w-5xl lg:flex lg:gap-20 ">
           <div className="flex w-full max-w-[40rem] mx-auto flex-col gap-10">
             <div className="prose">
-              <h2 className="text-2xl lg:text-4xl font-bold text-theme-blue lg:mb-12 pt-4 text-center mt-12 dark:text-white">
-                Enviro Building Services - Smarter Retrofits
-              </h2>
               <img
                 src={Enviro}
                 alt="Enviro Building"
-                className="w-full scale-[0.4] object-contain "
+                className="w-full  object-contain rounded-lg mb-12 "
               />
               <h4 className="text-base lg:text-xl font-bold text-theme-blue mb-4 pt-4 dark:text-theme-teal">
                 Overview

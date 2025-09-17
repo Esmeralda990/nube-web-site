@@ -15,6 +15,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 flex flex-col items-center text-center mb-12 ">
         <div className="flex items-center justify-center gap-8 mb-6">
           <img src={image2} alt="Fujitsu" className="w-32 h-18 object-cover" />
+          <div className="w-px h-12 bg-gray-400" />
           <img
             src={image1}
             alt="AnywAir Io"
