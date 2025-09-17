@@ -82,7 +82,7 @@ const CaseVictorian4 = () => {
                 To tackle these challenges, Nube iO partnered with QA Electrical
                 to implement an advanced IoT-based utility monitoring system
                 across over 30 Victorian schools. The solution featured wireless
-                LoRaWAN sensors for real-time monitoring of electricity, water
+                LoRaWAN® sensors for real-time monitoring of electricity, water
                 usage, and air quality—eliminating the need for complex cabling.
                 Data was collected via Rubix Compute Gateways and transmitted to
                 a centralised cloud platform. A user-friendly, cloud-based

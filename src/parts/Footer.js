@@ -97,7 +97,7 @@ const Footer7 = () => {
             </div>
           </div>
           <div className="mt-20 flex flex-col justify-center gap-4 border-t pt-8 text-center text-sm font-medium text-gray-600 lg:flex-row lg:items-center lg:text-left lg:text-base dark:text-white">
-            <p>© 2025 Nube IO. All rights reserved.</p>
+            <p>© 2025 Nube iO. All rights reserved.</p>
             <ul className="flex flex-col gap-4 lg:flex-row lg:justify-start lg:gap-6">
               <li className="hover:text-gray-400 transition-colors duration-300">
                 <a href="/terms-of-use">Terms Of Use</a>

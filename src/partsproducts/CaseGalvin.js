@@ -84,7 +84,7 @@ const CaseGalvin1 = () => {
                 Nube iO partnered with Galvin Engineering to deliver a tailored
                 IoT monitoring solution designed specifically for thermal mixing
                 valve compliance in healthcare environments. The system featured
-                LoRa gateways for long-range, low-power wireless communication,
+                LoRa® gateways for long-range, low-power wireless communication,
                 seamlessly connecting distributed assets. Integrated hardware
                 and software enabled precise, real-time temperature monitoring
                 with cloud-based visibility. A custom dashboard provided

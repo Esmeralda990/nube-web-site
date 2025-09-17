@@ -215,7 +215,7 @@ export const Blog1 = [
   {
     img: Img3,
     title: "Lora® Sensors",
-    link: "/Lora/",
+    link: "/lora/",
   },
   {
     img: Img2,
@@ -237,8 +237,8 @@ export const Blog2 = [
   },
   {
     img: Img3,
-    title: "Lora® Sensors",
-    link: "/Lora/",
+    title: "LoRa® Sensors",
+    link: "/lora/",
   },
   {
     img: Img4,
@@ -278,7 +278,7 @@ export const Blog4 = [
   },
   {
     img: Img3,
-    title: "Lora® Sensors",
+    title: "LoRa® Sensors",
     link: "/Lora/",
   },
 ];
@@ -361,11 +361,11 @@ export const Casestudy = [
     link: "/fujitsu/",
   },
   {
-    id: "AnywAIR iO",
+    id: "Mcdonalds AnywAIR iO",
     title: "Fujitsu anywAiR® iO",
     imageUrl: Mc,
     type: "Fujitsu anywAiR® iO solution powers smarter operations at McDonald’s Burwood.",
     animation: "right",
-    link: "/Anywair/",
+    link: "/mcdonalds/",
   },
 ];

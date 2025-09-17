@@ -58,7 +58,7 @@ function App() {
           <Route path="/rubix-compute/" element={<RubixCompute />} />
           <Route path="/rubix-io-16/" element={<RubixIO16 />} />
           <Route path="/ci-edgex2/" element={<NiagaraEdge />} />
-          <Route path="/Lora/" element={<LoraDroplet />} />
+          <Route path="/lora/" element={<LoraDroplet />} />
           <Route path="/software/" element={<SoftwarePage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/terms-of-use/" element={<TermsOfUsePage />} />
@@ -83,7 +83,7 @@ function App() {
           <Route path="/daikin/" element={<DaikinPage />} />
           <Route path="/victorian/" element={<VictorianPage />} />
           <Route path="/fujitsu/" element={<FujitsuPage />} />
-          <Route path="/Anywair/" element={<AnywairPage />} />
+          <Route path="/mcdonalds/" element={<AnywairPage />} />
           <Route path="/comingsoon/" element={<ComingSoonPage />} />
         </Routes>
       </HelmetProvider>

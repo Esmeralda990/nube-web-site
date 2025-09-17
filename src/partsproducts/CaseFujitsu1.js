@@ -59,7 +59,7 @@ const CaseFujitsu5 = () => {
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
                 Fujitsu General, a global leader in air conditioning solutions,
-                has partnered with Nube iO to develop AnywAIR iO, an IoT
+                has partnered with Nube iO to develop anywAiR® iO, an IoT
                 solution that enhances integration with BMS systems. This
                 collaboration highlights how Nube iO&apos;s OEM expertise
                 empowers intelligent automation for leading brands.
@@ -88,10 +88,10 @@ const CaseFujitsu5 = () => {
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
                 Nube iO delivered an OEM solution that integrates directly with
                 Fujitsu commercial air conditioning systems. The compact, BACnet
-                and Modbus-compatible AnywAIR iO device acts as a bridge between
-                Fujitsu units and third-party BMS platforms, allowing facility
-                managers to remotely monitor and control HVAC systems, optimize
-                energy efficiency through advanced data analytics, and
+                and Modbus-compatible anywAiR® iO device acts as a bridge
+                between Fujitsu units and third-party BMS platforms, allowing
+                facility managers to remotely monitor and control HVAC systems,
+                optimize energy efficiency through advanced data analytics, and
                 seamlessly integrate with existing infrastructure using standard
                 communication protocols.
               </p>
@@ -100,7 +100,7 @@ const CaseFujitsu5 = () => {
                 Results
               </h4>
               <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400">
-                Since the launch of AnywAIR iO, Fujitsu has been able to offer
+                Since the launch of anywAiR® iO, Fujitsu has been able to offer
                 its customers a highly flexible and intelligent BMS-compatible
                 solution, with key benefits such as greater control over HVAC
                 systems that improves comfort and efficiency, reduced operating

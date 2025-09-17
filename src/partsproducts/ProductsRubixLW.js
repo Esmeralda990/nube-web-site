@@ -17,7 +17,7 @@ const RubixLW = () => {
       <div className="container mx-auto px-12">
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Connect LW <br />
-          Smart LoRaWAN®
+          Smart LoRaWAN® Expansion Card
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">

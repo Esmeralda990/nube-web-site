@@ -108,7 +108,7 @@ const ProductRubix16 = () => {
               no more frustrations of cabling in legacy automation solutions.
               Monitor and control your HVAC, power, and water usage. 8 universal
               outputs, 8 universal inputs capable of 0-10dc, 4-20ma, Digital &
-              10K Temperatu.
+              10K Temperature.
             </p>
             <div className="flex gap-4 mt-6">
               <a

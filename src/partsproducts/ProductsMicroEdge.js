@@ -17,7 +17,7 @@ const MicroEdge = () => {
       <div className="container mx-auto">
         <h1 className="text-4xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           MicroEdge <br />
-          Small Form, Powerful Edge Control
+          LoRa® IoT Asset Monitoring Sensor.
         </h1>
         <div className="relative mt-12 grid gap-16  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -135,7 +135,7 @@ const MicroEdge = () => {
               More about More MicroEdge
             </h3>
             <h4 className="text-base lg:text-xl font-bold text-theme-teal mb-2 dark:text-white">
-              Why Lora®
+              Why LoRa®
             </h4>
             <p className="font-light text-lg text-gray-400 leading-relaxed sm:text-sm sm:break-words md:text-lg w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
               LoRa® is a low-power, long-range wireless technology designed for

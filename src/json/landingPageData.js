@@ -623,7 +623,7 @@ export const Solutionsfeature = [
     description:
       "Long-range, battery-powered LoRaWAN® sensors for accurate temperature, humidity, and indoor air quality monitoring.",
     image: IconsOur4,
-    link: "/Lora/",
+    link: "/lora/",
   },
   {
     id: "feature-4",

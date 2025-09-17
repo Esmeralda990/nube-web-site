@@ -17,7 +17,7 @@ const ProductRubix = () => {
       <div className="container mx-auto">
         <h1 className="text-3xl lg:text-6xl mt-4 text-theme-blue font-bold text-center dark:text-white">
           Rubix Compute <br />
-          Multi-protocol Smart Gateway
+          Multi-Protocol Smart Gateway
         </h1>
         <div className="relative mt-12 grid gap-16 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
           <div className="mx-auto w-full max-w-[800px]">
@@ -149,7 +149,7 @@ const ProductRubix = () => {
               multi-gateway will collect data from both wired and wireless
               devices. It will enable you to aggregate data from multiple
               sensors and send it anywhere – your cloud, a local server, or
-              3rd-party hardware via BACnet
+              3rd-party hardware via BACnet.
             </p>
             <div className="flex gap-4 mt-6">
               <a

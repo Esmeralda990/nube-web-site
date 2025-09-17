@@ -92,10 +92,10 @@ const GifBene = () => {
               <ul className="text-muted-foreground font-light text-base lg:text-lg text-gray-400 list-disc pl-5">
                 <li>
                   <span /> Unified interface for legacy (BACnet, Modbus) and
-                  wireless devices (LoRaWAN, 3G/4G)
+                  wireless devices (LoRaWAN®, 3G/4G)
                 </li>
                 <li>
-                  <span /> Supported Protocols: BACnet, Modbus, LoRaWAN, LoRa
+                  <span /> Supported Protocols: BACnet, Modbus, LoRaWAN®, LoRa®
                   and REST API
                 </li>
                 <li>

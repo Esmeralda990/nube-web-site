@@ -9,7 +9,7 @@ import Header1 from "parts/Header1";
 import ProductsDroplet from "partsproducts/ProductsDroplet";
 import ProductsMicroEdge from "partsproducts/ProductsMicroEdge";
 import Footer from "parts/Footer";
-import Products from "parts/ProductsBlog2.js";
+import Products from "parts/ProductsBlog3.js";
 import { Droplet, Microedge, Blog3 } from "../json/ProductsPageData.js";
 
 export default class DropletPage extends Component {
@@ -21,25 +21,25 @@ export default class DropletPage extends Component {
     return (
       <>
         <Helmet>
-          <title>Lora® Sensor | Nube iO – Wireless Indoor Monitoring</title>
+          <title>LoRa® Sensor | Nube iO – Wireless Indoor Monitoring</title>
           <meta
             name="description"
-            content="The Lora® Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
+            content="The LoRa® Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
           />
           <meta
             name="keywords"
             content="LoRa® indoor sensor, environmental monitoring, temperature sensor"
           />
-          <link rel="canonical" href="https://nubeio.com/droplet/ " />
+          <link rel="canonical" href="https://nubeio.com/lora/ " />
           <meta
             property="og:title"
             content="Lora® Sensor| Nube iO – Wireless Indoor Monitoring"
           />
           <meta
             property="og:description"
-            content="The Lora® Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
+            content="The LoRa® Sensor is a compact that tracks temperature, humidity, light, and motion with up to 10 years of battery life."
           />
-          <meta property="og:url" content="https://nubeio.com/droplet/" />
+          <meta property="og:url" content="https://nubeio.com/lora/" />
         </Helmet>
         <Header1 />
         <ProductsDroplet data={Droplet} />

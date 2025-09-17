@@ -42,7 +42,7 @@ html.dark {
 .logos-carousel {
   display: flex;
   gap: 10px;
-  animation: scroll 30seg linear infinite;
+  animation: scroll 60s linear infinite;
 }
 .relative {
   width: 100%;
@@ -51,15 +51,16 @@ html.dark {
 
 .flex {
   display: flex;
-  transition: transform 30s ease;
+  transition: transform 60s ease;
 }
+
 @media (max-width: 640px) {
   .logo-image {
     height: 30px;
   }
 
   .logos-carousel {
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
     gap: 5px;
   }
   .relative {
