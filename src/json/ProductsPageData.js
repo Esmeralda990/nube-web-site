@@ -214,7 +214,7 @@ export const RubixConnectLW = [
 export const Blog1 = [
   {
     img: Img3,
-    title: "Lora® Sensors",
+    title: "LoRa® Sensors",
     link: "/lora/",
   },
   {

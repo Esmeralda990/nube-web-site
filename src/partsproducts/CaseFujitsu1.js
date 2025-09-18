@@ -33,7 +33,7 @@ const CaseFujitsu5 = () => {
             <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
                 <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
-                  An OEM Partnership: Fujitsu + Nube iO
+                  An OEM Partnership: Fujitsu and Nube iO
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
                   Fujitsu partners with Nube iO to deliver anywAiR® iO –

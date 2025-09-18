@@ -28,12 +28,12 @@ const CaseEnviro2 = () => {
           <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white dark:to-theme-dark z-10" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
+        <div className="relative z-10 container mx-auto px-3 flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex w-full flex-col items-center justify-center gap-12">
-            <div className="flex w-full max-w-[46rem] flex-col items-center justify-center gap-8">
+            <div className="flex w-full max-w-[80rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
                 <h1 className="text-3xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
-                  Enviro Delivers Scalable HVAC & BMS Modernisation
+                  Enviro Delivers Scalable <br /> HVAC & BMS Modernisation
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12">
                   Enviro Building Services leverages Nube iO’s automation stack
