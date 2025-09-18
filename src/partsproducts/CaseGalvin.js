@@ -33,7 +33,7 @@ const CaseGalvin1 = () => {
             <div className="flex w-full max-w-[80rem] flex-col items-center justify-center gap-8">
               <div className="flex w-full flex-col gap-5 text-center">
                 <h1 className="text-2xl lg:text-6xl leading-[1.2] font-semibold text-theme-blue dark:text-white">
-                  IoT Innovation Transforming <br /> Water Safety Compliance in
+                  IoT Innovation: Transforming <br /> Water Safety Compliance in
                   Hospitals
                 </h1>
                 <p className="text-base lg:text-lg leading-[1.4] font-light text-gray-400 lg:pb-12 ">
