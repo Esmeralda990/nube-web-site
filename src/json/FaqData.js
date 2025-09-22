@@ -26,7 +26,7 @@ export const DataAccordion = [
     id: 1,
     question: "What does Nube iO do?",
     answer:
-      "Nube iO provides controllers (e.g. Rubix Compute, Rubix iO 16), LoRa® wireless sensors (e.g. Droplet Indoor Sensor, MicroEdge Sensor), and Expansion Modules (e.g. Rubix Connect LW).",
+      "From a single building to entire portfolios, Nube iO unifies devices, systems, and spaces — making automation smarter, simpler, and future-ready.",
     icons: Icons1,
   },
   {

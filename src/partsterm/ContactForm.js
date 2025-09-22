@@ -17,7 +17,7 @@ const contactMethods = [
     title: "Email",
     description:
       "Have a question or need help? Drop us an email, and we'll respond within 24 hours.",
-    contact: "info@nubeio.com",
+    contact: "info@nube-io.com",
   },
   {
     icon: Phone,
@@ -136,7 +136,7 @@ const ContactForm = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="lg:mt-36 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
+              <h1 className="lg:mt-32 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
                 Ready to Future Proof Your Building?
               </h1>
             </div>
@@ -182,7 +182,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 lg:mt-48 ">
+          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 lg:mt-32 ">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
                 <div className="grid w-full items-center gap-3 font-bold text-theme-blue dark:text-white">

@@ -377,7 +377,7 @@ export const AdvantageAbout = [
     {
       title: "Global Reach & Growth",
       description:
-        "From Australia to Southeast Asia, we deliver smart building solutions with local support and global impact.",
+        "Founded in Australia, Nube iO bridges regions and time zones to deliver smart building solutions and local support worldwide.",
       logo: IconsGro,
       image: Growth,
       imageDark: GrowthDark,
