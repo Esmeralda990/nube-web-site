@@ -137,7 +137,7 @@ const ContactForm = () => {
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
               <h1 className="lg:mt-20 mt-12 mb-2 text-4xl lg:text-5xl font-bold text-theme-blue max-w-3xl mx-auto lg:mx-0 dark:text-white">
-                Ready to Future Proof <br /> Your Building?
+                Ready to Future-Proof <br /> Your Building?
               </h1>
             </div>
 
