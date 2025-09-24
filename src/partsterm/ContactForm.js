@@ -131,19 +131,19 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="mt-2 pb-12 lg:pl-32 px-6 mb-20">
+    <section className="mt-2 pb-12 lg:pl-28 px-6 mb-20">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
+        <div className="flex flex-col lg:flex-row justify-between gap-10">
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="text-center lg:text-left">
-              <h1 className="lg:mt-32 mt-12 mb-2 text-4xl lg:text-6xl  font-bold text-theme-blue max-w-2xl mx-auto lg:mx-0 dark:text-white">
-                Ready to Future Proof Your Building?
+              <h1 className="lg:mt-20 mt-12 mb-2 text-4xl lg:text-5xl font-bold text-theme-blue max-w-3xl mx-auto lg:mx-0 dark:text-white">
+                Ready to Future Proof <br /> Your Building?
               </h1>
             </div>
 
-            <div className="grid flex-2 gap-8 self-start lg:grid-cols-2 mt-6">
+            <div className="grid flex-2 gap-8 self-start lg:grid-cols-2 mt-4">
               {contactMethods.map((method, index) => (
-                <div key={index} className="space-y-4">
+                <div key={index} className="space-y-3">
                   <div className="flex items-center gap-4">
                     <method.icon className="w-5 h-5 text-theme-teal" />
                     <h3 className="text-xl tracking-[-0.96px] font-bold text-theme-teal">
@@ -173,7 +173,32 @@ const ContactForm = () => {
                     )}
                     {method.contact && (
                       <div className="text-base font-light text-gray-400">
-                        {method.contact}
+                        {(() => {
+                          if (method.title === "Email") {
+                            return (
+                              <a
+                                href={`mailto:${method.contact}`}
+                                className="underline hover:text-theme-teal"
+                              >
+                                {method.contact}
+                              </a>
+                            );
+                          }
+                          if (method.title === "Phone") {
+                            return (
+                              <a
+                                href={`tel:${method.contact.replace(
+                                  /\s+/g,
+                                  ""
+                                )}`}
+                                className="underline hover:text-theme-teal"
+                              >
+                                {method.contact}
+                              </a>
+                            );
+                          }
+                          return method.contact;
+                        })()}
                       </div>
                     )}
                   </div>
@@ -182,7 +207,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 lg:mt-32 ">
+          <div className="mx-auto flex mx-w-full flex-col gap-6 rounded-lg border p-6 h-full mt-8 lg:mt-24 ">
             <form onSubmit={handleSubmit}>
               <div className="flex gap-8">
                 <div className="grid w-full items-center gap-3 font-bold text-theme-blue dark:text-white">
@@ -212,7 +237,7 @@ const ContactForm = () => {
               </div>
 
               <div className="grid w-full items-center gap-3 mb-6 mt-6 font-bold text-theme-blue dark:text-white">
-                <label htmlFor="company">Company/Organization</label>
+                <label htmlFor="company">Company/Organisation</label>
                 <input
                   type="text"
                   id="company"

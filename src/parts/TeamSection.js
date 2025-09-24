@@ -30,12 +30,10 @@ export default function TeamSection() {
               className="mb-4 w-32 h-30 sm:w-30 sm:h-40 md:w-40 md:h-40 lg:w-30 lg:h-25 rounded-full object-cover "
             />
             <p className="font-bold dark:text-white">{person.name}</p>
-            <p className="text-muted-foreground dark:text-theme-teal">
+            <p className="text-muted-foreground text-theme-teal">
               {person.role}
             </p>
-            <p className="py-3 font-light text-gray-500 text-base text-muted-foreground overflow-hidden text-ellipsis max-w-sm">
-              {person.description}
-            </p>
+
             <div className="mt-2 flex gap-4">
               <a
                 href={person.linkedinUrl}

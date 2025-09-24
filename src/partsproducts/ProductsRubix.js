@@ -9,7 +9,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { RubixCompute } from "../json/ProductsPageData.js";
-import Button from "../elements/Button/index.js";
 
 const ProductRubix = () => {
   return (
@@ -160,13 +159,15 @@ const ProductRubix = () => {
               >
                 DATASHEET
               </a>
-              <Button
+              <a
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-compute"
                 type="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
               >
                 USER MANUAL
-              </Button>
+              </a>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
             <h3 className="mb-4 text-xl md:text-2xl font-bold mt-8 text-theme-blue dark:text-theme-teal">

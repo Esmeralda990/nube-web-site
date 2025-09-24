@@ -9,7 +9,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Droplet } from "../json/ProductsPageData.js";
-import Button from "../elements/Button/index.js";
 
 const LoraDroplet = () => {
   return (
@@ -150,14 +149,15 @@ const LoraDroplet = () => {
               >
                 DATASHEET
               </a>
-              <Button
+              <a
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/droplets-v1/"
                 type="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
-                download
               >
                 USER MANUAL
-              </Button>
+              </a>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
             <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
@@ -180,7 +180,7 @@ const LoraDroplet = () => {
             <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">
               More about the Droplet
             </h3>
-            <h4 className=" text-base lg:text-xl font-bold text-teal-600 mb-2 dark:text-white">
+            <h4 className=" text-base lg:text-xl font-bold text-theme-teal mb-2 dark:text-white">
               Why LoRa®
             </h4>
             <p className="font-light  text-base lg:text-lg  text-gray-400 leading-relaxed sm:break-words w-full max-w-full min-w-full sm:max-w-xs overflow-hidden">
