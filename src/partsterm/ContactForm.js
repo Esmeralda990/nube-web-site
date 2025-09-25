@@ -243,7 +243,7 @@ const ContactForm = () => {
                   id="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Company/Organization"
+                  placeholder="Company/Organisation"
                   className="w-full p-1 border rounded font-light dark:bg-theme-dark"
                 />
               </div>
