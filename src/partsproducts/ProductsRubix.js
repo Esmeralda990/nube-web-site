@@ -169,7 +169,7 @@ const ProductRubix = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <a
-                href="/Docs/Rubix-compute-06-Datasheet.pdf"
+                href="/Docs/Rubix-Compute-06-Datasheet.pdf"
                 type="link"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
                 download="Rubix-compute-06-Datasheet.pdf"
