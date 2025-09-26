@@ -8,8 +8,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { trackEvent } from "utils/Analytics";
 import { RubixIO16 } from "../json/ProductsPageData.js";
-import Button from "../elements/Button/index.js";
+
+const handleDownload = () => {
+  trackEvent({
+    action: "pdf_download",
+    category: "Datasheet",
+    label: "Rubix-IO-16-Datasheet.pdf",
+  });
+};
+
+const handleUsermanual = () => {
+  trackEvent({
+    action: "manual_click",
+    category: "Documentation",
+    label: "Rubix iO 16- User Manual",
+  });
+};
 
 const ProductRubix16 = () => {
   return (
@@ -115,18 +131,21 @@ const ProductRubix16 = () => {
                 href="/Docs/Rubix-IO-16-Datasheet.pdf"
                 type="link"
                 className="flex items-center justify-center w-auto px-6 py-3 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
-                download
+                download="Rubix-IO-16-Datasheet.pdf"
+                onClick={handleDownload}
               >
                 DATASHEET
               </a>
-              <Button
+              <a
                 href="https://nubeio.github.io/rubix-ce-docs/docs/category/rubix-io-16/"
                 type="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-auto px-6 py-3 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
-                download
+                onClick={handleUsermanual}
               >
                 USER MANUAL
-              </Button>
+              </a>
             </div>
             <div className="my-6 w-full border-t border-gray-300" />
             <h3 className="mb-4 text-xl lg:text-2xl font-bold text-theme-blue w-full mx-auto dark:text-theme-teal">

@@ -4,6 +4,15 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import heroapplication from "assets/images/hero/Business.png";
+import { trackEvent } from "utils/Analytics";
+
+const handleDownload = () => {
+  trackEvent({
+    action: "pdf_download",
+    category: "Datasheet",
+    label: "Business-Account-Application.pdf",
+  });
+};
 
 export default function Application() {
   return (
@@ -31,26 +40,13 @@ export default function Application() {
 
           <div className="mt-8">
             <a
-              href="https://nube-io.com/wp-content/uploads/2025/02/Nube-io-Account-Application-form-December24.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg flex items-center justify-center w-64 h-14 px-6 py-4 text-white bg-teal-600 rounded-lg shadow-xl hover:bg-teal-700 transition duration-200"
+              href="/Docs/Business-Account-Application.pdf"
+              type="link"
+              className="text-lg flex items-center justify-center w-36 h-14 px-6 py-4 text-white bg-theme-teal rounded-lg shadow-xl hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+              download="Business-Account-Application.pdf"
+              onClick={handleDownload}
             >
               Download
-              <svg
-                className="ml-2 w-6 h-6 text-white animate-bounce-x"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
             </a>
           </div>
         </div>

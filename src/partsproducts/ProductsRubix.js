@@ -8,7 +8,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { trackEvent } from "utils/Analytics";
 import { RubixCompute } from "../json/ProductsPageData.js";
+
+const handleDownload = () => {
+  trackEvent({
+    action: "pdf_download",
+    category: "Datasheet",
+    label: "Rubix-compute-06-Datasheet.pdf",
+  });
+};
+
+const handleUsermanual = () => {
+  trackEvent({
+    action: "manual_click",
+    category: "Documentation",
+    label: "Rubix Compute - User Manual",
+  });
+};
 
 const ProductRubix = () => {
   return (
@@ -152,10 +169,11 @@ const ProductRubix = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <a
-                href="/Docs/RC-06 - Datasheet.pdf"
+                href="/Docs/Rubix-compute-06-Datasheet.pdf"
                 type="link"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
-                download="RC-06 - Datasheet.pdf"
+                download="Rubix-compute-06-Datasheet.pdf"
+                onClick={handleDownload}
               >
                 DATASHEET
               </a>
@@ -165,6 +183,7 @@ const ProductRubix = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+                onClick={handleUsermanual}
               >
                 USER MANUAL
               </a>

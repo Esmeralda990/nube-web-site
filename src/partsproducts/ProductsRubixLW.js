@@ -8,7 +8,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { trackEvent } from "utils/Analytics";
 import { RubixConnectLW } from "../json/ProductsPageData.js";
+
+const handleDownload = () => {
+  trackEvent({
+    action: "pdf_download",
+    category: "Datasheet",
+    label: "Rubix-Connect-LW-Datasheet.pdf",
+  });
+};
+
+const handleUsermanual = () => {
+  trackEvent({
+    action: "manual_click",
+    category: "Documentation",
+    label: "Rubix-Connect-LW - User Manual",
+  });
+};
 
 const RubixLW = () => {
   return (
@@ -119,7 +136,8 @@ const RubixLW = () => {
                 href="/Docs/Rubix-Connect-LW-Datasheet.pdf"
                 type="link"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-white text-black border border-theme-teal text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-theme-teal hover:text-white"
-                download
+                download="Rubix-Connect-LW-Datasheet.pdf"
+                onClick={handleDownload}
               >
                 DATASHEET
               </a>
@@ -129,6 +147,7 @@ const RubixLW = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-auto px-6 py-2 bg-theme-teal text-white text-sm md:text-base rounded-xl transition duration-300 ease-in-out hover:scale-105 hover:bg-white border border-theme-teal hover:text-black"
+                onClick={handleUsermanual}
               >
                 USER MANUAL
               </a>

@@ -16,3 +16,12 @@ export const pageview = (path) => {
     ReactGA.send({ hitType: "pageview", page: path });
   }
 };
+
+export const trackEvent = ({ action, category, label }) => {
+  if (GA_ID) {
+    ReactGA.event(action, {
+      category,
+      label,
+    });
+  }
+};
